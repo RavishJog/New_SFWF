@@ -155,6 +155,43 @@ public class Back_office_main_page {
         return element;
     }
 
+    //Object for Action - Select One
+    private static By lbl_Action_select_one = By.xpath("//label[contains(.,'Select One')]");
+    public static WebElement Action_select_one(WebDriver driver) {
+        element = driver.findElement(lbl_Action_select_one);
+        return element;
+    }
+
+    //Object for Action - Assigned
+    private static By lbl_Action_Assigned = By.xpath("//li[contains(.,'Assigned')]");
+    public static WebElement Action_Assigned(WebDriver driver) {
+        element = driver.findElement(lbl_Action_Assigned);
+        return element;
+    }
+
+    //Object for Select User - Select One
+    private static By lbl_User_select_one = By.xpath("//label[contains(.,'Select One')]");
+    public static WebElement User_select_one(WebDriver driver) {
+        element = driver.findElement(lbl_User_select_one);
+        return element;
+    }
+
+    //Object for Select User - Select WPO
+    private static By lbl_User_select_WPO = By.xpath("//label[contains(.,'WPO WPO')]");
+    public static WebElement User_select_WPO(WebDriver driver) {
+        element = driver.findElement(lbl_User_select_WPO);
+        return element;
+    }
+
+    //Object for Actions Remarks
+    private static By txt_Action_remarks = By.xpath("//textarea[contains(@id,'remarksStr')]");
+    public static WebElement Action_remarks(WebDriver driver) {
+        element = driver.findElement(txt_Action_remarks);
+        return element;
+    }
+
+
+
 }
 
     //Object for XXX

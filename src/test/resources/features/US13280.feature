@@ -88,8 +88,10 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Successful Login
     And I Click on All Applications
     And I Verify display of list of registrations page
-    And I Search for Application Ref Number
+    And I Search for Application Ref Number as a Back Office User
     And I Click to view Application
+    And I Click on Action Button
+    And I
 
 
 
