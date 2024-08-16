@@ -2071,4 +2071,17 @@ public class Steps extends Utility {
         WebDriverWait w = new WebDriverWait(driver, 30);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[contains(.,'Action')]")));
     }
+
+    @And("^I Search for Application Ref Number as a Back Office User$")
+    public void iSearchForApplicationRefNumberAsABackOfficeUser() throws InterruptedException {
+        Back_office_main_page.Search_bar_app_num(driver).sendKeys(Application_reference_number);
+        Thread.sleep(2000);
+    }
+
+    @And("^I Click on Action Button$")
+    public void iClickOnActionButton() {
+        Back_office_main_page.Action_back_office_users(driver).click();
+        WebDriverWait w = new WebDriverWait(driver, 30);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("///h3[contains(.,'Actions')]")));
+    }
 }
