@@ -58,7 +58,7 @@ Feature: User Story 12822 - Payment Process for Registration
     And I Verify Payment Status "<Payment_Status>"
     And I Copy Application Number
     And I Click on Shopping Cart for payment
-    And Select Application for payment
+    And I Select Application for payment
     And I Click on Proceed to Payment
     And I Click on Payment Icon
     And I Select Payment Method "<Payment_method>"
@@ -126,7 +126,7 @@ Feature: User Story 12822 - Payment Process for Registration
     And I Verify Payment Status "<Payment_Status>"
     And I Copy Application Number
     And I Click on Shopping Cart for payment
-    And Select Application for payment
+    And I Select Application for payment
     And I Click on Proceed to Payment
     And I Click on Payment Icon
     And I Select Payment Method "<Payment_method>"
@@ -204,7 +204,7 @@ Feature: User Story 12822 - Payment Process for Registration
     And I Verify Payment Status "<Payment_Status>"
     And I Copy Application Number
     And I Click on Shopping Cart for payment
-    And Select Application for payment
+    And I Select Application for payment
     And I Click on Proceed to Payment
     And I Click on Payment Icon
     And I Select Payment Method "<Payment_method>"
@@ -276,7 +276,7 @@ Feature: User Story 12822 - Payment Process for Registration
     And I Verify Payment Status "<Payment_Status>"
     And I Copy Application Number
     And I Click on Shopping Cart for payment
-    And Select Application for payment
+    And I Select Application for payment
     And I Click on Proceed to Payment
     And I Click on Payment Icon
     And I Select Payment Method "<Payment_method>"
@@ -375,7 +375,7 @@ Feature: User Story 12822 - Payment Process for Registration
     And I Verify Payment Status "<Payment_Status>"
     And I Copy Application Number
     And I Click on Shopping Cart for payment
-    And Select Application for payment
+    And I Select Application for payment
     And I Click on Proceed to Payment
     And I Click on Payment Icon
     And I Select Payment Method "<Payment_method>"
@@ -472,7 +472,7 @@ Feature: User Story 12822 - Payment Process for Registration
     And I Verify Payment Status "<Payment_Status>"
     And I Copy Application Number
     And I Click on Shopping Cart for payment
-    And Select Application for payment
+    And I Select Application for payment
     And I Click on Proceed to Payment
     And I Click on Payment Icon
     And I Select Payment Method "<Payment_method>"

@@ -156,16 +156,44 @@ public class Back_office_main_page {
     }
 
     //Object for Action - Select One
-    private static By lbl_Action_select_one = By.xpath("//label[contains(.,'Select One')]");
+    private static By lbl_Action_select_one = By.xpath("(//span[@class='ui-icon ui-icon-triangle-1-s ui-c'])[2]");
     public static WebElement Action_select_one(WebDriver driver) {
         element = driver.findElement(lbl_Action_select_one);
         return element;
     }
 
     //Object for Action - Assigned
-    private static By lbl_Action_Assigned = By.xpath("//li[contains(.,'Assigned')]");
+    private static By lbl_Action_Assigned = By.xpath("//li[contains(@data-label,'Assigned')]");
     public static WebElement Action_Assigned(WebDriver driver) {
         element = driver.findElement(lbl_Action_Assigned);
+        return element;
+    }
+
+    //Object for Action - Approved
+    private static By lbl_Action_Approved = By.xpath("//li[contains(@data-label,'Approved')]");
+    public static WebElement Action_Approved(WebDriver driver) {
+        element = driver.findElement(lbl_Action_Approved);
+        return element;
+    }
+
+    //Object for Action - Rejected
+    private static By lbl_Action_Rejected = By.xpath("//li[contains(@data-label,'Rejected')]");
+    public static WebElement Action_Rejected(WebDriver driver) {
+        element = driver.findElement(lbl_Action_Rejected);
+        return element;
+    }
+
+    //Object for Action - Under Query
+    private static By lbl_Action_Under_Query = By.xpath("//li[contains(@data-label,'Under Query')]");
+    public static WebElement Action_Under_Query(WebDriver driver) {
+        element = driver.findElement(lbl_Action_Under_Query);
+        return element;
+    }
+
+    //Object for Action - Under Query - External Remarks
+    private static By lbl_Action_External_remarks = By.xpath("//textarea[contains(@id,'remarksExt')]");
+    public static WebElement Action_External_remarks(WebDriver driver) {
+        element = driver.findElement(lbl_Action_External_remarks);
         return element;
     }
 
@@ -177,9 +205,16 @@ public class Back_office_main_page {
     }
 
     //Object for Select User - Select WPO
-    private static By lbl_User_select_WPO = By.xpath("//label[contains(.,'WPO WPO')]");
+    private static By lbl_User_select_WPO = By.xpath("//li[contains(.,'WPO WPO')]");
     public static WebElement User_select_WPO(WebDriver driver) {
         element = driver.findElement(lbl_User_select_WPO);
+        return element;
+    }
+
+    //Object for Select User - Select WO
+    private static By lbl_User_select_WO = By.xpath("//li[contains(.,'WO WO')]");
+    public static WebElement User_select_WO(WebDriver driver) {
+        element = driver.findElement(lbl_User_select_WO);
         return element;
     }
 
@@ -190,6 +225,110 @@ public class Back_office_main_page {
         return element;
     }
 
+    //Object for Actions Save
+    private static By btn_Action_save = By.xpath("(//span[contains(.,'Save')])[5]");
+    public static WebElement Action_save(WebDriver driver) {
+        element = driver.findElement(btn_Action_save);
+        return element;
+    }
+
+    //Object for Success message for asigning
+    private static By lbl_Success_message_assign = By.xpath("(//span[contains(.,'Action Assigned done successfully.')])[2]");
+    public static WebElement Success_message_assign(WebDriver driver) {
+        element = driver.findElement(lbl_Success_message_assign);
+        return element;
+    }
+
+    //Object for Success message for Approval
+    private static By lbl_Success_message_approve = By.xpath("(//span[contains(.,'Action Approved done successfully.')])[2]");
+    public static WebElement Success_message_approve(WebDriver driver) {
+        element = driver.findElement(lbl_Success_message_approve);
+        return element;
+    }
+
+    //Object for Action Side Bar
+    private static By lbl_Action_side_bar = By.xpath("//span[contains(.,'Action')]");
+    public static WebElement Action_side_bar(WebDriver driver) {
+        element = driver.findElement(lbl_Action_side_bar);
+        return element;
+    }
+
+    //Object for WO/WA - Site Report
+    private static By lbl_Site_report = By.xpath("//a[contains(.,'Site Report')]");
+    public static WebElement Site_report(WebDriver driver) {
+        element = driver.findElement(lbl_Site_report);
+        return element;
+    }
+
+    //Object for Bonafie Planter - Yes
+    private static By btn_Bonafide_yes = By.xpath("//label[contains(@for, 'bonafide:0')]");
+    public static WebElement Bonafide_yes(WebDriver driver) {
+        element = driver.findElement(btn_Bonafide_yes);
+        return element;
+    }
+
+    //Object for Bonafie Planter - No
+    private static By btn_Bonafide_no = By.xpath("//label[contains(@for, 'bonafide:1')]");
+    public static WebElement Bonafide_no(WebDriver driver) {
+        element = driver.findElement(btn_Bonafide_no);
+        return element;
+    }
+
+    //Object for Upload Button for Site Visit Report
+    private static By btn_Upload_site_visit = By.xpath("(//input[@type='file'][contains(@id,'input')])");
+    public static WebElement Upload_site_visit(WebDriver driver) {
+        element = driver.findElement(btn_Upload_site_visit);
+        return element;
+    }
+
+    //Object for Save Button for Back Office Users
+    private static By btn_Save_Back_office_users = By.xpath("(//span[contains(.,'Save')])[1]");
+    public static WebElement Save_Back_office_users(WebDriver driver) {
+        element = driver.findElement(btn_Save_Back_office_users);
+        return element;
+    }
+
+    //Object for Site Visit - Remarks
+    private static By txt_Site_visit_remarks = By.xpath("(//textarea[contains(@role,'textbox')])[1]");
+    public static WebElement Site_visit_remarks(WebDriver driver) {
+        element = driver.findElement(txt_Site_visit_remarks);
+        return element;
+    }
+
+    //Object for Success message for saved site visit
+    private static By lbl_Site_visit_saved_success_message = By.xpath("(//span[contains(.,'Site Visit successfully saved!')])");
+    public static WebElement Site_visit_saved_success_message(WebDriver driver) {
+        element = driver.findElement(lbl_Site_visit_saved_success_message);
+        return element;
+    }
+
+    //Object for Under Query Notification button
+    private static By btn_Under_query_notif_send = By.xpath("//span[@class='ui-button-text ui-c'][contains(.,'Under Query Notification')]");
+    public static WebElement Under_query_notif_send(WebDriver driver) {
+        element = driver.findElement(btn_Under_query_notif_send);
+        return element;
+    }
+
+    //Object for Under Query Mail Success Message
+    private static By lbl_Under_query_mail_success_message = By.xpath("//span[contains(.,'Mail has been sent successfully')]");
+    public static WebElement Under_query_mail_success_message(WebDriver driver) {
+        element = driver.findElement(lbl_Under_query_mail_success_message);
+        return element;
+    }
+
+    //Object for Success message of Workflow saved successfully
+    private static By lbl_Workflow_success_message = By.xpath("//span[contains(.,'Workflow was successfully saved')]");
+    public static WebElement Workflow_success_message(WebDriver driver) {
+        element = driver.findElement(lbl_Workflow_success_message);
+        return element;
+    }
+
+    //Object for Print Card
+    private static By btn_Print_card = By.xpath("//span[contains(.,'Print Card')]");
+    public static WebElement Print_card(WebDriver driver) {
+        element = driver.findElement(btn_Print_card);
+        return element;
+    }
 
 
 }

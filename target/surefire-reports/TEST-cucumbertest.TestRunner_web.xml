@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="1" name="cucumbertest.TestRunner_web" time="214.487" errors="0" skipped="0">
+<testsuite tests="1" failures="1" name="cucumbertest.TestRunner_web" time="212.394" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2023.1.2"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -67,35 +67,29 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="cucumbertest.TestRunner_web" name="runCukes" time="214.487">
-    <failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//input[@type=&apos;checkbox&apos;])[7]&quot;}
-  (Session info: chrome=127.0.6533.100)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+  <testcase classname="cucumbertest.TestRunner_web" name="runCukes" time="212.394">
+    <failure message="org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=127.0.6533.120)
 Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
-System info: host: &apos;SIL-LTDELLI7-G6&apos;, ip: &apos;130.1.19.132&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_371&apos;
+System info: host: &apos;SIL-LTDELLI7-G6&apos;, ip: &apos;192.168.100.33&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_371&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}), userDataDir=C:\Users\SURAJ~1.JOG\AppData\Local\Temp\scoped_dir32212_1795059985}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:52415}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=127.0.6533.100, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: 470f4826104fc8eac81e73d4971469c6
-*** Element info: {Using=xpath, value=(//input[@type=&apos;checkbox&apos;])[7]}" type="cucumber.runtime.CucumberException">cucumber.runtime.CucumberException: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//input[@type=&apos;checkbox&apos;])[7]&quot;}
-  (Session info: chrome=127.0.6533.100)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}), userDataDir=C:\Users\SURAJ~1.JOG\AppData\Local\Temp\scoped_dir9816_739668461}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:60309}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=127.0.6533.120, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: 9c85581a6829f7940fb5da7f17b50075" type="cucumber.runtime.CucumberException">cucumber.runtime.CucumberException: org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=127.0.6533.120)
 Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
-System info: host: &apos;SIL-LTDELLI7-G6&apos;, ip: &apos;130.1.19.132&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_371&apos;
+System info: host: &apos;SIL-LTDELLI7-G6&apos;, ip: &apos;192.168.100.33&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_371&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}), userDataDir=C:\Users\SURAJ~1.JOG\AppData\Local\Temp\scoped_dir32212_1795059985}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:52415}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=127.0.6533.100, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: 470f4826104fc8eac81e73d4971469c6
-*** Element info: {Using=xpath, value=(//input[@type=&apos;checkbox&apos;])[7]}
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}), userDataDir=C:\Users\SURAJ~1.JOG\AppData\Local\Temp\scoped_dir9816_739668461}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:60309}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=127.0.6533.120, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: 9c85581a6829f7940fb5da7f17b50075
 	at cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:57)
 	at cucumbertest.TestRunner_web.runCukes(TestRunner_web.java:25)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//input[@type=&apos;checkbox&apos;])[7]&quot;}
-  (Session info: chrome=127.0.6533.100)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Caused by: org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=127.0.6533.120)
 Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
-System info: host: &apos;SIL-LTDELLI7-G6&apos;, ip: &apos;130.1.19.132&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_371&apos;
+System info: host: &apos;SIL-LTDELLI7-G6&apos;, ip: &apos;192.168.100.33&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_371&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}), userDataDir=C:\Users\SURAJ~1.JOG\AppData\Local\Temp\scoped_dir32212_1795059985}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:52415}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=127.0.6533.100, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: 470f4826104fc8eac81e73d4971469c6
-*** Element info: {Using=xpath, value=(//input[@type=&apos;checkbox&apos;])[7]}
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}), userDataDir=C:\Users\SURAJ~1.JOG\AppData\Local\Temp\scoped_dir9816_739668461}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:60309}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=127.0.6533.120, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: 9c85581a6829f7940fb5da7f17b50075
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -106,13 +100,10 @@ Session ID: 470f4826104fc8eac81e73d4971469c6
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
-	at objectrepository.Payment_process.Select_last_application(Payment_process.java:28)
-	at stepdefinition.Steps.iSearchForApplicationRefNumber(Steps.java:2063)
-	at ✽.And I Search for Application Ref Number(features/US13280.feature:91)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+	at stepdefinition.Steps.iSelectUnderQuery(Steps.java:2208)
+	at ✽.And I Select Under Query(features/US13280.feature:154)
 </failure>
     <system-out>Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@2cfb4a64
 #User Story 13280 - Back Office Process for Registration
@@ -173,7 +164,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Payment Status &quot;&lt;Payment_Status&gt;&quot;&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Copy Application Number&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Shopping Cart for payment&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mSelect Application for payment&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select Application for payment&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Proceed to Payment&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Payment Icon&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select Payment Method &quot;&lt;Payment_method&gt;&quot;&amp;#27;[0m
@@ -198,24 +189,166 @@ Feature: User Story 13280 - Back Office Process for Registration
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Successful Sign Out&amp;#27;[0m
     #    PWO
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI am on SFWF Back Office Home Page &quot;&lt;Browser&gt;&quot;&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input WPO Username &quot;&lt;PwoUsername&gt;&quot; and Password &quot;&lt;Password&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input PWO Username &quot;&lt;PwoUsername&gt;&quot; and Password &quot;&lt;Password&gt;&quot;&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Sign In button&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Successful Login&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on All Applications&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify display of list of registrations page&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Search for Application Ref Number&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Search for Application Ref Number as a Back Office User&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click to view Application&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Action Button&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select Assigned&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select WPO&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input Remarks &quot;&lt;Remarks&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Save Actions&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify for success message for assigning&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Sign Out&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Successful Sign Out&amp;#27;[0m
+    #    WPO
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI am on SFWF Back Office Home Page &quot;&lt;Browser&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input WPO Username &quot;&lt;WpoUsername&gt;&quot; and Password &quot;&lt;Password&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Sign In button&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Successful Login&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on All Applications&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify display of list of registrations page&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Search for Application Ref Number as a Back Office User&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click to view Application&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Action Button&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select Assigned&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select WO&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input Remarks &quot;&lt;Remarks&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Save Actions&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify for success message for assigning&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Sign Out&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Successful Sign Out&amp;#27;[0m
+    #    WO/WA
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI am on SFWF Back Office Home Page &quot;&lt;Browser&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input WO-WA Username &quot;&lt;WOUsername&gt;&quot; and Password &quot;&lt;Password&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Sign In button&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Successful Login&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on All Applications&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify display of list of registrations page&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Search for Application Ref Number as a Back Office User&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click to view Application&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Site Report Tab&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select Bonafide Planter &quot;&lt;Bonafide&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input Site visit remarks &quot;&lt;Remarks&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Upload Site Report &quot;&lt;Upload_test&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify for Document Upload Success Message&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Save Button&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Site Visit saved success message&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Action Button&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select Assigned&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select WPO&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input Remarks &quot;&lt;Remarks&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Save Actions&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify for success message for assigning&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Sign Out&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Successful Sign Out&amp;#27;[0m
+    #    WPO
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI am on SFWF Back Office Home Page &quot;&lt;Browser&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input WPO Username &quot;&lt;WpoUsername&gt;&quot; and Password &quot;&lt;Password&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Sign In button&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Successful Login&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on All Applications&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify display of list of registrations page&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Search for Application Ref Number as a Back Office User&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click to view Application&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Action Button&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select Under Query&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input External Remarks &quot;&lt;Remarks&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Under Query Notification&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Success Message for Under Query Notification&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Save Actions&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify for success message for workflow saved&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Sign Out&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Successful Sign Out&amp;#27;[0m
+    #    Applicant after under query
+    &amp;#27;[36mGiven &amp;#27;[0m&amp;#27;[36mI am on SFWF Front Office Home Page &quot;&lt;Browser&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mI Input Registered User&apos;s Username &quot;&lt;Username&gt;&quot; and Password &quot;&lt;Password&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Sign In button&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Applicant&apos;s Successful Login&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Register as Farmer&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify that User is directed to My Application Page&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify display of Farmers Card link&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Programmes link&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Search for Application Ref Number for re-submit&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify display of REGISTRATION FOR AGRO-PROCESSING ENTERPRISE Page&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Save and Continue&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Upload Required Documents Page is displayed&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Save and Continue&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Terms and Conditions Page&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Submit Application &quot;&lt;Confirmation&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Success message for application submitted&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Sign Out as Front Registered User&amp;#27;[0m
+    #    PWO
+    #    And I am on SFWF Back Office Home Page &quot;&lt;Browser&gt;&quot;
+    #    And I Input PWO Username &quot;&lt;PwoUsername&gt;&quot; and Password &quot;&lt;Password&gt;&quot;
+    #    And I Click on Sign In button
+    #    And I Verify Successful Login
+    #    And I Click on All Applications
+    #    And I Verify display of list of registrations page
+    #    And I Search for Application Ref Number as a Back Office User
+    #    And I Click to view Application
+    #    And I Click on Action Button
+    #    And I Select Assigned
+    #    And I Select WPO
+    #    And I Input Remarks &quot;&lt;Remarks&gt;&quot;
+    #    And I Click on Save Actions
+    #    And I Verify for success message for assigning
+    #    And I Sign Out
+    #    And I Verify Successful Sign Out
+    #    WPO
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI am on SFWF Back Office Home Page &quot;&lt;Browser&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input WPO Username &quot;&lt;WpoUsername&gt;&quot; and Password &quot;&lt;Password&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Sign In button&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Successful Login&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on All Applications&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify display of list of registrations page&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Search for Application Ref Number as a Back Office User&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click to view Application&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Action Button&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select Approved to approve the registration application&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input Remarks &quot;&lt;Remarks&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Save Actions&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify for success message for approval&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Sign Out&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Successful Sign Out&amp;#27;[0m
+    #    IT Department
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI am on SFWF Back Office Home Page &quot;&lt;Browser&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input IT Department Username &quot;&lt;ITUsername&gt;&quot; and Password &quot;&lt;Password&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Sign In button&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Successful Login&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on All Applications&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify display of list of registrations page&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Search for Application Ref Number as a Back Office User&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click to view Application&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Print Card&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Sign Out&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Successful Sign Out&amp;#27;[0m
+    #    Applicant verify status - Card Printed
+    &amp;#27;[36mGiven &amp;#27;[0m&amp;#27;[36mI am on SFWF Front Office Home Page &quot;&lt;Browser&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mI Input Registered User&apos;s Username &quot;&lt;Username&gt;&quot; and Password &quot;&lt;Password&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Sign In button&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Applicant&apos;s Successful Login&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Register as Farmer&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify that User is directed to My Application Page&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify display of Farmers Card link&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Programmes link&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Search for Application Ref Number for to check Status Card Printed&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Application Status to be Card Printed&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Sign Out as Front Registered User&amp;#27;[0m
 
     Examples: 
 Unable to take screenshot
 java.lang.NullPointerException
 Status is not valid
-Text from source element: APE2024-00043
+Text from source element: APE2024-00049
 Unable to take screenshot
 java.lang.NullPointerException
 
   @Main_feature @US13280 @Approval_by_BO_Payment_at_counter_for_Agro-Processing-Enterprise
-  Scenario Outline: Approval for Payment at counter for Registration as Agro-Processing Enterprise-Application form        &amp;#27;[90m# features/US13280.feature:98&amp;#27;[0m
+  Scenario Outline: Approval for Payment at counter for Registration as Agro-Processing Enterprise-Application form        &amp;#27;[90m# features/US13280.feature:244&amp;#27;[0m
     &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mI am on SFWF Front Office Home Page &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mChrome&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                     &amp;#27;[90m# Steps.iAmOnSFWFFrontOfficeHomePage(String)&amp;#27;[0m
     &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mI Input Registered User&apos;s Username &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mSuraj&amp;#27;[0m&amp;#27;[32m&quot; and Password &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mAdmin@123&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                               &amp;#27;[90m# Steps.iInputRegisteredUserSUsernameAndPassword(String,String)&amp;#27;[0m
     &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Sign In button&amp;#27;[0m                                                                                          &amp;#27;[90m# Steps.iClickOnSignInButton()&amp;#27;[0m
@@ -267,7 +400,7 @@ java.lang.NullPointerException
     &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Payment Status &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mPending&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                                  &amp;#27;[90m# Steps.iVerifyPaymentStatus(String)&amp;#27;[0m
     &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Copy Application Number&amp;#27;[0m                                                                                          &amp;#27;[90m# Steps.iCopyApplicationNumber()&amp;#27;[0m
     &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Shopping Cart for payment&amp;#27;[0m                                                                               &amp;#27;[90m# Steps.iClickOnShoppingCartForPayment()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mSelect Application for payment&amp;#27;[0m                                                                                     &amp;#27;[90m# Steps.selectApplicationForPayment()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select Application for payment&amp;#27;[0m                                                                                   &amp;#27;[90m# Steps.IselectApplicationForPayment()&amp;#27;[0m
     &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Proceed to Payment&amp;#27;[0m                                                                                      &amp;#27;[90m# Steps.iClickOnProceedToPayment()&amp;#27;[0m
     &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Payment Icon&amp;#27;[0m                                                                                            &amp;#27;[90m# Steps.iClickOnPaymentIcon()&amp;#27;[0m
     &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select Payment Method &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mCounter&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                                  &amp;#27;[90m# Steps.iSelectPaymentMethod(String)&amp;#27;[0m
@@ -292,21 +425,80 @@ java.lang.NullPointerException
     &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Successful Sign Out&amp;#27;[0m                                                                                       &amp;#27;[90m# Steps.iVerifySuccessfulSignOut()&amp;#27;[0m
     #    PWO
     &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI am on SFWF Back Office Home Page &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mChrome&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                        &amp;#27;[90m# Steps.iAmOnSFWFBackOfficeHomePage(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input WPO Username &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mPWO&amp;#27;[0m&amp;#27;[32m&quot; and Password &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mAdmin@123&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                &amp;#27;[90m# Steps.iInputWPOUsernameAndPassword(String,String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input PWO Username &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mPWO&amp;#27;[0m&amp;#27;[32m&quot; and Password &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mAdmin@123&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                &amp;#27;[90m# Steps.iInputPWOUsernameAndPassword(String,String)&amp;#27;[0m
     &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Sign In button&amp;#27;[0m                                                                                          &amp;#27;[90m# Steps.iClickOnSignInButton()&amp;#27;[0m
     &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Successful Login&amp;#27;[0m                                                                                          &amp;#27;[90m# Steps.IVerifySuccessfulLogin()&amp;#27;[0m
     &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on All Applications&amp;#27;[0m                                                                                        &amp;#27;[90m# Steps.iClickOnAllApplications()&amp;#27;[0m
     &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify display of list of registrations page&amp;#27;[0m                                                                     &amp;#27;[90m# Steps.iVerifyDisplayOfListOfRegistrationsPage()&amp;#27;[0m
-    &amp;#27;[31mAnd &amp;#27;[0m&amp;#27;[31mI Search for Application Ref Number&amp;#27;[0m                                                                                &amp;#27;[90m# Steps.iSearchForApplicationRefNumber()&amp;#27;[0m
-      &amp;#27;[31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//input[@type=&apos;checkbox&apos;])[7]&quot;}
-        (Session info: chrome=127.0.6533.100)
-      For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Search for Application Ref Number as a Back Office User&amp;#27;[0m                                                          &amp;#27;[90m# Steps.iSearchForApplicationRefNumberAsABackOfficeUser()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click to view Application&amp;#27;[0m                                                                                        &amp;#27;[90m# Steps.iClickToViewApplication()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Action Button&amp;#27;[0m                                                                                           &amp;#27;[90m# Steps.iClickOnActionButton()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select Assigned&amp;#27;[0m                                                                                                  &amp;#27;[90m# Steps.iSelectAssigned()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select WPO&amp;#27;[0m                                                                                                       &amp;#27;[90m# Steps.iSelectWPO()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input Remarks &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mThis is a test&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                                   &amp;#27;[90m# Steps.iInputRemarks(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Save Actions&amp;#27;[0m                                                                                            &amp;#27;[90m# Steps.iClickOnSaveActions()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify for success message for assigning&amp;#27;[0m                                                                         &amp;#27;[90m# Steps.iVerifyForSuccessMessageForAssigning()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Sign Out&amp;#27;[0m                                                                                                         &amp;#27;[90m# Steps.iSignOut()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Successful Sign Out&amp;#27;[0m                                                                                       &amp;#27;[90m# Steps.iVerifySuccessfulSignOut()&amp;#27;[0m
+    #    WPO
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI am on SFWF Back Office Home Page &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mChrome&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                        &amp;#27;[90m# Steps.iAmOnSFWFBackOfficeHomePage(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input WPO Username &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mWPO&amp;#27;[0m&amp;#27;[32m&quot; and Password &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mAdmin@123&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                &amp;#27;[90m# Steps.iInputWPOUsernameAndPassword(String,String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Sign In button&amp;#27;[0m                                                                                          &amp;#27;[90m# Steps.iClickOnSignInButton()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Successful Login&amp;#27;[0m                                                                                          &amp;#27;[90m# Steps.IVerifySuccessfulLogin()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on All Applications&amp;#27;[0m                                                                                        &amp;#27;[90m# Steps.iClickOnAllApplications()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify display of list of registrations page&amp;#27;[0m                                                                     &amp;#27;[90m# Steps.iVerifyDisplayOfListOfRegistrationsPage()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Search for Application Ref Number as a Back Office User&amp;#27;[0m                                                          &amp;#27;[90m# Steps.iSearchForApplicationRefNumberAsABackOfficeUser()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click to view Application&amp;#27;[0m                                                                                        &amp;#27;[90m# Steps.iClickToViewApplication()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Action Button&amp;#27;[0m                                                                                           &amp;#27;[90m# Steps.iClickOnActionButton()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select Assigned&amp;#27;[0m                                                                                                  &amp;#27;[90m# Steps.iSelectAssigned()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select WO&amp;#27;[0m                                                                                                        &amp;#27;[90m# Steps.iSelectWO()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input Remarks &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mThis is a test&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                                   &amp;#27;[90m# Steps.iInputRemarks(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Save Actions&amp;#27;[0m                                                                                            &amp;#27;[90m# Steps.iClickOnSaveActions()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify for success message for assigning&amp;#27;[0m                                                                         &amp;#27;[90m# Steps.iVerifyForSuccessMessageForAssigning()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Sign Out&amp;#27;[0m                                                                                                         &amp;#27;[90m# Steps.iSignOut()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Successful Sign Out&amp;#27;[0m                                                                                       &amp;#27;[90m# Steps.iVerifySuccessfulSignOut()&amp;#27;[0m
+    #    WO/WA
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI am on SFWF Back Office Home Page &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mChrome&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                        &amp;#27;[90m# Steps.iAmOnSFWFBackOfficeHomePage(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input WO-WA Username &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mWO&amp;#27;[0m&amp;#27;[32m&quot; and Password &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mAdmin@123&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                               &amp;#27;[90m# Steps.iInputWOWAUsernameAndPassword(String,String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Sign In button&amp;#27;[0m                                                                                          &amp;#27;[90m# Steps.iClickOnSignInButton()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Successful Login&amp;#27;[0m                                                                                          &amp;#27;[90m# Steps.IVerifySuccessfulLogin()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on All Applications&amp;#27;[0m                                                                                        &amp;#27;[90m# Steps.iClickOnAllApplications()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify display of list of registrations page&amp;#27;[0m                                                                     &amp;#27;[90m# Steps.iVerifyDisplayOfListOfRegistrationsPage()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Search for Application Ref Number as a Back Office User&amp;#27;[0m                                                          &amp;#27;[90m# Steps.iSearchForApplicationRefNumberAsABackOfficeUser()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click to view Application&amp;#27;[0m                                                                                        &amp;#27;[90m# Steps.iClickToViewApplication()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Site Report Tab&amp;#27;[0m                                                                                         &amp;#27;[90m# Steps.iClickOnSiteReportTab()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select Bonafide Planter &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mYes&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                                    &amp;#27;[90m# Steps.iSelectBonafidePlanter(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input Site visit remarks &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mThis is a test&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                        &amp;#27;[90m# Steps.iInputSiteVisitRemarks(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Upload Site Report &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1msrc\test\resources\Upload_Test1.pdf&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                         &amp;#27;[90m# Steps.iUploadSiteReport(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify for Document Upload Success Message&amp;#27;[0m                                                                       &amp;#27;[90m# Steps.iVerifyForDocumentUploadSuccessMessage()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Save Button&amp;#27;[0m                                                                                             &amp;#27;[90m# Steps.iClickOnSaveButton()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Site Visit saved success message&amp;#27;[0m                                                                          &amp;#27;[90m# Steps.iVerifySiteVisitSavedSuccessMessage()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Action Button&amp;#27;[0m                                                                                           &amp;#27;[90m# Steps.iClickOnActionButton()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select Assigned&amp;#27;[0m                                                                                                  &amp;#27;[90m# Steps.iSelectAssigned()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select WPO&amp;#27;[0m                                                                                                       &amp;#27;[90m# Steps.iSelectWPO()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input Remarks &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mThis is a test&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                                   &amp;#27;[90m# Steps.iInputRemarks(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Save Actions&amp;#27;[0m                                                                                            &amp;#27;[90m# Steps.iClickOnSaveActions()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify for success message for assigning&amp;#27;[0m                                                                         &amp;#27;[90m# Steps.iVerifyForSuccessMessageForAssigning()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Sign Out&amp;#27;[0m                                                                                                         &amp;#27;[90m# Steps.iSignOut()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Successful Sign Out&amp;#27;[0m                                                                                       &amp;#27;[90m# Steps.iVerifySuccessfulSignOut()&amp;#27;[0m
+    #    WPO
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI am on SFWF Back Office Home Page &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mChrome&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                        &amp;#27;[90m# Steps.iAmOnSFWFBackOfficeHomePage(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input WPO Username &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mWPO&amp;#27;[0m&amp;#27;[32m&quot; and Password &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mAdmin@123&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                &amp;#27;[90m# Steps.iInputWPOUsernameAndPassword(String,String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Sign In button&amp;#27;[0m                                                                                          &amp;#27;[90m# Steps.iClickOnSignInButton()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Successful Login&amp;#27;[0m                                                                                          &amp;#27;[90m# Steps.IVerifySuccessfulLogin()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on All Applications&amp;#27;[0m                                                                                        &amp;#27;[90m# Steps.iClickOnAllApplications()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify display of list of registrations page&amp;#27;[0m                                                                     &amp;#27;[90m# Steps.iVerifyDisplayOfListOfRegistrationsPage()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Search for Application Ref Number as a Back Office User&amp;#27;[0m                                                          &amp;#27;[90m# Steps.iSearchForApplicationRefNumberAsABackOfficeUser()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click to view Application&amp;#27;[0m                                                                                        &amp;#27;[90m# Steps.iClickToViewApplication()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Action Button&amp;#27;[0m                                                                                           &amp;#27;[90m# Steps.iClickOnActionButton()&amp;#27;[0m
+    &amp;#27;[31mAnd &amp;#27;[0m&amp;#27;[31mI Select Under Query&amp;#27;[0m                                                                                               &amp;#27;[90m# Steps.iSelectUnderQuery()&amp;#27;[0m
+      &amp;#27;[31morg.openqa.selenium.ElementNotInteractableException: element not interactable
+        (Session info: chrome=127.0.6533.120)
       Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
-      System info: host: &apos;SIL-LTDELLI7-G6&apos;, ip: &apos;130.1.19.132&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_371&apos;
+      System info: host: &apos;SIL-LTDELLI7-G6&apos;, ip: &apos;192.168.100.33&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_371&apos;
       Driver info: org.openqa.selenium.chrome.ChromeDriver
-      Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}), userDataDir=C:\Users\SURAJ~1.JOG\AppData\Local\Temp\scoped_dir32212_1795059985}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:52415}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=127.0.6533.100, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-      Session ID: 470f4826104fc8eac81e73d4971469c6
-      *** Element info: {Using=xpath, value=(//input[@type=&apos;checkbox&apos;])[7]}
+      Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}), userDataDir=C:\Users\SURAJ~1.JOG\AppData\Local\Temp\scoped_dir9816_739668461}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:60309}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=127.0.6533.120, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+      Session ID: 9c85581a6829f7940fb5da7f17b50075
       	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
       	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
       	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -317,32 +509,108 @@ java.lang.NullPointerException
       	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
       	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
       	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
-      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
-      	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
-      	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
-      	at objectrepository.Payment_process.Select_last_application(Payment_process.java:28)
-      	at stepdefinition.Steps.iSearchForApplicationRefNumber(Steps.java:2063)
-      	at ?.And I Search for Application Ref Number(features/US13280.feature:91)
+      	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+      	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+      	at stepdefinition.Steps.iSelectUnderQuery(Steps.java:2208)
+      	at ?.And I Select Under Query(features/US13280.feature:154)
       &amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input External Remarks &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mThis is a test&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                                                                          &amp;#27;[90m# Steps.iInputExternalRemarks(String)&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Under Query Notification&amp;#27;[0m                                                                                &amp;#27;[90m# Steps.iClickOnUnderQueryNotification()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Success Message for Under Query Notification&amp;#27;[0m                                                              &amp;#27;[90m# Steps.iVerifySuccessMessageForUnderQueryNotification()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Save Actions&amp;#27;[0m                                                                                            &amp;#27;[90m# Steps.iClickOnSaveActions()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify for success message for workflow saved&amp;#27;[0m                                                                    &amp;#27;[90m# Steps.iVerifyForSuccessMessageForWorkflowSaved()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Sign Out&amp;#27;[0m                                                                                                         &amp;#27;[90m# Steps.iSignOut()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Successful Sign Out&amp;#27;[0m                                                                                       &amp;#27;[90m# Steps.iVerifySuccessfulSignOut()&amp;#27;[0m
+    #    Applicant after under query
+    &amp;#27;[36mGiven &amp;#27;[0m&amp;#27;[36mI am on SFWF Front Office Home Page &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mChrome&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                                                                     &amp;#27;[90m# Steps.iAmOnSFWFFrontOfficeHomePage(String)&amp;#27;[0m
+    &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mI Input Registered User&apos;s Username &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mSuraj&amp;#27;[0m&amp;#27;[36m&quot; and Password &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mAdmin@123&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                                               &amp;#27;[90m# Steps.iInputRegisteredUserSUsernameAndPassword(String,String)&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Sign In button&amp;#27;[0m                                                                                          &amp;#27;[90m# Steps.iClickOnSignInButton()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Applicant&apos;s Successful Login&amp;#27;[0m                                                                              &amp;#27;[90m# Steps.iVerifyApplicantSSuccessfulLogin()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Register as Farmer&amp;#27;[0m                                                                                      &amp;#27;[90m# Steps.iClickOnRegisterAsFarmer()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify that User is directed to My Application Page&amp;#27;[0m                                                              &amp;#27;[90m# Steps.iVerifyThatUserIsDirectedToMyApplicationPage()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify display of Farmers Card link&amp;#27;[0m                                                                              &amp;#27;[90m# Steps.iVerifyDisplayOfFarmersCardLink()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Programmes link&amp;#27;[0m                                                                                           &amp;#27;[90m# Steps.iVerifyProgrammesLink()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Search for Application Ref Number for re-submit&amp;#27;[0m                                                                  &amp;#27;[90m# Steps.iSearchForApplicationRefNumberForReSubmit()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify display of REGISTRATION FOR AGRO-PROCESSING ENTERPRISE Page&amp;#27;[0m                                               &amp;#27;[90m# Steps.iVerifyDisplayOfREGISTRATIONFORAGROPROCESSINGENTERPRISEPage()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Save and Continue&amp;#27;[0m                                                                                       &amp;#27;[90m# Steps.iClickOnSaveAndContinue()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Upload Required Documents Page is displayed&amp;#27;[0m                                                               &amp;#27;[90m# Steps.iVerifyUploadRequiredDocumentsPageIsDisplayed()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Save and Continue&amp;#27;[0m                                                                                       &amp;#27;[90m# Steps.iClickOnSaveAndContinue()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Terms and Conditions Page&amp;#27;[0m                                                                                 &amp;#27;[90m# Steps.iVerifyTermsAndConditionsPage()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Submit Application &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mYes&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                                                                                &amp;#27;[90m# Steps.iClickOnSubmitApplication(String)&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Success message for application submitted&amp;#27;[0m                                                                 &amp;#27;[90m# Steps.iVerifySuccessMessageForApplicationSubmitted()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Sign Out as Front Registered User&amp;#27;[0m                                                                                &amp;#27;[90m# Steps.iSignOutAsFrontRegisteredUser()&amp;#27;[0m
+    #    PWO
+    #    And I am on SFWF Back Office Home Page &quot;&lt;Browser&gt;&quot;
+    #    And I Input PWO Username &quot;&lt;PwoUsername&gt;&quot; and Password &quot;&lt;Password&gt;&quot;
+    #    And I Click on Sign In button
+    #    And I Verify Successful Login
+    #    And I Click on All Applications
+    #    And I Verify display of list of registrations page
+    #    And I Search for Application Ref Number as a Back Office User
+    #    And I Click to view Application
+    #    And I Click on Action Button
+    #    And I Select Assigned
+    #    And I Select WPO
+    #    And I Input Remarks &quot;&lt;Remarks&gt;&quot;
+    #    And I Click on Save Actions
+    #    And I Verify for success message for assigning
+    #    And I Sign Out
+    #    And I Verify Successful Sign Out
+    #    WPO
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI am on SFWF Back Office Home Page &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mChrome&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                                                                        &amp;#27;[90m# Steps.iAmOnSFWFBackOfficeHomePage(String)&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input WPO Username &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mWPO&amp;#27;[0m&amp;#27;[36m&quot; and Password &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mAdmin@123&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                                                                &amp;#27;[90m# Steps.iInputWPOUsernameAndPassword(String,String)&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Sign In button&amp;#27;[0m                                                                                          &amp;#27;[90m# Steps.iClickOnSignInButton()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Successful Login&amp;#27;[0m                                                                                          &amp;#27;[90m# Steps.IVerifySuccessfulLogin()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on All Applications&amp;#27;[0m                                                                                        &amp;#27;[90m# Steps.iClickOnAllApplications()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify display of list of registrations page&amp;#27;[0m                                                                     &amp;#27;[90m# Steps.iVerifyDisplayOfListOfRegistrationsPage()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Search for Application Ref Number as a Back Office User&amp;#27;[0m                                                          &amp;#27;[90m# Steps.iSearchForApplicationRefNumberAsABackOfficeUser()&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click to view Application&amp;#27;[0m                                                                                        &amp;#27;[90m# Steps.iClickToViewApplication()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Action Button&amp;#27;[0m                                                                                           &amp;#27;[90m# Steps.iClickOnActionButton()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select Approved to approve the registration application&amp;#27;[0m                                                          &amp;#27;[90m# Steps.iSelectApprovedToApproveTheRegistrationApplication()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input Remarks &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mThis is a test&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                                                                                   &amp;#27;[90m# Steps.iInputRemarks(String)&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Save Actions&amp;#27;[0m                                                                                            &amp;#27;[90m# Steps.iClickOnSaveActions()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify for success message for approval&amp;#27;[0m                                                                          &amp;#27;[90m# Steps.iVerifyForSuccessMessageForApproval()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Sign Out&amp;#27;[0m                                                                                                         &amp;#27;[90m# Steps.iSignOut()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Successful Sign Out&amp;#27;[0m                                                                                       &amp;#27;[90m# Steps.iVerifySuccessfulSignOut()&amp;#27;[0m
+    #    IT Department
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI am on SFWF Back Office Home Page &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mChrome&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                                                                        &amp;#27;[90m# Steps.iAmOnSFWFBackOfficeHomePage(String)&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input IT Department Username &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mIT_DEPT&amp;#27;[0m&amp;#27;[36m&quot; and Password &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mAdmin@123&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                                                  &amp;#27;[90m# Steps.iInputITDepartmentUsernameAndPassword(String,String)&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Sign In button&amp;#27;[0m                                                                                          &amp;#27;[90m# Steps.iClickOnSignInButton()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Successful Login&amp;#27;[0m                                                                                          &amp;#27;[90m# Steps.IVerifySuccessfulLogin()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on All Applications&amp;#27;[0m                                                                                        &amp;#27;[90m# Steps.iClickOnAllApplications()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify display of list of registrations page&amp;#27;[0m                                                                     &amp;#27;[90m# Steps.iVerifyDisplayOfListOfRegistrationsPage()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Search for Application Ref Number as a Back Office User&amp;#27;[0m                                                          &amp;#27;[90m# Steps.iSearchForApplicationRefNumberAsABackOfficeUser()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click to view Application&amp;#27;[0m                                                                                        &amp;#27;[90m# Steps.iClickToViewApplication()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Print Card&amp;#27;[0m                                                                                              &amp;#27;[90m# Steps.iClickOnPrintCard()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Sign Out&amp;#27;[0m                                                                                                         &amp;#27;[90m# Steps.iSignOut()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Successful Sign Out&amp;#27;[0m                                                                                       &amp;#27;[90m# Steps.iVerifySuccessfulSignOut()&amp;#27;[0m
+    #    Applicant verify status - Card Printed
+    &amp;#27;[36mGiven &amp;#27;[0m&amp;#27;[36mI am on SFWF Front Office Home Page &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mChrome&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                                                                     &amp;#27;[90m# Steps.iAmOnSFWFFrontOfficeHomePage(String)&amp;#27;[0m
+    &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mI Input Registered User&apos;s Username &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mSuraj&amp;#27;[0m&amp;#27;[36m&quot; and Password &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mAdmin@123&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                                               &amp;#27;[90m# Steps.iInputRegisteredUserSUsernameAndPassword(String,String)&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Sign In button&amp;#27;[0m                                                                                          &amp;#27;[90m# Steps.iClickOnSignInButton()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Applicant&apos;s Successful Login&amp;#27;[0m                                                                              &amp;#27;[90m# Steps.iVerifyApplicantSSuccessfulLogin()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Register as Farmer&amp;#27;[0m                                                                                      &amp;#27;[90m# Steps.iClickOnRegisterAsFarmer()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify that User is directed to My Application Page&amp;#27;[0m                                                              &amp;#27;[90m# Steps.iVerifyThatUserIsDirectedToMyApplicationPage()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify display of Farmers Card link&amp;#27;[0m                                                                              &amp;#27;[90m# Steps.iVerifyDisplayOfFarmersCardLink()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Programmes link&amp;#27;[0m                                                                                           &amp;#27;[90m# Steps.iVerifyProgrammesLink()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Search for Application Ref Number for to check Status Card Printed&amp;#27;[0m                                               &amp;#27;[90m# Steps.iSearchForApplicationRefNumberForToCheckStatusCardPrinted()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Application Status to be Card Printed&amp;#27;[0m                                                                     &amp;#27;[90m# Steps.iVerifyApplicationStatusToBeCardPrinted()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Sign Out as Front Registered User&amp;#27;[0m                                                                                &amp;#27;[90m# Steps.iSignOutAsFrontRegisteredUser()&amp;#27;[0m
 
 &amp;#27;[31mFailed scenarios:&amp;#27;[0m
-&amp;#27;[31mfeatures/US13280.feature:98 &amp;#27;[0m# Scenario Outline: Approval for Payment at counter for Registration as Agro-Processing Enterprise-Application form
+&amp;#27;[31mfeatures/US13280.feature:244 &amp;#27;[0m# Scenario Outline: Approval for Payment at counter for Registration as Agro-Processing Enterprise-Application form
 
 1 Scenarios (&amp;#27;[31m1 failed&amp;#27;[0m)
-81 Steps (&amp;#27;[31m1 failed&amp;#27;[0m, &amp;#27;[36m1 skipped&amp;#27;[0m, &amp;#27;[32m79 passed&amp;#27;[0m)
-3m33.705s
+199 Steps (&amp;#27;[31m1 failed&amp;#27;[0m, &amp;#27;[36m61 skipped&amp;#27;[0m, &amp;#27;[32m137 passed&amp;#27;[0m)
+3m31.537s
 
-org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//input[@type=&apos;checkbox&apos;])[7]&quot;}
-  (Session info: chrome=127.0.6533.100)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=127.0.6533.120)
 Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
-System info: host: &apos;SIL-LTDELLI7-G6&apos;, ip: &apos;130.1.19.132&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_371&apos;
+System info: host: &apos;SIL-LTDELLI7-G6&apos;, ip: &apos;192.168.100.33&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_371&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}), userDataDir=C:\Users\SURAJ~1.JOG\AppData\Local\Temp\scoped_dir32212_1795059985}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:52415}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=127.0.6533.100, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: 470f4826104fc8eac81e73d4971469c6
-*** Element info: {Using=xpath, value=(//input[@type=&apos;checkbox&apos;])[7]}
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}), userDataDir=C:\Users\SURAJ~1.JOG\AppData\Local\Temp\scoped_dir9816_739668461}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:60309}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=127.0.6533.120, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: 9c85581a6829f7940fb5da7f17b50075
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -353,35 +621,50 @@ Session ID: 470f4826104fc8eac81e73d4971469c6
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
-	at objectrepository.Payment_process.Select_last_application(Payment_process.java:28)
-	at stepdefinition.Steps.iSearchForApplicationRefNumber(Steps.java:2063)
-	at ?.And I Search for Application Ref Number(features/US13280.feature:91)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+	at stepdefinition.Steps.iSelectUnderQuery(Steps.java:2208)
+	at ?.And I Select Under Query(features/US13280.feature:154)
 
 </system-out>
     <system-err>SLF4J: No SLF4J providers were found.
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
-Starting ChromeDriver 127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}) on port 62645
+Starting ChromeDriver 127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}) on port 44853
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Aug 16, 2024 10:42:27 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+Aug 17, 2024 12:18:27 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Starting ChromeDriver 127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}) on port 23823
+Starting ChromeDriver 127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}) on port 60552
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Aug 16, 2024 10:45:04 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+Aug 17, 2024 12:20:08 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Starting ChromeDriver 127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}) on port 28703
+Starting ChromeDriver 127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}) on port 7212
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Aug 16, 2024 10:45:50 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+Aug 17, 2024 12:20:35 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Starting ChromeDriver 127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}) on port 31855
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Aug 17, 2024 12:20:58 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Starting ChromeDriver 127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}) on port 16221
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Aug 17, 2024 12:21:20 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Starting ChromeDriver 127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}) on port 65031
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+Aug 17, 2024 12:21:45 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 log4j:WARN No appenders could be found for logger (freemarker.cache).
 log4j:WARN Please initialize the log4j system properly.

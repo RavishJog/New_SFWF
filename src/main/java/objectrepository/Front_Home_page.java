@@ -113,6 +113,13 @@ public class Front_Home_page {
         return element;
     }
 
+    //Object for Application Status - Card Printed
+    private static By lbl_Application_status_card_printed = By.xpath("//label[contains(.,'Card Printed')]");
+    public static WebElement Application_status_card_printed(WebDriver driver) {
+        element = driver.findElement(lbl_Application_status_card_printed);
+        return element;
+    }
+
     //Object for Payment Status - Pending Payment
     private static By lbl_Payment_status_pending = By.xpath("(//label[contains(.,'Payment Pending')])[1]");
     public static WebElement Payment_status_pending(WebDriver driver) {
@@ -131,6 +138,13 @@ public class Front_Home_page {
     private static By txt_Search_reference_number = By.xpath("(//td[contains(@role,'gridcell')])[3]");
     public static WebElement Search_reference_number(WebDriver driver) {
         element = driver.findElement(txt_Search_reference_number);
+        return element;
+    }
+
+    //Object for Edit Button for registration application
+    private static By btn_Edit = By.xpath("//span[contains(@class,'ui-button-icon-left ui-icon ui-c pi pi-pencil')]");
+    public static WebElement Edit(WebDriver driver) {
+        element = driver.findElement(btn_Edit);
         return element;
     }
 
