@@ -1,6 +1,6 @@
 #User Story 12822 - Payment Process
 
-@Main_feature @US12882/12808
+@Main_feature @US13280
 Feature: User Story 12822 - Payment Process for Registration
 
    #Scenario1
