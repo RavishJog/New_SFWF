@@ -54,7 +54,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Aug 16, 2024 10:42:23 AM</span>
+                    <span class='label suite-start-time blue darken-3'>Aug 17, 2024 12:18:25 PM</span>
 				</a>
 			</li>
 			<li>
@@ -174,10 +174,10 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='97.531%'><span class='strong'>79</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='68.844%'><span class='strong'>137</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='1.235%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='1.235%'>1</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0.503%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='30.653%'>61</span> others
 				</div>
 			</div>
 		</div>
@@ -194,12 +194,12 @@
 				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>User Story 13280 - Back Office Process for Registration</span>
-						<span class='test-time'>Aug 16, 2024 10:42:23 AM</span>
+						<span class='test-time'>Aug 17, 2024 12:18:25 PM</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='scenariooutline node' test-id='2' status='fail'>
-	<span class='duration right label'>0h 3m 32s+948ms</span>
+	<span class='duration right label'>0h 3m 30s+775ms</span>
 	<div class='desc'>
 		<b>ScenarioOutline</b>
 		<span class="desc-text">Approval for Payment at counter for Registration as Agro-Processing Enterprise-Application form</span>
@@ -422,7 +422,7 @@
 							<div class='pre'>passed</div>
 					</li>
 					<li test-id='55' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And Select Application for payment</span>
+						<span class="bdd-step-name">And I Select Application for payment</span>
 							<div class='pre'>passed</div>
 					</li>
 					<li test-id='56' class='node and pass' status='pass'><b>And</b>
@@ -514,7 +514,7 @@
 							<div class='pre'>passed</div>
 					</li>
 					<li test-id='78' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Input WPO Username "PWO" and Password "Admin@123"</span>
+						<span class="bdd-step-name">And I Input PWO Username "PWO" and Password "Admin@123"</span>
 							<div class='pre'>passed</div>
 					</li>
 					<li test-id='79' class='node and pass' status='pass'><b>And</b>
@@ -533,17 +533,247 @@
 						<span class="bdd-step-name">And I Verify display of list of registrations page</span>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='83' class='node and fail' status='fail'><b>And</b>
-						<span class="bdd-step-name">And I Search for Application Ref Number</span>
-							<div class='pre'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//input[@type='checkbox'])[7]"}
-  (Session info: chrome=127.0.6533.100)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+					<li test-id='83' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Search for Application Ref Number as a Back Office User</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='84' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Click to view Application</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='85' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Click on Action Button</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='86' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Select Assigned</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='87' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Select WPO</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='88' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Input Remarks "This is a test"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='89' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Click on Save Actions</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='90' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Verify for success message for assigning</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='91' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Sign Out</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='92' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Verify Successful Sign Out</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='93' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I am on SFWF Back Office Home Page "Chrome"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='94' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Input WPO Username "WPO" and Password "Admin@123"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='95' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Click on Sign In button</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='96' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Verify Successful Login</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='97' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Click on All Applications</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='98' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Verify display of list of registrations page</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='99' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Search for Application Ref Number as a Back Office User</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='100' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Click to view Application</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='101' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Click on Action Button</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='102' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Select Assigned</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='103' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Select WO</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='104' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Input Remarks "This is a test"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='105' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Click on Save Actions</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='106' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Verify for success message for assigning</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='107' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Sign Out</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='108' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Verify Successful Sign Out</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='109' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I am on SFWF Back Office Home Page "Chrome"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='110' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Input WO-WA Username "WO" and Password "Admin@123"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='111' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Click on Sign In button</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='112' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Verify Successful Login</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='113' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Click on All Applications</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='114' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Verify display of list of registrations page</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='115' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Search for Application Ref Number as a Back Office User</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='116' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Click to view Application</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='117' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Click on Site Report Tab</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='118' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Select Bonafide Planter "Yes"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='119' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Input Site visit remarks "This is a test"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='120' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Upload Site Report "src\test\resources\Upload_Test1.pdf"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='121' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Verify for Document Upload Success Message</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='122' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Click on Save Button</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='123' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Verify Site Visit saved success message</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='124' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Click on Action Button</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='125' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Select Assigned</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='126' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Select WPO</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='127' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Input Remarks "This is a test"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='128' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Click on Save Actions</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='129' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Verify for success message for assigning</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='130' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Sign Out</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='131' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Verify Successful Sign Out</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='132' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I am on SFWF Back Office Home Page "Chrome"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='133' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Input WPO Username "WPO" and Password "Admin@123"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='134' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Click on Sign In button</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='135' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Verify Successful Login</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='136' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Click on All Applications</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='137' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Verify display of list of registrations page</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='138' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Search for Application Ref Number as a Back Office User</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='139' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Click to view Application</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='140' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Click on Action Button</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='141' class='node and fail' status='fail'><b>And</b>
+						<span class="bdd-step-name">And I Select Under Query</span>
+							<div class='pre'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=127.0.6533.120)
 Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'SIL-LTDELLI7-G6', ip: '130.1.19.132', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_371'
+System info: host: 'SIL-LTDELLI7-G6', ip: '192.168.100.33', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_371'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}), userDataDir=C:\Users\SURAJ~1.JOG\AppData\Local\Temp\scoped_dir32212_1795059985}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:52415}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=127.0.6533.100, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: 470f4826104fc8eac81e73d4971469c6
-*** Element info: {Using=xpath, value=(//input[@type='checkbox'])[7]}
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}), userDataDir=C:\Users\SURAJ~1.JOG\AppData\Local\Temp\scoped_dir9816_739668461}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:60309}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=127.0.6533.120, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: 9c85581a6829f7940fb5da7f17b50075
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -554,17 +784,254 @@ Session ID: 470f4826104fc8eac81e73d4971469c6
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
-	at objectrepository.Payment_process.Select_last_application(Payment_process.java:28)
-	at stepdefinition.Steps.iSearchForApplicationRefNumber(Steps.java:2063)
-	at ?.And I Search for Application Ref Number(features/US13280.feature:91)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+	at stepdefinition.Steps.iSelectUnderQuery(Steps.java:2208)
+	at ?.And I Select Under Query(features/US13280.feature:154)
 </pre></div>
 					</li>
-					<li test-id='84' class='node and skip' status='skip'><b>And</b>
+					<li test-id='142' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And I Input External Remarks "This is a test"</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='143' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And I Click on Under Query Notification</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='144' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And I Verify Success Message for Under Query Notification</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='145' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And I Click on Save Actions</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='146' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And I Verify for success message for workflow saved</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='147' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And I Sign Out</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='148' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And I Verify Successful Sign Out</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='149' class='node given skip' status='skip'><b>Given</b>
+						<span class="bdd-step-name">Given I am on SFWF Front Office Home Page "Chrome"</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='150' class='node when skip' status='skip'><b>When</b>
+						<span class="bdd-step-name">When I Input Registered User's Username "Suraj" and Password "Admin@123"</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='151' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And I Click on Sign In button</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='152' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And I Verify Applicant's Successful Login</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='153' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And I Click on Register as Farmer</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='154' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And I Verify that User is directed to My Application Page</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='155' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And I Verify display of Farmers Card link</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='156' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And I Verify Programmes link</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='157' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And I Search for Application Ref Number for re-submit</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='158' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And I Verify display of REGISTRATION FOR AGRO-PROCESSING ENTERPRISE Page</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='159' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And I Click on Save and Continue</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='160' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And I Verify Upload Required Documents Page is displayed</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='161' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And I Click on Save and Continue</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='162' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And I Verify Terms and Conditions Page</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='163' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And I Click on Submit Application "Yes"</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='164' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And I Verify Success message for application submitted</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='165' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And I Sign Out as Front Registered User</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='166' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And I am on SFWF Back Office Home Page "Chrome"</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='167' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And I Input WPO Username "WPO" and Password "Admin@123"</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='168' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And I Click on Sign In button</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='169' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And I Verify Successful Login</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='170' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And I Click on All Applications</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='171' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And I Verify display of list of registrations page</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='172' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And I Search for Application Ref Number as a Back Office User</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='173' class='node and skip' status='skip'><b>And</b>
 						<span class="bdd-step-name">And I Click to view Application</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='174' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And I Click on Action Button</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='175' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And I Select Approved to approve the registration application</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='176' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And I Input Remarks "This is a test"</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='177' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And I Click on Save Actions</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='178' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And I Verify for success message for approval</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='179' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And I Sign Out</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='180' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And I Verify Successful Sign Out</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='181' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And I am on SFWF Back Office Home Page "Chrome"</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='182' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And I Input IT Department Username "IT_DEPT" and Password "Admin@123"</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='183' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And I Click on Sign In button</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='184' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And I Verify Successful Login</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='185' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And I Click on All Applications</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='186' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And I Verify display of list of registrations page</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='187' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And I Search for Application Ref Number as a Back Office User</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='188' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And I Click to view Application</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='189' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And I Click on Print Card</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='190' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And I Sign Out</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='191' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And I Verify Successful Sign Out</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='192' class='node given skip' status='skip'><b>Given</b>
+						<span class="bdd-step-name">Given I am on SFWF Front Office Home Page "Chrome"</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='193' class='node when skip' status='skip'><b>When</b>
+						<span class="bdd-step-name">When I Input Registered User's Username "Suraj" and Password "Admin@123"</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='194' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And I Click on Sign In button</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='195' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And I Verify Applicant's Successful Login</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='196' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And I Click on Register as Farmer</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='197' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And I Verify that User is directed to My Application Page</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='198' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And I Verify display of Farmers Card link</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='199' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And I Verify Programmes link</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='200' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And I Search for Application Ref Number for to check Status Card Printed</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='201' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And I Verify Application Status to be Card Printed</span>
+							<div class='pre'>skipped</div>
+					</li>
+					<li test-id='202' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And I Sign Out as Front Registered User</span>
 							<div class='pre'>skipped</div>
 					</li>
 				</ul>
@@ -648,12 +1115,12 @@ Session ID: 470f4826104fc8eac81e73d4971469c6
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 16, 2024 10:42:23 AM</td>
+										<td>Aug 17, 2024 12:18:25 PM</td>
 										<td class='linked' test-id='1'>User Story 13280 - Back Office Process for Registration</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Aug 16, 2024 10:42:23 AM</td>
+										<td>Aug 17, 2024 12:18:25 PM</td>
 										<td class='linked' test-id='3'>User Story 13280 - Back Office Process for Registration.Approval for Payment at counter for Registration as Agro-Processing Enterprise-Application form.Approval for Payment at counter for Registration as Agro-Processing Enterprise-Application form</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
@@ -687,12 +1154,12 @@ Session ID: 470f4826104fc8eac81e73d4971469c6
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 16, 2024 10:42:23 AM</td>
+										<td>Aug 17, 2024 12:18:25 PM</td>
 										<td class='linked' test-id='1'>User Story 13280 - Back Office Process for Registration</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
 									<tr>
-										<td>Aug 16, 2024 10:42:23 AM</td>
+										<td>Aug 17, 2024 12:18:25 PM</td>
 										<td class='linked' test-id='3'>User Story 13280 - Back Office Process for Registration.Approval for Payment at counter for Registration as Agro-Processing Enterprise-Application form.Approval for Payment at counter for Registration as Agro-Processing Enterprise-Application form</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
@@ -726,7 +1193,7 @@ Session ID: 470f4826104fc8eac81e73d4971469c6
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 16, 2024 10:42:23 AM</td>
+										<td>Aug 17, 2024 12:18:25 PM</td>
 										<td class='linked' test-id='3'>User Story 13280 - Back Office Process for Registration.Approval for Payment at counter for Registration as Agro-Processing Enterprise-Application form.Approval for Payment at counter for Registration as Agro-Processing Enterprise-Application form</td>
 										<td><span class='test-status fail'>fail</span></td>
 									</tr>
@@ -774,7 +1241,7 @@ Session ID: 470f4826104fc8eac81e73d4971469c6
 
                         <li class='exception displayed active'>
                             <div class='exception-heading'>
-                                <span class='exception-name'>org.openqa.selenium.NoSuchElementException</span>
+                                <span class='exception-name'>org.openqa.selenium.ElementNotInteractableException</span>
                                 <span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
                             </div>
                             <div class='exception-content hide'>
@@ -789,17 +1256,15 @@ Session ID: 470f4826104fc8eac81e73d4971469c6
                                         </thead>
                                         <tbody>
                                                     <tr>
-                                                        <td>Aug 16, 2024 10:45:54 AM</td>
-                                                        <td class='linked' test-id='83'>User Story 13280 - Back Office Process for Registration.Approval for Payment at counter for Registration as Agro-Processing Enterprise-Application form.Approval for Payment at counter for Registration as Agro-Processing Enterprise-Application form.And I Search for Application Ref Number</td>
-                                                        <td><pre><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//input[@type='checkbox'])[7]"}
-  (Session info: chrome=127.0.6533.100)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+                                                        <td>Aug 17, 2024 12:21:56 PM</td>
+                                                        <td class='linked' test-id='141'>User Story 13280 - Back Office Process for Registration.Approval for Payment at counter for Registration as Agro-Processing Enterprise-Application form.Approval for Payment at counter for Registration as Agro-Processing Enterprise-Application form.And I Select Under Query</td>
+                                                        <td><pre><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=127.0.6533.120)
 Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'SIL-LTDELLI7-G6', ip: '130.1.19.132', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_371'
+System info: host: 'SIL-LTDELLI7-G6', ip: '192.168.100.33', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_371'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}), userDataDir=C:\Users\SURAJ~1.JOG\AppData\Local\Temp\scoped_dir32212_1795059985}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:52415}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=127.0.6533.100, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: 470f4826104fc8eac81e73d4971469c6
-*** Element info: {Using=xpath, value=(//input[@type='checkbox'])[7]}
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}), userDataDir=C:\Users\SURAJ~1.JOG\AppData\Local\Temp\scoped_dir9816_739668461}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:60309}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=127.0.6533.120, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: 9c85581a6829f7940fb5da7f17b50075
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -810,13 +1275,10 @@ Session ID: 470f4826104fc8eac81e73d4971469c6
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
-	at objectrepository.Payment_process.Select_last_application(Payment_process.java:28)
-	at stepdefinition.Steps.iSearchForApplicationRefNumber(Steps.java:2063)
-	at ?.And I Search for Application Ref Number(features/US13280.feature:91)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+	at stepdefinition.Steps.iSelectUnderQuery(Steps.java:2208)
+	at ?.And I Select Under Query(features/US13280.feature:154)
 </pre></pre></td>
                                                     </tr>
                                         </tbody>
@@ -855,25 +1317,25 @@ Session ID: 470f4826104fc8eac81e73d4971469c6
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>81</div>
+					<div class='panel-lead'>199</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Aug 16, 2024 10:42:23 AM</div>
+					<div class='panel-lead'>Aug 17, 2024 12:18:25 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Aug 16, 2024 10:45:57 AM</div>
+			 		<div class='panel-lead'>Aug 17, 2024 12:21:57 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>213,988ms</div>
+					<div class='panel-lead'>211,892ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -970,14 +1432,14 @@ Session ID: 470f4826104fc8eac81e73d4971469c6
 				infoChild: 0,
 				exceptionsChild: 1,
 				
-				passGrandChild: 79,
+				passGrandChild: 137,
 				failGrandChild: 1,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 1,
+				skipGrandChild: 61,
 				infoGrandChild: 0,
-				exceptionsGrandChild: 2,
+				exceptionsGrandChild: 62,
 			};
 		</script>
 		

@@ -438,7 +438,7 @@ public class Steps extends Utility {
     @And("^I Click on Register as Farmer$")
     public void iClickOnRegisterAsFarmer() {
         WebDriverWait w = new WebDriverWait(driver, 5);
-        w.until(ExpectedConditions.visibilityOf(Front_Home_page.Register_as_farmer(driver)));
+        WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(.,'Register as Farmer')]")));
         Front_Home_page.Register_as_farmer(driver).click();
     }
 
@@ -1081,8 +1081,8 @@ public class Steps extends Utility {
 
     }
 
-    @And("^Select Application for payment$")
-    public void selectApplicationForPayment() throws InterruptedException {
+    @And("^I Select Application for payment$")
+    public void IselectApplicationForPayment() throws InterruptedException {
         WebDriverWait w = new WebDriverWait(driver, 5);
         w.until(ExpectedConditions.visibilityOf(Payment_process.Search_reference_number(driver)));
         Payment_process.Search_reference_number(driver).sendKeys(Application_reference_number);
@@ -2032,8 +2032,8 @@ public class Steps extends Utility {
         }
     }
 
-    @And("^I Input WPO Username \"([^\"]*)\" and Password \"([^\"]*)\"$")
-    public void iInputWPOUsernameAndPassword(String PwoUsername, String Password) throws Throwable {
+    @And("^I Input PWO Username \"([^\"]*)\" and Password \"([^\"]*)\"$")
+    public void iInputPWOUsernameAndPassword(String PwoUsername, String Password) throws Throwable {
         Home_page.Username(driver).sendKeys(PwoUsername);
         Home_page.Password(driver).sendKeys(Password);
     }
@@ -2066,10 +2066,14 @@ public class Steps extends Utility {
     }
 
     @And("^I Click to view Application$")
-    public void iClickToViewApplication() {
+    public void iClickToViewApplication() throws InterruptedException {
         Back_office_main_page.View_last_application(driver).click();
+        Thread.sleep(2000);
         WebDriverWait w = new WebDriverWait(driver, 30);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[contains(.,'Action')]")));
+//        Thread.sleep(5000);
+//        WebDriverWait w = new WebDriverWait(driver, 10);
+//        w.until(ExpectedConditions.visibilityOf(Back_office_main_page.Action_side_bar(driver)));
     }
 
     @And("^I Search for Application Ref Number as a Back Office User$")
@@ -2079,9 +2083,233 @@ public class Steps extends Utility {
     }
 
     @And("^I Click on Action Button$")
-    public void iClickOnActionButton() {
+    public void iClickOnActionButton() throws InterruptedException {
         Back_office_main_page.Action_back_office_users(driver).click();
+//        WebDriverWait w = new WebDriverWait(driver, 30);
+//        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("///h3[contains(.,'Actions')]")));
+//        Thread.sleep(5000);
+        WebDriverWait w = new WebDriverWait(driver, 10);
+        WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h3[contains(.,'Actions')]")));
+    }
+
+    @And("^I Select Assigned$")
+    public void iSelectAssigned() throws InterruptedException {
+        Back_office_main_page.Action_select_one(driver).click();
+        Thread.sleep(1500);
+        Back_office_main_page.Action_Assigned(driver).click();
         WebDriverWait w = new WebDriverWait(driver, 30);
-        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("///h3[contains(.,'Actions')]")));
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//label[contains(.,'Select Users')]")));
+
+
+    }
+
+    @And("^I Select WPO$")
+    public void iSelectWPO() throws InterruptedException {
+        Back_office_main_page.User_select_one(driver).click();
+        Thread.sleep(1500);
+        Back_office_main_page.User_select_WPO(driver).click();
+    }
+
+    @And("^I Input Remarks \"([^\"]*)\"$")
+    public void iInputRemarks(String Remarks) throws Throwable {
+        Back_office_main_page.Action_remarks(driver).sendKeys(Remarks);
+    }
+
+    @And("^I Click on Save Actions$")
+    public void iClickOnSaveActions() {
+        Back_office_main_page.Action_save(driver).click();
+    }
+
+    @And("^I Verify for success message for assigning$")
+    public void iVerifyForSuccessMessageForAssigning() {
+        WebDriverWait w = new WebDriverWait(driver, 30);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[contains(.,'Action Assigned done successfully.')])[2]")));
+        try {
+            Back_office_main_page.Success_message_assign(driver);
+        } catch (Exception e) {
+            System.out.println("Success message for assigning did not appear");
+            Assert.fail("Success message for assigning did not appear");
+        }
+    }
+
+    @And("^I Input WPO Username \"([^\"]*)\" and Password \"([^\"]*)\"$")
+    public void iInputWPOUsernameAndPassword(String WpoUsername, String Password) throws Throwable {
+        Home_page.Username(driver).sendKeys(WpoUsername);
+        Home_page.Password(driver).sendKeys(Password);
+    }
+
+    @And("^I Select WO$")
+    public void iSelectWO() throws InterruptedException {
+        Back_office_main_page.User_select_one(driver).click();
+        Thread.sleep(1500);
+        Back_office_main_page.User_select_WO(driver).click();
+    }
+
+    @And("^I Click on Site Report Tab$")
+    public void iClickOnSiteReportTab() {
+        Back_office_main_page.Site_report(driver).click();
+        WebDriverWait w = new WebDriverWait(driver, 30);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h6[contains(.,'Site Visit Report')]")));
+    }
+
+    @And("^I Select Bonafide Planter \"([^\"]*)\"$")
+    public void iSelectBonafidePlanter(String Bonafide) throws Throwable {
+        if (Bonafide.equals("Yes")) {
+            Back_office_main_page.Bonafide_yes(driver).click();
+        } else if
+        (Bonafide.equals("No")){
+            Back_office_main_page.Bonafide_no(driver).click();
+        } else {
+            System.out.println("Bonafide option is not valid");
+           Assert.fail("Bonafide option is not valid");
+
+        }
+    }
+
+    @And("^I Upload Site Report \"([^\"]*)\"$")
+    public void iUploadSiteReport(String Upload_test) throws Throwable {
+        String filePath = new File(Upload_test).getAbsolutePath();
+        Back_office_main_page.Upload_site_visit(driver).sendKeys(filePath);
+        WebDriverWait w = new WebDriverWait(driver, 30);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[contains(@class,'ui-button-icon-left ui-icon ui-c pi pi-download')]")));
+
+    }
+
+    @And("^I Click on Save Button$")
+    public void iClickOnSaveButton() throws InterruptedException {
+        Back_office_main_page.Save_Back_office_users(driver).click();
+        WebDriverWait w = new WebDriverWait(driver, 30);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[contains(.,'Site Visit successfully saved!')])")));
+    }
+
+    @And("^I Input Site visit remarks \"([^\"]*)\"$")
+    public void iInputSiteVisitRemarks(String Remarks) throws Throwable {
+        Back_office_main_page.Site_visit_remarks(driver).sendKeys(Remarks);
+    }
+
+    @And("^I Verify Site Visit saved success message$")
+    public void iVerifySiteVisitSavedSuccessMessage() {
+        try {
+            Back_office_main_page.Site_visit_saved_success_message(driver);
+        } catch (Exception e) {
+            System.out.println("Site Visit saved success message did not appear");
+            Assert.fail("Site Visit saved success message did not appear");
+        }
+    }
+
+    @And("^I Input WO-WA Username \"([^\"]*)\" and Password \"([^\"]*)\"$")
+    public void iInputWOWAUsernameAndPassword(String WOUsername, String Password) throws Throwable {
+        Home_page.Username(driver).sendKeys(WOUsername);
+        Home_page.Password(driver).sendKeys(Password);
+    }
+
+    @And("^I Select Under Query$")
+    public void iSelectUnderQuery() throws InterruptedException {
+        Back_office_main_page.Action_select_one(driver).click();
+        Thread.sleep(1500);
+        Back_office_main_page.Action_Under_Query(driver).click();
+        WebDriverWait w = new WebDriverWait(driver, 30);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//label[contains(.,'External Remarks')]")));
+
+    }
+
+    @And("^I Input External Remarks \"([^\"]*)\"$")
+    public void iInputExternalRemarks(String Remarks) throws Throwable {
+        Back_office_main_page.Action_External_remarks(driver).sendKeys(Remarks);
+    }
+
+    @And("^I Click on Under Query Notification$")
+    public void iClickOnUnderQueryNotification() {
+        Back_office_main_page.Under_query_notif_send(driver).click();
+        WebDriverWait w = new WebDriverWait(driver, 10);
+        WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(.,'Mail has been sent successfully')]")));
+    }
+
+
+    @And("^I Verify Success Message for Under Query Notification$")
+    public void iVerifySuccessMessageForUnderQueryNotification() {
+        WebDriverWait w = new WebDriverWait(driver, 30);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[contains(.,'Mail has been sent successfully')]")));
+        try {
+            Back_office_main_page.Under_query_mail_success_message(driver);
+        } catch (Exception e) {
+            System.out.println("Success Message for Under Query Notification did not appear");
+            Assert.fail("Success Message for Under Query Notification did not appear");
+        }
+    }
+
+    @And("^I Verify for success message for workflow saved$")
+    public void iVerifyForSuccessMessageForWorkflowSaved() {
+        WebDriverWait w = new WebDriverWait(driver, 30);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[contains(.,'Workflow was successfully saved')]")));
+        try {
+            Back_office_main_page.Workflow_success_message(driver);
+        } catch (Exception e) {
+            System.out.println("Success message for workflow saved did not appear");
+            Assert.fail("Success message for workflow saved did not appear");
+        }
+    }
+
+    @And("^I Search for Application Ref Number for re-submit$")
+    public void iSearchForApplicationRefNumberForReSubmit() throws InterruptedException {
+        WebDriverWait w = new WebDriverWait(driver, 5);
+        w.until(ExpectedConditions.visibilityOf(Payment_process.Search_reference_number(driver)));
+        Payment_process.Search_reference_number(driver).sendKeys(Application_reference_number);
+        Thread.sleep(2000);
+        Front_Home_page.Edit(driver).click();
+
+    }
+
+    @And("^I Select Approved to approve the registration application$")
+    public void iSelectApprovedToApproveTheRegistrationApplication() throws InterruptedException {
+        Back_office_main_page.Action_select_one(driver).click();
+        Thread.sleep(1500);
+        Back_office_main_page.Action_Approved(driver).click();
+        WebDriverWait w = new WebDriverWait(driver, 30);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//label[contains(.,'Remarks')])[2]")));
+
+    }
+
+    @And("^I Verify for success message for approval$")
+    public void iVerifyForSuccessMessageForApproval() {
+        WebDriverWait w = new WebDriverWait(driver, 30);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[contains(.,'Action Approved done successfully.')])[2]")));
+        try {
+            Back_office_main_page.Success_message_approve(driver);
+        } catch (Exception e) {
+            System.out.println("Success message for approval did not appear");
+            Assert.fail("Success message for approval did not appear");
+        }
+    }
+
+    @And("^I Input IT Department Username \"([^\"]*)\" and Password \"([^\"]*)\"$")
+    public void iInputITDepartmentUsernameAndPassword(String ITUsername, String Password) throws Throwable {
+        Home_page.Username(driver).sendKeys(ITUsername);
+        Home_page.Password(driver).sendKeys(Password);
+    }
+
+    @And("^I Click on Print Card$")
+    public void iClickOnPrintCard() throws InterruptedException {
+        Back_office_main_page.Print_card(driver).click();
+        Thread.sleep(3000);
+    }
+
+    @And("^I Search for Application Ref Number for to check Status Card Printed$")
+    public void iSearchForApplicationRefNumberForToCheckStatusCardPrinted() throws InterruptedException {
+        WebDriverWait w = new WebDriverWait(driver, 5);
+        WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//input[@role='textbox'])[1]")));
+        Payment_process.Search_reference_number(driver).sendKeys(Application_reference_number);
+        Thread.sleep(2000);
+    }
+
+
+    @And("^I Verify Application Status to be Card Printed$")
+    public void iVerifyApplicationStatusToBeCardPrinted() {
+        try {
+            Front_Home_page.Application_status_card_printed(driver);
+        } catch (Exception e) {
+            System.out.println("Card Printed Status did not appear");
+            Assert.fail("Card Printed Status did not appear");
+        }
     }
 }
