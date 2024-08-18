@@ -2016,7 +2016,7 @@ public class Steps extends Utility {
 //        WebDriverWait w = new WebDriverWait(driver, 5);
 //        w.until(ExpectedConditions.visibilityOf(Back_office_main_page.Save_payment(driver)));
         Back_office_main_page.Save_payment(driver).click();
-        WebDriverWait w = new WebDriverWait(driver, 180);
+        WebDriverWait w = new WebDriverWait(driver, 1000);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[contains(.,'Payment confirmed')])[2]")));
     }
 
@@ -2273,13 +2273,14 @@ public class Steps extends Utility {
     @And("^I Verify for success message for approval$")
     public void iVerifyForSuccessMessageForApproval() {
         WebDriverWait w = new WebDriverWait(driver, 30);
-        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[contains(.,'Action Approved done successfully.')])[2]")));
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[contains(.,'Action Approved done successfully.')]")));
         try {
             Back_office_main_page.Success_message_approve(driver);
         } catch (Exception e) {
             System.out.println("Success message for approval did not appear");
             Assert.fail("Success message for approval did not appear");
         }
+
     }
 
     @And("^I Input IT Department Username \"([^\"]*)\" and Password \"([^\"]*)\"$")
@@ -2311,5 +2312,16 @@ public class Steps extends Utility {
             System.out.println("Card Printed Status did not appear");
             Assert.fail("Card Printed Status did not appear");
         }
+    }
+
+    @And("^I Select PWO Assigned$")
+    public void iSelectPWOAssigned() throws InterruptedException {
+        Back_office_main_page.Action_PWO_select_one(driver).click();
+        Thread.sleep(1500);
+        Back_office_main_page.Action_Assigned(driver).click();
+        WebDriverWait w = new WebDriverWait(driver, 30);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//label[contains(.,'Select Users')]")));
+
+
     }
 }
