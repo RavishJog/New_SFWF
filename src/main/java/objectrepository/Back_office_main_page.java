@@ -155,7 +155,14 @@ public class Back_office_main_page {
         return element;
     }
 
-    //Object for Action - Select One
+    //Object for Action - Select One - PWO
+    private static By lbl_Action_PWO_select_one = By.xpath("(//span[@class='ui-icon ui-icon-triangle-1-s ui-c'])[3]");
+    public static WebElement Action_PWO_select_one(WebDriver driver) {
+        element = driver.findElement(lbl_Action_PWO_select_one);
+        return element;
+    }
+
+    //Object for Action - Select One - Other BO
     private static By lbl_Action_select_one = By.xpath("(//span[@class='ui-icon ui-icon-triangle-1-s ui-c'])[2]");
     public static WebElement Action_select_one(WebDriver driver) {
         element = driver.findElement(lbl_Action_select_one);
