@@ -91,7 +91,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Search for Application Ref Number as a Back Office User
     And I Click to view Application
     And I Click on Action Button
-    And I Select PWO Assigned
+    And I Select PWO Assigned (For REGISTRATION FOR AGRO-PROCESSING ENTERPRISE)
     And I Select WPO
     And I Input Remarks "<Remarks>"
     And I Click on Save Actions

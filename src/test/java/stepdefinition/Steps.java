@@ -1422,6 +1422,7 @@ public class Steps extends Utility {
 
     @And("^I Verify Display of Particulars of Family Beneficiaries Page$")
     public void iVerifyDisplayOfParticularsOfFamilyBeneficiariesPage() {
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);", Small_planters.Particulars_family_ben_page(driver));
         WebDriverWait w = new WebDriverWait(driver, 10);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h6[contains(.,'Particulars of Family and Beneficiaries')]")));
         try {
@@ -2323,5 +2324,220 @@ public class Steps extends Utility {
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//label[contains(.,'Select Users')]")));
 
 
+    }
+
+    @And("^I Select PWO Assigned \\(For REGISTRATION FOR AGRO-PROCESSING ENTERPRISE\\)$")
+    public void iSelectPWOAssignedForREGISTRATIONFORAGROPROCESSINGENTERPRISE() throws InterruptedException {
+        Back_office_main_page.Action_PWO2_select_one(driver).click();
+        Thread.sleep(1500);
+        Back_office_main_page.Action_Assigned(driver).click();
+        WebDriverWait w = new WebDriverWait(driver, 30);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//label[contains(.,'Select Users')]")));
+
+
+    }
+
+    @And("^I Click on Tea Grower Icon$")
+    public void iClickOnTeaGrowerIcon() throws InterruptedException {
+        Tea_grower.Tea_grower_icon(driver).click();
+        Thread.sleep(2000);
+    }
+
+    @And("^I Verify display of REGISTRATION FOR TEA GROWERS Page$")
+    public void iVerifyDisplayOfREGISTRATIONFORTEAGROWERSPage() {
+        WebDriverWait w = new WebDriverWait(driver, 30);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h5[contains(.,'REGISTRATION FOR TEA GROWER')]")));
+
+        try {
+            Tea_grower.Tea_grower_page_title(driver);
+        } catch (Exception e) {
+            System.out.println("REGISTRATION FOR TEA GROWERS Page did not appear");
+            Assert.fail("REGISTRATION FOR TEA GROWERS Page Page page did not appear");
+        }
+    }
+
+    @And("^I Select an Applicant Title \"([^\"]*)\"$")
+    public void iSelectAnApplicantTitle(String Applicant_Title) throws Throwable {
+        Thread.sleep(1500);
+        if (Applicant_Title.equals("Mr")){
+            try {
+                Tea_grower.Title_Select_one(driver).click();
+            } catch (Exception e) {
+                System.out.println("Could not Select One");
+                Assert.fail("Could not Select One");
+            }
+            Thread.sleep(1000);
+            Tea_grower.Title_Mr(driver).click();
+            System.out.println("Mr is working");
+
+
+        }else if (Applicant_Title.equals("Mrs")){
+            try {
+                Tea_grower.Title_Select_one(driver).click();
+            } catch (Exception e) {
+                System.out.println("Could not Select One");
+                Assert.fail("Could not Select One");
+            }
+            Thread.sleep(1000);
+            Tea_grower.Title_Mrs(driver).click();
+            System.out.println("Mrs is working");
+
+        }else if (Applicant_Title.equals("Miss")){
+            try {
+                Tea_grower.Title_Select_one(driver).click();
+            } catch (Exception e) {
+                System.out.println("Could not Select One");
+                Assert.fail("Could not Select One");
+            }
+            Thread.sleep(1000);
+            Tea_grower.Title_Miss(driver).click();
+            System.out.println("Miss is working");
+
+        }
+        else {
+            System.out.println("Option is Not Valid");
+            Assert.fail("Option is Not Valid");
+        }
+    }
+
+    @And("^I Select Applicant Education Level \"([^\"]*)\"$")
+    public void iSelectApplicantEducationLevel(String Education_Level) throws Throwable {
+        Thread.sleep(1500);
+        if (Education_Level.equals("Primary")){
+            Tea_grower.Education_Select_one(driver).click();
+            Thread.sleep(2000);
+            Tea_grower.Education_primary(driver).click();
+            System.out.println("Education Level is working");
+
+        }else if (Education_Level.equals("Secondary")){
+            Tea_grower.Education_Select_one(driver).click();
+            Thread.sleep(2000);
+            Tea_grower.Education_secondary(driver).click();
+            System.out.println("Education Level is working");
+
+
+        }else if (Education_Level.equals("Tertiary")){
+            Tea_grower.Education_Select_one(driver).click();
+            Thread.sleep(2000);
+            Tea_grower.Education_tertiary(driver).click();
+            System.out.println("Education Level is working");
+
+        }else {
+            System.out.println("Option is Not Valid");
+            Assert.fail("Option is Not Valid");
+        }
+    }
+
+    @And("^I Verify Display of Particulars for Registration of Tea Plantation$")
+    public void iVerifyDisplayOfParticularsForRegistrationOfTeaPlantation() {
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);",  Tea_grower.Particulars_for_Registration_of_Tea_Plantation_page(driver));
+        WebDriverWait w = new WebDriverWait(driver, 10);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h6[contains(.,'Particulars for Registration of Tea Plantation')]")));
+        try {
+            Tea_grower.Particulars_for_Registration_of_Tea_Plantation_page(driver);
+        } catch (Exception e) {
+            System.out.println("Particulars for Registration of Tea Plantation Page did not appear");
+            Assert.fail("Particulars for Registration of Tea Plantation Page did not appear");
+        }
+    }
+
+    @And("^I Click on Add Tea Plantation$")
+    public void iClickOnAddTeaPlantation() throws InterruptedException {
+        Thread.sleep(1500);
+        try {
+            Tea_grower.Add_tea_plantation(driver);
+        } catch (Exception e){
+            Assert.fail("Add Tea Plantation is not clickable");
+        }
+        Thread.sleep(1500);
+        Tea_grower.Add_tea_plantation(driver).click();
+    }
+
+    @And("^I Verify Display of Particulars for Registration of Tea Plantation Table$")
+    public void iVerifyDisplayOfParticularsForRegistrationOfTeaPlantationTable() throws InterruptedException {
+        Thread.sleep(3000);
+        WebDriverWait w = new WebDriverWait(driver, 5);
+        w.until(ExpectedConditions.visibilityOf(Tea_grower.Particulars_of_tea_tab(driver)));
+        try {
+            Tea_grower.Particulars_of_tea_tab(driver);
+        } catch (Exception e) {
+            System.out.println("Particulars for Registration of Tea Plantation Table did not appear");
+            Assert.fail("Particulars for Registration of Tea Plantation Table did not appear");
+        }
+    }
+
+    @And("^I Input License No \"([^\"]*)\"$")
+    public void iInputLicenseNo(String License) throws Throwable {
+        Tea_grower.License_No(driver).sendKeys(License);
+    }
+
+    @And("^I Select Type of Owner \"([^\"]*)\"$")
+    public void iSelectTypeOfOwner(String Owner_Type) throws Throwable {
+        Tea_grower.Select_one_owner_type_tea(driver).click();
+        Thread.sleep(1500);
+        if (Owner_Type.equals("Owner")){
+            Tea_grower.Owner_owner_type_tea(driver).click();
+            System.out.println("Owner is working fine");
+        }else if(Owner_Type.equals("Tenant")){
+            Tea_grower.Tenant_owner_type_tea(driver).click();
+            System.out.println("Tenant is working fine");
+        }else{
+            System.out.println("Owner Type option is not valid");
+            Assert.fail("Owner Type option is not valid");
+        }
+    }
+
+    @And("^I Select Family relationship for tea grower \"([^\"]*)\"$")
+    public void iSelectFamilyRelationshipForTeaGrower(String Relationship) throws Throwable {
+        sleep(1500);
+        if (Relationship.equals("Spouse")){
+            try {
+                Tea_grower.Family_Select_one(driver).click();
+            } catch (Exception e) {
+                System.out.println("Family - Could not Select One");
+                Assert.fail("Family - Could not Select One");
+            }
+            sleep(1000);
+            Tea_grower.Family_spouse(driver).click();
+            System.out.println("Spouse option is working");
+
+
+        }else if (Relationship.equals("Child 1")){
+            try {
+                Tea_grower.Family_Select_one(driver).click();
+            } catch (Exception e) {
+                System.out.println("Family - Could not Select One");
+                Assert.fail("Family - Could not Select One");
+            }
+            sleep(1000);
+            Tea_grower.Family_child_one(driver).click();
+            System.out.println("Child 1 is working");
+
+        }else if (Relationship.equals("Child 2")){
+            try {
+                Tea_grower.Family_Select_one(driver).click();
+            } catch (Exception e) {
+                System.out.println("Family - Could not Select One");
+                Assert.fail("Family - Could not Select One");
+            }
+            sleep(1000);
+            Tea_grower.Family_child_two(driver).click();
+            System.out.println("Child 2 is working");
+
+        }else if (Relationship.equals("Child 3")){
+            try {
+                Tea_grower.Family_Select_one(driver).click();
+            } catch (Exception e) {
+                System.out.println("Family - Could not Select One");
+                Assert.fail("Family - Could not Select One");
+            }
+            sleep(1000);
+            Tea_grower.Family_child_three(driver).click();
+            System.out.println("Child 3 is working");
+
+        }
+        else {
+            System.out.println("Family Option is Not Valid");
+        }
     }
 }
