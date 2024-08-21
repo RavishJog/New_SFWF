@@ -2457,7 +2457,7 @@ public class Steps extends Utility {
     public void iVerifyDisplayOfParticularsForRegistrationOfTeaPlantationTable() throws InterruptedException {
         Thread.sleep(3000);
         WebDriverWait w = new WebDriverWait(driver, 5);
-        w.until(ExpectedConditions.visibilityOf(Tea_grower.Particulars_of_tea_tab(driver)));
+        WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(.,'Particulars for Registration of Tea Plantation')]")));
         try {
             Tea_grower.Particulars_of_tea_tab(driver);
         } catch (Exception e) {
@@ -2538,6 +2538,143 @@ public class Steps extends Utility {
         }
         else {
             System.out.println("Family Option is Not Valid");
+        }
+    }
+
+    @And("^I Click on Small Breeder Icon$")
+    public void iClickOnSmallBreederIcon() throws InterruptedException {
+        Small_breeder.Small_breeder_icon(driver).click();
+        Thread.sleep(2000);
+    }
+
+    @And("^I Verify display of REGISTRATION FOR SMALL BREEDERS page$")
+    public void iVerifyDisplayOfREGISTRATIONFORSMALLBREEDERSPage() {
+        WebDriverWait w = new WebDriverWait(driver, 30);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h5[contains(.,'REGISTRATION FOR SMALL BREEDERS')]")));
+
+        try {
+            Small_breeder.Small_breeder_page_title(driver);
+        } catch (Exception e) {
+            System.out.println("REGISTRATION FOR SMALL BREEDERS page did not appear");
+            Assert.fail("REGISTRATION FOR SMALL BREEDERS page did not appear");
+        }
+    }
+
+    @And("^I Verify Display of Livestock Activity$")
+    public void iVerifyDisplayOfLivestockActivity() {
+
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);",  Small_breeder.Livestock_activity_page(driver));
+        WebDriverWait w = new WebDriverWait(driver, 10);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h6[contains(.,'Livestock Activity')]")));
+        try {
+            Small_breeder.Livestock_activity_page(driver);
+        } catch (Exception e) {
+            System.out.println("Livestock Activity Page did not appear");
+            Assert.fail("Livestock Activity Page did not appear");
+        }
+    }
+
+    @And("^I Click on Add Livestock Activity$")
+    public void iClickOnAddLivestockActivity() throws InterruptedException {
+        Thread.sleep(1500);
+        try {
+            Small_breeder.Add_livestock_activity(driver);
+        } catch (Exception e){
+            Assert.fail("Add Livestock Activity is not clickable");
+        }
+        Thread.sleep(1500);
+        Small_breeder.Add_livestock_activity(driver).click();
+    }
+
+    @And("^I Verify Display of Particulars for Livestock Activity Table$")
+    public void iVerifyDisplayOfParticularsForLivestockActivityTable() throws InterruptedException {
+        Thread.sleep(3000);
+        WebDriverWait w = new WebDriverWait(driver, 5);
+        WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(@id,'dlglivestock_title')]")));
+        try {
+            Small_breeder.Particulars_of_livestock_activity_tab(driver);
+        } catch (Exception e) {
+            System.out.println("Particulars for Livestock Activity Table did not appear");
+            Assert.fail("Particulars for Livestock Activity Table did not appear");
+        }
+    }
+
+    @And("^I Save Livestock Activity$")
+    public void iSaveLivestockActivity() throws InterruptedException {
+        Small_breeder.Save_livestock_activity(driver).click();
+        Thread.sleep(1000);
+    }
+
+    @And("^I Select Species \"([^\"]*)\"$")
+    public void iSelectSpecies(String Spicies) throws Throwable {
+        try {
+            Small_breeder.Species_select_one(driver).click();
+            Thread.sleep(1500);
+        } catch (Exception e){
+            System.out.println("Species Select One is not working");
+            Assert.fail("Species Select One is not working");
+        }
+
+        if (Spicies.equals("Cattle")){
+            Small_breeder.Species_cattle(driver).click();
+            System.out.println("Cattle is working fine");
+        }else if(Spicies.equals("Pig")){
+            Small_breeder.Species_pig(driver).click();
+            System.out.println("Pig is working fine");
+        }else if(Spicies.equals("Poultry")){
+            Small_breeder.Species_poultry(driver).click();
+            System.out.println("Poultry is working fine");
+        }else if(Spicies.equals("Goat")){
+            Small_breeder.Species_goat(driver).click();
+            System.out.println("Goat is working fine");
+        }else if(Spicies.equals("Deer")){
+            Small_breeder.Species_deer(driver).click();
+            System.out.println("Pig is working fine");
+        }else if(Spicies.equals("Rabbit")){
+            Small_breeder.Species_rabbit(driver).click();
+            System.out.println("Rabbit is working fine");
+        }else if(Spicies.equals("Sheep")){
+            Small_breeder.Species_sheep(driver).click();
+            System.out.println("Sheep is working fine");
+        }else if(Spicies.equals("Honey Bee")){
+            Small_breeder.Species_honeybee(driver).click();
+            System.out.println("Honey Bee is working fine");
+        }else{
+            System.out.println("Species option is not valid");
+            Assert.fail("Species option is not valid");
+        }
+
+    }
+
+    @And("^I Input Number of Male and Female \"([^\"]*)\"$")
+    public void iInputNumberOfMaleAndFemale(String Male_Female_Number) throws Throwable {
+        Small_breeder.Male_female_number(driver).sendKeys(Male_Female_Number);
+    }
+
+    @And("^I Input Total Heads \"([^\"]*)\"$")
+    public void iInputTotalHeads(String Total_Heads) throws Throwable {
+        Small_breeder.Total_heads(driver).sendKeys(Total_Heads);
+    }
+
+    @And("^I Select Reason \"([^\"]*)\"$")
+    public void iSelectReason(String Reason) throws Throwable {
+        try {
+            Small_breeder.Reason_select_one(driver).click();
+            Thread.sleep(1500);
+        } catch (Exception e){
+            System.out.println("Reason Select One is not working");
+            Assert.fail("Reason Select One is not working");
+        }
+
+        if (Reason.equals("Milk")){
+            Small_breeder.Reason_milk(driver).click();
+            System.out.println("Milk is working fine");
+        }else if(Reason.equals("Meat")){
+            Small_breeder.Reason_meat(driver).click();
+            System.out.println("Meat is working fine");
+        }else{
+            System.out.println("Reason option is not valid");
+            Assert.fail("Reason option is not valid");
         }
     }
 }

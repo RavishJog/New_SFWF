@@ -2,15 +2,15 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="cucumbertest.TestRunner_web" duration-ms="84155" started-at="2024-08-21T07:17:48Z" finished-at="2024-08-21T07:19:12Z">
+  <suite name="cucumbertest.TestRunner_web" duration-ms="111173" started-at="2024-08-21T12:35:42Z" finished-at="2024-08-21T12:37:33Z">
     <groups>
       <group name="Web">
         <method signature="TestRunner_web.runCukes()[pri:0, instance:cucumbertest.TestRunner_web@42dafa95]" name="runCukes" class="cucumbertest.TestRunner_web"/>
       </group> <!-- Web -->
     </groups>
-    <test name="Command line test" duration-ms="84155" started-at="2024-08-21T07:17:48Z" finished-at="2024-08-21T07:19:12Z">
+    <test name="Command line test" duration-ms="111173" started-at="2024-08-21T12:35:42Z" finished-at="2024-08-21T12:37:33Z">
       <class name="cucumbertest.TestRunner_web">
-        <test-method status="FAIL" signature="runCukes()[pri:0, instance:cucumbertest.TestRunner_web@42dafa95]" name="runCukes" duration-ms="84138" started-at="2024-08-21T11:17:48Z" description="Example of using TestNGCucumberRunner to invoke Cucumber" finished-at="2024-08-21T11:19:12Z">
+        <test-method status="FAIL" signature="runCukes()[pri:0, instance:cucumbertest.TestRunner_web@42dafa95]" name="runCukes" duration-ms="111124" started-at="2024-08-21T16:35:42Z" description="Example of using TestNGCucumberRunner to invoke Cucumber" finished-at="2024-08-21T16:37:33Z">
           <exception class="cucumber.runtime.CucumberException">
             <message>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h6[contains(.,'Terms and Conditions')]"}
@@ -19,8 +19,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
 System info: host: 'SIL-LTDELLI7-G6', ip: '130.1.19.132', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_371'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}), userDataDir=C:\Users\SURAJ~1.JOG\AppData\Local\Temp\scoped_dir16088_1191589554}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:54132}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=127.0.6533.120, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: f06e1880ff6c8fa31d596e60bceb6bd1
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}), userDataDir=C:\Users\SURAJ~1.JOG\AppData\Local\Temp\scoped_dir15420_55071313}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:50489}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=127.0.6533.120, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: d849ae67962d3a38a0ad7325f1f130a2
 *** Element info: {Using=xpath, value=//h6[contains(.,'Terms and Conditions')]}]]>
             </message>
             <full-stacktrace>
@@ -30,8 +30,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
 System info: host: 'SIL-LTDELLI7-G6', ip: '130.1.19.132', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_371'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}), userDataDir=C:\Users\SURAJ~1.JOG\AppData\Local\Temp\scoped_dir16088_1191589554}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:54132}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=127.0.6533.120, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: f06e1880ff6c8fa31d596e60bceb6bd1
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}), userDataDir=C:\Users\SURAJ~1.JOG\AppData\Local\Temp\scoped_dir15420_55071313}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:50489}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=127.0.6533.120, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: d849ae67962d3a38a0ad7325f1f130a2
 *** Element info: {Using=xpath, value=//h6[contains(.,'Terms and Conditions')]}
 	at cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:57)
 	at cucumbertest.TestRunner_web.runCukes(TestRunner_web.java:25)
@@ -74,8 +74,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
 System info: host: 'SIL-LTDELLI7-G6', ip: '130.1.19.132', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_371'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}), userDataDir=C:\Users\SURAJ~1.JOG\AppData\Local\Temp\scoped_dir16088_1191589554}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:54132}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=127.0.6533.120, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: f06e1880ff6c8fa31d596e60bceb6bd1
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}), userDataDir=C:\Users\SURAJ~1.JOG\AppData\Local\Temp\scoped_dir15420_55071313}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:50489}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=127.0.6533.120, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: d849ae67962d3a38a0ad7325f1f130a2
 *** Element info: {Using=xpath, value=//h6[contains(.,'Terms and Conditions')]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -93,7 +93,7 @@ Session ID: f06e1880ff6c8fa31d596e60bceb6bd1
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
 	at objectrepository.Terms_and_Condition.Terms_and_condition(Terms_and_Condition.java:14)
 	at stepdefinition.Steps.iVerifyTermsAndConditionsPage(Steps.java:797)
-	at ✽.And I Verify Terms and Conditions Page(features/US12599.feature:54)
+	at ✽.And I Verify Terms and Conditions Page(features/US12597.feature:66)
 ]]>
             </full-stacktrace>
           </exception> <!-- cucumber.runtime.CucumberException -->

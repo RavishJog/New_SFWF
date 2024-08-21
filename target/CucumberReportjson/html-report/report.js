@@ -1,15 +1,15 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("features/US12599.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("features/US12597.feature");
 formatter.feature({
   "comments": [
     {
       "line": 1,
-      "value": "#User Story 12599 - Register as Tea Growers"
+      "value": "#User Story 12597 - Register as Small Breeder"
     }
   ],
   "line": 4,
-  "name": "User Story 12599 - Register as Tea Grower",
+  "name": "User Story 12597 - Register as Small Breeder",
   "description": "",
-  "id": "user-story-12599---register-as-tea-grower",
+  "id": "user-story-12597---register-as-small-breeder",
   "keyword": "Feature",
   "tags": [
     {
@@ -18,7 +18,7 @@ formatter.feature({
     },
     {
       "line": 3,
-      "name": "@US12599"
+      "name": "@US12597"
     }
   ]
 });
@@ -30,15 +30,15 @@ formatter.scenarioOutline({
     }
   ],
   "line": 8,
-  "name": "Application to Register as tea_grower",
+  "name": "Application to Register as small breeder",
   "description": "",
-  "id": "user-story-12599---register-as-tea-grower;application-to-register-as-tea-grower",
+  "id": "user-story-12597---register-as-small-breeder;application-to-register-as-small-breeder",
   "type": "scenario_outline",
   "keyword": "Scenario Outline",
   "tags": [
     {
       "line": 7,
-      "name": "@Registration_as_tea_grower"
+      "name": "@Registration_as_small_breeder"
     }
   ]
 });
@@ -94,12 +94,12 @@ formatter.step({
 });
 formatter.step({
   "line": 20,
-  "name": "I Click on Tea Grower Icon",
+  "name": "I Click on Small Breeder Icon",
   "keyword": "And "
 });
 formatter.step({
   "line": 21,
-  "name": "I Verify display of REGISTRATION FOR TEA GROWERS Page",
+  "name": "I Verify display of REGISTRATION FOR SMALL BREEDERS page",
   "keyword": "And "
 });
 formatter.step({
@@ -114,7 +114,7 @@ formatter.step({
 });
 formatter.step({
   "line": 24,
-  "name": "I Select Applicant Education Level \"\u003cEducation_Level\u003e\"",
+  "name": "I Select Applicant Level of Education \"\u003cEducation_Level\u003e\"",
   "keyword": "And "
 });
 formatter.step({
@@ -219,42 +219,42 @@ formatter.step({
 });
 formatter.step({
   "line": 45,
-  "name": "I Verify Display of Particulars for Registration of Tea Plantation",
+  "name": "I Verify Display of Livestock Activity",
   "keyword": "And "
 });
 formatter.step({
   "line": 46,
-  "name": "I Click on Add Tea Plantation",
+  "name": "I Click on Add Livestock Activity",
   "keyword": "And "
 });
 formatter.step({
   "line": 47,
-  "name": "I Verify Display of Particulars for Registration of Tea Plantation Table",
+  "name": "I Verify Display of Particulars for Livestock Activity Table",
   "keyword": "And "
 });
 formatter.step({
   "line": 48,
-  "name": "I Input License No \"\u003cLicense\u003e\"",
+  "name": "I Select Species \"\u003cSpicies\u003e\"",
   "keyword": "And "
 });
 formatter.step({
   "line": 49,
-  "name": "I Input Total Extent of plot (In Arpent) \"\u003cLand_Extent\u003e\"",
+  "name": "I Input Number of Male and Female \"\u003cMale_Female_Number\u003e\"",
   "keyword": "And "
 });
 formatter.step({
   "line": 50,
-  "name": "I Select Type of Owner \"\u003cOwner_Type\u003e\"",
+  "name": "I Input Total Heads \"\u003cTotal_Heads\u003e\"",
   "keyword": "And "
 });
 formatter.step({
   "line": 51,
-  "name": "I Input Plot Location \"\u003cPlot_Location\u003e\"",
+  "name": "I Select Reason \"\u003cReason\u003e\"",
   "keyword": "And "
 });
 formatter.step({
   "line": 52,
-  "name": "I Save Particulars of Crop",
+  "name": "I Save Livestock Activity",
   "keyword": "And "
 });
 formatter.step({
@@ -263,45 +263,75 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 54,
+  "comments": [
+    {
+      "line": 56,
+      "value": "#    And I Verify Display of Particulars for Registration of Tea Plantation Table"
+    },
+    {
+      "line": 57,
+      "value": "#    And I Input License No \"\u003cLicense\u003e\""
+    },
+    {
+      "line": 58,
+      "value": "#    And I Input Total Extent of plot (In Arpent) \"\u003cLand_Extent\u003e\""
+    },
+    {
+      "line": 59,
+      "value": "#    And I Select Type of Owner \"\u003cOwner_Type\u003e\""
+    },
+    {
+      "line": 60,
+      "value": "#    And I Input Plot Location \"\u003cPlot_Location\u003e\""
+    },
+    {
+      "line": 61,
+      "value": "#    And I Save Particulars of Crop"
+    },
+    {
+      "line": 62,
+      "value": "#    And I Click on Save and Continue"
+    }
+  ],
+  "line": 66,
   "name": "I Verify Terms and Conditions Page",
   "keyword": "And "
 });
 formatter.step({
-  "line": 55,
+  "line": 67,
   "name": "I click on I agree to the Terms and Conditions",
   "keyword": "And "
 });
 formatter.step({
-  "line": 56,
+  "line": 68,
   "name": "I Click on Submit Application \"\u003cConfirmation\u003e\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 57,
+  "line": 69,
   "name": "I Verify Success message for application submitted",
   "keyword": "And "
 });
 formatter.step({
-  "line": 58,
+  "line": 70,
   "name": "I Verify Application Status \"\u003cApp_status\u003e\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 59,
+  "line": 71,
   "name": "I Verify Payment Status \"\u003cPayment_Status\u003e\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 60,
+  "line": 72,
   "name": "I Sign Out as Front Registered User",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 62,
+  "line": 74,
   "name": "",
   "description": "",
-  "id": "user-story-12599---register-as-tea-grower;application-to-register-as-tea-grower;",
+  "id": "user-story-12597---register-as-small-breeder;application-to-register-as-small-breeder;",
   "rows": [
     {
       "cells": [
@@ -326,6 +356,10 @@ formatter.examples({
         "Land_Extent",
         "Owner_Type",
         "Plot_Location",
+        "Spicies",
+        "Male_Female_Number",
+        "Total_Heads",
+        "Reason",
         "Upload_test",
         "Additional_Doc_Name",
         "Bank_Name",
@@ -336,8 +370,8 @@ formatter.examples({
         "Payment_Status",
         "Payment_method"
       ],
-      "line": 63,
-      "id": "user-story-12599---register-as-tea-grower;application-to-register-as-tea-grower;;1"
+      "line": 75,
+      "id": "user-story-12597---register-as-small-breeder;application-to-register-as-small-breeder;;1"
     },
     {
       "cells": [
@@ -362,6 +396,10 @@ formatter.examples({
         "2.7",
         "Tenant",
         "Moka",
+        "Cattle",
+        "550",
+        "550",
+        "Meat",
         "src\\test\\resources\\Upload_Test1.pdf",
         "Additional Document Test",
         "ABC Banking",
@@ -372,21 +410,21 @@ formatter.examples({
         "Pending",
         "Counter"
       ],
-      "line": 64,
-      "id": "user-story-12599---register-as-tea-grower;application-to-register-as-tea-grower;;2"
+      "line": 76,
+      "id": "user-story-12597---register-as-small-breeder;application-to-register-as-small-breeder;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 187300,
+  "duration": 1064400,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 64,
-  "name": "Application to Register as tea_grower",
+  "line": 76,
+  "name": "Application to Register as small breeder",
   "description": "",
-  "id": "user-story-12599---register-as-tea-grower;application-to-register-as-tea-grower;;2",
+  "id": "user-story-12597---register-as-small-breeder;application-to-register-as-small-breeder;;2",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -396,11 +434,11 @@ formatter.scenario({
     },
     {
       "line": 7,
-      "name": "@Registration_as_tea_grower"
+      "name": "@Registration_as_small_breeder"
     },
     {
       "line": 3,
-      "name": "@US12599"
+      "name": "@US12597"
     }
   ]
 });
@@ -463,12 +501,12 @@ formatter.step({
 });
 formatter.step({
   "line": 20,
-  "name": "I Click on Tea Grower Icon",
+  "name": "I Click on Small Breeder Icon",
   "keyword": "And "
 });
 formatter.step({
   "line": 21,
-  "name": "I Verify display of REGISTRATION FOR TEA GROWERS Page",
+  "name": "I Verify display of REGISTRATION FOR SMALL BREEDERS page",
   "keyword": "And "
 });
 formatter.step({
@@ -489,7 +527,7 @@ formatter.step({
 });
 formatter.step({
   "line": 24,
-  "name": "I Select Applicant Education Level \"Tertiary\"",
+  "name": "I Select Applicant Level of Education \"Tertiary\"",
   "matchedColumns": [
     5
   ],
@@ -630,54 +668,54 @@ formatter.step({
 });
 formatter.step({
   "line": 45,
-  "name": "I Verify Display of Particulars for Registration of Tea Plantation",
+  "name": "I Verify Display of Livestock Activity",
   "keyword": "And "
 });
 formatter.step({
   "line": 46,
-  "name": "I Click on Add Tea Plantation",
+  "name": "I Click on Add Livestock Activity",
   "keyword": "And "
 });
 formatter.step({
   "line": 47,
-  "name": "I Verify Display of Particulars for Registration of Tea Plantation Table",
+  "name": "I Verify Display of Particulars for Livestock Activity Table",
   "keyword": "And "
 });
 formatter.step({
   "line": 48,
-  "name": "I Input License No \"Tea Grower\"",
+  "name": "I Select Species \"Cattle\"",
   "matchedColumns": [
-    17
+    21
   ],
   "keyword": "And "
 });
 formatter.step({
   "line": 49,
-  "name": "I Input Total Extent of plot (In Arpent) \"2.7\"",
+  "name": "I Input Number of Male and Female \"550\"",
   "matchedColumns": [
-    18
+    22
   ],
   "keyword": "And "
 });
 formatter.step({
   "line": 50,
-  "name": "I Select Type of Owner \"Tenant\"",
+  "name": "I Input Total Heads \"550\"",
   "matchedColumns": [
-    19
+    23
   ],
   "keyword": "And "
 });
 formatter.step({
   "line": 51,
-  "name": "I Input Plot Location \"Moka\"",
+  "name": "I Select Reason \"Meat\"",
   "matchedColumns": [
-    20
+    24
   ],
   "keyword": "And "
 });
 formatter.step({
   "line": 52,
-  "name": "I Save Particulars of Crop",
+  "name": "I Save Livestock Activity",
   "keyword": "And "
 });
 formatter.step({
@@ -686,46 +724,76 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 54,
+  "comments": [
+    {
+      "line": 56,
+      "value": "#    And I Verify Display of Particulars for Registration of Tea Plantation Table"
+    },
+    {
+      "line": 57,
+      "value": "#    And I Input License No \"\u003cLicense\u003e\""
+    },
+    {
+      "line": 58,
+      "value": "#    And I Input Total Extent of plot (In Arpent) \"\u003cLand_Extent\u003e\""
+    },
+    {
+      "line": 59,
+      "value": "#    And I Select Type of Owner \"\u003cOwner_Type\u003e\""
+    },
+    {
+      "line": 60,
+      "value": "#    And I Input Plot Location \"\u003cPlot_Location\u003e\""
+    },
+    {
+      "line": 61,
+      "value": "#    And I Save Particulars of Crop"
+    },
+    {
+      "line": 62,
+      "value": "#    And I Click on Save and Continue"
+    }
+  ],
+  "line": 66,
   "name": "I Verify Terms and Conditions Page",
   "keyword": "And "
 });
 formatter.step({
-  "line": 55,
+  "line": 67,
   "name": "I click on I agree to the Terms and Conditions",
   "keyword": "And "
 });
 formatter.step({
-  "line": 56,
+  "line": 68,
   "name": "I Click on Submit Application \"Yes\"",
   "matchedColumns": [
-    26
+    30
   ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 57,
+  "line": 69,
   "name": "I Verify Success message for application submitted",
   "keyword": "And "
 });
 formatter.step({
-  "line": 58,
+  "line": 70,
   "name": "I Verify Application Status \"Submitted\"",
   "matchedColumns": [
-    27
+    31
   ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 59,
+  "line": 71,
   "name": "I Verify Payment Status \"Pending\"",
   "matchedColumns": [
-    28
+    32
   ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 60,
+  "line": 72,
   "name": "I Sign Out as Front Registered User",
   "keyword": "Then "
 });
@@ -739,7 +807,7 @@ formatter.match({
   "location": "Steps.iAmOnSFWFFrontOfficeHomePage(String)"
 });
 formatter.result({
-  "duration": 5025241600,
+  "duration": 11410401500,
   "status": "passed"
 });
 formatter.match({
@@ -756,77 +824,77 @@ formatter.match({
   "location": "Steps.iInputRegisteredUserSUsernameAndPassword(String,String)"
 });
 formatter.result({
-  "duration": 455887700,
+  "duration": 1607503400,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnSignInButton()"
 });
 formatter.result({
-  "duration": 1342636500,
+  "duration": 3957777200,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyApplicantSSuccessfulLogin()"
 });
 formatter.result({
-  "duration": 64262300,
+  "duration": 794963300,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnRegisterAsFarmer()"
 });
 formatter.result({
-  "duration": 466018200,
+  "duration": 1558945700,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyThatUserIsDirectedToMyApplicationPage()"
 });
 formatter.result({
-  "duration": 26084500,
+  "duration": 111603800,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyDisplayOfFarmersCardLink()"
 });
 formatter.result({
-  "duration": 32558800,
+  "duration": 113839200,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyProgrammesLink()"
 });
 formatter.result({
-  "duration": 26407600,
+  "duration": 92994700,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnNewButtonToApplyForRegistration()"
 });
 formatter.result({
-  "duration": 256695100,
+  "duration": 1147171100,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyDisplayOfRegistrationTypePage()"
 });
 formatter.result({
-  "duration": 17292400,
+  "duration": 106207900,
   "status": "passed"
 });
 formatter.match({
-  "location": "Steps.iClickOnTeaGrowerIcon()"
+  "location": "Steps.iClickOnSmallBreederIcon()"
 });
 formatter.result({
-  "duration": 2418431000,
+  "duration": 3339390200,
   "status": "passed"
 });
 formatter.match({
-  "location": "Steps.iVerifyDisplayOfREGISTRATIONFORTEAGROWERSPage()"
+  "location": "Steps.iVerifyDisplayOfREGISTRATIONFORSMALLBREEDERSPage()"
 });
 formatter.result({
-  "duration": 54501200,
+  "duration": 82395400,
   "status": "passed"
 });
 formatter.match({
@@ -839,7 +907,7 @@ formatter.match({
   "location": "Steps.iSelectAnApplicantTitle(String)"
 });
 formatter.result({
-  "duration": 2655235900,
+  "duration": 2824324900,
   "status": "passed"
 });
 formatter.match({
@@ -852,20 +920,20 @@ formatter.match({
   "location": "Steps.iSelectApplicantDistrict(String)"
 });
 formatter.result({
-  "duration": 1160564900,
+  "duration": 1443127800,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
       "val": "Tertiary",
-      "offset": 36
+      "offset": 39
     }
   ],
-  "location": "Steps.iSelectApplicantEducationLevel(String)"
+  "location": "Steps.iSelectApplicantLevelOfEducation(String)"
 });
 formatter.result({
-  "duration": 3667744100,
+  "duration": 4462122800,
   "status": "passed"
 });
 formatter.match({
@@ -878,7 +946,7 @@ formatter.match({
   "location": "Steps.iSelectAgriculturalActivity(String)"
 });
 formatter.result({
-  "duration": 126024100,
+  "duration": 387374800,
   "status": "passed"
 });
 formatter.match({
@@ -891,7 +959,7 @@ formatter.match({
   "location": "Steps.iInputOtherOccupation(String)"
 });
 formatter.result({
-  "duration": 64330800,
+  "duration": 756727600,
   "status": "passed"
 });
 formatter.match({
@@ -904,14 +972,14 @@ formatter.match({
   "location": "Steps.iUploadPhotograph(String)"
 });
 formatter.result({
-  "duration": 1268602800,
+  "duration": 2218197200,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyForPhotoUploadSuccessMessage()"
 });
 formatter.result({
-  "duration": 1040976500,
+  "duration": 1044823400,
   "status": "passed"
 });
 formatter.match({
@@ -924,7 +992,7 @@ formatter.match({
   "location": "Steps.iSelectNoOfYearsForRegistrationMembership(String)"
 });
 formatter.result({
-  "duration": 5668233900,
+  "duration": 5919124000,
   "status": "passed"
 });
 formatter.match({
@@ -937,35 +1005,35 @@ formatter.match({
   "location": "Steps.iSelectMaritalStatus(String)"
 });
 formatter.result({
-  "duration": 1609859400,
+  "duration": 1708890000,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnSaveAndContinue()"
 });
 formatter.result({
-  "duration": 9133199400,
+  "duration": 9298566100,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyDisplayOfParticularsOfFamilyBeneficiariesPage()"
 });
 formatter.result({
-  "duration": 83796400,
+  "duration": 162249300,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnAddFamilyAndBeneficiaries()"
 });
 formatter.result({
-  "duration": 3107241000,
+  "duration": 3255519100,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.verifyDisplayOfParticularsOfFamilyBeneficiariesInputTable()"
 });
 formatter.result({
-  "duration": 3091044900,
+  "duration": 3134930900,
   "status": "passed"
 });
 formatter.match({
@@ -978,7 +1046,7 @@ formatter.match({
   "location": "Steps.iSelectFamilyRelationshipForTeaGrower(String)"
 });
 formatter.result({
-  "duration": 2681414900,
+  "duration": 2721374500,
   "status": "passed"
 });
 formatter.match({
@@ -991,7 +1059,7 @@ formatter.match({
   "location": "Steps.iInputFamilySurname(String)"
 });
 formatter.result({
-  "duration": 66307800,
+  "duration": 155376000,
   "status": "passed"
 });
 formatter.match({
@@ -1004,7 +1072,7 @@ formatter.match({
   "location": "Steps.iInputFamilyOtherNames(String)"
 });
 formatter.result({
-  "duration": 60515000,
+  "duration": 143205100,
   "status": "passed"
 });
 formatter.match({
@@ -1017,7 +1085,7 @@ formatter.match({
   "location": "Steps.iSelectFamilyGender(String)"
 });
 formatter.result({
-  "duration": 1648328700,
+  "duration": 1757548900,
   "status": "passed"
 });
 formatter.match({
@@ -1030,7 +1098,7 @@ formatter.match({
   "location": "Steps.iInputFamilyDateOfBirth(String)"
 });
 formatter.result({
-  "duration": 5959766900,
+  "duration": 6198625000,
   "status": "passed"
 });
 formatter.match({
@@ -1043,130 +1111,130 @@ formatter.match({
   "location": "Steps.iInputFamilyOccupation(String)"
 });
 formatter.result({
-  "duration": 86587300,
+  "duration": 147493900,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnBeneficiaryOfLifeInsuranceScheme()"
 });
 formatter.result({
-  "duration": 49763000,
+  "duration": 131116300,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnBeneficiaryOfAccidentInsuranceScheme()"
 });
 formatter.result({
-  "duration": 56651200,
+  "duration": 151561500,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iSaveParticularsOfFamilyAndBeneficiaries()"
 });
 formatter.result({
-  "duration": 63927900,
+  "duration": 165743200,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnSaveAndContinue()"
 });
 formatter.result({
-  "duration": 9163838600,
+  "duration": 9280211400,
   "status": "passed"
 });
 formatter.match({
-  "location": "Steps.iVerifyDisplayOfParticularsForRegistrationOfTeaPlantation()"
+  "location": "Steps.iVerifyDisplayOfLivestockActivity()"
 });
 formatter.result({
-  "duration": 86339000,
+  "duration": 145325600,
   "status": "passed"
 });
 formatter.match({
-  "location": "Steps.iClickOnAddTeaPlantation()"
+  "location": "Steps.iClickOnAddLivestockActivity()"
 });
 formatter.result({
-  "duration": 3107158700,
+  "duration": 3182881800,
   "status": "passed"
 });
 formatter.match({
-  "location": "Steps.iVerifyDisplayOfParticularsForRegistrationOfTeaPlantationTable()"
+  "location": "Steps.iVerifyDisplayOfParticularsForLivestockActivityTable()"
 });
 formatter.result({
-  "duration": 3087080500,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Tea Grower",
-      "offset": 20
-    }
-  ],
-  "location": "Steps.iInputLicenseNo(String)"
-});
-formatter.result({
-  "duration": 49161300,
+  "duration": 3136498300,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "2.7",
-      "offset": 42
+      "val": "Cattle",
+      "offset": 18
     }
   ],
-  "location": "Steps.iInputTotalExtentOfPlotInArpent(String)"
+  "location": "Steps.iSelectSpecies(String)"
 });
 formatter.result({
-  "duration": 61783000,
+  "duration": 1755708700,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Tenant",
-      "offset": 24
+      "val": "550",
+      "offset": 35
     }
   ],
-  "location": "Steps.iSelectTypeOfOwner(String)"
+  "location": "Steps.iInputNumberOfMaleAndFemale(String)"
 });
 formatter.result({
-  "duration": 1631425400,
+  "duration": 149665200,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Moka",
-      "offset": 23
+      "val": "550",
+      "offset": 21
     }
   ],
-  "location": "Steps.iInputPlotLocation(String)"
+  "location": "Steps.iInputTotalHeads(String)"
 });
 formatter.result({
-  "duration": 65148500,
+  "duration": 174713500,
   "status": "passed"
 });
 formatter.match({
-  "location": "Steps.iSaveParticularsOfCrop()"
+  "arguments": [
+    {
+      "val": "Meat",
+      "offset": 17
+    }
+  ],
+  "location": "Steps.iSelectReason(String)"
 });
 formatter.result({
-  "duration": 1058462800,
+  "duration": 1789235100,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Steps.iSaveLivestockActivity()"
+});
+formatter.result({
+  "duration": 1131366500,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnSaveAndContinue()"
 });
 formatter.result({
-  "duration": 9192019900,
+  "duration": 9236411600,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyTermsAndConditionsPage()"
 });
 formatter.result({
-  "duration": 44747300,
-  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//h6[contains(.,\u0027Terms and Conditions\u0027)]\"}\n  (Session info: chrome\u003d127.0.6533.120)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.4.0\u0027, revision: \u0027unknown\u0027, time: \u0027unknown\u0027\nSystem info: host: \u0027SIL-LTDELLI7-G6\u0027, ip: \u0027130.1.19.132\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_371\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}), userDataDir\u003dC:\\Users\\SURAJ~1.JOG\\AppData\\Local\\Temp\\scoped_dir16088_1191589554}, timeouts\u003d{implicit\u003d0.0, pageLoad\u003d300000.0, script\u003d30000.0}, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003ddismiss and notify, strictFileInteractability\u003dfalse, platform\u003dANY, proxy\u003dProxy(), webauthn:extension:minPinLength\u003dtrue, goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:54132}, webauthn:extension:credBlob\u003dtrue, webauthn:extension:prf\u003dtrue, acceptInsecureCerts\u003dfalse, browserVersion\u003d127.0.6533.120, fedcm:accounts\u003dtrue, browserName\u003dchrome, javascriptEnabled\u003dtrue, platformName\u003dwindows, setWindowRect\u003dtrue, webauthn:extension:largeBlob\u003dtrue, webauthn:virtualAuthenticators\u003dtrue}]\nSession ID: f06e1880ff6c8fa31d596e60bceb6bd1\n*** Element info: {Using\u003dxpath, value\u003d//h6[contains(.,\u0027Terms and Conditions\u0027)]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)\r\n\tat objectrepository.Terms_and_Condition.Terms_and_condition(Terms_and_Condition.java:14)\r\n\tat stepdefinition.Steps.iVerifyTermsAndConditionsPage(Steps.java:797)\r\n\tat ✽.And I Verify Terms and Conditions Page(features/US12599.feature:54)\r\n",
+  "duration": 62487700,
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//h6[contains(.,\u0027Terms and Conditions\u0027)]\"}\n  (Session info: chrome\u003d127.0.6533.120)\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.4.0\u0027, revision: \u0027unknown\u0027, time: \u0027unknown\u0027\nSystem info: host: \u0027SIL-LTDELLI7-G6\u0027, ip: \u0027130.1.19.132\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_371\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}), userDataDir\u003dC:\\Users\\SURAJ~1.JOG\\AppData\\Local\\Temp\\scoped_dir15420_55071313}, timeouts\u003d{implicit\u003d0.0, pageLoad\u003d300000.0, script\u003d30000.0}, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003ddismiss and notify, strictFileInteractability\u003dfalse, platform\u003dANY, proxy\u003dProxy(), webauthn:extension:minPinLength\u003dtrue, goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:50489}, webauthn:extension:credBlob\u003dtrue, webauthn:extension:prf\u003dtrue, acceptInsecureCerts\u003dfalse, browserVersion\u003d127.0.6533.120, fedcm:accounts\u003dtrue, browserName\u003dchrome, javascriptEnabled\u003dtrue, platformName\u003dwindows, setWindowRect\u003dtrue, webauthn:extension:largeBlob\u003dtrue, webauthn:virtualAuthenticators\u003dtrue}]\nSession ID: d849ae67962d3a38a0ad7325f1f130a2\n*** Element info: {Using\u003dxpath, value\u003d//h6[contains(.,\u0027Terms and Conditions\u0027)]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)\r\n\tat objectrepository.Terms_and_Condition.Terms_and_condition(Terms_and_Condition.java:14)\r\n\tat stepdefinition.Steps.iVerifyTermsAndConditionsPage(Steps.java:797)\r\n\tat ✽.And I Verify Terms and Conditions Page(features/US12597.feature:66)\r\n",
   "status": "failed"
 });
 formatter.match({
@@ -1224,11 +1292,11 @@ formatter.result({
   "status": "skipped"
 });
 formatter.after({
-  "duration": 1591764900,
+  "duration": 3558628100,
   "status": "passed"
 });
 formatter.after({
-  "duration": 1697700,
+  "duration": 4712000,
   "status": "passed"
 });
 });

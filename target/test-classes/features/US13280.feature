@@ -1137,7 +1137,7 @@ Feature: User Story 13280 - Back Office Process for Registration
       |Browser|Username |Password |FUsername|PwoUsername|WpoUsername|WOUsername |ITUsername|Remarks        |Bonafide|Payment_Mode |Amount_To_Pay|Applicant_Title |District   |Education_Level |Act      |Other_Occupation  |Photo                               |Year_dur |Marital_Status|Relationship|Family_Surname|Family_Other_Names|Gender|DOB   |Occupation |Org_acc_no|Crop_Type|Land_Extent|Owner_Type|Plot_Location|Field_Location |Production_System|Total_Extent |Crop_Grown |Plantation_Type|Date_Plantation_Seedling |Upload_test                        |Crop_Status|Additional_Doc_Name      |Bank_Name  |Bank_Branch|Bank_Account_No|Confirmation|App_status|Payment_Status |Payment_method |
       |Chrome |Suraj    |Admin@123|FINANCE  |PWO        |WPO        |WO         |IT_DEPT   |This is a test |Yes     |Cash         |850          |Mr              |Black River|Tertiary        |Full Time|Manager           |src\test\resources\Photo_upload.jpg |1        |Married       |Spouse      |Sanon         |Kirti             |Female|1Jan94|Air Hostess|0001252563|Cane     |2.5        |Tenant    |Moka         |Port Louis     |Sheltered Farming|600M2        |Pepper     |Interline      |1Aug2030                 |src\test\resources\Upload_Test1.pdf|Harvest    |Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |Counter        |
 
- #Scenario 6
+ #Scenario6
   @Payment_at_online_for_Small_Planters_Registration
   Scenario Outline: Payment Online for Registration for Small Planters
 
@@ -1375,3 +1375,424 @@ Feature: User Story 13280 - Back Office Process for Registration
     Examples:
       |Browser|Username |Password |FUsername|PwoUsername|WpoUsername|WOUsername |ITUsername|Remarks        |Bonafide|Payment_Mode |Amount_To_Pay|Applicant_Title |District   |Education_Level |Act      |Other_Occupation  |Photo                               |Year_dur |Marital_Status|Relationship|Family_Surname|Family_Other_Names|Gender|DOB   |Occupation |Org_acc_no|Crop_Type|Land_Extent|Owner_Type|Plot_Location|Field_Location |Production_System|Total_Extent |Crop_Grown |Plantation_Type|Date_Plantation_Seedling |Upload_test                        |Crop_Status|Additional_Doc_Name      |Bank_Name  |Bank_Branch|Bank_Account_No|Confirmation|App_status|Payment_Status |Payment_method |Card_Number        |Expiry_Month |Expiry_Year|Security_Code|Cardholder_Name|
       |Chrome |Suraj    |Admin@123|FINANCE  |PWO        |WPO        |WO         |IT_DEPT   |This is a test |Yes     |Cash         |850          |Mr              |Black River|Tertiary        |Full Time|Manager           |src\test\resources\Photo_upload.jpg |1        |Married       |Spouse      |Sanon         |Kirti             |Female|1Jan94|Air Hostess|0001252563|Cane     |2.5        |Tenant    |Moka         |Port Louis     |Sheltered Farming|600M2        |Pepper     |Interline      |1Aug2030                 |src\test\resources\Upload_Test1.pdf|Harvest    |Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |Credit         |5123-4500-0000-0008|01           |39         |100          |My name        |
+
+
+#Scenario7
+  @Payment_at_counter_for_Tea_grower
+  Scenario Outline: Payment at counter for Registration as Tea Grower
+    Given I am on SFWF Front Office Home Page "<Browser>"
+    When I Input Registered User's Username "<Username>" and Password "<Password>"
+    And I Click on Sign In button
+    And I Verify Applicant's Successful Login
+    And I Click on Register as Farmer
+    And I Verify that User is directed to My Application Page
+    And I Verify display of Farmers Card link
+    And I Verify Programmes link
+    And I Click on New Button to apply for Registration
+    And I Verify display of Registration Type Page
+    And I Click on Tea Grower Icon
+    And I Verify display of REGISTRATION FOR TEA GROWERS Page
+    And I Select an Applicant Title "<Applicant_Title>"
+    And I Select Applicant District "<District>"
+    And I Select Applicant Education Level "<Education_Level>"
+    And I Select Agricultural Activity "<Act>"
+    And I Input Other Occupation "<Other_Occupation>"
+    And I Upload Photograph "<Photo>"
+    And I Verify for Photo upload success message
+    And I Select No of years for Registration membership "<Year_dur>"
+    And I Select Marital Status "<Marital_Status>"
+    And I Click on Save and Continue
+    And I Verify Display of Particulars of Family Beneficiaries Page
+    And I Click on Add Family and Beneficiaries
+    And Verify Display of Particulars of Family Beneficiaries input table
+    And I Select Family relationship for tea grower "<Relationship>"
+    And I Input Family Surname "<Family_Surname>"
+    And I Input Family Other Names "<Family_Other_Names>"
+    And I Select Family Gender "<Gender>"
+    And I Input Family Date of Birth "<DOB>"
+    And I Input Family Occupation "<Occupation>"
+    And I Click on Beneficiary of life Insurance Scheme
+    And I Click on Beneficiary of Accident Insurance Scheme
+    And I Save Particulars of Family and Beneficiaries
+    And I Click on Save and Continue
+    And I Verify Display of Particulars for Registration of Tea Plantation
+    And I Click on Add Tea Plantation
+    And I Verify Display of Particulars for Registration of Tea Plantation Table
+    And I Input License No "<License>"
+    And I Input Total Extent of plot (In Arpent) "<Land_Extent>"
+    And I Select Type of Owner "<Owner_Type>"
+    And I Input Plot Location "<Plot_Location>"
+    And I Save Particulars of Crop
+    And I Click on Save and Continue
+    And I Verify Terms and Conditions Page
+    And I click on I agree to the Terms and Conditions
+    And I Click on Submit Application "<Confirmation>"
+    And I Verify Success message for application submitted
+    And I Verify Application Status "<App_status>"
+    And I Verify Payment Status "<Payment_Status>"
+    And I Copy Application Number
+    And I Click on Shopping Cart for payment
+    And I Select Application for payment
+    And I Click on Proceed to Payment
+    And I Click on Payment Icon
+    And I Select Payment Method "<Payment_method>"
+    And I Click on Final Proceed to Payment
+    And I Verify Message to proceed to Post Office for Payment
+    Then I Sign Out as Front Registered User
+    #    PWO
+    And I am on SFWF Back Office Home Page "<Browser>"
+    And I Input PWO Username "<PwoUsername>" and Password "<Password>"
+    And I Click on Sign In button
+    And I Verify Successful Login
+    And I Click on All Applications
+    And I Verify display of list of registrations page
+    And I Search for Application Ref Number as a Back Office User
+    And I Click to view Application
+    And I Click on Action Button
+    And I Select PWO Assigned
+    And I Select WPO
+    And I Input Remarks "<Remarks>"
+    And I Click on Save Actions
+    And I Verify for success message for assigning
+    And I Sign Out
+    And I Verify Successful Sign Out
+    #    WPO
+    And I am on SFWF Back Office Home Page "<Browser>"
+    And I Input WPO Username "<WpoUsername>" and Password "<Password>"
+    And I Click on Sign In button
+    And I Verify Successful Login
+    And I Click on All Applications
+    And I Verify display of list of registrations page
+    And I Search for Application Ref Number as a Back Office User
+    And I Click to view Application
+    And I Click on Action Button
+    And I Select Assigned
+    And I Select WO
+    And I Input Remarks "<Remarks>"
+    And I Click on Save Actions
+    And I Verify for success message for assigning
+    And I Sign Out
+    And I Verify Successful Sign Out
+
+    #    WO/WA
+    And I am on SFWF Back Office Home Page "<Browser>"
+    And I Input WO-WA Username "<WOUsername>" and Password "<Password>"
+    And I Click on Sign In button
+    And I Verify Successful Login
+    And I Click on All Applications
+    And I Verify display of list of registrations page
+    And I Search for Application Ref Number as a Back Office User
+    And I Click to view Application
+    And I Click on Site Report Tab
+    And I Select Bonafide Planter "<Bonafide>"
+    And I Input Site visit remarks "<Remarks>"
+    And I Upload Site Report "<Upload_test>"
+    And I Verify for Document Upload Success Message
+    And I Click on Save Button
+    And I Verify Site Visit saved success message
+    And I Click on Action Button
+    And I Select Assigned
+    And I Select WPO
+    And I Input Remarks "<Remarks>"
+    And I Click on Save Actions
+    And I Verify for success message for assigning
+    And I Sign Out
+    And I Verify Successful Sign Out
+
+    #    WPO
+    And I am on SFWF Back Office Home Page "<Browser>"
+    And I Input WPO Username "<WpoUsername>" and Password "<Password>"
+    And I Click on Sign In button
+    And I Verify Successful Login
+    And I Click on All Applications
+    And I Verify display of list of registrations page
+    And I Search for Application Ref Number as a Back Office User
+    And I Click to view Application
+    And I Click on Action Button
+    And I Select Under Query
+    And I Input External Remarks "<Remarks>"
+    And I Click on Under Query Notification
+    And I Verify Success Message for Under Query Notification
+    And I Click on Save Actions
+    And I Verify for success message for workflow saved
+    And I Sign Out
+    And I Verify Successful Sign Out
+
+    #    Applicant after under query
+    Given I am on SFWF Front Office Home Page "<Browser>"
+    When I Input Registered User's Username "<Username>" and Password "<Password>"
+    And I Click on Sign In button
+    And I Verify Applicant's Successful Login
+    And I Click on Register as Farmer
+    And I Verify that User is directed to My Application Page
+    And I Verify display of Farmers Card link
+    And I Verify Programmes link
+    And I Search for Application Ref Number for re-submit
+    And I Verify display of REGISTRATION FOR AGRO-PROCESSING ENTERPRISE Page
+    And I Click on Save and Continue
+    And I Verify Upload Required Documents Page is displayed
+    And I Click on Save and Continue
+    And I Verify Terms and Conditions Page
+    And I Click on Submit Application "<Confirmation>"
+    And I Verify Success message for application submitted
+    And I Sign Out as Front Registered User
+
+    #    WPO
+    And I am on SFWF Back Office Home Page "<Browser>"
+    And I Input WPO Username "<WpoUsername>" and Password "<Password>"
+    And I Click on Sign In button
+    And I Verify Successful Login
+    And I Click on All Applications
+    And I Verify display of list of registrations page
+    And I Search for Application Ref Number as a Back Office User
+    And I Click to view Application
+    And I Click on Action Button
+    And I Select Approved to approve the registration application
+    And I Input Remarks "<Remarks>"
+    And I Click on Save Actions
+    And I Verify for success message for approval
+    And I Sign Out
+    And I Verify Successful Sign Out
+
+        #    IT Department
+    And I am on SFWF Back Office Home Page "<Browser>"
+    And I Input IT Department Username "<ITUsername>" and Password "<Password>"
+    And I Click on Sign In button
+    And I Verify Successful Login
+    And I Click on All Applications
+    And I Verify display of list of registrations page
+    And I Search for Application Ref Number as a Back Office User
+    And I Click to view Application
+    And I Click on Print Card
+    And I Sign Out
+    And I Verify Successful Sign Out
+
+#    Applicant verify status - Card Printed
+    Given I am on SFWF Front Office Home Page "<Browser>"
+    When I Input Registered User's Username "<Username>" and Password "<Password>"
+    And I Click on Sign In button
+    And I Verify Applicant's Successful Login
+    And I Click on Register as Farmer
+    And I Verify that User is directed to My Application Page
+    And I Verify display of Farmers Card link
+    And I Verify Programmes link
+    And I Search for Application Ref Number for to check Status Card Printed
+    And I Verify Application Status to be Card Printed
+    And I Sign Out as Front Registered User
+
+    Examples:
+      |Browser|Username |Password |FUsername|PwoUsername|WpoUsername|WOUsername |ITUsername|Remarks        |Bonafide|Payment_Mode |Amount_To_Pay|Applicant_Title |District   |Education_Level |Act      |Other_Occupation  |Photo                               |Year_dur |Marital_Status|Relationship|Family_Surname|Family_Other_Names|Gender|DOB   |Occupation |License|Land_Extent|Owner_Type|Plot_Location|Upload_test                        |Additional_Doc_Name      |Bank_Name  |Bank_Branch|Bank_Account_No|Confirmation|App_status|Payment_Status |Payment_method |
+      |Chrome |Suraj    |Admin@123|FINANCE  |PWO        |WPO        |WO         |IT_DEPT   |This is a test |Yes     |Cash         |850          |Mrs              |Port Louis|Tertiary        |Full Time|Manager           |src\test\resources\Photo_upload.jpg |2        |Married       |Spouse      |Keen         |Dafne            |Female|1Jan94|Actress|Tea Grower|2.7        |Tenant    |Moka        |src\test\resources\Upload_Test1.pdf|Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |Counter        |
+
+
+#Scenario8
+  @Payment_online_for_Tea_grower
+  Scenario Outline: Payment online for Registration as Tea Grower
+    Given I am on SFWF Front Office Home Page "<Browser>"
+    When I Input Registered User's Username "<Username>" and Password "<Password>"
+    And I Click on Sign In button
+    And I Verify Applicant's Successful Login
+    And I Click on Register as Farmer
+    And I Verify that User is directed to My Application Page
+    And I Verify display of Farmers Card link
+    And I Verify Programmes link
+    And I Click on New Button to apply for Registration
+    And I Verify display of Registration Type Page
+    And I Click on Tea Grower Icon
+    And I Verify display of REGISTRATION FOR TEA GROWERS Page
+    And I Select an Applicant Title "<Applicant_Title>"
+    And I Select Applicant District "<District>"
+    And I Select Applicant Education Level "<Education_Level>"
+    And I Select Agricultural Activity "<Act>"
+    And I Input Other Occupation "<Other_Occupation>"
+    And I Upload Photograph "<Photo>"
+    And I Verify for Photo upload success message
+    And I Select No of years for Registration membership "<Year_dur>"
+    And I Select Marital Status "<Marital_Status>"
+    And I Click on Save and Continue
+    And I Verify Display of Particulars of Family Beneficiaries Page
+    And I Click on Add Family and Beneficiaries
+    And Verify Display of Particulars of Family Beneficiaries input table
+    And I Select Family relationship for tea grower "<Relationship>"
+    And I Input Family Surname "<Family_Surname>"
+    And I Input Family Other Names "<Family_Other_Names>"
+    And I Select Family Gender "<Gender>"
+    And I Input Family Date of Birth "<DOB>"
+    And I Input Family Occupation "<Occupation>"
+    And I Click on Beneficiary of life Insurance Scheme
+    And I Click on Beneficiary of Accident Insurance Scheme
+    And I Save Particulars of Family and Beneficiaries
+    And I Click on Save and Continue
+    And I Verify Display of Particulars for Registration of Tea Plantation
+    And I Click on Add Tea Plantation
+    And I Verify Display of Particulars for Registration of Tea Plantation Table
+    And I Input License No "<License>"
+    And I Input Total Extent of plot (In Arpent) "<Land_Extent>"
+    And I Select Type of Owner "<Owner_Type>"
+    And I Input Plot Location "<Plot_Location>"
+    And I Save Particulars of Crop
+    And I Click on Save and Continue
+    And I Verify Terms and Conditions Page
+    And I click on I agree to the Terms and Conditions
+    And I Click on Submit Application "<Confirmation>"
+    And I Verify Success message for application submitted
+    And I Verify Application Status "<App_status>"
+    And I Verify Payment Status "<Payment_Status>"
+    And I Copy Application Number
+    And I Click on Shopping Cart for payment
+    And I Select Application for payment
+    And I Click on Proceed to Payment
+    And I Click on Payment Icon
+    And I Select Payment Method "<Payment_method>"
+    And I Click on Final Proceed to Online Payment
+    And I Verify display of Payment Gateway
+    And I Input Card Details "<Card_Number>" "<Expiry_Month>" "<Expiry_Year>" "<Cardholder_Name>" "<Security_Code>"
+    And I Click on Pay Now button
+    And I Verify that User is directed to My Application Page
+    And I Verify Payment Status is changed to Paid
+    Then I Sign Out as Front Registered User
+        #    PWO
+    And I am on SFWF Back Office Home Page "<Browser>"
+    And I Input PWO Username "<PwoUsername>" and Password "<Password>"
+    And I Click on Sign In button
+    And I Verify Successful Login
+    And I Click on All Applications
+    And I Verify display of list of registrations page
+    And I Search for Application Ref Number as a Back Office User
+    And I Click to view Application
+    And I Click on Action Button
+    And I Select PWO Assigned
+    And I Select WPO
+    And I Input Remarks "<Remarks>"
+    And I Click on Save Actions
+    And I Verify for success message for assigning
+    And I Sign Out
+    And I Verify Successful Sign Out
+    #    WPO
+    And I am on SFWF Back Office Home Page "<Browser>"
+    And I Input WPO Username "<WpoUsername>" and Password "<Password>"
+    And I Click on Sign In button
+    And I Verify Successful Login
+    And I Click on All Applications
+    And I Verify display of list of registrations page
+    And I Search for Application Ref Number as a Back Office User
+    And I Click to view Application
+    And I Click on Action Button
+    And I Select Assigned
+    And I Select WO
+    And I Input Remarks "<Remarks>"
+    And I Click on Save Actions
+    And I Verify for success message for assigning
+    And I Sign Out
+    And I Verify Successful Sign Out
+
+    #    WO/WA
+    And I am on SFWF Back Office Home Page "<Browser>"
+    And I Input WO-WA Username "<WOUsername>" and Password "<Password>"
+    And I Click on Sign In button
+    And I Verify Successful Login
+    And I Click on All Applications
+    And I Verify display of list of registrations page
+    And I Search for Application Ref Number as a Back Office User
+    And I Click to view Application
+    And I Click on Site Report Tab
+    And I Select Bonafide Planter "<Bonafide>"
+    And I Input Site visit remarks "<Remarks>"
+    And I Upload Site Report "<Upload_test>"
+    And I Verify for Document Upload Success Message
+    And I Click on Save Button
+    And I Verify Site Visit saved success message
+    And I Click on Action Button
+    And I Select Assigned
+    And I Select WPO
+    And I Input Remarks "<Remarks>"
+    And I Click on Save Actions
+    And I Verify for success message for assigning
+    And I Sign Out
+    And I Verify Successful Sign Out
+
+    #    WPO
+    And I am on SFWF Back Office Home Page "<Browser>"
+    And I Input WPO Username "<WpoUsername>" and Password "<Password>"
+    And I Click on Sign In button
+    And I Verify Successful Login
+    And I Click on All Applications
+    And I Verify display of list of registrations page
+    And I Search for Application Ref Number as a Back Office User
+    And I Click to view Application
+    And I Click on Action Button
+    And I Select Under Query
+    And I Input External Remarks "<Remarks>"
+    And I Click on Under Query Notification
+    And I Verify Success Message for Under Query Notification
+    And I Click on Save Actions
+    And I Verify for success message for workflow saved
+    And I Sign Out
+    And I Verify Successful Sign Out
+
+    #    Applicant after under query
+    Given I am on SFWF Front Office Home Page "<Browser>"
+    When I Input Registered User's Username "<Username>" and Password "<Password>"
+    And I Click on Sign In button
+    And I Verify Applicant's Successful Login
+    And I Click on Register as Farmer
+    And I Verify that User is directed to My Application Page
+    And I Verify display of Farmers Card link
+    And I Verify Programmes link
+    And I Search for Application Ref Number for re-submit
+    And I Verify display of REGISTRATION FOR AGRO-PROCESSING ENTERPRISE Page
+    And I Click on Save and Continue
+    And I Verify Upload Required Documents Page is displayed
+    And I Click on Save and Continue
+    And I Verify Terms and Conditions Page
+    And I Click on Submit Application "<Confirmation>"
+    And I Verify Success message for application submitted
+    And I Sign Out as Front Registered User
+
+    #    WPO
+    And I am on SFWF Back Office Home Page "<Browser>"
+    And I Input WPO Username "<WpoUsername>" and Password "<Password>"
+    And I Click on Sign In button
+    And I Verify Successful Login
+    And I Click on All Applications
+    And I Verify display of list of registrations page
+    And I Search for Application Ref Number as a Back Office User
+    And I Click to view Application
+    And I Click on Action Button
+    And I Select Approved to approve the registration application
+    And I Input Remarks "<Remarks>"
+    And I Click on Save Actions
+    And I Verify for success message for approval
+    And I Sign Out
+    And I Verify Successful Sign Out
+
+        #    IT Department
+    And I am on SFWF Back Office Home Page "<Browser>"
+    And I Input IT Department Username "<ITUsername>" and Password "<Password>"
+    And I Click on Sign In button
+    And I Verify Successful Login
+    And I Click on All Applications
+    And I Verify display of list of registrations page
+    And I Search for Application Ref Number as a Back Office User
+    And I Click to view Application
+    And I Click on Print Card
+    And I Sign Out
+    And I Verify Successful Sign Out
+
+#    Applicant verify status - Card Printed
+    Given I am on SFWF Front Office Home Page "<Browser>"
+    When I Input Registered User's Username "<Username>" and Password "<Password>"
+    And I Click on Sign In button
+    And I Verify Applicant's Successful Login
+    And I Click on Register as Farmer
+    And I Verify that User is directed to My Application Page
+    And I Verify display of Farmers Card link
+    And I Verify Programmes link
+    And I Search for Application Ref Number for to check Status Card Printed
+    And I Verify Application Status to be Card Printed
+    And I Sign Out as Front Registered User
+
+    Examples:
+      |Browser|Username |Password |FUsername|PwoUsername|WpoUsername|WOUsername |ITUsername|Remarks        |Bonafide|Payment_Mode |Amount_To_Pay|Applicant_Title |District   |Education_Level |Act      |Other_Occupation  |Photo                               |Year_dur |Marital_Status|Relationship|Family_Surname|Family_Other_Names|Gender|DOB   |Occupation |License    |Land_Extent|Owner_Type|Plot_Location |Upload_test                        |Additional_Doc_Name      |Bank_Name  |Bank_Branch|Bank_Account_No|Confirmation|App_status|Payment_Status |Payment_method |Card_Number        |Expiry_Month |Expiry_Year|Security_Code|Cardholder_Name|
+      |Chrome |Suraj    |Admin@123|FINANCE  |PWO        |WPO        |WO         |IT_DEPT   |This is a test |Yes     |Cash         |850          |Mrs              |Port Louis|Tertiary        |Full Time|Manager           |src\test\resources\Photo_upload.jpg |2        |Married       |Spouse      |Keen           |Dafne            |Female|1Jan94|Actress    |Tea Grower |2.7        |Tenant    |Moka          |src\test\resources\Upload_Test1.pdf|Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |Credit         |5123-4500-0000-0008|01           |39         |100          |My name        |
+

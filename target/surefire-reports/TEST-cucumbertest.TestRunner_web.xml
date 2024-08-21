@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="1" name="cucumbertest.TestRunner_web" time="84.144" errors="0" skipped="0">
+<testsuite tests="1" failures="1" name="cucumbertest.TestRunner_web" time="111.144" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2023.1.2"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -32,6 +32,7 @@
     <property name="classworlds.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1.2\plugins\maven\lib\maven3\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk-1.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1.2\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\PowerShell\7\;C:\Program Files\apache-maven-3.8.5\bin;C:\Program Files\Git\bin;C:\Program Files\Java\jdk-17\bin;C:\Program Files\Java\jre-1.8\bin;C:\Users\suraj.joggessur\Desktop\JMeter\apache-jmeter-5.6.2\bin;C:\Users\suraj.joggessur\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1.2\bin;;;."/>
+    <property name="@Registration_as_small_breeder" value="true"/>
     <property name="jansi.passthrough" value="true"/>
     <property name="maven.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1.2\plugins\maven\lib\maven3/conf"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -48,8 +49,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-1.8\jre"/>
-    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2023.1.2 clean test -D=&quot;@Registration_as_tea_grower&quot;"/>
-    <property name="@Registration_as_tea_grower" value="true"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2023.1.2 clean test -D=&quot;@Registration_as_small_breeder&quot;"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -67,23 +67,23 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="cucumbertest.TestRunner_web" name="runCukes" time="84.144">
+  <testcase classname="cucumbertest.TestRunner_web" name="runCukes" time="111.144">
     <failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h6[contains(.,&apos;Terms and Conditions&apos;)]&quot;}
   (Session info: chrome=127.0.6533.120)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
 System info: host: &apos;SIL-LTDELLI7-G6&apos;, ip: &apos;130.1.19.132&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_371&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}), userDataDir=C:\Users\SURAJ~1.JOG\AppData\Local\Temp\scoped_dir16088_1191589554}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:54132}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=127.0.6533.120, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: f06e1880ff6c8fa31d596e60bceb6bd1
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}), userDataDir=C:\Users\SURAJ~1.JOG\AppData\Local\Temp\scoped_dir15420_55071313}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:50489}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=127.0.6533.120, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: d849ae67962d3a38a0ad7325f1f130a2
 *** Element info: {Using=xpath, value=//h6[contains(.,&apos;Terms and Conditions&apos;)]}" type="cucumber.runtime.CucumberException">cucumber.runtime.CucumberException: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h6[contains(.,&apos;Terms and Conditions&apos;)]&quot;}
   (Session info: chrome=127.0.6533.120)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
 System info: host: &apos;SIL-LTDELLI7-G6&apos;, ip: &apos;130.1.19.132&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_371&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}), userDataDir=C:\Users\SURAJ~1.JOG\AppData\Local\Temp\scoped_dir16088_1191589554}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:54132}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=127.0.6533.120, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: f06e1880ff6c8fa31d596e60bceb6bd1
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}), userDataDir=C:\Users\SURAJ~1.JOG\AppData\Local\Temp\scoped_dir15420_55071313}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:50489}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=127.0.6533.120, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: d849ae67962d3a38a0ad7325f1f130a2
 *** Element info: {Using=xpath, value=//h6[contains(.,&apos;Terms and Conditions&apos;)]}
 	at cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:57)
 	at cucumbertest.TestRunner_web.runCukes(TestRunner_web.java:25)
@@ -93,8 +93,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
 System info: host: &apos;SIL-LTDELLI7-G6&apos;, ip: &apos;130.1.19.132&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_371&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}), userDataDir=C:\Users\SURAJ~1.JOG\AppData\Local\Temp\scoped_dir16088_1191589554}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:54132}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=127.0.6533.120, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: f06e1880ff6c8fa31d596e60bceb6bd1
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}), userDataDir=C:\Users\SURAJ~1.JOG\AppData\Local\Temp\scoped_dir15420_55071313}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:50489}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=127.0.6533.120, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: d849ae67962d3a38a0ad7325f1f130a2
 *** Element info: {Using=xpath, value=//h6[contains(.,&apos;Terms and Conditions&apos;)]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -112,16 +112,16 @@ Session ID: f06e1880ff6c8fa31d596e60bceb6bd1
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
 	at objectrepository.Terms_and_Condition.Terms_and_condition(Terms_and_Condition.java:14)
 	at stepdefinition.Steps.iVerifyTermsAndConditionsPage(Steps.java:797)
-	at ✽.And I Verify Terms and Conditions Page(features/US12599.feature:54)
+	at ✽.And I Verify Terms and Conditions Page(features/US12597.feature:66)
 </failure>
     <system-out>Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@2cfb4a64
-#User Story 12599 - Register as Tea Growers
-@Main_feature @US12599
-Feature: User Story 12599 - Register as Tea Grower
+#User Story 12597 - Register as Small Breeder
+@Main_feature @US12597
+Feature: User Story 12597 - Register as Small Breeder
 
   #Scenario1
-  @Registration_as_tea_grower
-  Scenario Outline: Application to Register as tea_grower                          &amp;#27;[90m# features/US12599.feature:8&amp;#27;[0m
+  @Registration_as_small_breeder
+  Scenario Outline: Application to Register as small breeder                       &amp;#27;[90m# features/US12597.feature:8&amp;#27;[0m
     &amp;#27;[36mGiven &amp;#27;[0m&amp;#27;[36mI am on SFWF Front Office Home Page &quot;&lt;Browser&gt;&quot;&amp;#27;[0m
     &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mI Input Registered User&apos;s Username &quot;&lt;Username&gt;&quot; and Password &quot;&lt;Password&gt;&quot;&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Sign In button&amp;#27;[0m
@@ -132,11 +132,11 @@ Feature: User Story 12599 - Register as Tea Grower
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Programmes link&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on New Button to apply for Registration&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify display of Registration Type Page&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Tea Grower Icon&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify display of REGISTRATION FOR TEA GROWERS Page&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Small Breeder Icon&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify display of REGISTRATION FOR SMALL BREEDERS page&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select an Applicant Title &quot;&lt;Applicant_Title&gt;&quot;&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select Applicant District &quot;&lt;District&gt;&quot;&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select Applicant Education Level &quot;&lt;Education_Level&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select Applicant Level of Education &quot;&lt;Education_Level&gt;&quot;&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select Agricultural Activity &quot;&lt;Act&gt;&quot;&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input Other Occupation &quot;&lt;Other_Occupation&gt;&quot;&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Upload Photograph &quot;&lt;Photo&gt;&quot;&amp;#27;[0m
@@ -157,15 +157,22 @@ Feature: User Story 12599 - Register as Tea Grower
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Beneficiary of Accident Insurance Scheme&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Save Particulars of Family and Beneficiaries&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Save and Continue&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Display of Particulars for Registration of Tea Plantation&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Add Tea Plantation&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Display of Particulars for Registration of Tea Plantation Table&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input License No &quot;&lt;License&gt;&quot;&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input Total Extent of plot (In Arpent) &quot;&lt;Land_Extent&gt;&quot;&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select Type of Owner &quot;&lt;Owner_Type&gt;&quot;&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input Plot Location &quot;&lt;Plot_Location&gt;&quot;&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Save Particulars of Crop&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Display of Livestock Activity&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Add Livestock Activity&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Display of Particulars for Livestock Activity Table&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select Species &quot;&lt;Spicies&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input Number of Male and Female &quot;&lt;Male_Female_Number&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input Total Heads &quot;&lt;Total_Heads&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select Reason &quot;&lt;Reason&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Save Livestock Activity&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Save and Continue&amp;#27;[0m
+    #    And I Verify Display of Particulars for Registration of Tea Plantation Table
+    #    And I Input License No &quot;&lt;License&gt;&quot;
+    #    And I Input Total Extent of plot (In Arpent) &quot;&lt;Land_Extent&gt;&quot;
+    #    And I Select Type of Owner &quot;&lt;Owner_Type&gt;&quot;
+    #    And I Input Plot Location &quot;&lt;Plot_Location&gt;&quot;
+    #    And I Save Particulars of Crop
+    #    And I Click on Save and Continue
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Terms and Conditions Page&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI click on I agree to the Terms and Conditions&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Submit Application &quot;&lt;Confirmation&gt;&quot;&amp;#27;[0m
@@ -181,65 +188,73 @@ Education Level is working
 Radio Button is working correctly
 Spouse option is working
 Gender Female is working fine
-Tenant is working fine
+Cattle is working fine
+Meat is working fine
 Unable to take screenshot
 java.lang.NullPointerException
 
-  @Main_feature @Registration_as_tea_grower @US12599
-  Scenario Outline: Application to Register as tea_grower                        &amp;#27;[90m# features/US12599.feature:64&amp;#27;[0m
-    &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mI am on SFWF Front Office Home Page &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mChrome&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                           &amp;#27;[90m# Steps.iAmOnSFWFFrontOfficeHomePage(String)&amp;#27;[0m
-    &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mI Input Registered User&apos;s Username &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mSuraj&amp;#27;[0m&amp;#27;[32m&quot; and Password &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mAdmin@123&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m     &amp;#27;[90m# Steps.iInputRegisteredUserSUsernameAndPassword(String,String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Sign In button&amp;#27;[0m                                                &amp;#27;[90m# Steps.iClickOnSignInButton()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Applicant&apos;s Successful Login&amp;#27;[0m                                    &amp;#27;[90m# Steps.iVerifyApplicantSSuccessfulLogin()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Register as Farmer&amp;#27;[0m                                            &amp;#27;[90m# Steps.iClickOnRegisterAsFarmer()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify that User is directed to My Application Page&amp;#27;[0m                    &amp;#27;[90m# Steps.iVerifyThatUserIsDirectedToMyApplicationPage()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify display of Farmers Card link&amp;#27;[0m                                    &amp;#27;[90m# Steps.iVerifyDisplayOfFarmersCardLink()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Programmes link&amp;#27;[0m                                                 &amp;#27;[90m# Steps.iVerifyProgrammesLink()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on New Button to apply for Registration&amp;#27;[0m                          &amp;#27;[90m# Steps.iClickOnNewButtonToApplyForRegistration()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify display of Registration Type Page&amp;#27;[0m                               &amp;#27;[90m# Steps.iVerifyDisplayOfRegistrationTypePage()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Tea Grower Icon&amp;#27;[0m                                               &amp;#27;[90m# Steps.iClickOnTeaGrowerIcon()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify display of REGISTRATION FOR TEA GROWERS Page&amp;#27;[0m                    &amp;#27;[90m# Steps.iVerifyDisplayOfREGISTRATIONFORTEAGROWERSPage()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select an Applicant Title &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mMrs&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                        &amp;#27;[90m# Steps.iSelectAnApplicantTitle(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select Applicant District &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mPort Louis&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                 &amp;#27;[90m# Steps.iSelectApplicantDistrict(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select Applicant Education Level &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mTertiary&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                            &amp;#27;[90m# Steps.iSelectApplicantEducationLevel(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select Agricultural Activity &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mFull Time&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                               &amp;#27;[90m# Steps.iSelectAgriculturalActivity(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input Other Occupation &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mManager&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                       &amp;#27;[90m# Steps.iInputOtherOccupation(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Upload Photograph &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1msrc\test\resources\Photo_upload.jpg&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                &amp;#27;[90m# Steps.iUploadPhotograph(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify for Photo upload success message&amp;#27;[0m                                &amp;#27;[90m# Steps.iVerifyForPhotoUploadSuccessMessage()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select No of years for Registration membership &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1m2&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                     &amp;#27;[90m# Steps.iSelectNoOfYearsForRegistrationMembership(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select Marital Status &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mMarried&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                        &amp;#27;[90m# Steps.iSelectMaritalStatus(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Save and Continue&amp;#27;[0m                                             &amp;#27;[90m# Steps.iClickOnSaveAndContinue()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Display of Particulars of Family Beneficiaries Page&amp;#27;[0m             &amp;#27;[90m# Steps.iVerifyDisplayOfParticularsOfFamilyBeneficiariesPage()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Add Family and Beneficiaries&amp;#27;[0m                                  &amp;#27;[90m# Steps.iClickOnAddFamilyAndBeneficiaries()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mVerify Display of Particulars of Family Beneficiaries input table&amp;#27;[0m        &amp;#27;[90m# Steps.verifyDisplayOfParticularsOfFamilyBeneficiariesInputTable()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select Family relationship for tea grower &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mSpouse&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                     &amp;#27;[90m# Steps.iSelectFamilyRelationshipForTeaGrower(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input Family Surname &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mKeen&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                            &amp;#27;[90m# Steps.iInputFamilySurname(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input Family Other Names &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mDafne&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                       &amp;#27;[90m# Steps.iInputFamilyOtherNames(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select Family Gender &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mFemale&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                          &amp;#27;[90m# Steps.iSelectFamilyGender(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input Family Date of Birth &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1m1Jan94&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                    &amp;#27;[90m# Steps.iInputFamilyDateOfBirth(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input Family Occupation &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mActress&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                      &amp;#27;[90m# Steps.iInputFamilyOccupation(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Beneficiary of life Insurance Scheme&amp;#27;[0m                          &amp;#27;[90m# Steps.iClickOnBeneficiaryOfLifeInsuranceScheme()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Beneficiary of Accident Insurance Scheme&amp;#27;[0m                      &amp;#27;[90m# Steps.iClickOnBeneficiaryOfAccidentInsuranceScheme()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Save Particulars of Family and Beneficiaries&amp;#27;[0m                           &amp;#27;[90m# Steps.iSaveParticularsOfFamilyAndBeneficiaries()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Save and Continue&amp;#27;[0m                                             &amp;#27;[90m# Steps.iClickOnSaveAndContinue()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Display of Particulars for Registration of Tea Plantation&amp;#27;[0m       &amp;#27;[90m# Steps.iVerifyDisplayOfParticularsForRegistrationOfTeaPlantation()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Add Tea Plantation&amp;#27;[0m                                            &amp;#27;[90m# Steps.iClickOnAddTeaPlantation()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Display of Particulars for Registration of Tea Plantation Table&amp;#27;[0m &amp;#27;[90m# Steps.iVerifyDisplayOfParticularsForRegistrationOfTeaPlantationTable()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input License No &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mTea Grower&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                          &amp;#27;[90m# Steps.iInputLicenseNo(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input Total Extent of plot (In Arpent) &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1m2.7&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                           &amp;#27;[90m# Steps.iInputTotalExtentOfPlotInArpent(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select Type of Owner &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mTenant&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                          &amp;#27;[90m# Steps.iSelectTypeOfOwner(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input Plot Location &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mMoka&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                             &amp;#27;[90m# Steps.iInputPlotLocation(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Save Particulars of Crop&amp;#27;[0m                                               &amp;#27;[90m# Steps.iSaveParticularsOfCrop()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Save and Continue&amp;#27;[0m                                             &amp;#27;[90m# Steps.iClickOnSaveAndContinue()&amp;#27;[0m
-    &amp;#27;[31mAnd &amp;#27;[0m&amp;#27;[31mI Verify Terms and Conditions Page&amp;#27;[0m                                       &amp;#27;[90m# Steps.iVerifyTermsAndConditionsPage()&amp;#27;[0m
+  @Main_feature @Registration_as_small_breeder @US12597
+  Scenario Outline: Application to Register as small breeder                 &amp;#27;[90m# features/US12597.feature:76&amp;#27;[0m
+    &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mI am on SFWF Front Office Home Page &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mChrome&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                       &amp;#27;[90m# Steps.iAmOnSFWFFrontOfficeHomePage(String)&amp;#27;[0m
+    &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mI Input Registered User&apos;s Username &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mSuraj&amp;#27;[0m&amp;#27;[32m&quot; and Password &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mAdmin@123&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m &amp;#27;[90m# Steps.iInputRegisteredUserSUsernameAndPassword(String,String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Sign In button&amp;#27;[0m                                            &amp;#27;[90m# Steps.iClickOnSignInButton()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Applicant&apos;s Successful Login&amp;#27;[0m                                &amp;#27;[90m# Steps.iVerifyApplicantSSuccessfulLogin()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Register as Farmer&amp;#27;[0m                                        &amp;#27;[90m# Steps.iClickOnRegisterAsFarmer()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify that User is directed to My Application Page&amp;#27;[0m                &amp;#27;[90m# Steps.iVerifyThatUserIsDirectedToMyApplicationPage()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify display of Farmers Card link&amp;#27;[0m                                &amp;#27;[90m# Steps.iVerifyDisplayOfFarmersCardLink()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Programmes link&amp;#27;[0m                                             &amp;#27;[90m# Steps.iVerifyProgrammesLink()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on New Button to apply for Registration&amp;#27;[0m                      &amp;#27;[90m# Steps.iClickOnNewButtonToApplyForRegistration()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify display of Registration Type Page&amp;#27;[0m                           &amp;#27;[90m# Steps.iVerifyDisplayOfRegistrationTypePage()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Small Breeder Icon&amp;#27;[0m                                        &amp;#27;[90m# Steps.iClickOnSmallBreederIcon()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify display of REGISTRATION FOR SMALL BREEDERS page&amp;#27;[0m             &amp;#27;[90m# Steps.iVerifyDisplayOfREGISTRATIONFORSMALLBREEDERSPage()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select an Applicant Title &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mMrs&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                    &amp;#27;[90m# Steps.iSelectAnApplicantTitle(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select Applicant District &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mPort Louis&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                             &amp;#27;[90m# Steps.iSelectApplicantDistrict(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select Applicant Level of Education &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mTertiary&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                     &amp;#27;[90m# Steps.iSelectApplicantLevelOfEducation(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select Agricultural Activity &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mFull Time&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                           &amp;#27;[90m# Steps.iSelectAgriculturalActivity(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input Other Occupation &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mManager&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                   &amp;#27;[90m# Steps.iInputOtherOccupation(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Upload Photograph &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1msrc\test\resources\Photo_upload.jpg&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m            &amp;#27;[90m# Steps.iUploadPhotograph(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify for Photo upload success message&amp;#27;[0m                            &amp;#27;[90m# Steps.iVerifyForPhotoUploadSuccessMessage()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select No of years for Registration membership &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1m2&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                 &amp;#27;[90m# Steps.iSelectNoOfYearsForRegistrationMembership(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select Marital Status &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mMarried&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                    &amp;#27;[90m# Steps.iSelectMaritalStatus(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Save and Continue&amp;#27;[0m                                         &amp;#27;[90m# Steps.iClickOnSaveAndContinue()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Display of Particulars of Family Beneficiaries Page&amp;#27;[0m         &amp;#27;[90m# Steps.iVerifyDisplayOfParticularsOfFamilyBeneficiariesPage()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Add Family and Beneficiaries&amp;#27;[0m                              &amp;#27;[90m# Steps.iClickOnAddFamilyAndBeneficiaries()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mVerify Display of Particulars of Family Beneficiaries input table&amp;#27;[0m    &amp;#27;[90m# Steps.verifyDisplayOfParticularsOfFamilyBeneficiariesInputTable()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select Family relationship for tea grower &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mSpouse&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                 &amp;#27;[90m# Steps.iSelectFamilyRelationshipForTeaGrower(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input Family Surname &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mKeen&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                        &amp;#27;[90m# Steps.iInputFamilySurname(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input Family Other Names &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mDafne&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                   &amp;#27;[90m# Steps.iInputFamilyOtherNames(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select Family Gender &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mFemale&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                      &amp;#27;[90m# Steps.iSelectFamilyGender(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input Family Date of Birth &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1m1Jan94&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                &amp;#27;[90m# Steps.iInputFamilyDateOfBirth(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input Family Occupation &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mActress&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                  &amp;#27;[90m# Steps.iInputFamilyOccupation(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Beneficiary of life Insurance Scheme&amp;#27;[0m                      &amp;#27;[90m# Steps.iClickOnBeneficiaryOfLifeInsuranceScheme()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Beneficiary of Accident Insurance Scheme&amp;#27;[0m                  &amp;#27;[90m# Steps.iClickOnBeneficiaryOfAccidentInsuranceScheme()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Save Particulars of Family and Beneficiaries&amp;#27;[0m                       &amp;#27;[90m# Steps.iSaveParticularsOfFamilyAndBeneficiaries()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Save and Continue&amp;#27;[0m                                         &amp;#27;[90m# Steps.iClickOnSaveAndContinue()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Display of Livestock Activity&amp;#27;[0m                               &amp;#27;[90m# Steps.iVerifyDisplayOfLivestockActivity()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Add Livestock Activity&amp;#27;[0m                                    &amp;#27;[90m# Steps.iClickOnAddLivestockActivity()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Display of Particulars for Livestock Activity Table&amp;#27;[0m         &amp;#27;[90m# Steps.iVerifyDisplayOfParticularsForLivestockActivityTable()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select Species &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mCattle&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                            &amp;#27;[90m# Steps.iSelectSpecies(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input Number of Male and Female &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1m550&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                              &amp;#27;[90m# Steps.iInputNumberOfMaleAndFemale(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input Total Heads &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1m550&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                            &amp;#27;[90m# Steps.iInputTotalHeads(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select Reason &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mMeat&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                               &amp;#27;[90m# Steps.iSelectReason(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Save Livestock Activity&amp;#27;[0m                                            &amp;#27;[90m# Steps.iSaveLivestockActivity()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Save and Continue&amp;#27;[0m                                         &amp;#27;[90m# Steps.iClickOnSaveAndContinue()&amp;#27;[0m
+    #    And I Verify Display of Particulars for Registration of Tea Plantation Table
+    #    And I Input License No &quot;&lt;License&gt;&quot;
+    #    And I Input Total Extent of plot (In Arpent) &quot;&lt;Land_Extent&gt;&quot;
+    #    And I Select Type of Owner &quot;&lt;Owner_Type&gt;&quot;
+    #    And I Input Plot Location &quot;&lt;Plot_Location&gt;&quot;
+    #    And I Save Particulars of Crop
+    #    And I Click on Save and Continue
+    &amp;#27;[31mAnd &amp;#27;[0m&amp;#27;[31mI Verify Terms and Conditions Page&amp;#27;[0m                                   &amp;#27;[90m# Steps.iVerifyTermsAndConditionsPage()&amp;#27;[0m
       &amp;#27;[31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h6[contains(.,&apos;Terms and Conditions&apos;)]&quot;}
         (Session info: chrome=127.0.6533.120)
       For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
       Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
       System info: host: &apos;SIL-LTDELLI7-G6&apos;, ip: &apos;130.1.19.132&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_371&apos;
       Driver info: org.openqa.selenium.chrome.ChromeDriver
-      Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}), userDataDir=C:\Users\SURAJ~1.JOG\AppData\Local\Temp\scoped_dir16088_1191589554}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:54132}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=127.0.6533.120, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-      Session ID: f06e1880ff6c8fa31d596e60bceb6bd1
+      Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}), userDataDir=C:\Users\SURAJ~1.JOG\AppData\Local\Temp\scoped_dir15420_55071313}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:50489}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=127.0.6533.120, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+      Session ID: d849ae67962d3a38a0ad7325f1f130a2
       *** Element info: {Using=xpath, value=//h6[contains(.,&apos;Terms and Conditions&apos;)]}
       	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
       	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -257,21 +272,21 @@ java.lang.NullPointerException
       	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
       	at objectrepository.Terms_and_Condition.Terms_and_condition(Terms_and_Condition.java:14)
       	at stepdefinition.Steps.iVerifyTermsAndConditionsPage(Steps.java:797)
-      	at ?.And I Verify Terms and Conditions Page(features/US12599.feature:54)
+      	at ?.And I Verify Terms and Conditions Page(features/US12597.feature:66)
       &amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI click on I agree to the Terms and Conditions&amp;#27;[0m                           &amp;#27;[90m# Steps.iClickOnIAgreeToTheTermsAndConditions()&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Submit Application &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mYes&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                                      &amp;#27;[90m# Steps.iClickOnSubmitApplication(String)&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Success message for application submitted&amp;#27;[0m                       &amp;#27;[90m# Steps.iVerifySuccessMessageForApplicationSubmitted()&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Application Status &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mSubmitted&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                                  &amp;#27;[90m# Steps.iVerifyApplicationStatus(String)&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Payment Status &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mPending&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                                        &amp;#27;[90m# Steps.iVerifyPaymentStatus(String)&amp;#27;[0m
-    &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mI Sign Out as Front Registered User&amp;#27;[0m                                     &amp;#27;[90m# Steps.iSignOutAsFrontRegisteredUser()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI click on I agree to the Terms and Conditions&amp;#27;[0m                       &amp;#27;[90m# Steps.iClickOnIAgreeToTheTermsAndConditions()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Submit Application &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mYes&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                                  &amp;#27;[90m# Steps.iClickOnSubmitApplication(String)&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Success message for application submitted&amp;#27;[0m                   &amp;#27;[90m# Steps.iVerifySuccessMessageForApplicationSubmitted()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Application Status &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mSubmitted&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                              &amp;#27;[90m# Steps.iVerifyApplicationStatus(String)&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Payment Status &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mPending&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                                    &amp;#27;[90m# Steps.iVerifyPaymentStatus(String)&amp;#27;[0m
+    &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mI Sign Out as Front Registered User&amp;#27;[0m                                 &amp;#27;[90m# Steps.iSignOutAsFrontRegisteredUser()&amp;#27;[0m
 
 &amp;#27;[31mFailed scenarios:&amp;#27;[0m
-&amp;#27;[31mfeatures/US12599.feature:64 &amp;#27;[0m# Scenario Outline: Application to Register as tea_grower
+&amp;#27;[31mfeatures/US12597.feature:76 &amp;#27;[0m# Scenario Outline: Application to Register as small breeder
 
 1 Scenarios (&amp;#27;[31m1 failed&amp;#27;[0m)
 51 Steps (&amp;#27;[31m1 failed&amp;#27;[0m, &amp;#27;[36m6 skipped&amp;#27;[0m, &amp;#27;[32m44 passed&amp;#27;[0m)
-1m22.677s
+1m46.120s
 
 org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h6[contains(.,&apos;Terms and Conditions&apos;)]&quot;}
   (Session info: chrome=127.0.6533.120)
@@ -279,8 +294,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
 System info: host: &apos;SIL-LTDELLI7-G6&apos;, ip: &apos;130.1.19.132&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_371&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}), userDataDir=C:\Users\SURAJ~1.JOG\AppData\Local\Temp\scoped_dir16088_1191589554}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:54132}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=127.0.6533.120, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: f06e1880ff6c8fa31d596e60bceb6bd1
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}), userDataDir=C:\Users\SURAJ~1.JOG\AppData\Local\Temp\scoped_dir15420_55071313}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:50489}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=127.0.6533.120, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: d849ae67962d3a38a0ad7325f1f130a2
 *** Element info: {Using=xpath, value=//h6[contains(.,&apos;Terms and Conditions&apos;)]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -298,17 +313,17 @@ Session ID: f06e1880ff6c8fa31d596e60bceb6bd1
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
 	at objectrepository.Terms_and_Condition.Terms_and_condition(Terms_and_Condition.java:14)
 	at stepdefinition.Steps.iVerifyTermsAndConditionsPage(Steps.java:797)
-	at ?.And I Verify Terms and Conditions Page(features/US12599.feature:54)
+	at ?.And I Verify Terms and Conditions Page(features/US12597.feature:66)
 
 </system-out>
     <system-err>SLF4J: No SLF4J providers were found.
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
-Starting ChromeDriver 127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}) on port 41682
+Starting ChromeDriver 127.0.6533.119 (bdef6783a05f0b3f885591e7d2c7b2aec1a89dea-refs/branch-heads/6533@{#1999}) on port 17846
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Aug 21, 2024 11:17:51 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+Aug 21, 2024 4:35:53 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 log4j:WARN No appenders could be found for logger (freemarker.cache).
 log4j:WARN Please initialize the log4j system properly.
