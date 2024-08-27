@@ -2677,4 +2677,203 @@ public class Steps extends Utility {
             Assert.fail("Reason option is not valid");
         }
     }
+
+    @And("^I Verify Display of Particulars for Cattle Page$")
+    public void iVerifyDisplayOfParticularsForCattlePage() {
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);",  Small_breeder.Particulars_cattle_page(driver));
+        WebDriverWait w = new WebDriverWait(driver, 10);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h6[contains(.,'Particulars for Cattle (Cows and Bulls)')]")));
+        try {
+            Small_breeder.Particulars_cattle_page(driver);
+        } catch (Exception e) {
+            System.out.println("Particulars for Cattle Page did not appear");
+            Assert.fail("Particulars for Cattle Page did not appear");
+        }
+    }
+
+    @And("^I Click on Add Particular of Cattle$")
+    public void iClickOnAddParticularOfCattle() throws InterruptedException {
+        Thread.sleep(1500);
+        try {
+            Small_breeder.Add_particular_cattle(driver);
+        } catch (Exception e){
+            Assert.fail("Add Particular of Cattle is not clickable");
+        }
+        Thread.sleep(1500);
+        Small_breeder.Add_particular_cattle(driver).click();
+    }
+
+    @And("^I Verify Display of Particulars for Cattle Table$")
+    public void iVerifyDisplayOfParticularsForCattleTable() throws InterruptedException {
+        Thread.sleep(3000);
+        WebDriverWait w = new WebDriverWait(driver, 5);
+        WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(.,'Particulars for Cattle')]")));
+        try {
+            Small_breeder.Particulars_cattle_tab(driver);
+        } catch (Exception e) {
+            System.out.println("Particulars for Cattle Table did not appear");
+            Assert.fail("Particulars for Cattle Table did not appear");
+        }
+    }
+
+    @And("^I Input Microchip Number \"([^\"]*)\"$")
+    public void iInputMicrochipNumber(String Microchip_No) throws Throwable {
+        Small_breeder.Microchip_no(driver).sendKeys(Microchip_No);
+    }
+
+    @And("^I Select Cattle Sex \"([^\"]*)\"$")
+    public void iSelectCattleSex(String Cattle_Sex) throws Throwable {
+        Small_breeder.Cattle_sex_select_one(driver).click();
+        sleep(1500);
+        if (Cattle_Sex.equals("Male")){
+            Small_breeder.Cattle_sex_male(driver).click();
+            System.out.println("Cattle Sex Male is working fine");
+        }else if(Cattle_Sex.equals("Female")){
+            Small_breeder.Cattle_sex_female(driver).click();
+            System.out.println("Cattle Sex Female is working fine");
+        }else{
+            System.out.println("Cattle Sex option is not valid");
+            Assert.fail("Cattle Sex option is not valid");
+        }
+    }
+
+    @And("^I Select Cattle Age \"([^\"]*)\"$")
+    public void iSelectCattleAge(String Cattle_Age) throws Throwable {
+        Small_breeder.Cattle_age_select_one(driver).click();
+        sleep(1500);
+        if (Cattle_Age.equals("1Month")){
+            Small_breeder.Cattle_age_one_month(driver).click();
+            System.out.println("Cattle age 1 month is working fine");
+        }else if(Cattle_Age.equals("2Month")){
+            Small_breeder.Cattle_age_two_month(driver).click();
+            System.out.println("Cattle age 2 month is working fine");
+        }else if(Cattle_Age.equals("3Month")){
+            Small_breeder.Cattle_age_three_month(driver).click();
+            System.out.println("Cattle age 3 month is working fine");
+        }else if(Cattle_Age.equals("4Month")){
+            Small_breeder.Cattle_age_four_month(driver).click();
+            System.out.println("Cattle age 4 month is working fine");
+        }else if(Cattle_Age.equals("5Month")){
+            Small_breeder.Cattle_age_five_month(driver).click();
+            System.out.println("Cattle age 5 month is working fine");
+        }else{
+            System.out.println("Cattle age option is not valid");
+            Assert.fail("Cattle age option is not valid");
+        }
+    }
+
+    @And("^I Save Particulars for Cattle$")
+    public void iSaveParticularsForCattle() throws InterruptedException {
+        Small_breeder.Save_cattle_particulars(driver).click();
+        Thread.sleep(1000);
+
+    }
+
+    @And("^I Upload Copy of National Identify Card \\(ID\\) \"([^\"]*)\"$")
+    public void iUploadCopyOfNationalIdentifyCardID(String Upload_test) throws Throwable {
+        String filePath = new File(Upload_test).getAbsolutePath();
+        Documents_upload.Business_Registration_card_upload(driver).sendKeys(filePath);
+        WebDriverWait w = new WebDriverWait(driver, 30);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[1]")));
+    }
+
+    @And("^I Upload Existing SFWF Reg No \\(if any\\) \"([^\"]*)\"$")
+    public void iUploadExistingSFWFRegNoIfAny(String Upload_test) throws Throwable {
+        String filePath = new File(Upload_test).getAbsolutePath();
+
+        Documents_upload.Certificate_of_incorporation_upload(driver).sendKeys(filePath);
+        WebDriverWait w = new WebDriverWait(driver, 30);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[2]")));
+
+    }
+
+    @And("^I Upload copy of Title Deed \"([^\"]*)\"$")
+    public void iUploadCopyOfTitleDeed(String Upload_test) throws Throwable {
+        String filePath = new File(Upload_test).getAbsolutePath();
+
+        Documents_upload.List_of_directors_upload(driver).sendKeys(filePath);
+        WebDriverWait w = new WebDriverWait(driver, 30);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[3]")));
+    }
+
+    @And("^I Upload Copy of registered /Non-Registered Lease Paper \"([^\"]*)\"$")
+    public void iUploadCopyOfRegisteredNonRegisteredLeasePaper(String Upload_test) throws Throwable {
+        String filePath = new File(Upload_test).getAbsolutePath();
+
+        Documents_upload.Board_resolution_of_enterprise_upload(driver).sendKeys(filePath);
+        WebDriverWait w = new WebDriverWait(driver, 30);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[4]")));
+    }
+
+    @And("^I Upload Copy of title deed of land owner including cooperatives \\(for non-registered lease paper\\) \"([^\"]*)\"$")
+    public void iUploadCopyOfTitleDeedOfLandOwnerIncludingCooperativesForNonRegisteredLeasePaper(String Upload_test) throws Throwable {
+        String filePath = new File(Upload_test).getAbsolutePath();
+
+        Documents_upload.National_identity_card_Representative_upload(driver).sendKeys(filePath);
+        WebDriverWait w = new WebDriverWait(driver, 30);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[5]")));
+    }
+
+    @And("^I Upload Preliminary environmental report, Building and land use Permit and health clearance \"([^\"]*)\"$")
+    public void iUploadPreliminaryEnvironmentalReportBuildingAndLandUsePermitAndHealthClearance(String Upload_test) throws Throwable {
+        String filePath = new File(Upload_test).getAbsolutePath();
+
+        Documents_upload.National_identity_card_Shareholders_upload(driver).sendKeys(filePath);
+        WebDriverWait w = new WebDriverWait(driver, 30);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[6]")));
+    }
+
+    @And("^I Upload Location plan of farm including size \"([^\"]*)\"$")
+    public void iUploadLocationPlanOfFarmIncludingSize(String Upload_test) throws Throwable {
+        String filePath = new File(Upload_test).getAbsolutePath();
+
+        Documents_upload.Location_plan_upload(driver).sendKeys(filePath);
+        WebDriverWait w = new WebDriverWait(driver, 30);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[7]")));
+    }
+
+    @And("^I Upload List of Tags Nos\\. \\(except poultry and pig\\) \"([^\"]*)\"$")
+    public void iUploadListOfTagsNosExceptPoultryAndPig(String Upload_test) throws Throwable {
+        String filePath = new File(Upload_test).getAbsolutePath();
+
+        Documents_upload.SMEDA_certificate_upload(driver).sendKeys(filePath);
+        WebDriverWait w = new WebDriverWait(driver, 30);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[8]")));
+
+    }
+
+    @And("^I Upload Animal Card DVs where applicable \"([^\"]*)\"$")
+    public void iUploadAnimalCardDVsWhereApplicable(String Upload_test) throws Throwable {
+        String filePath = new File(Upload_test).getAbsolutePath();
+
+        Documents_upload.Utility_bill_upload(driver).sendKeys(filePath);
+        WebDriverWait w = new WebDriverWait(driver, 30);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[9]")));
+    }
+
+    @And("^I Verify Declaration Page for REGISTRATION FOR SMALL BREEDERS$")
+    public void iVerifyDeclarationPageForREGISTRATIONFORSMALLBREEDERS() {
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);", Small_planters.Membership_into_sfwf(driver));
+
+        WebDriverWait w = new WebDriverWait(driver, 20);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h6[contains(.,'Membership into Small Farmers Welfare Fund (SFWF)')]")));
+        try {
+            Small_planters.Membership_into_sfwf(driver);
+        } catch (Exception e) {
+            System.out.println("Declaration Page for REGISTRATION FOR SMALL BREEDERS did not appear");
+            Assert.fail("Declaration Page for REGISTRATION FOR SMALL BREEDERS did not appear");
+        }
+
+    }
+
+    @And("^I Verify Success message for application submitted for Small Breeders Registration$")
+    public void iVerifySuccessMessageForApplicationSubmittedForSmallBreedersRegistration() throws InterruptedException {
+        sleep(2000);
+        try {
+            My_application.Success_message_submit_application(driver);
+        } catch (Exception e) {
+            System.out.println("Success message did not appear");
+        }
+        sleep(8000);
+    }
 }

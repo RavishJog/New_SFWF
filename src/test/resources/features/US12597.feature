@@ -51,17 +51,45 @@ Feature: User Story 12597 - Register as Small Breeder
     And I Select Reason "<Reason>"
     And I Save Livestock Activity
     And I Click on Save and Continue
-
-
-    And I Verify Terms and Conditions Page
+    And I Verify Display of Particulars for Cattle Page
+    And I Click on Add Particular of Cattle
+    And I Verify Display of Particulars for Cattle Table
+    And I Input Microchip Number "<Microchip_No>"
+    And I Select Cattle Sex "<Cattle_Sex>"
+    And I Select Cattle Age "<Cattle_Age>"
+    And I Save Particulars for Cattle
+    And I Click on Save and Continue
+    And I Verify Upload Required Documents Page is displayed
+    And I Upload Copy of National Identify Card (ID) "<Upload_test>"
+    And I Upload Existing SFWF Reg No (if any) "<Upload_test>"
+    And I Upload copy of Title Deed "<Upload_test>"
+    And I Upload Copy of registered /Non-Registered Lease Paper "<Upload_test>"
+    And I Upload Copy of title deed of land owner including cooperatives (for non-registered lease paper) "<Upload_test>"
+    And I Upload Preliminary environmental report, Building and land use Permit and health clearance "<Upload_test>"
+    And I Upload Location plan of farm including size "<Upload_test>"
+    And I Upload List of Tags Nos. (except poultry and pig) "<Upload_test>"
+    And I Upload Animal Card DVs where applicable "<Upload_test>"
+    And I Verify for Document Upload Success Message
+    And I Click on Add Additional Document
+    And I Input Additional Document Name "<Additional_Doc_Name>"
+    And I Verify Success message for adding Additional Document Name
+    And I Upload Additional Document "<Upload_test>"
+    And I Verify for Document Upload Success Message
+    And I Click on Save and Continue
+    And I Verify Declaration Page for REGISTRATION FOR SMALL BREEDERS
     And I click on I agree to the Terms and Conditions
+    And I Click on Photo checkbox
+    And I Select Bank "<Bank_Name>"
+    And I Input Bank Branch for Agro-Processing Enterprise "<Bank_Branch>"
+    And I Input Personal Bank Account Number Agro-Processing Enterprise "<Bank_Account_No>"
     And I Click on Submit Application "<Confirmation>"
-    And I Verify Success message for application submitted
+    And I Verify Success message for application submitted for Small Breeders Registration
+    And I Click on Cancel button not to proceed with another registration
     And I Verify Application Status "<App_status>"
     And I Verify Payment Status "<Payment_Status>"
     Then I Sign Out as Front Registered User
 
     Examples:
-      |Browser|Username |Password |Applicant_Title |District   |Education_Level |Act      |Other_Occupation  |Photo                               |Year_dur |Marital_Status|Relationship|Family_Surname|Family_Other_Names|Gender|DOB   |Occupation |License    |Land_Extent|Owner_Type|Plot_Location|Spicies |Male_Female_Number|Total_Heads |Reason |Upload_test                        |Additional_Doc_Name      |Bank_Name  |Bank_Branch|Bank_Account_No|Confirmation|App_status|Payment_Status |Payment_method |
-      |Chrome |Suraj    |Admin@123|Mrs              |Port Louis|Tertiary        |Full Time|Manager           |src\test\resources\Photo_upload.jpg |2        |Married       |Spouse      |Keen          |Dafne             |Female|1Jan94|Actress    |Tea Grower |2.7        |Tenant    |Moka         |Cattle  |550               |550         |Meat   |src\test\resources\Upload_Test1.pdf|Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |Counter        |
+      |Browser|Username |Password |Applicant_Title |District   |Education_Level |Act      |Other_Occupation  |Photo                               |Year_dur |Marital_Status|Relationship|Family_Surname|Family_Other_Names|Gender|DOB   |Occupation |License    |Land_Extent|Owner_Type|Plot_Location|Spicies |Male_Female_Number|Total_Heads |Reason |Microchip_No|Cattle_Sex|Cattle_Age|Upload_test                        |Additional_Doc_Name      |Bank_Name  |Bank_Branch|Bank_Account_No|Confirmation|App_status|Payment_Status |Payment_method |
+      |Chrome |Suraj    |Admin@123|Mrs              |Port Louis|Tertiary        |Full Time|Manager           |src\test\resources\Photo_upload.jpg |2        |Married       |Spouse      |Keen          |Dafne             |Female|1Jan94|Actress    |Tea Grower |2.7        |Tenant    |Moka         |Cattle  |550               |550         |Meat   |AAA2563     |Male      |1Month    |src\test\resources\Upload_Test1.pdf|Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |Counter        |
 

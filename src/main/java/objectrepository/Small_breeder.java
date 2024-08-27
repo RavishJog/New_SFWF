@@ -147,6 +147,105 @@ public class Small_breeder {
         return element;
     }
 
+    //Object for Particulars for Cattle (Cows and Bulls) to be registered under the Farmers Protection Scheme (FPS) Page
+    private static By lbl_Particulars_cattle_page = By.xpath("//h6[contains(.,'Particulars for Cattle (Cows and Bulls)')]");
+    public static WebElement Particulars_cattle_page(WebDriver driver) {
+        element = driver.findElement(lbl_Particulars_cattle_page);
+        return element;
+    }
+
+    //Object for Add Particular of Cattle button
+    private static By btn_Add_particular_cattle = By.xpath("//span[contains(.,'Add Particular of Cattle')]");
+    public static WebElement Add_particular_cattle(WebDriver driver) {
+        element = driver.findElement(btn_Add_particular_cattle);
+        return element;
+    }
+
+    //Object for Particular of Cattle table
+    private static By lbl_Particulars_cattle_tab = By.xpath("//span[contains(.,'Particulars for Cattle')]");
+    public static WebElement Particulars_cattle_tab(WebDriver driver) {
+        element = driver.findElement(lbl_Particulars_cattle_tab);
+        return element;
+    }
+
+    //Object for Microchip No
+    private static By txt_Microchip_no = By.xpath("//input[contains(@id,'microchip')]");
+    public static WebElement Microchip_no(WebDriver driver) {
+        element = driver.findElement(txt_Microchip_no);
+        return element;
+    }
+
+    //Object for Cattle Sex - Select One
+    private static By lbl_Cattle_sex_select_one = By.xpath("//label[contains(@id,'sex_label')]");
+    public static WebElement Cattle_sex_select_one(WebDriver driver) {
+        element = driver.findElement(lbl_Cattle_sex_select_one);
+        return element;
+    }
+
+    //Object for Cattle Sex - Male
+    private static By lbl_Cattle_sex_male = By.xpath("//li[contains(@id,'sex_1')]");
+    public static WebElement Cattle_sex_male(WebDriver driver) {
+        element = driver.findElement(lbl_Cattle_sex_male);
+        return element;
+    }
+
+    //Object for Cattle Sex - Female
+    private static By lbl_Cattle_sex_female = By.xpath("//li[contains(@id,'sex_2')]");
+    public static WebElement Cattle_sex_female(WebDriver driver) {
+        element = driver.findElement(lbl_Cattle_sex_female);
+        return element;
+    }
+
+    //Object for Cattle Age - Select One
+    private static By lbl_Cattle_age_select_one = By.xpath("//label[contains(@id,'age_cattle_label')]");
+    public static WebElement Cattle_age_select_one(WebDriver driver) {
+        element = driver.findElement(lbl_Cattle_age_select_one);
+        return element;
+    }
+
+    //Object for Cattle Age - One Month
+    private static By lbl_Cattle_age_one_month = By.xpath("//li[contains(.,'1 Month')]");
+    public static WebElement Cattle_age_one_month(WebDriver driver) {
+        element = driver.findElement(lbl_Cattle_age_one_month);
+        return element;
+    }
+
+    //Object for Cattle Age - Two Month
+    private static By lbl_Cattle_age_two_month = By.xpath("//li[contains(.,'2 Months')]");
+    public static WebElement Cattle_age_two_month(WebDriver driver) {
+        element = driver.findElement(lbl_Cattle_age_two_month);
+        return element;
+    }
+
+    //Object for Cattle Age - Three Month
+    private static By lbl_Cattle_age_three_month = By.xpath("//li[contains(.,'3 Months')]");
+    public static WebElement Cattle_age_three_month(WebDriver driver) {
+        element = driver.findElement(lbl_Cattle_age_three_month);
+        return element;
+    }
+
+    //Object for Cattle Age - Four Month
+    private static By lbl_Cattle_age_four_month = By.xpath("//li[contains(.,'4 Months')]");
+    public static WebElement Cattle_age_four_month(WebDriver driver) {
+        element = driver.findElement(lbl_Cattle_age_four_month);
+        return element;
+    }
+
+    //Object for Cattle Age - Five Month
+    private static By lbl_Cattle_age_five_month = By.xpath("//li[contains(.,'5 Months')]");
+    public static WebElement Cattle_age_five_month(WebDriver driver) {
+        element = driver.findElement(lbl_Cattle_age_five_month);
+        return element;
+    }
+
+    //Object for Save Cattle Particulars
+    private static By btn_Save_cattle_particulars = By.xpath("(//span[contains(.,'Save')])[1]");
+    public static WebElement Save_cattle_particulars(WebDriver driver) {
+        element = driver.findElement(btn_Save_cattle_particulars);
+        return element;
+    }
+
+
 
 
 }

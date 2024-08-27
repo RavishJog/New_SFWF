@@ -156,21 +156,21 @@ public class Back_office_main_page {
     }
 
     //Object for Action - Select One - PWO
-    private static By lbl_Action_PWO_select_one = By.xpath("//label[contains(.,'Select One')]");
+    private static By lbl_Action_PWO_select_one = By.xpath("//label[contains(@id, 'myActionId_label')]");
     public static WebElement Action_PWO_select_one(WebDriver driver) {
         element = driver.findElement(lbl_Action_PWO_select_one);
         return element;
     }
 
     //Object for Action - Select One - PWO2
-    private static By lbl_Action_PWO2_select_one = By.xpath("//label[contains(.,'Select One')]");
+    private static By lbl_Action_PWO2_select_one = By.xpath("//label[contains(@id, 'myActionId_label')]");
     public static WebElement Action_PWO2_select_one(WebDriver driver) {
         element = driver.findElement(lbl_Action_PWO2_select_one);
         return element;
     }
 
     //Object for Action - Select One - Other BO
-    private static By lbl_Action_select_one = By.xpath("(//span[@class='ui-icon ui-icon-triangle-1-s ui-c'])[2]");
+    private static By lbl_Action_select_one = By.xpath("//label[contains(@id, 'roleActionId')]");
     public static WebElement Action_select_one(WebDriver driver) {
         element = driver.findElement(lbl_Action_select_one);
         return element;
@@ -212,7 +212,7 @@ public class Back_office_main_page {
     }
 
     //Object for Select User - Select One
-    private static By lbl_User_select_one = By.xpath("//label[contains(.,'Select One')]");
+    private static By lbl_User_select_one = By.xpath("//label[contains(@id, 'userAssignedId_label')]");
     public static WebElement User_select_one(WebDriver driver) {
         element = driver.findElement(lbl_User_select_one);
         return element;
