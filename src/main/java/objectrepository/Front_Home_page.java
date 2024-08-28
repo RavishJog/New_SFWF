@@ -79,7 +79,7 @@ public class Front_Home_page {
     }
 
     //Object for New Button
-    private static By btn_New_registration_application = By.xpath("//span[contains(.,'New')]");
+    private static By btn_New_registration_application = By.xpath("//span[contains(.,'New Registration')]");
     public static WebElement New_registration_application(WebDriver driver) {
         element = driver.findElement(btn_New_registration_application);
         return element;

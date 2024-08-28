@@ -131,14 +131,13 @@ public class Steps extends Utility {
     @And("^I Verify Successful Sign Out$")
     public void iVerifySuccessfulSignOut() {
         WebDriverWait w = new WebDriverWait(driver, 5);
-        w.until(ExpectedConditions.visibilityOf(Home_page.Sign_in_to_sfwf(driver)));
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h1[contains(.,'Sign in to SFWF')]")));
         try {
             Home_page.Sign_in_to_sfwf(driver);
         } catch (Exception e) {
             System.out.println("Sign in to SFWF Label did not appear");
             Assert.fail("Sign in to SFWF Label did not appear");
         }
-        tearDown();
     }
 
     @And("^I Verify Bad Credential Message \"([^\"]*)\"$")
@@ -169,7 +168,7 @@ public class Steps extends Utility {
     @And("^I Click on Manage Fee and Fine$")
     public void iClickOnManageFeeAndFine() {
         WebDriverWait w = new WebDriverWait(driver, 5);
-        w.until(ExpectedConditions.visibilityOf(Fees_and_fines.Manage_fee_and_fine(driver)));
+        WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),'Manage Fee and Fine')]")));
         Fees_and_fines.Manage_fee_and_fine(driver).click();
     }
 
@@ -391,8 +390,8 @@ public class Steps extends Utility {
     public void iClickOnForgetPassword() throws InterruptedException {
         sleep(3000);
         Home_page.Forget_password(driver).click();
-        WebDriverWait w = new WebDriverWait(driver, 5);
-        w.until(ExpectedConditions.visibilityOf(Home_page.Forget_password_label(driver)));
+        WebDriverWait w = new WebDriverWait(driver, 10);
+        WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h1[contains(.,'Forget Password')]")));
 
     }
 
@@ -432,7 +431,7 @@ public class Steps extends Utility {
     @And("^I Verify Applicant's Successful Login$")
     public void iVerifyApplicantSSuccessfulLogin() {
         WebDriverWait w = new WebDriverWait(driver, 5);
-        w.until(ExpectedConditions.visibilityOf(Front_Home_page.Welcome_user(driver)));
+        WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h3[contains(.,'Welcome')]")));
     }
 
     @And("^I Click on Register as Farmer$")
@@ -674,10 +673,15 @@ public class Steps extends Utility {
     @And("^I Click on Save and Continue$")
     public void iClickOnSaveAndContinue() throws InterruptedException {
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", Farmers_cooperatives_association_society_company.Save_and_continue(driver));
-        sleep(6000);
+        sleep(3000);
         WebDriverWait wait = new WebDriverWait(driver, 10); // 10 seconds timeout
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(Farmers_cooperatives_association_society_company.Save_and_continue(driver)));
-        element.click();
+        try{
+            Farmers_cooperatives_association_society_company.Save_and_continue(driver).click();
+        }catch (Exception e){
+            Assert.fail("Save and Continue is not working");
+        }
+
         sleep(3000);
     }
 
@@ -809,7 +813,7 @@ public class Steps extends Utility {
     @And("^I Select Bank \"([^\"]*)\"$")
     public void iSelectBank(String Bank_Name) throws Throwable {
         WebDriverWait w = new WebDriverWait(driver, 20);
-        w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[contains(.,'Personal Bank Account Number:')])[15]")));
+        WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[contains(.,'Personal Bank Account Number:')])[15]")));
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);", Terms_and_Condition.Personal_Bank_Account_Number_label(driver));
         sleep(1000);
         if (Bank_Name.equals("ABC Banking")) {
@@ -1058,7 +1062,7 @@ public class Steps extends Utility {
 //        WebDriverWait w = new WebDriverWait(driver, 10);
 //        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[contains(.,'Log Out')]\")));
         WebDriverWait w = new WebDriverWait(driver, 5);
-        w.until(ExpectedConditions.visibilityOf(Front_Home_page.Yes_sign_out(driver)));
+        WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//i[contains(@class,'pi pi-check")));
         Front_Home_page.Yes_sign_out(driver).click();
         sleep(2000);
         tearDown();
@@ -1084,7 +1088,7 @@ public class Steps extends Utility {
     @And("^I Select Application for payment$")
     public void IselectApplicationForPayment() throws InterruptedException {
         WebDriverWait w = new WebDriverWait(driver, 5);
-        w.until(ExpectedConditions.visibilityOf(Payment_process.Search_reference_number(driver)));
+        WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//input[@role='textbox'])[1]")));
         Payment_process.Search_reference_number(driver).sendKeys(Application_reference_number);
         sleep(2000);
         Payment_process.Select_last_application(driver).click();
@@ -1136,8 +1140,8 @@ public class Steps extends Utility {
 
     @And("^I Click on Final Proceed to Payment$")
     public void iClickOnFinalProceedToPayment() throws InterruptedException {
-        WebDriverWait ww = new WebDriverWait(driver, 5);
-        ww.until(ExpectedConditions.visibilityOf(Payment_process.Proceed_to_payment(driver)));
+        WebDriverWait w = new WebDriverWait(driver, 5);
+        WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@class='ui-button-text ui-c'][contains(.,'Proceed to Payment')]")));
         Payment_process.Proceed_to_payment(driver).click();
         sleep(2000);
     }
@@ -1350,7 +1354,7 @@ public class Steps extends Utility {
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[contains(text(),'Upload')]")));
         Documents_upload.Upload_button(driver).click();
         WebDriverWait ww = new WebDriverWait(driver, 10);
-        WebElement element2 = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download']")));
+        WebElement element2 = ww.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download']")));
     }
 
     @And("^I Select Marital Status \"([^\"]*)\"$")
@@ -1452,7 +1456,7 @@ public class Steps extends Utility {
 //        driver.switchTo().frame("//div[contains(@id, 'dlgfamily')]");  // Switch to the frame with the specified name or ID
 
         WebDriverWait w = new WebDriverWait(driver, 5);
-        w.until(ExpectedConditions.visibilityOf(Small_planters.Particulars_family_ben_tab(driver)));
+        WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(.,'Particulars of Family and Beneficiaries')]")));
         try {
             Small_planters.Particulars_family_ben_tab(driver);
         } catch (Exception e) {
@@ -1606,7 +1610,7 @@ public class Steps extends Utility {
     public void iVerifyDisplayOfParticularsOfCropSugarcaneAndTeaPlantationTable() throws InterruptedException {
         sleep(3000);
         WebDriverWait w = new WebDriverWait(driver, 5);
-        w.until(ExpectedConditions.visibilityOf(Small_planters.Particulars_of_crop_tab(driver)));
+        WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(.,'Particulars of Crop: Sugarcane and Tea Plantation')]")));
         try {
             Small_planters.Particulars_of_crop_tab(driver);
         } catch (Exception e) {
@@ -1696,7 +1700,7 @@ public class Steps extends Utility {
     public void verifyDisplayOfParticularsForHorticulturalPlantationsTable() throws InterruptedException {
         sleep(3000);
         WebDriverWait w = new WebDriverWait(driver, 5);
-        w.until(ExpectedConditions.visibilityOf(Small_planters.Particulars_of_horticultural_tab(driver)));
+        WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//span[contains(.,'Particulars for Horticultural Plantations')])[1]")));
         try {
             Small_planters.Particulars_of_horticultural_tab(driver);
         } catch (Exception e) {
@@ -1799,7 +1803,7 @@ public class Steps extends Utility {
         Documents_upload.Button_upload_horticultural_plantation(driver).click();
         sleep(3000);
         WebDriverWait w = new WebDriverWait(driver, 5);
-        w.until(ExpectedConditions.visibilityOf(Small_planters.Horticultural_plantation_documents_tab(driver)));
+        WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(.,'Horticultural Plantation Documents')]")));
         String filePath = new File(Upload_test).getAbsolutePath();
         Documents_upload.Document_upload_horticultural_plantation(driver).sendKeys(filePath);
         WebDriverWait ww = new WebDriverWait(driver, 30);
@@ -1836,7 +1840,7 @@ public class Steps extends Utility {
     public void iVerifyParticularsForHorticulturalPlantationsDeclaredUnderFPSTable() throws InterruptedException {
         sleep(1500);
         WebDriverWait w = new WebDriverWait(driver, 5);
-        w.until(ExpectedConditions.visibilityOf(Small_planters.Particulars_for_Horticultural_Plantations_declared_under_FPS_table(driver)));
+        WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains (@id, 'dlgfpshorticultural_title')]")));
 
     }
 
@@ -1863,10 +1867,10 @@ public class Steps extends Utility {
     public void iClickOnCancelButtonNotToProceedWithAnotherRegistration() throws InterruptedException {
         sleep(2000);
         WebDriverWait w = new WebDriverWait(driver, 5);
-        w.until(ExpectedConditions.visibilityOf(Terms_and_Condition.Cancel_no_other_registration(driver)));
+        WebElement element1 = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(.,'Cancel')]")));
         Terms_and_Condition.Cancel_no_other_registration(driver).click();
         WebDriverWait ww = new WebDriverWait(driver, 10);
-        WebElement element = ww.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h5[contains(text(),'My Application')]")));
+        WebElement element2 = ww.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h5[contains(text(),'My Application')]")));
 
     }
 
@@ -1927,8 +1931,8 @@ public class Steps extends Utility {
 
     @And("^I Click on Final Proceed to Online Payment$")
     public void iClickOnFinalProceedToOnlinePayment() throws InterruptedException {
-        WebDriverWait ww = new WebDriverWait(driver, 5);
-        ww.until(ExpectedConditions.visibilityOf(Payment_process.Proceed_to_payment(driver)));
+        WebDriverWait w = new WebDriverWait(driver, 5);
+        WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@class='ui-button-text ui-c'][contains(.,'Proceed to Payment')]")));
         Payment_process.Proceed_to_payment(driver).click();
         sleep(30000);
     }
@@ -1966,7 +1970,7 @@ public class Steps extends Utility {
     @And("^I Verify display of Processing Details Frame$")
     public void iVerifyDisplayOfProcessingDetailsFrame() {
         WebDriverWait w = new WebDriverWait(driver, 5);
-        w.until(ExpectedConditions.visibilityOf(Back_office_main_page.Processing_details_frame(driver)));
+        WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(.,'Payment Details')]")));
         try {
             Back_office_main_page.Processing_details_frame(driver);
         } catch (Exception e) {
@@ -2024,7 +2028,7 @@ public class Steps extends Utility {
     @And("^I Verify success message for adding payment$")
     public void iVerifySuccessMessageForAddingPayment() throws InterruptedException {
         WebDriverWait w = new WebDriverWait(driver, 5);
-        w.until(ExpectedConditions.visibilityOf(Back_office_main_page.Success_message_payment_confirmed(driver)));
+        WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//span[contains(.,'Payment confirmed')])[2]")));
         try {
             Back_office_main_page.Success_message_payment_confirmed(driver);
         } catch (Exception e) {
@@ -2254,7 +2258,7 @@ public class Steps extends Utility {
     @And("^I Search for Application Ref Number for re-submit$")
     public void iSearchForApplicationRefNumberForReSubmit() throws InterruptedException {
         WebDriverWait w = new WebDriverWait(driver, 5);
-        w.until(ExpectedConditions.visibilityOf(Payment_process.Search_reference_number(driver)));
+        WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//input[@role='textbox'])[1]")));
         Payment_process.Search_reference_number(driver).sendKeys(Application_reference_number);
         Thread.sleep(2000);
         Front_Home_page.Edit(driver).click();
