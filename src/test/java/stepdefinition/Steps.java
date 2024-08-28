@@ -161,7 +161,7 @@ public class Steps extends Utility {
     @And("^I click on Manage Farmers Details$")
     public void iClickOnManageFarmersDetails() {
         WebDriverWait w = new WebDriverWait(driver, 5);
-        w.until(ExpectedConditions.visibilityOf(Fees_and_fines.Manage_farmers_details(driver)));
+        WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(text(),\"Manage Farmers' Details\")]")));
         Fees_and_fines.Manage_farmers_details(driver).click();
     }
 
@@ -1795,7 +1795,8 @@ public class Steps extends Utility {
     @And("^I Save Particulars for Horticultural Plantations$")
     public void iSaveParticularsForHorticulturalPlantations() throws InterruptedException {
         Small_planters.Save_Particulars_of_horticultural_plantations(driver).click();
-        sleep(1000);
+        WebDriverWait w = new WebDriverWait(driver, 10);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//button[contains(@id, 'horticulturalTb1:0:horti_uploadBtn')]")));
     }
 
     @And("^I Upload documents for Horticultural Plantations \"([^\"]*)\"$")
@@ -2879,5 +2880,58 @@ public class Steps extends Utility {
             System.out.println("Success message did not appear");
         }
         sleep(8000);
+    }
+
+    @And("^I Upload Location Plan Document \"([^\"]*)\"$")
+    public void iUploadLocationPlanDocument(String Upload_test) throws Throwable {
+        String filePath = new File(Upload_test).getAbsolutePath();
+
+        Documents_upload.Location_plan_FCA_upload(driver).sendKeys(filePath);
+        WebDriverWait w = new WebDriverWait(driver, 30);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[6]")));
+
+    }
+
+    @And("^I Upload Copy of SMEDA Certificate Document \"([^\"]*)\"$")
+    public void iUploadCopyOfSMEDACertificateDocument(String Upload_test) throws Throwable {
+        String filePath = new File(Upload_test).getAbsolutePath();
+
+        Documents_upload.SMEDA_certificate_FCA_upload(driver).sendKeys(filePath);
+        WebDriverWait w = new WebDriverWait(driver, 30);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[7]")));
+
+    }
+
+    @And("^I Upload Copy of Utility Bill Document \"([^\"]*)\"$")
+    public void iUploadCopyOfUtilityBillDocument(String Upload_test) throws Throwable {
+        String filePath = new File(Upload_test).getAbsolutePath();
+
+        Documents_upload.Utility_bill_FCA_upload(driver).sendKeys(filePath);
+        WebDriverWait w = new WebDriverWait(driver, 30);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[8]")));
+
+    }
+
+    @And("^I Upload Additional Documents \"([^\"]*)\"$")
+    public void iUploadAdditionalDocuments(String Upload_test) throws Throwable {
+        String filePath = new File(Upload_test).getAbsolutePath();
+        Documents_upload.Additional_document_FCA_upload(driver).sendKeys(filePath);
+        WebDriverWait w = new WebDriverWait(driver, 30);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[9]")));
+
+    }
+
+    @And("^I Verify Declaration Page for REGISTRATION FOR TEA GROWER$")
+    public void iVerifyDeclarationPageForREGISTRATIONFORTEAGROWER() {
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);", Small_planters.Membership_into_sfwf(driver));
+
+        WebDriverWait w = new WebDriverWait(driver, 20);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h6[contains(.,'Membership into Small Farmers Welfare Fund (SFWF)')]")));
+        try {
+            Small_planters.Membership_into_sfwf(driver);
+        } catch (Exception e) {
+            System.out.println("Declaration Page for REGISTRATION FOR TEA GROWER did not appear");
+            Assert.fail("Declaration Page for REGISTRATION FOR TEA GROWER did not appear");
+        }
     }
 }

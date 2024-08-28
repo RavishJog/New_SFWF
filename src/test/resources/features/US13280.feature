@@ -477,15 +477,14 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Upload List of Directors/ Associates "<Upload_test>"
     And I Upload Board Resolution of Enterprise for appointment of representative(s) "<Upload_test>"
     And I Upload National Identity card of representative "<Upload_test>"
-    And I Upload National Identity cards of all shareholders "<Upload_test>"
-    And I Upload Location Plan "<Upload_test>"
-    And I Upload Copy of SMEDA Certificate "<Upload_test>"
-    And I Upload Copy of Utility Bill "<Upload_test>"
+    And I Upload Location Plan Document "<Upload_test>"
+    And I Upload Copy of SMEDA Certificate Document "<Upload_test>"
+    And I Upload Copy of Utility Bill Document "<Upload_test>"
     And I Verify for Document Upload Success Message
     And I Click on Add Additional Document
     And I Input Additional Document Name "<Additional_Doc_Name>"
     And I Verify Success message for adding Additional Document Name
-    And I Upload Additional Document "<Upload_test>"
+    And I Upload Additional Documents "<Upload_test>"
     And I Verify for Document Upload Success Message
     And I Click on Save and Continue
     And I Verify Terms and Conditions Page
@@ -706,15 +705,14 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Upload List of Directors/ Associates "<Upload_test>"
     And I Upload Board Resolution of Enterprise for appointment of representative(s) "<Upload_test>"
     And I Upload National Identity card of representative "<Upload_test>"
-    And I Upload National Identity cards of all shareholders "<Upload_test>"
-    And I Upload Location Plan "<Upload_test>"
-    And I Upload Copy of SMEDA Certificate "<Upload_test>"
-    And I Upload Copy of Utility Bill "<Upload_test>"
+    And I Upload Location Plan Document "<Upload_test>"
+    And I Upload Copy of SMEDA Certificate Document "<Upload_test>"
+    And I Upload Copy of Utility Bill Document "<Upload_test>"
     And I Verify for Document Upload Success Message
     And I Click on Add Additional Document
     And I Input Additional Document Name "<Additional_Doc_Name>"
     And I Verify Success message for adding Additional Document Name
-    And I Upload Additional Document "<Upload_test>"
+    And I Upload Additional Documents "<Upload_test>"
     And I Verify for Document Upload Success Message
     And I Click on Save and Continue
     And I Verify Terms and Conditions Page
@@ -1424,8 +1422,9 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Input Plot Location "<Plot_Location>"
     And I Save Particulars of Crop
     And I Click on Save and Continue
-    And I Verify Terms and Conditions Page
+    And I Verify Declaration Page for REGISTRATION FOR TEA GROWER
     And I click on I agree to the Terms and Conditions
+    And I Click on Photo checkbox
     And I Click on Submit Application "<Confirmation>"
     And I Verify Success message for application submitted
     And I Verify Application Status "<App_status>"
@@ -1632,8 +1631,9 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Input Plot Location "<Plot_Location>"
     And I Save Particulars of Crop
     And I Click on Save and Continue
-    And I Verify Terms and Conditions Page
+    And I Verify Declaration Page for REGISTRATION FOR TEA GROWER
     And I click on I agree to the Terms and Conditions
+    And I Click on Photo checkbox
     And I Click on Submit Application "<Confirmation>"
     And I Verify Success message for application submitted
     And I Verify Application Status "<App_status>"

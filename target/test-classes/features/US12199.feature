@@ -44,19 +44,22 @@ Feature: User Story 12199 - List of Type of Fee and Fine
     And I Click on Manage Fee and Fine
     And I Input Type of Fee "<Fee_Type>"
     And I Verify Type of Fee search Bar is working properly
+    And I click on Manage Farmers Details
     And I Click on Manage Fee and Fine
     And I Input Fee Code "<Fee_Code>"
     And I Verify Fee Code search Bar is working properly
+    And I click on Manage Farmers Details
     And I Click on Manage Fee and Fine
     And I Input Amount "<Amount>"
     And I Verify Amount search Bar is working properly
+    And I click on Manage Farmers Details
     And I Click on Manage Fee and Fine
     And I Input Year "<Year>"
     And I Verify Year search Bar is working properly
+    And I click on Manage Farmers Details
     And I Click on Manage Fee and Fine
     And I Input Currency "<Currency>"
     And I Verify Currency search Bar is working properly
-    And I Click on Manage Fee and Fine
     And I Sign Out
     And I Verify Successful Sign Out
 

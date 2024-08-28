@@ -42,15 +42,14 @@ Feature: User Story 12200 - Register as Farmers’ Cooperative Association, Soci
     And I Upload List of Directors/ Associates "<Upload_test>"
     And I Upload Board Resolution of Enterprise for appointment of representative(s) "<Upload_test>"
     And I Upload National Identity card of representative "<Upload_test>"
-    And I Upload National Identity cards of all shareholders "<Upload_test>"
-    And I Upload Location Plan "<Upload_test>"
-    And I Upload Copy of SMEDA Certificate "<Upload_test>"
-    And I Upload Copy of Utility Bill "<Upload_test>"
+    And I Upload Location Plan Document "<Upload_test>"
+    And I Upload Copy of SMEDA Certificate Document "<Upload_test>"
+    And I Upload Copy of Utility Bill Document "<Upload_test>"
     And I Verify for Document Upload Success Message
     And I Click on Add Additional Document
     And I Input Additional Document Name "<Additional_Doc_Name>"
     And I Verify Success message for adding Additional Document Name
-    And I Upload Additional Document "<Upload_test>"
+    And I Upload Additional Documents "<Upload_test>"
     And I Verify for Document Upload Success Message
     And I Click on Save and Continue
     And I Verify Terms and Conditions Page
@@ -71,5 +70,5 @@ Feature: User Story 12200 - Register as Farmers’ Cooperative Association, Soci
 
 
     Examples:
-      |Browser|Username |Password |Co_Name        |Rep_by       |BRN        |Cert_No  |Act      |Off_Num|Mob_Num  |Off_Add                  |Status_Applicant|Year_dur|Prod_man       |No_person|Actual_ann_turnover|Status_business|Years_operation|Upload_test                                                |Additional_Doc_Name      |Bank_Name  |Bank_Branch|Bank_Account_No|Confirmation|
-      |Chrome |Suraj    |Admin@123|ABC Agro Co Ltd|Mr John Brown|C123456789 |XLPR852  |Full Time|2025599|58964587 |The Main Road, Grand Port|Company         |1       |Tomato, Pepper |50       |10000000           |Existing       |5              |src\test\resources\Upload_Test1.pdf|Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |
+      |Browser|Username |Password |Co_Name        |Rep_by       |BRN        |Cert_No  |Act      |Off_Num|Mob_Num  |Off_Add                  |Status_Applicant|Year_dur|Prod_man       |No_person|Actual_ann_turnover|Status_business|Years_operation|Upload_test                        |Additional_Doc_Name      |Bank_Name  |Bank_Branch|Bank_Account_No|Confirmation|App_status|Payment_Status |
+      |Chrome |Suraj    |Admin@123|ABC Agro Co Ltd|Mr John Brown|C123456789 |XLPR852  |Full Time|2025599|58964587 |The Main Road, Grand Port|Company         |1       |Tomato, Pepper |50       |10000000           |Existing       |5              |src\test\resources\Upload_Test1.pdf|Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |
