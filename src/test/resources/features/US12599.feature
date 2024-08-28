@@ -51,8 +51,9 @@ Feature: User Story 12599 - Register as Tea Grower
     And I Input Plot Location "<Plot_Location>"
     And I Save Particulars of Crop
     And I Click on Save and Continue
-    And I Verify Terms and Conditions Page
+    And I Verify Declaration Page for REGISTRATION FOR TEA GROWER
     And I click on I agree to the Terms and Conditions
+    And I Click on Photo checkbox
     And I Click on Submit Application "<Confirmation>"
     And I Verify Success message for application submitted
     And I Verify Application Status "<App_status>"

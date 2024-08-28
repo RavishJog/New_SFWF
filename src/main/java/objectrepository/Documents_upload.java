@@ -71,6 +71,27 @@ public class Documents_upload {
         return element;
     }
 
+    //Object for upload Location Plan - REGISTRATION FOR FARMERS' COOPERATIVE ASSOCIATION, SOCIETY AND COMPANY
+    private static By btn_Location_plan_FCA_upload = By.xpath("//input[contains(@id, 'fileUploader5_input')]");
+    public static WebElement Location_plan_FCA_upload(WebDriver driver) {
+        element = driver.findElement(btn_Location_plan_FCA_upload);
+        return element;
+    }
+
+    //Object for upload Copy of SMEDA Certificate - REGISTRATION FOR FARMERS' COOPERATIVE ASSOCIATION, SOCIETY AND COMPANY
+    private static By btn_SMEDA_certificate_FCA_upload = By.xpath("//input[contains(@id, 'fileUploader6_input')]");
+    public static WebElement SMEDA_certificate_FCA_upload(WebDriver driver) {
+        element = driver.findElement(btn_SMEDA_certificate_FCA_upload);
+        return element;
+    }
+
+    //Object for upload Copy of Utility Bill - REGISTRATION FOR FARMERS' COOPERATIVE ASSOCIATION, SOCIETY AND COMPANY
+    private static By btn_Utility_bill_FCA_upload = By.xpath("//input[contains(@id, 'fileUploader7_input')]");
+    public static WebElement Utility_bill_FCA_upload(WebDriver driver) {
+        element = driver.findElement(btn_Utility_bill_FCA_upload);
+        return element;
+    }
+
     //Object for upload Button 1 Documents for Particulars for Horticultural Plantations
     private static By btn_Button_upload_horticultural_plantation = By.xpath("//button[contains(@id, 'horticulturalTb1:0:horti_uploadBtn')]");
     public static WebElement Button_upload_horticultural_plantation(WebDriver driver) {
@@ -91,6 +112,8 @@ public class Documents_upload {
         element = driver.findElement(btn_Add_additional_documents);
         return element;
     }
+
+
 
     //Object for Additional Document Details
     private static By txt_Document_details = By.xpath("//input[contains(@placeholder,'Document Details')]");
@@ -117,6 +140,13 @@ public class Documents_upload {
     private static By btn_Additional_document_upload = By.xpath("//input[contains(@id, 'fileUploader9_input')]");
     public static WebElement Additional_document_upload(WebDriver driver) {
         element = driver.findElement(btn_Additional_document_upload);
+        return element;
+    }
+
+    //Object for upload for additional documents - REGISTRATION FOR FARMERS' COOPERATIVE ASSOCIATION, SOCIETY AND COMPANY
+    private static By btn_Additional_document_FCA_upload = By.xpath("//input[contains(@id, 'fileUploader8_input')]");
+    public static WebElement Additional_document_FCA_upload(WebDriver driver) {
+        element = driver.findElement(btn_Additional_document_FCA_upload);
         return element;
     }
 

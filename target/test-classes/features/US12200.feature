@@ -42,15 +42,14 @@ Feature: User Story 12200 - Register as Farmers’ Cooperative Association, Soci
     And I Upload List of Directors/ Associates "<Upload_test>"
     And I Upload Board Resolution of Enterprise for appointment of representative(s) "<Upload_test>"
     And I Upload National Identity card of representative "<Upload_test>"
-    And I Upload National Identity cards of all shareholders "<Upload_test>"
-    And I Upload Location Plan "<Upload_test>"
-    And I Upload Copy of SMEDA Certificate "<Upload_test>"
-    And I Upload Copy of Utility Bill "<Upload_test>"
+    And I Upload Location Plan Document "<Upload_test>"
+    And I Upload Copy of SMEDA Certificate Document "<Upload_test>"
+    And I Upload Copy of Utility Bill Document "<Upload_test>"
     And I Verify for Document Upload Success Message
     And I Click on Add Additional Document
     And I Input Additional Document Name "<Additional_Doc_Name>"
     And I Verify Success message for adding Additional Document Name
-    And I Upload Additional Document "<Upload_test>"
+    And I Upload Additional Documents "<Upload_test>"
     And I Verify for Document Upload Success Message
     And I Click on Save and Continue
     And I Verify Terms and Conditions Page
