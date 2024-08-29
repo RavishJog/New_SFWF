@@ -1062,7 +1062,7 @@ public class Steps extends Utility {
 //        WebDriverWait w = new WebDriverWait(driver, 10);
 //        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[contains(.,'Log Out')]\")));
         WebDriverWait w = new WebDriverWait(driver, 5);
-        WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//i[contains(@class,'pi pi-check")));
+        WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//i[contains(@class, 'pi pi-check')]")));
         Front_Home_page.Yes_sign_out(driver).click();
         sleep(2000);
         tearDown();
@@ -1890,7 +1890,7 @@ public class Steps extends Utility {
     public void iVerifyDisplayOfPaymentGateway() {
 //        WebDriverWait ww = new WebDriverWait(driver, 30);
 //        ww.until(ExpectedConditions.visibilityOf(Payment_process.Payment_gateway_display(driver)));
-        WebDriverWait w = new WebDriverWait(driver, 180);
+        WebDriverWait w = new WebDriverWait(driver, 500);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[contains(.,'Card number')]")));
         try {
             Payment_process.Payment_gateway_display(driver);
@@ -2933,5 +2933,11 @@ public class Steps extends Utility {
             System.out.println("Declaration Page for REGISTRATION FOR TEA GROWER did not appear");
             Assert.fail("Declaration Page for REGISTRATION FOR TEA GROWER did not appear");
         }
+    }
+
+    @And("^I search app ref no \"([^\"]*)\"$")
+    public void iSearchAppRefNo(String Ref) throws Throwable {
+        Back_office_main_page.Search_bar_app_num(driver).sendKeys(Ref);
+        Thread.sleep(2000);
     }
 }

@@ -156,7 +156,7 @@ public class Back_office_main_page {
     }
 
     //Object for Action - Select One - PWO
-    private static By lbl_Action_PWO_select_one = By.xpath("//label[contains(@id, 'myActionId_label')]");
+    private static By lbl_Action_PWO_select_one = By.xpath("//label[contains(@id, 'roleActionId_label')]");
     public static WebElement Action_PWO_select_one(WebDriver driver) {
         element = driver.findElement(lbl_Action_PWO_select_one);
         return element;

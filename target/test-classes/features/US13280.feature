@@ -36,10 +36,9 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Upload List of Directors/ Associates "<Upload_test>"
     And I Upload Board Resolution of Enterprise for appointment of representative(s) "<Upload_test>"
     And I Upload National Identity card of representative "<Upload_test>"
-    And I Upload National Identity cards of all shareholders "<Upload_test>"
-    And I Upload Location Plan "<Upload_test>"
-    And I Upload Copy of SMEDA Certificate "<Upload_test>"
-    And I Upload Copy of Utility Bill "<Upload_test>"
+    And I Upload Location Plan Document "<Upload_test>"
+    And I Upload Copy of SMEDA Certificate Document "<Upload_test>"
+    And I Upload Copy of Utility Bill Document "<Upload_test>"
     And I Verify for Document Upload Success Message
     And I Click on Add Additional Document
     And I Input Additional Document Name "<Additional_Doc_Name>"
@@ -229,7 +228,7 @@ Feature: User Story 13280 - Back Office Process for Registration
 
  #Scenario2
   @Approval_by_BO_Payment_online_for_Agro-Processing-Enterprise
-  Scenario Outline: Approval for Payment at counter for Registration as Agro-Processing Enterprise-Application form
+  Scenario Outline: Approval for Payment online for Registration as Agro-Processing Enterprise-Application form
 
     Given I am on SFWF Front Office Home Page "<Browser>"
     When I Input Registered User's Username "<Username>" and Password "<Password>"
@@ -477,15 +476,14 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Upload List of Directors/ Associates "<Upload_test>"
     And I Upload Board Resolution of Enterprise for appointment of representative(s) "<Upload_test>"
     And I Upload National Identity card of representative "<Upload_test>"
-    And I Upload National Identity cards of all shareholders "<Upload_test>"
-    And I Upload Location Plan "<Upload_test>"
-    And I Upload Copy of SMEDA Certificate "<Upload_test>"
-    And I Upload Copy of Utility Bill "<Upload_test>"
+    And I Upload Location Plan Document "<Upload_test>"
+    And I Upload Copy of SMEDA Certificate Document "<Upload_test>"
+    And I Upload Copy of Utility Bill Document "<Upload_test>"
     And I Verify for Document Upload Success Message
     And I Click on Add Additional Document
     And I Input Additional Document Name "<Additional_Doc_Name>"
     And I Verify Success message for adding Additional Document Name
-    And I Upload Additional Document "<Upload_test>"
+    And I Upload Additional Documents "<Upload_test>"
     And I Verify for Document Upload Success Message
     And I Click on Save and Continue
     And I Verify Terms and Conditions Page
@@ -706,15 +704,14 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Upload List of Directors/ Associates "<Upload_test>"
     And I Upload Board Resolution of Enterprise for appointment of representative(s) "<Upload_test>"
     And I Upload National Identity card of representative "<Upload_test>"
-    And I Upload National Identity cards of all shareholders "<Upload_test>"
-    And I Upload Location Plan "<Upload_test>"
-    And I Upload Copy of SMEDA Certificate "<Upload_test>"
-    And I Upload Copy of Utility Bill "<Upload_test>"
+    And I Upload Location Plan Document "<Upload_test>"
+    And I Upload Copy of SMEDA Certificate Document "<Upload_test>"
+    And I Upload Copy of Utility Bill Document "<Upload_test>"
     And I Verify for Document Upload Success Message
     And I Click on Add Additional Document
     And I Input Additional Document Name "<Additional_Doc_Name>"
     And I Verify Success message for adding Additional Document Name
-    And I Upload Additional Document "<Upload_test>"
+    And I Upload Additional Documents "<Upload_test>"
     And I Verify for Document Upload Success Message
     And I Click on Save and Continue
     And I Verify Terms and Conditions Page
@@ -1424,8 +1421,12 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Input Plot Location "<Plot_Location>"
     And I Save Particulars of Crop
     And I Click on Save and Continue
-    And I Verify Terms and Conditions Page
+    And I Verify Declaration Page for REGISTRATION FOR TEA GROWER
     And I click on I agree to the Terms and Conditions
+    And I Click on Photo checkbox
+    And I Select Bank "<Bank_Name>"
+    And I Input Bank Branch for Agro-Processing Enterprise "<Bank_Branch>"
+    And I Input Personal Bank Account Number Agro-Processing Enterprise "<Bank_Account_No>"
     And I Click on Submit Application "<Confirmation>"
     And I Verify Success message for application submitted
     And I Verify Application Status "<App_status>"
@@ -1439,6 +1440,22 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Click on Final Proceed to Payment
     And I Verify Message to proceed to Post Office for Payment
     Then I Sign Out as Front Registered User
+    #    Finance
+    And I am on SFWF Back Office Home Page "<Browser>"
+    And I Input Finance Username "<FUsername>" and Password "<Password>"
+    And I Click on Sign In button
+    And I Verify Successful Login
+    And I Click on Manage Cashier
+    And I Verify List of Applications page
+    And I Click on Confirm Processing Fees
+    And I Verify display of Processing Details Frame
+    And I Select Payment Mode "<Payment_Mode>"
+    And I Input Amount of payment "<Amount_To_Pay>"
+    And I Click on Add Payment
+    And I Click on Save Payment
+    And I Verify success message for adding payment
+    And I Sign Out
+    And I Verify Successful Sign Out
     #    PWO
     And I am on SFWF Back Office Home Page "<Browser>"
     And I Input PWO Username "<PwoUsername>" and Password "<Password>"
@@ -1632,8 +1649,12 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Input Plot Location "<Plot_Location>"
     And I Save Particulars of Crop
     And I Click on Save and Continue
-    And I Verify Terms and Conditions Page
+    And I Verify Declaration Page for REGISTRATION FOR TEA GROWER
     And I click on I agree to the Terms and Conditions
+    And I Click on Photo checkbox
+    And I Select Bank "<Bank_Name>"
+    And I Input Bank Branch for Agro-Processing Enterprise "<Bank_Branch>"
+    And I Input Personal Bank Account Number Agro-Processing Enterprise "<Bank_Account_No>"
     And I Click on Submit Application "<Confirmation>"
     And I Verify Success message for application submitted
     And I Verify Application Status "<App_status>"
