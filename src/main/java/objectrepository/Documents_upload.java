@@ -137,7 +137,7 @@ public class Documents_upload {
     }
 
     //Object for upload for additional documents
-    private static By btn_Additional_document_upload = By.xpath("//input[contains(@id, 'fileUploader9_input')]");
+    private static By btn_Additional_document_upload = By.xpath("//input[contains(@id, 'fileUploader8_input')]");
     public static WebElement Additional_document_upload(WebDriver driver) {
         element = driver.findElement(btn_Additional_document_upload);
         return element;

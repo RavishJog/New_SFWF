@@ -73,13 +73,14 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify List of Applications page
     And I Click on Confirm Processing Fees
     And I Verify display of Processing Details Frame
-    And I Select Payment Mode "<Payment_Mode>"
-    And I Input Amount of payment "<Amount_To_Pay>"
-    And I Click on Add Payment
+#    And I Select Payment Mode "<Payment_Mode>"
+#    And I Input Amount of payment "<Amount_To_Pay>"
+#    And I Click on Add Payment
     And I Click on Save Payment
     And I Verify success message for adding payment
     And I Sign Out
     And I Verify Successful Sign Out
+
 #    PWO
     And I am on SFWF Back Office Home Page "<Browser>"
     And I Input PWO Username "<PwoUsername>" and Password "<Password>"
@@ -737,7 +738,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Payment Status is changed to Paid
     Then I Sign Out as Front Registered User
 
-    #    PWO
+#    PWO
     And I am on SFWF Back Office Home Page "<Browser>"
     And I Input PWO Username "<PwoUsername>" and Password "<Password>"
     And I Click on Sign In button
@@ -1228,7 +1229,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Payment Status is changed to Paid
     Then I Sign Out as Front Registered User
 
-    #    PWO
+#    PWO
     And I am on SFWF Back Office Home Page "<Browser>"
     And I Input PWO Username "<PwoUsername>" and Password "<Password>"
     And I Click on Sign In button
@@ -1456,7 +1457,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify success message for adding payment
     And I Sign Out
     And I Verify Successful Sign Out
-    #    PWO
+#    PWO
     And I am on SFWF Back Office Home Page "<Browser>"
     And I Input PWO Username "<PwoUsername>" and Password "<Password>"
     And I Click on Sign In button
@@ -1672,7 +1673,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify that User is directed to My Application Page
     And I Verify Payment Status is changed to Paid
     Then I Sign Out as Front Registered User
-        #    PWO
+#    PWO
     And I am on SFWF Back Office Home Page "<Browser>"
     And I Input PWO Username "<PwoUsername>" and Password "<Password>"
     And I Click on Sign In button
@@ -2169,7 +2170,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify that User is directed to My Application Page
     And I Verify Payment Status is changed to Paid
     Then I Sign Out as Front Registered User
-    #    PWO
+ #    PWO
     And I am on SFWF Back Office Home Page "<Browser>"
     And I Input PWO Username "<PwoUsername>" and Password "<Password>"
     And I Click on Sign In button

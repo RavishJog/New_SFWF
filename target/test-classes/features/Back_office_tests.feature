@@ -34,6 +34,8 @@ Feature: Back Office Tests
 
      #Scenario2
     @WPO
+    Scenario Outline: WPO Tests
+
  #    WPO
     And I am on SFWF Back Office Home Page "<Browser>"
     And I Input WPO Username "<WpoUsername>" and Password "<Password>"
