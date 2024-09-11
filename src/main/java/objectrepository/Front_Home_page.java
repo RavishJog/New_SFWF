@@ -51,7 +51,7 @@ public class Front_Home_page {
     }
 
     //Object for Register as Farmer Label
-    private static By lbl_Register_as_farmer = By.xpath("//span[contains(.,'Register as Farmer')]");
+    private static By lbl_Register_as_farmer = By.xpath("(//span[contains(.,'Farmer')])[1]");
     public static WebElement Register_as_farmer(WebDriver driver) {
         element = driver.findElement(lbl_Register_as_farmer);
         return element;

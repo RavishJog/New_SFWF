@@ -156,7 +156,7 @@ public class Back_office_main_page {
     }
 
     //Object for Action - Select One - PWO
-    private static By lbl_Action_PWO_select_one = By.xpath("//label[contains(@id, 'myActionId_label')]");
+    private static By lbl_Action_PWO_select_one = By.xpath("//label[contains(@id, 'roleActionId_label')]");
     public static WebElement Action_PWO_select_one(WebDriver driver) {
         element = driver.findElement(lbl_Action_PWO_select_one);
         return element;
@@ -233,14 +233,14 @@ public class Back_office_main_page {
     }
 
     //Object for Actions Remarks
-    private static By txt_Action_remarks = By.xpath("//textarea[contains(@id,'remarksStr')]");
+    private static By txt_Action_remarks = By.xpath("//textarea[@id='formId:remarksStr']");
     public static WebElement Action_remarks(WebDriver driver) {
         element = driver.findElement(txt_Action_remarks);
         return element;
     }
 
     //Object for Actions Save
-    private static By btn_Action_save = By.xpath("(//span[contains(.,'Save')])[5]");
+    private static By btn_Action_save = By.xpath("//button[contains(@id,'saveWorkflowBtn')]");
     public static WebElement Action_save(WebDriver driver) {
         element = driver.findElement(btn_Action_save);
         return element;
@@ -324,7 +324,7 @@ public class Back_office_main_page {
     }
 
     //Object for Under Query Mail Success Message
-    private static By lbl_Under_query_mail_success_message = By.xpath("//span[contains(.,'Mail has been sent successfully')]");
+    private static By lbl_Under_query_mail_success_message = By.xpath("(//span[contains(.,'Mail has been sent successfully')])[3]");
     public static WebElement Under_query_mail_success_message(WebDriver driver) {
         element = driver.findElement(lbl_Under_query_mail_success_message);
         return element;

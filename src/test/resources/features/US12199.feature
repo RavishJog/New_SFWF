@@ -4,7 +4,7 @@
 # So that I can view, Edit and Add fees and fines
 
 
-@Main_feature @US12199
+@Main_feature @US12199 @Regression
 Feature: User Story 12199 - List of Type of Fee and Fine
 
   #Scenario1 - 12598 - TC 1-Sorting
