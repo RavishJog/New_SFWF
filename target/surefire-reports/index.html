@@ -128,42 +128,13 @@
                   <a name="runCukes">
                   </a> <!-- runCukes -->
                   <span class="method-name">runCukes</span>
-                  <div class="stack-trace">cucumber.runtime.CucumberException: org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 300.000
-  (Session info: chrome=129.0.6668.60)
-Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
-System info: host: &apos;SIL-LT5-RAKSHAL&apos;, ip: &apos;130.1.19.47&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_371&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=129.0.6668.70 (df87d5cf12b1397be7495a04cab2db6239b227a8-refs/branch-heads/6668@{#1420}), userDataDir=C:\Users\Raksha\AppData\Local\Temp\scoped_dir100752_828441060}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:54050}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=129.0.6668.60, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: 43fac076c2eec19ba39e23c747e184be
-*** Element info: {Using=xpath, value=//h5[contains(.,&apos;My Application&apos;)]}
+                  <div class="stack-trace">cucumber.runtime.CucumberException: java.lang.AssertionError: Document Upload Success Message did not appear
 	at cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:57)
 	at cucumbertest.TestRunner_web.runCukes(TestRunner_web.java:25)
-Caused by: org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 300.000
-  (Session info: chrome=129.0.6668.60)
-Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
-System info: host: &apos;SIL-LT5-RAKSHAL&apos;, ip: &apos;130.1.19.47&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_371&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=129.0.6668.70 (df87d5cf12b1397be7495a04cab2db6239b227a8-refs/branch-heads/6668@{#1420}), userDataDir=C:\Users\Raksha\AppData\Local\Temp\scoped_dir100752_828441060}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:54050}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=129.0.6668.60, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: 43fac076c2eec19ba39e23c747e184be
-*** Element info: {Using=xpath, value=//h5[contains(.,&apos;My Application&apos;)]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:437)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:513)
-	at org.openqa.selenium.By$ByXPath.findElements(By.java:356)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:398)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:183)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:180)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
-	at stepdefinition.Steps.iClickOnPayNowButton(Steps.java:1933)
-	at ✽.And I Click on Pay Now button(features/US13280.feature:736)
-... Removed 37 stack frames
+Caused by: java.lang.AssertionError: Document Upload Success Message did not appear
+	at stepdefinition.Steps.iVerifyForDocumentUploadSuccessMessageForSiteVisit(Steps.java:3036)
+	at ✽.And I Verify for Document Upload Success Message for Site Visit(features/US13280.feature:132)
+... Removed 34 stack frames
 </div> <!-- stack-trace -->
                   <em>
 (Example of using TestNGCucumberRunner to invoke Cucumber)                  </em>
@@ -234,12 +205,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runCukes')
 data.setCell(0, 2, 'cucumbertest.TestRunner_web')
-data.setCell(0, 3, 410782);
+data.setCell(0, 3, 216206);
 window.suiteTableData['cucumbertest.TestRunner_web']= { tableData: data, tableDiv: 'times-div-cucumbertest.TestRunner_web'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 minutes</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-cucumbertest.TestRunner_web">
               </div> <!-- times-div-cucumbertest.TestRunner_web -->
             </div> <!-- times-div -->
