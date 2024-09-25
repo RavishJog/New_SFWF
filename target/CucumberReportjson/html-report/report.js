@@ -29,1036 +29,1071 @@ formatter.feature({
 formatter.scenarioOutline({
   "comments": [
     {
-      "line": 670,
-      "value": "#Scenario4"
+      "line": 6,
+      "value": "#Scenario1"
     }
   ],
-  "line": 672,
-  "name": "Payment online for Registration for Farmers’ Cooperative Association, Society or Company",
+  "line": 8,
+  "name": "Approval for Payment at counter for Registration as Agro-Processing Enterprise-Application form",
   "description": "",
-  "id": "user-story-13280---back-office-process-for-registration;payment-online-for-registration-for-farmers’-cooperative-association,-society-or-company",
+  "id": "user-story-13280---back-office-process-for-registration;approval-for-payment-at-counter-for-registration-as-agro-processing-enterprise-application-form",
   "type": "scenario_outline",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 671,
-      "name": "@Approval_by_BO_Payment_online_for_Farmers_Cooperative_Association"
+      "line": 7,
+      "name": "@Approval_by_BO_Payment_at_counter_for_Agro-Processing-Enterprise"
     }
   ]
 });
 formatter.step({
-  "line": 674,
+  "line": 10,
   "name": "I am on SFWF Front Office Home Page \"\u003cBrowser\u003e\"",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 675,
+  "line": 11,
   "name": "I Input Registered User\u0027s Username \"\u003cUsername\u003e\" and Password \"\u003cPassword\u003e\"",
   "keyword": "When "
 });
 formatter.step({
-  "line": 676,
+  "line": 12,
   "name": "I Click on Sign In button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 677,
+  "line": 13,
   "name": "I Verify Applicant\u0027s Successful Login",
   "keyword": "And "
 });
 formatter.step({
-  "line": 678,
+  "line": 14,
   "name": "I Click on Register as Farmer",
   "keyword": "And "
 });
 formatter.step({
-  "line": 679,
+  "line": 15,
   "name": "I Verify that User is directed to My Application Page",
   "keyword": "And "
 });
 formatter.step({
-  "line": 680,
+  "line": 16,
   "name": "I Verify display of Farmers Card link",
   "keyword": "And "
 });
 formatter.step({
-  "line": 681,
+  "line": 17,
   "name": "I Verify Programmes link",
   "keyword": "And "
 });
 formatter.step({
-  "line": 682,
+  "line": 18,
   "name": "I Click on New Button to apply for Registration",
   "keyword": "And "
 });
 formatter.step({
-  "line": 683,
+  "line": 19,
   "name": "I Verify display of Registration Type Page",
   "keyword": "And "
 });
 formatter.step({
-  "line": 684,
-  "name": "I Click on Farmers Cooperatives Association, Society or Company",
+  "line": 20,
+  "name": "I Click on Agro Processing Enterprise",
   "keyword": "And "
 });
 formatter.step({
-  "line": 685,
-  "name": "I Verify display of Registration of Farmers page",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 686,
-  "name": "I Input Associate/Society/Company Name \"\u003cCo_Name\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 687,
-  "name": "I Input Represented by \"\u003cRep_by\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 688,
-  "name": "I Input Business Registration No.(BRN) \"\u003cBRN\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 689,
-  "name": "I Input Certificate of Incorporation No \"\u003cCert_No\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 690,
-  "name": "I Select Activity \"\u003cAct\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 691,
-  "name": "I Input Office Phone Number \"\u003cOff_Num\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 692,
-  "name": "I Input Mobile Phone Number \"\u003cMob_Num\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 693,
-  "name": "I Input Office Address \"\u003cOff_Add\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 694,
-  "name": "I Select Status of Applicant \"\u003cStatus_Applicant\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 695,
-  "name": "I Select Duration Year for Registration membership \"\u003cYear_dur\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 696,
-  "name": "I Input List of Products manufactured \"\u003cProd_man\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 697,
-  "name": "I Input No. of persons employed \"\u003cNo_person\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 698,
-  "name": "I Input Actual Annual Turnover (Rs) \"\u003cActual_ann_turnover\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 699,
-  "name": "I Select Status of business \"\u003cStatus_business\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 700,
-  "name": "I Input No. of years of operation \"\u003cYears_operation\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 701,
-  "name": "I Click on Save and Continue",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 702,
-  "name": "I Verify Upload Required Documents Page is displayed",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 703,
-  "name": "I Upload Business Registration Card \"\u003cUpload_test\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 704,
-  "name": "I Upload Certificate of Incorporation \"\u003cUpload_test\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 705,
-  "name": "I Upload List of Directors/ Associates \"\u003cUpload_test\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 706,
-  "name": "I Upload Board Resolution of Enterprise for appointment of representative(s) \"\u003cUpload_test\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 707,
-  "name": "I Upload National Identity card of representative \"\u003cUpload_test\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 708,
-  "name": "I Upload Location Plan Document \"\u003cUpload_test\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 709,
-  "name": "I Upload Copy of SMEDA Certificate Document \"\u003cUpload_test\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 710,
-  "name": "I Upload Copy of Utility Bill Document \"\u003cUpload_test\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 711,
-  "name": "I Verify for Document Upload Success Message",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 712,
-  "name": "I Click on Add Additional Document",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 713,
-  "name": "I Input Additional Document Name \"\u003cAdditional_Doc_Name\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 714,
-  "name": "I Verify Success message for adding Additional Document Name",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 715,
-  "name": "I Upload Additional Documents \"\u003cUpload_test\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 716,
-  "name": "I Verify for Document Upload Success Message",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 717,
-  "name": "I Click on Save and Continue",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 718,
-  "name": "I Verify Terms and Conditions Page",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 719,
-  "name": "I click on I agree to the Terms and Conditions",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 720,
-  "name": "I Select Bank \"\u003cBank_Name\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 721,
-  "name": "I Input Bank Branch \"\u003cBank_Branch\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 722,
-  "name": "I Input Personal Bank Account Number\"\u003cBank_Account_No\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 723,
-  "name": "I Click on Submit Application \"\u003cConfirmation\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 724,
-  "name": "I Verify Success message for application submitted",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 725,
-  "name": "I Verify Application Status \"\u003cApp_status\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 726,
-  "name": "I Verify Payment Status \"\u003cPayment_Status\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 727,
-  "name": "I Copy Application Number",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 728,
-  "name": "I Click on Shopping Cart for payment",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 729,
-  "name": "I Select Application for payment",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 730,
-  "name": "I Click on Proceed to Payment",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 731,
-  "name": "I Click on Payment Icon",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 732,
-  "name": "I Select Payment Method \"\u003cPayment_method\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 733,
-  "name": "I Click on Final Proceed to Online Payment",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 734,
-  "name": "I Verify display of Payment Gateway",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 735,
-  "name": "I Input Card Details \"\u003cCard_Number\u003e\" \"\u003cExpiry_Month\u003e\" \"\u003cExpiry_Year\u003e\" \"\u003cCardholder_Name\u003e\" \"\u003cSecurity_Code\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 736,
-  "name": "I Click on Pay Now button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 737,
-  "name": "I Verify that User is directed to My Application Page",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 738,
-  "name": "I Verify Payment Status is changed to Paid",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 739,
-  "name": "I Sign Out as Front Registered User",
-  "keyword": "Then "
-});
-formatter.step({
-  "comments": [
-    {
-      "line": 741,
-      "value": "#    PWO"
-    }
-  ],
-  "line": 742,
-  "name": "I am on SFWF Back Office Home Page \"\u003cBrowser\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 743,
-  "name": "I Input PWO Username \"\u003cPwoUsername\u003e\" and Password \"\u003cPassword\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 744,
-  "name": "I Click on Sign In button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 745,
-  "name": "I Verify Successful Login",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 746,
-  "name": "I Click on All Applications",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 747,
-  "name": "I Verify display of list of registrations page",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 748,
-  "name": "I Search for Application Ref Number as a Back Office User",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 749,
-  "name": "I Click to view Application",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 750,
-  "name": "I Click on Action Button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 751,
-  "name": "I Select PWO Assigned",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 752,
-  "name": "I Select WPO",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 753,
-  "name": "I Input Remarks \"\u003cRemarks\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 754,
-  "name": "I Click on Save Actions",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 755,
-  "name": "I Verify for success message for assigning",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 756,
-  "name": "I Sign Out",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 757,
-  "name": "I Verify Successful Sign Out",
-  "keyword": "And "
-});
-formatter.step({
-  "comments": [
-    {
-      "line": 758,
-      "value": "#    WPO"
-    }
-  ],
-  "line": 759,
-  "name": "I am on SFWF Back Office Home Page \"\u003cBrowser\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 760,
-  "name": "I Input WPO Username \"\u003cWpoUsername\u003e\" and Password \"\u003cPassword\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 761,
-  "name": "I Click on Sign In button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 762,
-  "name": "I Verify Successful Login",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 763,
-  "name": "I Click on All Applications",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 764,
-  "name": "I Verify display of list of registrations page",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 765,
-  "name": "I Search for Application Ref Number as a Back Office User",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 766,
-  "name": "I Click to view Application",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 767,
-  "name": "I Click on Action Button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 768,
-  "name": "I Select Assigned",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 769,
-  "name": "I Select WO",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 770,
-  "name": "I Input Remarks \"\u003cRemarks\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 771,
-  "name": "I Click on Save Actions",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 772,
-  "name": "I Verify for success message for assigning",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 773,
-  "name": "I Sign Out",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 774,
-  "name": "I Verify Successful Sign Out",
-  "keyword": "And "
-});
-formatter.step({
-  "comments": [
-    {
-      "line": 776,
-      "value": "#    WO/WA"
-    }
-  ],
-  "line": 777,
-  "name": "I am on SFWF Back Office Home Page \"\u003cBrowser\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 778,
-  "name": "I Input WO-WA Username \"\u003cWOUsername\u003e\" and Password \"\u003cPassword\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 779,
-  "name": "I Click on Sign In button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 780,
-  "name": "I Verify Successful Login",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 781,
-  "name": "I Click on All Applications",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 782,
-  "name": "I Verify display of list of registrations page",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 783,
-  "name": "I Search for Application Ref Number as a Back Office User",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 784,
-  "name": "I Click to view Application",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 785,
-  "name": "I Click on Site Report Tab",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 786,
-  "name": "I Select Bonafide Planter \"\u003cBonafide\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 787,
-  "name": "I Input Site visit remarks \"\u003cRemarks\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 788,
-  "name": "I Upload Site Report \"\u003cUpload_test\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 789,
-  "name": "I Verify for Document Upload Success Message",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 790,
-  "name": "I Click on Save Button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 791,
-  "name": "I Verify Site Visit saved success message",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 792,
-  "name": "I Click on Action Button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 793,
-  "name": "I Select Assigned",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 794,
-  "name": "I Select WPO",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 795,
-  "name": "I Input Remarks \"\u003cRemarks\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 796,
-  "name": "I Click on Save Actions",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 797,
-  "name": "I Verify for success message for assigning",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 798,
-  "name": "I Sign Out",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 799,
-  "name": "I Verify Successful Sign Out",
-  "keyword": "And "
-});
-formatter.step({
-  "comments": [
-    {
-      "line": 801,
-      "value": "#    WPO"
-    }
-  ],
-  "line": 802,
-  "name": "I am on SFWF Back Office Home Page \"\u003cBrowser\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 803,
-  "name": "I Input WPO Username \"\u003cWpoUsername\u003e\" and Password \"\u003cPassword\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 804,
-  "name": "I Click on Sign In button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 805,
-  "name": "I Verify Successful Login",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 806,
-  "name": "I Click on All Applications",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 807,
-  "name": "I Verify display of list of registrations page",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 808,
-  "name": "I Search for Application Ref Number as a Back Office User",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 809,
-  "name": "I Click to view Application",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 810,
-  "name": "I Click on Action Button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 811,
-  "name": "I Select Under Query",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 812,
-  "name": "I Input External Remarks \"\u003cRemarks\u003e\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 813,
-  "name": "I Click on Under Query Notification",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 814,
-  "name": "I Verify Success Message for Under Query Notification",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 815,
-  "name": "I Click on Save Actions",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 816,
-  "name": "I Verify for success message for workflow saved",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 817,
-  "name": "I Sign Out",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 818,
-  "name": "I Verify Successful Sign Out",
-  "keyword": "And "
-});
-formatter.step({
-  "comments": [
-    {
-      "line": 820,
-      "value": "#    Applicant after under query"
-    }
-  ],
-  "line": 821,
-  "name": "I am on SFWF Front Office Home Page \"\u003cBrowser\u003e\"",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 822,
-  "name": "I Input Registered User\u0027s Username \"\u003cUsername\u003e\" and Password \"\u003cPassword\u003e\"",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 823,
-  "name": "I Click on Sign In button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 824,
-  "name": "I Verify Applicant\u0027s Successful Login",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 825,
-  "name": "I Click on Register as Farmer",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 826,
-  "name": "I Verify that User is directed to My Application Page",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 827,
-  "name": "I Verify display of Farmers Card link",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 828,
-  "name": "I Verify Programmes link",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 829,
-  "name": "I Search for Application Ref Number for re-submit",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 830,
+  "line": 21,
   "name": "I Verify display of REGISTRATION FOR AGRO-PROCESSING ENTERPRISE Page",
   "keyword": "And "
 });
 formatter.step({
-  "line": 831,
+  "line": 22,
+  "name": "I Input Associate/Society/Company Name \"\u003cCo_Name\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 23,
+  "name": "I Input Represented by \"\u003cRep_by\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 24,
+  "name": "I Input Business Registration No(BRN) for Agro-Processing Enterprise \"\u003cBRN\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 25,
+  "name": "I Input Certificate of Incorporation No for Agro-Processing Enterprise \"\u003cCert_No\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 26,
+  "name": "I Select Activity \"\u003cAct\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 27,
+  "name": "I Input Office Address \"\u003cOff_Add\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 28,
+  "name": "I Input Enterprise Address \"\u003cEnterprise_Address\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 29,
+  "name": "I Select Duration Year for Registration membership \"\u003cYear_dur\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 30,
+  "name": "I Input List of Products manufactured \"\u003cProd_man\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 31,
+  "name": "I Select Status of Applicant for Agro-Processing Enterprise \"\u003cStatus_Applicant\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 32,
   "name": "I Click on Save and Continue",
   "keyword": "And "
 });
 formatter.step({
-  "line": 832,
+  "line": 33,
   "name": "I Verify Upload Required Documents Page is displayed",
   "keyword": "And "
 });
 formatter.step({
-  "line": 833,
+  "line": 34,
+  "name": "I Upload Business Registration Card \"\u003cUpload_test\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 35,
+  "name": "I Upload Certificate of Incorporation \"\u003cUpload_test\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 36,
+  "name": "I Upload List of Directors/ Associates \"\u003cUpload_test\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 37,
+  "name": "I Upload Board Resolution of Enterprise for appointment of representative(s) \"\u003cUpload_test\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 38,
+  "name": "I Upload National Identity card of representative \"\u003cUpload_test\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 39,
+  "name": "I Upload Location Plan Document \"\u003cUpload_test\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 40,
+  "name": "I Upload Copy of SMEDA Certificate Document \"\u003cUpload_test\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 41,
+  "name": "I Upload Copy of Utility Bill Document \"\u003cUpload_test\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 42,
+  "name": "I Verify for Document Upload Success Message",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 43,
+  "name": "I Click on Add Additional Document",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 44,
+  "name": "I Input Additional Document Name \"\u003cAdditional_Doc_Name\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 45,
+  "name": "I Verify Success message for adding Additional Document Name",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 46,
+  "name": "I Upload Additional Document \"\u003cUpload_test\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 47,
+  "name": "I Verify for Document Upload Success Message",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 48,
   "name": "I Click on Save and Continue",
   "keyword": "And "
 });
 formatter.step({
-  "line": 834,
+  "line": 49,
   "name": "I Verify Terms and Conditions Page",
   "keyword": "And "
 });
 formatter.step({
-  "line": 835,
+  "line": 50,
+  "name": "I click on I agree to the Terms and Conditions",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 51,
+  "name": "I Select Bank \"\u003cBank_Name\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 52,
+  "name": "I Input Bank Branch for Agro-Processing Enterprise \"\u003cBank_Branch\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 53,
+  "name": "I Input Personal Bank Account Number Agro-Processing Enterprise \"\u003cBank_Account_No\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 54,
   "name": "I Click on Submit Application \"\u003cConfirmation\u003e\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 836,
+  "line": 55,
   "name": "I Verify Success message for application submitted",
   "keyword": "And "
 });
 formatter.step({
-  "line": 837,
+  "line": 56,
+  "name": "I Verify Application Status \"\u003cApp_status\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 57,
+  "name": "I Verify Payment Status \"\u003cPayment_Status\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 58,
+  "name": "I Copy Application Number",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 59,
+  "name": "I Click on Shopping Cart for payment",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 60,
+  "name": "I Select Application for payment",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 61,
+  "name": "I Click on Proceed to Payment",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 62,
+  "name": "I Click on Payment Icon",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 63,
+  "name": "I Select Payment Method \"\u003cPayment_method\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 64,
+  "name": "I Click on Final Proceed to Payment",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 65,
+  "name": "I Verify Message to proceed to Post Office for Payment",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 66,
   "name": "I Sign Out as Front Registered User",
   "keyword": "And "
 });
 formatter.step({
   "comments": [
     {
-      "line": 839,
-      "value": "#    WPO"
+      "line": 67,
+      "value": "#    Finance"
     }
   ],
-  "line": 840,
+  "line": 68,
   "name": "I am on SFWF Back Office Home Page \"\u003cBrowser\u003e\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 841,
-  "name": "I Input WPO Username \"\u003cWpoUsername\u003e\" and Password \"\u003cPassword\u003e\"",
+  "line": 69,
+  "name": "I Input Finance Username \"\u003cFUsername\u003e\" and Password \"\u003cPassword\u003e\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 842,
+  "line": 70,
   "name": "I Click on Sign In button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 843,
+  "line": 71,
   "name": "I Verify Successful Login",
   "keyword": "And "
 });
 formatter.step({
-  "line": 844,
+  "line": 72,
+  "name": "I Click on Manage Cashier",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 73,
+  "name": "I Verify List of Applications page",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 74,
+  "name": "I Click on Confirm Processing Fees",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 75,
+  "name": "I Verify display of Processing Details Frame",
+  "keyword": "And "
+});
+formatter.step({
+  "comments": [
+    {
+      "line": 76,
+      "value": "#    And I Select Payment Mode \"\u003cPayment_Mode\u003e\""
+    },
+    {
+      "line": 77,
+      "value": "#    And I Input Amount of payment \"\u003cAmount_To_Pay\u003e\""
+    },
+    {
+      "line": 78,
+      "value": "#    And I Click on Add Payment"
+    }
+  ],
+  "line": 79,
+  "name": "I Click on Save Payment",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 80,
+  "name": "I Verify success message for adding payment",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 81,
+  "name": "I Sign Out",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 82,
+  "name": "I Verify Successful Sign Out",
+  "keyword": "And "
+});
+formatter.step({
+  "comments": [
+    {
+      "line": 84,
+      "value": "#    PWO"
+    }
+  ],
+  "line": 85,
+  "name": "I am on SFWF Back Office Home Page \"\u003cBrowser\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 86,
+  "name": "I Input PWO Username \"\u003cPwoUsername\u003e\" and Password \"\u003cPassword\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 87,
+  "name": "I Click on Sign In button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 88,
+  "name": "I Verify Successful Login",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 89,
   "name": "I Click on All Applications",
   "keyword": "And "
 });
 formatter.step({
-  "line": 845,
+  "line": 90,
   "name": "I Verify display of list of registrations page",
   "keyword": "And "
 });
 formatter.step({
-  "line": 846,
+  "line": 91,
   "name": "I Search for Application Ref Number as a Back Office User",
   "keyword": "And "
 });
 formatter.step({
-  "line": 847,
+  "line": 92,
   "name": "I Click to view Application",
   "keyword": "And "
 });
 formatter.step({
-  "line": 848,
+  "line": 93,
   "name": "I Click on Action Button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 849,
-  "name": "I Select Approved to approve the registration application",
+  "line": 94,
+  "name": "I Select PWO Assigned",
   "keyword": "And "
 });
 formatter.step({
-  "line": 850,
+  "line": 95,
+  "name": "I Select WPO",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 96,
   "name": "I Input Remarks \"\u003cRemarks\u003e\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 851,
+  "line": 97,
   "name": "I Click on Save Actions",
   "keyword": "And "
 });
 formatter.step({
-  "line": 852,
-  "name": "I Verify for success message for approval",
+  "line": 98,
+  "name": "I Verify for success message for assigning",
   "keyword": "And "
 });
 formatter.step({
-  "line": 853,
+  "line": 99,
   "name": "I Sign Out",
   "keyword": "And "
 });
 formatter.step({
-  "line": 854,
+  "line": 100,
   "name": "I Verify Successful Sign Out",
   "keyword": "And "
 });
 formatter.step({
   "comments": [
     {
-      "line": 856,
-      "value": "#    IT Department"
+      "line": 101,
+      "value": "#    WPO"
     }
   ],
-  "line": 857,
+  "line": 102,
   "name": "I am on SFWF Back Office Home Page \"\u003cBrowser\u003e\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 858,
-  "name": "I Input IT Department Username \"\u003cITUsername\u003e\" and Password \"\u003cPassword\u003e\"",
+  "line": 103,
+  "name": "I Input WPO Username \"\u003cWpoUsername\u003e\" and Password \"\u003cPassword\u003e\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 859,
+  "line": 104,
   "name": "I Click on Sign In button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 860,
+  "line": 105,
   "name": "I Verify Successful Login",
   "keyword": "And "
 });
 formatter.step({
-  "line": 861,
+  "line": 106,
   "name": "I Click on All Applications",
   "keyword": "And "
 });
 formatter.step({
-  "line": 862,
+  "line": 107,
   "name": "I Verify display of list of registrations page",
   "keyword": "And "
 });
 formatter.step({
-  "line": 863,
+  "line": 108,
   "name": "I Search for Application Ref Number as a Back Office User",
   "keyword": "And "
 });
 formatter.step({
-  "line": 864,
+  "line": 109,
   "name": "I Click to view Application",
   "keyword": "And "
 });
 formatter.step({
-  "line": 865,
-  "name": "I Click on Print Card",
+  "line": 110,
+  "name": "I Click on Action Button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 866,
+  "line": 111,
+  "name": "I Select Assigned",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 112,
+  "name": "I Select WO",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 113,
+  "name": "I Input Remarks \"\u003cRemarks\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 114,
+  "name": "I Click on Save Actions",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 115,
+  "name": "I Verify for success message for assigning",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 116,
   "name": "I Sign Out",
   "keyword": "And "
 });
 formatter.step({
-  "line": 867,
+  "line": 117,
   "name": "I Verify Successful Sign Out",
   "keyword": "And "
 });
 formatter.step({
   "comments": [
     {
-      "line": 869,
-      "value": "#    Applicant verify status - Card Printed"
+      "line": 119,
+      "value": "#    WO/WA"
     }
   ],
-  "line": 870,
-  "name": "I am on SFWF Front Office Home Page \"\u003cBrowser\u003e\"",
-  "keyword": "Given "
+  "line": 120,
+  "name": "I am on SFWF Back Office Home Page \"\u003cBrowser\u003e\"",
+  "keyword": "And "
 });
 formatter.step({
-  "line": 871,
-  "name": "I Input Registered User\u0027s Username \"\u003cUsername\u003e\" and Password \"\u003cPassword\u003e\"",
-  "keyword": "When "
+  "line": 121,
+  "name": "I Input WO-WA Username \"\u003cWOUsername\u003e\" and Password \"\u003cPassword\u003e\"",
+  "keyword": "And "
 });
 formatter.step({
-  "line": 872,
+  "line": 122,
   "name": "I Click on Sign In button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 873,
+  "line": 123,
+  "name": "I Verify Successful Login",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 124,
+  "name": "I Click on All Applications",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 125,
+  "name": "I Verify display of list of registrations page",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 126,
+  "name": "I Search for Application Ref Number as a Back Office User",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 127,
+  "name": "I Click to view Application",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 128,
+  "name": "I Click on Site Report Tab",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 129,
+  "name": "I Select Bonafide Planter \"\u003cBonafide\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 130,
+  "name": "I Input Site visit remarks \"\u003cRemarks\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 131,
+  "name": "I Upload Site Report \"\u003cUpload_test\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 132,
+  "name": "I Verify for Document Upload Success Message for Site Visit",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 133,
+  "name": "I Click on Save Button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 134,
+  "name": "I Verify Site Visit saved success message",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 135,
+  "name": "I Click on Action Button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 136,
+  "name": "I Select Assigned",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 137,
+  "name": "I Select WPO",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 138,
+  "name": "I Input Remarks \"\u003cRemarks\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 139,
+  "name": "I Click on Save Actions",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 140,
+  "name": "I Verify for success message for assigning",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 141,
+  "name": "I Sign Out",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 142,
+  "name": "I Verify Successful Sign Out",
+  "keyword": "And "
+});
+formatter.step({
+  "comments": [
+    {
+      "line": 144,
+      "value": "#    WPO"
+    }
+  ],
+  "line": 145,
+  "name": "I am on SFWF Back Office Home Page \"\u003cBrowser\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 146,
+  "name": "I Input WPO Username \"\u003cWpoUsername\u003e\" and Password \"\u003cPassword\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 147,
+  "name": "I Click on Sign In button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 148,
+  "name": "I Verify Successful Login",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 149,
+  "name": "I Click on All Applications",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 150,
+  "name": "I Verify display of list of registrations page",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 151,
+  "name": "I Search for Application Ref Number as a Back Office User",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 152,
+  "name": "I Click to view Application",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 153,
+  "name": "I Click on Action Button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 154,
+  "name": "I Select Under Query",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 155,
+  "name": "I Input External Remarks \"\u003cRemarks\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 156,
+  "name": "I Click on Under Query Notification",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 157,
+  "name": "I Verify Success Message for Under Query Notification",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 158,
+  "name": "I Click on Save Actions",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 159,
+  "name": "I Verify for success message for workflow saved",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 160,
+  "name": "I Sign Out",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 161,
+  "name": "I Verify Successful Sign Out",
+  "keyword": "And "
+});
+formatter.step({
+  "comments": [
+    {
+      "line": 163,
+      "value": "#    Applicant after under query"
+    }
+  ],
+  "line": 164,
+  "name": "I am on SFWF Front Office Home Page \"\u003cBrowser\u003e\"",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 165,
+  "name": "I Input Registered User\u0027s Username \"\u003cUsername\u003e\" and Password \"\u003cPassword\u003e\"",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 166,
+  "name": "I Click on Sign In button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 167,
   "name": "I Verify Applicant\u0027s Successful Login",
   "keyword": "And "
 });
 formatter.step({
-  "line": 874,
+  "line": 168,
   "name": "I Click on Register as Farmer",
   "keyword": "And "
 });
 formatter.step({
-  "line": 875,
+  "line": 169,
   "name": "I Verify that User is directed to My Application Page",
   "keyword": "And "
 });
 formatter.step({
-  "line": 876,
+  "line": 170,
   "name": "I Verify display of Farmers Card link",
   "keyword": "And "
 });
 formatter.step({
-  "line": 877,
+  "line": 171,
   "name": "I Verify Programmes link",
   "keyword": "And "
 });
 formatter.step({
-  "line": 878,
+  "line": 172,
+  "name": "I Search for Application Ref Number for re-submit",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 173,
+  "name": "I Verify display of REGISTRATION FOR AGRO-PROCESSING ENTERPRISE Page",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 174,
+  "name": "I Click on Save and Continue",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 175,
+  "name": "I Verify Upload Required Documents Page is displayed",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 176,
+  "name": "I Click on Save and Continue",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 177,
+  "name": "I Verify Terms and Conditions Page",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 178,
+  "name": "I Click on Submit Application \"\u003cConfirmation\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 179,
+  "name": "I Verify Success message for application submitted",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 180,
+  "name": "I Sign Out as Front Registered User",
+  "keyword": "And "
+});
+formatter.step({
+  "comments": [
+    {
+      "line": 182,
+      "value": "#    WPO"
+    }
+  ],
+  "line": 183,
+  "name": "I am on SFWF Back Office Home Page \"\u003cBrowser\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 184,
+  "name": "I Input WPO Username \"\u003cWpoUsername\u003e\" and Password \"\u003cPassword\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 185,
+  "name": "I Click on Sign In button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 186,
+  "name": "I Verify Successful Login",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 187,
+  "name": "I Click on All Applications",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 188,
+  "name": "I Verify display of list of registrations page",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 189,
+  "name": "I Search for Application Ref Number as a Back Office User",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 190,
+  "name": "I Click to view Application",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 191,
+  "name": "I Click on Action Button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 192,
+  "name": "I Select Approved to approve the registration application",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 193,
+  "name": "I Input Remarks \"\u003cRemarks\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 194,
+  "name": "I Click on Save Actions",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 195,
+  "name": "I Verify for success message for approval",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 196,
+  "name": "I Sign Out",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 197,
+  "name": "I Verify Successful Sign Out",
+  "keyword": "And "
+});
+formatter.step({
+  "comments": [
+    {
+      "line": 199,
+      "value": "#    IT Department"
+    }
+  ],
+  "line": 200,
+  "name": "I am on SFWF Back Office Home Page \"\u003cBrowser\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 201,
+  "name": "I Input IT Department Username \"\u003cITUsername\u003e\" and Password \"\u003cPassword\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 202,
+  "name": "I Click on Sign In button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 203,
+  "name": "I Verify Successful Login",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 204,
+  "name": "I Click on All Applications",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 205,
+  "name": "I Verify display of list of registrations page",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 206,
+  "name": "I Search for Application Ref Number as a Back Office User",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 207,
+  "name": "I Click to view Application",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 208,
+  "name": "I Click on Print Card",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 209,
+  "name": "I Sign Out",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 210,
+  "name": "I Verify Successful Sign Out",
+  "keyword": "And "
+});
+formatter.step({
+  "comments": [
+    {
+      "line": 212,
+      "value": "#    Applicant verify status - Card Printed"
+    }
+  ],
+  "line": 213,
+  "name": "I am on SFWF Front Office Home Page \"\u003cBrowser\u003e\"",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 214,
+  "name": "I Input Registered User\u0027s Username \"\u003cUsername\u003e\" and Password \"\u003cPassword\u003e\"",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 215,
+  "name": "I Click on Sign In button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 216,
+  "name": "I Verify Applicant\u0027s Successful Login",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 217,
+  "name": "I Click on Register as Farmer",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 218,
+  "name": "I Verify that User is directed to My Application Page",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 219,
+  "name": "I Verify display of Farmers Card link",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 220,
+  "name": "I Verify Programmes link",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 221,
   "name": "I Search for Application Ref Number for to check Status Card Printed",
   "keyword": "And "
 });
 formatter.step({
-  "line": 879,
+  "line": 222,
   "name": "I Verify Application Status to be Card Printed",
   "keyword": "And "
 });
 formatter.step({
-  "line": 880,
+  "line": 223,
   "name": "I Sign Out as Front Registered User",
   "keyword": "And "
 });
 formatter.examples({
-  "line": 882,
+  "line": 226,
   "name": "",
   "description": "",
-  "id": "user-story-13280---back-office-process-for-registration;payment-online-for-registration-for-farmers’-cooperative-association,-society-or-company;",
+  "id": "user-story-13280---back-office-process-for-registration;approval-for-payment-at-counter-for-registration-as-agro-processing-enterprise-application-form;",
   "rows": [
     {
       "cells": [
@@ -1077,8 +1112,6 @@ formatter.examples({
         "Co_Name",
         "Rep_by",
         "BRN",
-        "Off_Num",
-        "Mob_Num",
         "Cert_No",
         "Act",
         "Off_Add",
@@ -1098,22 +1131,17 @@ formatter.examples({
         "Confirmation",
         "App_status",
         "Payment_Status",
-        "Payment_method",
-        "Card_Number",
-        "Expiry_Month",
-        "Expiry_Year",
-        "Security_Code",
-        "Cardholder_Name"
+        "Payment_method"
       ],
-      "line": 883,
-      "id": "user-story-13280---back-office-process-for-registration;payment-online-for-registration-for-farmers’-cooperative-association,-society-or-company;;1"
+      "line": 227,
+      "id": "user-story-13280---back-office-process-for-registration;approval-for-payment-at-counter-for-registration-as-agro-processing-enterprise-application-form;;1"
     },
     {
       "cells": [
         "Chrome",
         "Suraj",
         "Admin@123",
-        "FINANCE",
+        "Finance_suraj",
         "PWO",
         "WPO",
         "WO",
@@ -1125,8 +1153,6 @@ formatter.examples({
         "ABC Agro Co Ltd",
         "Mr John Brown",
         "C123456789",
-        "2126666",
-        "58967896",
         "XLPR852",
         "Full Time",
         "The Main Road, Grand Port",
@@ -1146,28 +1172,23 @@ formatter.examples({
         "Yes",
         "Submitted",
         "Pending",
-        "Credit",
-        "5123-4500-0000-0008",
-        "01",
-        "39",
-        "100",
-        "My name"
+        "Counter"
       ],
-      "line": 884,
-      "id": "user-story-13280---back-office-process-for-registration;payment-online-for-registration-for-farmers’-cooperative-association,-society-or-company;;2"
+      "line": 228,
+      "id": "user-story-13280---back-office-process-for-registration;approval-for-payment-at-counter-for-registration-as-agro-processing-enterprise-application-form;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 109100,
+  "duration": 164300,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 884,
-  "name": "Payment online for Registration for Farmers’ Cooperative Association, Society or Company",
+  "line": 228,
+  "name": "Approval for Payment at counter for Registration as Agro-Processing Enterprise-Application form",
   "description": "",
-  "id": "user-story-13280---back-office-process-for-registration;payment-online-for-registration-for-farmers’-cooperative-association,-society-or-company;;2",
+  "id": "user-story-13280---back-office-process-for-registration;approval-for-payment-at-counter-for-registration-as-agro-processing-enterprise-application-form;;2",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -1180,17 +1201,17 @@ formatter.scenario({
       "name": "@US13280"
     },
     {
-      "line": 3,
-      "name": "@Regression"
+      "line": 7,
+      "name": "@Approval_by_BO_Payment_at_counter_for_Agro-Processing-Enterprise"
     },
     {
-      "line": 671,
-      "name": "@Approval_by_BO_Payment_online_for_Farmers_Cooperative_Association"
+      "line": 3,
+      "name": "@Regression"
     }
   ]
 });
 formatter.step({
-  "line": 674,
+  "line": 10,
   "name": "I am on SFWF Front Office Home Page \"Chrome\"",
   "matchedColumns": [
     0
@@ -1198,7 +1219,7 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.step({
-  "line": 675,
+  "line": 11,
   "name": "I Input Registered User\u0027s Username \"Suraj\" and Password \"Admin@123\"",
   "matchedColumns": [
     1,
@@ -1207,57 +1228,57 @@ formatter.step({
   "keyword": "When "
 });
 formatter.step({
-  "line": 676,
+  "line": 12,
   "name": "I Click on Sign In button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 677,
+  "line": 13,
   "name": "I Verify Applicant\u0027s Successful Login",
   "keyword": "And "
 });
 formatter.step({
-  "line": 678,
+  "line": 14,
   "name": "I Click on Register as Farmer",
   "keyword": "And "
 });
 formatter.step({
-  "line": 679,
+  "line": 15,
   "name": "I Verify that User is directed to My Application Page",
   "keyword": "And "
 });
 formatter.step({
-  "line": 680,
+  "line": 16,
   "name": "I Verify display of Farmers Card link",
   "keyword": "And "
 });
 formatter.step({
-  "line": 681,
+  "line": 17,
   "name": "I Verify Programmes link",
   "keyword": "And "
 });
 formatter.step({
-  "line": 682,
+  "line": 18,
   "name": "I Click on New Button to apply for Registration",
   "keyword": "And "
 });
 formatter.step({
-  "line": 683,
+  "line": 19,
   "name": "I Verify display of Registration Type Page",
   "keyword": "And "
 });
 formatter.step({
-  "line": 684,
-  "name": "I Click on Farmers Cooperatives Association, Society or Company",
+  "line": 20,
+  "name": "I Click on Agro Processing Enterprise",
   "keyword": "And "
 });
 formatter.step({
-  "line": 685,
-  "name": "I Verify display of Registration of Farmers page",
+  "line": 21,
+  "name": "I Verify display of REGISTRATION FOR AGRO-PROCESSING ENTERPRISE Page",
   "keyword": "And "
 });
 formatter.step({
-  "line": 686,
+  "line": 22,
   "name": "I Input Associate/Society/Company Name \"ABC Agro Co Ltd\"",
   "matchedColumns": [
     12
@@ -1265,7 +1286,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 687,
+  "line": 23,
   "name": "I Input Represented by \"Mr John Brown\"",
   "matchedColumns": [
     13
@@ -1273,370 +1294,303 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 688,
-  "name": "I Input Business Registration No.(BRN) \"C123456789\"",
+  "line": 24,
+  "name": "I Input Business Registration No(BRN) for Agro-Processing Enterprise \"C123456789\"",
   "matchedColumns": [
     14
   ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 689,
-  "name": "I Input Certificate of Incorporation No \"XLPR852\"",
-  "matchedColumns": [
-    17
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 690,
-  "name": "I Select Activity \"Full Time\"",
-  "matchedColumns": [
-    18
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 691,
-  "name": "I Input Office Phone Number \"2126666\"",
+  "line": 25,
+  "name": "I Input Certificate of Incorporation No for Agro-Processing Enterprise \"XLPR852\"",
   "matchedColumns": [
     15
   ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 692,
-  "name": "I Input Mobile Phone Number \"58967896\"",
+  "line": 26,
+  "name": "I Select Activity \"Full Time\"",
   "matchedColumns": [
     16
   ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 693,
+  "line": 27,
   "name": "I Input Office Address \"The Main Road, Grand Port\"",
   "matchedColumns": [
-    19
+    17
   ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 694,
-  "name": "I Select Status of Applicant \"Company\"",
+  "line": 28,
+  "name": "I Input Enterprise Address \"Royal Road, Port Louis\"",
+  "matchedColumns": [
+    18
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 29,
+  "name": "I Select Duration Year for Registration membership \"1\"",
+  "matchedColumns": [
+    20
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 30,
+  "name": "I Input List of Products manufactured \"Tomato, Pepper\"",
   "matchedColumns": [
     21
   ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 695,
-  "name": "I Select Duration Year for Registration membership \"1\"",
+  "line": 31,
+  "name": "I Select Status of Applicant for Agro-Processing Enterprise \"Company\"",
   "matchedColumns": [
-    22
+    19
   ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 696,
-  "name": "I Input List of Products manufactured \"Tomato, Pepper\"",
-  "matchedColumns": [
-    23
-  ],
+  "line": 32,
+  "name": "I Click on Save and Continue",
   "keyword": "And "
 });
 formatter.step({
-  "line": 697,
-  "name": "I Input No. of persons employed \"50\"",
-  "matchedColumns": [
-    24
-  ],
+  "line": 33,
+  "name": "I Verify Upload Required Documents Page is displayed",
   "keyword": "And "
 });
 formatter.step({
-  "line": 698,
-  "name": "I Input Actual Annual Turnover (Rs) \"10000000\"",
-  "matchedColumns": [
-    25
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 699,
-  "name": "I Select Status of business \"Existing\"",
+  "line": 34,
+  "name": "I Upload Business Registration Card \"src\\test\\resources\\Upload_Test1.pdf\"",
   "matchedColumns": [
     26
   ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 700,
-  "name": "I Input No. of years of operation \"5\"",
+  "line": 35,
+  "name": "I Upload Certificate of Incorporation \"src\\test\\resources\\Upload_Test1.pdf\"",
+  "matchedColumns": [
+    26
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 36,
+  "name": "I Upload List of Directors/ Associates \"src\\test\\resources\\Upload_Test1.pdf\"",
+  "matchedColumns": [
+    26
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 37,
+  "name": "I Upload Board Resolution of Enterprise for appointment of representative(s) \"src\\test\\resources\\Upload_Test1.pdf\"",
+  "matchedColumns": [
+    26
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 38,
+  "name": "I Upload National Identity card of representative \"src\\test\\resources\\Upload_Test1.pdf\"",
+  "matchedColumns": [
+    26
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 39,
+  "name": "I Upload Location Plan Document \"src\\test\\resources\\Upload_Test1.pdf\"",
+  "matchedColumns": [
+    26
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 40,
+  "name": "I Upload Copy of SMEDA Certificate Document \"src\\test\\resources\\Upload_Test1.pdf\"",
+  "matchedColumns": [
+    26
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 41,
+  "name": "I Upload Copy of Utility Bill Document \"src\\test\\resources\\Upload_Test1.pdf\"",
+  "matchedColumns": [
+    26
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 42,
+  "name": "I Verify for Document Upload Success Message",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 43,
+  "name": "I Click on Add Additional Document",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 44,
+  "name": "I Input Additional Document Name \"Additional Document Test\"",
   "matchedColumns": [
     27
   ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 701,
-  "name": "I Click on Save and Continue",
+  "line": 45,
+  "name": "I Verify Success message for adding Additional Document Name",
   "keyword": "And "
 });
 formatter.step({
-  "line": 702,
-  "name": "I Verify Upload Required Documents Page is displayed",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 703,
-  "name": "I Upload Business Registration Card \"src\\test\\resources\\Upload_Test1.pdf\"",
+  "line": 46,
+  "name": "I Upload Additional Document \"src\\test\\resources\\Upload_Test1.pdf\"",
   "matchedColumns": [
-    28
+    26
   ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 704,
-  "name": "I Upload Certificate of Incorporation \"src\\test\\resources\\Upload_Test1.pdf\"",
-  "matchedColumns": [
-    28
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 705,
-  "name": "I Upload List of Directors/ Associates \"src\\test\\resources\\Upload_Test1.pdf\"",
-  "matchedColumns": [
-    28
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 706,
-  "name": "I Upload Board Resolution of Enterprise for appointment of representative(s) \"src\\test\\resources\\Upload_Test1.pdf\"",
-  "matchedColumns": [
-    28
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 707,
-  "name": "I Upload National Identity card of representative \"src\\test\\resources\\Upload_Test1.pdf\"",
-  "matchedColumns": [
-    28
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 708,
-  "name": "I Upload Location Plan Document \"src\\test\\resources\\Upload_Test1.pdf\"",
-  "matchedColumns": [
-    28
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 709,
-  "name": "I Upload Copy of SMEDA Certificate Document \"src\\test\\resources\\Upload_Test1.pdf\"",
-  "matchedColumns": [
-    28
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 710,
-  "name": "I Upload Copy of Utility Bill Document \"src\\test\\resources\\Upload_Test1.pdf\"",
-  "matchedColumns": [
-    28
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 711,
+  "line": 47,
   "name": "I Verify for Document Upload Success Message",
   "keyword": "And "
 });
 formatter.step({
-  "line": 712,
-  "name": "I Click on Add Additional Document",
+  "line": 48,
+  "name": "I Click on Save and Continue",
   "keyword": "And "
 });
 formatter.step({
-  "line": 713,
-  "name": "I Input Additional Document Name \"Additional Document Test\"",
+  "line": 49,
+  "name": "I Verify Terms and Conditions Page",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 50,
+  "name": "I click on I agree to the Terms and Conditions",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 51,
+  "name": "I Select Bank \"ABC Banking\"",
+  "matchedColumns": [
+    28
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 52,
+  "name": "I Input Bank Branch for Agro-Processing Enterprise \"Port Louis\"",
   "matchedColumns": [
     29
   ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 714,
-  "name": "I Verify Success message for adding Additional Document Name",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 715,
-  "name": "I Upload Additional Documents \"src\\test\\resources\\Upload_Test1.pdf\"",
-  "matchedColumns": [
-    28
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 716,
-  "name": "I Verify for Document Upload Success Message",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 717,
-  "name": "I Click on Save and Continue",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 718,
-  "name": "I Verify Terms and Conditions Page",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 719,
-  "name": "I click on I agree to the Terms and Conditions",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 720,
-  "name": "I Select Bank \"ABC Banking\"",
+  "line": 53,
+  "name": "I Input Personal Bank Account Number Agro-Processing Enterprise \"0001252563636\"",
   "matchedColumns": [
     30
   ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 721,
-  "name": "I Input Bank Branch \"Port Louis\"",
+  "line": 54,
+  "name": "I Click on Submit Application \"Yes\"",
   "matchedColumns": [
     31
   ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 722,
-  "name": "I Input Personal Bank Account Number\"0001252563636\"",
+  "line": 55,
+  "name": "I Verify Success message for application submitted",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 56,
+  "name": "I Verify Application Status \"Submitted\"",
   "matchedColumns": [
     32
   ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 723,
-  "name": "I Click on Submit Application \"Yes\"",
+  "line": 57,
+  "name": "I Verify Payment Status \"Pending\"",
   "matchedColumns": [
     33
   ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 724,
-  "name": "I Verify Success message for application submitted",
+  "line": 58,
+  "name": "I Copy Application Number",
   "keyword": "And "
 });
 formatter.step({
-  "line": 725,
-  "name": "I Verify Application Status \"Submitted\"",
+  "line": 59,
+  "name": "I Click on Shopping Cart for payment",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 60,
+  "name": "I Select Application for payment",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 61,
+  "name": "I Click on Proceed to Payment",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 62,
+  "name": "I Click on Payment Icon",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 63,
+  "name": "I Select Payment Method \"Counter\"",
   "matchedColumns": [
     34
   ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 726,
-  "name": "I Verify Payment Status \"Pending\"",
-  "matchedColumns": [
-    35
-  ],
+  "line": 64,
+  "name": "I Click on Final Proceed to Payment",
   "keyword": "And "
 });
 formatter.step({
-  "line": 727,
-  "name": "I Copy Application Number",
+  "line": 65,
+  "name": "I Verify Message to proceed to Post Office for Payment",
   "keyword": "And "
 });
 formatter.step({
-  "line": 728,
-  "name": "I Click on Shopping Cart for payment",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 729,
-  "name": "I Select Application for payment",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 730,
-  "name": "I Click on Proceed to Payment",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 731,
-  "name": "I Click on Payment Icon",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 732,
-  "name": "I Select Payment Method \"Credit\"",
-  "matchedColumns": [
-    36
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 733,
-  "name": "I Click on Final Proceed to Online Payment",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 734,
-  "name": "I Verify display of Payment Gateway",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 735,
-  "name": "I Input Card Details \"5123-4500-0000-0008\" \"01\" \"39\" \"My name\" \"100\"",
-  "matchedColumns": [
-    37,
-    38,
-    39,
-    40,
-    41
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 736,
-  "name": "I Click on Pay Now button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 737,
-  "name": "I Verify that User is directed to My Application Page",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 738,
-  "name": "I Verify Payment Status is changed to Paid",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 739,
+  "line": 66,
   "name": "I Sign Out as Front Registered User",
-  "keyword": "Then "
+  "keyword": "And "
 });
 formatter.step({
   "comments": [
     {
-      "line": 741,
-      "value": "#    PWO"
+      "line": 67,
+      "value": "#    Finance"
     }
   ],
-  "line": 742,
+  "line": 68,
   "name": "I am on SFWF Back Office Home Page \"Chrome\"",
   "matchedColumns": [
     0
@@ -1644,7 +1598,94 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 743,
+  "line": 69,
+  "name": "I Input Finance Username \"Finance_suraj\" and Password \"Admin@123\"",
+  "matchedColumns": [
+    2,
+    3
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 70,
+  "name": "I Click on Sign In button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 71,
+  "name": "I Verify Successful Login",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 72,
+  "name": "I Click on Manage Cashier",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 73,
+  "name": "I Verify List of Applications page",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 74,
+  "name": "I Click on Confirm Processing Fees",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 75,
+  "name": "I Verify display of Processing Details Frame",
+  "keyword": "And "
+});
+formatter.step({
+  "comments": [
+    {
+      "line": 76,
+      "value": "#    And I Select Payment Mode \"\u003cPayment_Mode\u003e\""
+    },
+    {
+      "line": 77,
+      "value": "#    And I Input Amount of payment \"\u003cAmount_To_Pay\u003e\""
+    },
+    {
+      "line": 78,
+      "value": "#    And I Click on Add Payment"
+    }
+  ],
+  "line": 79,
+  "name": "I Click on Save Payment",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 80,
+  "name": "I Verify success message for adding payment",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 81,
+  "name": "I Sign Out",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 82,
+  "name": "I Verify Successful Sign Out",
+  "keyword": "And "
+});
+formatter.step({
+  "comments": [
+    {
+      "line": 84,
+      "value": "#    PWO"
+    }
+  ],
+  "line": 85,
+  "name": "I am on SFWF Back Office Home Page \"Chrome\"",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 86,
   "name": "I Input PWO Username \"PWO\" and Password \"Admin@123\"",
   "matchedColumns": [
     2,
@@ -1653,52 +1694,52 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 744,
+  "line": 87,
   "name": "I Click on Sign In button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 745,
+  "line": 88,
   "name": "I Verify Successful Login",
   "keyword": "And "
 });
 formatter.step({
-  "line": 746,
+  "line": 89,
   "name": "I Click on All Applications",
   "keyword": "And "
 });
 formatter.step({
-  "line": 747,
+  "line": 90,
   "name": "I Verify display of list of registrations page",
   "keyword": "And "
 });
 formatter.step({
-  "line": 748,
+  "line": 91,
   "name": "I Search for Application Ref Number as a Back Office User",
   "keyword": "And "
 });
 formatter.step({
-  "line": 749,
+  "line": 92,
   "name": "I Click to view Application",
   "keyword": "And "
 });
 formatter.step({
-  "line": 750,
+  "line": 93,
   "name": "I Click on Action Button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 751,
+  "line": 94,
   "name": "I Select PWO Assigned",
   "keyword": "And "
 });
 formatter.step({
-  "line": 752,
+  "line": 95,
   "name": "I Select WPO",
   "keyword": "And "
 });
 formatter.step({
-  "line": 753,
+  "line": 96,
   "name": "I Input Remarks \"This is a test\"",
   "matchedColumns": [
     8
@@ -1706,33 +1747,33 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 754,
+  "line": 97,
   "name": "I Click on Save Actions",
   "keyword": "And "
 });
 formatter.step({
-  "line": 755,
+  "line": 98,
   "name": "I Verify for success message for assigning",
   "keyword": "And "
 });
 formatter.step({
-  "line": 756,
+  "line": 99,
   "name": "I Sign Out",
   "keyword": "And "
 });
 formatter.step({
-  "line": 757,
+  "line": 100,
   "name": "I Verify Successful Sign Out",
   "keyword": "And "
 });
 formatter.step({
   "comments": [
     {
-      "line": 758,
+      "line": 101,
       "value": "#    WPO"
     }
   ],
-  "line": 759,
+  "line": 102,
   "name": "I am on SFWF Back Office Home Page \"Chrome\"",
   "matchedColumns": [
     0
@@ -1740,7 +1781,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 760,
+  "line": 103,
   "name": "I Input WPO Username \"WPO\" and Password \"Admin@123\"",
   "matchedColumns": [
     2,
@@ -1749,52 +1790,52 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 761,
+  "line": 104,
   "name": "I Click on Sign In button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 762,
+  "line": 105,
   "name": "I Verify Successful Login",
   "keyword": "And "
 });
 formatter.step({
-  "line": 763,
+  "line": 106,
   "name": "I Click on All Applications",
   "keyword": "And "
 });
 formatter.step({
-  "line": 764,
+  "line": 107,
   "name": "I Verify display of list of registrations page",
   "keyword": "And "
 });
 formatter.step({
-  "line": 765,
+  "line": 108,
   "name": "I Search for Application Ref Number as a Back Office User",
   "keyword": "And "
 });
 formatter.step({
-  "line": 766,
+  "line": 109,
   "name": "I Click to view Application",
   "keyword": "And "
 });
 formatter.step({
-  "line": 767,
+  "line": 110,
   "name": "I Click on Action Button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 768,
+  "line": 111,
   "name": "I Select Assigned",
   "keyword": "And "
 });
 formatter.step({
-  "line": 769,
+  "line": 112,
   "name": "I Select WO",
   "keyword": "And "
 });
 formatter.step({
-  "line": 770,
+  "line": 113,
   "name": "I Input Remarks \"This is a test\"",
   "matchedColumns": [
     8
@@ -1802,33 +1843,33 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 771,
+  "line": 114,
   "name": "I Click on Save Actions",
   "keyword": "And "
 });
 formatter.step({
-  "line": 772,
+  "line": 115,
   "name": "I Verify for success message for assigning",
   "keyword": "And "
 });
 formatter.step({
-  "line": 773,
+  "line": 116,
   "name": "I Sign Out",
   "keyword": "And "
 });
 formatter.step({
-  "line": 774,
+  "line": 117,
   "name": "I Verify Successful Sign Out",
   "keyword": "And "
 });
 formatter.step({
   "comments": [
     {
-      "line": 776,
+      "line": 119,
       "value": "#    WO/WA"
     }
   ],
-  "line": 777,
+  "line": 120,
   "name": "I am on SFWF Back Office Home Page \"Chrome\"",
   "matchedColumns": [
     0
@@ -1836,7 +1877,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 778,
+  "line": 121,
   "name": "I Input WO-WA Username \"WO\" and Password \"Admin@123\"",
   "matchedColumns": [
     2,
@@ -1845,42 +1886,42 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 779,
+  "line": 122,
   "name": "I Click on Sign In button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 780,
+  "line": 123,
   "name": "I Verify Successful Login",
   "keyword": "And "
 });
 formatter.step({
-  "line": 781,
+  "line": 124,
   "name": "I Click on All Applications",
   "keyword": "And "
 });
 formatter.step({
-  "line": 782,
+  "line": 125,
   "name": "I Verify display of list of registrations page",
   "keyword": "And "
 });
 formatter.step({
-  "line": 783,
+  "line": 126,
   "name": "I Search for Application Ref Number as a Back Office User",
   "keyword": "And "
 });
 formatter.step({
-  "line": 784,
+  "line": 127,
   "name": "I Click to view Application",
   "keyword": "And "
 });
 formatter.step({
-  "line": 785,
+  "line": 128,
   "name": "I Click on Site Report Tab",
   "keyword": "And "
 });
 formatter.step({
-  "line": 786,
+  "line": 129,
   "name": "I Select Bonafide Planter \"Yes\"",
   "matchedColumns": [
     9
@@ -1888,7 +1929,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 787,
+  "line": 130,
   "name": "I Input Site visit remarks \"This is a test\"",
   "matchedColumns": [
     8
@@ -1896,45 +1937,45 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 788,
+  "line": 131,
   "name": "I Upload Site Report \"src\\test\\resources\\Upload_Test1.pdf\"",
   "matchedColumns": [
-    28
+    26
   ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 789,
-  "name": "I Verify for Document Upload Success Message",
+  "line": 132,
+  "name": "I Verify for Document Upload Success Message for Site Visit",
   "keyword": "And "
 });
 formatter.step({
-  "line": 790,
+  "line": 133,
   "name": "I Click on Save Button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 791,
+  "line": 134,
   "name": "I Verify Site Visit saved success message",
   "keyword": "And "
 });
 formatter.step({
-  "line": 792,
+  "line": 135,
   "name": "I Click on Action Button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 793,
+  "line": 136,
   "name": "I Select Assigned",
   "keyword": "And "
 });
 formatter.step({
-  "line": 794,
+  "line": 137,
   "name": "I Select WPO",
   "keyword": "And "
 });
 formatter.step({
-  "line": 795,
+  "line": 138,
   "name": "I Input Remarks \"This is a test\"",
   "matchedColumns": [
     8
@@ -1942,33 +1983,33 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 796,
+  "line": 139,
   "name": "I Click on Save Actions",
   "keyword": "And "
 });
 formatter.step({
-  "line": 797,
+  "line": 140,
   "name": "I Verify for success message for assigning",
   "keyword": "And "
 });
 formatter.step({
-  "line": 798,
+  "line": 141,
   "name": "I Sign Out",
   "keyword": "And "
 });
 formatter.step({
-  "line": 799,
+  "line": 142,
   "name": "I Verify Successful Sign Out",
   "keyword": "And "
 });
 formatter.step({
   "comments": [
     {
-      "line": 801,
+      "line": 144,
       "value": "#    WPO"
     }
   ],
-  "line": 802,
+  "line": 145,
   "name": "I am on SFWF Back Office Home Page \"Chrome\"",
   "matchedColumns": [
     0
@@ -1976,7 +2017,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 803,
+  "line": 146,
   "name": "I Input WPO Username \"WPO\" and Password \"Admin@123\"",
   "matchedColumns": [
     2,
@@ -1985,47 +2026,47 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 804,
+  "line": 147,
   "name": "I Click on Sign In button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 805,
+  "line": 148,
   "name": "I Verify Successful Login",
   "keyword": "And "
 });
 formatter.step({
-  "line": 806,
+  "line": 149,
   "name": "I Click on All Applications",
   "keyword": "And "
 });
 formatter.step({
-  "line": 807,
+  "line": 150,
   "name": "I Verify display of list of registrations page",
   "keyword": "And "
 });
 formatter.step({
-  "line": 808,
+  "line": 151,
   "name": "I Search for Application Ref Number as a Back Office User",
   "keyword": "And "
 });
 formatter.step({
-  "line": 809,
+  "line": 152,
   "name": "I Click to view Application",
   "keyword": "And "
 });
 formatter.step({
-  "line": 810,
+  "line": 153,
   "name": "I Click on Action Button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 811,
+  "line": 154,
   "name": "I Select Under Query",
   "keyword": "And "
 });
 formatter.step({
-  "line": 812,
+  "line": 155,
   "name": "I Input External Remarks \"This is a test\"",
   "matchedColumns": [
     8
@@ -2033,43 +2074,43 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 813,
+  "line": 156,
   "name": "I Click on Under Query Notification",
   "keyword": "And "
 });
 formatter.step({
-  "line": 814,
+  "line": 157,
   "name": "I Verify Success Message for Under Query Notification",
   "keyword": "And "
 });
 formatter.step({
-  "line": 815,
+  "line": 158,
   "name": "I Click on Save Actions",
   "keyword": "And "
 });
 formatter.step({
-  "line": 816,
+  "line": 159,
   "name": "I Verify for success message for workflow saved",
   "keyword": "And "
 });
 formatter.step({
-  "line": 817,
+  "line": 160,
   "name": "I Sign Out",
   "keyword": "And "
 });
 formatter.step({
-  "line": 818,
+  "line": 161,
   "name": "I Verify Successful Sign Out",
   "keyword": "And "
 });
 formatter.step({
   "comments": [
     {
-      "line": 820,
+      "line": 163,
       "value": "#    Applicant after under query"
     }
   ],
-  "line": 821,
+  "line": 164,
   "name": "I am on SFWF Front Office Home Page \"Chrome\"",
   "matchedColumns": [
     0
@@ -2077,7 +2118,7 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.step({
-  "line": 822,
+  "line": 165,
   "name": "I Input Registered User\u0027s Username \"Suraj\" and Password \"Admin@123\"",
   "matchedColumns": [
     1,
@@ -2086,91 +2127,91 @@ formatter.step({
   "keyword": "When "
 });
 formatter.step({
-  "line": 823,
+  "line": 166,
   "name": "I Click on Sign In button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 824,
+  "line": 167,
   "name": "I Verify Applicant\u0027s Successful Login",
   "keyword": "And "
 });
 formatter.step({
-  "line": 825,
+  "line": 168,
   "name": "I Click on Register as Farmer",
   "keyword": "And "
 });
 formatter.step({
-  "line": 826,
+  "line": 169,
   "name": "I Verify that User is directed to My Application Page",
   "keyword": "And "
 });
 formatter.step({
-  "line": 827,
+  "line": 170,
   "name": "I Verify display of Farmers Card link",
   "keyword": "And "
 });
 formatter.step({
-  "line": 828,
+  "line": 171,
   "name": "I Verify Programmes link",
   "keyword": "And "
 });
 formatter.step({
-  "line": 829,
+  "line": 172,
   "name": "I Search for Application Ref Number for re-submit",
   "keyword": "And "
 });
 formatter.step({
-  "line": 830,
+  "line": 173,
   "name": "I Verify display of REGISTRATION FOR AGRO-PROCESSING ENTERPRISE Page",
   "keyword": "And "
 });
 formatter.step({
-  "line": 831,
+  "line": 174,
   "name": "I Click on Save and Continue",
   "keyword": "And "
 });
 formatter.step({
-  "line": 832,
+  "line": 175,
   "name": "I Verify Upload Required Documents Page is displayed",
   "keyword": "And "
 });
 formatter.step({
-  "line": 833,
+  "line": 176,
   "name": "I Click on Save and Continue",
   "keyword": "And "
 });
 formatter.step({
-  "line": 834,
+  "line": 177,
   "name": "I Verify Terms and Conditions Page",
   "keyword": "And "
 });
 formatter.step({
-  "line": 835,
+  "line": 178,
   "name": "I Click on Submit Application \"Yes\"",
   "matchedColumns": [
-    33
+    31
   ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 836,
+  "line": 179,
   "name": "I Verify Success message for application submitted",
   "keyword": "And "
 });
 formatter.step({
-  "line": 837,
+  "line": 180,
   "name": "I Sign Out as Front Registered User",
   "keyword": "And "
 });
 formatter.step({
   "comments": [
     {
-      "line": 839,
+      "line": 182,
       "value": "#    WPO"
     }
   ],
-  "line": 840,
+  "line": 183,
   "name": "I am on SFWF Back Office Home Page \"Chrome\"",
   "matchedColumns": [
     0
@@ -2178,7 +2219,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 841,
+  "line": 184,
   "name": "I Input WPO Username \"WPO\" and Password \"Admin@123\"",
   "matchedColumns": [
     2,
@@ -2187,47 +2228,47 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 842,
+  "line": 185,
   "name": "I Click on Sign In button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 843,
+  "line": 186,
   "name": "I Verify Successful Login",
   "keyword": "And "
 });
 formatter.step({
-  "line": 844,
+  "line": 187,
   "name": "I Click on All Applications",
   "keyword": "And "
 });
 formatter.step({
-  "line": 845,
+  "line": 188,
   "name": "I Verify display of list of registrations page",
   "keyword": "And "
 });
 formatter.step({
-  "line": 846,
+  "line": 189,
   "name": "I Search for Application Ref Number as a Back Office User",
   "keyword": "And "
 });
 formatter.step({
-  "line": 847,
+  "line": 190,
   "name": "I Click to view Application",
   "keyword": "And "
 });
 formatter.step({
-  "line": 848,
+  "line": 191,
   "name": "I Click on Action Button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 849,
+  "line": 192,
   "name": "I Select Approved to approve the registration application",
   "keyword": "And "
 });
 formatter.step({
-  "line": 850,
+  "line": 193,
   "name": "I Input Remarks \"This is a test\"",
   "matchedColumns": [
     8
@@ -2235,33 +2276,33 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 851,
+  "line": 194,
   "name": "I Click on Save Actions",
   "keyword": "And "
 });
 formatter.step({
-  "line": 852,
+  "line": 195,
   "name": "I Verify for success message for approval",
   "keyword": "And "
 });
 formatter.step({
-  "line": 853,
+  "line": 196,
   "name": "I Sign Out",
   "keyword": "And "
 });
 formatter.step({
-  "line": 854,
+  "line": 197,
   "name": "I Verify Successful Sign Out",
   "keyword": "And "
 });
 formatter.step({
   "comments": [
     {
-      "line": 856,
+      "line": 199,
       "value": "#    IT Department"
     }
   ],
-  "line": 857,
+  "line": 200,
   "name": "I am on SFWF Back Office Home Page \"Chrome\"",
   "matchedColumns": [
     0
@@ -2269,7 +2310,7 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 858,
+  "line": 201,
   "name": "I Input IT Department Username \"IT_DEPT\" and Password \"Admin@123\"",
   "matchedColumns": [
     2,
@@ -2278,58 +2319,58 @@ formatter.step({
   "keyword": "And "
 });
 formatter.step({
-  "line": 859,
+  "line": 202,
   "name": "I Click on Sign In button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 860,
+  "line": 203,
   "name": "I Verify Successful Login",
   "keyword": "And "
 });
 formatter.step({
-  "line": 861,
+  "line": 204,
   "name": "I Click on All Applications",
   "keyword": "And "
 });
 formatter.step({
-  "line": 862,
+  "line": 205,
   "name": "I Verify display of list of registrations page",
   "keyword": "And "
 });
 formatter.step({
-  "line": 863,
+  "line": 206,
   "name": "I Search for Application Ref Number as a Back Office User",
   "keyword": "And "
 });
 formatter.step({
-  "line": 864,
+  "line": 207,
   "name": "I Click to view Application",
   "keyword": "And "
 });
 formatter.step({
-  "line": 865,
+  "line": 208,
   "name": "I Click on Print Card",
   "keyword": "And "
 });
 formatter.step({
-  "line": 866,
+  "line": 209,
   "name": "I Sign Out",
   "keyword": "And "
 });
 formatter.step({
-  "line": 867,
+  "line": 210,
   "name": "I Verify Successful Sign Out",
   "keyword": "And "
 });
 formatter.step({
   "comments": [
     {
-      "line": 869,
+      "line": 212,
       "value": "#    Applicant verify status - Card Printed"
     }
   ],
-  "line": 870,
+  "line": 213,
   "name": "I am on SFWF Front Office Home Page \"Chrome\"",
   "matchedColumns": [
     0
@@ -2337,7 +2378,7 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.step({
-  "line": 871,
+  "line": 214,
   "name": "I Input Registered User\u0027s Username \"Suraj\" and Password \"Admin@123\"",
   "matchedColumns": [
     1,
@@ -2346,47 +2387,47 @@ formatter.step({
   "keyword": "When "
 });
 formatter.step({
-  "line": 872,
+  "line": 215,
   "name": "I Click on Sign In button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 873,
+  "line": 216,
   "name": "I Verify Applicant\u0027s Successful Login",
   "keyword": "And "
 });
 formatter.step({
-  "line": 874,
+  "line": 217,
   "name": "I Click on Register as Farmer",
   "keyword": "And "
 });
 formatter.step({
-  "line": 875,
+  "line": 218,
   "name": "I Verify that User is directed to My Application Page",
   "keyword": "And "
 });
 formatter.step({
-  "line": 876,
+  "line": 219,
   "name": "I Verify display of Farmers Card link",
   "keyword": "And "
 });
 formatter.step({
-  "line": 877,
+  "line": 220,
   "name": "I Verify Programmes link",
   "keyword": "And "
 });
 formatter.step({
-  "line": 878,
+  "line": 221,
   "name": "I Search for Application Ref Number for to check Status Card Printed",
   "keyword": "And "
 });
 formatter.step({
-  "line": 879,
+  "line": 222,
   "name": "I Verify Application Status to be Card Printed",
   "keyword": "And "
 });
 formatter.step({
-  "line": 880,
+  "line": 223,
   "name": "I Sign Out as Front Registered User",
   "keyword": "And "
 });
@@ -2400,7 +2441,7 @@ formatter.match({
   "location": "Steps.iAmOnSFWFFrontOfficeHomePage(String)"
 });
 formatter.result({
-  "duration": 8834832800,
+  "duration": 2946995300,
   "status": "passed"
 });
 formatter.match({
@@ -2417,77 +2458,77 @@ formatter.match({
   "location": "Steps.iInputRegisteredUserSUsernameAndPassword(String,String)"
 });
 formatter.result({
-  "duration": 531211100,
+  "duration": 414395300,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnSignInButton()"
 });
 formatter.result({
-  "duration": 1555381300,
+  "duration": 1543090700,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyApplicantSSuccessfulLogin()"
 });
 formatter.result({
-  "duration": 130673500,
+  "duration": 98689200,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnRegisterAsFarmer()"
 });
 formatter.result({
-  "duration": 1527382700,
+  "duration": 1040090500,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyThatUserIsDirectedToMyApplicationPage()"
 });
 formatter.result({
-  "duration": 46848700,
+  "duration": 43411600,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyDisplayOfFarmersCardLink()"
 });
 formatter.result({
-  "duration": 20785400,
+  "duration": 31644600,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyProgrammesLink()"
 });
 formatter.result({
-  "duration": 22715100,
+  "duration": 29023900,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnNewButtonToApplyForRegistration()"
 });
 formatter.result({
-  "duration": 819420200,
+  "duration": 453620400,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyDisplayOfRegistrationTypePage()"
 });
 formatter.result({
-  "duration": 18115600,
+  "duration": 77042100,
   "status": "passed"
 });
 formatter.match({
-  "location": "Steps.iClickOnFarmersCooperativesAssociationSocietyOrCompany()"
+  "location": "Steps.iClickOnAgroProcessingEnterprise()"
 });
 formatter.result({
-  "duration": 2953646200,
+  "duration": 2852353100,
   "status": "passed"
 });
 formatter.match({
-  "location": "Steps.iVerifyDisplayOfRegistrationOfFarmersPage()"
+  "location": "Steps.iVerifyDisplayOfREGISTRATIONFORAGROPROCESSINGENTERPRISEPage()"
 });
 formatter.result({
-  "duration": 42250800,
+  "duration": 77801400,
   "status": "passed"
 });
 formatter.match({
@@ -2500,7 +2541,7 @@ formatter.match({
   "location": "Steps.iInputAssociateSocietyCompanyName(String)"
 });
 formatter.result({
-  "duration": 172334700,
+  "duration": 105591400,
   "status": "passed"
 });
 formatter.match({
@@ -2513,33 +2554,33 @@ formatter.match({
   "location": "Steps.iInputRepresentedBy(String)"
 });
 formatter.result({
-  "duration": 141618100,
+  "duration": 100816100,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
       "val": "C123456789",
-      "offset": 40
+      "offset": 70
     }
   ],
-  "location": "Steps.iInputBusinessRegistrationNoBRN(String)"
+  "location": "Steps.iInputBusinessRegistrationNoBRNForAgroProcessingEnterprise(String)"
 });
 formatter.result({
-  "duration": 135538500,
+  "duration": 98842000,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
       "val": "XLPR852",
-      "offset": 41
+      "offset": 72
     }
   ],
-  "location": "Steps.iInputCertificateOfIncorporationNo(String)"
+  "location": "Steps.iInputCertificateOfIncorporationNoForAgroProcessingEnterprise(String)"
 });
 formatter.result({
-  "duration": 121072600,
+  "duration": 85701400,
   "status": "passed"
 });
 formatter.match({
@@ -2552,33 +2593,7 @@ formatter.match({
   "location": "Steps.iSelectActivity(String)"
 });
 formatter.result({
-  "duration": 69779200,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "2126666",
-      "offset": 29
-    }
-  ],
-  "location": "Steps.iInputOfficePhoneNumber(String)"
-});
-formatter.result({
-  "duration": 166219500,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "58967896",
-      "offset": 29
-    }
-  ],
-  "location": "Steps.iInputMobilePhoneNumber(String)"
-});
-formatter.result({
-  "duration": 174110100,
+  "duration": 72555200,
   "status": "passed"
 });
 formatter.match({
@@ -2591,20 +2606,20 @@ formatter.match({
   "location": "Steps.iInputOfficeAddress(String)"
 });
 formatter.result({
-  "duration": 215638000,
+  "duration": 120342900,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Company",
-      "offset": 30
+      "val": "Royal Road, Port Louis",
+      "offset": 28
     }
   ],
-  "location": "Steps.iSelectStatusOfApplicant(String)"
+  "location": "Steps.iInputEnterpriseAddress(String)"
 });
 formatter.result({
-  "duration": 1791407000,
+  "duration": 97304400,
   "status": "passed"
 });
 formatter.match({
@@ -2617,7 +2632,7 @@ formatter.match({
   "location": "Steps.iSelectDurationYearForRegistrationMembership(String)"
 });
 formatter.result({
-  "duration": 2210763100,
+  "duration": 2181056900,
   "status": "passed"
 });
 formatter.match({
@@ -2630,73 +2645,34 @@ formatter.match({
   "location": "Steps.iInputListOfProductsManufactured(String)"
 });
 formatter.result({
-  "duration": 5505896300,
+  "duration": 4242101600,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "50",
-      "offset": 33
+      "val": "Company",
+      "offset": 61
     }
   ],
-  "location": "Steps.iInputNoOfPersonsEmployed(String)"
+  "location": "Steps.iSelectStatusOfApplicantForAgroProcessingEnterprise(String)"
 });
 formatter.result({
-  "duration": 112372900,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "10000000",
-      "offset": 37
-    }
-  ],
-  "location": "Steps.iInputActualAnnualTurnoverRs(String)"
-});
-formatter.result({
-  "duration": 133739500,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Existing",
-      "offset": 29
-    }
-  ],
-  "location": "Steps.iSelectStatusOfBusiness(String)"
-});
-formatter.result({
-  "duration": 118831800,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "5",
-      "offset": 35
-    }
-  ],
-  "location": "Steps.iInputNoOfYearsOfOperation(String)"
-});
-formatter.result({
-  "duration": 111564400,
+  "duration": 1650753200,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnSaveAndContinue()"
 });
 formatter.result({
-  "duration": 6220540600,
+  "duration": 6162859400,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyUploadRequiredDocumentsPageIsDisplayed()"
 });
 formatter.result({
-  "duration": 98458200,
+  "duration": 113630200,
   "status": "passed"
 });
 formatter.match({
@@ -2709,7 +2685,7 @@ formatter.match({
   "location": "Steps.iUploadBusinessRegistrationCard(String)"
 });
 formatter.result({
-  "duration": 2247476900,
+  "duration": 1124863500,
   "status": "passed"
 });
 formatter.match({
@@ -2722,7 +2698,7 @@ formatter.match({
   "location": "Steps.iUploadCertificateOfIncorporation(String)"
 });
 formatter.result({
-  "duration": 1193182300,
+  "duration": 1122369700,
   "status": "passed"
 });
 formatter.match({
@@ -2735,7 +2711,7 @@ formatter.match({
   "location": "Steps.iUploadListOfDirectorsAssociates(String)"
 });
 formatter.result({
-  "duration": 1206884400,
+  "duration": 1136612900,
   "status": "passed"
 });
 formatter.match({
@@ -2748,7 +2724,7 @@ formatter.match({
   "location": "Steps.iUploadBoardResolutionOfEnterpriseForAppointmentOfRepresentativeS(String)"
 });
 formatter.result({
-  "duration": 1733545300,
+  "duration": 1121674000,
   "status": "passed"
 });
 formatter.match({
@@ -2761,7 +2737,7 @@ formatter.match({
   "location": "Steps.iUploadNationalIdentityCardOfRepresentative(String)"
 });
 formatter.result({
-  "duration": 1195694800,
+  "duration": 1133046200,
   "status": "passed"
 });
 formatter.match({
@@ -2774,7 +2750,7 @@ formatter.match({
   "location": "Steps.iUploadLocationPlanDocument(String)"
 });
 formatter.result({
-  "duration": 1180679300,
+  "duration": 1121637000,
   "status": "passed"
 });
 formatter.match({
@@ -2787,7 +2763,7 @@ formatter.match({
   "location": "Steps.iUploadCopyOfSMEDACertificateDocument(String)"
 });
 formatter.result({
-  "duration": 1198403000,
+  "duration": 1116429700,
   "status": "passed"
 });
 formatter.match({
@@ -2800,21 +2776,21 @@ formatter.match({
   "location": "Steps.iUploadCopyOfUtilityBillDocument(String)"
 });
 formatter.result({
-  "duration": 1214210100,
+  "duration": 1128492200,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyForDocumentUploadSuccessMessage()"
 });
 formatter.result({
-  "duration": 32354100,
+  "duration": 18897000,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnAddAdditionalDocument()"
 });
 formatter.result({
-  "duration": 3124537800,
+  "duration": 3108591900,
   "status": "passed"
 });
 formatter.match({
@@ -2827,55 +2803,55 @@ formatter.match({
   "location": "Steps.iInputAdditionalDocumentName(String)"
 });
 formatter.result({
-  "duration": 1747613200,
+  "duration": 1626951200,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifySuccessMessageForAddingAdditionalDocumentName()"
 });
 formatter.result({
-  "duration": 24957900,
+  "duration": 25378800,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
       "val": "src\\test\\resources\\Upload_Test1.pdf",
-      "offset": 31
+      "offset": 30
     }
   ],
-  "location": "Steps.iUploadAdditionalDocuments(String)"
+  "location": "Steps.iUploadAdditionalDocument(String)"
 });
 formatter.result({
-  "duration": 1227819000,
+  "duration": 1156748400,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyForDocumentUploadSuccessMessage()"
 });
 formatter.result({
-  "duration": 32166900,
+  "duration": 12768400,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnSaveAndContinue()"
 });
 formatter.result({
-  "duration": 6233201800,
+  "duration": 6154612100,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyTermsAndConditionsPage()"
 });
 formatter.result({
-  "duration": 107646000,
+  "duration": 69683900,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnIAgreeToTheTermsAndConditions()"
 });
 formatter.result({
-  "duration": 135891700,
+  "duration": 84407200,
   "status": "passed"
 });
 formatter.match({
@@ -2888,33 +2864,33 @@ formatter.match({
   "location": "Steps.iSelectBank(String)"
 });
 formatter.result({
-  "duration": 4376159100,
+  "duration": 4257825100,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
       "val": "Port Louis",
-      "offset": 21
+      "offset": 52
     }
   ],
-  "location": "Steps.iInputBankBranch(String)"
+  "location": "Steps.iInputBankBranchForAgroProcessingEnterprise(String)"
 });
 formatter.result({
-  "duration": 1213003100,
+  "duration": 1134210700,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
       "val": "0001252563636",
-      "offset": 37
+      "offset": 65
     }
   ],
-  "location": "Steps.iInputPersonalBankAccountNumber(String)"
+  "location": "Steps.iInputPersonalBankAccountNumberAgroProcessingEnterprise(String)"
 });
 formatter.result({
-  "duration": 1204764600,
+  "duration": 1139678800,
   "status": "passed"
 });
 formatter.match({
@@ -2927,14 +2903,14 @@ formatter.match({
   "location": "Steps.iClickOnSubmitApplication(String)"
 });
 formatter.result({
-  "duration": 4559838400,
+  "duration": 4158924700,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifySuccessMessageForApplicationSubmitted()"
 });
 formatter.result({
-  "duration": 10086427800,
+  "duration": 10082072000,
   "status": "passed"
 });
 formatter.match({
@@ -2947,7 +2923,7 @@ formatter.match({
   "location": "Steps.iVerifyApplicationStatus(String)"
 });
 formatter.result({
-  "duration": 57497500,
+  "duration": 44015000,
   "status": "passed"
 });
 formatter.match({
@@ -2960,125 +2936,77 @@ formatter.match({
   "location": "Steps.iVerifyPaymentStatus(String)"
 });
 formatter.result({
-  "duration": 224400,
+  "duration": 758800,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iCopyApplicationNumber()"
 });
 formatter.result({
-  "duration": 67776000,
+  "duration": 58637400,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnShoppingCartForPayment()"
 });
 formatter.result({
-  "duration": 3236210900,
+  "duration": 2629200200,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.IselectApplicationForPayment()"
 });
 formatter.result({
-  "duration": 2333908900,
+  "duration": 2208290200,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnProceedToPayment()"
 });
 formatter.result({
-  "duration": 666489100,
+  "duration": 636554300,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnPaymentIcon()"
 });
 formatter.result({
-  "duration": 672351500,
+  "duration": 612592500,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Credit",
+      "val": "Counter",
       "offset": 25
     }
   ],
   "location": "Steps.iSelectPaymentMethod(String)"
 });
 formatter.result({
-  "duration": 5254700000,
+  "duration": 5168008300,
   "status": "passed"
 });
 formatter.match({
-  "location": "Steps.iClickOnFinalProceedToOnlinePayment()"
+  "location": "Steps.iClickOnFinalProceedToPayment()"
 });
 formatter.result({
-  "duration": 105503100,
+  "duration": 2112218500,
   "status": "passed"
 });
 formatter.match({
-  "location": "Steps.iVerifyDisplayOfPaymentGateway()"
+  "location": "Steps.iVerifyMessageToProceedToPostOfficeForPayment()"
 });
 formatter.result({
-  "duration": 5694002600,
+  "duration": 8064930800,
   "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "5123-4500-0000-0008",
-      "offset": 22
-    },
-    {
-      "val": "01",
-      "offset": 44
-    },
-    {
-      "val": "39",
-      "offset": 49
-    },
-    {
-      "val": "My name",
-      "offset": 54
-    },
-    {
-      "val": "100",
-      "offset": 64
-    }
-  ],
-  "location": "Steps.iInputCardDetails(String,String,String,String,String)"
-});
-formatter.result({
-  "duration": 5731383400,
-  "status": "passed"
-});
-formatter.match({
-  "location": "Steps.iClickOnPayNowButton()"
-});
-formatter.result({
-  "duration": 302846306700,
-  "error_message": "org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 300.000\n  (Session info: chrome\u003d129.0.6668.60)\nBuild info: version: \u00273.4.0\u0027, revision: \u0027unknown\u0027, time: \u0027unknown\u0027\nSystem info: host: \u0027SIL-LT5-RAKSHAL\u0027, ip: \u0027130.1.19.47\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_371\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d129.0.6668.70 (df87d5cf12b1397be7495a04cab2db6239b227a8-refs/branch-heads/6668@{#1420}), userDataDir\u003dC:\\Users\\Raksha\\AppData\\Local\\Temp\\scoped_dir100752_828441060}, timeouts\u003d{implicit\u003d0.0, pageLoad\u003d300000.0, script\u003d30000.0}, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003ddismiss and notify, strictFileInteractability\u003dfalse, platform\u003dANY, proxy\u003dProxy(), webauthn:extension:minPinLength\u003dtrue, goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:54050}, webauthn:extension:credBlob\u003dtrue, webauthn:extension:prf\u003dtrue, acceptInsecureCerts\u003dfalse, browserVersion\u003d129.0.6668.60, fedcm:accounts\u003dtrue, browserName\u003dchrome, javascriptEnabled\u003dtrue, platformName\u003dwindows, setWindowRect\u003dtrue, webauthn:extension:largeBlob\u003dtrue, webauthn:virtualAuthenticators\u003dtrue}]\nSession ID: 43fac076c2eec19ba39e23c747e184be\n*** Element info: {Using\u003dxpath, value\u003d//h5[contains(.,\u0027My Application\u0027)]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:437)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:513)\r\n\tat org.openqa.selenium.By$ByXPath.findElements(By.java:356)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:398)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:183)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:180)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)\r\n\tat stepdefinition.Steps.iClickOnPayNowButton(Steps.java:1933)\r\n\tat ✽.And I Click on Pay Now button(features/US13280.feature:736)\r\n",
-  "status": "failed"
-});
-formatter.match({
-  "location": "Steps.iVerifyThatUserIsDirectedToMyApplicationPage()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "Steps.iVerifyPaymentStatusIsChangedToPaid()"
-});
-formatter.result({
-  "status": "skipped"
 });
 formatter.match({
   "location": "Steps.iSignOutAsFrontRegisteredUser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 8003409400,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -3090,7 +3018,108 @@ formatter.match({
   "location": "Steps.iAmOnSFWFBackOfficeHomePage(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2398056400,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Finance_suraj",
+      "offset": 26
+    },
+    {
+      "val": "Admin@123",
+      "offset": 55
+    }
+  ],
+  "location": "Steps.iInputFinanceUsernameAndPassword(String,String)"
+});
+formatter.result({
+  "duration": 212648400,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Steps.iClickOnSignInButton()"
+});
+formatter.result({
+  "duration": 555735000,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Steps.IVerifySuccessfulLogin()"
+});
+formatter.result({
+  "duration": 120887200,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Steps.iClickOnManageCashier()"
+});
+formatter.result({
+  "duration": 93419400,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Steps.iVerifyListOfApplicationsPage()"
+});
+formatter.result({
+  "duration": 1555163000,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Steps.iClickOnConfirmProcessingFees()"
+});
+formatter.result({
+  "duration": 1581322300,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Steps.iVerifyDisplayOfProcessingDetailsFrame()"
+});
+formatter.result({
+  "duration": 51990500,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Steps.iClickOnSavePayment()"
+});
+formatter.result({
+  "duration": 1594365400,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Steps.iVerifySuccessMessageForAddingPayment()"
+});
+formatter.result({
+  "duration": 10620805700,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Steps.iSignOut()"
+});
+formatter.result({
+  "duration": 4354472400,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Steps.iVerifySuccessfulSignOut()"
+});
+formatter.result({
+  "duration": 982157100,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Chrome",
+      "offset": 36
+    }
+  ],
+  "location": "Steps.iAmOnSFWFBackOfficeHomePage(String)"
+});
+formatter.result({
+  "duration": 2505673000,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -3106,61 +3135,71 @@ formatter.match({
   "location": "Steps.iInputPWOUsernameAndPassword(String,String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 274996000,
+  "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnSignInButton()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2306277400,
+  "status": "passed"
 });
 formatter.match({
   "location": "Steps.IVerifySuccessfulLogin()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 82071100,
+  "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnAllApplications()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 81244200,
+  "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyDisplayOfListOfRegistrationsPage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1559949400,
+  "status": "passed"
 });
 formatter.match({
   "location": "Steps.iSearchForApplicationRefNumberAsABackOfficeUser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2104485100,
+  "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickToViewApplication()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 4265592600,
+  "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnActionButton()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 3977897200,
+  "status": "passed"
 });
 formatter.match({
   "location": "Steps.iSelectPWOAssigned()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 5365333400,
+  "status": "passed"
 });
 formatter.match({
   "location": "Steps.iSelectWPO()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1630051100,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -3172,31 +3211,36 @@ formatter.match({
   "location": "Steps.iInputRemarks(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 8129761600,
+  "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnSaveActions()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 84208000,
+  "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyForSuccessMessageForAssigning()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 3758881000,
+  "status": "passed"
 });
 formatter.match({
   "location": "Steps.iSignOut()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 4333237700,
+  "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifySuccessfulSignOut()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1039717800,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -3208,7 +3252,8 @@ formatter.match({
   "location": "Steps.iAmOnSFWFBackOfficeHomePage(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2390337500,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -3224,61 +3269,71 @@ formatter.match({
   "location": "Steps.iInputWPOUsernameAndPassword(String,String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 284189900,
+  "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnSignInButton()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 3428063600,
+  "status": "passed"
 });
 formatter.match({
   "location": "Steps.IVerifySuccessfulLogin()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 76979200,
+  "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnAllApplications()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 90495100,
+  "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyDisplayOfListOfRegistrationsPage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1543072000,
+  "status": "passed"
 });
 formatter.match({
   "location": "Steps.iSearchForApplicationRefNumberAsABackOfficeUser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2075245100,
+  "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickToViewApplication()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 4301902900,
+  "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnActionButton()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 3401644400,
+  "status": "passed"
 });
 formatter.match({
   "location": "Steps.iSelectAssigned()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1669228700,
+  "status": "passed"
 });
 formatter.match({
   "location": "Steps.iSelectWO()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1700885300,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -3290,31 +3345,36 @@ formatter.match({
   "location": "Steps.iInputRemarks(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 8129352800,
+  "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnSaveActions()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 83203300,
+  "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyForSuccessMessageForAssigning()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 3752346400,
+  "status": "passed"
 });
 formatter.match({
   "location": "Steps.iSignOut()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 4314612100,
+  "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifySuccessfulSignOut()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 940408900,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -3326,7 +3386,8 @@ formatter.match({
   "location": "Steps.iAmOnSFWFBackOfficeHomePage(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2287190500,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -3342,49 +3403,57 @@ formatter.match({
   "location": "Steps.iInputWOWAUsernameAndPassword(String,String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 412476900,
+  "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnSignInButton()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2482423500,
+  "status": "passed"
 });
 formatter.match({
   "location": "Steps.IVerifySuccessfulLogin()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 88045400,
+  "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnAllApplications()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 115227900,
+  "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyDisplayOfListOfRegistrationsPage()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1549875500,
+  "status": "passed"
 });
 formatter.match({
   "location": "Steps.iSearchForApplicationRefNumberAsABackOfficeUser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2098340400,
+  "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickToViewApplication()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 4253630600,
+  "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnSiteReportTab()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 110960900,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -3396,7 +3465,8 @@ formatter.match({
   "location": "Steps.iSelectBonafidePlanter(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 77623800,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -3408,7 +3478,8 @@ formatter.match({
   "location": "Steps.iInputSiteVisitRemarks(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 112002800,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -3420,13 +3491,16 @@ formatter.match({
   "location": "Steps.iUploadSiteReport(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 85073700,
+  "status": "passed"
 });
 formatter.match({
-  "location": "Steps.iVerifyForDocumentUploadSuccessMessage()"
+  "location": "Steps.iVerifyForDocumentUploadSuccessMessageForSiteVisit()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 33021600,
+  "error_message": "java.lang.AssertionError: Document Upload Success Message did not appear\r\n\tat org.testng.Assert.fail(Assert.java:94)\r\n\tat stepdefinition.Steps.iVerifyForDocumentUploadSuccessMessageForSiteVisit(Steps.java:3036)\r\n\tat ✽.And I Verify for Document Upload Success Message for Site Visit(features/US13280.feature:132)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "Steps.iClickOnSaveButton()"
@@ -4019,11 +4093,11 @@ formatter.result({
   "status": "skipped"
 });
 formatter.after({
-  "duration": 2693619800,
+  "duration": 981500800,
   "status": "passed"
 });
 formatter.after({
-  "duration": 410700,
+  "duration": 97874500,
   "status": "passed"
 });
 });
