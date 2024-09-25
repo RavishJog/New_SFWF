@@ -428,7 +428,7 @@ public class Small_planters {
     }
 
     //Object for Field Location
-    private static By txt_Field_location = By.xpath("//input[contains(@id,'j_idt70:field_location_horticultural')]");
+    private static By txt_Field_location = By.xpath("//input[contains(@id,'field_location_horticultural')]");
     public static WebElement Field_location(WebDriver driver) {
         element = driver.findElement(txt_Field_location);
         return element;
@@ -603,7 +603,7 @@ public class Small_planters {
     }
 
     //Object for Photo checkbox
-    private static By btn_Photo_checkbox = By.xpath("//span[contains(.,'Photo')]");
+    private static By btn_Photo_checkbox = By.xpath("//span[contains(.,'Please use photo provided in previous Roll')]");
     public static WebElement Photo_checkbox(WebDriver driver) {
         element = driver.findElement(btn_Photo_checkbox);
         return element;

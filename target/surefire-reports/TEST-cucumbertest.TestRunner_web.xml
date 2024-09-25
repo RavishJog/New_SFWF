@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="cucumbertest.TestRunner_web" time="684.357" errors="0" skipped="0">
+<testsuite tests="1" failures="0" name="cucumbertest.TestRunner_web" time="0.832" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2023.1.2"/>
+    <property name="@Blaze-Testone" value="true"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-1.8\jre\bin"/>
     <property name="java.vm.version" value="25.371-b11"/>
-    <property name="@Approval_by_BO_Payment_at_counter_for_Agro-Processing-Enterprise" value="true"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="maven.multiModuleProjectDirectory" value="C:\Users\suraj.joggessur\Desktop\Automation Testing\Small-Farmers-Welfare-Fund"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
@@ -49,7 +49,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-1.8\jre"/>
-    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2023.1.2 clean test -D=&quot;@Approval_by_BO_Payment_at_counter_for_Agro-Processing-Enterprise&quot;"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2023.1.2 clean test -D=&quot;@Blaze-Testone&quot;"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -67,5 +67,5 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="cucumbertest.TestRunner_web" name="runCukes" time="684.357"/>
+  <testcase classname="cucumbertest.TestRunner_web" name="runCukes" time="0.832"/>
 </testsuite>
