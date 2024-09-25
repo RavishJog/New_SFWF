@@ -564,43 +564,45 @@ public class Steps extends Utility {
 
     @And("^I Select Status of Applicant \"([^\"]*)\"$")
     public void iSelectStatusOfApplicant(String Status_Applicant) throws Throwable {
+        Farmers_cooperatives_association_society_company.Select_one_applicant_status(driver).click();
+        Thread.sleep(1500);
         if (Status_Applicant.equals("Sole Trader")) {
             try {
                 Farmers_cooperatives_association_society_company.Sole_trader(driver).click();
             } catch (Exception e) {
-                System.out.println("Radio Button is not working");
-                Assert.fail("Radio Button is not working");
+                System.out.println("Option is not working");
+                Assert.fail("Option is not working");
             }
         } else if (Status_Applicant.equals("Company")) {
             try {
                 Farmers_cooperatives_association_society_company.Company(driver).click();
             } catch (Exception e) {
-                System.out.println("Radio Button is not working");
-                Assert.fail("Radio Button is not working");
+                System.out.println("Option is not working");
+                Assert.fail("Option is not working");
             }
         } else if (Status_Applicant.equals("Société/Partnership")) {
             try {
                 Farmers_cooperatives_association_society_company.Societe_Partnership(driver).click();
             } catch (Exception e) {
-                System.out.println("Radio Button is not working");
-                Assert.fail("Radio Button is not working");
+                System.out.println("Option is not working");
+                Assert.fail("Option is not working");
             }
         } else if (Status_Applicant.equals("Cooperative society")) {
             try {
                 Farmers_cooperatives_association_society_company.Cooperative_society(driver).click();
             } catch (Exception e) {
-                System.out.println("Radio Button is not working");
-                Assert.fail("Radio Button is not working");
+                System.out.println("Option is not working");
+                Assert.fail("Option is not working");
             }
         } else if (Status_Applicant.equals("Association")) {
             try {
                 Farmers_cooperatives_association_society_company.Association(driver).click();
             } catch (Exception e) {
-                System.out.println("Radio Button is not working");
-                Assert.fail("Radio Button is not working");
+                System.out.println("Option is not working");
+                Assert.fail("Option is not working");
             }
         } else {
-            System.out.println("Radio Button is functioning properly");
+            System.out.println("Option is functioning properly");
         }
     }
 
@@ -630,11 +632,15 @@ public class Steps extends Utility {
 
     @And("^I Input List of Products manufactured \"([^\"]*)\"$")
     public void iInputListOfProductsManufactured(String Prod_man) throws Throwable {
-        sleep(1000);
+        Thread.sleep(1000);
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", Front_Home_page.Welcome_user(driver));
-        sleep(1000);
+        Thread.sleep(1000);
         Farmers_cooperatives_association_society_company.List_products_manufactured(driver).sendKeys(Prod_man);
+        Thread.sleep(2000);
+        Farmers_cooperatives_association_society_company.Add_products_manufactured(driver).click();
+
     }
+
 
     @And("^I Input No\\. of persons employed \"([^\"]*)\"$")
     public void iInputNoOfPersonsEmployed(String No_person) throws Throwable {
@@ -1923,7 +1929,7 @@ public class Steps extends Utility {
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", Payment_process.Pay_now(driver));
         sleep(1000);
         Payment_process.Pay_now(driver).click();
-        WebDriverWait w = new WebDriverWait(driver, 180);
+        WebDriverWait w = new WebDriverWait(driver, 300);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h5[contains(.,'My Application')]")));
 
     }
@@ -3016,6 +3022,7 @@ public class Steps extends Utility {
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);", Back_office_main_page.Save_Back_office_users(driver));
         Thread.sleep(2000);
     }
+
 
 
 }
