@@ -157,6 +157,13 @@ public class Documents_upload {
         return element;
     }
 
+    //Object for Message for Successful Upload for Bonafide - Small Planters
+    private static By txt_Document_upload_success_message_bonafide_sf = By.xpath("(//span[contains(.,'has been uploaded.')])[8]");
+    public static WebElement Document_upload_success_message_bonafide_sf(WebDriver driver) {
+        element = driver.findElement(txt_Document_upload_success_message_bonafide_sf);
+        return element;
+    }
+
     //Object for Close Button for Horticultural Plantations Documents tab
     private static By btn_Close_hoticultural_document_tab = By.xpath("(//span[@class='ui-icon ui-icon-closethick'])[2]");
     public static WebElement Close_hoticultural_document_tab(WebDriver driver) {

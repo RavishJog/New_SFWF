@@ -4,7 +4,7 @@
 # So that I can access the SFWF Backoffice Portal
 
 
-@Main_feature
+@Main_feature @Regression
 Feature: Login into SFWF Backoffice Portal
 
 #Scenario1

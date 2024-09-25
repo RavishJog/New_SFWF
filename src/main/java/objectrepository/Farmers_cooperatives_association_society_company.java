@@ -145,7 +145,7 @@ public class Farmers_cooperatives_association_society_company {
     }
 
     //Object for Registration Membership - 1 Year
-    private static By opt_One_Year = By.xpath("//li[contains(.,'1 year')]");
+    private static By opt_One_Year = By.xpath("//li[contains(@id,'registration_membership_1')]");
 
     public static WebElement One_Year(WebDriver driver) {
         element = driver.findElement(opt_One_Year);
@@ -153,7 +153,7 @@ public class Farmers_cooperatives_association_society_company {
     }
 
     //Object for Registration Membership - 2 Year
-    private static By opt_Two_Years = By.xpath("//li[contains(.,'2 year')]");
+    private static By opt_Two_Years = By.xpath("//li[contains(@id,'registration_membership_2')]");
 
     public static WebElement Two_Years(WebDriver driver) {
         element = driver.findElement(opt_Two_Years);

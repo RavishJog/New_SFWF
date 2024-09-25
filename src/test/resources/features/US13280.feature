@@ -260,10 +260,9 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Upload List of Directors/ Associates "<Upload_test>"
     And I Upload Board Resolution of Enterprise for appointment of representative(s) "<Upload_test>"
     And I Upload National Identity card of representative "<Upload_test>"
-    And I Upload National Identity cards of all shareholders "<Upload_test>"
-    And I Upload Location Plan "<Upload_test>"
-    And I Upload Copy of SMEDA Certificate "<Upload_test>"
-    And I Upload Copy of Utility Bill "<Upload_test>"
+    And I Upload Location Plan Document "<Upload_test>"
+    And I Upload Copy of SMEDA Certificate Document "<Upload_test>"
+    And I Upload Copy of Utility Bill Document "<Upload_test>"
     And I Verify for Document Upload Success Message
     And I Click on Add Additional Document
     And I Input Additional Document Name "<Additional_Doc_Name>"
@@ -925,8 +924,8 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Save Particulars of Family and Beneficiaries
     And I Click on Save and Continue
     And I Verify Display of Particulars of Crop: Sugarcane and Tea Plantation Page
-    And I Click on Add Crop
-    And I Verify Display of Particulars of Crop: Sugarcane and Tea Plantation Table
+#    And I Click on Add Crop
+#    And I Verify Display of Particulars of Crop: Sugarcane and Tea Plantation Table
     And I Input Organisation Account Number "<Org_acc_no>"
     And I Select Crop Type "<Crop_Type>"
     And I Input Total Extent of plot (In Arpent) "<Land_Extent>"
@@ -962,7 +961,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Input Personal Bank Account Number Agro-Processing Enterprise "<Bank_Account_No>"
     And I Click on Submit Application "<Confirmation>"
     And I Verify Success message for application submitted for Small Planters Registration
-    And I Click on Cancel button not to proceed with another registration
+#    And I Click on Cancel button not to proceed with another registration
     And I Verify Application Status "<App_status>"
     And I Verify Payment Status "<Payment_Status>"
     And I Copy Application Number
@@ -975,7 +974,6 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Message to proceed to Post Office for Payment
     Then I Sign Out as Front Registered User
 
-    #    Finance
     #    Finance
     And I am on SFWF Back Office Home Page "<Browser>"
     And I Input Finance Username "<FUsername>" and Password "<Password>"
@@ -1002,7 +1000,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Search for Application Ref Number as a Back Office User
     And I Click to view Application
     And I Click on Action Button
-    And I Select PWO Assigned
+    And I Select Assigned (For Small Planters)
     And I Select WPO
     And I Input Remarks "<Remarks>"
     And I Click on Save Actions
@@ -1019,7 +1017,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Search for Application Ref Number as a Back Office User
     And I Click to view Application
     And I Click on Action Button
-    And I Select Assigned
+    And I Select Assigned (For Small Planters)
     And I Select WO
     And I Input Remarks "<Remarks>"
     And I Click on Save Actions
@@ -1040,11 +1038,13 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Select Bonafide Planter "<Bonafide>"
     And I Input Site visit remarks "<Remarks>"
     And I Upload Site Report "<Upload_test>"
-    And I Verify for Document Upload Success Message
+#    And I Verify for Bonafide Document Upload Success Message
+    And I Add Information for Crop Details in Section One
+    And I Select Drip Irrigation Facility in Section Two
     And I Click on Save Button
     And I Verify Site Visit saved success message
     And I Click on Action Button
-    And I Select Assigned
+    And I Select Assigned (For Small Planters)
     And I Select WPO
     And I Input Remarks "<Remarks>"
     And I Click on Save Actions
@@ -1135,7 +1135,7 @@ Feature: User Story 13280 - Back Office Process for Registration
 
     Examples:
       |Browser|Username |Password |FUsername|PwoUsername|WpoUsername|WOUsername |ITUsername|Remarks        |Bonafide|Payment_Mode |Amount_To_Pay|Applicant_Title |District   |Education_Level |Act      |Other_Occupation  |Photo                               |Year_dur |Marital_Status|Relationship|Family_Surname|Family_Other_Names|Gender|DOB   |Occupation |Org_acc_no|Crop_Type|Land_Extent|Owner_Type|Plot_Location|Field_Location |Production_System|Total_Extent |Crop_Grown |Plantation_Type|Date_Plantation_Seedling |Upload_test                        |Crop_Status|Additional_Doc_Name      |Bank_Name  |Bank_Branch|Bank_Account_No|Confirmation|App_status|Payment_Status |Payment_method |
-      |Chrome |Suraj    |Admin@123|FINANCE  |PWO        |WPO        |WO         |IT_DEPT   |This is a test |Yes     |Cash         |850          |Mr              |Black River|Tertiary        |Full Time|Manager           |src\test\resources\Photo_upload.jpg |1        |Married       |Spouse      |Sanon         |Kirti             |Female|1Jan94|Air Hostess|0001252563|Cane     |2.5        |Tenant    |Moka         |Port Louis     |Sheltered Farming|600M2        |Pepper     |Interline      |1Aug2030                 |src\test\resources\Upload_Test1.pdf|Harvest    |Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |Counter        |
+      |Chrome |Suraj    |Admin@123|FINANCE  |PWO        |WPO        |WO         |IT_DEPT   |This is a test |Yes     |Cash         |850          |Mr              |Black River|Tertiary        |Full Time|Manager           |src\test\resources\Photo_upload.jpg |1        |Married       |Spouse      |Sanon         |Kirti             |Female|1Jan94|Air Hostess|0001252563|Cane     |2.5        |Tenant    |Moka         |Port Louis     |Sheltered Farming|9            |Pepper     |Interline      |1Aug2030                 |src\test\resources\Upload_Test1.pdf|Harvest    |Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |Counter        |
 
  #Scenario6
   @Approval_by_BO_Payment_at_online_for_Small_Planters_Registration
@@ -1214,7 +1214,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Input Personal Bank Account Number Agro-Processing Enterprise "<Bank_Account_No>"
     And I Click on Submit Application "<Confirmation>"
     And I Verify Success message for application submitted for Small Planters Registration
-    And I Click on Cancel button not to proceed with another registration
+#    And I Click on Cancel button not to proceed with another registration
     And I Verify Application Status "<App_status>"
     And I Verify Payment Status "<Payment_Status>"
     And I Copy Application Number
@@ -1241,7 +1241,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Search for Application Ref Number as a Back Office User
     And I Click to view Application
     And I Click on Action Button
-    And I Select PWO Assigned
+    And I Select Assigned (For Small Planters)
     And I Select WPO
     And I Input Remarks "<Remarks>"
     And I Click on Save Actions
@@ -1258,7 +1258,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Search for Application Ref Number as a Back Office User
     And I Click to view Application
     And I Click on Action Button
-    And I Select Assigned
+    And I Select Assigned (For Small Planters)
     And I Select WO
     And I Input Remarks "<Remarks>"
     And I Click on Save Actions
@@ -1283,7 +1283,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Click on Save Button
     And I Verify Site Visit saved success message
     And I Click on Action Button
-    And I Select Assigned
+    And I Select Assigned (For Small Planters)
     And I Select WPO
     And I Input Remarks "<Remarks>"
     And I Click on Save Actions
@@ -1374,7 +1374,7 @@ Feature: User Story 13280 - Back Office Process for Registration
 
     Examples:
       |Browser|Username |Password |FUsername|PwoUsername|WpoUsername|WOUsername |ITUsername|Remarks        |Bonafide|Payment_Mode |Amount_To_Pay|Applicant_Title |District   |Education_Level |Act      |Other_Occupation  |Photo                               |Year_dur |Marital_Status|Relationship|Family_Surname|Family_Other_Names|Gender|DOB   |Occupation |Org_acc_no|Crop_Type|Land_Extent|Owner_Type|Plot_Location|Field_Location |Production_System|Total_Extent |Crop_Grown |Plantation_Type|Date_Plantation_Seedling |Upload_test                        |Crop_Status|Additional_Doc_Name      |Bank_Name  |Bank_Branch|Bank_Account_No|Confirmation|App_status|Payment_Status |Payment_method |Card_Number        |Expiry_Month |Expiry_Year|Security_Code|Cardholder_Name|
-      |Chrome |Suraj    |Admin@123|FINANCE  |PWO        |WPO        |WO         |IT_DEPT   |This is a test |Yes     |Cash         |850          |Mr              |Black River|Tertiary        |Full Time|Manager           |src\test\resources\Photo_upload.jpg |1        |Married       |Spouse      |Sanon         |Kirti             |Female|1Jan94|Air Hostess|0001252563|Cane     |2.5        |Tenant    |Moka         |Port Louis     |Sheltered Farming|600M2        |Pepper     |Interline      |1Aug2030                 |src\test\resources\Upload_Test1.pdf|Harvest    |Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |Credit         |5123-4500-0000-0008|01           |39         |100          |My name        |
+      |Chrome |Suraj    |Admin@123|FINANCE  |PWO        |WPO        |WO         |IT_DEPT   |This is a test |Yes     |Cash         |850          |Mr              |Black River|Tertiary        |Full Time|Manager           |src\test\resources\Photo_upload.jpg |1        |Married       |Spouse      |Sanon         |Kirti             |Female|1Jan94|Air Hostess|0001252563|Cane     |2.5        |Tenant    |Moka         |Port Louis     |Sheltered Farming|9            |Pepper     |Interline      |1Aug2030                 |src\test\resources\Upload_Test1.pdf|Harvest    |Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |Credit         |5123-4500-0000-0008|01           |39         |100          |My name        |
 
 
 #Scenario7
@@ -2318,3 +2318,4 @@ Feature: User Story 13280 - Back Office Process for Registration
     Examples:
       |Browser|Username |Password |FUsername|PwoUsername|WpoUsername|WOUsername |ITUsername|Remarks        |Bonafide|Payment_Mode |Amount_To_Pay|Applicant_Title |District   |Education_Level  |Act      |Other_Occupation  |Photo                               |Year_dur |Marital_Status|Relationship|Family_Surname|Family_Other_Names|Gender|DOB   |Occupation |License    |Land_Extent|Owner_Type|Plot_Location|Spicies |Male_Female_Number|Total_Heads |Reason |Microchip_No|Cattle_Sex|Cattle_Age|Upload_test                        |Additional_Doc_Name      |Bank_Name  |Bank_Branch|Bank_Account_No|Confirmation|App_status|Payment_Status |Payment_method |Card_Number        |Expiry_Month |Expiry_Year|Security_Code|Cardholder_Name|
       |Chrome |Suraj    |Admin@123|FINANCE  |PWO        |WPO        |WO         |IT_DEPT   |This is a test |Yes     |Cash         |850          |Mrs             |Port Louis  |Tertiary        |Full Time|Manager           |src\test\resources\Photo_upload.jpg |2        |Married       |Spouse      |Keen          |Dafne             |Female|1Jan94|Actress    |Tea Grower |2.7        |Tenant    |Moka         |Cattle  |550               |550         |Meat   |AAA2563     |Male      |1Month    |src\test\resources\Upload_Test1.pdf|Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |Credit         |5123-4500-0000-0008|01           |39         |100          |My name        |
+

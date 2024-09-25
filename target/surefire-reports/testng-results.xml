@@ -2,15 +2,15 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="cucumbertest.TestRunner_web" duration-ms="684365" started-at="2024-09-11T10:39:59Z" finished-at="2024-09-11T10:51:23Z">
+  <suite name="cucumbertest.TestRunner_web" duration-ms="846" started-at="2024-09-19T09:51:02Z" finished-at="2024-09-19T09:51:03Z">
     <groups>
       <group name="Web">
         <method signature="TestRunner_web.runCukes()[pri:0, instance:cucumbertest.TestRunner_web@42dafa95]" name="runCukes" class="cucumbertest.TestRunner_web"/>
       </group> <!-- Web -->
     </groups>
-    <test name="Command line test" duration-ms="684365" started-at="2024-09-11T10:39:59Z" finished-at="2024-09-11T10:51:23Z">
+    <test name="Command line test" duration-ms="846" started-at="2024-09-19T09:51:02Z" finished-at="2024-09-19T09:51:03Z">
       <class name="cucumbertest.TestRunner_web">
-        <test-method status="PASS" signature="runCukes()[pri:0, instance:cucumbertest.TestRunner_web@42dafa95]" name="runCukes" duration-ms="684356" started-at="2024-09-11T14:39:59Z" description="Example of using TestNGCucumberRunner to invoke Cucumber" finished-at="2024-09-11T14:51:23Z">
+        <test-method status="PASS" signature="runCukes()[pri:0, instance:cucumbertest.TestRunner_web@42dafa95]" name="runCukes" duration-ms="830" started-at="2024-09-19T13:51:02Z" description="Example of using TestNGCucumberRunner to invoke Cucumber" finished-at="2024-09-19T13:51:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runCukes -->

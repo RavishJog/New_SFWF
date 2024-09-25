@@ -163,14 +163,14 @@ public class Back_office_main_page {
     }
 
     //Object for Action - Select One - PWO2
-    private static By lbl_Action_PWO2_select_one = By.xpath("//label[contains(@id, 'myActionId_label')]");
+    private static By lbl_Action_PWO2_select_one = By.xpath("//label[contains(@id, 'roleAction_label')]");
     public static WebElement Action_PWO2_select_one(WebDriver driver) {
         element = driver.findElement(lbl_Action_PWO2_select_one);
         return element;
     }
 
     //Object for Action - Select One - Other BO
-    private static By lbl_Action_select_one = By.xpath("//label[contains(@id, 'roleActionId')]");
+    private static By lbl_Action_select_one = By.xpath("//label[contains(@id, 'roleAction')]");
     public static WebElement Action_select_one(WebDriver driver) {
         element = driver.findElement(lbl_Action_select_one);
         return element;
@@ -240,11 +240,12 @@ public class Back_office_main_page {
     }
 
     //Object for Actions Save
-    private static By btn_Action_save = By.xpath("//button[contains(@id,'saveWorkflowBtn')]");
+    private static By btn_Action_save = By.xpath("//button[contains(@id,'saveWorkflow')]");
     public static WebElement Action_save(WebDriver driver) {
         element = driver.findElement(btn_Action_save);
         return element;
     }
+
 
     //Object for Success message for asigning
     private static By lbl_Success_message_assign = By.xpath("(//span[contains(.,'Action Assigned done successfully.')])[2]");

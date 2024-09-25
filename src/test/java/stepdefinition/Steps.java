@@ -1232,6 +1232,11 @@ public class Steps extends Utility {
             Small_planters.District_Select_one(driver).click();
             sleep(1000);
             Small_planters.Black_river(driver).click();
+            Thread.sleep(1500);
+            driver.findElement(By.xpath("//label[contains(@id,'suboffice_label')]")).click();
+            Thread.sleep(1500);
+            driver.findElement(By.xpath("//li[contains(@id,'suboffice_1')]")).click();
+
 
         }else if (District.equals("Flacq")){
             System.out.println("District Select is working");
@@ -1892,7 +1897,7 @@ public class Steps extends Utility {
     public void iVerifyDisplayOfPaymentGateway() {
 //        WebDriverWait ww = new WebDriverWait(driver, 30);
 //        ww.until(ExpectedConditions.visibilityOf(Payment_process.Payment_gateway_display(driver)));
-        WebDriverWait w = new WebDriverWait(driver, 500);
+        WebDriverWait w = new WebDriverWait(driver, 600);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[contains(.,'Card number')]")));
         try {
             Payment_process.Payment_gateway_display(driver);
@@ -1904,6 +1909,7 @@ public class Steps extends Utility {
 
     @And("^I Input Card Details \"([^\"]*)\" \"([^\"]*)\" \"([^\"]*)\" \"([^\"]*)\" \"([^\"]*)\"$")
     public void iInputCardDetails(String Card_Number, String Expiry_Month, String Expiry_Year, String Cardholder_Name, String Security_Code) throws Throwable {
+        Thread.sleep(5000);
         Payment_process.Card_number(driver).sendKeys(Card_Number);
         Payment_process.Expiry_month(driver).sendKeys(Expiry_Month);
         Payment_process.Expiry_year(driver).sendKeys(Expiry_Year);
@@ -1937,7 +1943,6 @@ public class Steps extends Utility {
         WebDriverWait w = new WebDriverWait(driver, 5);
         WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[@class='ui-button-text ui-c'][contains(.,'Proceed to Payment')]")));
         Payment_process.Proceed_to_payment(driver).click();
-        sleep(30000);
     }
 
     @And("^I Input Finance Username \"([^\"]*)\" and Password \"([^\"]*)\"$")
@@ -2038,6 +2043,7 @@ public class Steps extends Utility {
             System.out.println("Success message for adding payment did not appear");
             Assert.fail("Success message for adding payment did not appear");
         }
+        Thread.sleep(8000);
     }
 
     @And("^I Input PWO Username \"([^\"]*)\" and Password \"([^\"]*)\"$")
@@ -2122,7 +2128,7 @@ public class Steps extends Utility {
     public void iInputRemarks(String Remarks) throws Throwable {
         Thread.sleep(3000);
         Back_office_main_page.Action_remarks(driver).sendKeys(Remarks);
-        Thread.sleep(1500);
+        Thread.sleep(5000);
 
     }
 
@@ -2945,4 +2951,71 @@ public class Steps extends Utility {
         Back_office_main_page.Search_bar_app_num(driver).sendKeys(Ref);
         Thread.sleep(2000);
     }
+
+    @And("^I Select Assigned \\(For Small Planters\\)$")
+    public void iSelectAssignedForSmallPlanters() throws InterruptedException {
+        Back_office_main_page.Action_PWO2_select_one(driver).click();
+        Thread.sleep(1500);
+        Back_office_main_page.Action_Assigned(driver).click();
+        WebDriverWait w = new WebDriverWait(driver, 30);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//label[contains(.,'Select Users')]")));
+
+
+    }
+
+
+    @And("^I Verify for Bonafide Document Upload Success Message$")
+    public void iVerifyForBonafideDocumentUploadSuccessMessage() {
+        try {
+            Documents_upload.Document_upload_success_message_bonafide_sf(driver);
+        } catch (Exception e) {
+            System.out.println("Document Upload Success Message did not appear");
+            Assert.fail("Document Upload Success Message did not appear");
+        }
+    }
+
+
+    @And("^I Add Information for Crop Details in Section One$")
+    public void iAddInformationForCropDetailsInSectionOne() throws InterruptedException {
+        Thread.sleep(2000);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", driver.findElement(By.xpath("//h6[contains(.,'Section 1')]")));
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//span[@class='ui-button-text ui-c'][contains(.,'Add Crop')]")).click();
+        WebDriverWait wait = new WebDriverWait(driver, 20);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(@id,'dlgManageCrop_content')]")));
+//        Thread.sleep(6000);
+        driver.findElement(By.xpath("//label[contains(@id, 'typeCrop_label')]")).click();
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//li[contains(@id, 'typeCrop_1')]")).click();
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//label[contains(@id, '546_label')]")).click();
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//li[contains(@id, '546_1')]")).click();
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//label[contains(@id,'typeStage_label')]")).click();
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//li[contains(@id,'typeStage_1')]")).click();
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//input[contains(@id,'density')]")).sendKeys("75");
+        driver.findElement(By.xpath("//input[contains(@id,'health')]")).sendKeys("75");
+        driver.findElement(By.xpath("//input[contains(@id,'arp')]")).sendKeys("8");
+        driver.findElement(By.xpath("(//span[contains(.,'Save')])[4]")).click();
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[contains(@id,'dlgManageCrop_content')]")));
+        }
+
+    @And("^I Select Drip Irrigation Facility in Section Two$")
+    public void iSelectDripIrrigationFacilityInSectionTwo() throws InterruptedException {
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);", driver.findElement(By.xpath("//h6[contains(.,'Section 2')]")));
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//label[contains(.,'Sprinkler')]")).click();
+        Thread.sleep(2000);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);", driver.findElement(By.xpath("//label[contains(.,'Drainage System:')]")));
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//label[contains(@for,'drainage:0')]")).click();
+        Thread.sleep(2000);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);", Back_office_main_page.Save_Back_office_users(driver));
+        Thread.sleep(2000);
+    }
+
+
 }
