@@ -96,8 +96,16 @@ public class Farmers_cooperatives_association_society_company {
         return element;
     }
 
+    //Object for Status of Applicant - Select One
+    private static By opt_Select_one_applicant_status = By.xpath("//label[contains (@id, 'applicantStatus_label')]");
+
+    public static WebElement Select_one_applicant_status(WebDriver driver) {
+        element = driver.findElement(opt_Select_one_applicant_status);
+        return element;
+    }
+
     //Object for Status of Applicant - Sole trader
-    private static By btn_Sole_trader = By.xpath("//label[contains(.,'Sole trader')]");
+    private static By btn_Sole_trader = By.xpath("//li[contains(@id, 'applicantStatus_1')]");
 
     public static WebElement Sole_trader(WebDriver driver) {
         element = driver.findElement(btn_Sole_trader);
@@ -105,7 +113,7 @@ public class Farmers_cooperatives_association_society_company {
     }
 
     //Object for Status of Applicant - Company
-    private static By btn_Company = By.xpath("(//label[contains(.,'Company')])[2]");
+    private static By btn_Company = By.xpath("//li[contains(@id, 'applicantStatus_2')]");
 
     public static WebElement Company(WebDriver driver) {
         element = driver.findElement(btn_Company);
@@ -113,7 +121,7 @@ public class Farmers_cooperatives_association_society_company {
     }
 
     //Object for Status of Applicant - Société/Partnership
-    private static By btn_Societe_Partnership = By.xpath("//label[contains(.,'Société/Partnership')]");
+    private static By btn_Societe_Partnership = By.xpath("//li[contains(@id, 'applicantStatus_3')]");
 
     public static WebElement Societe_Partnership(WebDriver driver) {
         element = driver.findElement(btn_Societe_Partnership);
@@ -121,7 +129,7 @@ public class Farmers_cooperatives_association_society_company {
     }
 
     //Object for Status of Applicant - Cooperative society
-    private static By btn_Cooperative_society = By.xpath("//label[contains(.,'Cooperative society')]");
+    private static By btn_Cooperative_society = By.xpath("//li[contains(@id, 'applicantStatus_4')]");
 
     public static WebElement Cooperative_society(WebDriver driver) {
         element = driver.findElement(btn_Cooperative_society);
@@ -129,7 +137,7 @@ public class Farmers_cooperatives_association_society_company {
     }
 
     //Object for Status of Applicant - Association
-    private static By btn_Association = By.xpath("//label[contains(.,'Association')]");
+    private static By btn_Association = By.xpath("//li[contains(@id, 'applicantStatus_5')]");
 
     public static WebElement Association(WebDriver driver) {
         element = driver.findElement(btn_Association);
@@ -161,12 +169,21 @@ public class Farmers_cooperatives_association_society_company {
     }
 
     //Object for List of Products manufactured
-    private static By txt_List_products_manufactured = By.xpath("//input[contains(@id, 'productsmanu_input')]");
+    private static By txt_List_products_manufactured = By.xpath("//input[contains(@id, 'productInput')]");
 
     public static WebElement List_products_manufactured(WebDriver driver) {
         element = driver.findElement(txt_List_products_manufactured);
         return element;
     }
+
+    //Object for Add Products manufactured
+    private static By btn_Add_products_manufactured = By .xpath("//span[contains(@class,'ui-button-icon-left ui-icon ui-c pi pi-plus')]");
+
+    public static WebElement Add_products_manufactured(WebDriver driver) {
+        element = driver.findElement(btn_Add_products_manufactured);
+        return element;
+    }
+
 
     //Object for No. of persons employed
     private static By txt_Number_persons_employed = By.xpath("//input[@placeholder='No. of persons employed']");
