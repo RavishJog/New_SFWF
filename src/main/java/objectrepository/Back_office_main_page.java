@@ -44,7 +44,7 @@ public class Back_office_main_page {
     }
 
     //Object for Finance - Manage Cashier - Click
-    private static By lbl_Manage_cashier = By.xpath("(//a[contains(.,'Click')])[2]");
+    private static By lbl_Manage_cashier = By.xpath("//a[contains(.,'Click')]");
     public static WebElement Manage_cashier(WebDriver driver) {
         element = driver.findElement(lbl_Manage_cashier);
         return element;

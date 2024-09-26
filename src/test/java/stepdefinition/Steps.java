@@ -614,15 +614,15 @@ public class Steps extends Utility {
             try {
                 Farmers_cooperatives_association_society_company.One_Year(driver).click();
             } catch (Exception e) {
-                System.out.println("Radio Button is not working");
-                Assert.fail("Radio Button is not working");
+                System.out.println("Option is not working");
+                Assert.fail("Option is not working");
             }
         } else if (Year_dur.equals("2")) {
             try {
                 Farmers_cooperatives_association_society_company.Two_Years(driver).click();
             } catch (Exception e) {
-                System.out.println("Radio Button is not working");
-                Assert.fail("Radio Button is not working");
+                System.out.println("Option is not working");
+                Assert.fail("Option is not working");
             }
         } else {
             System.out.println("Radio Button is functioning properly");
@@ -2031,18 +2031,18 @@ public class Steps extends Utility {
 
     @And("^I Click on Save Payment$")
     public void iClickOnSavePayment() throws InterruptedException {
-        sleep(1500);
+        Thread.sleep(1500);
 //        WebDriverWait w = new WebDriverWait(driver, 5);
 //        w.until(ExpectedConditions.visibilityOf(Back_office_main_page.Save_payment(driver)));
         Back_office_main_page.Save_payment(driver).click();
-        WebDriverWait w = new WebDriverWait(driver, 1000);
-        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[contains(.,'Payment confirmed')])[2]")));
+        WebDriverWait w = new WebDriverWait(driver, 180);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[contains(.,'Payment confirmed')]")));
     }
 
     @And("^I Verify success message for adding payment$")
     public void iVerifySuccessMessageForAddingPayment() throws InterruptedException {
         WebDriverWait w = new WebDriverWait(driver, 5);
-        WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//span[contains(.,'Payment confirmed')])[2]")));
+        WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(.,'Payment confirmed')]")));
         try {
             Back_office_main_page.Success_message_payment_confirmed(driver);
         } catch (Exception e) {
