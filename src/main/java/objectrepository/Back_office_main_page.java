@@ -311,7 +311,7 @@ public class Back_office_main_page {
     }
 
     //Object for Success message for saved site visit
-    private static By lbl_Site_visit_saved_success_message = By.xpath("(//span[contains(.,'Site Visit successfully saved!')])");
+    private static By lbl_Site_visit_saved_success_message = By.xpath("(//span[contains(.,'successfully saved!')])");
     public static WebElement Site_visit_saved_success_message(WebDriver driver) {
         element = driver.findElement(lbl_Site_visit_saved_success_message);
         return element;
