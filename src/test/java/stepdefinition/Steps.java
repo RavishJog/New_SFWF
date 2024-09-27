@@ -2135,7 +2135,7 @@ public class Steps extends Utility {
 
     @And("^I Input Remarks \"([^\"]*)\"$")
     public void iInputRemarks(String Remarks) throws Throwable {
-        Thread.sleep(3000);
+        Thread.sleep(5000);
         Back_office_main_page.Action_remarks(driver).sendKeys(Remarks);
         Thread.sleep(5000);
 
@@ -2197,7 +2197,7 @@ public class Steps extends Utility {
         String filePath = new File(Upload_test).getAbsolutePath();
         Back_office_main_page.Upload_site_visit(driver).sendKeys(filePath);
         WebDriverWait w = new WebDriverWait(driver, 30);
-        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[contains(@class,'ui-button-icon-left ui-icon ui-c pi pi-download')]")));
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[contains (@class, 'ui-button-icon-left ui-icon ui-c pi pi-trash')]")));
 
     }
 
@@ -2205,7 +2205,7 @@ public class Steps extends Utility {
     public void iClickOnSaveButton() throws InterruptedException {
         Back_office_main_page.Save_Back_office_users(driver).click();
         WebDriverWait w = new WebDriverWait(driver, 30);
-        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[contains(.,'Site Visit successfully saved!')])")));
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[contains(.,'successfully saved!')])")));
     }
 
     @And("^I Input Site visit remarks \"([^\"]*)\"$")
@@ -2292,7 +2292,7 @@ public class Steps extends Utility {
         Thread.sleep(1500);
         Back_office_main_page.Action_Approved(driver).click();
         WebDriverWait w = new WebDriverWait(driver, 30);
-        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//label[contains(.,'Remarks')])[2]")));
+        w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//label[contains(.,'Remarks')])[2]")));
 
     }
 

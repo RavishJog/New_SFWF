@@ -158,7 +158,7 @@ public class Documents_upload {
     }
 
     //Object for Message for Successful Upload for Bonafide - Small Planters
-    private static By txt_Document_upload_success_message_bonafide_sf = By.xpath("(//span[@class='ui-growl-title'][contains(.,'has been uploaded.')])[2]");
+    private static By txt_Document_upload_success_message_bonafide_sf = By.xpath("(//span[contains(.,'Upload_Test1.pdf has been uploaded.')])[3]");
     public static WebElement Document_upload_success_message_bonafide_sf(WebDriver driver) {
         element = driver.findElement(txt_Document_upload_success_message_bonafide_sf);
         return element;

@@ -4,7 +4,7 @@
 Feature: User Story 13280 - Back Office Process for Registration
 
    #Scenario1
-  @Approval_by_BO_Payment_at_counter_for_Agro-Processing-Enterprise
+  @Approval_by_BO_Payment_at_counter_for_Agro-Processing-Enterprise @Smoke_counter_Agro-Processing-Enterprise
   Scenario Outline: Approval for Payment at counter for Registration as Agro-Processing Enterprise-Application form
 
     Given I am on SFWF Front Office Home Page "<Browser>"
@@ -129,7 +129,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Select Bonafide Planter "<Bonafide>"
     And I Input Site visit remarks "<Remarks>"
     And I Upload Site Report "<Upload_test>"
-#    And I Verify for Document Upload Success Message for Site Visit
+    And I Verify for Document Upload Success Message for Site Visit
     And I Click on Save Button
     And I Verify Site Visit saved success message
     And I Click on Action Button

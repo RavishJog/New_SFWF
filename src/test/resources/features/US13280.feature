@@ -4,7 +4,7 @@
 Feature: User Story 13280 - Back Office Process for Registration
 
    #Scenario1
-  @Approval_by_BO_Payment_at_counter_for_Agro-Processing-Enterprise
+  @Approval_by_BO_Payment_at_counter_for_Agro-Processing-Enterprise @Smoke_counter_Agro-Processing-Enterprise
   Scenario Outline: Approval for Payment at counter for Registration as Agro-Processing Enterprise-Application form
 
     Given I am on SFWF Front Office Home Page "<Browser>"
@@ -129,7 +129,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Select Bonafide Planter "<Bonafide>"
     And I Input Site visit remarks "<Remarks>"
     And I Upload Site Report "<Upload_test>"
-#    And I Verify for Document Upload Success Message for Site Visit
+    And I Verify for Document Upload Success Message for Site Visit
     And I Click on Save Button
     And I Verify Site Visit saved success message
     And I Click on Action Button
@@ -228,7 +228,7 @@ Feature: User Story 13280 - Back Office Process for Registration
       |Chrome |Suraj    |Admin@123|Finance_suraj  |PWO        |WPO        |WO         |IT_DEPT   |This is a test |Yes     |Cash         |850          |ABC Agro Co Ltd|Mr John Brown|C123456789 |XLPR852  |Full Time|The Main Road, Grand Port|Royal Road, Port Louis |Company         |1       |Tomato, Pepper |50       |10000000           |Existing       |5              |src\test\resources\Upload_Test1.pdf|Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |Counter        |
 
  #Scenario2
-  @Approval_by_BO_Payment_online_for_Agro-Processing-Enterprise @Smoke_online
+  @Approval_by_BO_Payment_online_for_Agro-Processing-Enterprise @Smoke_online_Agro-Processing-Enterprise
   Scenario Outline: Approval for Payment online for Registration as Agro-Processing Enterprise-Application form
 
     Given I am on SFWF Front Office Home Page "<Browser>"
