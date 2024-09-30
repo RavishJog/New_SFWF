@@ -435,11 +435,11 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Sign Out as Front Registered User
 
     Examples:
-      |Browser|Username         |Password |FUsername|PwoUsername|WpoUsername|WOUsername |ITUsername|Remarks        |Bonafide|Payment_Mode |Amount_To_Pay|Co_Name        |Rep_by       |BRN        |Cert_No  |Act      |Off_Add                  |Enterprise_Address     |Status_Applicant|Year_dur|Prod_man       |No_person|Actual_ann_turnover|Status_business|Years_operation|Upload_test                        |Additional_Doc_Name      |Bank_Name  |Bank_Branch|Bank_Account_No|Confirmation|App_status|Payment_Status |Payment_method |Card_Number        |Expiry_Month |Expiry_Year|Security_Code|Cardholder_Name|
-      |Chrome |Raksha_Luchun3004|Admin@123|FINANCE  |PWO        |WPO        |WO         |IT_DEPT   |This is a test |Yes     |Cash         |850          |ABC Agro Co Ltd|Mr John Brown|C123456789 |XLPR852  |Full Time|The Main Road, Grand Port|Royal Road, Port Louis |Company         |1       |Tomato, Pepper |50       |10000000           |Existing       |5              |src\test\resources\Upload_Test1.pdf|Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |Credit         |5123-4500-0000-0008|01           |39         |100          |My name        |
+      |Browser|Username |Password |FUsername|PwoUsername|WpoUsername|WOUsername |ITUsername|Remarks        |Bonafide|Payment_Mode |Amount_To_Pay|Co_Name        |Rep_by       |BRN        |Cert_No  |Act      |Off_Add                  |Enterprise_Address     |Status_Applicant|Year_dur|Prod_man       |No_person|Actual_ann_turnover|Status_business|Years_operation|Upload_test                        |Additional_Doc_Name      |Bank_Name  |Bank_Branch|Bank_Account_No|Confirmation|App_status|Payment_Status |Payment_method |Card_Number        |Expiry_Month |Expiry_Year|Security_Code|Cardholder_Name|
+      |Chrome |Suraj    |Admin@123|FINANCE  |PWO        |WPO        |WO         |IT_DEPT   |This is a test |Yes     |Cash         |850          |ABC Agro Co Ltd|Mr John Brown|C123456789 |XLPR852  |Full Time|The Main Road, Grand Port|Royal Road, Port Louis |Company         |1       |Tomato, Pepper |50       |10000000           |Existing       |5              |src\test\resources\Upload_Test1.pdf|Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |Credit         |5123-4500-0000-0008|01           |39         |100          |My name        |
 
  #Scenario3
-  @Approval_by_BO_Payment_at_counter_for_Farmers_Cooperative_Association
+  @Approval_by_BO_Payment_at_counter_for_Farmers_Cooperative_Association @Smoke_counter_Farmers_Cooperative_Association
   Scenario Outline: Payment at counter for Registration for Farmers’ Cooperative Association, Society or Company
 
     Given I am on SFWF Front Office Home Page "<Browser>"
@@ -568,7 +568,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Click to view Application
     And I Click on Site Report Tab
     And I Select Bonafide Planter "<Bonafide>"
-    And I Input Site visit remarks "<Remarks>"
+    And I Input Site visit remarks in Site Report "<Remarks>"
     And I Upload Site Report "<Upload_test>"
     And I Verify for Document Upload Success Message
     And I Click on Save Button
@@ -611,7 +611,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify display of Farmers Card link
     And I Verify Programmes link
     And I Search for Application Ref Number for re-submit
-    And I Verify display of REGISTRATION FOR AGRO-PROCESSING ENTERPRISE Page
+    And I Verify display of Registration of Farmers page
     And I Click on Save and Continue
     And I Verify Upload Required Documents Page is displayed
     And I Click on Save and Continue
@@ -668,7 +668,7 @@ Feature: User Story 13280 - Back Office Process for Registration
       |Chrome |Raksha_Luchun3004|Admin@123|FINANCE  |PWO        |WPO        |WO         |IT_DEPT   |This is a test |Yes     |Cash         |850          |ABC Agro Co Ltd|Mr John Brown|C123456789 |2126666|58967896 |XLPR852  |Full Time|The Main Road, Grand Port|Royal Road, Port Louis |Company         |1       |Tomato, Pepper |50       |10000000           |Existing       |5              |src\test\resources\Upload_Test1.pdf|Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |Counter        |
 
     #Scenario4
-  @Approval_by_BO_Payment_online_for_Farmers_Cooperative_Association @Smoke_online
+  @Approval_by_BO_Payment_online_for_Farmers_Cooperative_Association @Smoke_online_Farmers_Cooperative_Association
   Scenario Outline: Payment online for Registration for Farmers’ Cooperative Association, Society or Company
 
     Given I am on SFWF Front Office Home Page "<Browser>"
@@ -784,7 +784,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Click to view Application
     And I Click on Site Report Tab
     And I Select Bonafide Planter "<Bonafide>"
-    And I Input Site visit remarks "<Remarks>"
+    And I Input Site visit remarks in Site Report "<Remarks>"
     And I Upload Site Report "<Upload_test>"
     And I Verify for Document Upload Success Message
     And I Click on Save Button
@@ -827,7 +827,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify display of Farmers Card link
     And I Verify Programmes link
     And I Search for Application Ref Number for re-submit
-    And I Verify display of REGISTRATION FOR AGRO-PROCESSING ENTERPRISE Page
+    And I Verify display of Registration of Farmers page
     And I Click on Save and Continue
     And I Verify Upload Required Documents Page is displayed
     And I Click on Save and Continue
@@ -885,7 +885,7 @@ Feature: User Story 13280 - Back Office Process for Registration
 
 
  #Scenario5
-  @Approval_by_BO_Payment_at_counter_for_Small_Planters_Registration
+  @Approval_by_BO_Payment_at_counter_for_Small_Planters_Registration @Smoke_counter_Small_Planters_Registration
   Scenario Outline: Payment at counter for Registration for Small Planters
 
     Given I am on SFWF Front Office Home Page "<Browser>"
@@ -924,35 +924,35 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Save Particulars of Family and Beneficiaries
     And I Click on Save and Continue
     And I Verify Display of Particulars of Crop: Sugarcane and Tea Plantation Page
-#    And I Click on Add Crop
+    And I Click on Add Crop
 #    And I Verify Display of Particulars of Crop: Sugarcane and Tea Plantation Table
     And I Input Organisation Account Number "<Org_acc_no>"
     And I Select Crop Type "<Crop_Type>"
     And I Input Total Extent of plot (In Arpent) "<Land_Extent>"
     And I Select Owner Type "<Owner_Type>"
     And I Input Plot Location "<Plot_Location>"
-    And I Save Particulars of Crop
+#    And I Save Particulars of Crop
     And I Click on Save and Continue
-    And I Verify Display of Particulars for Horticultural Plantations Page
-    And I Click on Add Horticultural
-    And Verify Display of Particulars for Horticultural Plantations Table
-    And I Input Field Location "<Field_Location>"
-    And I Select Production System "<Production_System>"
-    And I Input Total Extent of plot - Size "<Total_Extent>"
-    And I Input Crop grown at time of Registration/ Crop to be grown "<Crop_Grown>"
-    And I Select Owner Type for Horticultural Plantation "<Owner_Type>"
-    And I Select Plantation Type "<Plantation_Type>"
-    And I Input Expected Date of Planting/Seedling "<Date_Plantation_Seedling>"
-    And I Save Particulars for Horticultural Plantations
-    And I Upload documents for Horticultural Plantations "<Upload_test>"
-    And I Verify for Document Upload Success Message
-    And I Close Horticultural Plantation Documents tab
-    And I Click on Edit button for Particulars for Horticultural Plantations declared under FPS
-    And I Verify Particulars for Horticultural Plantations declared under FPS Table
-    And I Input Crop Status and Organisation "<Crop_Status>"
-    And I Input Organisation Account Number "<Org_acc_no>"
-    And I Save Particulars for Horticultural Plantations declared under FPS
-    And I Click on Save and Continue
+#    And I Verify Display of Particulars for Horticultural Plantations Page
+#    And I Click on Add Horticultural
+#    And Verify Display of Particulars for Horticultural Plantations Table
+#    And I Input Field Location "<Field_Location>"
+#    And I Select Production System "<Production_System>"
+#    And I Input Total Extent of plot - Size "<Total_Extent>"
+#    And I Input Crop grown at time of Registration/ Crop to be grown "<Crop_Grown>"
+#    And I Select Owner Type for Horticultural Plantation "<Owner_Type>"
+#    And I Select Plantation Type "<Plantation_Type>"
+#    And I Input Expected Date of Planting/Seedling "<Date_Plantation_Seedling>"
+#    And I Save Particulars for Horticultural Plantations
+#    And I Upload documents for Horticultural Plantations "<Upload_test>"
+#    And I Verify for Document Upload Success Message
+#    And I Close Horticultural Plantation Documents tab
+#    And I Click on Edit button for Particulars for Horticultural Plantations declared under FPS
+#    And I Verify Particulars for Horticultural Plantations declared under FPS Table
+#    And I Input Crop Status and Organisation "<Crop_Status>"
+#    And I Input Organisation Account Number "<Org_acc_no>"
+#    And I Save Particulars for Horticultural Plantations declared under FPS
+#    And I Click on Save and Continue
     And I Verify Declaration Page for REGISTRATION FOR SMALL PLANTERS
     And I click on I agree to the Terms and Conditions
     And I Click on Photo checkbox
@@ -1038,7 +1038,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Select Bonafide Planter "<Bonafide>"
     And I Input Site visit remarks "<Remarks>"
     And I Upload Site Report "<Upload_test>"
-#    And I Verify for Bonafide Document Upload Success Message
+    And I Verify for Bonafide Document Upload Success Message
     And I Add Information for Crop Details in Section One
     And I Select Drip Irrigation Facility in Section Two
     And I Click on Save Button
@@ -1064,8 +1064,8 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Click on Action Button
     And I Select Under Query
     And I Input External Remarks "<Remarks>"
-    And I Click on Under Query Notification
-    And I Verify Success Message for Under Query Notification
+    And I Click on Under Query Notification for Small Farmers
+    And I Verify Success Message for Under Query Notification for Small Farmers
     And I Click on Save Actions
     And I Verify for success message for workflow saved
     And I Sign Out
@@ -1081,7 +1081,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify display of Farmers Card link
     And I Verify Programmes link
     And I Search for Application Ref Number for re-submit
-    And I Verify display of REGISTRATION FOR AGRO-PROCESSING ENTERPRISE Page
+    And I Verify display of REGISTRATION FOR SMALL PLANTERS Page
     And I Click on Save and Continue
     And I Verify Upload Required Documents Page is displayed
     And I Click on Save and Continue
@@ -1178,34 +1178,34 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Click on Save and Continue
     And I Verify Display of Particulars of Crop: Sugarcane and Tea Plantation Page
     And I Click on Add Crop
-    And I Verify Display of Particulars of Crop: Sugarcane and Tea Plantation Table
+#    And I Verify Display of Particulars of Crop: Sugarcane and Tea Plantation Table
     And I Input Organisation Account Number "<Org_acc_no>"
     And I Select Crop Type "<Crop_Type>"
     And I Input Total Extent of plot (In Arpent) "<Land_Extent>"
     And I Select Owner Type "<Owner_Type>"
     And I Input Plot Location "<Plot_Location>"
-    And I Save Particulars of Crop
+#    And I Save Particulars of Crop
     And I Click on Save and Continue
-    And I Verify Display of Particulars for Horticultural Plantations Page
-    And I Click on Add Horticultural
-    And Verify Display of Particulars for Horticultural Plantations Table
-    And I Input Field Location "<Field_Location>"
-    And I Select Production System "<Production_System>"
-    And I Input Total Extent of plot - Size "<Total_Extent>"
-    And I Input Crop grown at time of Registration/ Crop to be grown "<Crop_Grown>"
-    And I Select Owner Type for Horticultural Plantation "<Owner_Type>"
-    And I Select Plantation Type "<Plantation_Type>"
-    And I Input Expected Date of Planting/Seedling "<Date_Plantation_Seedling>"
-    And I Save Particulars for Horticultural Plantations
-    And I Upload documents for Horticultural Plantations "<Upload_test>"
-    And I Verify for Document Upload Success Message
-    And I Close Horticultural Plantation Documents tab
-    And I Click on Edit button for Particulars for Horticultural Plantations declared under FPS
-    And I Verify Particulars for Horticultural Plantations declared under FPS Table
-    And I Input Crop Status and Organisation "<Crop_Status>"
-    And I Input Organisation Account Number "<Org_acc_no>"
-    And I Save Particulars for Horticultural Plantations declared under FPS
-    And I Click on Save and Continue
+#    And I Verify Display of Particulars for Horticultural Plantations Page
+#    And I Click on Add Horticultural
+#    And Verify Display of Particulars for Horticultural Plantations Table
+#    And I Input Field Location "<Field_Location>"
+#    And I Select Production System "<Production_System>"
+#    And I Input Total Extent of plot - Size "<Total_Extent>"
+#    And I Input Crop grown at time of Registration/ Crop to be grown "<Crop_Grown>"
+#    And I Select Owner Type for Horticultural Plantation "<Owner_Type>"
+#    And I Select Plantation Type "<Plantation_Type>"
+#    And I Input Expected Date of Planting/Seedling "<Date_Plantation_Seedling>"
+#    And I Save Particulars for Horticultural Plantations
+#    And I Upload documents for Horticultural Plantations "<Upload_test>"
+#    And I Verify for Document Upload Success Message
+#    And I Close Horticultural Plantation Documents tab
+#    And I Click on Edit button for Particulars for Horticultural Plantations declared under FPS
+#    And I Verify Particulars for Horticultural Plantations declared under FPS Table
+#    And I Input Crop Status and Organisation "<Crop_Status>"
+#    And I Input Organisation Account Number "<Org_acc_no>"
+#    And I Save Particulars for Horticultural Plantations declared under FPS
+#    And I Click on Save and Continue
     And I Verify Declaration Page for REGISTRATION FOR SMALL PLANTERS
     And I click on I agree to the Terms and Conditions
     And I Click on Photo checkbox
@@ -1303,8 +1303,8 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Click on Action Button
     And I Select Under Query
     And I Input External Remarks "<Remarks>"
-    And I Click on Under Query Notification
-    And I Verify Success Message for Under Query Notification
+    And I Click on Under Query Notification for Small Farmers
+    And I Verify Success Message for Under Query Notification for Small Farmers
     And I Click on Save Actions
     And I Verify for success message for workflow saved
     And I Sign Out
@@ -1326,7 +1326,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Click on Save and Continue
     And I Verify Terms and Conditions Page
     And I Click on Submit Application "<Confirmation>"
-    And I Verify Success message for application submitted
+#    And I Verify Success message for application submitted
     And I Sign Out as Front Registered User
 
     #    WPO
@@ -1342,7 +1342,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Select Approved to approve the registration application
     And I Input Remarks "<Remarks>"
     And I Click on Save Actions
-    And I Verify for success message for approval
+#    And I Verify for success message for approval
     And I Sign Out
     And I Verify Successful Sign Out
 

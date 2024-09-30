@@ -337,56 +337,63 @@ public class Small_planters {
     }
 
 //Object for XXX
-    private static By txt_Organisation_acc_no = By.xpath("//input[contains(@id,'org')]");
+    private static By txt_Organisation_acc_no = By.xpath("//input[contains(@id,'cropTb1:0:org')]");
     public static WebElement Organisation_acc_no(WebDriver driver) {
         element = driver.findElement(txt_Organisation_acc_no);
         return element;
     }
 
     //Object for Crop Type - Select One
-    private static By lbl_Select_one_crop_type = By.xpath("//label[contains(@id,'crop_Type_label')]");
+    private static By lbl_Select_one_crop_type = By.xpath("//select[contains(@id,'cropTb1:0:crop_Type')]");
     public static WebElement Select_one_crop_type(WebDriver driver) {
         element = driver.findElement(lbl_Select_one_crop_type);
         return element;
     }
 
     //Object for Crop Type - Cane
-    private static By lbl_Cane_crop_type = By.xpath("//li[contains(@id,'crop_Type_1')]");
+    private static By lbl_Cane_crop_type = By.xpath("//option[contains(text(),'Cane')]");
     public static WebElement Cane_crop_type(WebDriver driver) {
         element = driver.findElement(lbl_Cane_crop_type);
         return element;
     }
 
     //Object for Crop Type - Tea
-    private static By lbl_Tea_crop_type = By.xpath("//li[contains(@id,'crop_Type_2')]");
+    private static By lbl_Tea_crop_type = By.xpath("//option[contains(text(),'Tea')]");
     public static WebElement Tea_crop_type(WebDriver driver) {
         element = driver.findElement(lbl_Tea_crop_type);
         return element;
     }
 
+    //Object for Crop Type - Others
+    private static By lbl_Others_crop_type = By.xpath("//option[contains(text(),'Others')]");
+    public static WebElement Others_crop_type(WebDriver driver) {
+        element = driver.findElement(lbl_Others_crop_type);
+        return element;
+    }
+
     //Object for Total Extent of plot (In Arpent):
-    private static By txt_Total_Arpent = By.xpath("//input[contains(@id,'totalExtentPlot')]");
+    private static By txt_Total_Arpent = By.xpath("//input[contains(@id,'cropTb1:0:totalExtentPlot')]");
     public static WebElement Total_Arpent(WebDriver driver) {
         element = driver.findElement(txt_Total_Arpent);
         return element;
     }
 
     //Object for Owner Type - Select One
-    private static By lbl_Select_one_owner_type = By.xpath("//label[contains(@id,'owner_type_label')]");
+    private static By lbl_Select_one_owner_type = By.xpath("//select[contains(@id,'cropTb1:0:owner_type')]");
     public static WebElement Select_one_owner_type(WebDriver driver) {
         element = driver.findElement(lbl_Select_one_owner_type);
         return element;
     }
 
     //Object for Owner Type - Owner
-    private static By lbl_Owner_owner_type = By.xpath("//li[contains(@id,'owner_type_1')]");
+    private static By lbl_Owner_owner_type = By.xpath("//option[contains(text(),'Owner')]");
     public static WebElement Owner_owner_type(WebDriver driver) {
         element = driver.findElement(lbl_Owner_owner_type);
         return element;
     }
 
     //Object for Owner Type - Tenant
-    private static By lbl_Tenant_owner_type = By.xpath("//li[contains(@id,'owner_type_2')]");
+    private static By lbl_Tenant_owner_type = By.xpath("//option[contains(text(),'Tenant')]");
     public static WebElement Tenant_owner_type(WebDriver driver) {
         element = driver.findElement(lbl_Tenant_owner_type);
         return element;

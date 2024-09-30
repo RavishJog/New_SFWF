@@ -310,6 +310,13 @@ public class Back_office_main_page {
         return element;
     }
 
+    //Object for Site Visit - Remarks for FARMERS' COOPERATIVE ASSOCIATION, SOCIETY AND COMPANY
+    private static By txt_Site_visit_remarks_FCASC = By.xpath("(//textarea[contains(@role,'textbox')])[2]");
+    public static WebElement Site_visit_remarks_FCASC(WebDriver driver) {
+        element = driver.findElement(txt_Site_visit_remarks_FCASC);
+        return element;
+    }
+
     //Object for Success message for saved site visit
     private static By lbl_Site_visit_saved_success_message = By.xpath("(//span[contains(.,'successfully saved!')])");
     public static WebElement Site_visit_saved_success_message(WebDriver driver) {
@@ -328,6 +335,13 @@ public class Back_office_main_page {
     private static By lbl_Under_query_mail_success_message = By.xpath("(//span[contains(.,'Mail has been sent successfully')])[3]");
     public static WebElement Under_query_mail_success_message(WebDriver driver) {
         element = driver.findElement(lbl_Under_query_mail_success_message);
+        return element;
+    }
+
+    //Object for Under Query Mail Success Message - Small Farmer
+    private static By lbl_Under_query_mail_success_message_sf = By.xpath("(//span[contains(.,'Mail has been sent successfully')])[6]");
+    public static WebElement Under_query_mail_success_message_sf(WebDriver driver) {
+        element = driver.findElement(lbl_Under_query_mail_success_message_sf);
         return element;
     }
 
