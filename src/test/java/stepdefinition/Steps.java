@@ -497,6 +497,8 @@ public class Steps extends Utility {
 
     @And("^I Verify display of Registration of Farmers page$")
     public void iVerifyDisplayOfRegistrationOfFarmersPage() {
+        WebDriverWait w = new WebDriverWait(driver, 30);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h5[contains(.,'REGISTRATION FOR FARMERS')]")));
         try {
             Farmers_cooperatives_association_society_company.Registration_for_farmers(driver);
         } catch (Exception e) {
@@ -1569,7 +1571,7 @@ public class Steps extends Utility {
             sleep(1500);
             driver.findElement(By.xpath("(//select[@data-event='change'])[1]")).sendKeys("Jan");
             sleep(1500);
-            driver.findElement(By.xpath("(//a[@href='#'])[47]")).click();
+            driver.findElement(By.xpath("(//a[@href='#'])[48]")).click();
             sleep(1000);
         }else{
             Assert.fail("Cannot select date");
@@ -1636,6 +1638,8 @@ public class Steps extends Utility {
 
     @And("^I Input Organisation Account Number \"([^\"]*)\"$")
     public void iInputOrganisationAccountNumber(String Org_acc_no) throws Throwable {
+        WebDriverWait w = new WebDriverWait(driver, 10);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[contains(@id,'cropTb1:0:org')]")));
         Small_planters.Organisation_acc_no(driver).sendKeys(Org_acc_no);
     }
 
@@ -1649,6 +1653,9 @@ public class Steps extends Utility {
         }else if(Crop_Type.equals("Tea")){
             Small_planters.Tea_crop_type(driver).click();
             System.out.println("Tea is working fine");
+        }else if(Crop_Type.equals("Others")){
+            Small_planters.Others_crop_type(driver).click();
+            System.out.println("Others is working fine");
         }else{
             System.out.println("Crop Type option is not valid");
             Assert.fail("Crop Type option is not valid");
@@ -1657,6 +1664,9 @@ public class Steps extends Utility {
 
     @And("^I Input Total Extent of plot \\(In Arpent\\) \"([^\"]*)\"$")
     public void iInputTotalExtentOfPlotInArpent(String Land_Extent) throws Throwable {
+        Thread.sleep(1000);
+        Small_planters.Total_Arpent(driver).click();
+        Thread.sleep(1000);
         Small_planters.Total_Arpent(driver).sendKeys(Land_Extent);
     }
 
@@ -2993,20 +3003,25 @@ public class Steps extends Utility {
         WebDriverWait wait = new WebDriverWait(driver, 20);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(@id,'dlgManageCrop_content')]")));
 //        Thread.sleep(6000);
-        driver.findElement(By.xpath("//label[contains(@id, 'typeCrop_label')]")).click();
+        driver.findElement(By.xpath("//label[contains (@id, 'cropnName_label')]")).click();
         Thread.sleep(1000);
-        driver.findElement(By.xpath("//li[contains(@id, 'typeCrop_1')]")).click();
+        driver.findElement(By.xpath("//input[contains (@id, 'cropnName_filter')]")).sendKeys("Tea");
         Thread.sleep(1000);
-        driver.findElement(By.xpath("//label[contains(@id, '546_label')]")).click();
+        driver.findElement(By.xpath("//li[contains (@id, 'cropnName_52')]")).click();
         Thread.sleep(1000);
-        driver.findElement(By.xpath("//li[contains(@id, '546_1')]")).click();
+        driver.findElement(By.xpath("//label[contains (@id, 'accreageType_label')]")).click();
         Thread.sleep(1000);
+        driver.findElement(By.xpath("//li[contains (@id, 'accreageType_1')]")).click();
+        Thread.sleep(1000);
+//        driver.findElement(By.xpath("//input[contains (@id, 'arp')]")).sendKeys("4");
         driver.findElement(By.xpath("//label[contains(@id,'typeStage_label')]")).click();
         Thread.sleep(1000);
         driver.findElement(By.xpath("//li[contains(@id,'typeStage_1')]")).click();
         Thread.sleep(1000);
         driver.findElement(By.xpath("//input[contains(@id,'density')]")).sendKeys("75");
         driver.findElement(By.xpath("//input[contains(@id,'health')]")).sendKeys("75");
+        Thread.sleep(4000);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[contains(@id,'arp')]")));
         driver.findElement(By.xpath("//input[contains(@id,'arp')]")).sendKeys("8");
         driver.findElement(By.xpath("(//span[contains(.,'Save')])[4]")).click();
         wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[contains(@id,'dlgManageCrop_content')]")));
@@ -3035,5 +3050,29 @@ public class Steps extends Utility {
             System.out.println("Document Upload Success Message did not appear");
             Assert.fail("Document Upload Success Message did not appear");
         }
+    }
+
+    @And("^I Input Site visit remarks in Site Report \"([^\"]*)\"$")
+    public void iInputSiteVisitRemarksInSiteReport(String Remarks) throws Throwable {
+        Back_office_main_page.Site_visit_remarks_FCASC(driver).sendKeys(Remarks);
+    }
+
+    @And("^I Verify Success Message for Under Query Notification for Small Farmers$")
+    public void iVerifySuccessMessageForUnderQueryNotificationForSmallFarmers() {
+        //        WebDriverWait w = new WebDriverWait(driver, 30);
+//        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[contains(.,'Mail has been sent successfully')]")));
+        try {
+            Back_office_main_page.Under_query_mail_success_message_sf(driver);
+        } catch (Exception e) {
+            System.out.println("Success Message for Under Query Notification did not appear");
+            Assert.fail("Success Message for Under Query Notification did not appear");
+        }
+    }
+
+    @And("^I Click on Under Query Notification for Small Farmers$")
+    public void iClickOnUnderQueryNotificationForSmallFarmers() {
+        Back_office_main_page.Under_query_notif_send(driver).click();
+        WebDriverWait w = new WebDriverWait(driver, 10);
+        WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//span[contains(.,'Mail has been sent successfully')])[6]")));
     }
 }
