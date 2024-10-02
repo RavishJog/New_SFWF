@@ -1,0 +1,43 @@
+-------------------------------------------------------------------------------
+Test set: cucumbertest.TestRunner_web
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 363.444 sec <<< FAILURE!
+runCukes(cucumbertest.TestRunner_web)  Time elapsed: 362.684 sec  <<< FAILURE!
+cucumber.runtime.CucumberException: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(text(),'Save and Continue')]"}
+  (Session info: chrome=129.0.6668.60)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'SIL-LTDELLI7-G6', ip: '130.1.19.132', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_371'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=129.0.6668.89 (951c0b97221f8d4ba37cf97d324505c832251cf9-refs/branch-heads/6668@{#1503}), userDataDir=C:\Users\SURAJ~1.JOG\AppData\Local\Temp\scoped_dir35568_760835912}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:50734}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=129.0.6668.60, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: 5008aa0ee60d2ed779132b50fbda8678
+*** Element info: {Using=xpath, value=//span[contains(text(),'Save and Continue')]}
+	at cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:57)
+	at cucumbertest.TestRunner_web.runCukes(TestRunner_web.java:25)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(text(),'Save and Continue')]"}
+  (Session info: chrome=129.0.6668.60)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'SIL-LTDELLI7-G6', ip: '130.1.19.132', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_371'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=129.0.6668.89 (951c0b97221f8d4ba37cf97d324505c832251cf9-refs/branch-heads/6668@{#1503}), userDataDir=C:\Users\SURAJ~1.JOG\AppData\Local\Temp\scoped_dir35568_760835912}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:50734}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=129.0.6668.60, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: 5008aa0ee60d2ed779132b50fbda8678
+*** Element info: {Using=xpath, value=//span[contains(text(),'Save and Continue')]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:410)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
+	at objectrepository.Farmers_cooperatives_association_society_company.Save_and_continue(Farmers_cooperatives_association_society_company.java:232)
+	at stepdefinition.Steps.iClickOnSaveAndContinue(Steps.java:685)
+	at ✽.And I Click on Save and Continue(features/US13280.feature:1553)
+

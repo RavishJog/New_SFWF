@@ -345,6 +345,13 @@ public class Back_office_main_page {
         return element;
     }
 
+    //Object for Under Query Mail Success Message - Tea Grower
+    private static By lbl_Under_query_mail_success_message_tg = By.xpath("(//span[contains(.,'Mail has been sent successfully')])[5]");
+    public static WebElement Under_query_mail_success_message_tg(WebDriver driver) {
+        element = driver.findElement(lbl_Under_query_mail_success_message_tg);
+        return element;
+    }
+
     //Object for Success message of Workflow saved successfully
     private static By lbl_Workflow_success_message = By.xpath("//span[contains(.,'Workflow was successfully saved')]");
     public static WebElement Workflow_success_message(WebDriver driver) {
