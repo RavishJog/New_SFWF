@@ -1242,29 +1242,27 @@ public class Steps extends Utility {
             Small_planters.District_Select_one(driver).click();
             sleep(1000);
             Small_planters.Black_river(driver).click();
-            Thread.sleep(1500);
-            driver.findElement(By.xpath("//label[contains(@id,'suboffice_label')]")).click();
-            Thread.sleep(1500);
-            driver.findElement(By.xpath("//li[contains(@id,'suboffice_1')]")).click();
-
 
         }else if (District.equals("Flacq")){
             System.out.println("District Select is working");
             Small_planters.District_Select_one(driver).click();
             sleep(1000);
             Small_planters.Flacq(driver).click();
+            Thread.sleep(1500);
 
         }else if (District.equals("Grand Port")){
             System.out.println("District Select is working");
             Small_planters.District_Select_one(driver).click();
             sleep(1000);
             Small_planters.Grand_port(driver).click();
+            Thread.sleep(1500);
 
         }else if (District.equals("Moka")){
             System.out.println("District Select is working");
             Small_planters.District_Select_one(driver).click();
             sleep(1000);
             Small_planters.Moka(driver).click();
+            Thread.sleep(1500);
 
         }else if (District.equals("Pamplemousses")){
             System.out.println("District Select is working");
@@ -1307,6 +1305,10 @@ public class Steps extends Utility {
             System.out.println("Option is Not Valid");
             Assert.fail("Option is Not Valid");
         }
+        Thread.sleep(1500);
+        driver.findElement(By.xpath("//label[contains(@id,'suboffice_label')]")).click();
+        Thread.sleep(1500);
+        driver.findElement(By.xpath("//li[contains(@id,'suboffice_1')]")).click();
     }
 
     @And("^I Select Applicant Level of Education \"([^\"]*)\"$")
@@ -1571,7 +1573,7 @@ public class Steps extends Utility {
             sleep(1500);
             driver.findElement(By.xpath("(//select[@data-event='change'])[1]")).sendKeys("Jan");
             sleep(1500);
-            driver.findElement(By.xpath("(//a[@href='#'])[48]")).click();
+            driver.findElement(By.xpath("(//a[@href='#'])[55]")).click();
             sleep(1000);
         }else{
             Assert.fail("Cannot select date");
@@ -2467,12 +2469,12 @@ public class Steps extends Utility {
     public void iVerifyDisplayOfParticularsForRegistrationOfTeaPlantation() {
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);",  Tea_grower.Particulars_for_Registration_of_Tea_Plantation_page(driver));
         WebDriverWait w = new WebDriverWait(driver, 10);
-        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h6[contains(.,'Particulars for Registration of Tea Plantation')]")));
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h6[contains(.,'Particulars of Crop:Tea Plantation')]")));
         try {
             Tea_grower.Particulars_for_Registration_of_Tea_Plantation_page(driver);
         } catch (Exception e) {
-            System.out.println("Particulars for Registration of Tea Plantation Page did not appear");
-            Assert.fail("Particulars for Registration of Tea Plantation Page did not appear");
+            System.out.println("Particulars of Crop:Tea Plantation Page did not appear");
+            Assert.fail("Particulars of Crop:Tea Plantation Page did not appear");
         }
     }
 
@@ -3074,5 +3076,79 @@ public class Steps extends Utility {
         Back_office_main_page.Under_query_notif_send(driver).click();
         WebDriverWait w = new WebDriverWait(driver, 10);
         WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//span[contains(.,'Mail has been sent successfully')])[6]")));
+    }
+
+    @And("^I Select Duration Year for Registration membership for Tea Grower \"([^\"]*)\"$")
+    public void iSelectDurationYearForRegistrationMembershipForTeaGrower(String Year_dur) throws Throwable {
+        Tea_grower.Select_one_RM_tea(driver).click();
+        sleep(1000);
+        if (Year_dur.equals("1")) {
+            try {
+                Tea_grower.One_Year_RM_tea(driver).click();
+            } catch (Exception e) {
+                System.out.println("Radio Button is not working");
+                Assert.fail("Radio Button is not working");
+            }
+        } else if (Year_dur.equals("2")) {
+            try {
+                Tea_grower.Two_Years_RM_tea(driver).click();
+            } catch (Exception e) {
+                System.out.println("Radio Button is not working");
+                Assert.fail("Radio Button is not working");
+            }
+        } else {
+            System.out.println("Radio Button is functioning properly");
+        }
+        sleep(1000);
+    }
+
+    @And("^I Verify Success Message for Under Query Notification for Tea Grower$")
+    public void iVerifySuccessMessageForUnderQueryNotificationForTeaGrower() {
+        //        WebDriverWait w = new WebDriverWait(driver, 30);
+//        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[contains(.,'Mail has been sent successfully')]")));
+        try {
+            Back_office_main_page.Under_query_mail_success_message_tg(driver);
+        } catch (Exception e) {
+            System.out.println("Success Message for Under Query Notification did not appear");
+            Assert.fail("Success Message for Under Query Notification did not appear");
+        }
+    }
+
+    @And("^I Click on Under Query Notification for Tea Grower$")
+    public void iClickOnUnderQueryNotificationForTeaGrower() {
+        Back_office_main_page.Under_query_notif_send(driver).click();
+        WebDriverWait w = new WebDriverWait(driver, 10);
+        WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//span[contains(.,'Mail has been sent successfully')])[5]")));
+    }
+
+    @Given("^I am on SFWF Front Office Home Page GOC \"([^\"]*)\"$")
+    public void iAmOnSFWFFrontOfficeHomePageGOC(String Browser) throws Throwable {
+        if (Browser.equals("Chrome")) {
+            setUp();
+
+            driver.get("https://sfwftest.govmu.org/");
+            driver.manage().window().maximize();
+        } else if (Browser.equals("Edge")) {
+            setUp();
+            driver.get("https://sfwftest.govmu.org/");
+            driver.manage().window().maximize();
+        } else {
+            System.out.println("No browser found");
+        }
+    }
+
+    @And("^I am on SFWF Back Office Home Page GOC \"([^\"]*)\"$")
+    public void iAmOnSFWFBackOfficeHomePageGOC(String Browser) throws Throwable {
+        if (Browser.equals("Chrome")) {
+            setUp();
+            driver.get("https://sfwftest.govmu.org/sfwfback/");
+            driver.manage().window().maximize();
+        } else if (Browser.equals("Edge")) {
+            setUp();
+            driver.get("https://sfwftest.govmu.org/sfwfback/");
+            driver.manage().window().maximize();
+        } else {
+            System.out.println("No browser found");
+        }
     }
 }

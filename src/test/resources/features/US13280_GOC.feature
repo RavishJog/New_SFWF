@@ -1,14 +1,14 @@
 #User Story 13280 - Back Office Process for Registration
 
-@Main_feature @US13280 @Regression @GOC
+@Main_feature @US13280 @Regression
 Feature: User Story 13280 - Back Office Process for Registration
 
    #Scenario1
   @Approval_by_BO_Payment_at_counter_for_Agro-Processing-Enterprise @Smoke_counter_Agro-Processing-Enterprise
   Scenario Outline: Approval for Payment at counter for Registration as Agro-Processing Enterprise-Application form
 
-    Given I am on SFWF Front Office Home Page "<Browser>"
-    When I Input Registered User's Username "<Username>" and Password "<Password>"
+    Given I am on SFWF Front Office Home Page GOC "<Browser>"
+    When I Input Registered User's Username "<Username>" and Password "<FPassword>"
     And I Click on Sign In button
     And I Verify Applicant's Successful Login
     And I Click on Register as Farmer
@@ -65,7 +65,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Message to proceed to Post Office for Payment
     And I Sign Out as Front Registered User
 #    Finance
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input Finance Username "<FUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -82,7 +82,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Successful Sign Out
 
 #    PWO
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input PWO Username "<PwoUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -99,7 +99,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Sign Out
     And I Verify Successful Sign Out
     #    WPO
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input WPO Username "<WpoUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -117,7 +117,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Successful Sign Out
 
     #    WO/WA
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input WO-WA Username "<WOUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -142,7 +142,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Successful Sign Out
 
     #    WPO
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input WPO Username "<WpoUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -161,8 +161,8 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Successful Sign Out
 
     #    Applicant after under query
-    Given I am on SFWF Front Office Home Page "<Browser>"
-    When I Input Registered User's Username "<Username>" and Password "<Password>"
+    Given I am on SFWF Front Office Home Page GOC "<Browser>"
+    When I Input Registered User's Username "<Username>" and Password "<FPassword>"
     And I Click on Sign In button
     And I Verify Applicant's Successful Login
     And I Click on Register as Farmer
@@ -180,7 +180,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Sign Out as Front Registered User
 
     #    WPO
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input WPO Username "<WpoUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -197,7 +197,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Successful Sign Out
 
         #    IT Department
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input IT Department Username "<ITUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -210,8 +210,8 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Successful Sign Out
 
 #    Applicant verify status - Card Printed
-    Given I am on SFWF Front Office Home Page "<Browser>"
-    When I Input Registered User's Username "<Username>" and Password "<Password>"
+    Given I am on SFWF Front Office Home Page GOC "<Browser>"
+    When I Input Registered User's Username "<Username>" and Password "<FPassword>"
     And I Click on Sign In button
     And I Verify Applicant's Successful Login
     And I Click on Register as Farmer
@@ -224,15 +224,15 @@ Feature: User Story 13280 - Back Office Process for Registration
 
 
     Examples:
-      |Browser|Username |Password |FUsername      |PwoUsername|WpoUsername|WOUsername |ITUsername|Remarks        |Bonafide|Payment_Mode |Amount_To_Pay|Co_Name        |Rep_by       |BRN        |Cert_No  |Act      |Off_Add                  |Enterprise_Address     |Status_Applicant|Year_dur|Prod_man       |No_person|Actual_ann_turnover|Status_business|Years_operation|Upload_test                        |Additional_Doc_Name      |Bank_Name  |Bank_Branch|Bank_Account_No|Confirmation|App_status|Payment_Status |Payment_method |
-      |Chrome |Suraj    |Admin@123|Finance_suraj  |PWO        |WPO        |WO         |IT_DEPT   |This is a test |Yes     |Cash         |850          |ABC Agro Co Ltd|Mr John Brown|C123456789 |XLPR852  |Full Time|The Main Road, Grand Port|Royal Road, Port Louis |Company         |1       |Tomato, Pepper |50       |10000000           |Existing       |5              |src\test\resources\Upload_Test1.pdf|Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |Counter        |
+      |Browser|Username     |FPassword      |Password |FUsername      |PwoUsername|WpoUsername|WOUsername |ITUsername|Remarks        |Bonafide|Payment_Mode |Amount_To_Pay|Co_Name        |Rep_by       |BRN        |Cert_No  |Act      |Off_Add                  |Enterprise_Address     |Status_Applicant|Year_dur|Prod_man       |No_person|Actual_ann_turnover|Status_business|Years_operation|Upload_test                        |Additional_Doc_Name      |Bank_Name  |Bank_Branch|Bank_Account_No|Confirmation|App_status|Payment_Status |Payment_method |
+      |Chrome |ybhunjun5    |Mauritius1!1710|Admin@123|Finance  |PWO        |WPO        |WO         |IT_DEPT   |This is a test |Yes     |Cash         |850          |ABC Agro Co Ltd|Mr John Brown|C123456789 |XLPR852  |Full Time|The Main Road, Grand Port|Royal Road, Port Louis |Company         |1       |Tomato, Pepper |50       |10000000           |Existing       |5              |src\test\resources\Upload_Test1.pdf|Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |Counter        |
 
  #Scenario2
   @Approval_by_BO_Payment_online_for_Agro-Processing-Enterprise @Smoke_online_Agro-Processing-Enterprise
   Scenario Outline: Approval for Payment online for Registration as Agro-Processing Enterprise-Application form
 
-    Given I am on SFWF Front Office Home Page "<Browser>"
-    When I Input Registered User's Username "<Username>" and Password "<Password>"
+    Given I am on SFWF Front Office Home Page GOC "<Browser>"
+    When I Input Registered User's Username "<Username>" and Password "<FPassword>"
     And I Click on Sign In button
     And I Verify Applicant's Successful Login
     And I Click on Register as Farmer
@@ -294,7 +294,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     Then I Sign Out as Front Registered User
 
 #    PWO
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input PWO Username "<PwoUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -311,7 +311,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Sign Out
     And I Verify Successful Sign Out
     #    WPO
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input WPO Username "<WpoUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -329,7 +329,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Successful Sign Out
 
     #    WO/WA
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input WO-WA Username "<WOUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -354,7 +354,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Successful Sign Out
 
     #    WPO
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input WPO Username "<WpoUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -373,8 +373,8 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Successful Sign Out
 
     #    Applicant after under query
-    Given I am on SFWF Front Office Home Page "<Browser>"
-    When I Input Registered User's Username "<Username>" and Password "<Password>"
+    Given I am on SFWF Front Office Home Page GOC "<Browser>"
+    When I Input Registered User's Username "<Username>" and Password "<FPassword>"
     And I Click on Sign In button
     And I Verify Applicant's Successful Login
     And I Click on Register as Farmer
@@ -392,7 +392,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Sign Out as Front Registered User
 
     #    WPO
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input WPO Username "<WpoUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -409,7 +409,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Successful Sign Out
 
         #    IT Department
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input IT Department Username "<ITUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -422,8 +422,8 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Successful Sign Out
 
 #    Applicant verify status - Card Printed
-    Given I am on SFWF Front Office Home Page "<Browser>"
-    When I Input Registered User's Username "<Username>" and Password "<Password>"
+    Given I am on SFWF Front Office Home Page GOC "<Browser>"
+    When I Input Registered User's Username "<Username>" and Password "<FPassword>"
     And I Click on Sign In button
     And I Verify Applicant's Successful Login
     And I Click on Register as Farmer
@@ -435,15 +435,15 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Sign Out as Front Registered User
 
     Examples:
-      |Browser|Username |Password |FUsername|PwoUsername|WpoUsername|WOUsername |ITUsername|Remarks        |Bonafide|Payment_Mode |Amount_To_Pay|Co_Name        |Rep_by       |BRN        |Cert_No  |Act      |Off_Add                  |Enterprise_Address     |Status_Applicant|Year_dur|Prod_man       |No_person|Actual_ann_turnover|Status_business|Years_operation|Upload_test                        |Additional_Doc_Name      |Bank_Name  |Bank_Branch|Bank_Account_No|Confirmation|App_status|Payment_Status |Payment_method |Card_Number        |Expiry_Month |Expiry_Year|Security_Code|Cardholder_Name|
-      |Chrome |Suraj    |Admin@123|FINANCE  |PWO        |WPO        |WO         |IT_DEPT   |This is a test |Yes     |Cash         |850          |ABC Agro Co Ltd|Mr John Brown|C123456789 |XLPR852  |Full Time|The Main Road, Grand Port|Royal Road, Port Louis |Company         |1       |Tomato, Pepper |50       |10000000           |Existing       |5              |src\test\resources\Upload_Test1.pdf|Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |Credit         |5123-4500-0000-0008|01           |39         |100          |My name        |
+      |Browser|Username     |FPassword      | Password |FUsername|PwoUsername|WpoUsername|WOUsername |ITUsername|Remarks        |Bonafide|Payment_Mode |Amount_To_Pay|Co_Name        |Rep_by       |BRN        |Cert_No  |Act      |Off_Add                  |Enterprise_Address     |Status_Applicant|Year_dur|Prod_man       |No_person|Actual_ann_turnover|Status_business|Years_operation|Upload_test                        |Additional_Doc_Name      |Bank_Name  |Bank_Branch|Bank_Account_No|Confirmation|App_status|Payment_Status |Payment_method |Card_Number        |Expiry_Month |Expiry_Year|Security_Code|Cardholder_Name|
+      |Chrome |ybhunjun5    |Mauritius1!1710|Admin@123|FINANCE  |PWO        |WPO        |WO         |IT_DEPT   |This is a test |Yes     |Cash         |850          |ABC Agro Co Ltd|Mr John Brown|C123456789 |XLPR852  |Full Time|The Main Road, Grand Port|Royal Road, Port Louis |Company         |1       |Tomato, Pepper |50       |10000000           |Existing       |5              |src\test\resources\Upload_Test1.pdf|Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |Credit         |5123-4500-0000-0008|01           |39         |100          |My name        |
 
  #Scenario3
   @Approval_by_BO_Payment_at_counter_for_Farmers_Cooperative_Association @Smoke_counter_Farmers_Cooperative_Association
   Scenario Outline: Payment at counter for Registration for Farmers’ Cooperative Association, Society or Company
 
-    Given I am on SFWF Front Office Home Page "<Browser>"
-    When I Input Registered User's Username "<Username>" and Password "<Password>"
+    Given I am on SFWF Front Office Home Page GOC "<Browser>"
+    When I Input Registered User's Username "<Username>" and Password "<FPassword>"
     And I Click on Sign In button
     And I Verify Applicant's Successful Login
     And I Click on Register as Farmer
@@ -507,7 +507,7 @@ Feature: User Story 13280 - Back Office Process for Registration
 
     #    Finance
     #    Finance
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input Finance Username "<FUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -523,7 +523,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Sign Out
     And I Verify Successful Sign Out
 #    PWO
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input PWO Username "<PwoUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -540,7 +540,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Sign Out
     And I Verify Successful Sign Out
     #    WPO
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input WPO Username "<WpoUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -558,7 +558,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Successful Sign Out
 
     #    WO/WA
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input WO-WA Username "<WOUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -583,7 +583,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Successful Sign Out
 
     #    WPO
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input WPO Username "<WpoUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -602,8 +602,8 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Successful Sign Out
 
     #    Applicant after under query
-    Given I am on SFWF Front Office Home Page "<Browser>"
-    When I Input Registered User's Username "<Username>" and Password "<Password>"
+    Given I am on SFWF Front Office Home Page GOC "<Browser>"
+    When I Input Registered User's Username "<Username>" and Password "<FPassword>"
     And I Click on Sign In button
     And I Verify Applicant's Successful Login
     And I Click on Register as Farmer
@@ -621,7 +621,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Sign Out as Front Registered User
 
     #    WPO
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input WPO Username "<WpoUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -638,7 +638,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Successful Sign Out
 
         #    IT Department
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input IT Department Username "<ITUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -651,8 +651,8 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Successful Sign Out
 
 #    Applicant verify status - Card Printed
-    Given I am on SFWF Front Office Home Page "<Browser>"
-    When I Input Registered User's Username "<Username>" and Password "<Password>"
+    Given I am on SFWF Front Office Home Page GOC "<Browser>"
+    When I Input Registered User's Username "<Username>" and Password "<FPassword>"
     And I Click on Sign In button
     And I Verify Applicant's Successful Login
     And I Click on Register as Farmer
@@ -664,15 +664,15 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Sign Out as Front Registered User
 
     Examples:
-      |Browser|Username         |Password |FUsername|PwoUsername|WpoUsername|WOUsername |ITUsername|Remarks        |Bonafide|Payment_Mode |Amount_To_Pay|Co_Name        |Rep_by       |BRN        |Off_Num|Mob_Num  |Cert_No  |Act      |Off_Add                  |Enterprise_Address     |Status_Applicant|Year_dur|Prod_man       |No_person|Actual_ann_turnover|Status_business|Years_operation|Upload_test                        |Additional_Doc_Name      |Bank_Name  |Bank_Branch|Bank_Account_No|Confirmation|App_status|Payment_Status |Payment_method |
-      |Chrome |Raksha_Luchun3004|Admin@123|FINANCE  |PWO        |WPO        |WO         |IT_DEPT   |This is a test |Yes     |Cash         |850          |ABC Agro Co Ltd|Mr John Brown|C123456789 |2126666|58967896 |XLPR852  |Full Time|The Main Road, Grand Port|Royal Road, Port Louis |Company         |1       |Tomato, Pepper |50       |10000000           |Existing       |5              |src\test\resources\Upload_Test1.pdf|Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |Counter        |
+      |Browser|Username         |FPassword      | Password |FUsername|PwoUsername|WpoUsername|WOUsername |ITUsername|Remarks        |Bonafide|Payment_Mode |Amount_To_Pay|Co_Name        |Rep_by       |BRN        |Off_Num|Mob_Num  |Cert_No  |Act      |Off_Add                  |Enterprise_Address     |Status_Applicant|Year_dur|Prod_man       |No_person|Actual_ann_turnover|Status_business|Years_operation|Upload_test                        |Additional_Doc_Name      |Bank_Name  |Bank_Branch|Bank_Account_No|Confirmation|App_status|Payment_Status |Payment_method |
+      |Chrome |Raksha_Luchun3004|Mauritius1!1710|Admin@123|FINANCE  |PWO        |WPO        |WO         |IT_DEPT   |This is a test |Yes     |Cash         |850          |ABC Agro Co Ltd|Mr John Brown|C123456789 |2126666|58967896 |XLPR852  |Full Time|The Main Road, Grand Port|Royal Road, Port Louis |Company         |1       |Tomato, Pepper |50       |10000000           |Existing       |5              |src\test\resources\Upload_Test1.pdf|Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |Counter        |
 
     #Scenario4
   @Approval_by_BO_Payment_online_for_Farmers_Cooperative_Association @Smoke_online_Farmers_Cooperative_Association
   Scenario Outline: Payment online for Registration for Farmers’ Cooperative Association, Society or Company
 
-    Given I am on SFWF Front Office Home Page "<Browser>"
-    When I Input Registered User's Username "<Username>" and Password "<Password>"
+    Given I am on SFWF Front Office Home Page GOC "<Browser>"
+    When I Input Registered User's Username "<Username>" and Password "<FPassword>"
     And I Click on Sign In button
     And I Verify Applicant's Successful Login
     And I Click on Register as Farmer
@@ -739,7 +739,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     Then I Sign Out as Front Registered User
 
 #    PWO
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input PWO Username "<PwoUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -756,7 +756,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Sign Out
     And I Verify Successful Sign Out
     #    WPO
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input WPO Username "<WpoUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -774,7 +774,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Successful Sign Out
 
     #    WO/WA
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input WO-WA Username "<WOUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -799,7 +799,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Successful Sign Out
 
     #    WPO
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input WPO Username "<WpoUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -818,8 +818,8 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Successful Sign Out
 
     #    Applicant after under query
-    Given I am on SFWF Front Office Home Page "<Browser>"
-    When I Input Registered User's Username "<Username>" and Password "<Password>"
+    Given I am on SFWF Front Office Home Page GOC "<Browser>"
+    When I Input Registered User's Username "<Username>" and Password "<FPassword>"
     And I Click on Sign In button
     And I Verify Applicant's Successful Login
     And I Click on Register as Farmer
@@ -837,7 +837,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Sign Out as Front Registered User
 
     #    WPO
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input WPO Username "<WpoUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -854,7 +854,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Successful Sign Out
 
         #    IT Department
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input IT Department Username "<ITUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -867,8 +867,8 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Successful Sign Out
 
 #    Applicant verify status - Card Printed
-    Given I am on SFWF Front Office Home Page "<Browser>"
-    When I Input Registered User's Username "<Username>" and Password "<Password>"
+    Given I am on SFWF Front Office Home Page GOC "<Browser>"
+    When I Input Registered User's Username "<Username>" and Password "<FPassword>"
     And I Click on Sign In button
     And I Verify Applicant's Successful Login
     And I Click on Register as Farmer
@@ -880,16 +880,16 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Sign Out as Front Registered User
 
     Examples:
-      |Browser|Username         |Password |FUsername|PwoUsername|WpoUsername|WOUsername |ITUsername|Remarks        |Bonafide|Payment_Mode |Amount_To_Pay|Co_Name        |Rep_by       |BRN        |Off_Num|Mob_Num  |Cert_No  |Act      |Off_Add                  |Enterprise_Address     |Status_Applicant|Year_dur|Prod_man       |No_person|Actual_ann_turnover|Status_business|Years_operation|Upload_test                        |Additional_Doc_Name      |Bank_Name  |Bank_Branch|Bank_Account_No|Confirmation|App_status|Payment_Status |Payment_method |Card_Number        |Expiry_Month |Expiry_Year|Security_Code|Cardholder_Name|
-      |Chrome |Raksha_Luchun3004|Admin@123|FINANCE  |PWO        |WPO        |WO         |IT_DEPT   |This is a test |Yes     |Cash         |850          |ABC Agro Co Ltd|Mr John Brown|C123456789 |2126666|58967896 |XLPR852  |Full Time|The Main Road, Grand Port|Royal Road, Port Louis |Company         |1       |Tomato, Pepper |50       |10000000           |Existing       |5              |src\test\resources\Upload_Test1.pdf|Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |Credit         |5123-4500-0000-0008|01           |39         |100          |My name        |
+      |Browser|Username         |FPassword      | Password |FUsername|PwoUsername|WpoUsername|WOUsername |ITUsername|Remarks        |Bonafide|Payment_Mode |Amount_To_Pay|Co_Name        |Rep_by       |BRN        |Off_Num|Mob_Num  |Cert_No  |Act      |Off_Add                  |Enterprise_Address     |Status_Applicant|Year_dur|Prod_man       |No_person|Actual_ann_turnover|Status_business|Years_operation|Upload_test                        |Additional_Doc_Name      |Bank_Name  |Bank_Branch|Bank_Account_No|Confirmation|App_status|Payment_Status |Payment_method |Card_Number        |Expiry_Month |Expiry_Year|Security_Code|Cardholder_Name|
+      |Chrome |Raksha_Luchun3004|Mauritius1!1710|Admin@123|FINANCE  |PWO        |WPO        |WO         |IT_DEPT   |This is a test |Yes     |Cash         |850          |ABC Agro Co Ltd|Mr John Brown|C123456789 |2126666|58967896 |XLPR852  |Full Time|The Main Road, Grand Port|Royal Road, Port Louis |Company         |1       |Tomato, Pepper |50       |10000000           |Existing       |5              |src\test\resources\Upload_Test1.pdf|Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |Credit         |5123-4500-0000-0008|01           |39         |100          |My name        |
 
 
  #Scenario5
   @Approval_by_BO_Payment_at_counter_for_Small_Planters_Registration @Smoke_counter_Small_Planters_Registration
   Scenario Outline: Payment at counter for Registration for Small Planters
 
-    Given I am on SFWF Front Office Home Page "<Browser>"
-    When I Input Registered User's Username "<Username>" and Password "<Password>"
+    Given I am on SFWF Front Office Home Page GOC "<Browser>"
+    When I Input Registered User's Username "<Username>" and Password "<FPassword>"
     And I Click on Sign In button
     And I Verify Applicant's Successful Login
     And I Click on Register as Farmer
@@ -975,7 +975,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     Then I Sign Out as Front Registered User
 
     #    Finance
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input Finance Username "<FUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -991,7 +991,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Sign Out
     And I Verify Successful Sign Out
 #    PWO
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input PWO Username "<PwoUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -1008,7 +1008,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Sign Out
     And I Verify Successful Sign Out
     #    WPO
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input WPO Username "<WpoUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -1026,7 +1026,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Successful Sign Out
 
     #    WO/WA
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input WO-WA Username "<WOUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -1053,7 +1053,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Successful Sign Out
 
     #    WPO
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input WPO Username "<WpoUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -1072,8 +1072,8 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Successful Sign Out
 
     #    Applicant after under query
-    Given I am on SFWF Front Office Home Page "<Browser>"
-    When I Input Registered User's Username "<Username>" and Password "<Password>"
+    Given I am on SFWF Front Office Home Page GOC "<Browser>"
+    When I Input Registered User's Username "<Username>" and Password "<FPassword>"
     And I Click on Sign In button
     And I Verify Applicant's Successful Login
     And I Click on Register as Farmer
@@ -1091,7 +1091,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Sign Out as Front Registered User
 
     #    WPO
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input WPO Username "<WpoUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -1108,7 +1108,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Successful Sign Out
 
         #    IT Department
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input IT Department Username "<ITUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -1121,8 +1121,8 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Successful Sign Out
 
 #    Applicant verify status - Card Printed
-    Given I am on SFWF Front Office Home Page "<Browser>"
-    When I Input Registered User's Username "<Username>" and Password "<Password>"
+    Given I am on SFWF Front Office Home Page GOC "<Browser>"
+    When I Input Registered User's Username "<Username>" and Password "<FPassword>"
     And I Click on Sign In button
     And I Verify Applicant's Successful Login
     And I Click on Register as Farmer
@@ -1134,15 +1134,15 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Sign Out as Front Registered User
 
     Examples:
-      |Browser|Username |Password |FUsername|PwoUsername|WpoUsername|WOUsername |ITUsername|Remarks        |Bonafide|Payment_Mode |Amount_To_Pay|Applicant_Title |District   |Education_Level |Act      |Other_Occupation  |Photo                               |Year_dur |Marital_Status|Relationship|Family_Surname|Family_Other_Names|Gender|DOB   |Occupation |Org_acc_no|Crop_Type|Land_Extent|Owner_Type|Plot_Location|Field_Location |Production_System|Total_Extent |Crop_Grown |Plantation_Type|Date_Plantation_Seedling |Upload_test                        |Crop_Status|Additional_Doc_Name      |Bank_Name  |Bank_Branch|Bank_Account_No|Confirmation|App_status|Payment_Status |Payment_method |
-      |Chrome |Suraj    |Admin@123|FINANCE  |PWO        |WPO        |WO         |IT_DEPT   |This is a test |Yes     |Cash         |850          |Mr              |Black River|Tertiary        |Full Time|Manager           |src\test\resources\Photo_upload.jpg |1        |Married       |Spouse      |Sanon         |Kirti             |Female|1Jan94|Air Hostess|0001252563|Cane     |2.5        |Tenant    |Moka         |Port Louis     |Sheltered Farming|9            |Pepper     |Interline      |1Aug2030                 |src\test\resources\Upload_Test1.pdf|Harvest    |Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |Counter        |
+      |Browser|Username     |FPassword      | Password |FUsername|PwoUsername|WpoUsername|WOUsername |ITUsername|Remarks        |Bonafide|Payment_Mode |Amount_To_Pay|Applicant_Title |District   |Education_Level |Act      |Other_Occupation  |Photo                               |Year_dur |Marital_Status|Relationship|Family_Surname|Family_Other_Names|Gender|DOB   |Occupation |Org_acc_no|Crop_Type|Land_Extent|Owner_Type|Plot_Location|Field_Location |Production_System|Total_Extent |Crop_Grown |Plantation_Type|Date_Plantation_Seedling |Upload_test                        |Crop_Status|Additional_Doc_Name      |Bank_Name  |Bank_Branch|Bank_Account_No|Confirmation|App_status|Payment_Status |Payment_method |
+      |Chrome |ybhunjun5    |Mauritius1!1710|Admin@123|FINANCE  |PWO        |WPO        |WO         |IT_DEPT   |This is a test |Yes     |Cash         |850          |Mr              |Black River|Tertiary        |Full Time|Manager           |src\test\resources\Photo_upload.jpg |1        |Married       |Spouse      |Sanon         |Kirti             |Female|1Jan94|Air Hostess|0001252563|Cane     |2.5        |Tenant    |Moka         |Port Louis     |Sheltered Farming|9            |Pepper     |Interline      |1Aug2030                 |src\test\resources\Upload_Test1.pdf|Harvest    |Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |Counter        |
 
  #Scenario6
   @Approval_by_BO_Payment_at_online_for_Small_Planters_Registration @Smoke_online
   Scenario Outline: Payment Online for Registration for Small Planters
 
-    Given I am on SFWF Front Office Home Page "<Browser>"
-    When I Input Registered User's Username "<Username>" and Password "<Password>"
+    Given I am on SFWF Front Office Home Page GOC "<Browser>"
+    When I Input Registered User's Username "<Username>" and Password "<FPassword>"
     And I Click on Sign In button
     And I Verify Applicant's Successful Login
     And I Click on Register as Farmer
@@ -1232,7 +1232,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     Then I Sign Out as Front Registered User
 
 #    PWO
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input PWO Username "<PwoUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -1249,7 +1249,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Sign Out
     And I Verify Successful Sign Out
     #    WPO
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input WPO Username "<WpoUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -1267,7 +1267,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Successful Sign Out
 
     #    WO/WA
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input WO-WA Username "<WOUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -1294,7 +1294,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Successful Sign Out
 
     #    WPO
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input WPO Username "<WpoUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -1313,8 +1313,8 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Successful Sign Out
 
     #    Applicant after under query
-    Given I am on SFWF Front Office Home Page "<Browser>"
-    When I Input Registered User's Username "<Username>" and Password "<Password>"
+    Given I am on SFWF Front Office Home Page GOC "<Browser>"
+    When I Input Registered User's Username "<Username>" and Password "<FPassword>"
     And I Click on Sign In button
     And I Verify Applicant's Successful Login
     And I Click on Register as Farmer
@@ -1332,7 +1332,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Sign Out as Front Registered User
 
     #    WPO
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input WPO Username "<WpoUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -1349,7 +1349,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Successful Sign Out
 
         #    IT Department
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input IT Department Username "<ITUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -1362,8 +1362,8 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Successful Sign Out
 
 #    Applicant verify status - Card Printed
-    Given I am on SFWF Front Office Home Page "<Browser>"
-    When I Input Registered User's Username "<Username>" and Password "<Password>"
+    Given I am on SFWF Front Office Home Page GOC "<Browser>"
+    When I Input Registered User's Username "<Username>" and Password "<FPassword>"
     And I Click on Sign In button
     And I Verify Applicant's Successful Login
     And I Click on Register as Farmer
@@ -1375,15 +1375,15 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Sign Out as Front Registered User
 
     Examples:
-      |Browser|Username |Password |FUsername|PwoUsername|WpoUsername|WOUsername |ITUsername|Remarks        |Bonafide|Payment_Mode |Amount_To_Pay|Applicant_Title |District   |Education_Level |Act      |Other_Occupation  |Photo                               |Year_dur |Marital_Status|Relationship|Family_Surname|Family_Other_Names|Gender|DOB   |Occupation |Org_acc_no|Crop_Type|Land_Extent|Owner_Type|Plot_Location|Field_Location |Production_System|Total_Extent |Crop_Grown |Plantation_Type|Date_Plantation_Seedling |Upload_test                        |Crop_Status|Additional_Doc_Name      |Bank_Name  |Bank_Branch|Bank_Account_No|Confirmation|App_status|Payment_Status |Payment_method |Card_Number        |Expiry_Month |Expiry_Year|Security_Code|Cardholder_Name|
-      |Chrome |Suraj    |Admin@123|FINANCE  |PWO        |WPO        |WO         |IT_DEPT   |This is a test |Yes     |Cash         |850          |Mr              |Black River|Tertiary        |Full Time|Manager           |src\test\resources\Photo_upload.jpg |1        |Married       |Spouse      |Sanon         |Kirti             |Female|1Jan94|Air Hostess|0001252563|Cane     |2.5        |Tenant    |Moka         |Port Louis     |Sheltered Farming|9            |Pepper     |Interline      |1Aug2030                 |src\test\resources\Upload_Test1.pdf|Harvest    |Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |Credit         |5123-4500-0000-0008|01           |39         |100          |My name        |
+      |Browser|Username     |FPassword      | Password |FUsername|PwoUsername|WpoUsername|WOUsername |ITUsername|Remarks        |Bonafide|Payment_Mode |Amount_To_Pay|Applicant_Title |District   |Education_Level |Act      |Other_Occupation  |Photo                               |Year_dur |Marital_Status|Relationship|Family_Surname|Family_Other_Names|Gender|DOB   |Occupation |Org_acc_no|Crop_Type|Land_Extent|Owner_Type|Plot_Location|Field_Location |Production_System|Total_Extent |Crop_Grown |Plantation_Type|Date_Plantation_Seedling |Upload_test                        |Crop_Status|Additional_Doc_Name      |Bank_Name  |Bank_Branch|Bank_Account_No|Confirmation|App_status|Payment_Status |Payment_method |Card_Number        |Expiry_Month |Expiry_Year|Security_Code|Cardholder_Name|
+      |Chrome |ybhunjun5    |Mauritius1!1710|Admin@123|FINANCE  |PWO        |WPO        |WO         |IT_DEPT   |This is a test |Yes     |Cash         |850          |Mr              |Black River|Tertiary        |Full Time|Manager           |src\test\resources\Photo_upload.jpg |1        |Married       |Spouse      |Sanon         |Kirti             |Female|1Jan94|Air Hostess|0001252563|Cane     |2.5        |Tenant    |Moka         |Port Louis     |Sheltered Farming|9            |Pepper     |Interline      |1Aug2030                 |src\test\resources\Upload_Test1.pdf|Harvest    |Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |Credit         |5123-4500-0000-0008|01           |39         |100          |My name        |
 
 
 #Scenario7
   @Approval_by_BO_Payment_at_counter_for_Tea_grower @Smoke_counter_Tea_grower
   Scenario Outline: Payment at counter for Registration as Tea Grower
-    Given I am on SFWF Front Office Home Page "<Browser>"
-    When I Input Registered User's Username "<Username>" and Password "<Password>"
+    Given I am on SFWF Front Office Home Page GOC "<Browser>"
+    When I Input Registered User's Username "<Username>" and Password "<FPassword>"
     And I Click on Sign In button
     And I Verify Applicant's Successful Login
     And I Click on Register as Farmer
@@ -1445,7 +1445,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     Then I Sign Out as Front Registered User
     #    Finance
     #    Finance
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input Finance Username "<FUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -1461,7 +1461,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Sign Out
     And I Verify Successful Sign Out
 #    PWO
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input PWO Username "<PwoUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -1478,7 +1478,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Sign Out
     And I Verify Successful Sign Out
     #    WPO
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input WPO Username "<WpoUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -1496,7 +1496,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Successful Sign Out
 
     #    WO/WA
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input WO-WA Username "<WOUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -1521,7 +1521,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Successful Sign Out
 
     #    WPO
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input WPO Username "<WpoUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -1540,8 +1540,8 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Successful Sign Out
 
     #    Applicant after under query
-    Given I am on SFWF Front Office Home Page "<Browser>"
-    When I Input Registered User's Username "<Username>" and Password "<Password>"
+    Given I am on SFWF Front Office Home Page GOC "<Browser>"
+    When I Input Registered User's Username "<Username>" and Password "<FPassword>"
     And I Click on Sign In button
     And I Verify Applicant's Successful Login
     And I Click on Register as Farmer
@@ -1559,7 +1559,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Sign Out as Front Registered User
 
     #    WPO
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input WPO Username "<WpoUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -1576,7 +1576,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Successful Sign Out
 
         #    IT Department
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input IT Department Username "<ITUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -1589,8 +1589,8 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Successful Sign Out
 
 #    Applicant verify status - Card Printed
-    Given I am on SFWF Front Office Home Page "<Browser>"
-    When I Input Registered User's Username "<Username>" and Password "<Password>"
+    Given I am on SFWF Front Office Home Page GOC "<Browser>"
+    When I Input Registered User's Username "<Username>" and Password "<FPassword>"
     And I Click on Sign In button
     And I Verify Applicant's Successful Login
     And I Click on Register as Farmer
@@ -1602,15 +1602,15 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Sign Out as Front Registered User
 
     Examples:
-      |Browser|Username |Password |FUsername|PwoUsername|WpoUsername|WOUsername |ITUsername|Remarks        |Bonafide|Payment_Mode |Amount_To_Pay|Applicant_Title |District   |Education_Level |Act      |Other_Occupation  |Photo                               |Year_dur |Marital_Status|Relationship|Family_Surname|Family_Other_Names|Gender|DOB   |Occupation |License|Land_Extent|Owner_Type|Plot_Location|Upload_test                        |Additional_Doc_Name      |Bank_Name  |Bank_Branch|Bank_Account_No|Confirmation|App_status|Payment_Status |Payment_method |Org_acc_no|
-      |Chrome |Suraj    |Admin@123|FINANCE  |PWO        |WPO        |WO         |IT_DEPT   |This is a test |Yes     |Cash         |850          |Mrs              |Port Louis|Tertiary        |Full Time|Manager           |src\test\resources\Photo_upload.jpg |2        |Married       |Spouse      |Keen         |Dafne            |Female|1Jan94|Actress|Tea Grower|2.7        |Tenant    |Moka        |src\test\resources\Upload_Test1.pdf|Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |Counter        |ACC58969      |
+      |Browser|Username     |FPassword      | Password |FUsername|PwoUsername|WpoUsername|WOUsername |ITUsername|Remarks        |Bonafide|Payment_Mode |Amount_To_Pay|Applicant_Title |District   |Education_Level |Act      |Other_Occupation  |Photo                               |Year_dur |Marital_Status|Relationship|Family_Surname|Family_Other_Names|Gender|DOB   |Occupation |License|Land_Extent|Owner_Type|Plot_Location|Upload_test                        |Additional_Doc_Name      |Bank_Name  |Bank_Branch|Bank_Account_No|Confirmation|App_status|Payment_Status |Payment_method |Org_acc_no|
+      |Chrome |ybhunjun5    |Mauritius1!1710|Admin@123|FINANCE  |PWO        |WPO        |WO         |IT_DEPT   |This is a test |Yes     |Cash         |850          |Mrs              |Port Louis|Tertiary        |Full Time|Manager           |src\test\resources\Photo_upload.jpg |2        |Married       |Spouse      |Keen         |Dafne            |Female|1Jan94|Actress|Tea Grower|2.7        |Tenant    |Moka        |src\test\resources\Upload_Test1.pdf|Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |Counter        |ACC58969      |
 
 
 #Scenario8
   @Approval_by_BO_Payment_online_for_Tea_grower @Smoke_online
   Scenario Outline: Payment online for Registration as Tea Grower
-    Given I am on SFWF Front Office Home Page "<Browser>"
-    When I Input Registered User's Username "<Username>" and Password "<Password>"
+    Given I am on SFWF Front Office Home Page GOC "<Browser>"
+    When I Input Registered User's Username "<Username>" and Password "<FPassword>"
     And I Click on Sign In button
     And I Verify Applicant's Successful Login
     And I Click on Register as Farmer
@@ -1675,7 +1675,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Payment Status is changed to Paid
     Then I Sign Out as Front Registered User
 #    PWO
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input PWO Username "<PwoUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -1692,7 +1692,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Sign Out
     And I Verify Successful Sign Out
     #    WPO
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input WPO Username "<WpoUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -1710,7 +1710,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Successful Sign Out
 
     #    WO/WA
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input WO-WA Username "<WOUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -1735,7 +1735,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Successful Sign Out
 
     #    WPO
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input WPO Username "<WpoUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -1754,8 +1754,8 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Successful Sign Out
 
     #    Applicant after under query
-    Given I am on SFWF Front Office Home Page "<Browser>"
-    When I Input Registered User's Username "<Username>" and Password "<Password>"
+    Given I am on SFWF Front Office Home Page GOC "<Browser>"
+    When I Input Registered User's Username "<Username>" and Password "<FPassword>"
     And I Click on Sign In button
     And I Verify Applicant's Successful Login
     And I Click on Register as Farmer
@@ -1773,7 +1773,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Sign Out as Front Registered User
 
     #    WPO
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input WPO Username "<WpoUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -1790,7 +1790,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Successful Sign Out
 
         #    IT Department
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input IT Department Username "<ITUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -1803,8 +1803,8 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Successful Sign Out
 
 #    Applicant verify status - Card Printed
-    Given I am on SFWF Front Office Home Page "<Browser>"
-    When I Input Registered User's Username "<Username>" and Password "<Password>"
+    Given I am on SFWF Front Office Home Page GOC "<Browser>"
+    When I Input Registered User's Username "<Username>" and Password "<FPassword>"
     And I Click on Sign In button
     And I Verify Applicant's Successful Login
     And I Click on Register as Farmer
@@ -1816,15 +1816,15 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Sign Out as Front Registered User
 
     Examples:
-      |Browser|Username |Password |FUsername|PwoUsername|WpoUsername|WOUsername |ITUsername|Remarks        |Bonafide|Payment_Mode |Amount_To_Pay|Applicant_Title |District   |Education_Level |Act      |Other_Occupation  |Photo                               |Year_dur |Marital_Status|Relationship|Family_Surname|Family_Other_Names|Gender|DOB   |Occupation |License    |Land_Extent|Owner_Type|Plot_Location |Upload_test                        |Additional_Doc_Name      |Bank_Name  |Bank_Branch|Bank_Account_No|Confirmation|App_status|Payment_Status |Payment_method |Card_Number        |Expiry_Month |Expiry_Year|Security_Code|Cardholder_Name|Org_acc_no|
-      |Chrome |Suraj    |Admin@123|FINANCE  |PWO        |WPO        |WO         |IT_DEPT   |This is a test |Yes     |Cash         |850          |Mrs              |Port Louis|Tertiary        |Full Time|Manager           |src\test\resources\Photo_upload.jpg |2        |Married       |Spouse      |Keen           |Dafne            |Female|1Jan94|Actress    |Tea Grower |2.7        |Tenant    |Moka          |src\test\resources\Upload_Test1.pdf|Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |Credit         |5123-4500-0000-0008|01           |39         |100          |My name        |ACC5896   |
+      |Browser|Username     |FPassword      | Password |FUsername|PwoUsername|WpoUsername|WOUsername |ITUsername|Remarks        |Bonafide|Payment_Mode |Amount_To_Pay|Applicant_Title |District   |Education_Level |Act      |Other_Occupation  |Photo                               |Year_dur |Marital_Status|Relationship|Family_Surname|Family_Other_Names|Gender|DOB   |Occupation |License    |Land_Extent|Owner_Type|Plot_Location |Upload_test                        |Additional_Doc_Name      |Bank_Name  |Bank_Branch|Bank_Account_No|Confirmation|App_status|Payment_Status |Payment_method |Card_Number        |Expiry_Month |Expiry_Year|Security_Code|Cardholder_Name|Org_acc_no|
+      |Chrome |ybhunjun5    |Mauritius1!1710|Admin@123|FINANCE  |PWO        |WPO        |WO         |IT_DEPT   |This is a test |Yes     |Cash         |850          |Mrs              |Port Louis|Tertiary        |Full Time|Manager           |src\test\resources\Photo_upload.jpg |2        |Married       |Spouse      |Keen           |Dafne            |Female|1Jan94|Actress    |Tea Grower |2.7        |Tenant    |Moka          |src\test\resources\Upload_Test1.pdf|Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |Credit         |5123-4500-0000-0008|01           |39         |100          |My name        |ACC5896   |
 
 #Scenario9
   @Approval_by_BO_Payment_at_counter_for_Registration_as_Small_Breeder
   Scenario Outline: Payment at counter for Registration as Small Breeder
 
-    Given I am on SFWF Front Office Home Page "<Browser>"
-    When I Input Registered User's Username "<Username>" and Password "<Password>"
+    Given I am on SFWF Front Office Home Page GOC "<Browser>"
+    When I Input Registered User's Username "<Username>" and Password "<FPassword>"
     And I Click on Sign In button
     And I Verify Applicant's Successful Login
     And I Click on Register as Farmer
@@ -1914,7 +1914,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     Then I Sign Out as Front Registered User
     #    Finance
     #    Finance
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input Finance Username "<FUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -1930,7 +1930,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Sign Out
     And I Verify Successful Sign Out
 #    PWO
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input PWO Username "<PwoUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -1947,7 +1947,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Sign Out
     And I Verify Successful Sign Out
     #    WPO
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input WPO Username "<WpoUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -1965,7 +1965,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Successful Sign Out
 
     #    WO/WA
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input WO-WA Username "<WOUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -1990,7 +1990,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Successful Sign Out
 
     #    WPO
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input WPO Username "<WpoUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -2009,8 +2009,8 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Successful Sign Out
 
     #    Applicant after under query
-    Given I am on SFWF Front Office Home Page "<Browser>"
-    When I Input Registered User's Username "<Username>" and Password "<Password>"
+    Given I am on SFWF Front Office Home Page GOC "<Browser>"
+    When I Input Registered User's Username "<Username>" and Password "<FPassword>"
     And I Click on Sign In button
     And I Verify Applicant's Successful Login
     And I Click on Register as Farmer
@@ -2028,7 +2028,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Sign Out as Front Registered User
 
     #    WPO
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input WPO Username "<WpoUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -2045,7 +2045,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Successful Sign Out
 
         #    IT Department
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input IT Department Username "<ITUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -2058,8 +2058,8 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Successful Sign Out
 
 #    Applicant verify status - Card Printed
-    Given I am on SFWF Front Office Home Page "<Browser>"
-    When I Input Registered User's Username "<Username>" and Password "<Password>"
+    Given I am on SFWF Front Office Home Page GOC "<Browser>"
+    When I Input Registered User's Username "<Username>" and Password "<FPassword>"
     And I Click on Sign In button
     And I Verify Applicant's Successful Login
     And I Click on Register as Farmer
@@ -2071,16 +2071,16 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Sign Out as Front Registered User
 
     Examples:
-      |Browser|Username |Password |FUsername|PwoUsername|WpoUsername|WOUsername |ITUsername|Remarks        |Bonafide|Payment_Mode |Amount_To_Pay|Applicant_Title |District   |Education_Level |Act      |Other_Occupation  |Photo                               |Year_dur |Marital_Status|Relationship|Family_Surname|Family_Other_Names|Gender|DOB   |Occupation |License    |Land_Extent|Owner_Type|Plot_Location|Spicies |Male_Female_Number|Total_Heads |Reason |Microchip_No|Cattle_Sex|Cattle_Age|Upload_test                        |Additional_Doc_Name      |Bank_Name  |Bank_Branch|Bank_Account_No|Confirmation|App_status|Payment_Status |Payment_method |
-      |Chrome |Suraj    |Admin@123|FINANCE  |PWO        |WPO        |WO         |IT_DEPT   |This is a test |Yes     |Cash         |850          |Mrs              |Port Louis|Tertiary        |Full Time|Manager           |src\test\resources\Photo_upload.jpg |2        |Married       |Spouse      |Keen          |Dafne             |Female|1Jan94|Actress    |Tea Grower |2.7        |Tenant    |Moka         |Cattle  |550               |550         |Meat   |AAA2563     |Male      |1Month    |src\test\resources\Upload_Test1.pdf|Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |Counter        |
+      |Browser|Username     |FPassword      | Password |FUsername|PwoUsername|WpoUsername|WOUsername |ITUsername|Remarks        |Bonafide|Payment_Mode |Amount_To_Pay|Applicant_Title |District   |Education_Level |Act      |Other_Occupation  |Photo                               |Year_dur |Marital_Status|Relationship|Family_Surname|Family_Other_Names|Gender|DOB   |Occupation |License    |Land_Extent|Owner_Type|Plot_Location|Spicies |Male_Female_Number|Total_Heads |Reason |Microchip_No|Cattle_Sex|Cattle_Age|Upload_test                        |Additional_Doc_Name      |Bank_Name  |Bank_Branch|Bank_Account_No|Confirmation|App_status|Payment_Status |Payment_method |
+      |Chrome |ybhunjun5    |Mauritius1!1710|Admin@123|FINANCE  |PWO        |WPO        |WO         |IT_DEPT   |This is a test |Yes     |Cash         |850          |Mrs              |Port Louis|Tertiary        |Full Time|Manager           |src\test\resources\Photo_upload.jpg |2        |Married       |Spouse      |Keen          |Dafne             |Female|1Jan94|Actress    |Tea Grower |2.7        |Tenant    |Moka         |Cattle  |550               |550         |Meat   |AAA2563     |Male      |1Month    |src\test\resources\Upload_Test1.pdf|Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |Counter        |
 
 
     #Scenario10
   @Approval_by_BO_Payment_online_for_Registration_as_Small_Breeder @Smoke_online
   Scenario Outline: Payment online for Registration as Small Breeder
 
-    Given I am on SFWF Front Office Home Page "<Browser>"
-    When I Input Registered User's Username "<Username>" and Password "<Password>"
+    Given I am on SFWF Front Office Home Page GOC "<Browser>"
+    When I Input Registered User's Username "<Username>" and Password "<FPassword>"
     And I Click on Sign In button
     And I Verify Applicant's Successful Login
     And I Click on Register as Farmer
@@ -2173,7 +2173,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Payment Status is changed to Paid
     Then I Sign Out as Front Registered User
  #    PWO
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input PWO Username "<PwoUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -2190,7 +2190,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Sign Out
     And I Verify Successful Sign Out
     #    WPO
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input WPO Username "<WpoUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -2208,7 +2208,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Successful Sign Out
 
     #    WO/WA
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input WO-WA Username "<WOUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -2233,7 +2233,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Successful Sign Out
 
     #    WPO
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input WPO Username "<WpoUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -2252,8 +2252,8 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Successful Sign Out
 
     #    Applicant after under query
-    Given I am on SFWF Front Office Home Page "<Browser>"
-    When I Input Registered User's Username "<Username>" and Password "<Password>"
+    Given I am on SFWF Front Office Home Page GOC "<Browser>"
+    When I Input Registered User's Username "<Username>" and Password "<FPassword>"
     And I Click on Sign In button
     And I Verify Applicant's Successful Login
     And I Click on Register as Farmer
@@ -2271,7 +2271,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Sign Out as Front Registered User
 
     #    WPO
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input WPO Username "<WpoUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -2288,7 +2288,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Successful Sign Out
 
         #    IT Department
-    And I am on SFWF Back Office Home Page "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input IT Department Username "<ITUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
@@ -2301,8 +2301,8 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Verify Successful Sign Out
 
 #    Applicant verify status - Card Printed
-    Given I am on SFWF Front Office Home Page "<Browser>"
-    When I Input Registered User's Username "<Username>" and Password "<Password>"
+    Given I am on SFWF Front Office Home Page GOC "<Browser>"
+    When I Input Registered User's Username "<Username>" and Password "<FPassword>"
     And I Click on Sign In button
     And I Verify Applicant's Successful Login
     And I Click on Register as Farmer
@@ -2314,6 +2314,6 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Sign Out as Front Registered User
 
     Examples:
-      |Browser|Username |Password |FUsername|PwoUsername|WpoUsername|WOUsername |ITUsername|Remarks        |Bonafide|Payment_Mode |Amount_To_Pay|Applicant_Title |District   |Education_Level  |Act      |Other_Occupation  |Photo                               |Year_dur |Marital_Status|Relationship|Family_Surname|Family_Other_Names|Gender|DOB   |Occupation |License    |Land_Extent|Owner_Type|Plot_Location|Spicies |Male_Female_Number|Total_Heads |Reason |Microchip_No|Cattle_Sex|Cattle_Age|Upload_test                        |Additional_Doc_Name      |Bank_Name  |Bank_Branch|Bank_Account_No|Confirmation|App_status|Payment_Status |Payment_method |Card_Number        |Expiry_Month |Expiry_Year|Security_Code|Cardholder_Name|
-      |Chrome |Suraj    |Admin@123|FINANCE  |PWO        |WPO        |WO         |IT_DEPT   |This is a test |Yes     |Cash         |850          |Mrs             |Port Louis  |Tertiary        |Full Time|Manager           |src\test\resources\Photo_upload.jpg |2        |Married       |Spouse      |Keen          |Dafne             |Female|1Jan94|Actress    |Tea Grower |2.7        |Tenant    |Moka         |Cattle  |550               |550         |Meat   |AAA2563     |Male      |1Month    |src\test\resources\Upload_Test1.pdf|Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |Credit         |5123-4500-0000-0008|01           |39         |100          |My name        |
+      |Browser|Username     |FPassword      | Password |FUsername|PwoUsername|WpoUsername|WOUsername |ITUsername|Remarks        |Bonafide|Payment_Mode |Amount_To_Pay|Applicant_Title |District   |Education_Level  |Act      |Other_Occupation  |Photo                               |Year_dur |Marital_Status|Relationship|Family_Surname|Family_Other_Names|Gender|DOB   |Occupation |License    |Land_Extent|Owner_Type|Plot_Location|Spicies |Male_Female_Number|Total_Heads |Reason |Microchip_No|Cattle_Sex|Cattle_Age|Upload_test                        |Additional_Doc_Name      |Bank_Name  |Bank_Branch|Bank_Account_No|Confirmation|App_status|Payment_Status |Payment_method |Card_Number        |Expiry_Month |Expiry_Year|Security_Code|Cardholder_Name|
+      |Chrome |ybhunjun5    |Mauritius1!1710|Admin@123  |FINANCE  |PWO        |WPO        |WO         |IT_DEPT   |This is a test |Yes     |Cash         |850          |Mrs             |Port Louis  |Tertiary        |Full Time|Manager           |src\test\resources\Photo_upload.jpg |2        |Married       |Spouse      |Keen          |Dafne             |Female|1Jan94|Actress    |Tea Grower |2.7        |Tenant    |Moka         |Cattle  |550               |550         |Meat   |AAA2563     |Male      |1Month    |src\test\resources\Upload_Test1.pdf|Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |Credit         |5123-4500-0000-0008|01           |39         |100          |My name        |
 

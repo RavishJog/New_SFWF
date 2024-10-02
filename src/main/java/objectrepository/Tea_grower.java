@@ -93,7 +93,7 @@ public class Tea_grower {
 
 
     //Object for Particulars for Registration of Tea Plantation Page
-    private static By lbl_Particulars_for_Registration_of_Tea_Plantation_page = By.xpath("//h6[contains(.,'Particulars for Registration of Tea Plantation')]");
+    private static By lbl_Particulars_for_Registration_of_Tea_Plantation_page = By.xpath("//h6[contains(.,'Particulars of Crop:Tea Plantation')]");
     public static WebElement Particulars_for_Registration_of_Tea_Plantation_page(WebDriver driver) {
         element = driver.findElement(lbl_Particulars_for_Registration_of_Tea_Plantation_page);
         return element;
@@ -184,6 +184,29 @@ public class Tea_grower {
     private static By txt_Family_child_three = By.xpath("//li[contains(@id, 'familydlg_4')]");
     public static WebElement Family_child_three(WebDriver driver) {
         element = driver.findElement(txt_Family_child_three);
+        return element;
+    }
+    //Object for Registration Membership - Select option
+    private static By opt_Select_one_RM_tea = By.xpath("//label[contains(@id, 'registration_membership_tea_label')]");
+
+    public static WebElement Select_one_RM_tea(WebDriver driver) {
+        element = driver.findElement(opt_Select_one_RM_tea);
+        return element;
+    }
+
+    //Object for Registration Membership - 1 Year
+    private static By opt_One_Year_RM_tea = By.xpath("//li[contains(@id,'registration_membership_tea_1')]");
+
+    public static WebElement One_Year_RM_tea(WebDriver driver) {
+        element = driver.findElement(opt_One_Year_RM_tea);
+        return element;
+    }
+
+    //Object for Registration Membership - 2 Year
+    private static By opt_Two_Years_RM_tea = By.xpath("//li[contains(@id,'registration_membership_tea_2')]");
+
+    public static WebElement Two_Years_RM_tea(WebDriver driver) {
+        element = driver.findElement(opt_Two_Years_RM_tea);
         return element;
     }
 }
