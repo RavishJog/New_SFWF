@@ -1427,8 +1427,6 @@ public class Steps extends Utility {
 
     @And("^I Select No of years for Registration membership \"([^\"]*)\"$")
     public void iSelectNoOfYearsForRegistrationMembership(String Year_dur) throws Throwable {
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);", Small_planters.Single(driver));
-        sleep(1500);
         Farmers_cooperatives_association_society_company.Select_one(driver).click();
         sleep(2000);
         if (Year_dur.equals("1")) {
@@ -3150,5 +3148,22 @@ public class Steps extends Utility {
         } else {
             System.out.println("No browser found");
         }
+    }
+
+    @When("^I Input Registered Maupass User's Username \"([^\"]*)\" and Password \"([^\"]*)\"$")
+    public void iInputRegisteredMaupassUserSUsernameAndPassword(String Username, String FPassword) throws Throwable {
+        WebDriverWait w = new WebDriverWait(driver, 5);
+        WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//span[contains(.,'Farmer')])[1]")));
+        Front_Home_page.Register_as_farmer(driver).click();
+        Thread.sleep(3000);
+        driver.findElement(By.xpath("//a[contains(.,'Log In')]")).click();
+        Thread.sleep(3000);
+        Front_Home_page.Username_maupass(driver).sendKeys(Username);
+        Front_Home_page.Password_maupass(driver).sendKeys(FPassword);
+    }
+
+    @And("^I Click on Sign In button in Maupass$")
+    public void iClickOnSignInButtonInMaupass() {
+        Front_Home_page.Sign_in_button_maupass(driver).click();
     }
 }
