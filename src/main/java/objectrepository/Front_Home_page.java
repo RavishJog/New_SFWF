@@ -148,6 +148,27 @@ public class Front_Home_page {
         return element;
     }
 
+    //Object for Username_maupass
+    private static By txt_Username_maupass = By.xpath("//input[contains(@id,'userEmail-id')]");
+    public static WebElement Username_maupass (WebDriver driver) {
+        element = driver.findElement(txt_Username_maupass );
+        return element;
+    }
+
+    //Object for Password_maupass
+    private static By txt_Password_maupass  = By.xpath("//input[contains(@id,'plainTextPassword')]");
+    public static WebElement Password_maupass (WebDriver driver) {
+        element = driver.findElement(txt_Password_maupass );
+        return element;
+    }
+
+    //Object for Sign In Button_maupass
+    private static By btn_Sign_in_button_maupass  = By.xpath("//button[contains(@id,'kt_login_signin_submit')]");
+    public static WebElement Sign_in_button_maupass (WebDriver driver) {
+        element = driver.findElement(btn_Sign_in_button_maupass );
+        return element;
+    }
+
 }
 
     //Object for XXX
