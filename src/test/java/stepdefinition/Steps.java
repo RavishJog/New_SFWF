@@ -81,15 +81,15 @@ public class Steps extends Utility {
     }
 
 
-    @Given("^I am on SFWF Front Office Home Page \"([^\"]*)\"$")
-    public void iAmOnSFWFFrontOfficeHomePage(String Browser) throws Throwable {
+    @Given("^I am on SFWF Back Office Home Page \"([^\"]*)\"$")
+    public void iAmOnSFWFBackOfficeHomePage(String Browser) throws Throwable {
         if (Browser.equals("Chrome")) {
             setUp();
-            driver.get("https://sfwftest.govmu.org/");
+            driver.get("http://130.1.16.176:18080/sfwfback/");
             driver.manage().window().maximize();
         } else if (Browser.equals("Edge")) {
             setUp();
-            driver.get("https://sfwftest.govmu.org/");
+            driver.get("http://130.1.16.176:18080/sfwfback/");
             driver.manage().window().maximize();
         } else {
             System.out.println("No browser found");
@@ -409,7 +409,7 @@ public class Steps extends Utility {
     }
 
     @Given("^I am on SFWF Front Office Home Page \"([^\"]*)\"$")
-    public void iAmOnSFWFBackOfficeHomePage(String Browser) throws Throwable {
+    public void iAmOnSFWFFrontOfficeHomePage(String Browser) throws Throwable {
         if (Browser.equals("Chrome")) {
             setUp();
 
@@ -3167,15 +3167,33 @@ public class Steps extends Utility {
         Front_Home_page.Sign_in_button_maupass(driver).click();
     }
 
+    @And("^I Click on Programmes$")
+    public void iClickOnProgrammes() {
+        Programme.Programmes(driver).click();
+    }
 
-    @And("^I verify display of programme menu$")
-    public void iVerifyDisplayOfProgrammeMenu() {
+    @And("^I Verify Programme Type Page$")
+    public void iVerifyProgrammeTypePage() {
+        WebDriverWait w = new WebDriverWait(driver, 5);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h1[contains(.,'Programme Type')]")));
         try {
-            Programmes.programme_lbl(driver);
+            Programme.Programme_page(driver);
         } catch (Exception e) {
-            System.out.println("Programme did not appear");
-            Assert.fail("Programme did not appear");
+            System.out.println("Programme Type Page did not appear");
+            Assert.fail("Programme Type Page did not appear");
         }
+    }
 
+    @And("^I Click to Apply for Fertiliser Subsidy \\(FSS\\)$")
+    public void iClickToApplyForFertiliserSubsidyFSS() throws InterruptedException {
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);", FSS.Fert_Scheme(driver));
+        Thread.sleep(1000);
+        try {
+            FSS.Fert_Scheme(driver);
+        } catch (Exception e) {
+            System.out.println("Link for fertilizer scheme did not appear");
+            Assert.fail("Link for fertilizer scheme did not appear");
+        }
+        FSS.Fert_Scheme(driver).click();
     }
 }
