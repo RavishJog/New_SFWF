@@ -3166,4 +3166,34 @@ public class Steps extends Utility {
     public void iClickOnSignInButtonInMaupass() {
         Front_Home_page.Sign_in_button_maupass(driver).click();
     }
+
+    @And("^I Click on Programmes$")
+    public void iClickOnProgrammes() {
+        Programme.Programmes(driver).click();
+    }
+
+    @And("^I Verify Programme Type Page$")
+    public void iVerifyProgrammeTypePage() {
+        WebDriverWait w = new WebDriverWait(driver, 5);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h1[contains(.,'Programme Type')]")));
+        try {
+            Programme.Programme_page(driver);
+        } catch (Exception e) {
+            System.out.println("Programme Type Page did not appear");
+            Assert.fail("Programme Type Page did not appear");
+        }
+    }
+
+    @And("^I Click to Apply for Fertiliser Subsidy \\(FSS\\)$")
+    public void iClickToApplyForFertiliserSubsidyFSS() throws InterruptedException {
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);", FSS.Fert_Scheme(driver));
+        Thread.sleep(1000);
+        try {
+            FSS.Fert_Scheme(driver);
+        } catch (Exception e) {
+            System.out.println("Link for fertilizer scheme did not appear");
+            Assert.fail("Link for fertilizer scheme did not appear");
+        }
+        FSS.Fert_Scheme(driver).click();
+    }
 }

@@ -72,7 +72,7 @@ public class Front_Home_page {
     }
 
     //Object for Programmes
-    private static By lbl_Programmes = By.xpath("//a[contains(@href,'applicantlists:programmes')]");
+    private static By lbl_Programmes = By.xpath("//span[contains(.,'Programmes')]");
     public static WebElement Programmes(WebDriver driver) {
         element = driver.findElement(lbl_Programmes);
         return element;
