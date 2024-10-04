@@ -81,15 +81,15 @@ public class Steps extends Utility {
     }
 
 
-    @Given("^I am on SFWF Back Office Home Page \"([^\"]*)\"$")
-    public void iAmOnSFWFBackOfficeHomePage(String Browser) throws Throwable {
+    @Given("^I am on SFWF Front Office Home Page \"([^\"]*)\"$")
+    public void iAmOnSFWFFrontOfficeHomePage(String Browser) throws Throwable {
         if (Browser.equals("Chrome")) {
             setUp();
-            driver.get("http://130.1.16.176:18080/sfwfback/");
+            driver.get("https://sfwftest.govmu.org/");
             driver.manage().window().maximize();
         } else if (Browser.equals("Edge")) {
             setUp();
-            driver.get("http://130.1.16.176:18080/sfwfback/");
+            driver.get("https://sfwftest.govmu.org/");
             driver.manage().window().maximize();
         } else {
             System.out.println("No browser found");
@@ -409,7 +409,7 @@ public class Steps extends Utility {
     }
 
     @Given("^I am on SFWF Front Office Home Page \"([^\"]*)\"$")
-    public void iAmOnSFWFFrontOfficeHomePage(String Browser) throws Throwable {
+    public void iAmOnSFWFBackOfficeHomePage(String Browser) throws Throwable {
         if (Browser.equals("Chrome")) {
             setUp();
 
@@ -3165,5 +3165,17 @@ public class Steps extends Utility {
     @And("^I Click on Sign In button in Maupass$")
     public void iClickOnSignInButtonInMaupass() {
         Front_Home_page.Sign_in_button_maupass(driver).click();
+    }
+
+
+    @And("^I verify display of programme menu$")
+    public void iVerifyDisplayOfProgrammeMenu() {
+        try {
+            Programmes.programme_lbl(driver);
+        } catch (Exception e) {
+            System.out.println("Programme did not appear");
+            Assert.fail("Programme did not appear");
+        }
+
     }
 }

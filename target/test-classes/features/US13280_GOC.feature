@@ -4,7 +4,7 @@
 Feature: User Story 13280-GOC - Back Office Process for Registration
 
    #Scenario1
-  @Approval_by_BO_Payment_at_counter_for_Agro-Processing-Enterprise @GOC_Smoke_counter_Agro-Processing-Enterprise
+  @Approval_by_BO_Payment_at_counter_for_Agro-Processing-Enterprise @Smoke_counter_Agro-Processing-Enterprise
   Scenario Outline: Approval for Payment at counter for Registration as Agro-Processing Enterprise-Application form
 
     Given I am on SFWF Front Office Home Page GOC "<Browser>"
