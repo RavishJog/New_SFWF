@@ -23,10 +23,6 @@ formatter.feature({
     {
       "line": 3,
       "name": "@Regression"
-    },
-    {
-      "line": 3,
-      "name": "@GOC"
     }
   ]
 });
@@ -50,7 +46,11 @@ formatter.scenarioOutline({
     },
     {
       "line": 7,
-      "name": "@GOC_Smoke_counter_Agro-Processing-Enterprise"
+      "name": "@Smoke_counter_Agro-Processing-Enterprise"
+    },
+    {
+      "line": 7,
+      "name": "@GOC"
     }
   ]
 });
@@ -1191,7 +1191,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 135900,
+  "duration": 122600,
   "status": "passed"
 });
 formatter.scenario({
@@ -1207,6 +1207,10 @@ formatter.scenario({
       "name": "@Main_feature"
     },
     {
+      "line": 7,
+      "name": "@Smoke_counter_Agro-Processing-Enterprise"
+    },
+    {
       "line": 3,
       "name": "@US13280"
     },
@@ -1216,10 +1220,6 @@ formatter.scenario({
     },
     {
       "line": 7,
-      "name": "@GOC_Smoke_counter_Agro-Processing-Enterprise"
-    },
-    {
-      "line": 3,
       "name": "@GOC"
     },
     {
@@ -2459,7 +2459,7 @@ formatter.match({
   "location": "Steps.iAmOnSFWFFrontOfficeHomePageGOC(String)"
 });
 formatter.result({
-  "duration": 15955157900,
+  "duration": 5606965800,
   "status": "passed"
 });
 formatter.match({
@@ -2476,77 +2476,77 @@ formatter.match({
   "location": "Steps.iInputRegisteredMaupassUserSUsernameAndPassword(String,String)"
 });
 formatter.result({
-  "duration": 39195809700,
+  "duration": 10909316100,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnSignInButtonInMaupass()"
 });
 formatter.result({
-  "duration": 60567500,
+  "duration": 60231600,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyApplicantSSuccessfulLogin()"
 });
 formatter.result({
-  "duration": 1817783000,
+  "duration": 28461234800,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnRegisterAsFarmer()"
 });
 formatter.result({
-  "duration": 455426600,
+  "duration": 467398200,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyThatUserIsDirectedToMyApplicationPage()"
 });
 formatter.result({
-  "duration": 22973700,
+  "duration": 23731500,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyDisplayOfFarmersCardLink()"
 });
 formatter.result({
-  "duration": 10288800,
+  "duration": 15127500,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyProgrammesLink()"
 });
 formatter.result({
-  "duration": 15701700,
+  "duration": 14561200,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnNewButtonToApplyForRegistration()"
 });
 formatter.result({
-  "duration": 177115100,
+  "duration": 780366600,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyDisplayOfRegistrationTypePage()"
 });
 formatter.result({
-  "duration": 92803600,
+  "duration": 25070200,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnAgroProcessingEnterprise()"
 });
 formatter.result({
-  "duration": 2401492600,
+  "duration": 2378043300,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyDisplayOfREGISTRATIONFORAGROPROCESSINGENTERPRISEPage()"
 });
 formatter.result({
-  "duration": 69720000,
+  "duration": 70311800,
   "status": "passed"
 });
 formatter.match({
@@ -2559,7 +2559,7 @@ formatter.match({
   "location": "Steps.iInputAssociateSocietyCompanyName(String)"
 });
 formatter.result({
-  "duration": 58016500,
+  "duration": 75070200,
   "status": "passed"
 });
 formatter.match({
@@ -2572,7 +2572,7 @@ formatter.match({
   "location": "Steps.iInputRepresentedBy(String)"
 });
 formatter.result({
-  "duration": 60005200,
+  "duration": 62978400,
   "status": "passed"
 });
 formatter.match({
@@ -2585,7 +2585,7 @@ formatter.match({
   "location": "Steps.iInputBusinessRegistrationNoBRNForAgroProcessingEnterprise(String)"
 });
 formatter.result({
-  "duration": 60544600,
+  "duration": 71330000,
   "status": "passed"
 });
 formatter.match({
@@ -2598,7 +2598,7 @@ formatter.match({
   "location": "Steps.iInputCertificateOfIncorporationNoForAgroProcessingEnterprise(String)"
 });
 formatter.result({
-  "duration": 61978900,
+  "duration": 55619800,
   "status": "passed"
 });
 formatter.match({
@@ -2611,7 +2611,7 @@ formatter.match({
   "location": "Steps.iSelectActivity(String)"
 });
 formatter.result({
-  "duration": 51920100,
+  "duration": 51173100,
   "status": "passed"
 });
 formatter.match({
@@ -2624,7 +2624,7 @@ formatter.match({
   "location": "Steps.iInputOfficeAddress(String)"
 });
 formatter.result({
-  "duration": 66777300,
+  "duration": 68555000,
   "status": "passed"
 });
 formatter.match({
@@ -2637,7 +2637,7 @@ formatter.match({
   "location": "Steps.iInputEnterpriseAddress(String)"
 });
 formatter.result({
-  "duration": 73303200,
+  "duration": 71335100,
   "status": "passed"
 });
 formatter.match({
@@ -2650,7 +2650,7 @@ formatter.match({
   "location": "Steps.iSelectNoOfYearsForRegistrationMembership(String)"
 });
 formatter.result({
-  "duration": 4140494000,
+  "duration": 4154505400,
   "status": "passed"
 });
 formatter.match({
@@ -2663,7 +2663,7 @@ formatter.match({
   "location": "Steps.iInputListOfProductsManufactured(String)"
 });
 formatter.result({
-  "duration": 4286467600,
+  "duration": 4273368600,
   "status": "passed"
 });
 formatter.match({
@@ -2676,21 +2676,21 @@ formatter.match({
   "location": "Steps.iSelectStatusOfApplicantForAgroProcessingEnterprise(String)"
 });
 formatter.result({
-  "duration": 1638994000,
+  "duration": 1657304200,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnSaveAndContinue()"
 });
 formatter.result({
-  "duration": 6172781400,
+  "duration": 6181692900,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyUploadRequiredDocumentsPageIsDisplayed()"
 });
 formatter.result({
-  "duration": 92721600,
+  "duration": 81119900,
   "status": "passed"
 });
 formatter.match({
@@ -2703,7 +2703,7 @@ formatter.match({
   "location": "Steps.iUploadBusinessRegistrationCard(String)"
 });
 formatter.result({
-  "duration": 606610900,
+  "duration": 1150429100,
   "status": "passed"
 });
 formatter.match({
@@ -2716,7 +2716,7 @@ formatter.match({
   "location": "Steps.iUploadCertificateOfIncorporation(String)"
 });
 formatter.result({
-  "duration": 580041000,
+  "duration": 1120509300,
   "status": "passed"
 });
 formatter.match({
@@ -2729,7 +2729,7 @@ formatter.match({
   "location": "Steps.iUploadListOfDirectorsAssociates(String)"
 });
 formatter.result({
-  "duration": 601732400,
+  "duration": 581997000,
   "status": "passed"
 });
 formatter.match({
@@ -2742,7 +2742,7 @@ formatter.match({
   "location": "Steps.iUploadBoardResolutionOfEnterpriseForAppointmentOfRepresentativeS(String)"
 });
 formatter.result({
-  "duration": 577514600,
+  "duration": 1098030800,
   "status": "passed"
 });
 formatter.match({
@@ -2755,7 +2755,7 @@ formatter.match({
   "location": "Steps.iUploadNationalIdentityCardOfRepresentative(String)"
 });
 formatter.result({
-  "duration": 631669500,
+  "duration": 589682000,
   "status": "passed"
 });
 formatter.match({
@@ -2768,7 +2768,7 @@ formatter.match({
   "location": "Steps.iUploadLocationPlanDocument(String)"
 });
 formatter.result({
-  "duration": 589776800,
+  "duration": 2729943000,
   "status": "passed"
 });
 formatter.match({
@@ -2781,7 +2781,7 @@ formatter.match({
   "location": "Steps.iUploadCopyOfSMEDACertificateDocument(String)"
 });
 formatter.result({
-  "duration": 635960300,
+  "duration": 2722253300,
   "status": "passed"
 });
 formatter.match({
@@ -2794,21 +2794,21 @@ formatter.match({
   "location": "Steps.iUploadCopyOfUtilityBillDocument(String)"
 });
 formatter.result({
-  "duration": 1163971900,
+  "duration": 572955200,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyForDocumentUploadSuccessMessage()"
 });
 formatter.result({
-  "duration": 35396700,
+  "duration": 25921900,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnAddAdditionalDocument()"
 });
 formatter.result({
-  "duration": 3156035700,
+  "duration": 3098144800,
   "status": "passed"
 });
 formatter.match({
@@ -2821,14 +2821,14 @@ formatter.match({
   "location": "Steps.iInputAdditionalDocumentName(String)"
 });
 formatter.result({
-  "duration": 1631028800,
+  "duration": 1634102300,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifySuccessMessageForAddingAdditionalDocumentName()"
 });
 formatter.result({
-  "duration": 28629200,
+  "duration": 29221400,
   "status": "passed"
 });
 formatter.match({
@@ -2841,35 +2841,35 @@ formatter.match({
   "location": "Steps.iUploadAdditionalDocument(String)"
 });
 formatter.result({
-  "duration": 1142835700,
+  "duration": 1126186200,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyForDocumentUploadSuccessMessage()"
 });
 formatter.result({
-  "duration": 7767600,
+  "duration": 8224000,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnSaveAndContinue()"
 });
 formatter.result({
-  "duration": 6183486500,
+  "duration": 6181448200,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyTermsAndConditionsPage()"
 });
 formatter.result({
-  "duration": 68286600,
+  "duration": 69344100,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnIAgreeToTheTermsAndConditions()"
 });
 formatter.result({
-  "duration": 78361800,
+  "duration": 80382800,
   "status": "passed"
 });
 formatter.match({
@@ -2882,7 +2882,7 @@ formatter.match({
   "location": "Steps.iSelectBank(String)"
 });
 formatter.result({
-  "duration": 4291540000,
+  "duration": 4782556900,
   "status": "passed"
 });
 formatter.match({
@@ -2895,7 +2895,7 @@ formatter.match({
   "location": "Steps.iInputBankBranchForAgroProcessingEnterprise(String)"
 });
 formatter.result({
-  "duration": 1156760200,
+  "duration": 1108016700,
   "status": "passed"
 });
 formatter.match({
@@ -2908,7 +2908,7 @@ formatter.match({
   "location": "Steps.iInputPersonalBankAccountNumberAgroProcessingEnterprise(String)"
 });
 formatter.result({
-  "duration": 1095573300,
+  "duration": 1100766300,
   "status": "passed"
 });
 formatter.match({
@@ -2921,14 +2921,14 @@ formatter.match({
   "location": "Steps.iClickOnSubmitApplication(String)"
 });
 formatter.result({
-  "duration": 3503475300,
+  "duration": 3676903900,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifySuccessMessageForApplicationSubmitted()"
 });
 formatter.result({
-  "duration": 10158400200,
+  "duration": 16121921500,
   "status": "passed"
 });
 formatter.match({
@@ -2941,7 +2941,7 @@ formatter.match({
   "location": "Steps.iVerifyApplicationStatus(String)"
 });
 formatter.result({
-  "duration": 41963900,
+  "duration": 50648700,
   "status": "passed"
 });
 formatter.match({
@@ -2954,42 +2954,42 @@ formatter.match({
   "location": "Steps.iVerifyPaymentStatus(String)"
 });
 formatter.result({
-  "duration": 85800,
+  "duration": 114700,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iCopyApplicationNumber()"
 });
 formatter.result({
-  "duration": 43797500,
+  "duration": 107832200,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnShoppingCartForPayment()"
 });
 formatter.result({
-  "duration": 2622654500,
+  "duration": 2649072600,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.IselectApplicationForPayment()"
 });
 formatter.result({
-  "duration": 2219112600,
+  "duration": 2208469400,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnProceedToPayment()"
 });
 formatter.result({
-  "duration": 602308800,
+  "duration": 603267100,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnPaymentIcon()"
 });
 formatter.result({
-  "duration": 603459300,
+  "duration": 1176465600,
   "status": "passed"
 });
 formatter.match({
@@ -3002,28 +3002,28 @@ formatter.match({
   "location": "Steps.iSelectPaymentMethod(String)"
 });
 formatter.result({
-  "duration": 5151081700,
+  "duration": 5180541700,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnFinalProceedToPayment()"
 });
 formatter.result({
-  "duration": 2105812500,
+  "duration": 2123693400,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyMessageToProceedToPostOfficeForPayment()"
 });
 formatter.result({
-  "duration": 8051385400,
+  "duration": 8077117900,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iSignOutAsFrontRegisteredUser()"
 });
 formatter.result({
-  "duration": 8432172600,
+  "duration": 12142517500,
   "status": "passed"
 });
 formatter.match({
@@ -3036,7 +3036,7 @@ formatter.match({
   "location": "Steps.iAmOnSFWFBackOfficeHomePageGOC(String)"
 });
 formatter.result({
-  "duration": 2743352500,
+  "duration": 11271060300,
   "status": "passed"
 });
 formatter.match({
@@ -3053,35 +3053,35 @@ formatter.match({
   "location": "Steps.iInputFinanceUsernameAndPassword(String,String)"
 });
 formatter.result({
-  "duration": 231484300,
+  "duration": 180946500,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnSignInButton()"
 });
 formatter.result({
-  "duration": 1439288400,
+  "duration": 737713800,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.IVerifySuccessfulLogin()"
 });
 formatter.result({
-  "duration": 82456400,
+  "duration": 61789900,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnManageCashier()"
 });
 formatter.result({
-  "duration": 68247300,
+  "duration": 54729500,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyListOfApplicationsPage()"
 });
 formatter.result({
-  "duration": 11650991700,
+  "duration": 11735178900,
   "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //h6[contains(.,\u0027List of Applications\u0027)] (tried for 10 second(s) with 500 MILLISECONDS interval)\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)\r\n\tat stepdefinition.Steps.iVerifyListOfApplicationsPage(Steps.java:1981)\r\n\tat ✽.And I Verify List of Applications page(features/US13280_GOC.feature:73)\r\nCaused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //h6[contains(.,\u0027List of Applications\u0027)]\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.4.0\u0027, revision: \u0027unknown\u0027, time: \u0027unknown\u0027\nSystem info: host: \u0027SIL-LTDELLI7-G6\u0027, ip: \u0027130.1.19.132\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_371\u0027\nDriver info: driver.version: unknown\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:883)\r\n\tat java.util.Optional.orElseThrow(Optional.java:290)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:183)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:180)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)\r\n\tat stepdefinition.Steps.iVerifyListOfApplicationsPage(Steps.java:1981)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:40)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:34)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\r\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:300)\r\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\r\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\r\n\tat cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)\r\n\tat cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)\r\n\tat cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:50)\r\n\tat cucumbertest.TestRunner_web.runCukes(TestRunner_web.java:25)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)\r\n\tat org.testng.internal.Invoker.invokeMethod(Invoker.java:643)\r\n\tat org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)\r\n\tat org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)\r\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)\r\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)\r\n\tat org.testng.TestRunner.privateRun(TestRunner.java:782)\r\n\tat org.testng.TestRunner.run(TestRunner.java:632)\r\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:366)\r\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)\r\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)\r\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:268)\r\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)\r\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)\r\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)\r\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1169)\r\n\tat org.testng.TestNG.run(TestNG.java:1064)\r\n\tat org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)\r\n\tat org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:110)\r\n\tat org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)\r\n\tat org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)\r\n\tat org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)\r\n",
   "status": "failed"
 });
@@ -4060,11 +4060,11 @@ formatter.result({
   "status": "skipped"
 });
 formatter.after({
-  "duration": 1034025700,
+  "duration": 1090317700,
   "status": "passed"
 });
 formatter.after({
-  "duration": 200200,
+  "duration": 189000,
   "status": "passed"
 });
 });
