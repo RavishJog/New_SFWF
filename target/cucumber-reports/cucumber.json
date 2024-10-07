@@ -3,20 +3,16 @@
     "comments": [
       {
         "line": 1,
-        "value": "#User Story 13361 -Form - Fertiliser Subsidy Scheme (FSS)"
-      },
-      {
-        "line": 2,
-        "value": "#User Story 14928 -12 Supplier - Manager User - Assigned Application List"
+        "value": "#User Story 13362 - Bio Farming Support Scheme"
       }
     ],
-    "line": 5,
+    "line": 4,
     "elements": [
       {
         "before": [
           {
             "result": {
-              "duration": 139000,
+              "duration": 103600,
               "status": "passed"
             },
             "match": {
@@ -25,13 +21,13 @@
           }
         ],
         "line": 29,
-        "name": "Application for Subsidy scheme (FSS)and workflow",
+        "name": "Application to Register as Bio Farming Support Scheme",
         "description": "",
-        "id": "user-story-13361-and-14829--form---fertiliser-subsidy-scheme-(fss)-and-workflow;application-for-subsidy-scheme-(fss)and-workflow;;2",
+        "id": "user-story-13362-goc---register-as-bio-farming-support-scheme;application-to-register-as-bio-farming-support-scheme;;2",
         "after": [
           {
             "result": {
-              "duration": 91087500,
+              "duration": 194796100,
               "status": "passed"
             },
             "match": {
@@ -40,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 55900,
+              "duration": 91200,
               "status": "passed"
             },
             "match": {
@@ -53,10 +49,10 @@
         "steps": [
           {
             "result": {
-              "duration": 6458768900,
+              "duration": 8820453900,
               "status": "passed"
             },
-            "line": 11,
+            "line": 10,
             "name": "I am on SFWF Front Office Home Page GOC \"Chrome\"",
             "match": {
               "arguments": [
@@ -74,20 +70,20 @@
           },
           {
             "result": {
-              "duration": 8219513700,
+              "duration": 8184276700,
               "status": "passed"
             },
-            "line": 12,
-            "name": "I Input Registered Maupass User\u0027s Username \"vramachundren\" and Password \"Ashven1206!\"",
+            "line": 11,
+            "name": "I Input Registered Maupass User\u0027s Username \"ybhunjun5\" and Password \"Mauritius1!1710\"",
             "match": {
               "arguments": [
                 {
-                  "val": "vramachundren",
+                  "val": "ybhunjun5",
                   "offset": 44
                 },
                 {
-                  "val": "Ashven1206!",
-                  "offset": 73
+                  "val": "Mauritius1!1710",
+                  "offset": 69
                 }
               ],
               "location": "Steps.iInputRegisteredMaupassUserSUsernameAndPassword(String,String)"
@@ -100,10 +96,10 @@
           },
           {
             "result": {
-              "duration": 80090200,
+              "duration": 64186000,
               "status": "passed"
             },
-            "line": 13,
+            "line": 12,
             "name": "I Click on Sign In button in Maupass",
             "match": {
               "location": "Steps.iClickOnSignInButtonInMaupass()"
@@ -112,10 +108,10 @@
           },
           {
             "result": {
-              "duration": 2091107700,
+              "duration": 5293530100,
               "status": "passed"
             },
-            "line": 14,
+            "line": 13,
             "name": "I Verify Applicant\u0027s Successful Login",
             "match": {
               "location": "Steps.iVerifyApplicantSSuccessfulLogin()"
@@ -124,10 +120,10 @@
           },
           {
             "result": {
-              "duration": 504551000,
+              "duration": 743754000,
               "status": "passed"
             },
-            "line": 15,
+            "line": 14,
             "name": "I Click on Register as Farmer",
             "match": {
               "location": "Steps.iClickOnRegisterAsFarmer()"
@@ -136,10 +132,10 @@
           },
           {
             "result": {
-              "duration": 25090900,
+              "duration": 18768600,
               "status": "passed"
             },
-            "line": 16,
+            "line": 15,
             "name": "I Verify that User is directed to My Application Page",
             "match": {
               "location": "Steps.iVerifyThatUserIsDirectedToMyApplicationPage()"
@@ -148,10 +144,10 @@
           },
           {
             "result": {
-              "duration": 29274500,
+              "duration": 24013400,
               "status": "passed"
             },
-            "line": 17,
+            "line": 16,
             "name": "I Verify display of Farmers Card link",
             "match": {
               "location": "Steps.iVerifyDisplayOfFarmersCardLink()"
@@ -160,10 +156,10 @@
           },
           {
             "result": {
-              "duration": 25102800,
+              "duration": 13384300,
               "status": "passed"
             },
-            "line": 18,
+            "line": 17,
             "name": "I Verify Programmes link",
             "match": {
               "location": "Steps.iVerifyProgrammesLink()"
@@ -172,10 +168,10 @@
           },
           {
             "result": {
-              "duration": 5834516000,
+              "duration": 921754600,
               "status": "passed"
             },
-            "line": 19,
+            "line": 18,
             "name": "I Click on Programmes",
             "match": {
               "location": "Steps.iClickOnProgrammes()"
@@ -184,10 +180,22 @@
           },
           {
             "result": {
-              "duration": 46072900,
+              "duration": 3023154300,
               "status": "passed"
             },
-            "line": 20,
+            "line": 19,
+            "name": "I Click on New Programmes",
+            "match": {
+              "location": "Steps.iClickOnNewProgrammes()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 32536800,
+              "status": "passed"
+            },
+            "line": 21,
             "name": "I Verify Programme Type Page",
             "match": {
               "location": "Steps.iVerifyProgrammeTypePage()"
@@ -196,22 +204,22 @@
           },
           {
             "result": {
-              "duration": 1806589200,
+              "duration": 1633119500,
               "status": "passed"
             },
-            "line": 21,
-            "name": "I Click to Apply for Fertiliser Subsidy (FSS)",
+            "line": 22,
+            "name": "I click to apply for Bio Farming support scheme",
             "match": {
-              "location": "Steps.iClickToApplyForFertiliserSubsidyFSS()"
+              "location": "Steps.iClickToApplyForBioFarmingSupportScheme()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 9258998100,
+              "duration": 9389127800,
               "status": "passed"
             },
-            "line": 22,
+            "line": 24,
             "name": "I Sign Out as Front Registered User",
             "match": {
               "location": "Steps.iSignOutAsFrontRegisteredUser()"
@@ -221,37 +229,37 @@
         ],
         "tags": [
           {
-            "line": 4,
+            "line": 3,
             "name": "@Main_feature"
           },
           {
-            "line": 8,
-            "name": "@Fertilizer_FSS"
+            "line": 7,
+            "name": "@Scheme"
           },
           {
-            "line": 4,
-            "name": "@US13361_14829"
+            "line": 3,
+            "name": "@US13362"
           },
           {
-            "line": 8,
-            "name": "@Application_for_Supplier_subsidy_workflow"
+            "line": 7,
+            "name": "@Registration_as_Bio_Farming_Support_scheme"
           }
         ]
       }
     ],
-    "name": "User Story 13361 and 14829 -Form - Fertiliser Subsidy Scheme (FSS) and workflow",
+    "name": "User story 13362-GOC - Register as Bio Farming support scheme",
     "description": "",
-    "id": "user-story-13361-and-14829--form---fertiliser-subsidy-scheme-(fss)-and-workflow",
+    "id": "user-story-13362-goc---register-as-bio-farming-support-scheme",
     "keyword": "Feature",
-    "uri": "features/US13361_14829.feature",
+    "uri": "features/US 13362.feature",
     "tags": [
       {
-        "line": 4,
+        "line": 3,
         "name": "@Main_feature"
       },
       {
-        "line": 4,
-        "name": "@US13361_14829"
+        "line": 3,
+        "name": "@US13362"
       }
     ]
   }

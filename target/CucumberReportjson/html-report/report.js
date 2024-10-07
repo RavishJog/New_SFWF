@@ -1,112 +1,113 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("features/US13361_14829.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("features/US 13362.feature");
 formatter.feature({
   "comments": [
     {
       "line": 1,
-      "value": "#User Story 13361 -Form - Fertiliser Subsidy Scheme (FSS)"
-    },
-    {
-      "line": 2,
-      "value": "#User Story 14928 -12 Supplier - Manager User - Assigned Application List"
+      "value": "#User Story 13362 - Bio Farming Support Scheme"
     }
   ],
-  "line": 5,
-  "name": "User Story 13361 and 14829 -Form - Fertiliser Subsidy Scheme (FSS) and workflow",
+  "line": 4,
+  "name": "User story 13362-GOC - Register as Bio Farming support scheme",
   "description": "",
-  "id": "user-story-13361-and-14829--form---fertiliser-subsidy-scheme-(fss)-and-workflow",
+  "id": "user-story-13362-goc---register-as-bio-farming-support-scheme",
   "keyword": "Feature",
   "tags": [
     {
-      "line": 4,
+      "line": 3,
       "name": "@Main_feature"
     },
     {
-      "line": 4,
-      "name": "@US13361_14829"
+      "line": 3,
+      "name": "@US13362"
     }
   ]
 });
 formatter.scenarioOutline({
   "comments": [
     {
-      "line": 7,
+      "line": 6,
       "value": "#Scenario1"
     }
   ],
-  "line": 9,
-  "name": "Application for Subsidy scheme (FSS)and workflow",
+  "line": 8,
+  "name": "Application to Register as Bio Farming Support Scheme",
   "description": "",
-  "id": "user-story-13361-and-14829--form---fertiliser-subsidy-scheme-(fss)-and-workflow;application-for-subsidy-scheme-(fss)and-workflow",
+  "id": "user-story-13362-goc---register-as-bio-farming-support-scheme;application-to-register-as-bio-farming-support-scheme",
   "type": "scenario_outline",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 8,
-      "name": "@Application_for_Supplier_subsidy_workflow"
+      "line": 7,
+      "name": "@Registration_as_Bio_Farming_Support_scheme"
     },
     {
-      "line": 8,
-      "name": "@Fertilizer_FSS"
+      "line": 7,
+      "name": "@Scheme"
     }
   ]
 });
 formatter.step({
-  "line": 11,
+  "line": 10,
   "name": "I am on SFWF Front Office Home Page GOC \"\u003cBrowser\u003e\"",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 12,
+  "line": 11,
   "name": "I Input Registered Maupass User\u0027s Username \"\u003cUsername\u003e\" and Password \"\u003cFPassword\u003e\"",
   "keyword": "When "
 });
 formatter.step({
-  "line": 13,
+  "line": 12,
   "name": "I Click on Sign In button in Maupass",
   "keyword": "And "
 });
 formatter.step({
-  "line": 14,
+  "line": 13,
   "name": "I Verify Applicant\u0027s Successful Login",
   "keyword": "And "
 });
 formatter.step({
-  "line": 15,
+  "line": 14,
   "name": "I Click on Register as Farmer",
   "keyword": "And "
 });
 formatter.step({
-  "line": 16,
+  "line": 15,
   "name": "I Verify that User is directed to My Application Page",
   "keyword": "And "
 });
 formatter.step({
-  "line": 17,
+  "line": 16,
   "name": "I Verify display of Farmers Card link",
   "keyword": "And "
 });
 formatter.step({
-  "line": 18,
+  "line": 17,
   "name": "I Verify Programmes link",
   "keyword": "And "
 });
 formatter.step({
-  "line": 19,
+  "line": 18,
   "name": "I Click on Programmes",
   "keyword": "And "
 });
 formatter.step({
-  "line": 20,
-  "name": "I Verify Programme Type Page",
+  "line": 19,
+  "name": "I Click on New Programmes",
   "keyword": "And "
 });
 formatter.step({
   "line": 21,
-  "name": "I Click to Apply for Fertiliser Subsidy (FSS)",
+  "name": "I Verify Programme Type Page",
   "keyword": "And "
 });
 formatter.step({
   "line": 22,
+  "name": "I click to apply for Bio Farming support scheme",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 24,
   "name": "I Sign Out as Front Registered User",
   "keyword": "Then "
 });
@@ -114,107 +115,131 @@ formatter.examples({
   "line": 27,
   "name": "",
   "description": "",
-  "id": "user-story-13361-and-14829--form---fertiliser-subsidy-scheme-(fss)-and-workflow;application-for-subsidy-scheme-(fss)and-workflow;",
+  "id": "user-story-13362-goc---register-as-bio-farming-support-scheme;application-to-register-as-bio-farming-support-scheme;",
   "rows": [
     {
       "cells": [
         "Browser",
         "Username",
         "FPassword",
-        "Password",
-        "Co_Name",
-        "Rep_by",
-        "BRN",
-        "Cert_No",
+        "Applicant_Title",
+        "District",
+        "Education_Level",
         "Act",
-        "Off_Add",
-        "Enterprise_Address",
-        "Status_Applicant",
+        "Other_Occupation",
+        "Photo",
         "Year_dur",
-        "Prod_man",
-        "No_person",
-        "Actual_ann_turnover",
-        "Status_business",
-        "Years_operation",
+        "Marital_Status",
+        "Relationship",
+        "Family_Surname",
+        "Family_Other_Names",
+        "Gender",
+        "DOB",
+        "Occupation",
+        "Org_acc_no",
+        "Crop_Type",
+        "Land_Extent",
+        "Owner_Type",
+        "Plot_Location",
+        "Field_Location",
+        "Production_System",
+        "Total_Extent",
+        "Crop_Grown",
+        "Plantation_Type",
+        "Date_Plantation_Seedling",
         "Upload_test",
+        "Crop_Status",
         "Additional_Doc_Name",
         "Bank_Name",
         "Bank_Branch",
         "Bank_Account_No",
         "Confirmation",
         "App_status",
-        "Payment_Status"
+        "Payment_Status",
+        "Payment_method"
       ],
       "line": 28,
-      "id": "user-story-13361-and-14829--form---fertiliser-subsidy-scheme-(fss)-and-workflow;application-for-subsidy-scheme-(fss)and-workflow;;1"
+      "id": "user-story-13362-goc---register-as-bio-farming-support-scheme;application-to-register-as-bio-farming-support-scheme;;1"
     },
     {
       "cells": [
         "Chrome",
-        "vramachundren",
-        "Ashven1206!",
-        "Admin@123",
-        "ABC Agro Co Ltd",
-        "Mr John Brown",
-        "C123456789",
-        "XLPR852",
+        "ybhunjun5",
+        "Mauritius1!1710",
+        "Mr",
+        "Black River",
+        "Tertiary",
         "Full Time",
-        "The Main Road, Grand Port",
-        "Royal Road, Port Louis",
-        "Company",
+        "Manager",
+        "src\\test\\resources\\Photo_upload.jpg",
         "1",
-        "Tomato, Pepper",
-        "50",
-        "10000000",
-        "Existing",
-        "5",
+        "Married",
+        "Spouse",
+        "Sanon",
+        "Kirti",
+        "Female",
+        "1Jan94",
+        "Air Hostess",
+        "0001252563",
+        "Cane",
+        "2.5",
+        "Tenant",
+        "Moka",
+        "Port Louis",
+        "Sheltered Farming",
+        "600M2",
+        "Pepper",
+        "Interline",
+        "1Aug2030",
         "src\\test\\resources\\Upload_Test1.pdf",
+        "Harvest",
         "Additional Document Test",
         "ABC Banking",
         "Port Louis",
         "0001252563636",
         "Yes",
         "Submitted",
-        "Pending"
+        "Pending",
+        "Counter"
       ],
       "line": 29,
-      "id": "user-story-13361-and-14829--form---fertiliser-subsidy-scheme-(fss)-and-workflow;application-for-subsidy-scheme-(fss)and-workflow;;2"
+      "id": "user-story-13362-goc---register-as-bio-farming-support-scheme;application-to-register-as-bio-farming-support-scheme;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 139000,
+  "duration": 103600,
   "status": "passed"
 });
 formatter.scenario({
   "line": 29,
-  "name": "Application for Subsidy scheme (FSS)and workflow",
+  "name": "Application to Register as Bio Farming Support Scheme",
   "description": "",
-  "id": "user-story-13361-and-14829--form---fertiliser-subsidy-scheme-(fss)-and-workflow;application-for-subsidy-scheme-(fss)and-workflow;;2",
+  "id": "user-story-13362-goc---register-as-bio-farming-support-scheme;application-to-register-as-bio-farming-support-scheme;;2",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 4,
+      "line": 3,
       "name": "@Main_feature"
     },
     {
-      "line": 8,
-      "name": "@Fertilizer_FSS"
+      "line": 7,
+      "name": "@Scheme"
     },
     {
-      "line": 4,
-      "name": "@US13361_14829"
+      "line": 3,
+      "name": "@US13362"
     },
     {
-      "line": 8,
-      "name": "@Application_for_Supplier_subsidy_workflow"
+      "line": 7,
+      "name": "@Registration_as_Bio_Farming_Support_scheme"
     }
   ]
 });
 formatter.step({
-  "line": 11,
+  "line": 10,
   "name": "I am on SFWF Front Office Home Page GOC \"Chrome\"",
   "matchedColumns": [
     0
@@ -222,8 +247,8 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.step({
-  "line": 12,
-  "name": "I Input Registered Maupass User\u0027s Username \"vramachundren\" and Password \"Ashven1206!\"",
+  "line": 11,
+  "name": "I Input Registered Maupass User\u0027s Username \"ybhunjun5\" and Password \"Mauritius1!1710\"",
   "matchedColumns": [
     1,
     2
@@ -231,52 +256,57 @@ formatter.step({
   "keyword": "When "
 });
 formatter.step({
-  "line": 13,
+  "line": 12,
   "name": "I Click on Sign In button in Maupass",
   "keyword": "And "
 });
 formatter.step({
-  "line": 14,
+  "line": 13,
   "name": "I Verify Applicant\u0027s Successful Login",
   "keyword": "And "
 });
 formatter.step({
-  "line": 15,
+  "line": 14,
   "name": "I Click on Register as Farmer",
   "keyword": "And "
 });
 formatter.step({
-  "line": 16,
+  "line": 15,
   "name": "I Verify that User is directed to My Application Page",
   "keyword": "And "
 });
 formatter.step({
-  "line": 17,
+  "line": 16,
   "name": "I Verify display of Farmers Card link",
   "keyword": "And "
 });
 formatter.step({
-  "line": 18,
+  "line": 17,
   "name": "I Verify Programmes link",
   "keyword": "And "
 });
 formatter.step({
-  "line": 19,
+  "line": 18,
   "name": "I Click on Programmes",
   "keyword": "And "
 });
 formatter.step({
-  "line": 20,
-  "name": "I Verify Programme Type Page",
+  "line": 19,
+  "name": "I Click on New Programmes",
   "keyword": "And "
 });
 formatter.step({
   "line": 21,
-  "name": "I Click to Apply for Fertiliser Subsidy (FSS)",
+  "name": "I Verify Programme Type Page",
   "keyword": "And "
 });
 formatter.step({
   "line": 22,
+  "name": "I click to apply for Bio Farming support scheme",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 24,
   "name": "I Sign Out as Front Registered User",
   "keyword": "Then "
 });
@@ -290,102 +320,109 @@ formatter.match({
   "location": "Steps.iAmOnSFWFFrontOfficeHomePageGOC(String)"
 });
 formatter.result({
-  "duration": 6458768900,
+  "duration": 8820453900,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "vramachundren",
+      "val": "ybhunjun5",
       "offset": 44
     },
     {
-      "val": "Ashven1206!",
-      "offset": 73
+      "val": "Mauritius1!1710",
+      "offset": 69
     }
   ],
   "location": "Steps.iInputRegisteredMaupassUserSUsernameAndPassword(String,String)"
 });
 formatter.result({
-  "duration": 8219513700,
+  "duration": 8184276700,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnSignInButtonInMaupass()"
 });
 formatter.result({
-  "duration": 80090200,
+  "duration": 64186000,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyApplicantSSuccessfulLogin()"
 });
 formatter.result({
-  "duration": 2091107700,
+  "duration": 5293530100,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnRegisterAsFarmer()"
 });
 formatter.result({
-  "duration": 504551000,
+  "duration": 743754000,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyThatUserIsDirectedToMyApplicationPage()"
 });
 formatter.result({
-  "duration": 25090900,
+  "duration": 18768600,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyDisplayOfFarmersCardLink()"
 });
 formatter.result({
-  "duration": 29274500,
+  "duration": 24013400,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyProgrammesLink()"
 });
 formatter.result({
-  "duration": 25102800,
+  "duration": 13384300,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnProgrammes()"
 });
 formatter.result({
-  "duration": 5834516000,
+  "duration": 921754600,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Steps.iClickOnNewProgrammes()"
+});
+formatter.result({
+  "duration": 3023154300,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyProgrammeTypePage()"
 });
 formatter.result({
-  "duration": 46072900,
+  "duration": 32536800,
   "status": "passed"
 });
 formatter.match({
-  "location": "Steps.iClickToApplyForFertiliserSubsidyFSS()"
+  "location": "Steps.iClickToApplyForBioFarmingSupportScheme()"
 });
 formatter.result({
-  "duration": 1806589200,
+  "duration": 1633119500,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iSignOutAsFrontRegisteredUser()"
 });
 formatter.result({
-  "duration": 9258998100,
+  "duration": 9389127800,
   "status": "passed"
 });
 formatter.after({
-  "duration": 91087500,
+  "duration": 194796100,
   "status": "passed"
 });
 formatter.after({
-  "duration": 55900,
+  "duration": 91200,
   "status": "passed"
 });
 });

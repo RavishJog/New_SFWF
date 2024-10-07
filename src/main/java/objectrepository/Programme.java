@@ -9,7 +9,7 @@ public class Programme {
 
     //Objects
     //Object for Programmes
-    private static By lbl_Programmes = By.xpath("//span[contains(.,'Programmes')]");
+    private static By lbl_Programmes = By.xpath("(//span[contains(.,'Programmes')])[1]");
     public static WebElement Programmes(WebDriver driver) {
         element = driver.findElement(lbl_Programmes);
         return element;

@@ -2,13 +2,16 @@ objectrepository\Agro_Processing_Enterprise.class
 objectrepository\Back_office_main_page.class
 objectrepository\Fees_and_fines.class
 objectrepository\Small_planters.class
+objectrepository\BFSS.class
 objectrepository\Programme.class
 objectrepository\Terms_and_Condition.class
 objectrepository\Small_breeder.class
 objectrepository\Front_Home_page.class
 objectrepository\Home_page.class
 objectrepository\Payment_process.class
+objectrepository\FSS.class
 commonmethods\Utility.class
+objectrepository\New_Programme.class
 objectrepository\Tea_grower.class
 objectrepository\Farmers_cooperatives_association_society_company.class
 objectrepository\Documents_upload.class
