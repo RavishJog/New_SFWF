@@ -53,7 +53,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Oct 7, 2024 11:56:52 AM</span>
+                    <span class='label suite-start-time blue darken-3'>Oct 7, 2024 04:42:04 PM</span>
 				</a>
 			</li>
 			<li>
@@ -79,6 +79,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+						<li status='skip'><a href='#!'>Skip <i class='material-icons cyan-text'>redo</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -92,9 +93,9 @@
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
 					<li><a href='#'>@Main_feature</a></li>
-					<li><a href='#'>@US13362</a></li>
-					<li><a href='#'>@Scheme</a></li>
-					<li><a href='#'>@Registration_as_Bio_Farming_Support_scheme</a></li>
+					<li><a href='#'>@US13364_14829</a></li>
+					<li><a href='#'>@GOC</a></li>
+					<li><a href='#'>@Application_for_GPAC</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -172,10 +173,10 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>13</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='92.857%'><span class='strong'>26</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='7.143%'>2</span> others
 				</div>
 			</div>
 		</div>
@@ -191,29 +192,29 @@
 				
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>User story 13362-GOC - Register as Bio Farming support scheme</span>
-						<span class='test-time'>Oct 7, 2024 11:56:52 AM</span>
+						<span class='test-name'>User Story 13361 and 14829 -Form - Fertiliser Subsidy Scheme (FSS) and workflow</span>
+						<span class='test-time'>Oct 7, 2024 04:42:04 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='scenariooutline node' test-id='2' status='pass'>
-	<span class='duration right label'>0h 0m 38s+238ms</span>
+	<span class='duration right label'>0h 0m 41s+789ms</span>
 	<div class='desc'>
 		<b>ScenarioOutline</b>
-		<span class="desc-text">Application to Register as Bio Farming Support Scheme</span>
+		<span class="desc-text">Application for Group Personal Accident Cover (GPAC) – Claim and Workflow</span>
 	</div>
 	<ul class='steps'>
 		<li test-id='3' class='node scenario pass' status='pass'>
 			<div class='category-list'>
 				<span class='category label white-text'>@Main_feature</span>
-				<span class='category label white-text'>@Scheme</span>
-				<span class='category label white-text'>@US13362</span>
-				<span class='category label white-text'>@Registration_as_Bio_Farming_Support_scheme</span>
+				<span class='category label white-text'>@GOC</span>
+				<span class='category label white-text'>@Application_for_GPAC</span>
+				<span class='category label white-text'>@US13364_14829</span>
 			</div>
 			
 			<b>Scenario</b>
 			
-			<span class="bdd-step-name">Application to Register as Bio Farming Support Scheme</span>
+			<span class="bdd-step-name">Application for Group Personal Accident Cover (GPAC) – Claim and Workflow</span>
 			
 				<ul class='steps'>
 					<li test-id='4' class='node given pass' status='pass'><b>Given</b>
@@ -261,12 +262,72 @@
 							<div class='pre'>passed</div>
 					</li>
 					<li test-id='15' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I click to apply for Bio Farming support scheme</span>
+						<span class="bdd-step-name">And I Click to Apply for Group Personal Accident Cover (GPAC)</span>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='16' class='node then pass' status='pass'><b>Then</b>
-						<span class="bdd-step-name">Then I Sign Out as Front Registered User</span>
+					<li test-id='16' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Verify Display of INDIAN OCEAN GENERAL ASSURANCE (IOGA) / SMALL FARMERS WELFARE FUND (SFWF)</span>
 							<div class='pre'>passed</div>
+					</li>
+					<li test-id='17' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Input Type of Farmer "Small Planter"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='18' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Input Accident Particulars "01/10/2024" "11:45 AM" "Karo Cane" "Explosion" "Planting Cane" "Engine exploded"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='19' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Click on Save and Continue</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='20' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Verify General Information Tab</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='21' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Input Medical Cost "45000"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='22' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Select "Yes" for Has the medical treatment related to the accident been completed?</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='23' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Select "Yes" for If yes, are there any additional medical charges?</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='24' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Input "Surgery abroad" for Details of Additional Medical Charges</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='25' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Click on Save and Continue</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='26' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Verify Upload Required Documents Page is displayed</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='27' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Click on Add Additional Document</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='28' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Input Additional Document Name "Add Doc Test"</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='29' class='node and pass' status='pass'><b>And</b>
+						<span class="bdd-step-name">And I Verify Success message for adding Additional Document Name</span>
+							<div class='pre'>passed</div>
+					</li>
+					<li test-id='30' class='node and skip' status='skip'><b>And</b>
+						<span class="bdd-step-name">And I Upload Documents "src\test\resources\Upload_Test1.pdf"</span>
+							<div class='pre'>undefined</div>
+					</li>
+					<li test-id='31' class='node then skip' status='skip'><b>Then</b>
+						<span class="bdd-step-name">Then I Sign Out as Front Registered User</span>
+							<div class='pre'>skipped</div>
 					</li>
 				</ul>
 		</li>
@@ -349,13 +410,13 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Oct 7, 2024 11:56:52 AM</td>
-										<td class='linked' test-id='1'>User story 13362-GOC - Register as Bio Farming support scheme</td>
+										<td>Oct 7, 2024 04:42:04 PM</td>
+										<td class='linked' test-id='1'>User Story 13361 and 14829 -Form - Fertiliser Subsidy Scheme (FSS) and workflow</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Oct 7, 2024 11:56:52 AM</td>
-										<td class='linked' test-id='3'>User story 13362-GOC - Register as Bio Farming support scheme.Application to Register as Bio Farming Support Scheme.Application to Register as Bio Farming Support Scheme</td>
+										<td>Oct 7, 2024 04:42:04 PM</td>
+										<td class='linked' test-id='3'>User Story 13361 and 14829 -Form - Fertiliser Subsidy Scheme (FSS) and workflow.Application for Group Personal Accident Cover (GPAC) – Claim and Workflow.Application for Group Personal Accident Cover (GPAC) – Claim and Workflow</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -365,7 +426,7 @@
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@US13362</span>
+						<span class='category-name'>@US13364_14829</span>
 						<span class='category-status right'>
 							<span class='label pass'>2</span>
 						</span>
@@ -388,13 +449,13 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Oct 7, 2024 11:56:52 AM</td>
-										<td class='linked' test-id='1'>User story 13362-GOC - Register as Bio Farming support scheme</td>
+										<td>Oct 7, 2024 04:42:04 PM</td>
+										<td class='linked' test-id='1'>User Story 13361 and 14829 -Form - Fertiliser Subsidy Scheme (FSS) and workflow</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Oct 7, 2024 11:56:52 AM</td>
-										<td class='linked' test-id='3'>User story 13362-GOC - Register as Bio Farming support scheme.Application to Register as Bio Farming Support Scheme.Application to Register as Bio Farming Support Scheme</td>
+										<td>Oct 7, 2024 04:42:04 PM</td>
+										<td class='linked' test-id='3'>User Story 13361 and 14829 -Form - Fertiliser Subsidy Scheme (FSS) and workflow.Application for Group Personal Accident Cover (GPAC) – Claim and Workflow.Application for Group Personal Accident Cover (GPAC) – Claim and Workflow</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -404,7 +465,46 @@
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@Scheme</span>
+						<span class='category-name'>@GOC</span>
+						<span class='category-status right'>
+							<span class='label pass'>2</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 2</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Oct 7, 2024 04:42:04 PM</td>
+										<td class='linked' test-id='1'>User Story 13361 and 14829 -Form - Fertiliser Subsidy Scheme (FSS) and workflow</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Oct 7, 2024 04:42:04 PM</td>
+										<td class='linked' test-id='3'>User Story 13361 and 14829 -Form - Fertiliser Subsidy Scheme (FSS) and workflow.Application for Group Personal Accident Cover (GPAC) – Claim and Workflow.Application for Group Personal Accident Cover (GPAC) – Claim and Workflow</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@Application_for_GPAC</span>
 						<span class='category-status right'>
 							<span class='label pass'>1</span>
 						</span>
@@ -427,42 +527,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Oct 7, 2024 11:56:52 AM</td>
-										<td class='linked' test-id='3'>User story 13362-GOC - Register as Bio Farming support scheme.Application to Register as Bio Farming Support Scheme.Application to Register as Bio Farming Support Scheme</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@Registration_as_Bio_Farming_Support_scheme</span>
-						<span class='category-status right'>
-							<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Oct 7, 2024 11:56:52 AM</td>
-										<td class='linked' test-id='3'>User story 13362-GOC - Register as Bio Farming support scheme.Application to Register as Bio Farming Support Scheme.Application to Register as Bio Farming Support Scheme</td>
+										<td>Oct 7, 2024 04:42:04 PM</td>
+										<td class='linked' test-id='3'>User Story 13361 and 14829 -Form - Fertiliser Subsidy Scheme (FSS) and workflow.Application for Group Personal Accident Cover (GPAC) – Claim and Workflow.Application for Group Personal Accident Cover (GPAC) – Claim and Workflow</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -503,25 +569,25 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>13</div>
+					<div class='panel-lead'>28</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Oct 7, 2024 11:56:52 AM</div>
+					<div class='panel-lead'>Oct 7, 2024 04:42:04 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Oct 7, 2024 11:57:30 AM</div>
+			 		<div class='panel-lead'>Oct 7, 2024 04:42:47 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>38,559ms</div>
+					<div class='panel-lead'>43,032ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -535,7 +601,7 @@
 						</tr>
 							<tr>
 								<td>user</td>
-								<td>Raksha</td>
+								<td>suraj.joggessur</td>
 							</tr>
 					</table>
 				</div>
@@ -562,7 +628,7 @@
 							</td>
 						</tr>
 						<tr>
-							<td>@US13362</td>
+							<td>@US13364_14829</td>
 							<td>2</td>
 							<td>0</td>
 							<td>0</td>
@@ -571,8 +637,8 @@
 							</td>
 						</tr>
 						<tr>
-							<td>@Scheme</td>
-							<td>1</td>
+							<td>@GOC</td>
+							<td>2</td>
 							<td>0</td>
 							<td>0</td>
 							<td>
@@ -580,7 +646,7 @@
 							</td>
 						</tr>
 						<tr>
-							<td>@Registration_as_Bio_Farming_Support_scheme</td>
+							<td>@Application_for_GPAC</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -627,14 +693,14 @@
 				infoChild: 0,
 				exceptionsChild: 0,
 				
-				passGrandChild: 13,
+				passGrandChild: 26,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 0,
+				skipGrandChild: 2,
 				infoGrandChild: 0,
-				exceptionsGrandChild: 0,
+				exceptionsGrandChild: 2,
 			};
 		</script>
 		

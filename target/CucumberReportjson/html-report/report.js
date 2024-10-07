@@ -1,98 +1,102 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("features/US 13362.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("features/US13364_14829.feature");
 formatter.feature({
   "comments": [
     {
       "line": 1,
-      "value": "#User Story 13362 - Bio Farming Support Scheme"
+      "value": "#User Story 13364 -Form - Group Personal Accident Cover (GPAC) – Claim"
+    },
+    {
+      "line": 2,
+      "value": "#User Story 14928 - Workflow"
     }
   ],
-  "line": 4,
-  "name": "User story 13362-GOC - Register as Bio Farming support scheme",
+  "line": 5,
+  "name": "User Story 13361 and 14829 -Form - Fertiliser Subsidy Scheme (FSS) and workflow",
   "description": "",
-  "id": "user-story-13362-goc---register-as-bio-farming-support-scheme",
+  "id": "user-story-13361-and-14829--form---fertiliser-subsidy-scheme-(fss)-and-workflow",
   "keyword": "Feature",
   "tags": [
     {
-      "line": 3,
+      "line": 4,
       "name": "@Main_feature"
     },
     {
-      "line": 3,
-      "name": "@US13362"
+      "line": 4,
+      "name": "@US13364_14829"
+    },
+    {
+      "line": 4,
+      "name": "@GOC"
     }
   ]
 });
 formatter.scenarioOutline({
   "comments": [
     {
-      "line": 6,
+      "line": 7,
       "value": "#Scenario1"
     }
   ],
-  "line": 8,
-  "name": "Application to Register as Bio Farming Support Scheme",
+  "line": 9,
+  "name": "Application for Group Personal Accident Cover (GPAC) – Claim and Workflow",
   "description": "",
-  "id": "user-story-13362-goc---register-as-bio-farming-support-scheme;application-to-register-as-bio-farming-support-scheme",
+  "id": "user-story-13361-and-14829--form---fertiliser-subsidy-scheme-(fss)-and-workflow;application-for-group-personal-accident-cover-(gpac)-–-claim-and-workflow",
   "type": "scenario_outline",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 7,
-      "name": "@Registration_as_Bio_Farming_Support_scheme"
-    },
-    {
-      "line": 7,
-      "name": "@Scheme"
+      "line": 8,
+      "name": "@Application_for_GPAC"
     }
   ]
 });
 formatter.step({
-  "line": 10,
+  "line": 11,
   "name": "I am on SFWF Front Office Home Page GOC \"\u003cBrowser\u003e\"",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 11,
+  "line": 12,
   "name": "I Input Registered Maupass User\u0027s Username \"\u003cUsername\u003e\" and Password \"\u003cFPassword\u003e\"",
   "keyword": "When "
 });
 formatter.step({
-  "line": 12,
+  "line": 13,
   "name": "I Click on Sign In button in Maupass",
   "keyword": "And "
 });
 formatter.step({
-  "line": 13,
+  "line": 14,
   "name": "I Verify Applicant\u0027s Successful Login",
   "keyword": "And "
 });
 formatter.step({
-  "line": 14,
+  "line": 15,
   "name": "I Click on Register as Farmer",
   "keyword": "And "
 });
 formatter.step({
-  "line": 15,
+  "line": 16,
   "name": "I Verify that User is directed to My Application Page",
   "keyword": "And "
 });
 formatter.step({
-  "line": 16,
+  "line": 17,
   "name": "I Verify display of Farmers Card link",
   "keyword": "And "
 });
 formatter.step({
-  "line": 17,
+  "line": 18,
   "name": "I Verify Programmes link",
   "keyword": "And "
 });
 formatter.step({
-  "line": 18,
+  "line": 19,
   "name": "I Click on Programmes",
   "keyword": "And "
 });
 formatter.step({
-  "line": 19,
+  "line": 20,
   "name": "I Click on New Programmes",
   "keyword": "And "
 });
@@ -103,143 +107,176 @@ formatter.step({
 });
 formatter.step({
   "line": 22,
-  "name": "I click to apply for Bio Farming support scheme",
+  "name": "I Click to Apply for Group Personal Accident Cover (GPAC)",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 23,
+  "name": "I Verify Display of INDIAN OCEAN GENERAL ASSURANCE (IOGA) / SMALL FARMERS WELFARE FUND (SFWF)",
   "keyword": "And "
 });
 formatter.step({
   "line": 24,
+  "name": "I Input Type of Farmer \"\u003cFarmer_Type\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 25,
+  "name": "I Input Accident Particulars \"\u003cDate_of_Accident\u003e\" \"\u003cTime_of_Accident\u003e\" \"\u003cPlace_of_Accident\u003e\" \"\u003cCause_of_Accident\u003e\" \"\u003cKind_of_Work\u003e\" \"\u003cParticulars_Statement\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 26,
+  "name": "I Click on Save and Continue",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 27,
+  "name": "I Verify General Information Tab",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 28,
+  "name": "I Input Medical Cost \"\u003cMedical_Cost\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 29,
+  "name": "I Select \"\u003cAccident_Related\u003e\" for Has the medical treatment related to the accident been completed?",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 30,
+  "name": "I Select \"\u003cAdditional_Medical_Charges_option\u003e\" for If yes, are there any additional medical charges?",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 31,
+  "name": "I Input \"\u003cAdditional_Medical_Charges_amount\u003e\" for Details of Additional Medical Charges",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 32,
+  "name": "I Click on Save and Continue",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 33,
+  "name": "I Verify Upload Required Documents Page is displayed",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 34,
+  "name": "I Click on Add Additional Document",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 35,
+  "name": "I Input Additional Document Name \"\u003cAdditional_Doc_Name\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 36,
+  "name": "I Verify Success message for adding Additional Document Name",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 37,
+  "name": "I Upload Documents \"\u003cUpload_test\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 38,
   "name": "I Sign Out as Front Registered User",
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 27,
+  "line": 43,
   "name": "",
   "description": "",
-  "id": "user-story-13362-goc---register-as-bio-farming-support-scheme;application-to-register-as-bio-farming-support-scheme;",
+  "id": "user-story-13361-and-14829--form---fertiliser-subsidy-scheme-(fss)-and-workflow;application-for-group-personal-accident-cover-(gpac)-–-claim-and-workflow;",
   "rows": [
     {
       "cells": [
         "Browser",
         "Username",
         "FPassword",
-        "Applicant_Title",
-        "District",
-        "Education_Level",
-        "Act",
-        "Other_Occupation",
-        "Photo",
-        "Year_dur",
-        "Marital_Status",
-        "Relationship",
-        "Family_Surname",
-        "Family_Other_Names",
-        "Gender",
-        "DOB",
-        "Occupation",
-        "Org_acc_no",
-        "Crop_Type",
-        "Land_Extent",
-        "Owner_Type",
-        "Plot_Location",
-        "Field_Location",
-        "Production_System",
-        "Total_Extent",
-        "Crop_Grown",
-        "Plantation_Type",
-        "Date_Plantation_Seedling",
-        "Upload_test",
-        "Crop_Status",
+        "Password",
+        "Farmer_Type",
+        "Date_of_Accident",
+        "Time_of_Accident",
+        "Place_of_Accident",
+        "Cause_of_Accident",
+        "Kind_of_Work",
+        "Particulars_Statement",
+        "Medical_Cost",
+        "Accident_Related",
+        "Additional_Medical_Charges_option",
+        "Additional_Medical_Charges_amount",
         "Additional_Doc_Name",
-        "Bank_Name",
-        "Bank_Branch",
-        "Bank_Account_No",
-        "Confirmation",
-        "App_status",
-        "Payment_Status",
-        "Payment_method"
+        "Upload_test"
       ],
-      "line": 28,
-      "id": "user-story-13362-goc---register-as-bio-farming-support-scheme;application-to-register-as-bio-farming-support-scheme;;1"
+      "line": 44,
+      "id": "user-story-13361-and-14829--form---fertiliser-subsidy-scheme-(fss)-and-workflow;application-for-group-personal-accident-cover-(gpac)-–-claim-and-workflow;;1"
     },
     {
       "cells": [
         "Chrome",
         "ybhunjun5",
         "Mauritius1!1710",
-        "Mr",
-        "Black River",
-        "Tertiary",
-        "Full Time",
-        "Manager",
-        "src\\test\\resources\\Photo_upload.jpg",
-        "1",
-        "Married",
-        "Spouse",
-        "Sanon",
-        "Kirti",
-        "Female",
-        "1Jan94",
-        "Air Hostess",
-        "0001252563",
-        "Cane",
-        "2.5",
-        "Tenant",
-        "Moka",
-        "Port Louis",
-        "Sheltered Farming",
-        "600M2",
-        "Pepper",
-        "Interline",
-        "1Aug2030",
-        "src\\test\\resources\\Upload_Test1.pdf",
-        "Harvest",
-        "Additional Document Test",
-        "ABC Banking",
-        "Port Louis",
-        "0001252563636",
+        "Admin@123",
+        "Small Planter",
+        "01/10/2024",
+        "11:45 AM",
+        "Karo Cane",
+        "Explosion",
+        "Planting Cane",
+        "Engine exploded",
+        "45000",
         "Yes",
-        "Submitted",
-        "Pending",
-        "Counter"
+        "Yes",
+        "Surgery abroad",
+        "Add Doc Test",
+        "src\\test\\resources\\Upload_Test1.pdf"
       ],
-      "line": 29,
-      "id": "user-story-13362-goc---register-as-bio-farming-support-scheme;application-to-register-as-bio-farming-support-scheme;;2"
+      "line": 45,
+      "id": "user-story-13361-and-14829--form---fertiliser-subsidy-scheme-(fss)-and-workflow;application-for-group-personal-accident-cover-(gpac)-–-claim-and-workflow;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 103600,
+  "duration": 67200,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 29,
-  "name": "Application to Register as Bio Farming Support Scheme",
+  "line": 45,
+  "name": "Application for Group Personal Accident Cover (GPAC) – Claim and Workflow",
   "description": "",
-  "id": "user-story-13362-goc---register-as-bio-farming-support-scheme;application-to-register-as-bio-farming-support-scheme;;2",
+  "id": "user-story-13361-and-14829--form---fertiliser-subsidy-scheme-(fss)-and-workflow;application-for-group-personal-accident-cover-(gpac)-–-claim-and-workflow;;2",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 3,
+      "line": 4,
       "name": "@Main_feature"
     },
     {
-      "line": 7,
-      "name": "@Scheme"
+      "line": 4,
+      "name": "@GOC"
     },
     {
-      "line": 3,
-      "name": "@US13362"
+      "line": 8,
+      "name": "@Application_for_GPAC"
     },
     {
-      "line": 7,
-      "name": "@Registration_as_Bio_Farming_Support_scheme"
+      "line": 4,
+      "name": "@US13364_14829"
     }
   ]
 });
 formatter.step({
-  "line": 10,
+  "line": 11,
   "name": "I am on SFWF Front Office Home Page GOC \"Chrome\"",
   "matchedColumns": [
     0
@@ -247,7 +284,7 @@ formatter.step({
   "keyword": "Given "
 });
 formatter.step({
-  "line": 11,
+  "line": 12,
   "name": "I Input Registered Maupass User\u0027s Username \"ybhunjun5\" and Password \"Mauritius1!1710\"",
   "matchedColumns": [
     1,
@@ -256,42 +293,42 @@ formatter.step({
   "keyword": "When "
 });
 formatter.step({
-  "line": 12,
+  "line": 13,
   "name": "I Click on Sign In button in Maupass",
   "keyword": "And "
 });
 formatter.step({
-  "line": 13,
+  "line": 14,
   "name": "I Verify Applicant\u0027s Successful Login",
   "keyword": "And "
 });
 formatter.step({
-  "line": 14,
+  "line": 15,
   "name": "I Click on Register as Farmer",
   "keyword": "And "
 });
 formatter.step({
-  "line": 15,
+  "line": 16,
   "name": "I Verify that User is directed to My Application Page",
   "keyword": "And "
 });
 formatter.step({
-  "line": 16,
+  "line": 17,
   "name": "I Verify display of Farmers Card link",
   "keyword": "And "
 });
 formatter.step({
-  "line": 17,
+  "line": 18,
   "name": "I Verify Programmes link",
   "keyword": "And "
 });
 formatter.step({
-  "line": 18,
+  "line": 19,
   "name": "I Click on Programmes",
   "keyword": "And "
 });
 formatter.step({
-  "line": 19,
+  "line": 20,
   "name": "I Click on New Programmes",
   "keyword": "And "
 });
@@ -302,11 +339,115 @@ formatter.step({
 });
 formatter.step({
   "line": 22,
-  "name": "I click to apply for Bio Farming support scheme",
+  "name": "I Click to Apply for Group Personal Accident Cover (GPAC)",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 23,
+  "name": "I Verify Display of INDIAN OCEAN GENERAL ASSURANCE (IOGA) / SMALL FARMERS WELFARE FUND (SFWF)",
   "keyword": "And "
 });
 formatter.step({
   "line": 24,
+  "name": "I Input Type of Farmer \"Small Planter\"",
+  "matchedColumns": [
+    4
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 25,
+  "name": "I Input Accident Particulars \"01/10/2024\" \"11:45 AM\" \"Karo Cane\" \"Explosion\" \"Planting Cane\" \"Engine exploded\"",
+  "matchedColumns": [
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 26,
+  "name": "I Click on Save and Continue",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 27,
+  "name": "I Verify General Information Tab",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 28,
+  "name": "I Input Medical Cost \"45000\"",
+  "matchedColumns": [
+    11
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 29,
+  "name": "I Select \"Yes\" for Has the medical treatment related to the accident been completed?",
+  "matchedColumns": [
+    12
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 30,
+  "name": "I Select \"Yes\" for If yes, are there any additional medical charges?",
+  "matchedColumns": [
+    13
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 31,
+  "name": "I Input \"Surgery abroad\" for Details of Additional Medical Charges",
+  "matchedColumns": [
+    14
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 32,
+  "name": "I Click on Save and Continue",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 33,
+  "name": "I Verify Upload Required Documents Page is displayed",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 34,
+  "name": "I Click on Add Additional Document",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 35,
+  "name": "I Input Additional Document Name \"Add Doc Test\"",
+  "matchedColumns": [
+    15
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 36,
+  "name": "I Verify Success message for adding Additional Document Name",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 37,
+  "name": "I Upload Documents \"src\\test\\resources\\Upload_Test1.pdf\"",
+  "matchedColumns": [
+    16
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 38,
   "name": "I Sign Out as Front Registered User",
   "keyword": "Then "
 });
@@ -320,7 +461,7 @@ formatter.match({
   "location": "Steps.iAmOnSFWFFrontOfficeHomePageGOC(String)"
 });
 formatter.result({
-  "duration": 8820453900,
+  "duration": 5375439800,
   "status": "passed"
 });
 formatter.match({
@@ -337,92 +478,255 @@ formatter.match({
   "location": "Steps.iInputRegisteredMaupassUserSUsernameAndPassword(String,String)"
 });
 formatter.result({
-  "duration": 8184276700,
+  "duration": 7661974100,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnSignInButtonInMaupass()"
 });
 formatter.result({
-  "duration": 64186000,
+  "duration": 51155500,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyApplicantSSuccessfulLogin()"
 });
 formatter.result({
-  "duration": 5293530100,
+  "duration": 1860721000,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnRegisterAsFarmer()"
 });
 formatter.result({
-  "duration": 743754000,
+  "duration": 380348400,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyThatUserIsDirectedToMyApplicationPage()"
 });
 formatter.result({
-  "duration": 18768600,
+  "duration": 34788600,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyDisplayOfFarmersCardLink()"
 });
 formatter.result({
-  "duration": 24013400,
+  "duration": 21121800,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyProgrammesLink()"
 });
 formatter.result({
-  "duration": 13384300,
+  "duration": 14399300,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnProgrammes()"
 });
 formatter.result({
-  "duration": 921754600,
+  "duration": 854187800,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnNewProgrammes()"
 });
 formatter.result({
-  "duration": 3023154300,
+  "duration": 3723948000,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyProgrammeTypePage()"
 });
 formatter.result({
-  "duration": 32536800,
+  "duration": 33222200,
   "status": "passed"
 });
 formatter.match({
-  "location": "Steps.iClickToApplyForBioFarmingSupportScheme()"
+  "location": "Steps.iClickToApplyForGroupPersonalAccidentCoverGPAC()"
 });
 formatter.result({
-  "duration": 1633119500,
+  "duration": 792272700,
   "status": "passed"
+});
+formatter.match({
+  "location": "Steps.iVerifyDisplayOfINDIANOCEANGENERALASSURANCEIOGASMALLFARMERSWELFAREFUNDSFWF()"
+});
+formatter.result({
+  "duration": 41107600,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Small Planter",
+      "offset": 24
+    }
+  ],
+  "location": "Steps.iInputTypeOfFarmer(String)"
+});
+formatter.result({
+  "duration": 1642648400,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "01/10/2024",
+      "offset": 30
+    },
+    {
+      "val": "11:45 AM",
+      "offset": 43
+    },
+    {
+      "val": "Karo Cane",
+      "offset": 54
+    },
+    {
+      "val": "Explosion",
+      "offset": 66
+    },
+    {
+      "val": "Planting Cane",
+      "offset": 78
+    },
+    {
+      "val": "Engine exploded",
+      "offset": 94
+    }
+  ],
+  "location": "Steps.iInputAccidentParticulars(String,String,String,String,String,String)"
+});
+formatter.result({
+  "duration": 567385100,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Steps.iClickOnSaveAndContinue()"
+});
+formatter.result({
+  "duration": 6186531300,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Steps.iVerifyGeneralInformationTab()"
+});
+formatter.result({
+  "duration": 73938200,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "45000",
+      "offset": 22
+    }
+  ],
+  "location": "Steps.iInputMedicalCost(String)"
+});
+formatter.result({
+  "duration": 62077300,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Yes",
+      "offset": 10
+    }
+  ],
+  "location": "Steps.iSelectForHasTheMedicalTreatmentRelatedToTheAccidentBeenCompleted(String)"
+});
+formatter.result({
+  "duration": 597705000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Yes",
+      "offset": 10
+    }
+  ],
+  "location": "Steps.iSelectForIfYesAreThereAnyAdditionalMedicalCharges(String)"
+});
+formatter.result({
+  "duration": 600285900,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Surgery abroad",
+      "offset": 9
+    }
+  ],
+  "location": "Steps.iInputForDetailsOfAdditionalMedicalCharges(String)"
+});
+formatter.result({
+  "duration": 93006000,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Steps.iClickOnSaveAndContinue()"
+});
+formatter.result({
+  "duration": 6180418700,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Steps.iVerifyUploadRequiredDocumentsPageIsDisplayed()"
+});
+formatter.result({
+  "duration": 95411700,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Steps.iClickOnAddAdditionalDocument()"
+});
+formatter.result({
+  "duration": 3102823300,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Add Doc Test",
+      "offset": 34
+    }
+  ],
+  "location": "Steps.iInputAdditionalDocumentName(String)"
+});
+formatter.result({
+  "duration": 1623327700,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Steps.iVerifySuccessMessageForAddingAdditionalDocumentName()"
+});
+formatter.result({
+  "duration": 24306600,
+  "status": "passed"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
 });
 formatter.match({
   "location": "Steps.iSignOutAsFrontRegisteredUser()"
 });
 formatter.result({
-  "duration": 9389127800,
+  "status": "skipped"
+});
+formatter.after({
+  "duration": 1136058000,
   "status": "passed"
 });
 formatter.after({
-  "duration": 194796100,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 91200,
+  "duration": 295800,
   "status": "passed"
 });
 });

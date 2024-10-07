@@ -12,10 +12,7 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import objectrepository.*;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -3223,5 +3220,138 @@ public class Steps extends Utility {
             Assert.fail("Link for New Programmes did not appear");
         }
         New_Programme.New_Programmes(driver).click();
+    }
+
+    @And("^I Click to Apply for Group Personal Accident Cover \\(GPAC\\)$")
+    public void iClickToApplyForGroupPersonalAccidentCoverGPAC() {
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);", GPAC.GPAC_link(driver));
+        GPAC.GPAC_link(driver).click();
+    }
+
+    @And("^I Verify Display of INDIAN OCEAN GENERAL ASSURANCE \\(IOGA\\) / SMALL FARMERS WELFARE FUND \\(SFWF\\)$")
+    public void iVerifyDisplayOfINDIANOCEANGENERALASSURANCEIOGASMALLFARMERSWELFAREFUNDSFWF() {
+        WebDriverWait w = new WebDriverWait(driver, 10);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h5[contains(.,'INDIAN OCEAN GENERAL ASSURANCE (IOGA) / SMALL FARMERS WELFARE FUND (SFWF)')]")));
+        try {
+            GPAC.IOGA(driver);
+        } catch (Exception e) {
+            System.out.println("INDIAN OCEAN GENERAL ASSURANCE (IOGA) / SMALL FARMERS WELFARE FUND (SFWF) did not appear");
+            Assert.fail("INDIAN OCEAN GENERAL ASSURANCE (IOGA) / SMALL FARMERS WELFARE FUND (SFWF) did not appear");
+        }
+    }
+
+    @And("^I Input Type of Farmer \"([^\"]*)\"$")
+    public void iInputTypeOfFarmer(String Farmer_Type) throws Throwable {
+        GPAC.Select_one_farmer_type(driver).click();
+        Thread.sleep(1500);
+        if (Farmer_Type.equals("Small Planter")){
+            try {
+                GPAC.Small_planters_type(driver).click();
+            } catch (Exception e) {
+                System.out.println("Small Plater Type is not working");
+                Assert.fail("Small Plater Type is not working");
+            }
+        } else if (Farmer_Type.equals("Small Breeder")) {
+            try {
+                GPAC.Small_breeder_type(driver).click();
+            } catch (Exception e) {
+                System.out.println("Small Breeder Type is not working");
+                Assert.fail("Small Breeder Type is not working");
+            }
+        }else if (Farmer_Type.equals("Tea Grower")) {
+            try {
+                GPAC.Tea_grower_type(driver).click();
+            } catch (Exception e) {
+                System.out.println("Tea Grower Type is not working");
+                Assert.fail("Tea Grower Type is not working");
+            }
+        } else if (Farmer_Type.equals("Agro-Processing Enterprise")) {
+            try {
+                GPAC.Agro_processing_enterprise_type(driver).click();
+            } catch (Exception e) {
+                System.out.println("Agro-Processing Enterprise Type is not working");
+                Assert.fail("Agro-Processing Enterprise Type is not working");
+            }
+        } else if (Farmer_Type.equals("Farmers Cooperatives Association, Society or Company")) {
+            try {
+                GPAC.Farmers_CASC_type(driver).click();
+            } catch (Exception e) {
+                System.out.println("Farmers Cooperatives Association, Society or Company Type is not working");
+                Assert.fail("Farmers Cooperatives Association, Society or Company Type is not working");
+            }
+        } else {
+            System.out.println("Farmers Type is Invalid");
+            Assert.fail("Farmers Type is Invalid");
+        }
+    }
+
+    @And("^I Input Accident Particulars \"([^\"]*)\" \"([^\"]*)\" \"([^\"]*)\" \"([^\"]*)\" \"([^\"]*)\" \"([^\"]*)\"$")
+    public void iInputAccidentParticulars(String Date_of_Accident, String Time_of_Accident, String Place_of_Accident, String Cause_of_Accident, String Kind_of_Work, String Particulars_Statement) throws Throwable {
+        GPAC.Date_of_accident(driver).click();
+        GPAC.Date_of_accident(driver).sendKeys(Date_of_Accident);
+        GPAC.Date_of_accident(driver).sendKeys(Keys.TAB);
+
+        GPAC.Time_of_accident(driver).click();
+        GPAC.Time_of_accident(driver).sendKeys(Time_of_Accident);
+        GPAC.Time_of_accident(driver).sendKeys(Keys.TAB);
+
+        GPAC.Place_of_accident(driver).sendKeys(Place_of_Accident);
+
+        GPAC.Cause_of_accident(driver).sendKeys(Cause_of_Accident);
+
+        GPAC.Kind_of_work(driver).sendKeys(Kind_of_Work);
+
+        GPAC.Particulars_statement(driver).sendKeys(Particulars_Statement);
+        takeScreenShot(this.scenario);
+    }
+
+    @And("^I Verify General Information Tab$")
+    public void iVerifyGeneralInformationTab() throws InterruptedException {
+        WebDriverWait w = new WebDriverWait(driver, 10);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[contains(@id,'medcost')]")));
+        try {
+            GPAC.Medical_cost(driver);
+        } catch (Exception e){
+            System.out.println("General Information Page did not appear");
+            Assert.fail("General Information Page did not appear");
+        }
+    }
+
+    @And("^I Input Medical Cost \"([^\"]*)\"$")
+    public void iInputMedicalCost(String Medical_Cost) throws Throwable {
+        GPAC.Medical_cost(driver).sendKeys(Medical_Cost);
+    }
+
+    @And("^I Select \"([^\"]*)\" for Has the medical treatment related to the accident been completed\\?$")
+    public void iSelectForHasTheMedicalTreatmentRelatedToTheAccidentBeenCompleted(String Accident_Related) throws Throwable {
+        if (Accident_Related.equals("Yes")) {
+            GPAC.Accident_related_yes(driver).click();
+            WebDriverWait w = new WebDriverWait(driver, 10);
+            WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//label[contains(.,'If yes, are there any additional medical charges?:')]")));
+        } else if (Accident_Related.equals("No")) {
+            GPAC.Accident_related_no(driver).click();
+        } else {
+            System.out.println("Option for Has the medical treatment related to the accident been completed? is not valid");
+            Assert.fail("Option for Has the medical treatment related to the accident been completed? is not valied");
+        }
+    }
+
+    @And("^I Select \"([^\"]*)\" for If yes, are there any additional medical charges\\?$")
+    public void iSelectForIfYesAreThereAnyAdditionalMedicalCharges(String Additional_Medical_Charges_option) throws Throwable {
+        if (Additional_Medical_Charges_option.equals("Yes")) {
+            GPAC.Additional_medical_charges_yes(driver).click();
+            WebDriverWait w = new WebDriverWait(driver, 10);
+            WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//label[contains(.,'Details of Additional Medical Charges:')]")));
+        } else if (Additional_Medical_Charges_option.equals("No")) {
+            GPAC.Additional_medical_charges_no(driver).click();
+        } else {
+            System.out.println("Option for If yes, are there any additional medical charges? is not valid");
+            Assert.fail("Option for If yes, are there any additional medical charges? is not valied");
+        }
+    }
+
+    @And("^I Input \"([^\"]*)\" for Details of Additional Medical Charges$")
+    public void iInputForDetailsOfAdditionalMedicalCharges(String Additional_Medical_Charges_amount) throws Throwable {
+        GPAC.Additional_medical_charges(driver).sendKeys(Additional_Medical_Charges_amount);
     }
 }
