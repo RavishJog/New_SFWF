@@ -3170,6 +3170,8 @@ public class Steps extends Utility {
     @And("^I Click on Programmes$")
     public void iClickOnProgrammes() {
         Programme.Programmes(driver).click();
+        WebDriverWait w = new WebDriverWait(driver, 5);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[contains(.,'New Programmes')]")));
     }
 
     @And("^I Verify Programme Type Page$")
@@ -3195,5 +3197,31 @@ public class Steps extends Utility {
             Assert.fail("Link for fertilizer scheme did not appear");
         }
         FSS.Fert_Scheme(driver).click();
+    }
+
+    @And("^I click to apply for Bio Farming support scheme$")
+    public void iClickToApplyForBioFarmingSupportScheme() throws InterruptedException {
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);", BFSS.Bio_Scheme(driver));
+        Thread.sleep(1000);
+        try {
+            BFSS.Bio_Scheme(driver);
+        } catch (Exception e) {
+            System.out.println("Link for Bio farming support scheme did not appear");
+            Assert.fail("Link for Bio farming support  scheme did not appear");
+        }
+        BFSS.Bio_Scheme(driver).click();
+    }
+
+    @And("^I Click on New Programmes$")
+    public void iClickOnNewProgrammes() throws InterruptedException {
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);", New_Programme.New_Programmes(driver));
+        Thread.sleep(1000);
+        try {
+            New_Programme.New_Programmes(driver);
+        } catch (Exception e) {
+            System.out.println("Link for New Programmes did not appear");
+            Assert.fail("Link for New Programmes did not appear");
+        }
+        New_Programme.New_Programmes(driver).click();
     }
 }
