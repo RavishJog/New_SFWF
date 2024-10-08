@@ -3354,4 +3354,27 @@ public class Steps extends Utility {
     public void iInputForDetailsOfAdditionalMedicalCharges(String Additional_Medical_Charges_amount) throws Throwable {
         GPAC.Additional_medical_charges(driver).sendKeys(Additional_Medical_Charges_amount);
     }
+
+    @And("^I Upload Documents \"([^\"]*)\"$")
+    public void iUploadDocuments(String Upload_test) throws Throwable {
+        String filePath = new File(Upload_test).getAbsolutePath();
+        WebDriverWait w = new WebDriverWait(driver, 30);
+
+        GPAC.Upload_farmers_identity_card(driver).sendKeys(filePath);
+        w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[1]")));
+        GPAC.Upload_doctors_bill(driver).sendKeys(filePath);
+        w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[2]")));
+        GPAC.Upload_identity_card(driver).sendKeys(filePath);
+        w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[3]")));
+        GPAC.Upload_medical_certificate(driver).sendKeys(filePath);
+        w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[4]")));
+        GPAC.Upload_pharmacy_receipts(driver).sendKeys(filePath);
+        w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[5]")));
+        GPAC.Upload_Add_doc(driver).sendKeys(filePath);
+        w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[6]")));
+
+
+    }
+
+
 }

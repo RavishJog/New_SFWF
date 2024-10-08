@@ -35,12 +35,72 @@ Feature: User Story 13361 and 14829 -Form - Fertiliser Subsidy Scheme (FSS) and 
     And I Input Additional Document Name "<Additional_Doc_Name>"
     And I Verify Success message for adding Additional Document Name
     And I Upload Documents "<Upload_test>"
+    And I Verify for Document Upload Success Message
+    And I Click on Save and Continue
+    And I Verify Terms and Conditions Page
+    And I click on I agree to the Terms and Conditions
+    And I Click on Submit Application "<Confirmation>"
+    And I Verify Success message for application submitted
     Then I Sign Out as Front Registered User
 
+    #    WPO
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
+    And I Input WPO Username "<WpoUsername>" and Password "<Password>"
+    And I Click on Sign In button
+    And I Verify Successful Login
+    And I Click on All Applications
+    And I Verify display of list of registrations page
+    And I Search for Application Ref Number as a Back Office User
+    And I Click to view Application
+    And I Click on Action Button
+    And I Select Under Query
+    And I Input External Remarks "<Remarks>"
+    And I Click on Under Query Notification
+    And I Verify Success Message for Under Query Notification
+    And I Click on Save Actions
+    And I Verify for success message for workflow saved
+    And I Sign Out
+    And I Verify Successful Sign Out
+
+    #    Applicant after under query
+    Given I am on SFWF Front Office Home Page GOC "<Browser>"
+    When I Input Registered Maupass User's Username "<Username>" and Password "<FPassword>"
+    And I Click on Sign In button in Maupass
+    And I Verify Applicant's Successful Login
+    And I Click on Register as Farmer
+    And I Verify that User is directed to My Application Page
+    And I Verify display of Farmers Card link
+    And I Verify Programmes link
+    And I Search for Application Ref Number for re-submit
+    And I Verify display of Registration of Farmers page
+    And I Click on Save and Continue
+    And I Verify Upload Required Documents Page is displayed
+    And I Click on Save and Continue
+    And I Verify Terms and Conditions Page
+    And I Click on Submit Application "<Confirmation>"
+    And I Verify Success message for application submitted
+    And I Sign Out as Front Registered User
+
+    #    WPO
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
+    And I Input WPO Username "<WpoUsername>" and Password "<Password>"
+    And I Click on Sign In button
+    And I Verify Successful Login
+    And I Click on All Applications
+    And I Verify display of list of registrations page
+    And I Search for Application Ref Number as a Back Office User
+    And I Click to view Application
+    And I Click on Action Button
+    And I Select Approved to approve the registration application
+    And I Input Remarks "<Remarks>"
+    And I Click on Save Actions
+    And I Verify for success message for approval
+    And I Sign Out
+    And I Verify Successful Sign Out
 
 
 
     Examples:
-      |Browser|Username |FPassword      |Password |Farmer_Type  |Date_of_Accident|Time_of_Accident|Place_of_Accident|Cause_of_Accident|Kind_of_Work |Particulars_Statement|Medical_Cost|Accident_Related|Additional_Medical_Charges_option|Additional_Medical_Charges_amount|Additional_Doc_Name|Upload_test                        |
-      |Chrome |ybhunjun5|Mauritius1!1710|Admin@123|Small Planter|01/10/2024      |11:45 AM        |Karo Cane        |Explosion        |Planting Cane|Engine exploded      |45000       |Yes             |Yes                              |Surgery abroad                   |Add Doc Test       |src\test\resources\Upload_Test1.pdf|
+      |Browser|Username |FPassword      |Password |PwoUsername|WpoUsername|WOUsername |ITUsername|Farmer_Type  |Date_of_Accident|Time_of_Accident|Place_of_Accident|Cause_of_Accident|Kind_of_Work |Particulars_Statement|Medical_Cost|Accident_Related|Additional_Medical_Charges_option|Additional_Medical_Charges_amount|Additional_Doc_Name|Upload_test                        |Confirmation|Remarks        |
+      |Chrome |ybhunjun5|Mauritius1!1710|Admin@123|PWO        |WPO        |WO         |IT_DEPT   |Small Planter|01/10/2024      |11:45 AM        |Karo Cane        |Explosion        |Planting Cane|Engine exploded      |45000       |Yes             |Yes                              |Surgery abroad                   |Add Doc Test       |src\test\resources\Upload_Test1.pdf|Yes         |This is a Test |
 
