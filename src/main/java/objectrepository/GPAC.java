@@ -31,35 +31,35 @@ public class GPAC {
     }
 
     //Object for Type of Farmer - Small Planters
-    private static By lbl_Small_planters_type = By.xpath("//li[contains (@id, 'gpac_type_farmer_1')]");
+    private static By lbl_Small_planters_type = By.xpath("//li[contains(.,'Small Planters')]");
     public static WebElement Small_planters_type(WebDriver driver) {
         element = driver.findElement(lbl_Small_planters_type);
         return element;
     }
 
     //Object for Type of Farmer - Small Breeder
-    private static By lbl_Small_breeder_type = By.xpath("//li[contains (@id, 'gpac_type_farmer_2')]");
+    private static By lbl_Small_breeder_type = By.xpath("//li[contains(.,'Small Breeder')]");
     public static WebElement Small_breeder_type(WebDriver driver) {
         element = driver.findElement(lbl_Small_breeder_type);
         return element;
     }
 
     //Object for Type of Farmer - Tea Grower
-    private static By lbl_Tea_grower_type = By.xpath("//li[contains (@id, 'gpac_type_farmer_3')]");
+    private static By lbl_Tea_grower_type = By.xpath("//li[contains(.,'Tea Grower')]");
     public static WebElement Tea_grower_type(WebDriver driver) {
         element = driver.findElement(lbl_Tea_grower_type);
         return element;
     }
 
     //Object for Type of Farmer - Agro Processing Enterprise
-    private static By lbl_Agro_processing_enterprise_type = By.xpath("//li[contains (@id, 'gpac_type_farmer_4')]");
+    private static By lbl_Agro_processing_enterprise_type = By.xpath("//li[contains(.,'Agro-Processing Enterprise')]");
     public static WebElement Agro_processing_enterprise_type(WebDriver driver) {
         element = driver.findElement(lbl_Agro_processing_enterprise_type);
         return element;
     }
 
     //Object for Type of Farmer - Farmers Cooperative Association, Society or Company
-    private static By lbl_Farmers_CASC_type = By.xpath("//li[contains (@id, 'gpac_type_farmer_5')]");
+    private static By lbl_Farmers_CASC_type = By.xpath("//li[contains(.,'Farmers Cooperative Association, Society or Company')]");
     public static WebElement Farmers_CASC_type(WebDriver driver) {
         element = driver.findElement(lbl_Farmers_CASC_type);
         return element;
@@ -149,48 +149,90 @@ public class GPAC {
         return element;
     }
 
-    //Object for XXX
-//    private static By XXX = By.xpath("XXX");
-//    public static WebElement XXX(WebDriver driver) {
-//        element = driver.findElement(XXX);
-//        return element;
-//    }
+    //Object for Farmers Identity Card - Upload & Download button
+    private static By btn_Upload_farmers_identity_card = By.xpath("(//input[contains(@type,'file')])[1]");
+    public static WebElement Upload_farmers_identity_card(WebDriver driver) {
+        element = driver.findElement(btn_Upload_farmers_identity_card);
+        return element;
+    }
 
-    //Object for XXX
-//    private static By XXX = By.xpath("XXX");
-//    public static WebElement XXX(WebDriver driver) {
-//        element = driver.findElement(XXX);
-//        return element;
-//    }
+        private static By btn_Download_farmers_identity_card = By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[1]");
+    public static WebElement Download_farmers_identity_card(WebDriver driver) {
+        element = driver.findElement(btn_Download_farmers_identity_card);
+        return element;
+    }
 
-    //Object for XXX
-//    private static By XXX = By.xpath("XXX");
-//    public static WebElement XXX(WebDriver driver) {
-//        element = driver.findElement(XXX);
-//        return element;
-//    }
+    //Object for Doctor's Bill - Upload & Download button
+    private static By btn_Upload_doctors_bill = By.xpath("(//input[contains(@type,'file')])[2]");
+    public static WebElement Upload_doctors_bill(WebDriver driver) {
+        element = driver.findElement(btn_Upload_doctors_bill);
+        return element;
+    }
 
-    //Object for XXX
-//    private static By XXX = By.xpath("XXX");
-//    public static WebElement XXX(WebDriver driver) {
-//        element = driver.findElement(XXX);
-//        return element;
-//    }
+        private static By btn_Download_doctors_bill = By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[2]");
+    public static WebElement Download_doctors_bill(WebDriver driver) {
+        element = driver.findElement(btn_Download_doctors_bill);
+        return element;
+    }
 
-    //Object for XXX
-//    private static By XXX = By.xpath("XXX");
-//    public static WebElement XXX(WebDriver driver) {
-//        element = driver.findElement(XXX);
-//        return element;
-//    }
+    //Object for Identity Card - Upload & Download button
+    private static By btn_Upload_identity_card = By.xpath("(//input[contains(@type,'file')])[3]");
+    public static WebElement Upload_identity_card(WebDriver driver) {
+        element = driver.findElement(btn_Upload_identity_card);
+        return element;
+    }
 
-    //Object for XXX
-//    private static By XXX = By.xpath("XXX");
-//    public static WebElement XXX(WebDriver driver) {
-//        element = driver.findElement(XXX);
-//        return element;
-//    }
+        private static By btn_Download_identity_card = By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[3]");
+    public static WebElement Download_identity_card(WebDriver driver) {
+        element = driver.findElement(btn_Download_identity_card);
+        return element;
+    }
 
+    //Object for Medical Certificate  - Upload & Download button
+    private static By btn_Upload_medical_certificate = By.xpath("(//input[contains(@type,'file')])[4]");
+    public static WebElement Upload_medical_certificate(WebDriver driver) {
+        element = driver.findElement(btn_Upload_medical_certificate);
+        return element;
+    }
+
+        private static By btn_Download_medical_certificate = By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[4]");
+    public static WebElement Download_medical_certificate(WebDriver driver) {
+        element = driver.findElement(btn_Download_medical_certificate);
+        return element;
+    }
+
+    //Object for Pharmacy Receipts  - Upload & Download button
+    private static By btn_Upload_pharmacy_receipts = By.xpath("(//input[contains(@type,'file')])[5]");
+    public static WebElement Upload_pharmacy_receipts(WebDriver driver) {
+        element = driver.findElement(btn_Upload_pharmacy_receipts);
+        return element;
+    }
+
+        private static By btn_Download_pharmacy_receipts = By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[5]");
+    public static WebElement Download_pharmacy_receipts(WebDriver driver) {
+        element = driver.findElement(btn_Download_pharmacy_receipts);
+        return element;
+    }
+
+    //Object for Add Doc Test  - Upload & Download button
+    private static By btn_Upload_Add_doc = By.xpath("(//input[contains(@type,'file')])[6]");
+    public static WebElement Upload_Add_doc(WebDriver driver) {
+        element = driver.findElement(btn_Upload_Add_doc);
+        return element;
+    }
+
+        private static By btn_Download_Add_doc = By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[6]");
+    public static WebElement Download_Add_doc(WebDriver driver) {
+        element = driver.findElement(btn_Download_Add_doc);
+        return element;
+    }
+
+    //Object for I agree to the Terms and Conditions
+    private static By btn_Agree_terms_conditions = By.xpath("//span[contains(.,'I agree to the Terms and Conditions')]");
+    public static WebElement Agree_terms_conditions(WebDriver driver) {
+        element = driver.findElement(btn_Agree_terms_conditions);
+        return element;
+    }
 
 
 }
