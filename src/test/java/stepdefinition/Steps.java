@@ -812,9 +812,10 @@ public class Steps extends Utility {
     }
 
     @And("^I click on I agree to the Terms and Conditions$")
-    public void iClickOnIAgreeToTheTermsAndConditions() {
+    public void iClickOnIAgreeToTheTermsAndConditions() throws InterruptedException {
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);", Terms_and_Condition.Agree_termsandcondition(driver));
         Terms_and_Condition.Agree_termsandcondition(driver).click();
+        Thread.sleep(1500);
     }
 
     @And("^I Select Bank \"([^\"]*)\"$")
@@ -871,6 +872,9 @@ public class Steps extends Utility {
 
     @And("^I Verify Success message for adding Additional Document Name$")
     public void iVerifySuccessMessageForAddingAdditionalDocumentName() {
+        WebDriverWait w = new WebDriverWait(driver, 10);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[contains(.,'New document added:')])")));
+
         try {
             Documents_upload.Adding_doc_name_success_message(driver);
         } catch (Exception e) {
@@ -2071,6 +2075,8 @@ public class Steps extends Utility {
     @And("^I Click on All Applications$")
     public void iClickOnAllApplications() {
         Back_office_main_page.All_applications_click(driver).click();
+        WebDriverWait w = new WebDriverWait(driver, 10);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//input[@role='textbox'])[1]")));
     }
 
     @And("^I Verify display of list of registrations page$")
@@ -3173,7 +3179,7 @@ public class Steps extends Utility {
 
     @And("^I Verify Programme Type Page$")
     public void iVerifyProgrammeTypePage() {
-        WebDriverWait w = new WebDriverWait(driver, 5);
+        WebDriverWait w = new WebDriverWait(driver, 10);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h1[contains(.,'Programme Type')]")));
         try {
             Programme.Programme_page(driver);
@@ -3377,4 +3383,68 @@ public class Steps extends Utility {
     }
 
 
+    @And("^I Select Under Query for Programmes$")
+    public void iSelectUnderQueryForProgrammes() throws InterruptedException {
+        Back_office_main_page.Action_select_one_programmes(driver).click();
+        Thread.sleep(1500);
+        Back_office_main_page.Action_Under_Query(driver).click();
+        WebDriverWait w = new WebDriverWait(driver, 30);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//label[contains(.,'External Remarks')]")));
+
+    }
+
+    @And("^I Click to view All Programmes$")
+    public void iClickToViewAllProgrammes() throws InterruptedException {
+        Back_office_main_page.All_applications_sidebar(driver).click();
+        Thread.sleep(1500);
+        Back_office_main_page.All_programmes_sidebar(driver).click();
+    }
+
+    @And("^I Click on Under Query Notification for Programmes$")
+    public void iClickOnUnderQueryNotificationForProgrammes() {
+        Back_office_main_page.Under_query_notif_send(driver).click();
+        WebDriverWait w = new WebDriverWait(driver, 10);
+        WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//span[contains(.,'Mail has been sent successfully')])[2]")));
+    }
+
+    @And("^I Verify Success Message for Under Query Notification for Programmes$")
+    public void iVerifySuccessMessageForUnderQueryNotificationForProgrammes() {
+        try {
+            Back_office_main_page.Under_query_mail_success_message_programmes(driver);
+        } catch (Exception e) {
+            System.out.println("Success Message for Under Query Notification did not appear");
+            Assert.fail("Success Message for Under Query Notification did not appear");
+        }
+    }
+
+    @And("^I Click on Save Actions for Programmes$")
+    public void iClickOnSaveActionsForProgrammes() {
+        Back_office_main_page.Action_save_bo_programmes(driver).click();
+    }
+
+    @And("^I Search for Programme Ref Number for re-submit$")
+    public void iSearchForProgrammeRefNumberForReSubmit() throws InterruptedException {
+        WebDriverWait w = new WebDriverWait(driver, 5);
+        WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//input[@role='textbox'])[5]")));
+        GPAC.Search_programme_reference_number(driver).sendKeys(Application_reference_number);
+        Thread.sleep(2000);
+        Front_Home_page.Edit(driver).click();
+    }
+
+    @And("^I Select TO User$")
+    public void iSelectTOUser() throws InterruptedException {
+        Back_office_main_page.User_select_one(driver).click();
+        Thread.sleep(1500);
+        Back_office_main_page.User_select_TO(driver).click();
+    }
+
+    @And("^I Select Assigned for Programmes$")
+    public void iSelectAssignedForProgrammes() throws InterruptedException {
+        Back_office_main_page.Action_select_one_programmes(driver).click();
+        Thread.sleep(1500);
+        Back_office_main_page.Action_Assigned(driver).click();
+        WebDriverWait w = new WebDriverWait(driver, 30);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//label[contains(.,'Select Users')]")));
+
+    }
 }
