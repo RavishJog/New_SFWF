@@ -41,6 +41,7 @@ Feature: User Story 13361 and 14829 -Form - Fertiliser Subsidy Scheme (FSS) and 
     And I click on I agree to the Terms and Conditions
     And I Click on Submit Application "<Confirmation>"
     And I Verify Success message for application submitted
+    And I Copy Application Number
     Then I Sign Out as Front Registered User
 
     #    WPO
@@ -48,8 +49,57 @@ Feature: User Story 13361 and 14829 -Form - Fertiliser Subsidy Scheme (FSS) and 
     And I Input WPO Username "<WpoUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login
+    And I Click to view All Programmes
+    And I Search for Application Ref Number as a Back Office User
+    And I Click to view Application
+    And I Click on Action Button
+    And I Select Under Query for Programmes
+    And I Input External Remarks "<Remarks>"
+    And I Click on Under Query Notification for Programmes
+    And I Verify Success Message for Under Query Notification for Programmes
+    And I Click on Save Actions for Programmes
+    And I Verify for success message for workflow saved
+    And I Sign Out
+    And I Verify Successful Sign Out
 
+     #    Applicant after under query
+    Given I am on SFWF Front Office Home Page GOC "<Browser>"
+    When I Input Registered Maupass User's Username "<Username>" and Password "<FPassword>"
+    And I Click on Sign In button in Maupass
+    And I Verify Applicant's Successful Login
+    And I Click on Register as Farmer
+    And I Verify that User is directed to My Application Page
+    And I Verify display of Farmers Card link
+    And I Verify Programmes link
+    And I Click on Programmes
+    And I Search for Programme Ref Number for re-submit
+    And I Verify Display of INDIAN OCEAN GENERAL ASSURANCE (IOGA) / SMALL FARMERS WELFARE FUND (SFWF)
+    And I Click on Save and Continue
+    And I Verify General Information Tab
+    And I Click on Save and Continue
+    And I Verify Upload Required Documents Page is displayed
+    And I Click on Save and Continue
+    And I Verify Terms and Conditions Page
+    And I Click on Submit Application "<Confirmation>"
+    And I Verify Success message for application submitted
+    Then I Sign Out as Front Registered User
 
+        #    WPO
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
+    And I Input WPO Username "<WpoUsername>" and Password "<Password>"
+    And I Click on Sign In button
+    And I Verify Successful Login
+    And I Click to view All Programmes
+    And I Search for Application Ref Number as a Back Office User
+    And I Click to view Application
+    And I Click on Action Button
+    And I Select Assigned for Programmes
+    And I Select TO User
+    And I Input Remarks "<Remarks>"
+    And I Click on Save Actions
+    And I Verify for success message for assigning
+    And I Sign Out
+    And I Verify Successful Sign Out
 
 
     Examples:
