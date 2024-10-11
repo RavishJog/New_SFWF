@@ -682,7 +682,7 @@ public class Steps extends Utility {
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", Farmers_cooperatives_association_society_company.Save_and_continue(driver));
         sleep(3000);
         WebDriverWait wait = new WebDriverWait(driver, 10); // 10 seconds timeout
-        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(Farmers_cooperatives_association_society_company.Save_and_continue(driver)));
+        WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[contains(text(),'Save and Continue')]")));
         try{
             Farmers_cooperatives_association_society_company.Save_and_continue(driver).click();
         }catch (Exception e){
