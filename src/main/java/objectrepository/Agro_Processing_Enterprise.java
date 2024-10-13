@@ -9,7 +9,7 @@ public class Agro_Processing_Enterprise {
     private static WebElement element = null;
 
     //Object for Button for Agro-Processing Enterprise
-    private static By btn_Agro_processing_enterprise = By.xpath("//p[contains(.,'Agro- Processing Enterprise')]");
+    private static By btn_Agro_processing_enterprise = By.xpath("//p[contains(.,'Agro-Processing Enterprise')]");
     public static WebElement Agro_processing_enterprise(WebDriver driver) {
         element = driver.findElement(btn_Agro_processing_enterprise);
         return element;
