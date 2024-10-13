@@ -439,7 +439,7 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
       |Chrome |vramachundren    |Ashven1206!|Admin@123|FINANCE  |PWO        |WPO        |WO         |IT_DEPT   |This is a test |Yes     |Cash         |850          |ABC Agro Co Ltd|Mr John Brown|C123456789 |XLPR852  |Full Time|The Main Road, Grand Port|Royal Road, Port Louis |Company         |1       |Tomato, Pepper |50       |10000000           |Existing       |5              |src\test\resources\Upload_Test1.pdf|Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |Credit         |5123-4500-0000-0008|01           |39         |100          |My name        |
 
  #Scenario3
-  @Approval_by_BO_Payment_at_counter_for_Farmers_Cooperative_Association @Smoke_counter_Farmers_Cooperative_Association
+  @Approval_by_BO_Payment_at_counter_for_Farmers_Cooperative_Association @Smoke_counter_Farmers_Cooperative_Association_GOC
   Scenario Outline: Payment at counter for Registration for Farmers’ Cooperative Association, Society or Company
 
     Given I am on SFWF Front Office Home Page GOC "<Browser>"
@@ -885,7 +885,7 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
 
 
  #Scenario5
-  @Approval_by_BO_Payment_at_counter_for_Small_Planters_Registration @Smoke_counter_Small_Planters_Registration_goc
+  @Approval_by_BO_Payment_at_counter_for_Small_Planters_Registration @Smoke_counter_Small_Planters_Registration_GOC
   Scenario Outline: Payment at counter for Registration for Small Planters
 
     Given I am on SFWF Front Office Home Page GOC "<Browser>"
@@ -1135,8 +1135,8 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
 
     Examples:
       |Browser|Username     |FPassword| Password |FUsername|PwoUsername|WpoUsername|WOUsername |ITUsername|Remarks        |Bonafide|Payment_Mode |Amount_To_Pay|Applicant_Title |District   |Education_Level |Act      |Other_Occupation  |Photo                               |Year_dur |Marital_Status|Relationship|Family_Surname|Family_Other_Names|Gender|DOB   |Occupation |Org_acc_no|Crop_Type|Land_Extent|Owner_Type|Plot_Location|Field_Location |Production_System|Total_Extent |Crop_Grown |Plantation_Type|Date_Plantation_Seedling |Upload_test                        |Crop_Status|Additional_Doc_Name      |Bank_Name  |Bank_Branch|Bank_Account_No|Confirmation|App_status|Payment_Status |Payment_method |
-      |Chrome |Suraj_Jo     |Admin@123|Admin@123|FINANCE  |PWO        |WPO        |WO         |IT_DEPT   |This is a test |Yes     |Cash         |850          |Mr              |Black River|Tertiary        |Full Time|Manager           |src\test\resources\Photo_upload.jpg |1        |Married       |Spouse      |Sanon         |Kirti             |Female|1Jan94|Air Hostess|0001252563|Cane     |2.5        |Tenant    |Moka         |Port Louis     |Sheltered Farming|9            |Pepper     |Interline      |1Aug2030                 |src\test\resources\Upload_Test1.pdf|Harvest    |Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |Counter        |
-#      |Chrome |ybhunjun5    |Mauritius1!1710|Admin@123|FINANCE  |PWO        |WPO        |WO         |IT_DEPT   |This is a test |Yes     |Cash         |850          |Mr              |Black River|Tertiary        |Full Time|Manager           |src\test\resources\Photo_upload.jpg |1        |Married       |Spouse      |Sanon         |Kirti             |Female|1Jan94|Air Hostess|0001252563|Cane     |2.5        |Tenant    |Moka         |Port Louis     |Sheltered Farming|9            |Pepper     |Interline      |1Aug2030                 |src\test\resources\Upload_Test1.pdf|Harvest    |Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |Counter        |
+#      |Chrome |Suraj_Jo     |Admin@123|Admin@123|FINANCE  |PWO        |WPO        |WO         |IT_DEPT   |This is a test |Yes     |Cash         |850          |Mr              |Black River|Tertiary        |Full Time|Manager           |src\test\resources\Photo_upload.jpg |1        |Married       |Spouse      |Sanon         |Kirti             |Female|1Jan94|Air Hostess|0001252563|Cane     |2.5        |Tenant    |Moka         |Port Louis     |Sheltered Farming|9            |Pepper     |Interline      |1Aug2030                 |src\test\resources\Upload_Test1.pdf|Harvest    |Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |Counter        |
+      |Chrome |ybhunjun5    |Mauritius1!1710|Admin@123|FINANCE  |PWO        |WPO        |WO         |IT_DEPT   |This is a test |Yes     |Cash         |850          |Mr              |Black River|Tertiary        |Full Time|Manager           |src\test\resources\Photo_upload.jpg |1        |Married       |Spouse      |Sanon         |Kirti             |Female|1Jan94|Air Hostess|0001252563|Cane     |2.5        |Tenant    |Moka         |Port Louis     |Sheltered Farming|9            |Pepper     |Interline      |1Aug2030                 |src\test\resources\Upload_Test1.pdf|Harvest    |Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |Counter        |
 
  #Scenario6
   @Approval_by_BO_Payment_at_online_for_Small_Planters_Registration @Smoke_online
@@ -1185,28 +1185,7 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
     And I Input Total Extent of plot (In Arpent) "<Land_Extent>"
     And I Select Owner Type "<Owner_Type>"
     And I Input Plot Location "<Plot_Location>"
-#    And I Save Particulars of Crop
     And I Click on Save and Continue
-#    And I Verify Display of Particulars for Horticultural Plantations Page
-#    And I Click on Add Horticultural
-#    And Verify Display of Particulars for Horticultural Plantations Table
-#    And I Input Field Location "<Field_Location>"
-#    And I Select Production System "<Production_System>"
-#    And I Input Total Extent of plot - Size "<Total_Extent>"
-#    And I Input Crop grown at time of Registration/ Crop to be grown "<Crop_Grown>"
-#    And I Select Owner Type for Horticultural Plantation "<Owner_Type>"
-#    And I Select Plantation Type "<Plantation_Type>"
-#    And I Input Expected Date of Planting/Seedling "<Date_Plantation_Seedling>"
-#    And I Save Particulars for Horticultural Plantations
-#    And I Upload documents for Horticultural Plantations "<Upload_test>"
-#    And I Verify for Document Upload Success Message
-#    And I Close Horticultural Plantation Documents tab
-#    And I Click on Edit button for Particulars for Horticultural Plantations declared under FPS
-#    And I Verify Particulars for Horticultural Plantations declared under FPS Table
-#    And I Input Crop Status and Organisation "<Crop_Status>"
-#    And I Input Organisation Account Number "<Org_acc_no>"
-#    And I Save Particulars for Horticultural Plantations declared under FPS
-#    And I Click on Save and Continue
     And I Verify Declaration Page for REGISTRATION FOR SMALL PLANTERS
     And I click on I agree to the Terms and Conditions
     And I Click on Photo checkbox
@@ -1325,12 +1304,15 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
     And I Search for Application Ref Number for re-submit
     And I Verify display of REGISTRATION FOR SMALL PLANTERS Page
     And I Click on Save and Continue
-    And I Verify Upload Required Documents Page is displayed
+    And I Verify Display of Particulars of Family Beneficiaries Page
     And I Click on Save and Continue
-    And I Verify Terms and Conditions Page
+    And I Verify Display of Particulars of Crop: Sugarcane and Tea Plantation Page
+    And I Click on Save and Continue
+    And I Verify Declaration Page for REGISTRATION FOR SMALL PLANTERS
     And I Click on Submit Application "<Confirmation>"
-    And I Verify Success message for application submitted
-    And I Sign Out as Front Registered User
+    And I Verify Success message for application submitted for Small Planters Registration
+    Then I Sign Out as Front Registered User
+
 
     #    WPO
     And I am on SFWF Back Office Home Page GOC "<Browser>"
