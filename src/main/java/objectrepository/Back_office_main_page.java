@@ -169,6 +169,13 @@ public class Back_office_main_page {
         return element;
     }
 
+    //Object for Action - Select One - PWO3
+    private static By lbl_Action_PWO3_select_one = By.xpath("//label[contains(@id, 'myActionId_label')]");
+    public static WebElement Action_PWO3_select_one(WebDriver driver) {
+        element = driver.findElement(lbl_Action_PWO3_select_one);
+        return element;
+    }
+
     //Object for Action - Select One - Other BO - Registration
     private static By lbl_Action_select_one = By.xpath("//label[contains(@id, 'roleAction')]");
     public static WebElement Action_select_one(WebDriver driver) {
@@ -356,6 +363,13 @@ public class Back_office_main_page {
     private static By lbl_Under_query_mail_success_message = By.xpath("(//span[contains(.,'Mail has been sent successfully')])[3]");
     public static WebElement Under_query_mail_success_message(WebDriver driver) {
         element = driver.findElement(lbl_Under_query_mail_success_message);
+        return element;
+    }
+
+    //Object for Under Query Mail Success Message - Small Breeder
+    private static By lbl_Under_query_mail_success_message_sb = By.xpath("(//span[contains(.,'Mail has been sent successfully')])[5]");
+    public static WebElement Under_query_mail_success_message_sb(WebDriver driver) {
+        element = driver.findElement(lbl_Under_query_mail_success_message_sb);
         return element;
     }
 
