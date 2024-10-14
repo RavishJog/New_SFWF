@@ -925,34 +925,12 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
     And I Click on Save and Continue
     And I Verify Display of Particulars of Crop: Sugarcane and Tea Plantation Page
     And I Click on Add Crop
-#    And I Verify Display of Particulars of Crop: Sugarcane and Tea Plantation Table
     And I Input Organisation Account Number "<Org_acc_no>"
     And I Select Crop Type "<Crop_Type>"
     And I Input Total Extent of plot (In Arpent) "<Land_Extent>"
     And I Select Owner Type "<Owner_Type>"
     And I Input Plot Location "<Plot_Location>"
-#    And I Save Particulars of Crop
     And I Click on Save and Continue
-#    And I Verify Display of Particulars for Horticultural Plantations Page
-#    And I Click on Add Horticultural
-#    And Verify Display of Particulars for Horticultural Plantations Table
-#    And I Input Field Location "<Field_Location>"
-#    And I Select Production System "<Production_System>"
-#    And I Input Total Extent of plot - Size "<Total_Extent>"
-#    And I Input Crop grown at time of Registration/ Crop to be grown "<Crop_Grown>"
-#    And I Select Owner Type for Horticultural Plantation "<Owner_Type>"
-#    And I Select Plantation Type "<Plantation_Type>"
-#    And I Input Expected Date of Planting/Seedling "<Date_Plantation_Seedling>"
-#    And I Save Particulars for Horticultural Plantations
-#    And I Upload documents for Horticultural Plantations "<Upload_test>"
-#    And I Verify for Document Upload Success Message
-#    And I Close Horticultural Plantation Documents tab
-#    And I Click on Edit button for Particulars for Horticultural Plantations declared under FPS
-#    And I Verify Particulars for Horticultural Plantations declared under FPS Table
-#    And I Input Crop Status and Organisation "<Crop_Status>"
-#    And I Input Organisation Account Number "<Org_acc_no>"
-#    And I Save Particulars for Horticultural Plantations declared under FPS
-#    And I Click on Save and Continue
     And I Verify Declaration Page for REGISTRATION FOR SMALL PLANTERS
     And I click on I agree to the Terms and Conditions
     And I Click on Photo checkbox
@@ -983,13 +961,11 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
     And I Verify List of Applications page
     And I Click on Confirm Processing Fees
     And I Verify display of Processing Details Frame
-#    And I Select Payment Mode "<Payment_Mode>"
-#    And I Input Amount of payment "<Amount_To_Pay>"
-#    And I Click on Add Payment
     And I Click on Save Payment
     And I Verify success message for adding payment
     And I Sign Out
     And I Verify Successful Sign Out
+
 #    PWO
     And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input PWO Username "<PwoUsername>" and Password "<Password>"
@@ -1083,12 +1059,14 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
     And I Search for Application Ref Number for re-submit
     And I Verify display of REGISTRATION FOR SMALL PLANTERS Page
     And I Click on Save and Continue
-    And I Verify Upload Required Documents Page is displayed
+    And I Verify Display of Particulars of Family Beneficiaries Page
     And I Click on Save and Continue
-    And I Verify Terms and Conditions Page
+    And I Verify Display of Particulars of Crop: Sugarcane and Tea Plantation Page
+    And I Click on Save and Continue
+    And I Verify Declaration Page for REGISTRATION FOR SMALL PLANTERS
     And I Click on Submit Application "<Confirmation>"
-    And I Verify Success message for application submitted
-    And I Sign Out as Front Registered User
+    And I Verify Success message for application submitted for Small Planters Registration
+    Then I Sign Out as Front Registered User
 
     #    WPO
     And I am on SFWF Back Office Home Page GOC "<Browser>"
@@ -1363,7 +1341,7 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
 
 
 #Scenario7
-  @Approval_by_BO_Payment_at_counter_for_Tea_grower @Smoke_counter_Tea_grower
+  @Approval_by_BO_Payment_at_counter_for_Tea_grower @Smoke_counter_Tea_grower_GOC
   Scenario Outline: Payment at counter for Registration as Tea Grower
     Given I am on SFWF Front Office Home Page GOC "<Browser>"
     When I Input Registered Maupass User's Username "<Username>" and Password "<FPassword>"
@@ -1426,7 +1404,7 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
     And I Click on Final Proceed to Payment
     And I Verify Message to proceed to Post Office for Payment
     Then I Sign Out as Front Registered User
-    #    Finance
+
     #    Finance
     And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input Finance Username "<FUsername>" and Password "<Password>"
@@ -1436,13 +1414,11 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
     And I Verify List of Applications page
     And I Click on Confirm Processing Fees
     And I Verify display of Processing Details Frame
-#    And I Select Payment Mode "<Payment_Mode>"
-#    And I Input Amount of payment "<Amount_To_Pay>"
-#    And I Click on Add Payment
     And I Click on Save Payment
     And I Verify success message for adding payment
     And I Sign Out
     And I Verify Successful Sign Out
+
 #    PWO
     And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input PWO Username "<PwoUsername>" and Password "<Password>"
@@ -1460,6 +1436,7 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
     And I Verify for success message for assigning
     And I Sign Out
     And I Verify Successful Sign Out
+
     #    WPO
     And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input WPO Username "<WpoUsername>" and Password "<Password>"
@@ -1534,9 +1511,11 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
     And I Search for Application Ref Number for re-submit
     And I Verify display of REGISTRATION FOR TEA GROWERS Page
     And I Click on Save and Continue
-    And I Verify Upload Required Documents Page is displayed
+    And I Verify Display of Particulars of Family Beneficiaries Page
     And I Click on Save and Continue
-    And I Verify Terms and Conditions Page
+    And I Verify Display of Particulars for Registration of Tea Plantation
+    And I Click on Save and Continue
+    And I Verify Declaration Page for REGISTRATION FOR TEA GROWER
     And I Click on Submit Application "<Confirmation>"
     And I Verify Success message for application submitted
     And I Sign Out as Front Registered User
@@ -1748,9 +1727,11 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
     And I Search for Application Ref Number for re-submit
     And I Verify display of REGISTRATION FOR TEA GROWERS Page
     And I Click on Save and Continue
-    And I Verify Upload Required Documents Page is displayed
+    And I Verify Display of Particulars of Family Beneficiaries Page
     And I Click on Save and Continue
-    And I Verify Terms and Conditions Page
+    And I Verify Display of Particulars for Registration of Tea Plantation
+    And I Click on Save and Continue
+    And I Verify Declaration Page for REGISTRATION FOR TEA GROWER
     And I Click on Submit Application "<Confirmation>"
     And I Verify Success message for application submitted
     And I Sign Out as Front Registered User
@@ -1803,7 +1784,7 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
       |Chrome |ybhunjun5    |Mauritius1!1710|Admin@123|FINANCE  |PWO        |WPO        |WO         |IT_DEPT   |This is a test |Yes     |Cash         |850          |Mrs              |Port Louis|Tertiary        |Full Time|Manager           |src\test\resources\Photo_upload.jpg |2        |Married       |Spouse      |Keen           |Dafne            |Female|1Jan94|Actress    |Tea Grower |2.7        |Tenant    |Moka          |src\test\resources\Upload_Test1.pdf|Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |Credit         |5123-4500-0000-0008|01           |39         |100          |My name        |ACC5896   |
 
 #Scenario9
-  @Approval_by_BO_Payment_at_counter_for_Registration_as_Small_Breeder
+  @Approval_by_BO_Payment_at_counter_for_Registration_as_Small_Breeder @Smoke_counter_for_Registration_as_Small_Breeder_GOC
   Scenario Outline: Payment at counter for Registration as Small Breeder
 
     Given I am on SFWF Front Office Home Page GOC "<Browser>"
@@ -1842,21 +1823,8 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
     And I Save Particulars of Family and Beneficiaries
     And I Click on Save and Continue
     And I Verify Display of Livestock Activity
-    And I Click on Add Livestock Activity
-    And I Verify Display of Particulars for Livestock Activity Table
-    And I Select Species "<Spicies>"
-    And I Input Number of Male and Female "<Male_Female_Number>"
-    And I Input Total Heads "<Total_Heads>"
+    And I Input Number of Cow Female "<Male_Female_Number>"
     And I Select Reason "<Reason>"
-    And I Save Livestock Activity
-    And I Click on Save and Continue
-    And I Verify Display of Particulars for Cattle Page
-    And I Click on Add Particular of Cattle
-    And I Verify Display of Particulars for Cattle Table
-    And I Input Microchip Number "<Microchip_No>"
-    And I Select Cattle Sex "<Cattle_Sex>"
-    And I Select Cattle Age "<Cattle_Age>"
-    And I Save Particulars for Cattle
     And I Click on Save and Continue
     And I Verify Upload Required Documents Page is displayed
     And I Upload Copy of National Identify Card (ID) "<Upload_test>"
@@ -1872,7 +1840,7 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
     And I Click on Add Additional Document
     And I Input Additional Document Name "<Additional_Doc_Name>"
     And I Verify Success message for adding Additional Document Name
-    And I Upload Additional Document "<Upload_test>"
+    And I Upload Additional Document for small breeder "<Upload_test>"
     And I Verify for Document Upload Success Message
     And I Click on Save and Continue
     And I Verify Declaration Page for REGISTRATION FOR SMALL BREEDERS
@@ -1895,7 +1863,7 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
     And I Click on Final Proceed to Payment
     And I Verify Message to proceed to Post Office for Payment
     Then I Sign Out as Front Registered User
-    #    Finance
+
     #    Finance
     And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input Finance Username "<FUsername>" and Password "<Password>"
@@ -1905,13 +1873,11 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
     And I Verify List of Applications page
     And I Click on Confirm Processing Fees
     And I Verify display of Processing Details Frame
-#    And I Select Payment Mode "<Payment_Mode>"
-#    And I Input Amount of payment "<Amount_To_Pay>"
-#    And I Click on Add Payment
     And I Click on Save Payment
     And I Verify success message for adding payment
     And I Sign Out
     And I Verify Successful Sign Out
+
 #    PWO
     And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input PWO Username "<PwoUsername>" and Password "<Password>"
@@ -1922,13 +1888,14 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
     And I Search for Application Ref Number as a Back Office User
     And I Click to view Application
     And I Click on Action Button
-    And I Select PWO Assigned
+    And I Select Option Assigned
     And I Select WPO
     And I Input Remarks "<Remarks>"
     And I Click on Save Actions
     And I Verify for success message for assigning
     And I Sign Out
     And I Verify Successful Sign Out
+
     #    WPO
     And I am on SFWF Back Office Home Page GOC "<Browser>"
     And I Input WPO Username "<WpoUsername>" and Password "<Password>"
@@ -1939,7 +1906,7 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
     And I Search for Application Ref Number as a Back Office User
     And I Click to view Application
     And I Click on Action Button
-    And I Select Assigned
+    And I Select Option Assigned
     And I Select WO
     And I Input Remarks "<Remarks>"
     And I Click on Save Actions
@@ -1961,10 +1928,11 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
     And I Input Site visit remarks "<Remarks>"
     And I Upload Site Report "<Upload_test>"
     And I Verify for Document Upload Success Message
+    And I Input Section One data "<Breeder_Type>"
     And I Click on Save Button
     And I Verify Site Visit saved success message
     And I Click on Action Button
-    And I Select Assigned
+    And I Select Option Assigned
     And I Select WPO
     And I Input Remarks "<Remarks>"
     And I Click on Save Actions
@@ -1982,10 +1950,10 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
     And I Search for Application Ref Number as a Back Office User
     And I Click to view Application
     And I Click on Action Button
-    And I Select Under Query
+    And I Select Option Under Query
     And I Input External Remarks "<Remarks>"
-    And I Click on Under Query Notification
-    And I Verify Success Message for Under Query Notification
+    And I Click on Under Query Notification Button
+    And I Verify Success Message for Under Query Mail Notification
     And I Click on Save Actions
     And I Verify for success message for workflow saved
     And I Sign Out
@@ -2020,7 +1988,7 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
     And I Search for Application Ref Number as a Back Office User
     And I Click to view Application
     And I Click on Action Button
-    And I Select Approved to approve the registration application
+    And I Select Option Approved to approve the registration application
     And I Input Remarks "<Remarks>"
     And I Click on Save Actions
     And I Verify for success message for approval
@@ -2054,8 +2022,8 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
     And I Sign Out as Front Registered User
 
     Examples:
-      |Browser|Username     |FPassword      | Password |FUsername|PwoUsername|WpoUsername|WOUsername |ITUsername|Remarks        |Bonafide|Payment_Mode |Amount_To_Pay|Applicant_Title |District   |Education_Level |Act      |Other_Occupation  |Photo                               |Year_dur |Marital_Status|Relationship|Family_Surname|Family_Other_Names|Gender|DOB   |Occupation |License    |Land_Extent|Owner_Type|Plot_Location|Spicies |Male_Female_Number|Total_Heads |Reason |Microchip_No|Cattle_Sex|Cattle_Age|Upload_test                        |Additional_Doc_Name      |Bank_Name  |Bank_Branch|Bank_Account_No|Confirmation|App_status|Payment_Status |Payment_method |
-      |Chrome |ybhunjun5    |Mauritius1!1710|Admin@123|FINANCE  |PWO        |WPO        |WO         |IT_DEPT   |This is a test |Yes     |Cash         |850          |Mrs              |Port Louis|Tertiary        |Full Time|Manager           |src\test\resources\Photo_upload.jpg |2        |Married       |Spouse      |Keen          |Dafne             |Female|1Jan94|Actress    |Tea Grower |2.7        |Tenant    |Moka         |Cattle  |550               |550         |Meat   |AAA2563     |Male      |1Month    |src\test\resources\Upload_Test1.pdf|Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |Counter        |
+      |Browser|Username     |FPassword      | Password  |FUsername|PwoUsername|WpoUsername|WOUsername |ITUsername|Remarks        |Bonafide|Payment_Mode |Amount_To_Pay|Applicant_Title |District   |Education_Level |Act      |Other_Occupation  |Photo                               |Year_dur |Marital_Status|Relationship|Family_Surname|Family_Other_Names|Gender|DOB   |Occupation |License    |Land_Extent|Owner_Type|Plot_Location|Spicies |Male_Female_Number|Total_Heads |Reason |Microchip_No|Cattle_Sex|Cattle_Age|Upload_test                        |Additional_Doc_Name      |Bank_Name  |Bank_Branch|Bank_Account_No|Confirmation|App_status|Payment_Status |Payment_method |Breeder_Type|
+      |Chrome |Suraj_Jo     |Admin@123      |Admin@123  |FINANCE  |PWO        |WPO        |WO         |IT_DEPT   |This is a test |Yes     |Cash         |850          |Mrs              |Port Louis|Tertiary        |Full Time|Manager           |src\test\resources\Photo_upload.jpg |2        |Married       |Spouse      |Keen          |Dafne             |Female|1Jan94|Actress    |Tea Grower |2.7        |Tenant    |Moka         |Cattle    |10               |550         |Meat   |AAA2563     |Male      |1Month    |src\test\resources\Upload_Test1.pdf|Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |Counter        |Cattle     |
 
 
     #Scenario10

@@ -12,6 +12,7 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import objectrepository.*;
+import org.apache.bcel.generic.TABLESWITCH;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -2216,6 +2217,8 @@ public class Steps extends Utility {
 
     @And("^I Click on Save Button$")
     public void iClickOnSaveButton() throws InterruptedException {
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);", Back_office_main_page.Save_Back_office_users(driver));
+        Thread.sleep(1000);
         Back_office_main_page.Save_Back_office_users(driver).click();
         WebDriverWait w = new WebDriverWait(driver, 30);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[contains(.,'successfully saved!')])")));
@@ -3447,5 +3450,91 @@ public class Steps extends Utility {
         WebDriverWait w = new WebDriverWait(driver, 30);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//label[contains(.,'Select Users')]")));
 
+    }
+
+    @And("^I Input Number of Cow Female \"([^\"]*)\"$")
+    public void iInputNumberOfCowFemale(String Male_Female_Number) throws Throwable {
+        Small_breeder.No_of_cow(driver).sendKeys(Male_Female_Number);
+        Small_breeder.No_of_cow(driver).sendKeys(Keys.TAB);
+        Thread.sleep(1000);
+    }
+
+    @And("^I Upload Additional Document for small breeder \"([^\"]*)\"$")
+    public void iUploadAdditionalDocumentForSmallBreeder(String Upload_test) throws Throwable {
+        String filePath = new File(Upload_test).getAbsolutePath();
+        Documents_upload.Additional_document_upload_small_breeder(driver).sendKeys(filePath);
+        WebDriverWait w = new WebDriverWait(driver, 30);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[10]")));
+
+    }
+
+    @And("^I Select Option Assigned$")
+    public void iSelectOptionAssigned() throws InterruptedException {
+        Back_office_main_page.Action_PWO3_select_one(driver).click();
+        Thread.sleep(1500);
+        Back_office_main_page.Action_Assigned(driver).click();
+        WebDriverWait w = new WebDriverWait(driver, 30);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//label[contains(.,'Select Users')]")));
+
+    }
+
+    @And("^I Select Option Under Query$")
+    public void iSelectOptionUnderQuery() throws InterruptedException {
+        Back_office_main_page.Action_PWO3_select_one(driver).click();
+        Thread.sleep(1500);
+        Back_office_main_page.Action_Under_Query(driver).click();
+        WebDriverWait w = new WebDriverWait(driver, 30);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//label[contains(.,'External Remarks')]")));
+
+    }
+
+    @And("^I Select Option Approved to approve the registration application$")
+    public void iSelectOptionApprovedToApproveTheRegistrationApplication() throws InterruptedException {
+        Back_office_main_page.Action_PWO3_select_one(driver).click();
+        Thread.sleep(1500);
+        Back_office_main_page.Action_Approved(driver).click();
+        WebDriverWait w = new WebDriverWait(driver, 30);
+        w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//label[contains(.,'Remarks')])[2]")));
+
+    }
+
+    @And("^I Input Section One data \"([^\"]*)\"$")
+    public void iInputSectionOneData(String Breeder_Type) throws Throwable {
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", Small_breeder.Section_one_site_visit(driver));
+        Thread.sleep(1500);
+        Small_breeder.Select_one_type_breeder_site_visit(driver).click();
+        Thread.sleep(1000);
+        if (Breeder_Type.equals("Cattle")){
+            Small_breeder.Cattle_breeder_site_visit(driver).click();
+            Thread.sleep(1500);
+            Small_breeder.Select_one_category_site_visit(driver).click();
+            Thread.sleep(1000);
+            Small_breeder.Cow_category_site_visit(driver).click();
+            Thread.sleep(1000);
+            Small_breeder.Tag_no_microchip_no_site_visit(driver).sendKeys("ABC123");
+            Small_breeder.Tag_no_microchip_no_site_visit(driver).sendKeys(Keys.ENTER);
+            Thread.sleep(1000);
+            Small_breeder.No_of_animal_site_visit(driver).sendKeys("1");
+        } else{
+            System.out.println("For other options steps are not defined");
+        }
+    }
+
+    @And("^I Click on Under Query Notification Button$")
+    public void iClickOnUnderQueryNotificationButton() {
+        Back_office_main_page.Under_query_notif_send(driver).click();
+        WebDriverWait w = new WebDriverWait(driver, 10);
+        WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//span[contains(.,'Mail has been sent successfully')])[5]")));
+
+    }
+
+    @And("^I Verify Success Message for Under Query Mail Notification$")
+    public void iVerifySuccessMessageForUnderQueryMailNotification() {
+        try {
+            Back_office_main_page.Under_query_mail_success_message_sb(driver);
+        } catch (Exception e) {
+            System.out.println("Success Message for Under Query Notification did not appear");
+            Assert.fail("Success Message for Under Query Notification did not appear");
+        }
     }
 }

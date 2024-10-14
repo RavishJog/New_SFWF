@@ -143,6 +143,13 @@ public class Documents_upload {
         return element;
     }
 
+    //Object for upload for additional documents for Small Breeder
+    private static By btn_Additional_document_upload_small_breeder = By.xpath("//input[contains(@id, 'fileUploader9_input')]");
+    public static WebElement Additional_document_upload_small_breeder(WebDriver driver) {
+        element = driver.findElement(btn_Additional_document_upload_small_breeder);
+        return element;
+    }
+
     //Object for upload for additional documents - REGISTRATION FOR FARMERS' COOPERATIVE ASSOCIATION, SOCIETY AND COMPANY
     private static By btn_Additional_document_FCA_upload = By.xpath("//input[contains(@id, 'fileUploader8_input')]");
     public static WebElement Additional_document_FCA_upload(WebDriver driver) {
