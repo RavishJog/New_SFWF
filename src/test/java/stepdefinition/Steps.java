@@ -730,10 +730,7 @@ public class Steps extends Utility {
             System.out.println("Document Upload Success Message did not appear");
             Assert.fail("Document Upload Success Message did not appear");
         }
-        Documents_upload.Close_message(driver).click();
-        Thread.sleep(3000);
-
-
+        Thread.sleep(5000);
     }
 
     @And("^I Upload Certificate of Incorporation \"([^\"]*)\"$")
