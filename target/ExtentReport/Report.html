@@ -53,7 +53,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Oct 15, 2024 01:12:43 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Oct 15, 2024 03:13:41 PM</span>
 				</a>
 			</li>
 			<li>
@@ -92,11 +92,9 @@
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
 					<li><a href='#'>@Main_feature</a></li>
-					<li><a href='#'>@US13280</a></li>
-					<li><a href='#'>@Regression</a></li>
-					<li><a href='#'>@GOC_Registrations</a></li>
-					<li><a href='#'>@Approval_by_BO_Payment_at_counter_for_Agro-Processing-Enterprise</a></li>
-					<li><a href='#'>@Smoke_counter_Agro-Processing-Enterprise_GOC</a></li>
+					<li><a href='#'>@US12822_12828</a></li>
+					<li><a href='#'>@Payment_at_counter_for_Agro-Processing-Enterprise</a></li>
+					<li><a href='#'>@Save_continue_test</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -174,7 +172,7 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>195</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>57</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -193,31 +191,29 @@
 				
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>User Story 13280-GOC - Back Office Process for Registration</span>
-						<span class='test-time'>Oct 15, 2024 01:12:43 PM</span>
+						<span class='test-name'>User Story 12822 - Payment Process for Registration</span>
+						<span class='test-time'>Oct 15, 2024 03:13:41 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='scenariooutline node' test-id='2' status='pass'>
-	<span class='duration right label'>0h 6m 58s+755ms</span>
+	<span class='duration right label'>0h 2m 1s+750ms</span>
 	<div class='desc'>
 		<b>ScenarioOutline</b>
-		<span class="desc-text">Approval for Payment at counter for Registration as Agro-Processing Enterprise-Application form</span>
+		<span class="desc-text">Payment at counter for Registration as Agro-Processing Enterprise-Application form</span>
 	</div>
 	<ul class='steps'>
 		<li test-id='3' class='node scenario pass' status='pass'>
 			<div class='category-list'>
 				<span class='category label white-text'>@Main_feature</span>
-				<span class='category label white-text'>@US13280</span>
-				<span class='category label white-text'>@Approval_by_BO_Payment_at_counter_for_Agro-Processing-Enterprise</span>
-				<span class='category label white-text'>@Regression</span>
-				<span class='category label white-text'>@Smoke_counter_Agro-Processing-Enterprise_GOC</span>
-				<span class='category label white-text'>@GOC_Registrations</span>
+				<span class='category label white-text'>@Payment_at_counter_for_Agro-Processing-Enterprise</span>
+				<span class='category label white-text'>@Save_continue_test</span>
+				<span class='category label white-text'>@US12822_12828</span>
 			</div>
 			
 			<b>Scenario</b>
 			
-			<span class="bdd-step-name">Approval for Payment at counter for Registration as Agro-Processing Enterprise-Application form</span>
+			<span class="bdd-step-name">Payment at counter for Registration as Agro-Processing Enterprise-Application form</span>
 			
 				<ul class='steps'>
 					<li test-id='4' class='node given pass' status='pass'><b>Given</b>
@@ -448,558 +444,6 @@
 						<span class="bdd-step-name">And I Sign Out as Front Registered User</span>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='61' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I am on SFWF Back Office Home Page GOC "Chrome"</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='62' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Input Finance Username "Finance" and Password "Admin@123"</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='63' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Click on Sign In button</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='64' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Verify Successful Login</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='65' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Click on Manage Cashier</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='66' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Verify List of Applications page</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='67' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Click on Confirm Processing Fees</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='68' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Verify display of Processing Details Frame</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='69' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Click on Save Payment</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='70' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Verify success message for adding payment</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='71' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Sign Out</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='72' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Verify Successful Sign Out</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='73' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I am on SFWF Back Office Home Page GOC "Chrome"</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='74' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Input PWO Username "PWO" and Password "Admin@123"</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='75' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Click on Sign In button</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='76' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Verify Successful Login</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='77' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Click on All Applications</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='78' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Verify display of list of registrations page</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='79' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Search for Application Ref Number as a Back Office User</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='80' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Click to view Application</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='81' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Click on Action Button</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='82' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Select PWO Assigned</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='83' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Select WPO</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='84' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Input Remarks "This is a test"</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='85' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Click on Save Actions</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='86' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Verify for success message for assigning</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='87' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Sign Out</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='88' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Verify Successful Sign Out</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='89' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I am on SFWF Back Office Home Page GOC "Chrome"</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='90' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Input WPO Username "WPO" and Password "Admin@123"</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='91' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Click on Sign In button</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='92' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Verify Successful Login</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='93' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Click on All Applications</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='94' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Verify display of list of registrations page</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='95' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Search for Application Ref Number as a Back Office User</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='96' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Click to view Application</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='97' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Click on Action Button</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='98' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Select Assigned</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='99' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Select WO</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='100' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Input Remarks "This is a test"</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='101' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Click on Save Actions</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='102' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Verify for success message for assigning</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='103' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Sign Out</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='104' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Verify Successful Sign Out</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='105' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I am on SFWF Back Office Home Page GOC "Chrome"</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='106' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Input WO-WA Username "WO" and Password "Admin@123"</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='107' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Click on Sign In button</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='108' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Verify Successful Login</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='109' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Click on All Applications</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='110' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Verify display of list of registrations page</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='111' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Search for Application Ref Number as a Back Office User</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='112' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Click to view Application</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='113' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Click on Site Report Tab</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='114' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Select Bonafide Planter "Yes"</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='115' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Input Site visit remarks "This is a test"</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='116' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Upload Site Report "src\test\resources\Upload_Test1.pdf"</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='117' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Verify for Document Upload Success Message for Site Visit</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='118' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Click on Save Button</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='119' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Verify Site Visit saved success message</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='120' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Click on Action Button</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='121' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Select Assigned</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='122' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Select WPO</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='123' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Input Remarks "This is a test"</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='124' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Click on Save Actions</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='125' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Verify for success message for assigning</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='126' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Sign Out</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='127' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Verify Successful Sign Out</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='128' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I am on SFWF Back Office Home Page GOC "Chrome"</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='129' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Input WPO Username "WPO" and Password "Admin@123"</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='130' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Click on Sign In button</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='131' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Verify Successful Login</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='132' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Click on All Applications</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='133' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Verify display of list of registrations page</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='134' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Search for Application Ref Number as a Back Office User</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='135' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Click to view Application</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='136' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Click on Action Button</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='137' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Select Under Query</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='138' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Input External Remarks "This is a test"</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='139' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Click on Under Query Notification</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='140' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Verify Success Message for Under Query Notification</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='141' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Click on Save Actions</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='142' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Verify for success message for workflow saved</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='143' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Sign Out</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='144' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Verify Successful Sign Out</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='145' class='node given pass' status='pass'><b>Given</b>
-						<span class="bdd-step-name">Given I am on SFWF Front Office Home Page GOC "Chrome"</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='146' class='node when pass' status='pass'><b>When</b>
-						<span class="bdd-step-name">When I Input Registered Maupass User's Username "Suraj_Jo" and Password "Admin@123"</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='147' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Click on Sign In button in Maupass</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='148' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Verify Applicant's Successful Login</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='149' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Click on Register as Farmer</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='150' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Verify that User is directed to My Application Page</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='151' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Verify display of Farmers Card link</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='152' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Verify Programmes link</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='153' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Search for Application Ref Number for re-submit</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='154' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Verify display of REGISTRATION FOR AGRO-PROCESSING ENTERPRISE Page</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='155' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Click on Save and Continue</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='156' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Verify Upload Required Documents Page is displayed</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='157' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Click on Save and Continue</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='158' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Verify Terms and Conditions Page</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='159' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Click on Submit Application "Yes"</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='160' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Verify Success message for application submitted</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='161' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Sign Out as Front Registered User</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='162' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I am on SFWF Back Office Home Page GOC "Chrome"</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='163' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Input WPO Username "WPO" and Password "Admin@123"</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='164' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Click on Sign In button</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='165' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Verify Successful Login</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='166' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Click on All Applications</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='167' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Verify display of list of registrations page</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='168' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Search for Application Ref Number as a Back Office User</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='169' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Click to view Application</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='170' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Click on Action Button</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='171' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Select Approved to approve the registration application</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='172' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Input Remarks "This is a test"</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='173' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Click on Save Actions</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='174' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Verify for success message for approval</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='175' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Sign Out</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='176' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Verify Successful Sign Out</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='177' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I am on SFWF Back Office Home Page GOC "Chrome"</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='178' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Input IT Department Username "IT_DEPT" and Password "Admin@123"</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='179' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Click on Sign In button</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='180' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Verify Successful Login</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='181' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Click on All Applications</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='182' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Verify display of list of registrations page</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='183' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Search for Application Ref Number as a Back Office User</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='184' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Click to view Application</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='185' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Click on Print Card</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='186' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Sign Out</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='187' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Verify Successful Sign Out</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='188' class='node given pass' status='pass'><b>Given</b>
-						<span class="bdd-step-name">Given I am on SFWF Front Office Home Page GOC "Chrome"</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='189' class='node when pass' status='pass'><b>When</b>
-						<span class="bdd-step-name">When I Input Registered Maupass User's Username "Suraj_Jo" and Password "Admin@123"</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='190' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Click on Sign In button in Maupass</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='191' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Verify Applicant's Successful Login</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='192' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Click on Register as Farmer</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='193' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Verify that User is directed to My Application Page</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='194' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Verify display of Farmers Card link</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='195' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Verify Programmes link</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='196' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Search for Application Ref Number for to check Status Card Printed</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='197' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Verify Application Status to be Card Printed</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='198' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Sign Out as Front Registered User</span>
-							<div class='pre'>passed</div>
-					</li>
 				</ul>
 		</li>
 	</ul>
@@ -1081,13 +525,13 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Oct 15, 2024 01:12:43 PM</td>
-										<td class='linked' test-id='1'>User Story 13280-GOC - Back Office Process for Registration</td>
+										<td>Oct 15, 2024 03:13:41 PM</td>
+										<td class='linked' test-id='1'>User Story 12822 - Payment Process for Registration</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Oct 15, 2024 01:12:43 PM</td>
-										<td class='linked' test-id='3'>User Story 13280-GOC - Back Office Process for Registration.Approval for Payment at counter for Registration as Agro-Processing Enterprise-Application form.Approval for Payment at counter for Registration as Agro-Processing Enterprise-Application form</td>
+										<td>Oct 15, 2024 03:13:41 PM</td>
+										<td class='linked' test-id='3'>User Story 12822 - Payment Process for Registration.Payment at counter for Registration as Agro-Processing Enterprise-Application form.Payment at counter for Registration as Agro-Processing Enterprise-Application form</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -1097,7 +541,7 @@
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@US13280</span>
+						<span class='category-name'>@US12822_12828</span>
 						<span class='category-status right'>
 							<span class='label pass'>2</span>
 						</span>
@@ -1120,52 +564,13 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Oct 15, 2024 01:12:43 PM</td>
-										<td class='linked' test-id='1'>User Story 13280-GOC - Back Office Process for Registration</td>
+										<td>Oct 15, 2024 03:13:41 PM</td>
+										<td class='linked' test-id='1'>User Story 12822 - Payment Process for Registration</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Oct 15, 2024 01:12:43 PM</td>
-										<td class='linked' test-id='3'>User Story 13280-GOC - Back Office Process for Registration.Approval for Payment at counter for Registration as Agro-Processing Enterprise-Application form.Approval for Payment at counter for Registration as Agro-Processing Enterprise-Application form</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@Regression</span>
-						<span class='category-status right'>
-							<span class='label pass'>2</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 2</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Oct 15, 2024 01:12:43 PM</td>
-										<td class='linked' test-id='1'>User Story 13280-GOC - Back Office Process for Registration</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Oct 15, 2024 01:12:43 PM</td>
-										<td class='linked' test-id='3'>User Story 13280-GOC - Back Office Process for Registration.Approval for Payment at counter for Registration as Agro-Processing Enterprise-Application form.Approval for Payment at counter for Registration as Agro-Processing Enterprise-Application form</td>
+										<td>Oct 15, 2024 03:13:41 PM</td>
+										<td class='linked' test-id='3'>User Story 12822 - Payment Process for Registration.Payment at counter for Registration as Agro-Processing Enterprise-Application form.Payment at counter for Registration as Agro-Processing Enterprise-Application form</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -1175,46 +580,7 @@
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@GOC_Registrations</span>
-						<span class='category-status right'>
-							<span class='label pass'>2</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 2</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Oct 15, 2024 01:12:43 PM</td>
-										<td class='linked' test-id='1'>User Story 13280-GOC - Back Office Process for Registration</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Oct 15, 2024 01:12:43 PM</td>
-										<td class='linked' test-id='3'>User Story 13280-GOC - Back Office Process for Registration.Approval for Payment at counter for Registration as Agro-Processing Enterprise-Application form.Approval for Payment at counter for Registration as Agro-Processing Enterprise-Application form</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@Approval_by_BO_Payment_at_counter_for_Agro-Processing-Enterprise</span>
+						<span class='category-name'>@Payment_at_counter_for_Agro-Processing-Enterprise</span>
 						<span class='category-status right'>
 							<span class='label pass'>1</span>
 						</span>
@@ -1237,8 +603,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Oct 15, 2024 01:12:43 PM</td>
-										<td class='linked' test-id='3'>User Story 13280-GOC - Back Office Process for Registration.Approval for Payment at counter for Registration as Agro-Processing Enterprise-Application form.Approval for Payment at counter for Registration as Agro-Processing Enterprise-Application form</td>
+										<td>Oct 15, 2024 03:13:41 PM</td>
+										<td class='linked' test-id='3'>User Story 12822 - Payment Process for Registration.Payment at counter for Registration as Agro-Processing Enterprise-Application form.Payment at counter for Registration as Agro-Processing Enterprise-Application form</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -1248,7 +614,7 @@
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@Smoke_counter_Agro-Processing-Enterprise_GOC</span>
+						<span class='category-name'>@Save_continue_test</span>
 						<span class='category-status right'>
 							<span class='label pass'>1</span>
 						</span>
@@ -1271,8 +637,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Oct 15, 2024 01:12:43 PM</td>
-										<td class='linked' test-id='3'>User Story 13280-GOC - Back Office Process for Registration.Approval for Payment at counter for Registration as Agro-Processing Enterprise-Application form.Approval for Payment at counter for Registration as Agro-Processing Enterprise-Application form</td>
+										<td>Oct 15, 2024 03:13:41 PM</td>
+										<td class='linked' test-id='3'>User Story 12822 - Payment Process for Registration.Payment at counter for Registration as Agro-Processing Enterprise-Application form.Payment at counter for Registration as Agro-Processing Enterprise-Application form</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -1313,25 +679,25 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>195</div>
+					<div class='panel-lead'>57</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Oct 15, 2024 01:12:43 PM</div>
+					<div class='panel-lead'>Oct 15, 2024 03:13:41 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Oct 15, 2024 01:19:42 PM</div>
+			 		<div class='panel-lead'>Oct 15, 2024 03:15:43 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>418,948ms</div>
+					<div class='panel-lead'>121,940ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -1372,7 +738,7 @@
 							</td>
 						</tr>
 						<tr>
-							<td>@US13280</td>
+							<td>@US12822_12828</td>
 							<td>2</td>
 							<td>0</td>
 							<td>0</td>
@@ -1381,25 +747,7 @@
 							</td>
 						</tr>
 						<tr>
-							<td>@Regression</td>
-							<td>2</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@GOC_Registrations</td>
-							<td>2</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@Approval_by_BO_Payment_at_counter_for_Agro-Processing-Enterprise</td>
+							<td>@Payment_at_counter_for_Agro-Processing-Enterprise</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -1408,7 +756,7 @@
 							</td>
 						</tr>
 						<tr>
-							<td>@Smoke_counter_Agro-Processing-Enterprise_GOC</td>
+							<td>@Save_continue_test</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -1455,7 +803,7 @@
 				infoChild: 0,
 				exceptionsChild: 0,
 				
-				passGrandChild: 195,
+				passGrandChild: 57,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,

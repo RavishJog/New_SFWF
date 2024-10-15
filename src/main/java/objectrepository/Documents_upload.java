@@ -209,6 +209,13 @@ public class Documents_upload {
         return element;
     }
 
+    //Object for Close Button for Upload Successful Message
+    private static By btn_Close_message = By.xpath("//div[@class='ui-growl-icon-close ui-icon ui-icon-closethick']");
+    public static WebElement Close_message(WebDriver driver) {
+        element = driver.findElement(btn_Close_message);
+        return element;
+    }
+
 }
 
 

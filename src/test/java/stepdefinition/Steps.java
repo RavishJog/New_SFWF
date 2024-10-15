@@ -23,6 +23,7 @@ import org.testng.annotations.BeforeMethod;
 
 import java.io.File;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.concurrent.ExecutionException;
 
 import static java.lang.Thread.sleep;
@@ -722,13 +723,17 @@ public class Steps extends Utility {
     }
 
     @And("^I Verify for Document Upload Success Message$")
-    public void iVerifyForDocumentUploadSuccessMessage() {
+    public void iVerifyForDocumentUploadSuccessMessage() throws InterruptedException {
         try {
             Documents_upload.Document_upload_success_message(driver);
         } catch (Exception e) {
             System.out.println("Document Upload Success Message did not appear");
             Assert.fail("Document Upload Success Message did not appear");
         }
+        Documents_upload.Close_message(driver).click();
+        Thread.sleep(3000);
+
+
     }
 
     @And("^I Upload Certificate of Incorporation \"([^\"]*)\"$")
@@ -1086,7 +1091,7 @@ public class Steps extends Utility {
     @And("^I Click on Shopping Cart for payment$")
     public void iClickOnShoppingCartForPayment() throws InterruptedException {
         Payment_process.Payment_shopping_cart(driver).click();
-        WebDriverWait w = new WebDriverWait(driver, 10);
+        WebDriverWait w = new WebDriverWait(driver, 60);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h5[contains(.,'Payment Process')]")));
 //        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", Front_Home_page.Welcome_user(driver));
         Thread.sleep(2000);
@@ -1243,64 +1248,64 @@ public class Steps extends Utility {
         if (District.equals("Black River")){
             System.out.println("District Select is working");
             Small_planters.District_Select_one(driver).click();
-            Thread.sleep(1000);
+            Thread.sleep(2000);
             Small_planters.Black_river(driver).click();
 
         }else if (District.equals("Flacq")){
             System.out.println("District Select is working");
             Small_planters.District_Select_one(driver).click();
-            Thread.sleep(1000);
+            Thread.sleep(2000);
             Small_planters.Flacq(driver).click();
             Thread.sleep(1500);
 
         }else if (District.equals("Grand Port")){
             System.out.println("District Select is working");
             Small_planters.District_Select_one(driver).click();
-            Thread.sleep(1000);
+            Thread.sleep(2000);
             Small_planters.Grand_port(driver).click();
             Thread.sleep(1500);
 
         }else if (District.equals("Moka")){
             System.out.println("District Select is working");
             Small_planters.District_Select_one(driver).click();
-            Thread.sleep(1000);
+            Thread.sleep(2000);
             Small_planters.Moka(driver).click();
             Thread.sleep(1500);
 
         }else if (District.equals("Pamplemousses")){
             System.out.println("District Select is working");
             Small_planters.District_Select_one(driver).click();
-            Thread.sleep(1000);
+            Thread.sleep(2000);
             Small_planters.Pamplemousses(driver).click();
 
         }else if (District.equals("Port Louis")){
             System.out.println("District Select is working");
             Small_planters.District_Select_one(driver).click();
-            Thread.sleep(1000);
+            Thread.sleep(2000);
             Small_planters.Port_louis(driver).click();
 
         }else if (District.equals("Plaine Wilhems")){
             System.out.println("District Select is working");
             Small_planters.District_Select_one(driver).click();
-            Thread.sleep(1000);
+            Thread.sleep(2000);
             Small_planters.Plaine_wilhems(driver).click();
 
         }else if (District.equals("Riviere Du Rempart")){
             System.out.println("District Select is working");
             Small_planters.District_Select_one(driver).click();
-            Thread.sleep(1000);
+            Thread.sleep(2000);
             Small_planters.Riviere_du_rempart(driver).click();
 
         }else if (District.equals("Savannes")){
             System.out.println("District Select is working");
             Small_planters.District_Select_one(driver).click();
-            Thread.sleep(1000);
+            Thread.sleep(2000);
             Small_planters.Savannes(driver).click();
 
         }else if (District.equals("Rodrigues")){
             System.out.println("District Select is working");
             Small_planters.District_Select_one(driver).click();
-            Thread.sleep(1000);
+            Thread.sleep(2000);
             Small_planters.Rodrigues(driver).click();
 
         }
@@ -1308,7 +1313,9 @@ public class Steps extends Utility {
             System.out.println("Option is Not Valid");
             Assert.fail("Option is Not Valid");
         }
-        Thread.sleep(1500);
+        Thread.sleep(2000);
+        WebDriverWait w = new WebDriverWait(driver, 10);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//label[contains(.,'Sub Office:')]")));
         driver.findElement(By.xpath("//label[contains(@id,'suboffice_label')]")).click();
         Thread.sleep(1500);
         driver.findElement(By.xpath("//li[contains(@id,'suboffice_1')]")).click();
@@ -1375,7 +1382,7 @@ public class Steps extends Utility {
         WebDriverWait w = new WebDriverWait(driver, 30);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[contains(text(),'Upload')]")));
         Documents_upload.Upload_button(driver).click();
-        WebDriverWait ww = new WebDriverWait(driver, 10);
+        WebDriverWait ww = new WebDriverWait(driver, 60);
         WebElement element2 = ww.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download']")));
     }
 
@@ -2117,7 +2124,7 @@ public class Steps extends Utility {
     @And("^I Search for Application Ref Number as a Back Office User$")
     public void iSearchForApplicationRefNumberAsABackOfficeUser() throws InterruptedException {
         Back_office_main_page.Search_bar_app_num(driver).sendKeys(Application_reference_number);
-        Thread.sleep(2000);
+        Thread.sleep(5000);
     }
 
     @And("^I Click on Action Button$")
@@ -2126,7 +2133,7 @@ public class Steps extends Utility {
 //        WebDriverWait w = new WebDriverWait(driver, 30);
 //        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("///h3[contains(.,'Actions')]")));
 //        Thread.sleep(5000);
-        WebDriverWait w = new WebDriverWait(driver, 10);
+        WebDriverWait w = new WebDriverWait(driver, 60);
         WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h3[contains(.,'Actions')]")));
     }
 
