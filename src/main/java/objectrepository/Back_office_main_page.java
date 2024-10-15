@@ -142,7 +142,7 @@ public class Back_office_main_page {
     }
 
     //Object for Button to view last application
-    private static By btn_View_last_application = By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-eye'])[1]");
+    private static By btn_View_last_application = By.xpath("//button[contains (@id, 'view')]");
     public static WebElement View_last_application(WebDriver driver) {
         element = driver.findElement(btn_View_last_application);
         return element;
