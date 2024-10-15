@@ -12,7 +12,7 @@
         "before": [
           {
             "result": {
-              "duration": 154000,
+              "duration": 139300,
               "status": "passed"
             },
             "match": {
@@ -20,27 +20,27 @@
             }
           }
         ],
-        "line": 1567,
-        "name": "Payment at counter for Registration as Tea Grower",
+        "line": 228,
+        "name": "Approval for Payment at counter for Registration as Agro-Processing Enterprise-Application form",
         "description": "",
-        "id": "user-story-13280-goc---back-office-process-for-registration;payment-at-counter-for-registration-as-tea-grower;;2",
+        "id": "user-story-13280-goc---back-office-process-for-registration;approval-for-payment-at-counter-for-registration-as-agro-processing-enterprise-application-form;;2",
         "after": [
           {
             "result": {
-              "duration": 57584200,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Steps.setup()"
-            }
-          },
-          {
-            "result": {
-              "duration": 56500,
+              "duration": 99600,
               "status": "passed"
             },
             "match": {
               "location": "Steps.tearDown(Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 63389400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.setup()"
             }
           }
         ],
@@ -49,10 +49,10 @@
         "steps": [
           {
             "result": {
-              "duration": 6220025000,
+              "duration": 7351396300,
               "status": "passed"
             },
-            "line": 1345,
+            "line": 10,
             "name": "I am on SFWF Front Office Home Page GOC \"Chrome\"",
             "match": {
               "arguments": [
@@ -70,10 +70,10 @@
           },
           {
             "result": {
-              "duration": 8752257000,
+              "duration": 8510209400,
               "status": "passed"
             },
-            "line": 1346,
+            "line": 11,
             "name": "I Input Registered Maupass User\u0027s Username \"Suraj_Jo\" and Password \"Admin@123\"",
             "match": {
               "arguments": [
@@ -96,10 +96,10 @@
           },
           {
             "result": {
-              "duration": 76363200,
+              "duration": 49239100,
               "status": "passed"
             },
-            "line": 1347,
+            "line": 12,
             "name": "I Click on Sign In button in Maupass",
             "match": {
               "location": "Steps.iClickOnSignInButtonInMaupass()"
@@ -108,10 +108,10 @@
           },
           {
             "result": {
-              "duration": 3885116100,
+              "duration": 1849918800,
               "status": "passed"
             },
-            "line": 1348,
+            "line": 13,
             "name": "I Verify Applicant\u0027s Successful Login",
             "match": {
               "location": "Steps.iVerifyApplicantSSuccessfulLogin()"
@@ -120,10 +120,10 @@
           },
           {
             "result": {
-              "duration": 640480100,
+              "duration": 447579600,
               "status": "passed"
             },
-            "line": 1349,
+            "line": 14,
             "name": "I Click on Register as Farmer",
             "match": {
               "location": "Steps.iClickOnRegisterAsFarmer()"
@@ -132,10 +132,10 @@
           },
           {
             "result": {
-              "duration": 25381800,
+              "duration": 13973500,
               "status": "passed"
             },
-            "line": 1350,
+            "line": 15,
             "name": "I Verify that User is directed to My Application Page",
             "match": {
               "location": "Steps.iVerifyThatUserIsDirectedToMyApplicationPage()"
@@ -144,10 +144,10 @@
           },
           {
             "result": {
-              "duration": 13070900,
+              "duration": 14675500,
               "status": "passed"
             },
-            "line": 1351,
+            "line": 16,
             "name": "I Verify display of Farmers Card link",
             "match": {
               "location": "Steps.iVerifyDisplayOfFarmersCardLink()"
@@ -156,10 +156,10 @@
           },
           {
             "result": {
-              "duration": 13741400,
+              "duration": 13404800,
               "status": "passed"
             },
-            "line": 1352,
+            "line": 17,
             "name": "I Verify Programmes link",
             "match": {
               "location": "Steps.iVerifyProgrammesLink()"
@@ -168,10 +168,10 @@
           },
           {
             "result": {
-              "duration": 260741300,
+              "duration": 214318500,
               "status": "passed"
             },
-            "line": 1353,
+            "line": 18,
             "name": "I Click on New Button to apply for Registration",
             "match": {
               "location": "Steps.iClickOnNewButtonToApplyForRegistration()"
@@ -180,10 +180,10 @@
           },
           {
             "result": {
-              "duration": 417514400,
+              "duration": 131300600,
               "status": "passed"
             },
-            "line": 1354,
+            "line": 19,
             "name": "I Verify display of Registration Type Page",
             "match": {
               "location": "Steps.iVerifyDisplayOfRegistrationTypePage()"
@@ -192,43 +192,43 @@
           },
           {
             "result": {
-              "duration": 2471561600,
+              "duration": 2485637900,
               "status": "passed"
             },
-            "line": 1355,
-            "name": "I Click on Tea Grower Icon",
+            "line": 20,
+            "name": "I Click on Agro Processing Enterprise",
             "match": {
-              "location": "Steps.iClickOnTeaGrowerIcon()"
+              "location": "Steps.iClickOnAgroProcessingEnterprise()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 54361400,
+              "duration": 53072100,
               "status": "passed"
             },
-            "line": 1356,
-            "name": "I Verify display of REGISTRATION FOR TEA GROWERS Page",
+            "line": 21,
+            "name": "I Verify display of REGISTRATION FOR AGRO-PROCESSING ENTERPRISE Page",
             "match": {
-              "location": "Steps.iVerifyDisplayOfREGISTRATIONFORTEAGROWERSPage()"
+              "location": "Steps.iVerifyDisplayOfREGISTRATIONFORAGROPROCESSINGENTERPRISEPage()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 2636418100,
+              "duration": 67901800,
               "status": "passed"
             },
-            "line": 1357,
-            "name": "I Select an Applicant Title \"Mrs\"",
+            "line": 22,
+            "name": "I Input Associate/Society/Company Name \"ABC Agro Co Ltd\"",
             "match": {
               "arguments": [
                 {
-                  "val": "Mrs",
-                  "offset": 29
+                  "val": "ABC Agro Co Ltd",
+                  "offset": 40
                 }
               ],
-              "location": "Steps.iSelectAnApplicantTitle(String)"
+              "location": "Steps.iInputAssociateSocietyCompanyName(String)"
             },
             "matchedColumns": [
               13
@@ -237,19 +237,19 @@
           },
           {
             "result": {
-              "duration": 4264603400,
+              "duration": 70968800,
               "status": "passed"
             },
-            "line": 1358,
-            "name": "I Select Applicant District \"Port Louis\"",
+            "line": 23,
+            "name": "I Input Represented by \"Mr John Brown\"",
             "match": {
               "arguments": [
                 {
-                  "val": "Port Louis",
-                  "offset": 29
+                  "val": "Mr John Brown",
+                  "offset": 24
                 }
               ],
-              "location": "Steps.iSelectApplicantDistrict(String)"
+              "location": "Steps.iInputRepresentedBy(String)"
             },
             "matchedColumns": [
               14
@@ -258,19 +258,19 @@
           },
           {
             "result": {
-              "duration": 3639860200,
+              "duration": 60218200,
               "status": "passed"
             },
-            "line": 1359,
-            "name": "I Select Applicant Education Level \"Tertiary\"",
+            "line": 24,
+            "name": "I Input Business Registration No(BRN) for Agro-Processing Enterprise \"C123456789\"",
             "match": {
               "arguments": [
                 {
-                  "val": "Tertiary",
-                  "offset": 36
+                  "val": "C123456789",
+                  "offset": 70
                 }
               ],
-              "location": "Steps.iSelectApplicantEducationLevel(String)"
+              "location": "Steps.iInputBusinessRegistrationNoBRNForAgroProcessingEnterprise(String)"
             },
             "matchedColumns": [
               15
@@ -279,19 +279,19 @@
           },
           {
             "result": {
-              "duration": 185307400,
+              "duration": 54621700,
               "status": "passed"
             },
-            "line": 1360,
-            "name": "I Select Agricultural Activity \"Full Time\"",
+            "line": 25,
+            "name": "I Input Certificate of Incorporation No for Agro-Processing Enterprise \"XLPR852\"",
             "match": {
               "arguments": [
                 {
-                  "val": "Full Time",
-                  "offset": 32
+                  "val": "XLPR852",
+                  "offset": 72
                 }
               ],
-              "location": "Steps.iSelectAgriculturalActivity(String)"
+              "location": "Steps.iInputCertificateOfIncorporationNoForAgroProcessingEnterprise(String)"
             },
             "matchedColumns": [
               16
@@ -300,19 +300,19 @@
           },
           {
             "result": {
-              "duration": 59050800,
+              "duration": 51092300,
               "status": "passed"
             },
-            "line": 1361,
-            "name": "I Input Other Occupation \"Manager\"",
+            "line": 26,
+            "name": "I Select Activity \"Full Time\"",
             "match": {
               "arguments": [
                 {
-                  "val": "Manager",
-                  "offset": 26
+                  "val": "Full Time",
+                  "offset": 19
                 }
               ],
-              "location": "Steps.iInputOtherOccupation(String)"
+              "location": "Steps.iSelectActivity(String)"
             },
             "matchedColumns": [
               17
@@ -321,19 +321,19 @@
           },
           {
             "result": {
-              "duration": 1176885600,
+              "duration": 78219400,
               "status": "passed"
             },
-            "line": 1362,
-            "name": "I Upload Photograph \"src\\test\\resources\\Photo_upload.jpg\"",
+            "line": 27,
+            "name": "I Input Office Address \"The Main Road, Grand Port\"",
             "match": {
               "arguments": [
                 {
-                  "val": "src\\test\\resources\\Photo_upload.jpg",
-                  "offset": 21
+                  "val": "The Main Road, Grand Port",
+                  "offset": 24
                 }
               ],
-              "location": "Steps.iUploadPhotograph(String)"
+              "location": "Steps.iInputOfficeAddress(String)"
             },
             "matchedColumns": [
               18
@@ -342,31 +342,19 @@
           },
           {
             "result": {
-              "duration": 1035590800,
+              "duration": 103157900,
               "status": "passed"
             },
-            "line": 1363,
-            "name": "I Verify for Photo upload success message",
-            "match": {
-              "location": "Steps.iVerifyForPhotoUploadSuccessMessage()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2148073300,
-              "status": "passed"
-            },
-            "line": 1364,
-            "name": "I Select Duration Year for Registration membership for Tea Grower \"2\"",
+            "line": 28,
+            "name": "I Input Enterprise Address \"Royal Road, Port Louis\"",
             "match": {
               "arguments": [
                 {
-                  "val": "2",
-                  "offset": 67
+                  "val": "Royal Road, Port Louis",
+                  "offset": 28
                 }
               ],
-              "location": "Steps.iSelectDurationYearForRegistrationMembershipForTeaGrower(String)"
+              "location": "Steps.iInputEnterpriseAddress(String)"
             },
             "matchedColumns": [
               19
@@ -375,88 +363,19 @@
           },
           {
             "result": {
-              "duration": 1595197400,
+              "duration": 4135371200,
               "status": "passed"
             },
-            "line": 1365,
-            "name": "I Select Marital Status \"Married\"",
+            "line": 29,
+            "name": "I Select No of years for Registration membership \"1\"",
             "match": {
               "arguments": [
                 {
-                  "val": "Married",
-                  "offset": 25
+                  "val": "1",
+                  "offset": 50
                 }
               ],
-              "location": "Steps.iSelectMaritalStatus(String)"
-            },
-            "matchedColumns": [
-              20
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 9166259400,
-              "status": "passed"
-            },
-            "line": 1366,
-            "name": "I Click on Save and Continue",
-            "match": {
-              "location": "Steps.iClickOnSaveAndContinue()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 81106100,
-              "status": "passed"
-            },
-            "line": 1367,
-            "name": "I Verify Display of Particulars of Family Beneficiaries Page",
-            "match": {
-              "location": "Steps.iVerifyDisplayOfParticularsOfFamilyBeneficiariesPage()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3100396300,
-              "status": "passed"
-            },
-            "line": 1368,
-            "name": "I Click on Add Family and Beneficiaries",
-            "match": {
-              "location": "Steps.iClickOnAddFamilyAndBeneficiaries()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3070808400,
-              "status": "passed"
-            },
-            "line": 1369,
-            "name": "Verify Display of Particulars of Family Beneficiaries input table",
-            "match": {
-              "location": "Steps.verifyDisplayOfParticularsOfFamilyBeneficiariesInputTable()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2639779500,
-              "status": "passed"
-            },
-            "line": 1370,
-            "name": "I Select Family relationship for tea grower \"Spouse\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Spouse",
-                  "offset": 45
-                }
-              ],
-              "location": "Steps.iSelectFamilyRelationshipForTeaGrower(String)"
+              "location": "Steps.iSelectNoOfYearsForRegistrationMembership(String)"
             },
             "matchedColumns": [
               21
@@ -465,19 +384,19 @@
           },
           {
             "result": {
-              "duration": 54289800,
+              "duration": 4224956100,
               "status": "passed"
             },
-            "line": 1371,
-            "name": "I Input Family Surname \"Keen\"",
+            "line": 30,
+            "name": "I Input List of Products manufactured \"Tomato, Pepper\"",
             "match": {
               "arguments": [
                 {
-                  "val": "Keen",
-                  "offset": 24
+                  "val": "Tomato, Pepper",
+                  "offset": 39
                 }
               ],
-              "location": "Steps.iInputFamilySurname(String)"
+              "location": "Steps.iInputListOfProductsManufactured(String)"
             },
             "matchedColumns": [
               22
@@ -486,130 +405,31 @@
           },
           {
             "result": {
-              "duration": 62181100,
+              "duration": 1605792200,
               "status": "passed"
             },
-            "line": 1372,
-            "name": "I Input Family Other Names \"Dafne\"",
+            "line": 31,
+            "name": "I Select Status of Applicant for Agro-Processing Enterprise \"Company\"",
             "match": {
               "arguments": [
                 {
-                  "val": "Dafne",
-                  "offset": 28
+                  "val": "Company",
+                  "offset": 61
                 }
               ],
-              "location": "Steps.iInputFamilyOtherNames(String)"
+              "location": "Steps.iSelectStatusOfApplicantForAgroProcessingEnterprise(String)"
             },
             "matchedColumns": [
-              23
+              20
             ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1620530400,
+              "duration": 9150335500,
               "status": "passed"
             },
-            "line": 1373,
-            "name": "I Select Family Gender \"Female\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Female",
-                  "offset": 24
-                }
-              ],
-              "location": "Steps.iSelectFamilyGender(String)"
-            },
-            "matchedColumns": [
-              24
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 5864674200,
-              "status": "passed"
-            },
-            "line": 1374,
-            "name": "I Input Family Date of Birth \"1Jan94\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "1Jan94",
-                  "offset": 30
-                }
-              ],
-              "location": "Steps.iInputFamilyDateOfBirth(String)"
-            },
-            "matchedColumns": [
-              25
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 65892200,
-              "status": "passed"
-            },
-            "line": 1375,
-            "name": "I Input Family Occupation \"Actress\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Actress",
-                  "offset": 27
-                }
-              ],
-              "location": "Steps.iInputFamilyOccupation(String)"
-            },
-            "matchedColumns": [
-              26
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 50080500,
-              "status": "passed"
-            },
-            "line": 1376,
-            "name": "I Click on Beneficiary of life Insurance Scheme",
-            "match": {
-              "location": "Steps.iClickOnBeneficiaryOfLifeInsuranceScheme()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 44701700,
-              "status": "passed"
-            },
-            "line": 1377,
-            "name": "I Click on Beneficiary of Accident Insurance Scheme",
-            "match": {
-              "location": "Steps.iClickOnBeneficiaryOfAccidentInsuranceScheme()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 54433700,
-              "status": "passed"
-            },
-            "line": 1378,
-            "name": "I Save Particulars of Family and Beneficiaries",
-            "match": {
-              "location": "Steps.iSaveParticularsOfFamilyAndBeneficiaries()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 9157934100,
-              "status": "passed"
-            },
-            "line": 1379,
+            "line": 32,
             "name": "I Click on Save and Continue",
             "match": {
               "location": "Steps.iClickOnSaveAndContinue()"
@@ -618,64 +438,223 @@
           },
           {
             "result": {
-              "duration": 83004300,
+              "duration": 85127100,
               "status": "passed"
             },
-            "line": 1380,
-            "name": "I Verify Display of Particulars for Registration of Tea Plantation",
+            "line": 33,
+            "name": "I Verify Upload Required Documents Page is displayed",
             "match": {
-              "location": "Steps.iVerifyDisplayOfParticularsForRegistrationOfTeaPlantation()"
+              "location": "Steps.iVerifyUploadRequiredDocumentsPageIsDisplayed()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 3090626600,
+              "duration": 1642610700,
               "status": "passed"
             },
-            "line": 1381,
-            "name": "I Click on Add Crop",
-            "match": {
-              "location": "Steps.iClickOnAddCrop()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 595979900,
-              "status": "passed"
-            },
-            "line": 1382,
-            "name": "I Input Organisation Account Number \"ACC58969\"",
+            "line": 34,
+            "name": "I Upload Business Registration Card \"src\\test\\resources\\Upload_Test1.pdf\"",
             "match": {
               "arguments": [
                 {
-                  "val": "ACC58969",
+                  "val": "src\\test\\resources\\Upload_Test1.pdf",
                   "offset": 37
                 }
               ],
-              "location": "Steps.iInputOrganisationAccountNumber(String)"
+              "location": "Steps.iUploadBusinessRegistrationCard(String)"
             },
             "matchedColumns": [
-              40
+              27
             ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 2124623500,
+              "duration": 1110351700,
               "status": "passed"
             },
-            "line": 1383,
-            "name": "I Input Total Extent of plot (In Arpent) \"2.7\"",
+            "line": 35,
+            "name": "I Upload Certificate of Incorporation \"src\\test\\resources\\Upload_Test1.pdf\"",
             "match": {
               "arguments": [
                 {
-                  "val": "2.7",
-                  "offset": 42
+                  "val": "src\\test\\resources\\Upload_Test1.pdf",
+                  "offset": 39
                 }
               ],
-              "location": "Steps.iInputTotalExtentOfPlotInArpent(String)"
+              "location": "Steps.iUploadCertificateOfIncorporation(String)"
+            },
+            "matchedColumns": [
+              27
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1118854600,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "I Upload List of Directors/ Associates \"src\\test\\resources\\Upload_Test1.pdf\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "src\\test\\resources\\Upload_Test1.pdf",
+                  "offset": 40
+                }
+              ],
+              "location": "Steps.iUploadListOfDirectorsAssociates(String)"
+            },
+            "matchedColumns": [
+              27
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1115059000,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "I Upload Board Resolution of Enterprise for appointment of representative(s) \"src\\test\\resources\\Upload_Test1.pdf\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "src\\test\\resources\\Upload_Test1.pdf",
+                  "offset": 78
+                }
+              ],
+              "location": "Steps.iUploadBoardResolutionOfEnterpriseForAppointmentOfRepresentativeS(String)"
+            },
+            "matchedColumns": [
+              27
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1098828200,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "I Upload National Identity card of representative \"src\\test\\resources\\Upload_Test1.pdf\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "src\\test\\resources\\Upload_Test1.pdf",
+                  "offset": 51
+                }
+              ],
+              "location": "Steps.iUploadNationalIdentityCardOfRepresentative(String)"
+            },
+            "matchedColumns": [
+              27
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1100195400,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "I Upload Location Plan Document \"src\\test\\resources\\Upload_Test1.pdf\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "src\\test\\resources\\Upload_Test1.pdf",
+                  "offset": 33
+                }
+              ],
+              "location": "Steps.iUploadLocationPlanDocument(String)"
+            },
+            "matchedColumns": [
+              27
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1110642200,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "I Upload Copy of SMEDA Certificate Document \"src\\test\\resources\\Upload_Test1.pdf\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "src\\test\\resources\\Upload_Test1.pdf",
+                  "offset": 45
+                }
+              ],
+              "location": "Steps.iUploadCopyOfSMEDACertificateDocument(String)"
+            },
+            "matchedColumns": [
+              27
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1100668600,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "I Upload Copy of Utility Bill Document \"src\\test\\resources\\Upload_Test1.pdf\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "src\\test\\resources\\Upload_Test1.pdf",
+                  "offset": 40
+                }
+              ],
+              "location": "Steps.iUploadCopyOfUtilityBillDocument(String)"
+            },
+            "matchedColumns": [
+              27
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 18024100,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "I Verify for Document Upload Success Message",
+            "match": {
+              "location": "Steps.iVerifyForDocumentUploadSuccessMessage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3094433100,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "I Click on Add Additional Document",
+            "match": {
+              "location": "Steps.iClickOnAddAdditionalDocument()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1615170400,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "I Input Additional Document Name \"Additional Document Test\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Additional Document Test",
+                  "offset": 34
+                }
+              ],
+              "location": "Steps.iInputAdditionalDocumentName(String)"
             },
             "matchedColumns": [
               28
@@ -684,52 +663,55 @@
           },
           {
             "result": {
-              "duration": 1619180800,
+              "duration": 38170100,
               "status": "passed"
             },
-            "line": 1384,
-            "name": "I Select Owner Type \"Tenant\"",
+            "line": 45,
+            "name": "I Verify Success message for adding Additional Document Name",
+            "match": {
+              "location": "Steps.iVerifySuccessMessageForAddingAdditionalDocumentName()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1099786300,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "I Upload Additional Document \"src\\test\\resources\\Upload_Test1.pdf\"",
             "match": {
               "arguments": [
                 {
-                  "val": "Tenant",
-                  "offset": 21
+                  "val": "src\\test\\resources\\Upload_Test1.pdf",
+                  "offset": 30
                 }
               ],
-              "location": "Steps.iSelectOwnerType(String)"
+              "location": "Steps.iUploadAdditionalDocument(String)"
             },
             "matchedColumns": [
-              29
+              27
             ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 61883700,
+              "duration": 13211500,
               "status": "passed"
             },
-            "line": 1385,
-            "name": "I Input Plot Location \"Moka\"",
+            "line": 47,
+            "name": "I Verify for Document Upload Success Message",
             "match": {
-              "arguments": [
-                {
-                  "val": "Moka",
-                  "offset": 23
-                }
-              ],
-              "location": "Steps.iInputPlotLocation(String)"
+              "location": "Steps.iVerifyForDocumentUploadSuccessMessage()"
             },
-            "matchedColumns": [
-              30
-            ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 9149397100,
+              "duration": 9159160700,
               "status": "passed"
             },
-            "line": 1386,
+            "line": 48,
             "name": "I Click on Save and Continue",
             "match": {
               "location": "Steps.iClickOnSaveAndContinue()"
@@ -738,22 +720,22 @@
           },
           {
             "result": {
-              "duration": 80788500,
+              "duration": 70911600,
               "status": "passed"
             },
-            "line": 1387,
-            "name": "I Verify Declaration Page for REGISTRATION FOR TEA GROWER",
+            "line": 49,
+            "name": "I Verify Terms and Conditions Page",
             "match": {
-              "location": "Steps.iVerifyDeclarationPageForREGISTRATIONFORTEAGROWER()"
+              "location": "Steps.iVerifyTermsAndConditionsPage()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1588247600,
+              "duration": 1576162300,
               "status": "passed"
             },
-            "line": 1388,
+            "line": 50,
             "name": "I click on I agree to the Terms and Conditions",
             "match": {
               "location": "Steps.iClickOnIAgreeToTheTermsAndConditions()"
@@ -762,22 +744,10 @@
           },
           {
             "result": {
-              "duration": 53053900,
+              "duration": 3714496900,
               "status": "passed"
             },
-            "line": 1389,
-            "name": "I Click on Photo checkbox",
-            "match": {
-              "location": "Steps.iClickOnPhotoCheckbox()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3696903300,
-              "status": "passed"
-            },
-            "line": 1390,
+            "line": 51,
             "name": "I Select Bank \"ABC Banking\"",
             "match": {
               "arguments": [
@@ -789,16 +759,16 @@
               "location": "Steps.iSelectBank(String)"
             },
             "matchedColumns": [
-              33
+              29
             ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1104439200,
+              "duration": 1117054500,
               "status": "passed"
             },
-            "line": 1391,
+            "line": 52,
             "name": "I Input Bank Branch for Agro-Processing Enterprise \"Port Louis\"",
             "match": {
               "arguments": [
@@ -810,16 +780,16 @@
               "location": "Steps.iInputBankBranchForAgroProcessingEnterprise(String)"
             },
             "matchedColumns": [
-              34
+              30
             ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1103782100,
+              "duration": 1107720600,
               "status": "passed"
             },
-            "line": 1392,
+            "line": 53,
             "name": "I Input Personal Bank Account Number Agro-Processing Enterprise \"0001252563636\"",
             "match": {
               "arguments": [
@@ -831,16 +801,16 @@
               "location": "Steps.iInputPersonalBankAccountNumberAgroProcessingEnterprise(String)"
             },
             "matchedColumns": [
-              35
+              31
             ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 3625301500,
+              "duration": 3709363500,
               "status": "passed"
             },
-            "line": 1393,
+            "line": 54,
             "name": "I Click on Submit Application \"Yes\"",
             "match": {
               "arguments": [
@@ -852,16 +822,16 @@
               "location": "Steps.iClickOnSubmitApplication(String)"
             },
             "matchedColumns": [
-              36
+              32
             ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 10061576900,
+              "duration": 10074657800,
               "status": "passed"
             },
-            "line": 1394,
+            "line": 55,
             "name": "I Verify Success message for application submitted",
             "match": {
               "location": "Steps.iVerifySuccessMessageForApplicationSubmitted()"
@@ -870,10 +840,10 @@
           },
           {
             "result": {
-              "duration": 39183300,
+              "duration": 37517000,
               "status": "passed"
             },
-            "line": 1395,
+            "line": 56,
             "name": "I Verify Application Status \"Submitted\"",
             "match": {
               "arguments": [
@@ -885,16 +855,16 @@
               "location": "Steps.iVerifyApplicationStatus(String)"
             },
             "matchedColumns": [
-              37
+              33
             ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 79900,
+              "duration": 57500,
               "status": "passed"
             },
-            "line": 1396,
+            "line": 57,
             "name": "I Verify Payment Status \"Pending\"",
             "match": {
               "arguments": [
@@ -906,16 +876,16 @@
               "location": "Steps.iVerifyPaymentStatus(String)"
             },
             "matchedColumns": [
-              38
+              34
             ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 47078900,
+              "duration": 47264600,
               "status": "passed"
             },
-            "line": 1397,
+            "line": 58,
             "name": "I Copy Application Number",
             "match": {
               "location": "Steps.iCopyApplicationNumber()"
@@ -924,10 +894,10 @@
           },
           {
             "result": {
-              "duration": 2588572300,
+              "duration": 2594950300,
               "status": "passed"
             },
-            "line": 1398,
+            "line": 59,
             "name": "I Click on Shopping Cart for payment",
             "match": {
               "location": "Steps.iClickOnShoppingCartForPayment()"
@@ -936,10 +906,10 @@
           },
           {
             "result": {
-              "duration": 2202535600,
+              "duration": 2187663700,
               "status": "passed"
             },
-            "line": 1399,
+            "line": 60,
             "name": "I Select Application for payment",
             "match": {
               "location": "Steps.IselectApplicationForPayment()"
@@ -948,10 +918,10 @@
           },
           {
             "result": {
-              "duration": 588725700,
+              "duration": 583216600,
               "status": "passed"
             },
-            "line": 1400,
+            "line": 61,
             "name": "I Click on Proceed to Payment",
             "match": {
               "location": "Steps.iClickOnProceedToPayment()"
@@ -960,10 +930,10 @@
           },
           {
             "result": {
-              "duration": 586386500,
+              "duration": 630157700,
               "status": "passed"
             },
-            "line": 1401,
+            "line": 62,
             "name": "I Click on Payment Icon",
             "match": {
               "location": "Steps.iClickOnPaymentIcon()"
@@ -972,10 +942,10 @@
           },
           {
             "result": {
-              "duration": 5139905100,
+              "duration": 5141445900,
               "status": "passed"
             },
-            "line": 1402,
+            "line": 63,
             "name": "I Select Payment Method \"Counter\"",
             "match": {
               "arguments": [
@@ -987,16 +957,16 @@
               "location": "Steps.iSelectPaymentMethod(String)"
             },
             "matchedColumns": [
-              39
+              35
             ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 2098854900,
+              "duration": 2109506600,
               "status": "passed"
             },
-            "line": 1403,
+            "line": 64,
             "name": "I Click on Final Proceed to Payment",
             "match": {
               "location": "Steps.iClickOnFinalProceedToPayment()"
@@ -1005,10 +975,10 @@
           },
           {
             "result": {
-              "duration": 8059630500,
+              "duration": 8054359600,
               "status": "passed"
             },
-            "line": 1404,
+            "line": 65,
             "name": "I Verify Message to proceed to Post Office for Payment",
             "match": {
               "location": "Steps.iVerifyMessageToProceedToPostOfficeForPayment()"
@@ -1017,28 +987,28 @@
           },
           {
             "result": {
-              "duration": 8038186100,
+              "duration": 9050111200,
               "status": "passed"
             },
-            "line": 1405,
+            "line": 66,
             "name": "I Sign Out as Front Registered User",
             "match": {
               "location": "Steps.iSignOutAsFrontRegisteredUser()"
             },
-            "keyword": "Then "
+            "keyword": "And "
           },
           {
             "result": {
-              "duration": 6679745100,
+              "duration": 5132691900,
               "status": "passed"
             },
             "comments": [
               {
-                "line": 1407,
+                "line": 67,
                 "value": "#    Finance"
               }
             ],
-            "line": 1408,
+            "line": 68,
             "name": "I am on SFWF Back Office Home Page GOC \"Chrome\"",
             "match": {
               "arguments": [
@@ -1056,15 +1026,15 @@
           },
           {
             "result": {
-              "duration": 198767600,
+              "duration": 207384300,
               "status": "passed"
             },
-            "line": 1409,
-            "name": "I Input Finance Username \"FINANCE\" and Password \"Admin@123\"",
+            "line": 69,
+            "name": "I Input Finance Username \"Finance\" and Password \"Admin@123\"",
             "match": {
               "arguments": [
                 {
-                  "val": "FINANCE",
+                  "val": "Finance",
                   "offset": 26
                 },
                 {
@@ -1082,10 +1052,10 @@
           },
           {
             "result": {
-              "duration": 663760200,
+              "duration": 624265000,
               "status": "passed"
             },
-            "line": 1410,
+            "line": 70,
             "name": "I Click on Sign In button",
             "match": {
               "location": "Steps.iClickOnSignInButton()"
@@ -1094,10 +1064,10 @@
           },
           {
             "result": {
-              "duration": 79268200,
+              "duration": 64319900,
               "status": "passed"
             },
-            "line": 1411,
+            "line": 71,
             "name": "I Verify Successful Login",
             "match": {
               "location": "Steps.IVerifySuccessfulLogin()"
@@ -1106,10 +1076,10 @@
           },
           {
             "result": {
-              "duration": 53612700,
+              "duration": 49873500,
               "status": "passed"
             },
-            "line": 1412,
+            "line": 72,
             "name": "I Click on Manage Cashier",
             "match": {
               "location": "Steps.iClickOnManageCashier()"
@@ -1118,10 +1088,10 @@
           },
           {
             "result": {
-              "duration": 1555659900,
+              "duration": 1551323700,
               "status": "passed"
             },
-            "line": 1413,
+            "line": 73,
             "name": "I Verify List of Applications page",
             "match": {
               "location": "Steps.iVerifyListOfApplicationsPage()"
@@ -1130,10 +1100,10 @@
           },
           {
             "result": {
-              "duration": 1554591800,
+              "duration": 1557196000,
               "status": "passed"
             },
-            "line": 1414,
+            "line": 74,
             "name": "I Click on Confirm Processing Fees",
             "match": {
               "location": "Steps.iClickOnConfirmProcessingFees()"
@@ -1142,10 +1112,10 @@
           },
           {
             "result": {
-              "duration": 53283100,
+              "duration": 53345800,
               "status": "passed"
             },
-            "line": 1415,
+            "line": 75,
             "name": "I Verify display of Processing Details Frame",
             "match": {
               "location": "Steps.iVerifyDisplayOfProcessingDetailsFrame()"
@@ -1154,10 +1124,24 @@
           },
           {
             "result": {
-              "duration": 1563468500,
+              "duration": 1558466200,
               "status": "passed"
             },
-            "line": 1416,
+            "comments": [
+              {
+                "line": 76,
+                "value": "#    And I Select Payment Mode \"\u003cPayment_Mode\u003e\""
+              },
+              {
+                "line": 77,
+                "value": "#    And I Input Amount of payment \"\u003cAmount_To_Pay\u003e\""
+              },
+              {
+                "line": 78,
+                "value": "#    And I Click on Add Payment"
+              }
+            ],
+            "line": 79,
             "name": "I Click on Save Payment",
             "match": {
               "location": "Steps.iClickOnSavePayment()"
@@ -1166,10 +1150,10 @@
           },
           {
             "result": {
-              "duration": 10607076800,
+              "duration": 13760967400,
               "status": "passed"
             },
-            "line": 1417,
+            "line": 80,
             "name": "I Verify success message for adding payment",
             "match": {
               "location": "Steps.iVerifySuccessMessageForAddingPayment()"
@@ -1178,10 +1162,10 @@
           },
           {
             "result": {
-              "duration": 4345864100,
+              "duration": 4333560400,
               "status": "passed"
             },
-            "line": 1418,
+            "line": 81,
             "name": "I Sign Out",
             "match": {
               "location": "Steps.iSignOut()"
@@ -1190,10 +1174,10 @@
           },
           {
             "result": {
-              "duration": 1053637900,
+              "duration": 1064989700,
               "status": "passed"
             },
-            "line": 1419,
+            "line": 82,
             "name": "I Verify Successful Sign Out",
             "match": {
               "location": "Steps.iVerifySuccessfulSignOut()"
@@ -1202,16 +1186,16 @@
           },
           {
             "result": {
-              "duration": 6410098200,
+              "duration": 4863107700,
               "status": "passed"
             },
             "comments": [
               {
-                "line": 1421,
+                "line": 84,
                 "value": "#    PWO"
               }
             ],
-            "line": 1422,
+            "line": 85,
             "name": "I am on SFWF Back Office Home Page GOC \"Chrome\"",
             "match": {
               "arguments": [
@@ -1229,10 +1213,10 @@
           },
           {
             "result": {
-              "duration": 180727400,
+              "duration": 150551800,
               "status": "passed"
             },
-            "line": 1423,
+            "line": 86,
             "name": "I Input PWO Username \"PWO\" and Password \"Admin@123\"",
             "match": {
               "arguments": [
@@ -1255,10 +1239,10 @@
           },
           {
             "result": {
-              "duration": 595503100,
+              "duration": 626075500,
               "status": "passed"
             },
-            "line": 1424,
+            "line": 87,
             "name": "I Click on Sign In button",
             "match": {
               "location": "Steps.iClickOnSignInButton()"
@@ -1267,10 +1251,10 @@
           },
           {
             "result": {
-              "duration": 56284400,
+              "duration": 65023000,
               "status": "passed"
             },
-            "line": 1425,
+            "line": 88,
             "name": "I Verify Successful Login",
             "match": {
               "location": "Steps.IVerifySuccessfulLogin()"
@@ -1279,10 +1263,10 @@
           },
           {
             "result": {
-              "duration": 605097400,
+              "duration": 617599100,
               "status": "passed"
             },
-            "line": 1426,
+            "line": 89,
             "name": "I Click on All Applications",
             "match": {
               "location": "Steps.iClickOnAllApplications()"
@@ -1291,10 +1275,10 @@
           },
           {
             "result": {
-              "duration": 1539185900,
+              "duration": 1547552000,
               "status": "passed"
             },
-            "line": 1427,
+            "line": 90,
             "name": "I Verify display of list of registrations page",
             "match": {
               "location": "Steps.iVerifyDisplayOfListOfRegistrationsPage()"
@@ -1303,10 +1287,10 @@
           },
           {
             "result": {
-              "duration": 2066412100,
+              "duration": 2062068100,
               "status": "passed"
             },
-            "line": 1428,
+            "line": 91,
             "name": "I Search for Application Ref Number as a Back Office User",
             "match": {
               "location": "Steps.iSearchForApplicationRefNumberAsABackOfficeUser()"
@@ -1315,10 +1299,10 @@
           },
           {
             "result": {
-              "duration": 2113217200,
+              "duration": 2119463200,
               "status": "passed"
             },
-            "line": 1429,
+            "line": 92,
             "name": "I Click to view Application",
             "match": {
               "location": "Steps.iClickToViewApplication()"
@@ -1327,10 +1311,10 @@
           },
           {
             "result": {
-              "duration": 1180587200,
+              "duration": 1184516800,
               "status": "passed"
             },
-            "line": 1430,
+            "line": 93,
             "name": "I Click on Action Button",
             "match": {
               "location": "Steps.iClickOnActionButton()"
@@ -1339,10 +1323,10 @@
           },
           {
             "result": {
-              "duration": 2717659600,
+              "duration": 2703557500,
               "status": "passed"
             },
-            "line": 1431,
+            "line": 94,
             "name": "I Select PWO Assigned",
             "match": {
               "location": "Steps.iSelectPWOAssigned()"
@@ -1351,10 +1335,10 @@
           },
           {
             "result": {
-              "duration": 1614393600,
+              "duration": 1615718900,
               "status": "passed"
             },
-            "line": 1432,
+            "line": 95,
             "name": "I Select WPO",
             "match": {
               "location": "Steps.iSelectWPO()"
@@ -1363,10 +1347,10 @@
           },
           {
             "result": {
-              "duration": 10094893500,
+              "duration": 10091491700,
               "status": "passed"
             },
-            "line": 1433,
+            "line": 96,
             "name": "I Input Remarks \"This is a test\"",
             "match": {
               "arguments": [
@@ -1384,10 +1368,10 @@
           },
           {
             "result": {
-              "duration": 72590000,
+              "duration": 72723100,
               "status": "passed"
             },
-            "line": 1434,
+            "line": 97,
             "name": "I Click on Save Actions",
             "match": {
               "location": "Steps.iClickOnSaveActions()"
@@ -1396,10 +1380,10 @@
           },
           {
             "result": {
-              "duration": 1079926600,
+              "duration": 1083968100,
               "status": "passed"
             },
-            "line": 1435,
+            "line": 98,
             "name": "I Verify for success message for assigning",
             "match": {
               "location": "Steps.iVerifyForSuccessMessageForAssigning()"
@@ -1408,10 +1392,10 @@
           },
           {
             "result": {
-              "duration": 4325327800,
+              "duration": 4327653700,
               "status": "passed"
             },
-            "line": 1436,
+            "line": 99,
             "name": "I Sign Out",
             "match": {
               "location": "Steps.iSignOut()"
@@ -1420,10 +1404,10 @@
           },
           {
             "result": {
-              "duration": 1092587500,
+              "duration": 1083817000,
               "status": "passed"
             },
-            "line": 1437,
+            "line": 100,
             "name": "I Verify Successful Sign Out",
             "match": {
               "location": "Steps.iVerifySuccessfulSignOut()"
@@ -1432,16 +1416,16 @@
           },
           {
             "result": {
-              "duration": 5631354000,
+              "duration": 5504175200,
               "status": "passed"
             },
             "comments": [
               {
-                "line": 1439,
+                "line": 101,
                 "value": "#    WPO"
               }
             ],
-            "line": 1440,
+            "line": 102,
             "name": "I am on SFWF Back Office Home Page GOC \"Chrome\"",
             "match": {
               "arguments": [
@@ -1459,10 +1443,10 @@
           },
           {
             "result": {
-              "duration": 162717200,
+              "duration": 175098800,
               "status": "passed"
             },
-            "line": 1441,
+            "line": 103,
             "name": "I Input WPO Username \"WPO\" and Password \"Admin@123\"",
             "match": {
               "arguments": [
@@ -1485,10 +1469,10 @@
           },
           {
             "result": {
-              "duration": 585614500,
+              "duration": 599544600,
               "status": "passed"
             },
-            "line": 1442,
+            "line": 104,
             "name": "I Click on Sign In button",
             "match": {
               "location": "Steps.iClickOnSignInButton()"
@@ -1497,10 +1481,10 @@
           },
           {
             "result": {
-              "duration": 69023600,
+              "duration": 67586400,
               "status": "passed"
             },
-            "line": 1443,
+            "line": 105,
             "name": "I Verify Successful Login",
             "match": {
               "location": "Steps.IVerifySuccessfulLogin()"
@@ -1509,10 +1493,10 @@
           },
           {
             "result": {
-              "duration": 619631800,
+              "duration": 622197400,
               "status": "passed"
             },
-            "line": 1444,
+            "line": 106,
             "name": "I Click on All Applications",
             "match": {
               "location": "Steps.iClickOnAllApplications()"
@@ -1521,10 +1505,10 @@
           },
           {
             "result": {
-              "duration": 1545598800,
+              "duration": 1552386100,
               "status": "passed"
             },
-            "line": 1445,
+            "line": 107,
             "name": "I Verify display of list of registrations page",
             "match": {
               "location": "Steps.iVerifyDisplayOfListOfRegistrationsPage()"
@@ -1533,10 +1517,10 @@
           },
           {
             "result": {
-              "duration": 2059722900,
+              "duration": 2069746900,
               "status": "passed"
             },
-            "line": 1446,
+            "line": 108,
             "name": "I Search for Application Ref Number as a Back Office User",
             "match": {
               "location": "Steps.iSearchForApplicationRefNumberAsABackOfficeUser()"
@@ -1545,10 +1529,10 @@
           },
           {
             "result": {
-              "duration": 2128494400,
+              "duration": 2120262100,
               "status": "passed"
             },
-            "line": 1447,
+            "line": 109,
             "name": "I Click to view Application",
             "match": {
               "location": "Steps.iClickToViewApplication()"
@@ -1557,10 +1541,10 @@
           },
           {
             "result": {
-              "duration": 1208845200,
+              "duration": 1183213900,
               "status": "passed"
             },
-            "line": 1448,
+            "line": 110,
             "name": "I Click on Action Button",
             "match": {
               "location": "Steps.iClickOnActionButton()"
@@ -1569,10 +1553,10 @@
           },
           {
             "result": {
-              "duration": 1626239500,
+              "duration": 1634041600,
               "status": "passed"
             },
-            "line": 1449,
+            "line": 111,
             "name": "I Select Assigned",
             "match": {
               "location": "Steps.iSelectAssigned()"
@@ -1581,10 +1565,10 @@
           },
           {
             "result": {
-              "duration": 1696338200,
+              "duration": 1726196200,
               "status": "passed"
             },
-            "line": 1450,
+            "line": 112,
             "name": "I Select WO",
             "match": {
               "location": "Steps.iSelectWO()"
@@ -1593,10 +1577,10 @@
           },
           {
             "result": {
-              "duration": 10122445800,
+              "duration": 10103683100,
               "status": "passed"
             },
-            "line": 1451,
+            "line": 113,
             "name": "I Input Remarks \"This is a test\"",
             "match": {
               "arguments": [
@@ -1614,10 +1598,10 @@
           },
           {
             "result": {
-              "duration": 106823200,
+              "duration": 71243300,
               "status": "passed"
             },
-            "line": 1452,
+            "line": 114,
             "name": "I Click on Save Actions",
             "match": {
               "location": "Steps.iClickOnSaveActions()"
@@ -1626,10 +1610,10 @@
           },
           {
             "result": {
-              "duration": 1099798000,
+              "duration": 1089629400,
               "status": "passed"
             },
-            "line": 1453,
+            "line": 115,
             "name": "I Verify for success message for assigning",
             "match": {
               "location": "Steps.iVerifyForSuccessMessageForAssigning()"
@@ -1638,10 +1622,10 @@
           },
           {
             "result": {
-              "duration": 4431358600,
+              "duration": 4361664900,
               "status": "passed"
             },
-            "line": 1454,
+            "line": 116,
             "name": "I Sign Out",
             "match": {
               "location": "Steps.iSignOut()"
@@ -1650,10 +1634,10 @@
           },
           {
             "result": {
-              "duration": 1082224700,
+              "duration": 1064943000,
               "status": "passed"
             },
-            "line": 1455,
+            "line": 117,
             "name": "I Verify Successful Sign Out",
             "match": {
               "location": "Steps.iVerifySuccessfulSignOut()"
@@ -1662,16 +1646,16 @@
           },
           {
             "result": {
-              "duration": 5058915200,
+              "duration": 7027458100,
               "status": "passed"
             },
             "comments": [
               {
-                "line": 1457,
+                "line": 119,
                 "value": "#    WO/WA"
               }
             ],
-            "line": 1458,
+            "line": 120,
             "name": "I am on SFWF Back Office Home Page GOC \"Chrome\"",
             "match": {
               "arguments": [
@@ -1689,10 +1673,10 @@
           },
           {
             "result": {
-              "duration": 468440800,
+              "duration": 150031100,
               "status": "passed"
             },
-            "line": 1459,
+            "line": 121,
             "name": "I Input WO-WA Username \"WO\" and Password \"Admin@123\"",
             "match": {
               "arguments": [
@@ -1715,10 +1699,10 @@
           },
           {
             "result": {
-              "duration": 487518600,
+              "duration": 627627400,
               "status": "passed"
             },
-            "line": 1460,
+            "line": 122,
             "name": "I Click on Sign In button",
             "match": {
               "location": "Steps.iClickOnSignInButton()"
@@ -1727,10 +1711,10 @@
           },
           {
             "result": {
-              "duration": 410398500,
+              "duration": 40491600,
               "status": "passed"
             },
-            "line": 1461,
+            "line": 123,
             "name": "I Verify Successful Login",
             "match": {
               "location": "Steps.IVerifySuccessfulLogin()"
@@ -1739,10 +1723,10 @@
           },
           {
             "result": {
-              "duration": 754402200,
+              "duration": 618065700,
               "status": "passed"
             },
-            "line": 1462,
+            "line": 124,
             "name": "I Click on All Applications",
             "match": {
               "location": "Steps.iClickOnAllApplications()"
@@ -1751,10 +1735,10 @@
           },
           {
             "result": {
-              "duration": 1551988000,
+              "duration": 1550319800,
               "status": "passed"
             },
-            "line": 1463,
+            "line": 125,
             "name": "I Verify display of list of registrations page",
             "match": {
               "location": "Steps.iVerifyDisplayOfListOfRegistrationsPage()"
@@ -1763,10 +1747,10 @@
           },
           {
             "result": {
-              "duration": 2081942900,
+              "duration": 2067736500,
               "status": "passed"
             },
-            "line": 1464,
+            "line": 126,
             "name": "I Search for Application Ref Number as a Back Office User",
             "match": {
               "location": "Steps.iSearchForApplicationRefNumberAsABackOfficeUser()"
@@ -1775,10 +1759,10 @@
           },
           {
             "result": {
-              "duration": 2143666000,
+              "duration": 2117619800,
               "status": "passed"
             },
-            "line": 1465,
+            "line": 127,
             "name": "I Click to view Application",
             "match": {
               "location": "Steps.iClickToViewApplication()"
@@ -1787,10 +1771,10 @@
           },
           {
             "result": {
-              "duration": 106343100,
+              "duration": 78215200,
               "status": "passed"
             },
-            "line": 1466,
+            "line": 128,
             "name": "I Click on Site Report Tab",
             "match": {
               "location": "Steps.iClickOnSiteReportTab()"
@@ -1799,10 +1783,10 @@
           },
           {
             "result": {
-              "duration": 98478600,
+              "duration": 53586100,
               "status": "passed"
             },
-            "line": 1467,
+            "line": 129,
             "name": "I Select Bonafide Planter \"Yes\"",
             "match": {
               "arguments": [
@@ -1820,10 +1804,10 @@
           },
           {
             "result": {
-              "duration": 136427700,
+              "duration": 78120800,
               "status": "passed"
             },
-            "line": 1468,
+            "line": 130,
             "name": "I Input Site visit remarks \"This is a test\"",
             "match": {
               "arguments": [
@@ -1841,10 +1825,10 @@
           },
           {
             "result": {
-              "duration": 2236274100,
+              "duration": 2184530900,
               "status": "passed"
             },
-            "line": 1469,
+            "line": 131,
             "name": "I Upload Site Report \"src\\test\\resources\\Upload_Test1.pdf\"",
             "match": {
               "arguments": [
@@ -1856,28 +1840,28 @@
               "location": "Steps.iUploadSiteReport(String)"
             },
             "matchedColumns": [
-              31
+              27
             ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 17591900,
+              "duration": 17516500,
               "status": "passed"
             },
-            "line": 1470,
-            "name": "I Verify for Document Upload Success Message",
+            "line": 132,
+            "name": "I Verify for Document Upload Success Message for Site Visit",
             "match": {
-              "location": "Steps.iVerifyForDocumentUploadSuccessMessage()"
+              "location": "Steps.iVerifyForDocumentUploadSuccessMessageForSiteVisit()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 2238090900,
+              "duration": 2194191700,
               "status": "passed"
             },
-            "line": 1471,
+            "line": 133,
             "name": "I Click on Save Button",
             "match": {
               "location": "Steps.iClickOnSaveButton()"
@@ -1886,10 +1870,10 @@
           },
           {
             "result": {
-              "duration": 17938500,
+              "duration": 16498400,
               "status": "passed"
             },
-            "line": 1472,
+            "line": 134,
             "name": "I Verify Site Visit saved success message",
             "match": {
               "location": "Steps.iVerifySiteVisitSavedSuccessMessage()"
@@ -1898,10 +1882,10 @@
           },
           {
             "result": {
-              "duration": 1256372500,
+              "duration": 1184657800,
               "status": "passed"
             },
-            "line": 1473,
+            "line": 135,
             "name": "I Click on Action Button",
             "match": {
               "location": "Steps.iClickOnActionButton()"
@@ -1910,10 +1894,10 @@
           },
           {
             "result": {
-              "duration": 1675789500,
+              "duration": 1635301800,
               "status": "passed"
             },
-            "line": 1474,
+            "line": 136,
             "name": "I Select Assigned",
             "match": {
               "location": "Steps.iSelectAssigned()"
@@ -1922,10 +1906,10 @@
           },
           {
             "result": {
-              "duration": 1691364900,
+              "duration": 1671913900,
               "status": "passed"
             },
-            "line": 1475,
+            "line": 137,
             "name": "I Select WPO",
             "match": {
               "location": "Steps.iSelectWPO()"
@@ -1934,10 +1918,10 @@
           },
           {
             "result": {
-              "duration": 10106548900,
+              "duration": 10099819200,
               "status": "passed"
             },
-            "line": 1476,
+            "line": 138,
             "name": "I Input Remarks \"This is a test\"",
             "match": {
               "arguments": [
@@ -1955,10 +1939,10 @@
           },
           {
             "result": {
-              "duration": 78452400,
+              "duration": 72717100,
               "status": "passed"
             },
-            "line": 1477,
+            "line": 139,
             "name": "I Click on Save Actions",
             "match": {
               "location": "Steps.iClickOnSaveActions()"
@@ -1967,10 +1951,10 @@
           },
           {
             "result": {
-              "duration": 1098482200,
+              "duration": 1096478700,
               "status": "passed"
             },
-            "line": 1478,
+            "line": 140,
             "name": "I Verify for success message for assigning",
             "match": {
               "location": "Steps.iVerifyForSuccessMessageForAssigning()"
@@ -1979,10 +1963,10 @@
           },
           {
             "result": {
-              "duration": 4340400800,
+              "duration": 4376718700,
               "status": "passed"
             },
-            "line": 1479,
+            "line": 141,
             "name": "I Sign Out",
             "match": {
               "location": "Steps.iSignOut()"
@@ -1991,10 +1975,10 @@
           },
           {
             "result": {
-              "duration": 994661600,
+              "duration": 1077446400,
               "status": "passed"
             },
-            "line": 1480,
+            "line": 142,
             "name": "I Verify Successful Sign Out",
             "match": {
               "location": "Steps.iVerifySuccessfulSignOut()"
@@ -2003,16 +1987,16 @@
           },
           {
             "result": {
-              "duration": 6283648600,
+              "duration": 7149254800,
               "status": "passed"
             },
             "comments": [
               {
-                "line": 1482,
+                "line": 144,
                 "value": "#    WPO"
               }
             ],
-            "line": 1483,
+            "line": 145,
             "name": "I am on SFWF Back Office Home Page GOC \"Chrome\"",
             "match": {
               "arguments": [
@@ -2030,10 +2014,10 @@
           },
           {
             "result": {
-              "duration": 216363500,
+              "duration": 205354000,
               "status": "passed"
             },
-            "line": 1484,
+            "line": 146,
             "name": "I Input WPO Username \"WPO\" and Password \"Admin@123\"",
             "match": {
               "arguments": [
@@ -2056,10 +2040,10 @@
           },
           {
             "result": {
-              "duration": 671952400,
+              "duration": 655202300,
               "status": "passed"
             },
-            "line": 1485,
+            "line": 147,
             "name": "I Click on Sign In button",
             "match": {
               "location": "Steps.iClickOnSignInButton()"
@@ -2068,10 +2052,10 @@
           },
           {
             "result": {
-              "duration": 82569600,
+              "duration": 51765200,
               "status": "passed"
             },
-            "line": 1486,
+            "line": 148,
             "name": "I Verify Successful Login",
             "match": {
               "location": "Steps.IVerifySuccessfulLogin()"
@@ -2080,10 +2064,10 @@
           },
           {
             "result": {
-              "duration": 626050800,
+              "duration": 616882300,
               "status": "passed"
             },
-            "line": 1487,
+            "line": 149,
             "name": "I Click on All Applications",
             "match": {
               "location": "Steps.iClickOnAllApplications()"
@@ -2092,10 +2076,10 @@
           },
           {
             "result": {
-              "duration": 1552102800,
+              "duration": 1540482100,
               "status": "passed"
             },
-            "line": 1488,
+            "line": 150,
             "name": "I Verify display of list of registrations page",
             "match": {
               "location": "Steps.iVerifyDisplayOfListOfRegistrationsPage()"
@@ -2104,10 +2088,10 @@
           },
           {
             "result": {
-              "duration": 2113907400,
+              "duration": 2087740900,
               "status": "passed"
             },
-            "line": 1489,
+            "line": 151,
             "name": "I Search for Application Ref Number as a Back Office User",
             "match": {
               "location": "Steps.iSearchForApplicationRefNumberAsABackOfficeUser()"
@@ -2116,10 +2100,10 @@
           },
           {
             "result": {
-              "duration": 2705689400,
+              "duration": 2126145300,
               "status": "passed"
             },
-            "line": 1490,
+            "line": 152,
             "name": "I Click to view Application",
             "match": {
               "location": "Steps.iClickToViewApplication()"
@@ -2128,10 +2112,10 @@
           },
           {
             "result": {
-              "duration": 1280924000,
+              "duration": 1182138700,
               "status": "passed"
             },
-            "line": 1491,
+            "line": 153,
             "name": "I Click on Action Button",
             "match": {
               "location": "Steps.iClickOnActionButton()"
@@ -2140,10 +2124,10 @@
           },
           {
             "result": {
-              "duration": 2742952700,
+              "duration": 2698689300,
               "status": "passed"
             },
-            "line": 1492,
+            "line": 154,
             "name": "I Select Under Query",
             "match": {
               "location": "Steps.iSelectUnderQuery()"
@@ -2152,10 +2136,10 @@
           },
           {
             "result": {
-              "duration": 61130600,
+              "duration": 72016000,
               "status": "passed"
             },
-            "line": 1493,
+            "line": 155,
             "name": "I Input External Remarks \"This is a test\"",
             "match": {
               "arguments": [
@@ -2173,34 +2157,34 @@
           },
           {
             "result": {
-              "duration": 1152322000,
+              "duration": 1140205600,
               "status": "passed"
             },
-            "line": 1494,
-            "name": "I Click on Under Query Notification for Tea Grower",
+            "line": 156,
+            "name": "I Click on Under Query Notification",
             "match": {
-              "location": "Steps.iClickOnUnderQueryNotificationForTeaGrower()"
+              "location": "Steps.iClickOnUnderQueryNotification()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 16233100,
+              "duration": 18204100,
               "status": "passed"
             },
-            "line": 1495,
-            "name": "I Verify Success Message for Under Query Notification for Tea Grower",
+            "line": 157,
+            "name": "I Verify Success Message for Under Query Notification",
             "match": {
-              "location": "Steps.iVerifySuccessMessageForUnderQueryNotificationForTeaGrower()"
+              "location": "Steps.iVerifySuccessMessageForUnderQueryNotification()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 59360500,
+              "duration": 46318800,
               "status": "passed"
             },
-            "line": 1496,
+            "line": 158,
             "name": "I Click on Save Actions",
             "match": {
               "location": "Steps.iClickOnSaveActions()"
@@ -2209,10 +2193,10 @@
           },
           {
             "result": {
-              "duration": 1097680100,
+              "duration": 1086215900,
               "status": "passed"
             },
-            "line": 1497,
+            "line": 159,
             "name": "I Verify for success message for workflow saved",
             "match": {
               "location": "Steps.iVerifyForSuccessMessageForWorkflowSaved()"
@@ -2221,10 +2205,10 @@
           },
           {
             "result": {
-              "duration": 4348252700,
+              "duration": 4355230800,
               "status": "passed"
             },
-            "line": 1498,
+            "line": 160,
             "name": "I Sign Out",
             "match": {
               "location": "Steps.iSignOut()"
@@ -2233,10 +2217,10 @@
           },
           {
             "result": {
-              "duration": 942026500,
+              "duration": 1084756500,
               "status": "passed"
             },
-            "line": 1499,
+            "line": 161,
             "name": "I Verify Successful Sign Out",
             "match": {
               "location": "Steps.iVerifySuccessfulSignOut()"
@@ -2245,16 +2229,16 @@
           },
           {
             "result": {
-              "duration": 5401018100,
+              "duration": 4976749300,
               "status": "passed"
             },
             "comments": [
               {
-                "line": 1501,
+                "line": 163,
                 "value": "#    Applicant after under query"
               }
             ],
-            "line": 1502,
+            "line": 164,
             "name": "I am on SFWF Front Office Home Page GOC \"Chrome\"",
             "match": {
               "arguments": [
@@ -2272,10 +2256,10 @@
           },
           {
             "result": {
-              "duration": 8227182800,
+              "duration": 8230497300,
               "status": "passed"
             },
-            "line": 1503,
+            "line": 165,
             "name": "I Input Registered Maupass User\u0027s Username \"Suraj_Jo\" and Password \"Admin@123\"",
             "match": {
               "arguments": [
@@ -2298,10 +2282,10 @@
           },
           {
             "result": {
-              "duration": 52859200,
+              "duration": 60664600,
               "status": "passed"
             },
-            "line": 1504,
+            "line": 166,
             "name": "I Click on Sign In button in Maupass",
             "match": {
               "location": "Steps.iClickOnSignInButtonInMaupass()"
@@ -2310,10 +2294,10 @@
           },
           {
             "result": {
-              "duration": 2184603900,
+              "duration": 1867646900,
               "status": "passed"
             },
-            "line": 1505,
+            "line": 167,
             "name": "I Verify Applicant\u0027s Successful Login",
             "match": {
               "location": "Steps.iVerifyApplicantSSuccessfulLogin()"
@@ -2322,10 +2306,10 @@
           },
           {
             "result": {
-              "duration": 218846800,
+              "duration": 424416100,
               "status": "passed"
             },
-            "line": 1506,
+            "line": 168,
             "name": "I Click on Register as Farmer",
             "match": {
               "location": "Steps.iClickOnRegisterAsFarmer()"
@@ -2334,10 +2318,10 @@
           },
           {
             "result": {
-              "duration": 259310600,
+              "duration": 26068200,
               "status": "passed"
             },
-            "line": 1507,
+            "line": 169,
             "name": "I Verify that User is directed to My Application Page",
             "match": {
               "location": "Steps.iVerifyThatUserIsDirectedToMyApplicationPage()"
@@ -2346,10 +2330,10 @@
           },
           {
             "result": {
-              "duration": 22075500,
+              "duration": 11279300,
               "status": "passed"
             },
-            "line": 1508,
+            "line": 170,
             "name": "I Verify display of Farmers Card link",
             "match": {
               "location": "Steps.iVerifyDisplayOfFarmersCardLink()"
@@ -2358,10 +2342,10 @@
           },
           {
             "result": {
-              "duration": 13254600,
+              "duration": 13942600,
               "status": "passed"
             },
-            "line": 1509,
+            "line": 171,
             "name": "I Verify Programmes link",
             "match": {
               "location": "Steps.iVerifyProgrammesLink()"
@@ -2370,10 +2354,10 @@
           },
           {
             "result": {
-              "duration": 2178398200,
+              "duration": 2178172000,
               "status": "passed"
             },
-            "line": 1510,
+            "line": 172,
             "name": "I Search for Application Ref Number for re-submit",
             "match": {
               "location": "Steps.iSearchForApplicationRefNumberForReSubmit()"
@@ -2382,22 +2366,22 @@
           },
           {
             "result": {
-              "duration": 846360700,
+              "duration": 615511300,
               "status": "passed"
             },
-            "line": 1511,
-            "name": "I Verify display of REGISTRATION FOR TEA GROWERS Page",
+            "line": 173,
+            "name": "I Verify display of REGISTRATION FOR AGRO-PROCESSING ENTERPRISE Page",
             "match": {
-              "location": "Steps.iVerifyDisplayOfREGISTRATIONFORTEAGROWERSPage()"
+              "location": "Steps.iVerifyDisplayOfREGISTRATIONFORAGROPROCESSINGENTERPRISEPage()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 9156163900,
+              "duration": 9151233000,
               "status": "passed"
             },
-            "line": 1512,
+            "line": 174,
             "name": "I Click on Save and Continue",
             "match": {
               "location": "Steps.iClickOnSaveAndContinue()"
@@ -2406,22 +2390,22 @@
           },
           {
             "result": {
-              "duration": 81975200,
+              "duration": 82320800,
               "status": "passed"
             },
-            "line": 1513,
-            "name": "I Verify Display of Particulars of Family Beneficiaries Page",
+            "line": 175,
+            "name": "I Verify Upload Required Documents Page is displayed",
             "match": {
-              "location": "Steps.iVerifyDisplayOfParticularsOfFamilyBeneficiariesPage()"
+              "location": "Steps.iVerifyUploadRequiredDocumentsPageIsDisplayed()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 9143907900,
+              "duration": 9161844800,
               "status": "passed"
             },
-            "line": 1514,
+            "line": 176,
             "name": "I Click on Save and Continue",
             "match": {
               "location": "Steps.iClickOnSaveAndContinue()"
@@ -2430,46 +2414,22 @@
           },
           {
             "result": {
-              "duration": 81196300,
+              "duration": 70887900,
               "status": "passed"
             },
-            "line": 1515,
-            "name": "I Verify Display of Particulars for Registration of Tea Plantation",
+            "line": 177,
+            "name": "I Verify Terms and Conditions Page",
             "match": {
-              "location": "Steps.iVerifyDisplayOfParticularsForRegistrationOfTeaPlantation()"
+              "location": "Steps.iVerifyTermsAndConditionsPage()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 9152902500,
+              "duration": 3429917800,
               "status": "passed"
             },
-            "line": 1516,
-            "name": "I Click on Save and Continue",
-            "match": {
-              "location": "Steps.iClickOnSaveAndContinue()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 82946900,
-              "status": "passed"
-            },
-            "line": 1517,
-            "name": "I Verify Declaration Page for REGISTRATION FOR TEA GROWER",
-            "match": {
-              "location": "Steps.iVerifyDeclarationPageForREGISTRATIONFORTEAGROWER()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3599130700,
-              "status": "passed"
-            },
-            "line": 1518,
+            "line": 178,
             "name": "I Click on Submit Application \"Yes\"",
             "match": {
               "arguments": [
@@ -2481,16 +2441,16 @@
               "location": "Steps.iClickOnSubmitApplication(String)"
             },
             "matchedColumns": [
-              36
+              32
             ],
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 10064638400,
+              "duration": 10281707000,
               "status": "passed"
             },
-            "line": 1519,
+            "line": 179,
             "name": "I Verify Success message for application submitted",
             "match": {
               "location": "Steps.iVerifySuccessMessageForApplicationSubmitted()"
@@ -2499,10 +2459,10 @@
           },
           {
             "result": {
-              "duration": 7961501600,
+              "duration": 8068573100,
               "status": "passed"
             },
-            "line": 1520,
+            "line": 180,
             "name": "I Sign Out as Front Registered User",
             "match": {
               "location": "Steps.iSignOutAsFrontRegisteredUser()"
@@ -2511,16 +2471,16 @@
           },
           {
             "result": {
-              "duration": 6473273900,
+              "duration": 5072190600,
               "status": "passed"
             },
             "comments": [
               {
-                "line": 1522,
+                "line": 182,
                 "value": "#    WPO"
               }
             ],
-            "line": 1523,
+            "line": 183,
             "name": "I am on SFWF Back Office Home Page GOC \"Chrome\"",
             "match": {
               "arguments": [
@@ -2538,10 +2498,10 @@
           },
           {
             "result": {
-              "duration": 164623400,
+              "duration": 168988700,
               "status": "passed"
             },
-            "line": 1524,
+            "line": 184,
             "name": "I Input WPO Username \"WPO\" and Password \"Admin@123\"",
             "match": {
               "arguments": [
@@ -2564,10 +2524,10 @@
           },
           {
             "result": {
-              "duration": 566812000,
+              "duration": 696088100,
               "status": "passed"
             },
-            "line": 1525,
+            "line": 185,
             "name": "I Click on Sign In button",
             "match": {
               "location": "Steps.iClickOnSignInButton()"
@@ -2576,10 +2536,10 @@
           },
           {
             "result": {
-              "duration": 57928100,
+              "duration": 83660100,
               "status": "passed"
             },
-            "line": 1526,
+            "line": 186,
             "name": "I Verify Successful Login",
             "match": {
               "location": "Steps.IVerifySuccessfulLogin()"
@@ -2588,10 +2548,10 @@
           },
           {
             "result": {
-              "duration": 601890500,
+              "duration": 644985300,
               "status": "passed"
             },
-            "line": 1527,
+            "line": 187,
             "name": "I Click on All Applications",
             "match": {
               "location": "Steps.iClickOnAllApplications()"
@@ -2600,10 +2560,10 @@
           },
           {
             "result": {
-              "duration": 1557055800,
+              "duration": 1544297300,
               "status": "passed"
             },
-            "line": 1528,
+            "line": 188,
             "name": "I Verify display of list of registrations page",
             "match": {
               "location": "Steps.iVerifyDisplayOfListOfRegistrationsPage()"
@@ -2612,10 +2572,10 @@
           },
           {
             "result": {
-              "duration": 2066024200,
+              "duration": 2063355900,
               "status": "passed"
             },
-            "line": 1529,
+            "line": 189,
             "name": "I Search for Application Ref Number as a Back Office User",
             "match": {
               "location": "Steps.iSearchForApplicationRefNumberAsABackOfficeUser()"
@@ -2624,10 +2584,10 @@
           },
           {
             "result": {
-              "duration": 2115840600,
+              "duration": 2119163400,
               "status": "passed"
             },
-            "line": 1530,
+            "line": 190,
             "name": "I Click to view Application",
             "match": {
               "location": "Steps.iClickToViewApplication()"
@@ -2636,10 +2596,10 @@
           },
           {
             "result": {
-              "duration": 1168336300,
+              "duration": 1185371200,
               "status": "passed"
             },
-            "line": 1531,
+            "line": 191,
             "name": "I Click on Action Button",
             "match": {
               "location": "Steps.iClickOnActionButton()"
@@ -2648,10 +2608,10 @@
           },
           {
             "result": {
-              "duration": 1633037400,
+              "duration": 1635911400,
               "status": "passed"
             },
-            "line": 1532,
+            "line": 192,
             "name": "I Select Approved to approve the registration application",
             "match": {
               "location": "Steps.iSelectApprovedToApproveTheRegistrationApplication()"
@@ -2660,10 +2620,10 @@
           },
           {
             "result": {
-              "duration": 10119046400,
+              "duration": 10103851100,
               "status": "passed"
             },
-            "line": 1533,
+            "line": 193,
             "name": "I Input Remarks \"This is a test\"",
             "match": {
               "arguments": [
@@ -2681,10 +2641,10 @@
           },
           {
             "result": {
-              "duration": 70946300,
+              "duration": 86612100,
               "status": "passed"
             },
-            "line": 1534,
+            "line": 194,
             "name": "I Click on Save Actions",
             "match": {
               "location": "Steps.iClickOnSaveActions()"
@@ -2693,10 +2653,10 @@
           },
           {
             "result": {
-              "duration": 1087605900,
+              "duration": 1085656900,
               "status": "passed"
             },
-            "line": 1535,
+            "line": 195,
             "name": "I Verify for success message for approval",
             "match": {
               "location": "Steps.iVerifyForSuccessMessageForApproval()"
@@ -2705,10 +2665,10 @@
           },
           {
             "result": {
-              "duration": 4345924200,
+              "duration": 4329201700,
               "status": "passed"
             },
-            "line": 1536,
+            "line": 196,
             "name": "I Sign Out",
             "match": {
               "location": "Steps.iSignOut()"
@@ -2717,10 +2677,10 @@
           },
           {
             "result": {
-              "duration": 995017100,
+              "duration": 1053217900,
               "status": "passed"
             },
-            "line": 1537,
+            "line": 197,
             "name": "I Verify Successful Sign Out",
             "match": {
               "location": "Steps.iVerifySuccessfulSignOut()"
@@ -2729,16 +2689,16 @@
           },
           {
             "result": {
-              "duration": 4872120300,
+              "duration": 4849819100,
               "status": "passed"
             },
             "comments": [
               {
-                "line": 1539,
+                "line": 199,
                 "value": "#    IT Department"
               }
             ],
-            "line": 1540,
+            "line": 200,
             "name": "I am on SFWF Back Office Home Page GOC \"Chrome\"",
             "match": {
               "arguments": [
@@ -2756,10 +2716,10 @@
           },
           {
             "result": {
-              "duration": 167011300,
+              "duration": 145683900,
               "status": "passed"
             },
-            "line": 1541,
+            "line": 201,
             "name": "I Input IT Department Username \"IT_DEPT\" and Password \"Admin@123\"",
             "match": {
               "arguments": [
@@ -2782,10 +2742,10 @@
           },
           {
             "result": {
-              "duration": 529456100,
+              "duration": 622672400,
               "status": "passed"
             },
-            "line": 1542,
+            "line": 202,
             "name": "I Click on Sign In button",
             "match": {
               "location": "Steps.iClickOnSignInButton()"
@@ -2794,10 +2754,10 @@
           },
           {
             "result": {
-              "duration": 46554800,
+              "duration": 63689200,
               "status": "passed"
             },
-            "line": 1543,
+            "line": 203,
             "name": "I Verify Successful Login",
             "match": {
               "location": "Steps.IVerifySuccessfulLogin()"
@@ -2806,10 +2766,10 @@
           },
           {
             "result": {
-              "duration": 587148800,
+              "duration": 610427100,
               "status": "passed"
             },
-            "line": 1544,
+            "line": 204,
             "name": "I Click on All Applications",
             "match": {
               "location": "Steps.iClickOnAllApplications()"
@@ -2818,10 +2778,10 @@
           },
           {
             "result": {
-              "duration": 1545627500,
+              "duration": 1544583000,
               "status": "passed"
             },
-            "line": 1545,
+            "line": 205,
             "name": "I Verify display of list of registrations page",
             "match": {
               "location": "Steps.iVerifyDisplayOfListOfRegistrationsPage()"
@@ -2830,10 +2790,10 @@
           },
           {
             "result": {
-              "duration": 2058881000,
+              "duration": 2062581400,
               "status": "passed"
             },
-            "line": 1546,
+            "line": 206,
             "name": "I Search for Application Ref Number as a Back Office User",
             "match": {
               "location": "Steps.iSearchForApplicationRefNumberAsABackOfficeUser()"
@@ -2842,10 +2802,10 @@
           },
           {
             "result": {
-              "duration": 2116300200,
+              "duration": 2115085900,
               "status": "passed"
             },
-            "line": 1547,
+            "line": 207,
             "name": "I Click to view Application",
             "match": {
               "location": "Steps.iClickToViewApplication()"
@@ -2854,10 +2814,10 @@
           },
           {
             "result": {
-              "duration": 3671448600,
+              "duration": 3878491500,
               "status": "passed"
             },
-            "line": 1548,
+            "line": 208,
             "name": "I Click on Print Card",
             "match": {
               "location": "Steps.iClickOnPrintCard()"
@@ -2866,10 +2826,10 @@
           },
           {
             "result": {
-              "duration": 4505120500,
+              "duration": 4384786300,
               "status": "passed"
             },
-            "line": 1549,
+            "line": 209,
             "name": "I Sign Out",
             "match": {
               "location": "Steps.iSignOut()"
@@ -2878,10 +2838,10 @@
           },
           {
             "result": {
-              "duration": 1028510400,
+              "duration": 1091523700,
               "status": "passed"
             },
-            "line": 1550,
+            "line": 210,
             "name": "I Verify Successful Sign Out",
             "match": {
               "location": "Steps.iVerifySuccessfulSignOut()"
@@ -2890,16 +2850,16 @@
           },
           {
             "result": {
-              "duration": 4873514800,
+              "duration": 4900452500,
               "status": "passed"
             },
             "comments": [
               {
-                "line": 1552,
+                "line": 212,
                 "value": "#    Applicant verify status - Card Printed"
               }
             ],
-            "line": 1553,
+            "line": 213,
             "name": "I am on SFWF Front Office Home Page GOC \"Chrome\"",
             "match": {
               "arguments": [
@@ -2917,10 +2877,10 @@
           },
           {
             "result": {
-              "duration": 8378283600,
+              "duration": 7855710800,
               "status": "passed"
             },
-            "line": 1554,
+            "line": 214,
             "name": "I Input Registered Maupass User\u0027s Username \"Suraj_Jo\" and Password \"Admin@123\"",
             "match": {
               "arguments": [
@@ -2943,10 +2903,10 @@
           },
           {
             "result": {
-              "duration": 51716000,
+              "duration": 54152400,
               "status": "passed"
             },
-            "line": 1555,
+            "line": 215,
             "name": "I Click on Sign In button in Maupass",
             "match": {
               "location": "Steps.iClickOnSignInButtonInMaupass()"
@@ -2955,10 +2915,10 @@
           },
           {
             "result": {
-              "duration": 1514782100,
+              "duration": 1891275000,
               "status": "passed"
             },
-            "line": 1556,
+            "line": 216,
             "name": "I Verify Applicant\u0027s Successful Login",
             "match": {
               "location": "Steps.iVerifyApplicantSSuccessfulLogin()"
@@ -2967,10 +2927,10 @@
           },
           {
             "result": {
-              "duration": 392770300,
+              "duration": 396097200,
               "status": "passed"
             },
-            "line": 1557,
+            "line": 217,
             "name": "I Click on Register as Farmer",
             "match": {
               "location": "Steps.iClickOnRegisterAsFarmer()"
@@ -2979,10 +2939,10 @@
           },
           {
             "result": {
-              "duration": 18476500,
+              "duration": 12957400,
               "status": "passed"
             },
-            "line": 1558,
+            "line": 218,
             "name": "I Verify that User is directed to My Application Page",
             "match": {
               "location": "Steps.iVerifyThatUserIsDirectedToMyApplicationPage()"
@@ -2991,10 +2951,10 @@
           },
           {
             "result": {
-              "duration": 22932800,
+              "duration": 13934500,
               "status": "passed"
             },
-            "line": 1559,
+            "line": 219,
             "name": "I Verify display of Farmers Card link",
             "match": {
               "location": "Steps.iVerifyDisplayOfFarmersCardLink()"
@@ -3003,10 +2963,10 @@
           },
           {
             "result": {
-              "duration": 14611300,
+              "duration": 13787200,
               "status": "passed"
             },
-            "line": 1560,
+            "line": 220,
             "name": "I Verify Programmes link",
             "match": {
               "location": "Steps.iVerifyProgrammesLink()"
@@ -3015,10 +2975,10 @@
           },
           {
             "result": {
-              "duration": 2106076000,
+              "duration": 2103519600,
               "status": "passed"
             },
-            "line": 1561,
+            "line": 221,
             "name": "I Search for Application Ref Number for to check Status Card Printed",
             "match": {
               "location": "Steps.iSearchForApplicationRefNumberForToCheckStatusCardPrinted()"
@@ -3027,10 +2987,10 @@
           },
           {
             "result": {
-              "duration": 38069700,
+              "duration": 38921300,
               "status": "passed"
             },
-            "line": 1562,
+            "line": 222,
             "name": "I Verify Application Status to be Card Printed",
             "match": {
               "location": "Steps.iVerifyApplicationStatusToBeCardPrinted()"
@@ -3039,10 +2999,10 @@
           },
           {
             "result": {
-              "duration": 7972172800,
+              "duration": 7939443600,
               "status": "passed"
             },
-            "line": 1563,
+            "line": 223,
             "name": "I Sign Out as Front Registered User",
             "match": {
               "location": "Steps.iSignOutAsFrontRegisteredUser()"
@@ -3056,20 +3016,20 @@
             "name": "@Main_feature"
           },
           {
-            "line": 1343,
-            "name": "@Approval_by_BO_Payment_at_counter_for_Tea_grower"
-          },
-          {
             "line": 3,
             "name": "@US13280"
+          },
+          {
+            "line": 7,
+            "name": "@Approval_by_BO_Payment_at_counter_for_Agro-Processing-Enterprise"
           },
           {
             "line": 3,
             "name": "@Regression"
           },
           {
-            "line": 1343,
-            "name": "@Smoke_counter_Tea_grower_GOC"
+            "line": 7,
+            "name": "@Smoke_counter_Agro-Processing-Enterprise_GOC"
           },
           {
             "line": 3,
