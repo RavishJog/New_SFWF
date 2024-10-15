@@ -682,7 +682,7 @@ public class Steps extends Utility {
     public void iClickOnSaveAndContinue() throws InterruptedException {
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", Farmers_cooperatives_association_society_company.Save_and_continue(driver));
         Thread.sleep(3000);
-        WebDriverWait wait = new WebDriverWait(driver, 10); // 10 seconds timeout
+        WebDriverWait wait = new WebDriverWait(driver, 30); // 30 seconds timeout
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[contains(text(),'Save and Continue')]")));
         try{
             Farmers_cooperatives_association_society_company.Save_and_continue(driver).click();
@@ -807,10 +807,10 @@ public class Steps extends Utility {
 
     @And("^I Verify Terms and Conditions Page$")
     public void iVerifyTermsAndConditionsPage() {
+        WebDriverWait w = new WebDriverWait(driver, 30);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h6[contains(.,'Terms and Conditions')]")));
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);", Terms_and_Condition.Terms_and_condition(driver));
 
-        WebDriverWait w = new WebDriverWait(driver, 20);
-        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h6[contains(.,'Terms and Conditions')]")));
     }
 
     @And("^I click on I agree to the Terms and Conditions$")
@@ -1113,7 +1113,7 @@ public class Steps extends Utility {
     @And("^I Click on Proceed to Payment$")
     public void iClickOnProceedToPayment() {
         Payment_process.Proceed_to_payment(driver).click();
-        WebDriverWait w = new WebDriverWait(driver, 5);
+        WebDriverWait w = new WebDriverWait(driver, 60);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[contains(.,'Voucher Number')])[1]")));
     }
 
@@ -2359,9 +2359,35 @@ public class Steps extends Utility {
 
     @And("^I Select PWO Assigned$")
     public void iSelectPWOAssigned() throws InterruptedException {
-        Back_office_main_page.Action_PWO_select_one(driver).click();
-        Thread.sleep(1500);
-        Back_office_main_page.Action_Assigned(driver).click();
+
+        int attempts = 0;
+
+        while (attempts < 3) {
+            try {
+                Back_office_main_page.Action_PWO_select_one(driver);
+                Back_office_main_page.Action_PWO_select_one(driver).click(); // Perform the required action
+                break; // If successful, break out of the loop
+            } catch (StaleElementReferenceException e) {
+                // Retry locating the element
+                attempts++;
+            }
+        }
+        Thread.sleep(2000);
+        while (attempts < 3) {
+            try {
+                Back_office_main_page.Action_Assigned(driver);
+                Back_office_main_page.Action_Assigned(driver).click(); // Perform the required action
+                break; // If successful, break out of the loop
+            } catch (StaleElementReferenceException e) {
+                // Retry locating the element
+                attempts++;
+            }
+        }
+
+
+//        Back_office_main_page.Action_PWO_select_one(driver).click();
+//        Thread.sleep(2000);
+//        Back_office_main_page.Action_Assigned(driver).click();
         WebDriverWait w = new WebDriverWait(driver, 30);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//label[contains(.,'Select Users')]")));
 
@@ -2370,9 +2396,34 @@ public class Steps extends Utility {
 
     @And("^I Select PWO Assigned \\(For REGISTRATION FOR AGRO-PROCESSING ENTERPRISE\\)$")
     public void iSelectPWOAssignedForREGISTRATIONFORAGROPROCESSINGENTERPRISE() throws InterruptedException {
-        Back_office_main_page.Action_PWO2_select_one(driver).click();
-        Thread.sleep(1500);
-        Back_office_main_page.Action_Assigned(driver).click();
+
+        int attempts = 0;
+
+        while (attempts < 3) {
+            try {
+                Back_office_main_page.Action_PWO2_select_one(driver);
+                Back_office_main_page.Action_PWO2_select_one(driver).click(); // Perform the required action
+                break; // If successful, break out of the loop
+            } catch (StaleElementReferenceException e) {
+                // Retry locating the element
+                attempts++;
+            }
+        }
+        Thread.sleep(2000);
+        while (attempts < 3) {
+            try {
+                Back_office_main_page.Action_Assigned(driver);
+                Back_office_main_page.Action_Assigned(driver).click(); // Perform the required action
+                break; // If successful, break out of the loop
+            } catch (StaleElementReferenceException e) {
+                // Retry locating the element
+                attempts++;
+            }
+        }
+
+//        Back_office_main_page.Action_PWO2_select_one(driver).click();
+//        Thread.sleep(1500);
+//        Back_office_main_page.Action_Assigned(driver).click();
         WebDriverWait w = new WebDriverWait(driver, 30);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//label[contains(.,'Select Users')]")));
 
@@ -2894,11 +2945,12 @@ public class Steps extends Utility {
     }
 
     @And("^I Verify Declaration Page for REGISTRATION FOR SMALL BREEDERS$")
-    public void iVerifyDeclarationPageForREGISTRATIONFORSMALLBREEDERS() {
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);", Small_planters.Membership_into_sfwf(driver));
+    public void iVerifyDeclarationPageForREGISTRATIONFORSMALLBREEDERS() throws InterruptedException {
 
-        WebDriverWait w = new WebDriverWait(driver, 20);
+        WebDriverWait w = new WebDriverWait(driver, 30);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h6[contains(.,'Membership into Small Farmers Welfare Fund (SFWF)')]")));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);", Small_planters.Membership_into_sfwf(driver));
+        Thread.sleep(2000);
         try {
             Small_planters.Membership_into_sfwf(driver);
         } catch (Exception e) {
@@ -2980,9 +3032,33 @@ public class Steps extends Utility {
 
     @And("^I Select Assigned \\(For Small Planters\\)$")
     public void iSelectAssignedForSmallPlanters() throws InterruptedException {
-        Back_office_main_page.Action_PWO2_select_one(driver).click();
-        Thread.sleep(1500);
-        Back_office_main_page.Action_Assigned(driver).click();
+
+        int attempts = 0;
+
+        while (attempts < 3) {
+            try {
+                Back_office_main_page.Action_PWO2_select_one(driver);
+                Back_office_main_page.Action_PWO2_select_one(driver).click(); // Perform the required action
+                break; // If successful, break out of the loop
+            } catch (StaleElementReferenceException e) {
+                // Retry locating the element
+                attempts++;
+            }
+        }
+        Thread.sleep(2000);
+        while (attempts < 3) {
+            try {
+                Back_office_main_page.Action_Assigned(driver);
+                Back_office_main_page.Action_Assigned(driver).click(); // Perform the required action
+                break; // If successful, break out of the loop
+            } catch (StaleElementReferenceException e) {
+                // Retry locating the element
+                attempts++;
+            }
+        }
+//        Back_office_main_page.Action_PWO2_select_one(driver).click();
+//        Thread.sleep(2000);
+//        Back_office_main_page.Action_Assigned(driver).click();
         WebDriverWait w = new WebDriverWait(driver, 30);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//label[contains(.,'Select Users')]")));
 
