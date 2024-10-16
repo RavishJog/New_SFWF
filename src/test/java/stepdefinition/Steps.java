@@ -965,10 +965,10 @@ public class Steps extends Utility {
 
     @And("^I Select Status of Applicant for Agro-Processing Enterprise \"([^\"]*)\"$")
     public void iSelectStatusOfApplicantForAgroProcessingEnterprise(String Status_Applicant) throws Throwable {
-        Farmers_cooperatives_association_society_company.Select_one_applicant_status(driver).click();
-        Thread.sleep(2000);
+        WebDriverWait w = new WebDriverWait(driver, 10);
         if (Status_Applicant.equals("Sole Trader")) {
             try {
+                WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//li[contains(@id, 'applicantStatus_1')]")));
                 Farmers_cooperatives_association_society_company.Sole_trader(driver).click();
             } catch (Exception e) {
                 System.out.println("Option is not working");
@@ -976,6 +976,7 @@ public class Steps extends Utility {
             }
         } else if (Status_Applicant.equals("Company")) {
             try {
+                WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//li[contains(@id, 'applicantStatus_2')]")));
                 Farmers_cooperatives_association_society_company.Company(driver).click();
             } catch (Exception e) {
                 System.out.println("Option is not working");
@@ -983,6 +984,7 @@ public class Steps extends Utility {
             }
         } else if (Status_Applicant.equals("Société/Partnership")) {
             try {
+                WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//li[contains(@id, 'applicantStatus_3')]")));
                 Farmers_cooperatives_association_society_company.Societe_Partnership(driver).click();
             } catch (Exception e) {
                 System.out.println("Option is not working");
@@ -990,6 +992,7 @@ public class Steps extends Utility {
             }
         } else if (Status_Applicant.equals("Cooperative society")) {
             try {
+                WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//li[contains(@id, 'applicantStatus_4')]")));
                 Farmers_cooperatives_association_society_company.Cooperative_society(driver).click();
             } catch (Exception e) {
                 System.out.println("Option is not working");
@@ -997,6 +1000,7 @@ public class Steps extends Utility {
             }
         } else if (Status_Applicant.equals("Association")) {
             try {
+                WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//li[contains(@id, 'applicantStatus_5')]")));
                 Farmers_cooperatives_association_society_company.Association(driver).click();
             } catch (Exception e) {
                 System.out.println("Option is not working");
@@ -1880,10 +1884,10 @@ public class Steps extends Utility {
 
     @And("^I Verify Declaration Page for REGISTRATION FOR SMALL PLANTERS$")
     public void iVerifyDeclarationPageForREGISTRATIONFORSMALLPLANTERS() {
+        WebDriverWait w = new WebDriverWait(driver, 120);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h6[contains(.,'Membership into Small Farmers Welfare Fund (SFWF)')]")));
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);", Small_planters.Membership_into_sfwf(driver));
 
-        WebDriverWait w = new WebDriverWait(driver, 60);
-        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h6[contains(.,'Membership into Small Farmers Welfare Fund (SFWF)')]")));
         try {
             Small_planters.Membership_into_sfwf(driver);
         } catch (Exception e) {
@@ -3215,19 +3219,24 @@ public class Steps extends Utility {
 
     @Given("^I am on SFWF Front Office Home Page GOC \"([^\"]*)\"$")
     public void iAmOnSFWFFrontOfficeHomePageGOC(String Browser) throws Throwable {
+        WebDriverWait w = new WebDriverWait(driver, 600);
+
         if (Browser.equals("Chrome")) {
             setUp();
 
             driver.get("https://sfwftest.govmu.org/");
+            WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//span[contains(.,'Farmer')])[1]")));
+
             driver.manage().window().maximize();
         } else if (Browser.equals("Edge")) {
             setUp();
             driver.get("https://sfwftest.govmu.org/");
+            WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//span[contains(.,'Farmer')])[1]")));
+
             driver.manage().window().maximize();
         } else {
             System.out.println("No browser found");
         }
-
     }
 
     @And("^I am on SFWF Back Office Home Page GOC \"([^\"]*)\"$")
