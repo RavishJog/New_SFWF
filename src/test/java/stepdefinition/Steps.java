@@ -639,6 +639,7 @@ public class Steps extends Utility {
         Farmers_cooperatives_association_society_company.List_products_manufactured(driver).sendKeys(Prod_man);
         Thread.sleep(2000);
         Farmers_cooperatives_association_society_company.Add_products_manufactured(driver).click();
+        Thread.sleep(2000);
 
     }
 
@@ -965,7 +966,7 @@ public class Steps extends Utility {
     @And("^I Select Status of Applicant for Agro-Processing Enterprise \"([^\"]*)\"$")
     public void iSelectStatusOfApplicantForAgroProcessingEnterprise(String Status_Applicant) throws Throwable {
         Farmers_cooperatives_association_society_company.Select_one_applicant_status(driver).click();
-        Thread.sleep(1500);
+        Thread.sleep(2000);
         if (Status_Applicant.equals("Sole Trader")) {
             try {
                 Farmers_cooperatives_association_society_company.Sole_trader(driver).click();
@@ -1881,7 +1882,7 @@ public class Steps extends Utility {
     public void iVerifyDeclarationPageForREGISTRATIONFORSMALLPLANTERS() {
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);", Small_planters.Membership_into_sfwf(driver));
 
-        WebDriverWait w = new WebDriverWait(driver, 20);
+        WebDriverWait w = new WebDriverWait(driver, 60);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h6[contains(.,'Membership into Small Farmers Welfare Fund (SFWF)')]")));
         try {
             Small_planters.Membership_into_sfwf(driver);
@@ -2252,11 +2253,17 @@ public class Steps extends Utility {
 
     @And("^I Select Under Query$")
     public void iSelectUnderQuery() throws InterruptedException {
+        WebDriverWait www = new WebDriverWait(driver, 30);
+        www.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//label[contains(@id, 'roleAction')]")));
+
         Back_office_main_page.Action_select_one(driver).click();
         Thread.sleep(1500);
+        WebDriverWait ww = new WebDriverWait(driver, 30);
+        ww.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//li[contains(@data-label,'Under Query')]")));
+
         Back_office_main_page.Action_Under_Query(driver).click();
         WebDriverWait w = new WebDriverWait(driver, 30);
-        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//label[contains(.,'External Remarks')]")));
+        w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//label[contains(.,'External Remarks')]")));
 
     }
 
@@ -3240,7 +3247,7 @@ public class Steps extends Utility {
 
     @When("^I Input Registered Maupass User's Username \"([^\"]*)\" and Password \"([^\"]*)\"$")
     public void iInputRegisteredMaupassUserSUsernameAndPassword(String Username, String FPassword) throws Throwable {
-        WebDriverWait w = new WebDriverWait(driver, 5);
+        WebDriverWait w = new WebDriverWait(driver, 60);
         WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//span[contains(.,'Farmer')])[1]")));
         Front_Home_page.Register_as_farmer(driver).click();
         Thread.sleep(3000);
