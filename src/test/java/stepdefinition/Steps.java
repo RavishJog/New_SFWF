@@ -3219,20 +3219,17 @@ public class Steps extends Utility {
 
     @Given("^I am on SFWF Front Office Home Page GOC \"([^\"]*)\"$")
     public void iAmOnSFWFFrontOfficeHomePageGOC(String Browser) throws Throwable {
-        WebDriverWait w = new WebDriverWait(driver, 600);
-
         if (Browser.equals("Chrome")) {
             setUp();
-
             driver.get("https://sfwftest.govmu.org/");
+            WebDriverWait w = new WebDriverWait(driver, 600);
             WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//span[contains(.,'Farmer')])[1]")));
-
             driver.manage().window().maximize();
         } else if (Browser.equals("Edge")) {
             setUp();
             driver.get("https://sfwftest.govmu.org/");
+            WebDriverWait w = new WebDriverWait(driver, 600);
             WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//span[contains(.,'Farmer')])[1]")));
-
             driver.manage().window().maximize();
         } else {
             System.out.println("No browser found");
