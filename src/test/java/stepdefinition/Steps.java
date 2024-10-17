@@ -973,9 +973,11 @@ public class Steps extends Utility {
     @And("^I Select Status of Applicant for Agro-Processing Enterprise \"([^\"]*)\"$")
     public void iSelectStatusOfApplicantForAgroProcessingEnterprise(String Status_Applicant) throws Throwable {
         WebDriverWait w = new WebDriverWait(driver, 10);
+        Farmers_cooperatives_association_society_company.Select_one_applicant_status(driver).click();
+
         if (Status_Applicant.equals("Sole Trader")) {
             try {
-                WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//li[contains(@id, 'applicantStatus_1')]")));
+                WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//li[contains(@id, 'applicantStatus_1')]")));
                 Farmers_cooperatives_association_society_company.Sole_trader(driver).click();
             } catch (Exception e) {
                 System.out.println("Option is not working");
@@ -983,7 +985,7 @@ public class Steps extends Utility {
             }
         } else if (Status_Applicant.equals("Company")) {
             try {
-                WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//li[contains(@id, 'applicantStatus_2')]")));
+                WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//li[contains(@id, 'applicantStatus_2')]")));
                 Farmers_cooperatives_association_society_company.Company(driver).click();
             } catch (Exception e) {
                 System.out.println("Option is not working");
@@ -991,7 +993,7 @@ public class Steps extends Utility {
             }
         } else if (Status_Applicant.equals("Société/Partnership")) {
             try {
-                WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//li[contains(@id, 'applicantStatus_3')]")));
+                WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//li[contains(@id, 'applicantStatus_3')]")));
                 Farmers_cooperatives_association_society_company.Societe_Partnership(driver).click();
             } catch (Exception e) {
                 System.out.println("Option is not working");
@@ -999,7 +1001,7 @@ public class Steps extends Utility {
             }
         } else if (Status_Applicant.equals("Cooperative society")) {
             try {
-                WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//li[contains(@id, 'applicantStatus_4')]")));
+                WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//li[contains(@id, 'applicantStatus_4')]")));
                 Farmers_cooperatives_association_society_company.Cooperative_society(driver).click();
             } catch (Exception e) {
                 System.out.println("Option is not working");
@@ -1007,7 +1009,7 @@ public class Steps extends Utility {
             }
         } else if (Status_Applicant.equals("Association")) {
             try {
-                WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//li[contains(@id, 'applicantStatus_5')]")));
+                WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//li[contains(@id, 'applicantStatus_5')]")));
                 Farmers_cooperatives_association_society_company.Association(driver).click();
             } catch (Exception e) {
                 System.out.println("Option is not working");
@@ -3229,21 +3231,21 @@ public class Steps extends Utility {
         if (Browser.equals("Chrome")) {
             setUp();
             driver.get("https://sfwftest.govmu.org/");
-            driver.manage().deleteAllCookies();
+//            driver.manage().deleteAllCookies();
 
             WebDriverWait w = new WebDriverWait(driver, 600);
             WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//span[contains(.,'Farmer')])[1]")));
-            driver.manage().window().setSize(new Dimension(1920, 1080));
-//            driver.manage().window().maximize();
+//            driver.manage().window().setSize(new Dimension(1920, 1080));
+            driver.manage().window().maximize();
         } else if (Browser.equals("Edge")) {
             setUp();
             driver.get("https://sfwftest.govmu.org/");
-            driver.manage().deleteAllCookies();
+//            driver.manage().deleteAllCookies();
 
             WebDriverWait w = new WebDriverWait(driver, 600);
             WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//span[contains(.,'Farmer')])[1]")));
-            driver.manage().window().setSize(new Dimension(1920, 1080));
-//            driver.manage().window().maximize();
+//            driver.manage().window().setSize(new Dimension(1920, 1080));
+            driver.manage().window().maximize();
         } else {
             System.out.println("No browser found");
         }
@@ -3254,19 +3256,19 @@ public class Steps extends Utility {
         if (Browser.equals("Chrome")) {
             setUp();
             driver.get("https://sfwftest.govmu.org/sfwfback/");
-            driver.manage().deleteAllCookies();
+//            driver.manage().deleteAllCookies();
 
-            driver.manage().window().setSize(new Dimension(1920, 1080));
+//            driver.manage().window().setSize(new Dimension(1920, 1080));
 
-//            driver.manage().window().maximize();
+            driver.manage().window().maximize();
         } else if (Browser.equals("Edge")) {
             setUp();
             driver.get("https://sfwftest.govmu.org/sfwfback/");
-            driver.manage().deleteAllCookies();
+//            driver.manage().deleteAllCookies();
 
-            driver.manage().window().setSize(new Dimension(1920, 1080));
+//            driver.manage().window().setSize(new Dimension(1920, 1080));
 
-//            driver.manage().window().maximize();
+            driver.manage().window().maximize();
         } else {
             System.out.println("No browser found");
         }
