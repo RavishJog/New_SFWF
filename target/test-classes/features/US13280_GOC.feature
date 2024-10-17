@@ -1850,7 +1850,7 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
     And I Input Personal Bank Account Number Agro-Processing Enterprise "<Bank_Account_No>"
     And I Click on Submit Application "<Confirmation>"
     And I Verify Success message for application submitted for Small Breeders Registration
-    And I Click on Cancel button not to proceed with another registration
+#    And I Click on Cancel button not to proceed with another registration
     And I Verify Application Status "<App_status>"
     And I Verify Payment Status "<Payment_Status>"
     And I Copy Application Number
@@ -2093,7 +2093,7 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
     And I Input Personal Bank Account Number Agro-Processing Enterprise "<Bank_Account_No>"
     And I Click on Submit Application "<Confirmation>"
     And I Verify Success message for application submitted for Small Breeders Registration
-    And I Click on Cancel button not to proceed with another registration
+#    And I Click on Cancel button not to proceed with another registration
     And I Verify Application Status "<App_status>"
     And I Verify Payment Status "<Payment_Status>"
     And I Copy Application Number
@@ -2255,5 +2255,6 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
 
     Examples:
       |Browser|Username|FPassword|Password  |FUsername|PwoUsername|WpoUsername|WOUsername |ITUsername|Remarks        |Bonafide|Payment_Mode |Amount_To_Pay|Applicant_Title |District   |Education_Level  |Act      |Other_Occupation  |Photo                               |Year_dur |Marital_Status|Relationship|Family_Surname|Family_Other_Names|Gender|DOB   |Occupation |License    |Land_Extent|Owner_Type|Plot_Location|Spicies |Male_Female_Number|Total_Heads |Reason |Microchip_No|Cattle_Sex|Cattle_Age|Upload_test                        |Additional_Doc_Name      |Bank_Name  |Bank_Branch|Bank_Account_No|Confirmation|App_status|Payment_Status |Payment_method |Card_Number        |Expiry_Month |Expiry_Year|Security_Code|Cardholder_Name|Breeder_Type|
-      |Chrome |Suraj_Jo|Admin@123|Admin@123 |FINANCE  |PWO        |WPO        |WO         |IT_DEPT   |This is a test |Yes     |Cash         |850          |Mrs             |Port Louis  |Tertiary        |Full Time|Manager           |src\test\resources\Photo_upload.jpg |2        |Married       |Spouse      |Keen          |Dafne             |Female|1Jan94|Actress    |Tea Grower |2.7        |Tenant    |Moka         |Cattle  |10                |10          |Meat   |AAA2563     |Male      |1Month    |src\test\resources\Upload_Test1.pdf|Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |Credit         |5123-4500-0000-0008|01           |39         |100          |My name        |Cattle     |
+#      |Chrome |Suraj_Jo|Admin@123|Admin@123 |FINANCE  |PWO        |WPO        |WO         |IT_DEPT   |This is a test |Yes     |Cash         |850          |Mrs             |Port Louis  |Tertiary        |Full Time|Manager           |src\test\resources\Photo_upload.jpg |2        |Married       |Spouse      |Keen          |Dafne             |Female|1Jan94|Actress    |Tea Grower |2.7        |Tenant    |Moka         |Cattle  |10                |10          |Meat   |AAA2563     |Male      |1Month    |src\test\resources\Upload_Test1.pdf|Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |Credit         |5123-4500-0000-0008|01           |39         |100          |My name        |Cattle     |
+      |Edge |Suraj_Jo|Admin@123|Admin@123 |FINANCE  |PWO        |WPO        |WO         |IT_DEPT   |This is a test |Yes     |Cash         |850          |Mrs             |Port Louis  |Tertiary        |Full Time|Manager           |src\test\resources\Photo_upload.jpg |2        |Married       |Spouse      |Keen          |Dafne             |Female|1Jan94|Actress    |Tea Grower |2.7        |Tenant    |Moka         |Cattle  |10                |10          |Meat   |AAA2563     |Male      |1Month    |src\test\resources\Upload_Test1.pdf|Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |Credit         |5123-4500-0000-0008|01           |39         |100          |My name        |Cattle     |
 
