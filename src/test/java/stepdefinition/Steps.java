@@ -41,6 +41,11 @@ public class Steps extends Utility {
         driver = new ChromeDriver();
     }
 
+    @Before
+    public void setUpDriver() {
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\suraj.joggessur\\Desktop\\Automation Testing\\Small-Farmers-Welfare-Fund\\chromedriver.exe");
+    }
+
     @AfterMethod
     public void tearDown() {
         if (driver != null) {
@@ -3629,6 +3634,33 @@ public class Steps extends Utility {
         } catch (Exception e) {
             System.out.println("Success Message for Under Query Notification did not appear");
             Assert.fail("Success Message for Under Query Notification did not appear");
+        }
+    }
+
+    @Given("^I am on SFWF Front Office Home Page GOC \"([^\"]*)\" \"([^\"]*)\"$")
+    public void iAmOnSFWFFrontOfficeHomePageGOC(String Browser, String Run) throws Throwable {
+        if (Run.equals("Local")){
+            driver = new ChromeDriver();
+            driver.get("https://sfwftest.govmu.org/");
+            driver.manage().window().maximize();
+            Thread.sleep(3000);
+
+        } else {
+            if (Browser.equals("Chrome")) {
+                setUp();
+                driver.get("https://sfwftest.govmu.org/");
+                WebDriverWait w = new WebDriverWait(driver, 600);
+                WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//span[contains(.,'Farmer')])[1]")));
+                driver.manage().window().maximize();
+            } else if (Browser.equals("Edge")) {
+                setUp();
+                driver.get("https://sfwftest.govmu.org/");
+                WebDriverWait w = new WebDriverWait(driver, 600);
+                WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//span[contains(.,'Farmer')])[1]")));
+                driver.manage().window().maximize();
+            } else {
+                System.out.println("No browser found");
+            }
         }
     }
 }
