@@ -1,10 +1,10 @@
 #User Story 13280 - Back Office Process for Registration
 
-@Main_feature @US13280 @Regression @GOC_Registrations
+@Local_run
 Feature: User Story 13280-GOC - Back Office Process for Registration
 
    #Scenario1
-  @Approval_by_BO_Payment_at_counter_for_Agro-Processing-Enterprise @Smoke_counter_Agro-Processing-Enterprise_GOC
+  @Local
   Scenario Outline: Approval for Payment at counter for Registration as Agro-Processing Enterprise-Application form
 
     Given I am on SFWF Front Office Home Page GOC "<Browser>"
@@ -228,7 +228,7 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
       |Chrome |Suraj_Jo |Admin@123|Admin@123|Finance  |PWO        |WPO        |WO         |IT_DEPT   |This is a test |Yes     |Cash         |850          |ABC Agro Co Ltd|Mr John Brown|C123456789 |XLPR852  |Full Time|The Main Road, Grand Port|Royal Road, Port Louis |Company         |1       |Tomato, Pepper |50       |10000000           |Existing       |5              |src\test\resources\Upload_Test1.pdf|Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |Counter        |
 
  #Scenario2
-  @Approval_by_BO_Payment_online_for_Agro-Processing-Enterprise @Smoke_online_Agro-Processing-Enterprise
+  @Local
   Scenario Outline: Approval for Payment online for Registration as Agro-Processing Enterprise-Application form
 
     Given I am on SFWF Front Office Home Page GOC "<Browser>"
@@ -439,7 +439,7 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
       |Chrome |Suraj_Jo|Admin@123|Admin@123 |FINANCE  |PWO        |WPO        |WO         |IT_DEPT   |This is a test |Yes     |Cash         |850          |ABC Agro Co Ltd|Mr John Brown|C123456789 |XLPR852  |Full Time|The Main Road, Grand Port|Royal Road, Port Louis |Company         |1       |Tomato, Pepper |50       |10000000           |Existing       |5              |src\test\resources\Upload_Test1.pdf|Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |Credit         |5123-4500-0000-0008|01           |39         |100          |My name        |
 
  #Scenario3
-  @Approval_by_BO_Payment_at_counter_for_Farmers_Cooperative_Association @Smoke_counter_Farmers_Cooperative_Association_GOC
+  @Local
   Scenario Outline: Payment at counter for Registration for Farmers’ Cooperative Association, Society or Company
 
     Given I am on SFWF Front Office Home Page GOC "<Browser>"
@@ -668,7 +668,7 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
       |Chrome |Suraj_Jo|Admin@123|Admin@123|FINANCE  |PWO        |WPO        |WO         |IT_DEPT   |This is a test |Yes     |Cash         |850          |ABC Agro Co Ltd|Mr John Brown|C123456789 |2126666|58967896 |XLPR852  |Full Time|The Main Road, Grand Port|Royal Road, Port Louis |Company         |1       |Tomato, Pepper |50       |10000000           |Existing       |5              |src\test\resources\Upload_Test1.pdf|Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |Counter        |
 
     #Scenario4
-  @Approval_by_BO_Payment_online_for_Farmers_Cooperative_Association @Smoke_online_Farmers_Cooperative_Association
+  @Local
   Scenario Outline: Payment online for Registration for Farmers’ Cooperative Association, Society or Company
 
     Given I am on SFWF Front Office Home Page GOC "<Browser>"
@@ -885,7 +885,7 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
 
 
  #Scenario5
-  @Approval_by_BO_Payment_at_counter_for_Small_Planters_Registration @Smoke_counter_Small_Planters_Registration_GOC
+  @Local
   Scenario Outline: Payment at counter for Registration for Small Planters
 
     Given I am on SFWF Front Office Home Page GOC "<Browser>"
@@ -1116,7 +1116,7 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
       |Chrome |Suraj_Jo|Admin@123|Admin@123|FINANCE  |PWO        |WPO        |WO         |IT_DEPT   |This is a test |Yes     |Cash         |850          |Mr              |Black River|Tertiary        |Full Time|Manager           |src\test\resources\Photo_upload.jpg |1        |Married       |Spouse      |Sanon         |Kirti             |Female|1Jan94|Air Hostess|0001252563|Cane     |2.5        |Tenant    |Moka         |Port Louis     |Sheltered Farming|9            |Pepper     |Interline      |1Aug2030                 |src\test\resources\Upload_Test1.pdf|Harvest    |Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |Counter        |
 
  #Scenario6
-  @Approval_by_BO_Payment_at_online_for_Small_Planters_Registration @Smoke_online
+  @Local
   Scenario Outline: Payment Online for Registration for Small Planters
 
     Given I am on SFWF Front Office Home Page GOC "<Browser>"
@@ -1340,7 +1340,7 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
 
 
 #Scenario7
-  @Approval_by_BO_Payment_at_counter_for_Tea_grower @Smoke_counter_Tea_grower_GOC
+  @Local
   Scenario Outline: Payment at counter for Registration as Tea Grower
     Given I am on SFWF Front Office Home Page GOC "<Browser>"
     When I Input Registered Maupass User's Username "<Username>" and Password "<FPassword>"
@@ -1568,7 +1568,7 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
 
 
 #Scenario8
-  @Approval_by_BO_Payment_online_for_Tea_grower @Smoke_online
+  @Local
   Scenario Outline: Payment online for Registration as Tea Grower
     Given I am on SFWF Front Office Home Page GOC "<Browser>"
     When I Input Registered Maupass User's Username "<Username>" and Password "<FPassword>"
@@ -1783,7 +1783,7 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
       |Chrome |Suraj_Jo|Admin@123|Admin@123|FINANCE  |PWO        |WPO        |WO         |IT_DEPT   |This is a test |Yes     |Cash         |850          |Mrs              |Port Louis|Tertiary        |Full Time|Manager           |src\test\resources\Photo_upload.jpg |2        |Married       |Spouse      |Keen           |Dafne            |Female|1Jan94|Actress    |Tea Grower |2.7        |Tenant    |Moka          |src\test\resources\Upload_Test1.pdf|Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |Credit         |5123-4500-0000-0008|01           |39         |100          |My name        |ACC5896   |
 
 #Scenario9
-  @Approval_by_BO_Payment_at_counter_for_Registration_as_Small_Breeder @Smoke_counter_for_Registration_as_Small_Breeder_GOC
+  @Local
   Scenario Outline: Payment at counter for Registration as Small Breeder
 
     Given I am on SFWF Front Office Home Page GOC "<Browser>"
@@ -2026,7 +2026,7 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
 
 
     #Scenario10
-  @Approval_by_BO_Payment_online_for_Registration_as_Small_Breeder @Smoke_online_Registration_as_Small_Breeder_GOC @Local
+  @Local
   Scenario Outline: Payment online for Registration as Small Breeder
 
     Given I am on SFWF Front Office Home Page GOC "<Browser>" "<Run>"

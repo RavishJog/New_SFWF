@@ -48,6 +48,8 @@ public class Steps extends Utility {
 
     @AfterMethod
     public void tearDown() {
+        driver.manage().deleteAllCookies();
+
         if (driver != null) {
             driver.quit();
         }
@@ -3227,15 +3229,21 @@ public class Steps extends Utility {
         if (Browser.equals("Chrome")) {
             setUp();
             driver.get("https://sfwftest.govmu.org/");
+            driver.manage().deleteAllCookies();
+
             WebDriverWait w = new WebDriverWait(driver, 600);
             WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//span[contains(.,'Farmer')])[1]")));
-            driver.manage().window().maximize();
+            driver.manage().window().setSize(new Dimension(1920, 1080));
+//            driver.manage().window().maximize();
         } else if (Browser.equals("Edge")) {
             setUp();
             driver.get("https://sfwftest.govmu.org/");
+            driver.manage().deleteAllCookies();
+
             WebDriverWait w = new WebDriverWait(driver, 600);
             WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//span[contains(.,'Farmer')])[1]")));
-            driver.manage().window().maximize();
+            driver.manage().window().setSize(new Dimension(1920, 1080));
+//            driver.manage().window().maximize();
         } else {
             System.out.println("No browser found");
         }
@@ -3246,11 +3254,19 @@ public class Steps extends Utility {
         if (Browser.equals("Chrome")) {
             setUp();
             driver.get("https://sfwftest.govmu.org/sfwfback/");
-            driver.manage().window().maximize();
+            driver.manage().deleteAllCookies();
+
+            driver.manage().window().setSize(new Dimension(1920, 1080));
+
+//            driver.manage().window().maximize();
         } else if (Browser.equals("Edge")) {
             setUp();
             driver.get("https://sfwftest.govmu.org/sfwfback/");
-            driver.manage().window().maximize();
+            driver.manage().deleteAllCookies();
+
+            driver.manage().window().setSize(new Dimension(1920, 1080));
+
+//            driver.manage().window().maximize();
         } else {
             System.out.println("No browser found");
         }
