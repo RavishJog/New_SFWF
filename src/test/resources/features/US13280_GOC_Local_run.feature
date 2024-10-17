@@ -2111,7 +2111,7 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
     Then I Sign Out as Front Registered User
 
 #    PWO
-    And I am on SFWF Back Office Home Page GOC "<Browser>"
+    And I am on SFWF Back Office Home Page GOC "<Browser>" "<Run>"
     And I Input PWO Username "<PwoUsername>" and Password "<Password>"
     And I Click on Sign In button
     And I Verify Successful Login

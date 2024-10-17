@@ -3645,7 +3645,7 @@ public class Steps extends Utility {
             driver.manage().window().maximize();
             Thread.sleep(3000);
 
-        } else {
+        } else  if (Run.equals("Jenkins")){
             if (Browser.equals("Chrome")) {
                 setUp();
                 driver.get("https://sfwftest.govmu.org/");
@@ -3657,6 +3657,29 @@ public class Steps extends Utility {
                 driver.get("https://sfwftest.govmu.org/");
                 WebDriverWait w = new WebDriverWait(driver, 600);
                 WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//span[contains(.,'Farmer')])[1]")));
+                driver.manage().window().maximize();
+            } else {
+                System.out.println("No browser found");
+            }
+        }
+    }
+
+    @And("^I am on SFWF Back Office Home Page GOC \"([^\"]*)\" \"([^\"]*)\"$")
+    public void iAmOnSFWFBackOfficeHomePageGOC(String Browser, String Run) throws Throwable {
+        if (Run.equals("Local")){
+            driver = new ChromeDriver();
+            driver.get("https://sfwftest.govmu.org/sfwfback/");
+            driver.manage().window().maximize();
+            Thread.sleep(3000);
+
+        } else if (Run.equals("Jenkins")){
+            if (Browser.equals("Chrome")) {
+                setUp();
+                driver.get("https://sfwftest.govmu.org/sfwfback/");
+                driver.manage().window().maximize();
+            } else if (Browser.equals("Edge")) {
+                setUp();
+                driver.get("https://sfwftest.govmu.org/sfwfback/");
                 driver.manage().window().maximize();
             } else {
                 System.out.println("No browser found");
