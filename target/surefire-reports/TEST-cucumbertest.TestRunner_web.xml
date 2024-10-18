@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="1" name="cucumbertest.TestRunner_web" time="538.396" errors="0" skipped="0">
+<testsuite tests="1" failures="1" name="cucumbertest.TestRunner_web" time="138.387" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2023.1.2"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -66,87 +66,53 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="cucumbertest.TestRunner_web" name="runCukes" time="538.396">
-    <failure message="org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //h6[contains(text(),&apos;Upload Required Documents&apos;)] (tried for 120 second(s) with 500 MILLISECONDS interval)" type="cucumber.runtime.CucumberException">cucumber.runtime.CucumberException: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //h6[contains(text(),&apos;Upload Required Documents&apos;)] (tried for 120 second(s) with 500 MILLISECONDS interval)
-	at cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:57)
-	at cucumbertest.TestRunner_web.runCukes(TestRunner_web.java:25)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //h6[contains(text(),&apos;Upload Required Documents&apos;)] (tried for 120 second(s) with 500 MILLISECONDS interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
-	at stepdefinition.Steps.iVerifyUploadRequiredDocumentsPageIsDisplayed(Steps.java:725)
-	at ✽.And I Verify Upload Required Documents Page is displayed(features/US13280_GOC.feature:2206)
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //h6[contains(text(),&apos;Upload Required Documents&apos;)]
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+  <testcase classname="cucumbertest.TestRunner_web" name="runCukes" time="138.387">
+    <failure message="org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=130.0.6723.59)
 Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
 System info: host: &apos;SIL-LTDELLI7-G6&apos;, ip: &apos;192.168.8.46&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_371&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:883)
-	at java.util.Optional.orElseThrow(Optional.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:183)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:180)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
-	at stepdefinition.Steps.iVerifyUploadRequiredDocumentsPageIsDisplayed(Steps.java:725)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at cucumber.runtime.Utils$1.call(Utils.java:40)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:34)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
-	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
-	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
-	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
-	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
-	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
-	at cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:50)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=130.0.6723.58 (3a50e012e4c9b8a410a4e2b12bf577e69ee8f755-refs/branch-heads/6723@{#1353}), userDataDir=C:\Users\SURAJ~1.JOG\AppData\Local\Temp\scoped_dir23344_1088678815}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:57862}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=130.0.6723.59, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: ff55e4cc914a71d6253f5b55a5cea92c" type="cucumber.runtime.CucumberException">cucumber.runtime.CucumberException: org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=130.0.6723.59)
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;SIL-LTDELLI7-G6&apos;, ip: &apos;192.168.8.46&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_371&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=130.0.6723.58 (3a50e012e4c9b8a410a4e2b12bf577e69ee8f755-refs/branch-heads/6723@{#1353}), userDataDir=C:\Users\SURAJ~1.JOG\AppData\Local\Temp\scoped_dir23344_1088678815}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:57862}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=130.0.6723.59, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: ff55e4cc914a71d6253f5b55a5cea92c
+	at cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:57)
 	at cucumbertest.TestRunner_web.runCukes(TestRunner_web.java:25)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:110)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=130.0.6723.59)
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;SIL-LTDELLI7-G6&apos;, ip: &apos;192.168.8.46&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_371&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=130.0.6723.58 (3a50e012e4c9b8a410a4e2b12bf577e69ee8f755-refs/branch-heads/6723@{#1353}), userDataDir=C:\Users\SURAJ~1.JOG\AppData\Local\Temp\scoped_dir23344_1088678815}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:57862}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=130.0.6723.59, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: ff55e4cc914a71d6253f5b55a5cea92c
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+	at stepdefinition.Steps.iSearchForProgrammeRefNumberForReSubmit(Steps.java:3576)
+	at ✽.And I Search for Programme Ref Number for re-submit(features/US13364_14829.feature:75)
 </failure>
     <system-out>Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@2cfb4a64
-#User Story 13280 - Back Office Process for Registration
-@Main_feature @US13280 @Regression @GOC_Registrations
-Feature: User Story 13280-GOC - Back Office Process for Registration
+#User Story 13364 -Form - Group Personal Accident Cover (GPAC) � Claim
+#User Story 14928 - Workflow
+@Main_feature @US13364_14829 @GOC
+Feature: User Story 13361 and 14829 -Form - Fertiliser Subsidy Scheme (FSS) and workflow
 
-  #Scenario10
-  @Approval_by_BO_Payment_online_for_Registration_as_Small_Breeder @Smoke_online_Registration_as_Small_Breeder_GOC
-  Scenario Outline: Payment online for Registration as Small Breeder                                                      &amp;#27;[90m# features/US13280_GOC.feature:2030&amp;#27;[0m
+  #Scenario1
+  @Application_for_GPAC
+  Scenario Outline: Application for Group Personal Accident Cover (GPAC) � Claim and Workflow                                                                         &amp;#27;[90m# features/US13364_14829.feature:9&amp;#27;[0m
     &amp;#27;[36mGiven &amp;#27;[0m&amp;#27;[36mI am on SFWF Front Office Home Page GOC &quot;&lt;Browser&gt;&quot;&amp;#27;[0m
     &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mI Input Registered Maupass User&apos;s Username &quot;&lt;Username&gt;&quot; and Password &quot;&lt;FPassword&gt;&quot;&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Sign In button in Maupass&amp;#27;[0m
@@ -155,152 +121,47 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify that User is directed to My Application Page&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify display of Farmers Card link&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Programmes link&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on New Button to apply for Registration&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify display of Registration Type Page&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Small Breeder Icon&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify display of REGISTRATION FOR SMALL BREEDERS page&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select an Applicant Title &quot;&lt;Applicant_Title&gt;&quot;&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select Applicant District &quot;&lt;District&gt;&quot;&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select Applicant Level of Education &quot;&lt;Education_Level&gt;&quot;&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select Agricultural Activity &quot;&lt;Act&gt;&quot;&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input Other Occupation &quot;&lt;Other_Occupation&gt;&quot;&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Upload Photograph &quot;&lt;Photo&gt;&quot;&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify for Photo upload success message&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select No of years for Registration membership &quot;&lt;Year_dur&gt;&quot;&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select Marital Status &quot;&lt;Marital_Status&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Programmes&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on New Programmes&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Programme Type Page&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click to Apply for Group Personal Accident Cover (GPAC)&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Display of INDIAN OCEAN GENERAL ASSURANCE (IOGA) / SMALL FARMERS WELFARE FUND (SFWF)&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input Type of Farmer &quot;&lt;Farmer_Type&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input Accident Particulars &quot;&lt;Date_of_Accident&gt;&quot; &quot;&lt;Time_of_Accident&gt;&quot; &quot;&lt;Place_of_Accident&gt;&quot; &quot;&lt;Cause_of_Accident&gt;&quot; &quot;&lt;Kind_of_Work&gt;&quot; &quot;&lt;Particulars_Statement&gt;&quot;&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Save and Continue&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Display of Particulars of Family Beneficiaries Page&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Add Family and Beneficiaries&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mVerify Display of Particulars of Family Beneficiaries input table&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select Family relationship for tea grower &quot;&lt;Relationship&gt;&quot;&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input Family Surname &quot;&lt;Family_Surname&gt;&quot;&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input Family Other Names &quot;&lt;Family_Other_Names&gt;&quot;&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select Family Gender &quot;&lt;Gender&gt;&quot;&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input Family Date of Birth &quot;&lt;DOB&gt;&quot;&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input Family Occupation &quot;&lt;Occupation&gt;&quot;&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Beneficiary of life Insurance Scheme&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Beneficiary of Accident Insurance Scheme&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Save Particulars of Family and Beneficiaries&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Save and Continue&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Display of Livestock Activity&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input Number of Cow Female &quot;&lt;Male_Female_Number&gt;&quot;&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select Reason &quot;&lt;Reason&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify General Information Tab&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input Medical Cost &quot;&lt;Medical_Cost&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select &quot;&lt;Accident_Related&gt;&quot; for Has the medical treatment related to the accident been completed?&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select &quot;&lt;Additional_Medical_Charges_option&gt;&quot; for If yes, are there any additional medical charges?&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input &quot;&lt;Additional_Medical_Charges_amount&gt;&quot; for Details of Additional Medical Charges&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Save and Continue&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Upload Required Documents Page is displayed&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Upload Copy of National Identify Card (ID) &quot;&lt;Upload_test&gt;&quot;&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Upload Existing SFWF Reg No (if any) &quot;&lt;Upload_test&gt;&quot;&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Upload copy of Title Deed &quot;&lt;Upload_test&gt;&quot;&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Upload Copy of registered /Non-Registered Lease Paper &quot;&lt;Upload_test&gt;&quot;&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Upload Copy of title deed of land owner including cooperatives (for non-registered lease paper) &quot;&lt;Upload_test&gt;&quot;&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Upload Preliminary environmental report, Building and land use Permit and health clearance &quot;&lt;Upload_test&gt;&quot;&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Upload Location plan of farm including size &quot;&lt;Upload_test&gt;&quot;&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Upload List of Tags Nos. (except poultry and pig) &quot;&lt;Upload_test&gt;&quot;&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Upload Animal Card DVs where applicable &quot;&lt;Upload_test&gt;&quot;&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify for Document Upload Success Message&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Add Additional Document&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input Additional Document Name &quot;&lt;Additional_Doc_Name&gt;&quot;&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Success message for adding Additional Document Name&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Upload Additional Document for small breeder &quot;&lt;Upload_test&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Upload Documents &quot;&lt;Upload_test&gt;&quot;&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify for Document Upload Success Message&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Save and Continue&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Declaration Page for REGISTRATION FOR SMALL BREEDERS&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Terms and Conditions Page&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI click on I agree to the Terms and Conditions&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Photo checkbox&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select Bank &quot;&lt;Bank_Name&gt;&quot;&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input Bank Branch for Agro-Processing Enterprise &quot;&lt;Bank_Branch&gt;&quot;&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input Personal Bank Account Number Agro-Processing Enterprise &quot;&lt;Bank_Account_No&gt;&quot;&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Submit Application &quot;&lt;Confirmation&gt;&quot;&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Success message for application submitted for Small Breeders Registration&amp;#27;[0m
-    #    And I Click on Cancel button not to proceed with another registration
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Application Status &quot;&lt;App_status&gt;&quot;&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Payment Status &quot;&lt;Payment_Status&gt;&quot;&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Copy Application Number&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Shopping Cart for payment&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select Application for payment&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Proceed to Payment&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Payment Icon&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select Payment Method &quot;&lt;Payment_method&gt;&quot;&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Final Proceed to Online Payment&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify display of Payment Gateway&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input Card Details &quot;&lt;Card_Number&gt;&quot; &quot;&lt;Expiry_Month&gt;&quot; &quot;&lt;Expiry_Year&gt;&quot; &quot;&lt;Cardholder_Name&gt;&quot; &quot;&lt;Security_Code&gt;&quot;&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Pay Now button&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify that User is directed to My Application Page&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Payment Status is changed to Paid&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Success message for Application of Programmes Submitted&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Copy Programmes Ref Number&amp;#27;[0m
     &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mI Sign Out as Front Registered User&amp;#27;[0m
-    #    PWO
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI am on SFWF Back Office Home Page GOC &quot;&lt;Browser&gt;&quot;&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input PWO Username &quot;&lt;PwoUsername&gt;&quot; and Password &quot;&lt;Password&gt;&quot;&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Sign In button&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Successful Login&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on All Applications&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify display of list of registrations page&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Search for Application Ref Number as a Back Office User&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click to view Application&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Action Button&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select Option Assigned&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select WPO&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input Remarks &quot;&lt;Remarks&gt;&quot;&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Save Actions&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify for success message for assigning&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Sign Out&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Successful Sign Out&amp;#27;[0m
     #    WPO
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI am on SFWF Back Office Home Page GOC &quot;&lt;Browser&gt;&quot;&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input WPO Username &quot;&lt;WpoUsername&gt;&quot; and Password &quot;&lt;Password&gt;&quot;&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Sign In button&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Successful Login&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on All Applications&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify display of list of registrations page&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Search for Application Ref Number as a Back Office User&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click to view Application&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click to view All Programmes&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Search for Programmes Ref Number as a Back Office User&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click to view Programmes&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Action Button&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select Option Assigned&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select WO&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input Remarks &quot;&lt;Remarks&gt;&quot;&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Save Actions&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify for success message for assigning&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Sign Out&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Successful Sign Out&amp;#27;[0m
-    #    WO/WA
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI am on SFWF Back Office Home Page GOC &quot;&lt;Browser&gt;&quot;&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input WO-WA Username &quot;&lt;WOUsername&gt;&quot; and Password &quot;&lt;Password&gt;&quot;&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Sign In button&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Successful Login&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on All Applications&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify display of list of registrations page&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Search for Application Ref Number as a Back Office User&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click to view Application&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Site Report Tab&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select Bonafide Planter &quot;&lt;Bonafide&gt;&quot;&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input Site visit remarks &quot;&lt;Remarks&gt;&quot;&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Upload Site Report &quot;&lt;Upload_test&gt;&quot;&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify for Document Upload Success Message&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input Section One data &quot;&lt;Breeder_Type&gt;&quot;&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Save Button&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Site Visit saved success message&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Action Button&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select Option Assigned&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select WPO&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input Remarks &quot;&lt;Remarks&gt;&quot;&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Save Actions&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify for success message for assigning&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Sign Out&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Successful Sign Out&amp;#27;[0m
-    #    WPO
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI am on SFWF Back Office Home Page GOC &quot;&lt;Browser&gt;&quot;&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input WPO Username &quot;&lt;WpoUsername&gt;&quot; and Password &quot;&lt;Password&gt;&quot;&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Sign In button&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Successful Login&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on All Applications&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify display of list of registrations page&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Search for Application Ref Number as a Back Office User&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click to view Application&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Action Button&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select Option Under Query&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select Under Query for Programmes&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input External Remarks &quot;&lt;Remarks&gt;&quot;&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Under Query Notification Button&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Success Message for Under Query Mail Notification&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Save Actions&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Under Query Notification for Programmes&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Success Message for Under Query Notification for Programmes&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Save Actions for Programmes&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify for success message for workflow saved&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Sign Out&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Successful Sign Out&amp;#27;[0m
@@ -313,498 +174,254 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify that User is directed to My Application Page&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify display of Farmers Card link&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Programmes link&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Search for Application Ref Number for re-submit&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify display of REGISTRATION FOR SMALL BREEDERS page&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Programmes&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Search for Programme Ref Number for re-submit&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Display of INDIAN OCEAN GENERAL ASSURANCE (IOGA) / SMALL FARMERS WELFARE FUND (SFWF)&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Save and Continue&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify General Information Tab&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Save and Continue&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Upload Required Documents Page is displayed&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Save and Continue&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Terms and Conditions Page&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Submit Application &quot;&lt;Confirmation&gt;&quot;&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Success message for application submitted&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Sign Out as Front Registered User&amp;#27;[0m
+    &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mI Sign Out as Front Registered User&amp;#27;[0m
     #    WPO
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI am on SFWF Back Office Home Page GOC &quot;&lt;Browser&gt;&quot;&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input WPO Username &quot;&lt;WpoUsername&gt;&quot; and Password &quot;&lt;Password&gt;&quot;&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Sign In button&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Successful Login&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on All Applications&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify display of list of registrations page&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click to view All Programmes&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Search for Application Ref Number as a Back Office User&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click to view Application&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Action Button&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select Option Approved to approve the registration application&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select Assigned for Programmes&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select TO User&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input Remarks &quot;&lt;Remarks&gt;&quot;&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Save Actions&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify for success message for approval&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify for success message for assigning&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Sign Out&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Successful Sign Out&amp;#27;[0m
-    #    IT Department
+    #    TO
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI am on SFWF Back Office Home Page GOC &quot;&lt;Browser&gt;&quot;&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input IT Department Username &quot;&lt;ITUsername&gt;&quot; and Password &quot;&lt;Password&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input TO Username &quot;&lt;TOUsername&gt;&quot; and Password &quot;&lt;Password&gt;&quot;&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Sign In button&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Successful Login&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on All Applications&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify display of list of registrations page&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Search for Application Ref Number as a Back Office User&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click to view Application&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Print Card&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Site Report Tab&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select Bonafide Planter &quot;&lt;Bonafide&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input Site visit remarks &quot;&lt;Remarks&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Upload Site Report &quot;&lt;Upload_test&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify for Document Upload Success Message for Site Visit&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Save Button&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Site Visit saved success message&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Action Button&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select Assigned&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select WPO&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input Remarks &quot;&lt;Remarks&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Save Actions&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify for success message for assigning&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Sign Out&amp;#27;[0m
     &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Successful Sign Out&amp;#27;[0m
-    #    Applicant verify status - Card Printed
-    &amp;#27;[36mGiven &amp;#27;[0m&amp;#27;[36mI am on SFWF Front Office Home Page GOC &quot;&lt;Browser&gt;&quot;&amp;#27;[0m
-    &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mI Input Registered Maupass User&apos;s Username &quot;&lt;Username&gt;&quot; and Password &quot;&lt;FPassword&gt;&quot;&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Sign In button in Maupass&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Applicant&apos;s Successful Login&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Register as Farmer&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify that User is directed to My Application Page&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify display of Farmers Card link&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Programmes link&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Search for Application Ref Number for to check Status Card Printed&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Application Status to be Card Printed&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Sign Out as Front Registered User&amp;#27;[0m
 
     Examples: 
-Mrs is working
-District Select is working
-Education Level is working
-Radio Button is working correctly
-Spouse option is working
-Gender Female is working fine
-Meat is working fine
 Unable to take screenshot
 java.lang.NullPointerException
-Status is not valid
-Text from source element: SB2024-00061
+Programmes ref number copied is: GPAC2024-00023
 Unable to take screenshot
 java.lang.NullPointerException
 
-  #      |Chrome |Suraj_Jo|Admin@123|Admin@123 |FINANCE  |PWO        |WPO        |WO         |IT_DEPT   |This is a test |Yes     |Cash         |850          |Mrs             |Port Louis  |Tertiary        |Full Time|Manager           |src\test\resources\Photo_upload.jpg |2        |Married       |Spouse      |Keen          |Dafne             |Female|1Jan94|Actress    |Tea Grower |2.7        |Tenant    |Moka         |Cattle  |10                |10          |Meat   |AAA2563     |Male      |1Month    |src\test\resources\Upload_Test1.pdf|Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |Credit         |5123-4500-0000-0008|01           |39         |100          |My name        |Cattle     |
-  @Main_feature @Smoke_online_Registration_as_Small_Breeder_GOC @US13280 @Regression @Approval_by_BO_Payment_online_for_Registration_as_Small_Breeder @GOC_Registrations
-  Scenario Outline: Payment online for Registration as Small Breeder                                                                            &amp;#27;[90m# features/US13280_GOC.feature:2259&amp;#27;[0m
-    &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mI am on SFWF Front Office Home Page GOC &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mEdge&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                                        &amp;#27;[90m# Steps.iAmOnSFWFFrontOfficeHomePageGOC(String)&amp;#27;[0m
-    &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mI Input Registered Maupass User&apos;s Username &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mSuraj_Jo&amp;#27;[0m&amp;#27;[32m&quot; and Password &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mAdmin@123&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                         &amp;#27;[90m# Steps.iInputRegisteredMaupassUserSUsernameAndPassword(String,String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Sign In button in Maupass&amp;#27;[0m                                                                                                    &amp;#27;[90m# Steps.iClickOnSignInButtonInMaupass()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Applicant&apos;s Successful Login&amp;#27;[0m                                                                                                   &amp;#27;[90m# Steps.iVerifyApplicantSSuccessfulLogin()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Register as Farmer&amp;#27;[0m                                                                                                           &amp;#27;[90m# Steps.iClickOnRegisterAsFarmer()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify that User is directed to My Application Page&amp;#27;[0m                                                                                   &amp;#27;[90m# Steps.iVerifyThatUserIsDirectedToMyApplicationPage()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify display of Farmers Card link&amp;#27;[0m                                                                                                   &amp;#27;[90m# Steps.iVerifyDisplayOfFarmersCardLink()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Programmes link&amp;#27;[0m                                                                                                                &amp;#27;[90m# Steps.iVerifyProgrammesLink()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on New Button to apply for Registration&amp;#27;[0m                                                                                         &amp;#27;[90m# Steps.iClickOnNewButtonToApplyForRegistration()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify display of Registration Type Page&amp;#27;[0m                                                                                              &amp;#27;[90m# Steps.iVerifyDisplayOfRegistrationTypePage()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Small Breeder Icon&amp;#27;[0m                                                                                                           &amp;#27;[90m# Steps.iClickOnSmallBreederIcon()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify display of REGISTRATION FOR SMALL BREEDERS page&amp;#27;[0m                                                                                &amp;#27;[90m# Steps.iVerifyDisplayOfREGISTRATIONFORSMALLBREEDERSPage()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select an Applicant Title &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mMrs&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                                                       &amp;#27;[90m# Steps.iSelectAnApplicantTitle(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select Applicant District &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mPort Louis&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                                                &amp;#27;[90m# Steps.iSelectApplicantDistrict(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select Applicant Level of Education &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mTertiary&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                                        &amp;#27;[90m# Steps.iSelectApplicantLevelOfEducation(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select Agricultural Activity &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mFull Time&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                                              &amp;#27;[90m# Steps.iSelectAgriculturalActivity(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input Other Occupation &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mManager&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                                                      &amp;#27;[90m# Steps.iInputOtherOccupation(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Upload Photograph &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1msrc\test\resources\Photo_upload.jpg&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                               &amp;#27;[90m# Steps.iUploadPhotograph(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify for Photo upload success message&amp;#27;[0m                                                                                               &amp;#27;[90m# Steps.iVerifyForPhotoUploadSuccessMessage()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select No of years for Registration membership &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1m2&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                                    &amp;#27;[90m# Steps.iSelectNoOfYearsForRegistrationMembership(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select Marital Status &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mMarried&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                                                       &amp;#27;[90m# Steps.iSelectMaritalStatus(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Save and Continue&amp;#27;[0m                                                                                                            &amp;#27;[90m# Steps.iClickOnSaveAndContinue()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Display of Particulars of Family Beneficiaries Page&amp;#27;[0m                                                                            &amp;#27;[90m# Steps.iVerifyDisplayOfParticularsOfFamilyBeneficiariesPage()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Add Family and Beneficiaries&amp;#27;[0m                                                                                                 &amp;#27;[90m# Steps.iClickOnAddFamilyAndBeneficiaries()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mVerify Display of Particulars of Family Beneficiaries input table&amp;#27;[0m                                                                       &amp;#27;[90m# Steps.verifyDisplayOfParticularsOfFamilyBeneficiariesInputTable()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select Family relationship for tea grower &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mSpouse&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                                    &amp;#27;[90m# Steps.iSelectFamilyRelationshipForTeaGrower(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input Family Surname &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mKeen&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                                                           &amp;#27;[90m# Steps.iInputFamilySurname(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input Family Other Names &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mDafne&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                                                      &amp;#27;[90m# Steps.iInputFamilyOtherNames(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select Family Gender &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mFemale&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                                                         &amp;#27;[90m# Steps.iSelectFamilyGender(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input Family Date of Birth &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1m1Jan94&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                                                   &amp;#27;[90m# Steps.iInputFamilyDateOfBirth(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input Family Occupation &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mActress&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                                                     &amp;#27;[90m# Steps.iInputFamilyOccupation(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Beneficiary of life Insurance Scheme&amp;#27;[0m                                                                                         &amp;#27;[90m# Steps.iClickOnBeneficiaryOfLifeInsuranceScheme()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Beneficiary of Accident Insurance Scheme&amp;#27;[0m                                                                                     &amp;#27;[90m# Steps.iClickOnBeneficiaryOfAccidentInsuranceScheme()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Save Particulars of Family and Beneficiaries&amp;#27;[0m                                                                                          &amp;#27;[90m# Steps.iSaveParticularsOfFamilyAndBeneficiaries()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Save and Continue&amp;#27;[0m                                                                                                            &amp;#27;[90m# Steps.iClickOnSaveAndContinue()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Display of Livestock Activity&amp;#27;[0m                                                                                                  &amp;#27;[90m# Steps.iVerifyDisplayOfLivestockActivity()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input Number of Cow Female &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1m10&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                                                       &amp;#27;[90m# Steps.iInputNumberOfCowFemale(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select Reason &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mMeat&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                                                                  &amp;#27;[90m# Steps.iSelectReason(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Save and Continue&amp;#27;[0m                                                                                                            &amp;#27;[90m# Steps.iClickOnSaveAndContinue()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Upload Required Documents Page is displayed&amp;#27;[0m                                                                                    &amp;#27;[90m# Steps.iVerifyUploadRequiredDocumentsPageIsDisplayed()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Upload Copy of National Identify Card (ID) &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1msrc\test\resources\Upload_Test1.pdf&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                      &amp;#27;[90m# Steps.iUploadCopyOfNationalIdentifyCardID(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Upload Existing SFWF Reg No (if any) &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1msrc\test\resources\Upload_Test1.pdf&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                            &amp;#27;[90m# Steps.iUploadExistingSFWFRegNoIfAny(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Upload copy of Title Deed &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1msrc\test\resources\Upload_Test1.pdf&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                       &amp;#27;[90m# Steps.iUploadCopyOfTitleDeed(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Upload Copy of registered /Non-Registered Lease Paper &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1msrc\test\resources\Upload_Test1.pdf&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                           &amp;#27;[90m# Steps.iUploadCopyOfRegisteredNonRegisteredLeasePaper(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Upload Copy of title deed of land owner including cooperatives (for non-registered lease paper) &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1msrc\test\resources\Upload_Test1.pdf&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m &amp;#27;[90m# Steps.iUploadCopyOfTitleDeedOfLandOwnerIncludingCooperativesForNonRegisteredLeasePaper(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Upload Preliminary environmental report, Building and land use Permit and health clearance &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1msrc\test\resources\Upload_Test1.pdf&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m      &amp;#27;[90m# Steps.iUploadPreliminaryEnvironmentalReportBuildingAndLandUsePermitAndHealthClearance(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Upload Location plan of farm including size &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1msrc\test\resources\Upload_Test1.pdf&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                     &amp;#27;[90m# Steps.iUploadLocationPlanOfFarmIncludingSize(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Upload List of Tags Nos. (except poultry and pig) &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1msrc\test\resources\Upload_Test1.pdf&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                               &amp;#27;[90m# Steps.iUploadListOfTagsNosExceptPoultryAndPig(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Upload Animal Card DVs where applicable &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1msrc\test\resources\Upload_Test1.pdf&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                         &amp;#27;[90m# Steps.iUploadAnimalCardDVsWhereApplicable(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify for Document Upload Success Message&amp;#27;[0m                                                                                            &amp;#27;[90m# Steps.iVerifyForDocumentUploadSuccessMessage()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Add Additional Document&amp;#27;[0m                                                                                                      &amp;#27;[90m# Steps.iClickOnAddAdditionalDocument()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input Additional Document Name &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mAdditional Document Test&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                             &amp;#27;[90m# Steps.iInputAdditionalDocumentName(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Success message for adding Additional Document Name&amp;#27;[0m                                                                            &amp;#27;[90m# Steps.iVerifySuccessMessageForAddingAdditionalDocumentName()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Upload Additional Document for small breeder &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1msrc\test\resources\Upload_Test1.pdf&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                    &amp;#27;[90m# Steps.iUploadAdditionalDocumentForSmallBreeder(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify for Document Upload Success Message&amp;#27;[0m                                                                                            &amp;#27;[90m# Steps.iVerifyForDocumentUploadSuccessMessage()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Save and Continue&amp;#27;[0m                                                                                                            &amp;#27;[90m# Steps.iClickOnSaveAndContinue()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Declaration Page for REGISTRATION FOR SMALL BREEDERS&amp;#27;[0m                                                                           &amp;#27;[90m# Steps.iVerifyDeclarationPageForREGISTRATIONFORSMALLBREEDERS()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI click on I agree to the Terms and Conditions&amp;#27;[0m                                                                                          &amp;#27;[90m# Steps.iClickOnIAgreeToTheTermsAndConditions()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Photo checkbox&amp;#27;[0m                                                                                                               &amp;#27;[90m# Steps.iClickOnPhotoCheckbox()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select Bank &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mABC Banking&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                                                             &amp;#27;[90m# Steps.iSelectBank(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input Bank Branch for Agro-Processing Enterprise &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mPort Louis&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                         &amp;#27;[90m# Steps.iInputBankBranchForAgroProcessingEnterprise(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input Personal Bank Account Number Agro-Processing Enterprise &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1m0001252563636&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                         &amp;#27;[90m# Steps.iInputPersonalBankAccountNumberAgroProcessingEnterprise(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Submit Application &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mYes&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                                                     &amp;#27;[90m# Steps.iClickOnSubmitApplication(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Success message for application submitted for Small Breeders Registration&amp;#27;[0m                                                      &amp;#27;[90m# Steps.iVerifySuccessMessageForApplicationSubmittedForSmallBreedersRegistration()&amp;#27;[0m
-    #    And I Click on Cancel button not to proceed with another registration
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Application Status &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mSubmitted&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                                                 &amp;#27;[90m# Steps.iVerifyApplicationStatus(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Payment Status &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mPending&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                                                       &amp;#27;[90m# Steps.iVerifyPaymentStatus(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Copy Application Number&amp;#27;[0m                                                                                                               &amp;#27;[90m# Steps.iCopyApplicationNumber()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Shopping Cart for payment&amp;#27;[0m                                                                                                    &amp;#27;[90m# Steps.iClickOnShoppingCartForPayment()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select Application for payment&amp;#27;[0m                                                                                                        &amp;#27;[90m# Steps.IselectApplicationForPayment()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Proceed to Payment&amp;#27;[0m                                                                                                           &amp;#27;[90m# Steps.iClickOnProceedToPayment()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Payment Icon&amp;#27;[0m                                                                                                                 &amp;#27;[90m# Steps.iClickOnPaymentIcon()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select Payment Method &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mCredit&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                                                        &amp;#27;[90m# Steps.iSelectPaymentMethod(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Final Proceed to Online Payment&amp;#27;[0m                                                                                              &amp;#27;[90m# Steps.iClickOnFinalProceedToOnlinePayment()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify display of Payment Gateway&amp;#27;[0m                                                                                                     &amp;#27;[90m# Steps.iVerifyDisplayOfPaymentGateway()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input Card Details &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1m5123-4500-0000-0008&amp;#27;[0m&amp;#27;[32m&quot; &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1m01&amp;#27;[0m&amp;#27;[32m&quot; &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1m39&amp;#27;[0m&amp;#27;[32m&quot; &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mMy name&amp;#27;[0m&amp;#27;[32m&quot; &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1m100&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                    &amp;#27;[90m# Steps.iInputCardDetails(String,String,String,String,String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Pay Now button&amp;#27;[0m                                                                                                               &amp;#27;[90m# Steps.iClickOnPayNowButton()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify that User is directed to My Application Page&amp;#27;[0m                                                                                   &amp;#27;[90m# Steps.iVerifyThatUserIsDirectedToMyApplicationPage()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Payment Status is changed to Paid&amp;#27;[0m                                                                                              &amp;#27;[90m# Steps.iVerifyPaymentStatusIsChangedToPaid()&amp;#27;[0m
-    &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32mI Sign Out as Front Registered User&amp;#27;[0m                                                                                                    &amp;#27;[90m# Steps.iSignOutAsFrontRegisteredUser()&amp;#27;[0m
-    #    PWO
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI am on SFWF Back Office Home Page GOC &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mEdge&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                                           &amp;#27;[90m# Steps.iAmOnSFWFBackOfficeHomePageGOC(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input PWO Username &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mPWO&amp;#27;[0m&amp;#27;[32m&quot; and Password &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mAdmin@123&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                                     &amp;#27;[90m# Steps.iInputPWOUsernameAndPassword(String,String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Sign In button&amp;#27;[0m                                                                                                               &amp;#27;[90m# Steps.iClickOnSignInButton()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Successful Login&amp;#27;[0m                                                                                                               &amp;#27;[90m# Steps.IVerifySuccessfulLogin()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on All Applications&amp;#27;[0m                                                                                                             &amp;#27;[90m# Steps.iClickOnAllApplications()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify display of list of registrations page&amp;#27;[0m                                                                                          &amp;#27;[90m# Steps.iVerifyDisplayOfListOfRegistrationsPage()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Search for Application Ref Number as a Back Office User&amp;#27;[0m                                                                               &amp;#27;[90m# Steps.iSearchForApplicationRefNumberAsABackOfficeUser()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click to view Application&amp;#27;[0m                                                                                                             &amp;#27;[90m# Steps.iClickToViewApplication()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Action Button&amp;#27;[0m                                                                                                                &amp;#27;[90m# Steps.iClickOnActionButton()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select Option Assigned&amp;#27;[0m                                                                                                                &amp;#27;[90m# Steps.iSelectOptionAssigned()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select WPO&amp;#27;[0m                                                                                                                            &amp;#27;[90m# Steps.iSelectWPO()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input Remarks &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mThis is a test&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                                                        &amp;#27;[90m# Steps.iInputRemarks(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Save Actions&amp;#27;[0m                                                                                                                 &amp;#27;[90m# Steps.iClickOnSaveActions()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify for success message for assigning&amp;#27;[0m                                                                                              &amp;#27;[90m# Steps.iVerifyForSuccessMessageForAssigning()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Sign Out&amp;#27;[0m                                                                                                                              &amp;#27;[90m# Steps.iSignOut()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Successful Sign Out&amp;#27;[0m                                                                                                            &amp;#27;[90m# Steps.iVerifySuccessfulSignOut()&amp;#27;[0m
+  @Main_feature @GOC @Application_for_GPAC @US13364_14829
+  Scenario Outline: Application for Group Personal Accident Cover (GPAC) � Claim and Workflow                          &amp;#27;[90m# features/US13364_14829.feature:132&amp;#27;[0m
+    &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mI am on SFWF Front Office Home Page GOC &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mChrome&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                             &amp;#27;[90m# Steps.iAmOnSFWFFrontOfficeHomePageGOC(String)&amp;#27;[0m
+    &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mI Input Registered Maupass User&apos;s Username &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mybhunjun5&amp;#27;[0m&amp;#27;[32m&quot; and Password &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mMauritius1!1710&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                         &amp;#27;[90m# Steps.iInputRegisteredMaupassUserSUsernameAndPassword(String,String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Sign In button in Maupass&amp;#27;[0m                                                                           &amp;#27;[90m# Steps.iClickOnSignInButtonInMaupass()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Applicant&apos;s Successful Login&amp;#27;[0m                                                                          &amp;#27;[90m# Steps.iVerifyApplicantSSuccessfulLogin()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Register as Farmer&amp;#27;[0m                                                                                  &amp;#27;[90m# Steps.iClickOnRegisterAsFarmer()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify that User is directed to My Application Page&amp;#27;[0m                                                          &amp;#27;[90m# Steps.iVerifyThatUserIsDirectedToMyApplicationPage()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify display of Farmers Card link&amp;#27;[0m                                                                          &amp;#27;[90m# Steps.iVerifyDisplayOfFarmersCardLink()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Programmes link&amp;#27;[0m                                                                                       &amp;#27;[90m# Steps.iVerifyProgrammesLink()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Programmes&amp;#27;[0m                                                                                          &amp;#27;[90m# Steps.iClickOnProgrammes()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on New Programmes&amp;#27;[0m                                                                                      &amp;#27;[90m# Steps.iClickOnNewProgrammes()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Programme Type Page&amp;#27;[0m                                                                                   &amp;#27;[90m# Steps.iVerifyProgrammeTypePage()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click to Apply for Group Personal Accident Cover (GPAC)&amp;#27;[0m                                                      &amp;#27;[90m# Steps.iClickToApplyForGroupPersonalAccidentCoverGPAC()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Display of INDIAN OCEAN GENERAL ASSURANCE (IOGA) / SMALL FARMERS WELFARE FUND (SFWF)&amp;#27;[0m                  &amp;#27;[90m# Steps.iVerifyDisplayOfINDIANOCEANGENERALASSURANCEIOGASMALLFARMERSWELFAREFUNDSFWF()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input Type of Farmer &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mSmall Planter&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                         &amp;#27;[90m# Steps.iInputTypeOfFarmer(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input Accident Particulars &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1m01/10/2024&amp;#27;[0m&amp;#27;[32m&quot; &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1m11:45 AM&amp;#27;[0m&amp;#27;[32m&quot; &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mKaro Cane&amp;#27;[0m&amp;#27;[32m&quot; &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mExplosion&amp;#27;[0m&amp;#27;[32m&quot; &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mPlanting Cane&amp;#27;[0m&amp;#27;[32m&quot; &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mEngine exploded&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m &amp;#27;[90m# Steps.iInputAccidentParticulars(String,String,String,String,String,String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Save and Continue&amp;#27;[0m                                                                                   &amp;#27;[90m# Steps.iClickOnSaveAndContinue()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify General Information Tab&amp;#27;[0m                                                                               &amp;#27;[90m# Steps.iVerifyGeneralInformationTab()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input Medical Cost &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1m45000&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                                   &amp;#27;[90m# Steps.iInputMedicalCost(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mYes&amp;#27;[0m&amp;#27;[32m&quot; for Has the medical treatment related to the accident been completed?&amp;#27;[0m                           &amp;#27;[90m# Steps.iSelectForHasTheMedicalTreatmentRelatedToTheAccidentBeenCompleted(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mYes&amp;#27;[0m&amp;#27;[32m&quot; for If yes, are there any additional medical charges?&amp;#27;[0m                                           &amp;#27;[90m# Steps.iSelectForIfYesAreThereAnyAdditionalMedicalCharges(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mSurgery abroad&amp;#27;[0m&amp;#27;[32m&quot; for Details of Additional Medical Charges&amp;#27;[0m                                             &amp;#27;[90m# Steps.iInputForDetailsOfAdditionalMedicalCharges(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Save and Continue&amp;#27;[0m                                                                                   &amp;#27;[90m# Steps.iClickOnSaveAndContinue()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Upload Required Documents Page is displayed&amp;#27;[0m                                                           &amp;#27;[90m# Steps.iVerifyUploadRequiredDocumentsPageIsDisplayed()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Add Additional Document&amp;#27;[0m                                                                             &amp;#27;[90m# Steps.iClickOnAddAdditionalDocument()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input Additional Document Name &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mAdd Doc Test&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                &amp;#27;[90m# Steps.iInputAdditionalDocumentName(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Success message for adding Additional Document Name&amp;#27;[0m                                                   &amp;#27;[90m# Steps.iVerifySuccessMessageForAddingAdditionalDocumentName()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Upload Documents &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1msrc\test\resources\Upload_Test1.pdf&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                       &amp;#27;[90m# Steps.iUploadDocuments(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify for Document Upload Success Message&amp;#27;[0m                                                                   &amp;#27;[90m# Steps.iVerifyForDocumentUploadSuccessMessage()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Save and Continue&amp;#27;[0m                                                                                   &amp;#27;[90m# Steps.iClickOnSaveAndContinue()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Terms and Conditions Page&amp;#27;[0m                                                                             &amp;#27;[90m# Steps.iVerifyTermsAndConditionsPage()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI click on I agree to the Terms and Conditions&amp;#27;[0m                                                                 &amp;#27;[90m# Steps.iClickOnIAgreeToTheTermsAndConditions()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Submit Application &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mYes&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                            &amp;#27;[90m# Steps.iClickOnSubmitApplication(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Success message for Application of Programmes Submitted&amp;#27;[0m                                               &amp;#27;[90m# Steps.iVerifySuccessMessageForApplicationOfProgrammesSubmitted()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Copy Programmes Ref Number&amp;#27;[0m                                                                                   &amp;#27;[90m# Steps.iCopyProgrammesRefNumber()&amp;#27;[0m
+    &amp;#27;[32mThen &amp;#27;[0m&amp;#27;[32mI Sign Out as Front Registered User&amp;#27;[0m                                                                           &amp;#27;[90m# Steps.iSignOutAsFrontRegisteredUser()&amp;#27;[0m
     #    WPO
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI am on SFWF Back Office Home Page GOC &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mEdge&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                                           &amp;#27;[90m# Steps.iAmOnSFWFBackOfficeHomePageGOC(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input WPO Username &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mWPO&amp;#27;[0m&amp;#27;[32m&quot; and Password &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mAdmin@123&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                                     &amp;#27;[90m# Steps.iInputWPOUsernameAndPassword(String,String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Sign In button&amp;#27;[0m                                                                                                               &amp;#27;[90m# Steps.iClickOnSignInButton()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Successful Login&amp;#27;[0m                                                                                                               &amp;#27;[90m# Steps.IVerifySuccessfulLogin()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on All Applications&amp;#27;[0m                                                                                                             &amp;#27;[90m# Steps.iClickOnAllApplications()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify display of list of registrations page&amp;#27;[0m                                                                                          &amp;#27;[90m# Steps.iVerifyDisplayOfListOfRegistrationsPage()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Search for Application Ref Number as a Back Office User&amp;#27;[0m                                                                               &amp;#27;[90m# Steps.iSearchForApplicationRefNumberAsABackOfficeUser()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click to view Application&amp;#27;[0m                                                                                                             &amp;#27;[90m# Steps.iClickToViewApplication()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Action Button&amp;#27;[0m                                                                                                                &amp;#27;[90m# Steps.iClickOnActionButton()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select Option Assigned&amp;#27;[0m                                                                                                                &amp;#27;[90m# Steps.iSelectOptionAssigned()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select WO&amp;#27;[0m                                                                                                                             &amp;#27;[90m# Steps.iSelectWO()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input Remarks &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mThis is a test&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                                                        &amp;#27;[90m# Steps.iInputRemarks(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Save Actions&amp;#27;[0m                                                                                                                 &amp;#27;[90m# Steps.iClickOnSaveActions()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify for success message for assigning&amp;#27;[0m                                                                                              &amp;#27;[90m# Steps.iVerifyForSuccessMessageForAssigning()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Sign Out&amp;#27;[0m                                                                                                                              &amp;#27;[90m# Steps.iSignOut()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Successful Sign Out&amp;#27;[0m                                                                                                            &amp;#27;[90m# Steps.iVerifySuccessfulSignOut()&amp;#27;[0m
-    #    WO/WA
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI am on SFWF Back Office Home Page GOC &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mEdge&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                                           &amp;#27;[90m# Steps.iAmOnSFWFBackOfficeHomePageGOC(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input WO-WA Username &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mWO&amp;#27;[0m&amp;#27;[32m&quot; and Password &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mAdmin@123&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                                    &amp;#27;[90m# Steps.iInputWOWAUsernameAndPassword(String,String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Sign In button&amp;#27;[0m                                                                                                               &amp;#27;[90m# Steps.iClickOnSignInButton()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Successful Login&amp;#27;[0m                                                                                                               &amp;#27;[90m# Steps.IVerifySuccessfulLogin()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on All Applications&amp;#27;[0m                                                                                                             &amp;#27;[90m# Steps.iClickOnAllApplications()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify display of list of registrations page&amp;#27;[0m                                                                                          &amp;#27;[90m# Steps.iVerifyDisplayOfListOfRegistrationsPage()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Search for Application Ref Number as a Back Office User&amp;#27;[0m                                                                               &amp;#27;[90m# Steps.iSearchForApplicationRefNumberAsABackOfficeUser()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click to view Application&amp;#27;[0m                                                                                                             &amp;#27;[90m# Steps.iClickToViewApplication()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Site Report Tab&amp;#27;[0m                                                                                                              &amp;#27;[90m# Steps.iClickOnSiteReportTab()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select Bonafide Planter &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mYes&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                                                         &amp;#27;[90m# Steps.iSelectBonafidePlanter(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input Site visit remarks &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mThis is a test&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                                             &amp;#27;[90m# Steps.iInputSiteVisitRemarks(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Upload Site Report &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1msrc\test\resources\Upload_Test1.pdf&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                              &amp;#27;[90m# Steps.iUploadSiteReport(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify for Document Upload Success Message&amp;#27;[0m                                                                                            &amp;#27;[90m# Steps.iVerifyForDocumentUploadSuccessMessage()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input Section One data &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mCattle&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                                                       &amp;#27;[90m# Steps.iInputSectionOneData(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Save Button&amp;#27;[0m                                                                                                                  &amp;#27;[90m# Steps.iClickOnSaveButton()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Site Visit saved success message&amp;#27;[0m                                                                                               &amp;#27;[90m# Steps.iVerifySiteVisitSavedSuccessMessage()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Action Button&amp;#27;[0m                                                                                                                &amp;#27;[90m# Steps.iClickOnActionButton()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select Option Assigned&amp;#27;[0m                                                                                                                &amp;#27;[90m# Steps.iSelectOptionAssigned()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select WPO&amp;#27;[0m                                                                                                                            &amp;#27;[90m# Steps.iSelectWPO()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input Remarks &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mThis is a test&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                                                        &amp;#27;[90m# Steps.iInputRemarks(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Save Actions&amp;#27;[0m                                                                                                                 &amp;#27;[90m# Steps.iClickOnSaveActions()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify for success message for assigning&amp;#27;[0m                                                                                              &amp;#27;[90m# Steps.iVerifyForSuccessMessageForAssigning()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Sign Out&amp;#27;[0m                                                                                                                              &amp;#27;[90m# Steps.iSignOut()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Successful Sign Out&amp;#27;[0m                                                                                                            &amp;#27;[90m# Steps.iVerifySuccessfulSignOut()&amp;#27;[0m
-    #    WPO
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI am on SFWF Back Office Home Page GOC &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mEdge&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                                           &amp;#27;[90m# Steps.iAmOnSFWFBackOfficeHomePageGOC(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input WPO Username &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mWPO&amp;#27;[0m&amp;#27;[32m&quot; and Password &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mAdmin@123&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                                     &amp;#27;[90m# Steps.iInputWPOUsernameAndPassword(String,String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Sign In button&amp;#27;[0m                                                                                                               &amp;#27;[90m# Steps.iClickOnSignInButton()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Successful Login&amp;#27;[0m                                                                                                               &amp;#27;[90m# Steps.IVerifySuccessfulLogin()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on All Applications&amp;#27;[0m                                                                                                             &amp;#27;[90m# Steps.iClickOnAllApplications()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify display of list of registrations page&amp;#27;[0m                                                                                          &amp;#27;[90m# Steps.iVerifyDisplayOfListOfRegistrationsPage()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Search for Application Ref Number as a Back Office User&amp;#27;[0m                                                                               &amp;#27;[90m# Steps.iSearchForApplicationRefNumberAsABackOfficeUser()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click to view Application&amp;#27;[0m                                                                                                             &amp;#27;[90m# Steps.iClickToViewApplication()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Action Button&amp;#27;[0m                                                                                                                &amp;#27;[90m# Steps.iClickOnActionButton()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select Option Under Query&amp;#27;[0m                                                                                                             &amp;#27;[90m# Steps.iSelectOptionUnderQuery()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input External Remarks &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mThis is a test&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                                               &amp;#27;[90m# Steps.iInputExternalRemarks(String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Under Query Notification Button&amp;#27;[0m                                                                                              &amp;#27;[90m# Steps.iClickOnUnderQueryNotificationButton()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Success Message for Under Query Mail Notification&amp;#27;[0m                                                                              &amp;#27;[90m# Steps.iVerifySuccessMessageForUnderQueryMailNotification()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Save Actions&amp;#27;[0m                                                                                                                 &amp;#27;[90m# Steps.iClickOnSaveActions()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify for success message for workflow saved&amp;#27;[0m                                                                                         &amp;#27;[90m# Steps.iVerifyForSuccessMessageForWorkflowSaved()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Sign Out&amp;#27;[0m                                                                                                                              &amp;#27;[90m# Steps.iSignOut()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Successful Sign Out&amp;#27;[0m                                                                                                            &amp;#27;[90m# Steps.iVerifySuccessfulSignOut()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI am on SFWF Back Office Home Page GOC &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mChrome&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                &amp;#27;[90m# Steps.iAmOnSFWFBackOfficeHomePageGOC(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input WPO Username &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mWPO&amp;#27;[0m&amp;#27;[32m&quot; and Password &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mAdmin@123&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                            &amp;#27;[90m# Steps.iInputWPOUsernameAndPassword(String,String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Sign In button&amp;#27;[0m                                                                                      &amp;#27;[90m# Steps.iClickOnSignInButton()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Successful Login&amp;#27;[0m                                                                                      &amp;#27;[90m# Steps.IVerifySuccessfulLogin()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click to view All Programmes&amp;#27;[0m                                                                                 &amp;#27;[90m# Steps.iClickToViewAllProgrammes()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Search for Programmes Ref Number as a Back Office User&amp;#27;[0m                                                       &amp;#27;[90m# Steps.iSearchForProgrammesRefNumberAsABackOfficeUser()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click to view Programmes&amp;#27;[0m                                                                                     &amp;#27;[90m# Steps.iClickToViewProgrammes()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Action Button&amp;#27;[0m                                                                                       &amp;#27;[90m# Steps.iClickOnActionButton()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select Under Query for Programmes&amp;#27;[0m                                                                            &amp;#27;[90m# Steps.iSelectUnderQueryForProgrammes()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input External Remarks &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mThis is a Test&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                      &amp;#27;[90m# Steps.iInputExternalRemarks(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Under Query Notification for Programmes&amp;#27;[0m                                                             &amp;#27;[90m# Steps.iClickOnUnderQueryNotificationForProgrammes()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Success Message for Under Query Notification for Programmes&amp;#27;[0m                                           &amp;#27;[90m# Steps.iVerifySuccessMessageForUnderQueryNotificationForProgrammes()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Save Actions for Programmes&amp;#27;[0m                                                                         &amp;#27;[90m# Steps.iClickOnSaveActionsForProgrammes()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify for success message for workflow saved&amp;#27;[0m                                                                &amp;#27;[90m# Steps.iVerifyForSuccessMessageForWorkflowSaved()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Sign Out&amp;#27;[0m                                                                                                     &amp;#27;[90m# Steps.iSignOut()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Successful Sign Out&amp;#27;[0m                                                                                   &amp;#27;[90m# Steps.iVerifySuccessfulSignOut()&amp;#27;[0m
     #    Applicant after under query
-    &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mI am on SFWF Front Office Home Page GOC &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mEdge&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                                                        &amp;#27;[90m# Steps.iAmOnSFWFFrontOfficeHomePageGOC(String)&amp;#27;[0m
-    &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mI Input Registered Maupass User&apos;s Username &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mSuraj_Jo&amp;#27;[0m&amp;#27;[32m&quot; and Password &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mAdmin@123&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                         &amp;#27;[90m# Steps.iInputRegisteredMaupassUserSUsernameAndPassword(String,String)&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Sign In button in Maupass&amp;#27;[0m                                                                                                    &amp;#27;[90m# Steps.iClickOnSignInButtonInMaupass()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Applicant&apos;s Successful Login&amp;#27;[0m                                                                                                   &amp;#27;[90m# Steps.iVerifyApplicantSSuccessfulLogin()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Register as Farmer&amp;#27;[0m                                                                                                           &amp;#27;[90m# Steps.iClickOnRegisterAsFarmer()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify that User is directed to My Application Page&amp;#27;[0m                                                                                   &amp;#27;[90m# Steps.iVerifyThatUserIsDirectedToMyApplicationPage()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify display of Farmers Card link&amp;#27;[0m                                                                                                   &amp;#27;[90m# Steps.iVerifyDisplayOfFarmersCardLink()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Programmes link&amp;#27;[0m                                                                                                                &amp;#27;[90m# Steps.iVerifyProgrammesLink()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Search for Application Ref Number for re-submit&amp;#27;[0m                                                                                       &amp;#27;[90m# Steps.iSearchForApplicationRefNumberForReSubmit()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify display of REGISTRATION FOR SMALL BREEDERS page&amp;#27;[0m                                                                                &amp;#27;[90m# Steps.iVerifyDisplayOfREGISTRATIONFORSMALLBREEDERSPage()&amp;#27;[0m
-    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Save and Continue&amp;#27;[0m                                                                                                            &amp;#27;[90m# Steps.iClickOnSaveAndContinue()&amp;#27;[0m
-    &amp;#27;[31mAnd &amp;#27;[0m&amp;#27;[31mI Verify Upload Required Documents Page is displayed&amp;#27;[0m                                                                                    &amp;#27;[90m# Steps.iVerifyUploadRequiredDocumentsPageIsDisplayed()&amp;#27;[0m
-      &amp;#27;[31morg.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //h6[contains(text(),&apos;Upload Required Documents&apos;)] (tried for 120 second(s) with 500 MILLISECONDS interval)
-      	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
-      	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
-      	at stepdefinition.Steps.iVerifyUploadRequiredDocumentsPageIsDisplayed(Steps.java:725)
-      	at ?.And I Verify Upload Required Documents Page is displayed(features/US13280_GOC.feature:2206)
-      Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //h6[contains(text(),&apos;Upload Required Documents&apos;)]
-      For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+    &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mI am on SFWF Front Office Home Page GOC &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mChrome&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                             &amp;#27;[90m# Steps.iAmOnSFWFFrontOfficeHomePageGOC(String)&amp;#27;[0m
+    &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mI Input Registered Maupass User&apos;s Username &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mybhunjun5&amp;#27;[0m&amp;#27;[32m&quot; and Password &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mMauritius1!1710&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                         &amp;#27;[90m# Steps.iInputRegisteredMaupassUserSUsernameAndPassword(String,String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Sign In button in Maupass&amp;#27;[0m                                                                           &amp;#27;[90m# Steps.iClickOnSignInButtonInMaupass()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Applicant&apos;s Successful Login&amp;#27;[0m                                                                          &amp;#27;[90m# Steps.iVerifyApplicantSSuccessfulLogin()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Register as Farmer&amp;#27;[0m                                                                                  &amp;#27;[90m# Steps.iClickOnRegisterAsFarmer()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify that User is directed to My Application Page&amp;#27;[0m                                                          &amp;#27;[90m# Steps.iVerifyThatUserIsDirectedToMyApplicationPage()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify display of Farmers Card link&amp;#27;[0m                                                                          &amp;#27;[90m# Steps.iVerifyDisplayOfFarmersCardLink()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Programmes link&amp;#27;[0m                                                                                       &amp;#27;[90m# Steps.iVerifyProgrammesLink()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Programmes&amp;#27;[0m                                                                                          &amp;#27;[90m# Steps.iClickOnProgrammes()&amp;#27;[0m
+    &amp;#27;[31mAnd &amp;#27;[0m&amp;#27;[31mI Search for Programme Ref Number for re-submit&amp;#27;[0m                                                                &amp;#27;[90m# Steps.iSearchForProgrammeRefNumberForReSubmit()&amp;#27;[0m
+      &amp;#27;[31morg.openqa.selenium.ElementNotInteractableException: element not interactable
+        (Session info: chrome=130.0.6723.59)
       Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
       System info: host: &apos;SIL-LTDELLI7-G6&apos;, ip: &apos;192.168.8.46&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_371&apos;
-      Driver info: driver.version: unknown
-      	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:883)
-      	at java.util.Optional.orElseThrow(Optional.java:290)
-      	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
-      	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
-      	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:183)
-      	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:180)
-      	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
-      	at stepdefinition.Steps.iVerifyUploadRequiredDocumentsPageIsDisplayed(Steps.java:725)
-      	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-      	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-      	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-      	at java.lang.reflect.Method.invoke(Method.java:498)
-      	at cucumber.runtime.Utils$1.call(Utils.java:40)
-      	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-      	at cucumber.runtime.Utils.invoke(Utils.java:34)
-      	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
-      	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
-      	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
-      	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-      	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-      	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
-      	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
-      	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
-      	at cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:50)
-      	at cucumbertest.TestRunner_web.runCukes(TestRunner_web.java:25)
-      	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-      	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-      	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-      	at java.lang.reflect.Method.invoke(Method.java:498)
-      	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-      	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-      	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-      	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-      	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-      	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-      	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-      	at org.testng.TestRunner.run(TestRunner.java:632)
-      	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-      	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-      	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-      	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-      	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-      	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-      	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-      	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-      	at org.testng.TestNG.run(TestNG.java:1064)
-      	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
-      	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:110)
-      	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
-      	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-      	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-      	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-      	at java.lang.reflect.Method.invoke(Method.java:498)
-      	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-      	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-      	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-      	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-      	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=130.0.6723.58 (3a50e012e4c9b8a410a4e2b12bf577e69ee8f755-refs/branch-heads/6723@{#1353}), userDataDir=C:\Users\SURAJ~1.JOG\AppData\Local\Temp\scoped_dir23344_1088678815}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:57862}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=130.0.6723.59, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+      Session ID: ff55e4cc914a71d6253f5b55a5cea92c
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+      	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+      	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+      	at stepdefinition.Steps.iSearchForProgrammeRefNumberForReSubmit(Steps.java:3576)
+      	at ?.And I Search for Programme Ref Number for re-submit(features/US13364_14829.feature:75)
       &amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Save and Continue&amp;#27;[0m                                                                                                            &amp;#27;[90m# Steps.iClickOnSaveAndContinue()&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Terms and Conditions Page&amp;#27;[0m                                                                                                      &amp;#27;[90m# Steps.iVerifyTermsAndConditionsPage()&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Submit Application &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mYes&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                                                                                                     &amp;#27;[90m# Steps.iClickOnSubmitApplication(String)&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Success message for application submitted&amp;#27;[0m                                                                                      &amp;#27;[90m# Steps.iVerifySuccessMessageForApplicationSubmitted()&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Sign Out as Front Registered User&amp;#27;[0m                                                                                                     &amp;#27;[90m# Steps.iSignOutAsFrontRegisteredUser()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Display of INDIAN OCEAN GENERAL ASSURANCE (IOGA) / SMALL FARMERS WELFARE FUND (SFWF)&amp;#27;[0m                  &amp;#27;[90m# Steps.iVerifyDisplayOfINDIANOCEANGENERALASSURANCEIOGASMALLFARMERSWELFAREFUNDSFWF()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Save and Continue&amp;#27;[0m                                                                                   &amp;#27;[90m# Steps.iClickOnSaveAndContinue()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify General Information Tab&amp;#27;[0m                                                                               &amp;#27;[90m# Steps.iVerifyGeneralInformationTab()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Save and Continue&amp;#27;[0m                                                                                   &amp;#27;[90m# Steps.iClickOnSaveAndContinue()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Upload Required Documents Page is displayed&amp;#27;[0m                                                           &amp;#27;[90m# Steps.iVerifyUploadRequiredDocumentsPageIsDisplayed()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Save and Continue&amp;#27;[0m                                                                                   &amp;#27;[90m# Steps.iClickOnSaveAndContinue()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Terms and Conditions Page&amp;#27;[0m                                                                             &amp;#27;[90m# Steps.iVerifyTermsAndConditionsPage()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Submit Application &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mYes&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                                                                            &amp;#27;[90m# Steps.iClickOnSubmitApplication(String)&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Success message for application submitted&amp;#27;[0m                                                             &amp;#27;[90m# Steps.iVerifySuccessMessageForApplicationSubmitted()&amp;#27;[0m
+    &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mI Sign Out as Front Registered User&amp;#27;[0m                                                                           &amp;#27;[90m# Steps.iSignOutAsFrontRegisteredUser()&amp;#27;[0m
     #    WPO
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI am on SFWF Back Office Home Page GOC &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mEdge&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                                                                                           &amp;#27;[90m# Steps.iAmOnSFWFBackOfficeHomePageGOC(String)&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input WPO Username &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mWPO&amp;#27;[0m&amp;#27;[36m&quot; and Password &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mAdmin@123&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                                                                                     &amp;#27;[90m# Steps.iInputWPOUsernameAndPassword(String,String)&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Sign In button&amp;#27;[0m                                                                                                               &amp;#27;[90m# Steps.iClickOnSignInButton()&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Successful Login&amp;#27;[0m                                                                                                               &amp;#27;[90m# Steps.IVerifySuccessfulLogin()&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on All Applications&amp;#27;[0m                                                                                                             &amp;#27;[90m# Steps.iClickOnAllApplications()&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify display of list of registrations page&amp;#27;[0m                                                                                          &amp;#27;[90m# Steps.iVerifyDisplayOfListOfRegistrationsPage()&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Search for Application Ref Number as a Back Office User&amp;#27;[0m                                                                               &amp;#27;[90m# Steps.iSearchForApplicationRefNumberAsABackOfficeUser()&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click to view Application&amp;#27;[0m                                                                                                             &amp;#27;[90m# Steps.iClickToViewApplication()&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Action Button&amp;#27;[0m                                                                                                                &amp;#27;[90m# Steps.iClickOnActionButton()&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select Option Approved to approve the registration application&amp;#27;[0m                                                                        &amp;#27;[90m# Steps.iSelectOptionApprovedToApproveTheRegistrationApplication()&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input Remarks &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mThis is a test&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                                                                                                        &amp;#27;[90m# Steps.iInputRemarks(String)&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Save Actions&amp;#27;[0m                                                                                                                 &amp;#27;[90m# Steps.iClickOnSaveActions()&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify for success message for approval&amp;#27;[0m                                                                                               &amp;#27;[90m# Steps.iVerifyForSuccessMessageForApproval()&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Sign Out&amp;#27;[0m                                                                                                                              &amp;#27;[90m# Steps.iSignOut()&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Successful Sign Out&amp;#27;[0m                                                                                                            &amp;#27;[90m# Steps.iVerifySuccessfulSignOut()&amp;#27;[0m
-    #    IT Department
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI am on SFWF Back Office Home Page GOC &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mEdge&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                                                                                           &amp;#27;[90m# Steps.iAmOnSFWFBackOfficeHomePageGOC(String)&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input IT Department Username &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mIT_DEPT&amp;#27;[0m&amp;#27;[36m&quot; and Password &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mAdmin@123&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                                                                       &amp;#27;[90m# Steps.iInputITDepartmentUsernameAndPassword(String,String)&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Sign In button&amp;#27;[0m                                                                                                               &amp;#27;[90m# Steps.iClickOnSignInButton()&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Successful Login&amp;#27;[0m                                                                                                               &amp;#27;[90m# Steps.IVerifySuccessfulLogin()&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on All Applications&amp;#27;[0m                                                                                                             &amp;#27;[90m# Steps.iClickOnAllApplications()&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify display of list of registrations page&amp;#27;[0m                                                                                          &amp;#27;[90m# Steps.iVerifyDisplayOfListOfRegistrationsPage()&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Search for Application Ref Number as a Back Office User&amp;#27;[0m                                                                               &amp;#27;[90m# Steps.iSearchForApplicationRefNumberAsABackOfficeUser()&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click to view Application&amp;#27;[0m                                                                                                             &amp;#27;[90m# Steps.iClickToViewApplication()&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Print Card&amp;#27;[0m                                                                                                                   &amp;#27;[90m# Steps.iClickOnPrintCard()&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Sign Out&amp;#27;[0m                                                                                                                              &amp;#27;[90m# Steps.iSignOut()&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Successful Sign Out&amp;#27;[0m                                                                                                            &amp;#27;[90m# Steps.iVerifySuccessfulSignOut()&amp;#27;[0m
-    #    Applicant verify status - Card Printed
-    &amp;#27;[36mGiven &amp;#27;[0m&amp;#27;[36mI am on SFWF Front Office Home Page GOC &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mEdge&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                                                                                        &amp;#27;[90m# Steps.iAmOnSFWFFrontOfficeHomePageGOC(String)&amp;#27;[0m
-    &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mI Input Registered Maupass User&apos;s Username &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mSuraj_Jo&amp;#27;[0m&amp;#27;[36m&quot; and Password &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mAdmin@123&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                                                         &amp;#27;[90m# Steps.iInputRegisteredMaupassUserSUsernameAndPassword(String,String)&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Sign In button in Maupass&amp;#27;[0m                                                                                                    &amp;#27;[90m# Steps.iClickOnSignInButtonInMaupass()&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Applicant&apos;s Successful Login&amp;#27;[0m                                                                                                   &amp;#27;[90m# Steps.iVerifyApplicantSSuccessfulLogin()&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Register as Farmer&amp;#27;[0m                                                                                                           &amp;#27;[90m# Steps.iClickOnRegisterAsFarmer()&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify that User is directed to My Application Page&amp;#27;[0m                                                                                   &amp;#27;[90m# Steps.iVerifyThatUserIsDirectedToMyApplicationPage()&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify display of Farmers Card link&amp;#27;[0m                                                                                                   &amp;#27;[90m# Steps.iVerifyDisplayOfFarmersCardLink()&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Programmes link&amp;#27;[0m                                                                                                                &amp;#27;[90m# Steps.iVerifyProgrammesLink()&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Search for Application Ref Number for to check Status Card Printed&amp;#27;[0m                                                                    &amp;#27;[90m# Steps.iSearchForApplicationRefNumberForToCheckStatusCardPrinted()&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Application Status to be Card Printed&amp;#27;[0m                                                                                          &amp;#27;[90m# Steps.iVerifyApplicationStatusToBeCardPrinted()&amp;#27;[0m
-    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Sign Out as Front Registered User&amp;#27;[0m                                                                                                     &amp;#27;[90m# Steps.iSignOutAsFrontRegisteredUser()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI am on SFWF Back Office Home Page GOC &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mChrome&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                                                                &amp;#27;[90m# Steps.iAmOnSFWFBackOfficeHomePageGOC(String)&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input WPO Username &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mWPO&amp;#27;[0m&amp;#27;[36m&quot; and Password &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mAdmin@123&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                                                            &amp;#27;[90m# Steps.iInputWPOUsernameAndPassword(String,String)&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Sign In button&amp;#27;[0m                                                                                      &amp;#27;[90m# Steps.iClickOnSignInButton()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Successful Login&amp;#27;[0m                                                                                      &amp;#27;[90m# Steps.IVerifySuccessfulLogin()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click to view All Programmes&amp;#27;[0m                                                                                 &amp;#27;[90m# Steps.iClickToViewAllProgrammes()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Search for Application Ref Number as a Back Office User&amp;#27;[0m                                                      &amp;#27;[90m# Steps.iSearchForApplicationRefNumberAsABackOfficeUser()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click to view Application&amp;#27;[0m                                                                                    &amp;#27;[90m# Steps.iClickToViewApplication()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Action Button&amp;#27;[0m                                                                                       &amp;#27;[90m# Steps.iClickOnActionButton()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select Assigned for Programmes&amp;#27;[0m                                                                               &amp;#27;[90m# Steps.iSelectAssignedForProgrammes()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select TO User&amp;#27;[0m                                                                                               &amp;#27;[90m# Steps.iSelectTOUser()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input Remarks &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mThis is a Test&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                                                                               &amp;#27;[90m# Steps.iInputRemarks(String)&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Save Actions&amp;#27;[0m                                                                                        &amp;#27;[90m# Steps.iClickOnSaveActions()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify for success message for assigning&amp;#27;[0m                                                                     &amp;#27;[90m# Steps.iVerifyForSuccessMessageForAssigning()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Sign Out&amp;#27;[0m                                                                                                     &amp;#27;[90m# Steps.iSignOut()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Successful Sign Out&amp;#27;[0m                                                                                   &amp;#27;[90m# Steps.iVerifySuccessfulSignOut()&amp;#27;[0m
+    #    TO
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI am on SFWF Back Office Home Page GOC &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mChrome&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                                                                &amp;#27;[90m# Steps.iAmOnSFWFBackOfficeHomePageGOC(String)&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input TO Username &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mTO&amp;#27;[0m&amp;#27;[36m&quot; and Password &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mAdmin@123&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                                                              &amp;#27;[90m# Steps.iInputTOUsernameAndPassword(String,String)&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Sign In button&amp;#27;[0m                                                                                      &amp;#27;[90m# Steps.iClickOnSignInButton()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Successful Login&amp;#27;[0m                                                                                      &amp;#27;[90m# Steps.IVerifySuccessfulLogin()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on All Applications&amp;#27;[0m                                                                                    &amp;#27;[90m# Steps.iClickOnAllApplications()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify display of list of registrations page&amp;#27;[0m                                                                 &amp;#27;[90m# Steps.iVerifyDisplayOfListOfRegistrationsPage()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Search for Application Ref Number as a Back Office User&amp;#27;[0m                                                      &amp;#27;[90m# Steps.iSearchForApplicationRefNumberAsABackOfficeUser()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click to view Application&amp;#27;[0m                                                                                    &amp;#27;[90m# Steps.iClickToViewApplication()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Site Report Tab&amp;#27;[0m                                                                                     &amp;#27;[90m# Steps.iClickOnSiteReportTab()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select Bonafide Planter &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&lt;Bonafide&gt;&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                                                                         &amp;#27;[90m# Steps.iSelectBonafidePlanter(String)&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input Site visit remarks &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mThis is a Test&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                                                                    &amp;#27;[90m# Steps.iInputSiteVisitRemarks(String)&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Upload Site Report &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1msrc\test\resources\Upload_Test1.pdf&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                                                     &amp;#27;[90m# Steps.iUploadSiteReport(String)&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify for Document Upload Success Message for Site Visit&amp;#27;[0m                                                    &amp;#27;[90m# Steps.iVerifyForDocumentUploadSuccessMessageForSiteVisit()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Save Button&amp;#27;[0m                                                                                         &amp;#27;[90m# Steps.iClickOnSaveButton()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Site Visit saved success message&amp;#27;[0m                                                                      &amp;#27;[90m# Steps.iVerifySiteVisitSavedSuccessMessage()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Action Button&amp;#27;[0m                                                                                       &amp;#27;[90m# Steps.iClickOnActionButton()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select Assigned&amp;#27;[0m                                                                                              &amp;#27;[90m# Steps.iSelectAssigned()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select WPO&amp;#27;[0m                                                                                                   &amp;#27;[90m# Steps.iSelectWPO()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input Remarks &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1mThis is a Test&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                                                                               &amp;#27;[90m# Steps.iInputRemarks(String)&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Save Actions&amp;#27;[0m                                                                                        &amp;#27;[90m# Steps.iClickOnSaveActions()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify for success message for assigning&amp;#27;[0m                                                                     &amp;#27;[90m# Steps.iVerifyForSuccessMessageForAssigning()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Sign Out&amp;#27;[0m                                                                                                     &amp;#27;[90m# Steps.iSignOut()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Successful Sign Out&amp;#27;[0m                                                                                   &amp;#27;[90m# Steps.iVerifySuccessfulSignOut()&amp;#27;[0m
 
 &amp;#27;[31mFailed scenarios:&amp;#27;[0m
-&amp;#27;[31mfeatures/US13280_GOC.feature:2259 &amp;#27;[0m# Scenario Outline: Payment online for Registration as Small Breeder
+&amp;#27;[31mfeatures/US13364_14829.feature:132 &amp;#27;[0m# Scenario Outline: Application for Group Personal Accident Cover (GPAC) � Claim and Workflow
 
 1 Scenarios (&amp;#27;[31m1 failed&amp;#27;[0m)
-206 Steps (&amp;#27;[31m1 failed&amp;#27;[0m, &amp;#27;[36m42 skipped&amp;#27;[0m, &amp;#27;[32m163 passed&amp;#27;[0m)
-8m57.135s
+109 Steps (&amp;#27;[31m1 failed&amp;#27;[0m, &amp;#27;[36m48 skipped&amp;#27;[0m, &amp;#27;[32m60 passed&amp;#27;[0m)
+2m17.549s
 
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //h6[contains(text(),&apos;Upload Required Documents&apos;)] (tried for 120 second(s) with 500 MILLISECONDS interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
-	at stepdefinition.Steps.iVerifyUploadRequiredDocumentsPageIsDisplayed(Steps.java:725)
-	at ?.And I Verify Upload Required Documents Page is displayed(features/US13280_GOC.feature:2206)
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //h6[contains(text(),&apos;Upload Required Documents&apos;)]
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=130.0.6723.59)
 Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
 System info: host: &apos;SIL-LTDELLI7-G6&apos;, ip: &apos;192.168.8.46&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_371&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:883)
-	at java.util.Optional.orElseThrow(Optional.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:183)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:180)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
-	at stepdefinition.Steps.iVerifyUploadRequiredDocumentsPageIsDisplayed(Steps.java:725)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at cucumber.runtime.Utils$1.call(Utils.java:40)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:34)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
-	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
-	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
-	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
-	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
-	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
-	at cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:50)
-	at cucumbertest.TestRunner_web.runCukes(TestRunner_web.java:25)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:782)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
-	at org.testng.TestNG.run(TestNG.java:1064)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:110)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=130.0.6723.58 (3a50e012e4c9b8a410a4e2b12bf577e69ee8f755-refs/branch-heads/6723@{#1353}), userDataDir=C:\Users\SURAJ~1.JOG\AppData\Local\Temp\scoped_dir23344_1088678815}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:57862}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=130.0.6723.59, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: ff55e4cc914a71d6253f5b55a5cea92c
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)
+	at stepdefinition.Steps.iSearchForProgrammeRefNumberForReSubmit(Steps.java:3576)
+	at ?.And I Search for Programme Ref Number for re-submit(features/US13364_14829.feature:75)
 
 </system-out>
     <system-err>SLF4J: No SLF4J providers were found.
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
-Starting Microsoft Edge WebDriver 129.0.2792.89 (65986ec8d2a8faea3735b9a7e311b25e53a843c7) on port 48956
-To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
-
+Starting ChromeDriver 130.0.6723.58 (3a50e012e4c9b8a410a4e2b12bf577e69ee8f755-refs/branch-heads/6723@{#1353}) on port 32910
 Only local connections are allowed.
-Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
-
-Microsoft Edge WebDriver was started successfully.
-msedgedriver was started successfully on port 48956.
-Oct 17, 2024 3:53:24 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 32910.
+Oct 18, 2024 2:23:00 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Starting Microsoft Edge WebDriver 129.0.2792.89 (65986ec8d2a8faea3735b9a7e311b25e53a843c7) on port 24879
-To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
-
+Starting ChromeDriver 130.0.6723.58 (3a50e012e4c9b8a410a4e2b12bf577e69ee8f755-refs/branch-heads/6723@{#1353}) on port 5206
 Only local connections are allowed.
-Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
-
-Microsoft Edge WebDriver was started successfully.
-msedgedriver was started successfully on port 24879.
-Oct 17, 2024 3:56:26 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 5206.
+Oct 18, 2024 2:24:31 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Starting Microsoft Edge WebDriver 129.0.2792.89 (65986ec8d2a8faea3735b9a7e311b25e53a843c7) on port 13659
-To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
-
+Starting ChromeDriver 130.0.6723.58 (3a50e012e4c9b8a410a4e2b12bf577e69ee8f755-refs/branch-heads/6723@{#1353}) on port 24045
 Only local connections are allowed.
-Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
-
-Microsoft Edge WebDriver was started successfully.
-msedgedriver was started successfully on port 13659.
-Oct 17, 2024 3:57:04 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-Starting Microsoft Edge WebDriver 129.0.2792.89 (65986ec8d2a8faea3735b9a7e311b25e53a843c7) on port 7752
-To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
-
-Only local connections are allowed.
-Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
-
-Microsoft Edge WebDriver was started successfully.
-msedgedriver was started successfully on port 7752.
-Oct 17, 2024 3:57:43 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-Starting Microsoft Edge WebDriver 129.0.2792.89 (65986ec8d2a8faea3735b9a7e311b25e53a843c7) on port 34698
-To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
-
-Only local connections are allowed.
-Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
-
-Microsoft Edge WebDriver was started successfully.
-msedgedriver was started successfully on port 34698.
-Oct 17, 2024 3:59:15 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-Starting Microsoft Edge WebDriver 129.0.2792.89 (65986ec8d2a8faea3735b9a7e311b25e53a843c7) on port 44243
-To submit feedback, report a bug, or suggest new features, please visit https://github.com/MicrosoftEdge/EdgeWebDriver
-
-Only local connections are allowed.
-Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
-
-Microsoft Edge WebDriver was started successfully.
-msedgedriver was started successfully on port 44243.
-Oct 17, 2024 3:59:42 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 24045.
+Oct 18, 2024 2:24:58 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 log4j:WARN No appenders could be found for logger (freemarker.cache).
 log4j:WARN Please initialize the log4j system properly.
