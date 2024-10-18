@@ -683,9 +683,9 @@ public class Steps extends Utility {
         sleep(3000);
         WebDriverWait wait = new WebDriverWait(driver, 10); // 10 seconds timeout
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(Farmers_cooperatives_association_society_company.Save_and_continue(driver)));
-        try{
+        try {
             Farmers_cooperatives_association_society_company.Save_and_continue(driver).click();
-        }catch (Exception e){
+        } catch (Exception e) {
             Assert.fail("Save and Continue is not working");
         }
 
@@ -1192,7 +1192,7 @@ public class Steps extends Utility {
     @And("^I Select Applicant Title \"([^\"]*)\"$")
     public void iSelectApplicantTitle(String Applicant_Title) throws Throwable {
         sleep(1500);
-        if (Applicant_Title.equals("Mr")){
+        if (Applicant_Title.equals("Mr")) {
             try {
                 Small_planters.Title_Select_one(driver).click();
             } catch (Exception e) {
@@ -1204,7 +1204,7 @@ public class Steps extends Utility {
             System.out.println("Mr is working");
 
 
-        }else if (Applicant_Title.equals("Mrs")){
+        } else if (Applicant_Title.equals("Mrs")) {
             try {
                 Small_planters.Title_Select_one(driver).click();
             } catch (Exception e) {
@@ -1215,7 +1215,7 @@ public class Steps extends Utility {
             Small_planters.Title_Mrs(driver).click();
             System.out.println("Mrs is working");
 
-        }else if (Applicant_Title.equals("Miss")){
+        } else if (Applicant_Title.equals("Miss")) {
             try {
                 Small_planters.Title_Select_one(driver).click();
             } catch (Exception e) {
@@ -1226,79 +1226,77 @@ public class Steps extends Utility {
             Small_planters.Title_Miss(driver).click();
             System.out.println("Miss is working");
 
-        }
-        else {
+        } else {
             System.out.println("Option is Not Valid");
         }
     }
 
     @And("^I Select Applicant District \"([^\"]*)\"$")
     public void iSelectApplicantDistrict(String District) throws Throwable {
-        if (District.equals("Black River")){
+        if (District.equals("Black River")) {
             System.out.println("District Select is working");
             Small_planters.District_Select_one(driver).click();
             sleep(1000);
             Small_planters.Black_river(driver).click();
 
-        }else if (District.equals("Flacq")){
+        } else if (District.equals("Flacq")) {
             System.out.println("District Select is working");
             Small_planters.District_Select_one(driver).click();
             sleep(1000);
             Small_planters.Flacq(driver).click();
             Thread.sleep(1500);
 
-        }else if (District.equals("Grand Port")){
+        } else if (District.equals("Grand Port")) {
             System.out.println("District Select is working");
             Small_planters.District_Select_one(driver).click();
             sleep(1000);
             Small_planters.Grand_port(driver).click();
             Thread.sleep(1500);
 
-        }else if (District.equals("Moka")){
+        } else if (District.equals("Moka")) {
             System.out.println("District Select is working");
             Small_planters.District_Select_one(driver).click();
             sleep(1000);
             Small_planters.Moka(driver).click();
             Thread.sleep(1500);
 
-        }else if (District.equals("Pamplemousses")){
+        } else if (District.equals("Pamplemousses")) {
             System.out.println("District Select is working");
             Small_planters.District_Select_one(driver).click();
             sleep(1000);
             Small_planters.Pamplemousses(driver).click();
 
-        }else if (District.equals("Port Louis")){
+        } else if (District.equals("Port Louis")) {
             System.out.println("District Select is working");
             Small_planters.District_Select_one(driver).click();
             sleep(1000);
             Small_planters.Port_louis(driver).click();
 
-        }else if (District.equals("Plaine Wilhems")){
+        } else if (District.equals("Plaine Wilhems")) {
             System.out.println("District Select is working");
             Small_planters.District_Select_one(driver).click();
             sleep(1000);
             Small_planters.Plaine_wilhems(driver).click();
 
-        }else if (District.equals("Riviere Du Rempart")){
+        } else if (District.equals("Riviere Du Rempart")) {
             System.out.println("District Select is working");
             Small_planters.District_Select_one(driver).click();
             sleep(1000);
             Small_planters.Riviere_du_rempart(driver).click();
 
-        }else if (District.equals("Savannes")){
+        } else if (District.equals("Savannes")) {
             System.out.println("District Select is working");
             Small_planters.District_Select_one(driver).click();
             sleep(1000);
             Small_planters.Savannes(driver).click();
 
-        }else if (District.equals("Rodrigues")){
+        } else if (District.equals("Rodrigues")) {
             System.out.println("District Select is working");
             Small_planters.District_Select_one(driver).click();
             sleep(1000);
             Small_planters.Rodrigues(driver).click();
 
-        }
-        else {
+        } else {
             System.out.println("Option is Not Valid");
             Assert.fail("Option is Not Valid");
         }
@@ -1311,26 +1309,26 @@ public class Steps extends Utility {
     @And("^I Select Applicant Level of Education \"([^\"]*)\"$")
     public void iSelectApplicantLevelOfEducation(String Education_Level) throws Throwable {
         sleep(1500);
-        if (Education_Level.equals("Primary")){
+        if (Education_Level.equals("Primary")) {
             Small_planters.Education_Select_one(driver).click();
             sleep(2000);
             Small_planters.Education_primary(driver).click();
             System.out.println("Education Level is working");
 
-        }else if (Education_Level.equals("Secondary")){
+        } else if (Education_Level.equals("Secondary")) {
             Small_planters.Education_Select_one(driver).click();
             sleep(2000);
             Small_planters.Education_secondary(driver).click();
             System.out.println("Education Level is working");
 
 
-        }else if (Education_Level.equals("Tertiary")){
+        } else if (Education_Level.equals("Tertiary")) {
             Small_planters.Education_Select_one(driver).click();
             sleep(2000);
             Small_planters.Education_tertiary(driver).click();
             System.out.println("Education Level is working");
 
-        }else {
+        } else {
             System.out.println("Option is Not Valid");
             Assert.fail("Option is Not Valid");
         }
@@ -1405,7 +1403,7 @@ public class Steps extends Utility {
                 System.out.println("Radio Button for Widow is not working");
                 Assert.fail("Radio Button for Widow is not working");
             }
-        }else {
+        } else {
             System.out.println("Option is not valid");
         }
     }
@@ -1456,7 +1454,7 @@ public class Steps extends Utility {
         sleep(1500);
         try {
             Small_planters.Add_family_and_beneficiaries(driver);
-        } catch (Exception e){
+        } catch (Exception e) {
             Assert.fail("Add Family and Beneficiaries is not clicakble");
         }
         sleep(1500);
@@ -1482,7 +1480,7 @@ public class Steps extends Utility {
     @And("^I Select Family relationship \"([^\"]*)\"$")
     public void iSelectFamilyRelationship(String Relationship) throws Throwable {
         sleep(1500);
-        if (Relationship.equals("Spouse")){
+        if (Relationship.equals("Spouse")) {
             try {
                 Small_planters.Family_Select_one(driver).click();
             } catch (Exception e) {
@@ -1494,7 +1492,7 @@ public class Steps extends Utility {
             System.out.println("Spouse option is working");
 
 
-        }else if (Relationship.equals("Child 1")){
+        } else if (Relationship.equals("Child 1")) {
             try {
                 Small_planters.Family_Select_one(driver).click();
             } catch (Exception e) {
@@ -1505,7 +1503,7 @@ public class Steps extends Utility {
             Small_planters.Family_child_one(driver).click();
             System.out.println("Child 1 is working");
 
-        }else if (Relationship.equals("Child 2")){
+        } else if (Relationship.equals("Child 2")) {
             try {
                 Small_planters.Family_Select_one(driver).click();
             } catch (Exception e) {
@@ -1516,7 +1514,7 @@ public class Steps extends Utility {
             Small_planters.Family_child_two(driver).click();
             System.out.println("Child 2 is working");
 
-        }else if (Relationship.equals("Child 3")){
+        } else if (Relationship.equals("Child 3")) {
             try {
                 Small_planters.Family_Select_one(driver).click();
             } catch (Exception e) {
@@ -1527,8 +1525,7 @@ public class Steps extends Utility {
             Small_planters.Family_child_three(driver).click();
             System.out.println("Child 3 is working");
 
-        }
-        else {
+        } else {
             System.out.println("Family Option is Not Valid");
         }
     }
@@ -1547,13 +1544,13 @@ public class Steps extends Utility {
     public void iSelectFamilyGender(String Gender) throws Throwable {
         Small_planters.Family_gender_select_one(driver).click();
         sleep(1500);
-        if (Gender.equals("Male")){
+        if (Gender.equals("Male")) {
             Small_planters.Family_gender_male(driver).click();
             System.out.println("Gender Male is working fine");
-        }else if(Gender.equals("Female")){
+        } else if (Gender.equals("Female")) {
             Small_planters.Family_gender_female(driver).click();
             System.out.println("Gender Female is working fine");
-        }else{
+        } else {
             System.out.println("Gender option is not valid");
             Assert.fail("Gender option is not valid");
         }
@@ -1561,7 +1558,7 @@ public class Steps extends Utility {
 
     @And("^I Input Family Date of Birth \"([^\"]*)\"$")
     public void iInputFamilyDateOfBirth(String DOB) throws Throwable {
-        if (DOB.equals("1Jan94")){
+        if (DOB.equals("1Jan94")) {
             Small_planters.Family_date_of_birth(driver).click();
             sleep(1500);
             driver.findElement(By.xpath("(//select[@data-event='change'])[2]")).sendKeys("1994");
@@ -1570,7 +1567,7 @@ public class Steps extends Utility {
             sleep(1500);
             driver.findElement(By.xpath("(//a[@href='#'])[55]")).click();
             sleep(1000);
-        }else{
+        } else {
             Assert.fail("Cannot select date");
         }
 
@@ -1613,7 +1610,7 @@ public class Steps extends Utility {
         sleep(1500);
         try {
             Small_planters.Add_crop(driver);
-        } catch (Exception e){
+        } catch (Exception e) {
             Assert.fail("Add Crop is not clicakble");
         }
         sleep(1500);
@@ -1644,16 +1641,16 @@ public class Steps extends Utility {
     public void iSelectCropType(String Crop_Type) throws Throwable {
         Small_planters.Select_one_crop_type(driver).click();
         sleep(1500);
-        if (Crop_Type.equals("Cane")){
+        if (Crop_Type.equals("Cane")) {
             Small_planters.Cane_crop_type(driver).click();
             System.out.println("Cane is working fine");
-        }else if(Crop_Type.equals("Tea")){
+        } else if (Crop_Type.equals("Tea")) {
             Small_planters.Tea_crop_type(driver).click();
             System.out.println("Tea is working fine");
-        }else if(Crop_Type.equals("Others")){
+        } else if (Crop_Type.equals("Others")) {
             Small_planters.Others_crop_type(driver).click();
             System.out.println("Others is working fine");
-        }else{
+        } else {
             System.out.println("Crop Type option is not valid");
             Assert.fail("Crop Type option is not valid");
         }
@@ -1671,13 +1668,13 @@ public class Steps extends Utility {
     public void iSelectOwnerType(String Owner_Type) throws Throwable {
         Small_planters.Select_one_owner_type(driver).click();
         sleep(1500);
-        if (Owner_Type.equals("Owner")){
+        if (Owner_Type.equals("Owner")) {
             Small_planters.Owner_owner_type(driver).click();
             System.out.println("Owner is working fine");
-        }else if(Owner_Type.equals("Tenant")){
+        } else if (Owner_Type.equals("Tenant")) {
             Small_planters.Tenant_owner_type(driver).click();
             System.out.println("Tenant is working fine");
-        }else{
+        } else {
             System.out.println("Owner Type option is not valid");
             Assert.fail("Owner Type option is not valid");
         }
@@ -1711,7 +1708,7 @@ public class Steps extends Utility {
         sleep(1500);
         try {
             Small_planters.Add_horticultural(driver);
-        } catch (Exception e){
+        } catch (Exception e) {
             Assert.fail("Add Horticultural is not clicakble");
         }
         sleep(1500);
@@ -1735,13 +1732,13 @@ public class Steps extends Utility {
     public void iSelectOwnerTypeForHorticulturalPlantation(String Owner_Type) throws Throwable {
         Small_planters.Select_one_owner_type_horticultural(driver).click();
         sleep(1500);
-        if (Owner_Type.equals("Owner")){
+        if (Owner_Type.equals("Owner")) {
             Small_planters.Owner_owner_type_horticultural(driver).click();
             System.out.println("Owner is working fine");
-        }else if(Owner_Type.equals("Tenant")){
+        } else if (Owner_Type.equals("Tenant")) {
             Small_planters.Tenant_owner_type_horticultural(driver).click();
             System.out.println("Tenant is working fine");
-        }else{
+        } else {
             System.out.println("Owner Type for Horticultural Plantation option is not valid");
             Assert.fail("Owner Type for Horticultural Plantation option is not valid");
         }
@@ -1756,16 +1753,16 @@ public class Steps extends Utility {
     public void iSelectProductionSystem(String Production_System) throws Throwable {
         Small_planters.Select_one_production_system(driver).click();
         sleep(1500);
-        if (Production_System.equals("Open Field")){
+        if (Production_System.equals("Open Field")) {
             Small_planters.Open_field(driver).click();
             System.out.println("Open Field is working fine");
-        }else if(Production_System.equals("Sheltered Farming")){
+        } else if (Production_System.equals("Sheltered Farming")) {
             Small_planters.Sheltered_farming(driver).click();
             System.out.println("Sheltered Farming is working fine");
-        }else if(Production_System.equals("Aquaponics")){
+        } else if (Production_System.equals("Aquaponics")) {
             Small_planters.Aquaponics(driver).click();
             System.out.println("Aquaponics is working fine");
-        }else{
+        } else {
             System.out.println("Production System option is not valid");
             Assert.fail("Production System option is not valid");
         }
@@ -1786,13 +1783,13 @@ public class Steps extends Utility {
     public void iSelectPlantationType(String Plantation_Type) throws Throwable {
         Small_planters.Select_one_plantation_type(driver).click();
         sleep(1500);
-        if (Plantation_Type.equals("Interline")){
+        if (Plantation_Type.equals("Interline")) {
             Small_planters.Interline_plantation_type(driver).click();
             System.out.println("Owner is working fine");
-        }else if(Plantation_Type.equals("Full Stand")){
+        } else if (Plantation_Type.equals("Full Stand")) {
             Small_planters.Full_stand_plantation_type(driver).click();
             System.out.println("Tenant is working fine");
-        }else{
+        } else {
             System.out.println("Plantation Type option is not valid");
             Assert.fail("Plantation Type option is not valid");
         }
@@ -1800,7 +1797,7 @@ public class Steps extends Utility {
 
     @And("^I Input Expected Date of Planting/Seedling \"([^\"]*)\"$")
     public void iInputExpectedDateOfPlantingSeedling(String Date_Plantation_Seedling) throws Throwable {
-        if (Date_Plantation_Seedling.equals("1Aug2030")){
+        if (Date_Plantation_Seedling.equals("1Aug2030")) {
             Small_planters.Input_date_planting_seedling(driver).click();
             sleep(1500);
             Small_planters.Input_year_planting_seedling(driver).sendKeys("2030");
@@ -1809,7 +1806,7 @@ public class Steps extends Utility {
             sleep(1500);
             Small_planters.Input_day_planting_seedling(driver).click();
             sleep(1000);
-        }else{
+        } else {
             Assert.fail("Cannot select date");
         }
     }
@@ -2190,11 +2187,11 @@ public class Steps extends Utility {
         if (Bonafide.equals("Yes")) {
             Back_office_main_page.Bonafide_yes(driver).click();
         } else if
-        (Bonafide.equals("No")){
+        (Bonafide.equals("No")) {
             Back_office_main_page.Bonafide_no(driver).click();
         } else {
             System.out.println("Bonafide option is not valid");
-           Assert.fail("Bonafide option is not valid");
+            Assert.fail("Bonafide option is not valid");
 
         }
     }
@@ -2391,7 +2388,7 @@ public class Steps extends Utility {
     @And("^I Select an Applicant Title \"([^\"]*)\"$")
     public void iSelectAnApplicantTitle(String Applicant_Title) throws Throwable {
         Thread.sleep(1500);
-        if (Applicant_Title.equals("Mr")){
+        if (Applicant_Title.equals("Mr")) {
             try {
                 Tea_grower.Title_Select_one(driver).click();
             } catch (Exception e) {
@@ -2403,7 +2400,7 @@ public class Steps extends Utility {
             System.out.println("Mr is working");
 
 
-        }else if (Applicant_Title.equals("Mrs")){
+        } else if (Applicant_Title.equals("Mrs")) {
             try {
                 Tea_grower.Title_Select_one(driver).click();
             } catch (Exception e) {
@@ -2414,7 +2411,7 @@ public class Steps extends Utility {
             Tea_grower.Title_Mrs(driver).click();
             System.out.println("Mrs is working");
 
-        }else if (Applicant_Title.equals("Miss")){
+        } else if (Applicant_Title.equals("Miss")) {
             try {
                 Tea_grower.Title_Select_one(driver).click();
             } catch (Exception e) {
@@ -2425,8 +2422,7 @@ public class Steps extends Utility {
             Tea_grower.Title_Miss(driver).click();
             System.out.println("Miss is working");
 
-        }
-        else {
+        } else {
             System.out.println("Option is Not Valid");
             Assert.fail("Option is Not Valid");
         }
@@ -2435,26 +2431,26 @@ public class Steps extends Utility {
     @And("^I Select Applicant Education Level \"([^\"]*)\"$")
     public void iSelectApplicantEducationLevel(String Education_Level) throws Throwable {
         Thread.sleep(1500);
-        if (Education_Level.equals("Primary")){
+        if (Education_Level.equals("Primary")) {
             Tea_grower.Education_Select_one(driver).click();
             Thread.sleep(2000);
             Tea_grower.Education_primary(driver).click();
             System.out.println("Education Level is working");
 
-        }else if (Education_Level.equals("Secondary")){
+        } else if (Education_Level.equals("Secondary")) {
             Tea_grower.Education_Select_one(driver).click();
             Thread.sleep(2000);
             Tea_grower.Education_secondary(driver).click();
             System.out.println("Education Level is working");
 
 
-        }else if (Education_Level.equals("Tertiary")){
+        } else if (Education_Level.equals("Tertiary")) {
             Tea_grower.Education_Select_one(driver).click();
             Thread.sleep(2000);
             Tea_grower.Education_tertiary(driver).click();
             System.out.println("Education Level is working");
 
-        }else {
+        } else {
             System.out.println("Option is Not Valid");
             Assert.fail("Option is Not Valid");
         }
@@ -2462,7 +2458,7 @@ public class Steps extends Utility {
 
     @And("^I Verify Display of Particulars for Registration of Tea Plantation$")
     public void iVerifyDisplayOfParticularsForRegistrationOfTeaPlantation() {
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);",  Tea_grower.Particulars_for_Registration_of_Tea_Plantation_page(driver));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);", Tea_grower.Particulars_for_Registration_of_Tea_Plantation_page(driver));
         WebDriverWait w = new WebDriverWait(driver, 10);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h6[contains(.,'Particulars of Crop:Tea Plantation')]")));
         try {
@@ -2478,7 +2474,7 @@ public class Steps extends Utility {
         Thread.sleep(1500);
         try {
             Tea_grower.Add_tea_plantation(driver);
-        } catch (Exception e){
+        } catch (Exception e) {
             Assert.fail("Add Tea Plantation is not clickable");
         }
         Thread.sleep(1500);
@@ -2507,13 +2503,13 @@ public class Steps extends Utility {
     public void iSelectTypeOfOwner(String Owner_Type) throws Throwable {
         Tea_grower.Select_one_owner_type_tea(driver).click();
         Thread.sleep(1500);
-        if (Owner_Type.equals("Owner")){
+        if (Owner_Type.equals("Owner")) {
             Tea_grower.Owner_owner_type_tea(driver).click();
             System.out.println("Owner is working fine");
-        }else if(Owner_Type.equals("Tenant")){
+        } else if (Owner_Type.equals("Tenant")) {
             Tea_grower.Tenant_owner_type_tea(driver).click();
             System.out.println("Tenant is working fine");
-        }else{
+        } else {
             System.out.println("Owner Type option is not valid");
             Assert.fail("Owner Type option is not valid");
         }
@@ -2522,7 +2518,7 @@ public class Steps extends Utility {
     @And("^I Select Family relationship for tea grower \"([^\"]*)\"$")
     public void iSelectFamilyRelationshipForTeaGrower(String Relationship) throws Throwable {
         sleep(1500);
-        if (Relationship.equals("Spouse")){
+        if (Relationship.equals("Spouse")) {
             try {
                 Tea_grower.Family_Select_one(driver).click();
             } catch (Exception e) {
@@ -2534,7 +2530,7 @@ public class Steps extends Utility {
             System.out.println("Spouse option is working");
 
 
-        }else if (Relationship.equals("Child 1")){
+        } else if (Relationship.equals("Child 1")) {
             try {
                 Tea_grower.Family_Select_one(driver).click();
             } catch (Exception e) {
@@ -2545,7 +2541,7 @@ public class Steps extends Utility {
             Tea_grower.Family_child_one(driver).click();
             System.out.println("Child 1 is working");
 
-        }else if (Relationship.equals("Child 2")){
+        } else if (Relationship.equals("Child 2")) {
             try {
                 Tea_grower.Family_Select_one(driver).click();
             } catch (Exception e) {
@@ -2556,7 +2552,7 @@ public class Steps extends Utility {
             Tea_grower.Family_child_two(driver).click();
             System.out.println("Child 2 is working");
 
-        }else if (Relationship.equals("Child 3")){
+        } else if (Relationship.equals("Child 3")) {
             try {
                 Tea_grower.Family_Select_one(driver).click();
             } catch (Exception e) {
@@ -2567,8 +2563,7 @@ public class Steps extends Utility {
             Tea_grower.Family_child_three(driver).click();
             System.out.println("Child 3 is working");
 
-        }
-        else {
+        } else {
             System.out.println("Family Option is Not Valid");
         }
     }
@@ -2595,7 +2590,7 @@ public class Steps extends Utility {
     @And("^I Verify Display of Livestock Activity$")
     public void iVerifyDisplayOfLivestockActivity() {
 
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);",  Small_breeder.Livestock_activity_page(driver));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);", Small_breeder.Livestock_activity_page(driver));
         WebDriverWait w = new WebDriverWait(driver, 10);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h6[contains(.,'Livestock Activity')]")));
         try {
@@ -2611,7 +2606,7 @@ public class Steps extends Utility {
         Thread.sleep(1500);
         try {
             Small_breeder.Add_livestock_activity(driver);
-        } catch (Exception e){
+        } catch (Exception e) {
             Assert.fail("Add Livestock Activity is not clickable");
         }
         Thread.sleep(1500);
@@ -2642,36 +2637,36 @@ public class Steps extends Utility {
         try {
             Small_breeder.Species_select_one(driver).click();
             Thread.sleep(1500);
-        } catch (Exception e){
+        } catch (Exception e) {
             System.out.println("Species Select One is not working");
             Assert.fail("Species Select One is not working");
         }
 
-        if (Spicies.equals("Cattle")){
+        if (Spicies.equals("Cattle")) {
             Small_breeder.Species_cattle(driver).click();
             System.out.println("Cattle is working fine");
-        }else if(Spicies.equals("Pig")){
+        } else if (Spicies.equals("Pig")) {
             Small_breeder.Species_pig(driver).click();
             System.out.println("Pig is working fine");
-        }else if(Spicies.equals("Poultry")){
+        } else if (Spicies.equals("Poultry")) {
             Small_breeder.Species_poultry(driver).click();
             System.out.println("Poultry is working fine");
-        }else if(Spicies.equals("Goat")){
+        } else if (Spicies.equals("Goat")) {
             Small_breeder.Species_goat(driver).click();
             System.out.println("Goat is working fine");
-        }else if(Spicies.equals("Deer")){
+        } else if (Spicies.equals("Deer")) {
             Small_breeder.Species_deer(driver).click();
             System.out.println("Pig is working fine");
-        }else if(Spicies.equals("Rabbit")){
+        } else if (Spicies.equals("Rabbit")) {
             Small_breeder.Species_rabbit(driver).click();
             System.out.println("Rabbit is working fine");
-        }else if(Spicies.equals("Sheep")){
+        } else if (Spicies.equals("Sheep")) {
             Small_breeder.Species_sheep(driver).click();
             System.out.println("Sheep is working fine");
-        }else if(Spicies.equals("Honey Bee")){
+        } else if (Spicies.equals("Honey Bee")) {
             Small_breeder.Species_honeybee(driver).click();
             System.out.println("Honey Bee is working fine");
-        }else{
+        } else {
             System.out.println("Species option is not valid");
             Assert.fail("Species option is not valid");
         }
@@ -2693,18 +2688,18 @@ public class Steps extends Utility {
         try {
             Small_breeder.Reason_select_one(driver).click();
             Thread.sleep(1500);
-        } catch (Exception e){
+        } catch (Exception e) {
             System.out.println("Reason Select One is not working");
             Assert.fail("Reason Select One is not working");
         }
 
-        if (Reason.equals("Milk")){
+        if (Reason.equals("Milk")) {
             Small_breeder.Reason_milk(driver).click();
             System.out.println("Milk is working fine");
-        }else if(Reason.equals("Meat")){
+        } else if (Reason.equals("Meat")) {
             Small_breeder.Reason_meat(driver).click();
             System.out.println("Meat is working fine");
-        }else{
+        } else {
             System.out.println("Reason option is not valid");
             Assert.fail("Reason option is not valid");
         }
@@ -2712,7 +2707,7 @@ public class Steps extends Utility {
 
     @And("^I Verify Display of Particulars for Cattle Page$")
     public void iVerifyDisplayOfParticularsForCattlePage() {
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);",  Small_breeder.Particulars_cattle_page(driver));
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);", Small_breeder.Particulars_cattle_page(driver));
         WebDriverWait w = new WebDriverWait(driver, 10);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h6[contains(.,'Particulars for Cattle (Cows and Bulls)')]")));
         try {
@@ -2728,7 +2723,7 @@ public class Steps extends Utility {
         Thread.sleep(1500);
         try {
             Small_breeder.Add_particular_cattle(driver);
-        } catch (Exception e){
+        } catch (Exception e) {
             Assert.fail("Add Particular of Cattle is not clickable");
         }
         Thread.sleep(1500);
@@ -2757,13 +2752,13 @@ public class Steps extends Utility {
     public void iSelectCattleSex(String Cattle_Sex) throws Throwable {
         Small_breeder.Cattle_sex_select_one(driver).click();
         sleep(1500);
-        if (Cattle_Sex.equals("Male")){
+        if (Cattle_Sex.equals("Male")) {
             Small_breeder.Cattle_sex_male(driver).click();
             System.out.println("Cattle Sex Male is working fine");
-        }else if(Cattle_Sex.equals("Female")){
+        } else if (Cattle_Sex.equals("Female")) {
             Small_breeder.Cattle_sex_female(driver).click();
             System.out.println("Cattle Sex Female is working fine");
-        }else{
+        } else {
             System.out.println("Cattle Sex option is not valid");
             Assert.fail("Cattle Sex option is not valid");
         }
@@ -2773,22 +2768,22 @@ public class Steps extends Utility {
     public void iSelectCattleAge(String Cattle_Age) throws Throwable {
         Small_breeder.Cattle_age_select_one(driver).click();
         sleep(1500);
-        if (Cattle_Age.equals("1Month")){
+        if (Cattle_Age.equals("1Month")) {
             Small_breeder.Cattle_age_one_month(driver).click();
             System.out.println("Cattle age 1 month is working fine");
-        }else if(Cattle_Age.equals("2Month")){
+        } else if (Cattle_Age.equals("2Month")) {
             Small_breeder.Cattle_age_two_month(driver).click();
             System.out.println("Cattle age 2 month is working fine");
-        }else if(Cattle_Age.equals("3Month")){
+        } else if (Cattle_Age.equals("3Month")) {
             Small_breeder.Cattle_age_three_month(driver).click();
             System.out.println("Cattle age 3 month is working fine");
-        }else if(Cattle_Age.equals("4Month")){
+        } else if (Cattle_Age.equals("4Month")) {
             Small_breeder.Cattle_age_four_month(driver).click();
             System.out.println("Cattle age 4 month is working fine");
-        }else if(Cattle_Age.equals("5Month")){
+        } else if (Cattle_Age.equals("5Month")) {
             Small_breeder.Cattle_age_five_month(driver).click();
             System.out.println("Cattle age 5 month is working fine");
-        }else{
+        } else {
             System.out.println("Cattle age option is not valid");
             Assert.fail("Cattle age option is not valid");
         }
@@ -3022,7 +3017,7 @@ public class Steps extends Utility {
         driver.findElement(By.xpath("//input[contains(@id,'arp')]")).sendKeys("8");
         driver.findElement(By.xpath("(//span[contains(.,'Save')])[4]")).click();
         wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//div[contains(@id,'dlgManageCrop_content')]")));
-        }
+    }
 
     @And("^I Select Drip Irrigation Facility in Section Two$")
     public void iSelectDripIrrigationFacilityInSectionTwo() throws InterruptedException {
@@ -3183,18 +3178,6 @@ public class Steps extends Utility {
         }
     }
 
-    @And("^I Click to Apply for Fertiliser Subsidy \\(FSS\\)$")
-    public void iClickToApplyForFertiliserSubsidyFSS() throws InterruptedException {
-        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);", FSS.Fert_Scheme(driver));
-        Thread.sleep(1000);
-        try {
-            FSS.Fert_Scheme(driver);
-        } catch (Exception e) {
-            System.out.println("Link for fertilizer scheme did not appear");
-            Assert.fail("Link for fertilizer scheme did not appear");
-        }
-        FSS.Fert_Scheme(driver).click();
-    }
 
     @And("^I click to apply for Bio Farming support scheme$")
     public void iClickToApplyForBioFarmingSupportScheme() throws InterruptedException {
@@ -3240,50 +3223,6 @@ public class Steps extends Utility {
         }
     }
 
-    @And("^I Input Type of Farmer \"([^\"]*)\"$")
-    public void iInputTypeOfFarmer(String Farmer_Type) throws Throwable {
-        GPAC.Select_one_farmer_type(driver).click();
-        Thread.sleep(1500);
-        if (Farmer_Type.equals("Small Planter")){
-            try {
-                GPAC.Small_planters_type(driver).click();
-            } catch (Exception e) {
-                System.out.println("Small Plater Type is not working");
-                Assert.fail("Small Plater Type is not working");
-            }
-        } else if (Farmer_Type.equals("Small Breeder")) {
-            try {
-                GPAC.Small_breeder_type(driver).click();
-            } catch (Exception e) {
-                System.out.println("Small Breeder Type is not working");
-                Assert.fail("Small Breeder Type is not working");
-            }
-        }else if (Farmer_Type.equals("Tea Grower")) {
-            try {
-                GPAC.Tea_grower_type(driver).click();
-            } catch (Exception e) {
-                System.out.println("Tea Grower Type is not working");
-                Assert.fail("Tea Grower Type is not working");
-            }
-        } else if (Farmer_Type.equals("Agro-Processing Enterprise")) {
-            try {
-                GPAC.Agro_processing_enterprise_type(driver).click();
-            } catch (Exception e) {
-                System.out.println("Agro-Processing Enterprise Type is not working");
-                Assert.fail("Agro-Processing Enterprise Type is not working");
-            }
-        } else if (Farmer_Type.equals("Farmers Cooperatives Association, Society or Company")) {
-            try {
-                GPAC.Farmers_CASC_type(driver).click();
-            } catch (Exception e) {
-                System.out.println("Farmers Cooperatives Association, Society or Company Type is not working");
-                Assert.fail("Farmers Cooperatives Association, Society or Company Type is not working");
-            }
-        } else {
-            System.out.println("Farmers Type is Invalid");
-            Assert.fail("Farmers Type is Invalid");
-        }
-    }
 
     @And("^I Input Accident Particulars \"([^\"]*)\" \"([^\"]*)\" \"([^\"]*)\" \"([^\"]*)\" \"([^\"]*)\" \"([^\"]*)\"$")
     public void iInputAccidentParticulars(String Date_of_Accident, String Time_of_Accident, String Place_of_Accident, String Cause_of_Accident, String Kind_of_Work, String Particulars_Statement) throws Throwable {
@@ -3311,7 +3250,7 @@ public class Steps extends Utility {
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[contains(@id,'medcost')]")));
         try {
             GPAC.Medical_cost(driver);
-        } catch (Exception e){
+        } catch (Exception e) {
             System.out.println("General Information Page did not appear");
             Assert.fail("General Information Page did not appear");
         }
@@ -3355,26 +3294,99 @@ public class Steps extends Utility {
         GPAC.Additional_medical_charges(driver).sendKeys(Additional_Medical_Charges_amount);
     }
 
-    @And("^I Upload Documents \"([^\"]*)\"$")
-    public void iUploadDocuments(String Upload_test) throws Throwable {
-        String filePath = new File(Upload_test).getAbsolutePath();
-        WebDriverWait w = new WebDriverWait(driver, 30);
+    //Farmers Protection Scheme_FPS
+    @And("^I Click to Apply for Farmers Protection Scheme \\(FPS\\)$")
+    public void iClickToApplyForFarmersProtectionSchemeFPS() {
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);", FSS.Fert_Scheme(driver));
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        try {
+            FPS.Farmers_Scheme(driver);
+        } catch (Exception e) {
+            System.out.println("Link for farmers protection scheme did not appear");
+            Assert.fail("Link for farmers protection scheme scheme did not appear");
+        }
+        FPS.Farmers_Scheme(driver).click();
+    }
 
-        GPAC.Upload_farmers_identity_card(driver).sendKeys(filePath);
-        w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[1]")));
-        GPAC.Upload_doctors_bill(driver).sendKeys(filePath);
-        w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[2]")));
-        GPAC.Upload_identity_card(driver).sendKeys(filePath);
-        w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[3]")));
-        GPAC.Upload_medical_certificate(driver).sendKeys(filePath);
-        w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[4]")));
-        GPAC.Upload_pharmacy_receipts(driver).sendKeys(filePath);
-        w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[5]")));
-        GPAC.Upload_Add_doc(driver).sendKeys(filePath);
-        w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-download'])[6]")));
+
+    @And("^I Verify Damage Declaration Tab$")
+    public void iVerifyDamageDeclarationTab() {
+        WebDriverWait w = new WebDriverWait(driver, 10);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[contains(.,'Add Damage')]")));
+        try {
+            FPS.Damage_Declaration(driver);
+        } catch (Exception e) {
+            System.out.println("Damage Declaration Page did not appear");
+            Assert.fail("Damage Declaration Page did not appear");
+        }
+    }
+
+    @And("^I Click on Add Damage$")
+    public void iClickOnAddDamage() {
+        try {
+            FPS.Add_Damage(driver);
+        } catch (Exception e) {
+            Assert.fail("Add Damage is not clicakble");
+        }
+        FPS.Add_Damage(driver).click();
+    }
+
+    @And("^I Verify Display of Damage Declaration form input table$")
+    public void iVerifyDisplayOfDamageDeclarationFormInputTable() {
+        try {
+            sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+//        driver.switchTo().frame("//div[contains(@id, 'dlgfamily')]");  // Switch to the frame with the specified name or ID
+
+        WebDriverWait w = new WebDriverWait(driver, 5);
+        WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[contains(.,'Particulars of Family and Beneficiaries')]")));
+        try {
+          FPS.Damage_Declaration(driver);
+        } catch (Exception e) {
+            System.out.println("Damage Declaration Form did not appear");
+            Assert.fail("Damage Declaration Form did not appear");
+        }
+
+}
+
+    @And("^I Input Locality \"([^\"]*)\"$")
+    public void iInputLocality(String Locality) throws Throwable {
+       FPS.Locality(driver).sendKeys(Locality);
+
+    }
+
+    @And("^I Input Number of Animals \"([^\"]*)\"$")
+    public void iInputNumberOfAnimals(String number_of_animals) throws Throwable {
+        FPS.Number_of_Animals(driver).sendKeys(number_of_animals);
+        throw new PendingException();
+    }
+
+    @And("^I Input Date of Birth \"([^\"]*)\">$")
+    public void iInputDateOfBirth(String DOB) throws Throwable {
+      FPS.DOB(driver).sendKeys(DOB);
+        throw new PendingException();
+    }
+
+    @And("^I Input Tag Number of Animal\\(s\\)/Microchip No \"([^\"]*)\"$")
+    public void iInputTagNumberOfAnimalSMicrochipNo(String tag_of_animals) throws Throwable {
+        FPS.tag_of_animals(driver).sendKeys(tag_of_animals);
+        throw new PendingException();
+    }
+
+    @And("^I Input No\\.of dead animals \"([^\"]*)\">$")
+    public void iInputNoOfDeadAnimals(String number_of_dead_animals) throws Throwable {
+       FPS.number_of_dead_animals(driver).sendKeys(number_of_dead_animals);
+        throw new PendingException();
+    }
+
 
 
     }
 
 
-}
