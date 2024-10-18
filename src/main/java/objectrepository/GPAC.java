@@ -234,6 +234,13 @@ public class GPAC {
         return element;
     }
 
+    //Object for Search Bar for Programme Reference Number
+    private static By txt_Search_programme_reference_number = By.xpath("(//input[@role='textbox'])[5]");
+    public static WebElement Search_programme_reference_number(WebDriver driver) {
+        element = driver.findElement(txt_Search_programme_reference_number);
+        return element;
+    }
+
 
 }
 

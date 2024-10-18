@@ -44,7 +44,7 @@ public class Back_office_main_page {
     }
 
     //Object for Finance - Manage Cashier - Click
-    private static By lbl_Manage_cashier = By.xpath("//a[contains(.,'Click')]");
+    private static By lbl_Manage_cashier = By.xpath("(//a[contains(.,'Click')])[2]");
     public static WebElement Manage_cashier(WebDriver driver) {
         element = driver.findElement(lbl_Manage_cashier);
         return element;
@@ -142,7 +142,7 @@ public class Back_office_main_page {
     }
 
     //Object for Button to view last application
-    private static By btn_View_last_application = By.xpath("(//span[@class='ui-button-icon-left ui-icon ui-c pi pi-eye'])[1]");
+    private static By btn_View_last_application = By.xpath("//button[contains (@id, 'view')]");
     public static WebElement View_last_application(WebDriver driver) {
         element = driver.findElement(btn_View_last_application);
         return element;
@@ -169,10 +169,24 @@ public class Back_office_main_page {
         return element;
     }
 
-    //Object for Action - Select One - Other BO
+    //Object for Action - Select One - PWO3
+    private static By lbl_Action_PWO3_select_one = By.xpath("//label[contains(@id, 'myActionId_label')]");
+    public static WebElement Action_PWO3_select_one(WebDriver driver) {
+        element = driver.findElement(lbl_Action_PWO3_select_one);
+        return element;
+    }
+
+    //Object for Action - Select One - Other BO - Registration
     private static By lbl_Action_select_one = By.xpath("//label[contains(@id, 'roleAction')]");
     public static WebElement Action_select_one(WebDriver driver) {
         element = driver.findElement(lbl_Action_select_one);
+        return element;
+    }
+
+    //Object for Action - Select One - Other BO -Programmes
+    private static By lbl_Action_select_one_programmes = By.xpath("//label[contains(@id, 'myActions')]");
+    public static WebElement Action_select_one_programmes(WebDriver driver) {
+        element = driver.findElement(lbl_Action_select_one_programmes);
         return element;
     }
 
@@ -232,6 +246,13 @@ public class Back_office_main_page {
         return element;
     }
 
+    //Object for Select User - Select TO
+    private static By lbl_User_select_TO = By.xpath("//li[contains(.,'TO TO')]");
+    public static WebElement User_select_TO(WebDriver driver) {
+        element = driver.findElement(lbl_User_select_TO);
+        return element;
+    }
+
     //Object for Actions Remarks
     private static By txt_Action_remarks = By.xpath("//textarea[@id='formId:remarksStr']");
     public static WebElement Action_remarks(WebDriver driver) {
@@ -243,6 +264,13 @@ public class Back_office_main_page {
     private static By btn_Action_save = By.xpath("//button[contains(@id,'saveWorkflow')]");
     public static WebElement Action_save(WebDriver driver) {
         element = driver.findElement(btn_Action_save);
+        return element;
+    }
+
+    //Object for Actions Save - BO - Programmes
+    private static By btn_Action_save_bo_programmes = By.xpath("//button[contains(@id,'SaveWflow')]");
+    public static WebElement Action_save_bo_programmes(WebDriver driver) {
+        element = driver.findElement(btn_Action_save_bo_programmes);
         return element;
     }
 
@@ -338,6 +366,20 @@ public class Back_office_main_page {
         return element;
     }
 
+    //Object for Under Query Mail Success Message - Small Breeder
+    private static By lbl_Under_query_mail_success_message_sb = By.xpath("(//span[contains(.,'Mail has been sent successfully')])[5]");
+    public static WebElement Under_query_mail_success_message_sb(WebDriver driver) {
+        element = driver.findElement(lbl_Under_query_mail_success_message_sb);
+        return element;
+    }
+
+    //Object for Under Query Mail Success Message - Programmes
+    private static By lbl_Under_query_mail_success_message_programmes = By.xpath("(//span[contains(.,'Mail has been sent successfully')])[2]");
+    public static WebElement Under_query_mail_success_message_programmes(WebDriver driver) {
+        element = driver.findElement(lbl_Under_query_mail_success_message_programmes);
+        return element;
+    }
+
     //Object for Under Query Mail Success Message - Small Farmer
     private static By lbl_Under_query_mail_success_message_sf = By.xpath("(//span[contains(.,'Mail has been sent successfully')])[6]");
     public static WebElement Under_query_mail_success_message_sf(WebDriver driver) {
@@ -363,6 +405,20 @@ public class Back_office_main_page {
     private static By btn_Print_card = By.xpath("//span[contains(.,'Print Card')]");
     public static WebElement Print_card(WebDriver driver) {
         element = driver.findElement(btn_Print_card);
+        return element;
+    }
+
+    //Object for All Applications - Sidebar
+    private static By lbl_All_applications_sidebar = By.xpath("//span[contains(.,'All Applications')]");
+    public static WebElement All_applications_sidebar(WebDriver driver) {
+        element = driver.findElement(lbl_All_applications_sidebar);
+        return element;
+    }
+
+    //Object for All Programmes - Sidebar
+    private static By lbl_All_programmes_sidebar = By.xpath("//span[contains(.,'All Programmes')]");
+    public static WebElement All_programmes_sidebar(WebDriver driver) {
+        element = driver.findElement(lbl_All_programmes_sidebar);
         return element;
     }
 
