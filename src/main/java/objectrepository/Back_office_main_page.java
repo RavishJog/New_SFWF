@@ -148,6 +148,13 @@ public class Back_office_main_page {
         return element;
     }
 
+    //Object for Button to view last programme
+    private static By btn_View_last_programme = By.xpath("//button[contains (@id, 'View')]");
+    public static WebElement View_last_programme(WebDriver driver) {
+        element = driver.findElement(btn_View_last_programme);
+        return element;
+    }
+
     //Object for Action Button for Back Office Users
     private static By btn_Action_back_office_users = By.xpath("//span[contains(.,'Action')]");
     public static WebElement Action_back_office_users(WebDriver driver) {

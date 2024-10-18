@@ -36,6 +36,8 @@ public class Steps extends Utility {
     protected static WebDriver driver;
 
     private String Application_reference_number;
+    private String Programmes_reference_number;
+
 
     @BeforeMethod
     public void setUp() {
@@ -2148,6 +2150,7 @@ public class Steps extends Utility {
 
     @And("^I Search for Application Ref Number as a Back Office User$")
     public void iSearchForApplicationRefNumberAsABackOfficeUser() throws InterruptedException {
+        Thread.sleep(1500);
         Back_office_main_page.Search_bar_app_num(driver).sendKeys(Application_reference_number);
         Thread.sleep(5000);
     }
@@ -3537,6 +3540,9 @@ public class Steps extends Utility {
         Back_office_main_page.All_applications_sidebar(driver).click();
         Thread.sleep(1500);
         Back_office_main_page.All_programmes_sidebar(driver).click();
+        WebDriverWait w = new WebDriverWait(driver, 120);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h5[contains(.,'List of Programmes')]")));
+
     }
 
     @And("^I Click on Under Query Notification for Programmes$")
@@ -3721,5 +3727,48 @@ public class Steps extends Utility {
                 System.out.println("No browser found");
             }
         }
+    }
+
+    @And("^I Input TO Username \"([^\"]*)\" and Password \"([^\"]*)\"$")
+    public void iInputTOUsernameAndPassword(String TOUsername, String Password) throws Throwable {
+        Home_page.Username(driver).sendKeys(TOUsername);
+        Home_page.Password(driver).sendKeys(Password);
+    }
+
+    @And("^I Verify Success message for Application of Programmes Submitted$")
+    public void iVerifySuccessMessageForApplicationOfProgrammesSubmitted() throws InterruptedException {
+        WebDriverWait w = new WebDriverWait(driver, 120);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h5[contains(text(),'My Application')]")));
+        Thread.sleep(2000);
+        try {
+            My_application.Success_message_submit_programmes(driver);
+        } catch (Exception e) {
+            System.out.println("Success message did not appear");
+            Assert.fail("Success message did not appear");
+        }
+        Thread.sleep(8000);
+    }
+
+    @And("^I Copy Programmes Ref Number$")
+    public void iCopyProgrammesRefNumber() {
+        My_application.Search_reference_number_programmes(driver);
+        Programmes_reference_number = My_application.Search_reference_number_programmes(driver).getText();
+        System.out.println("Programmes ref number copied is: " + Programmes_reference_number);
+
+    }
+
+    @And("^I Search for Programmes Ref Number as a Back Office User$")
+    public void iSearchForProgrammesRefNumberAsABackOfficeUser() throws InterruptedException {
+        Thread.sleep(1500);
+        Back_office_main_page.Search_bar_app_num(driver).sendKeys(Programmes_reference_number);
+        Thread.sleep(5000);
+    }
+
+    @And("^I Click to view Programmes$")
+    public void iClickToViewProgrammes() throws InterruptedException {
+        Back_office_main_page.View_last_programme(driver).click();
+        Thread.sleep(2000);
+        WebDriverWait w = new WebDriverWait(driver, 120);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[contains(.,'Action')]")));
     }
 }

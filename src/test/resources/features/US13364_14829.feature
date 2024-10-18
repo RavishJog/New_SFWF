@@ -40,8 +40,8 @@ Feature: User Story 13361 and 14829 -Form - Fertiliser Subsidy Scheme (FSS) and 
     And I Verify Terms and Conditions Page
     And I click on I agree to the Terms and Conditions
     And I Click on Submit Application "<Confirmation>"
-    And I Verify Success message for application submitted
-    And I Copy Application Number
+    And I Verify Success message for Application of Programmes Submitted
+    And I Copy Programmes Ref Number
     Then I Sign Out as Front Registered User
 
     #    WPO
@@ -50,8 +50,8 @@ Feature: User Story 13361 and 14829 -Form - Fertiliser Subsidy Scheme (FSS) and 
     And I Click on Sign In button
     And I Verify Successful Login
     And I Click to view All Programmes
-    And I Search for Application Ref Number as a Back Office User
-    And I Click to view Application
+    And I Search for Programmes Ref Number as a Back Office User
+    And I Click to view Programmes
     And I Click on Action Button
     And I Select Under Query for Programmes
     And I Input External Remarks "<Remarks>"
@@ -95,6 +95,31 @@ Feature: User Story 13361 and 14829 -Form - Fertiliser Subsidy Scheme (FSS) and 
     And I Click on Action Button
     And I Select Assigned for Programmes
     And I Select TO User
+    And I Input Remarks "<Remarks>"
+    And I Click on Save Actions
+    And I Verify for success message for assigning
+    And I Sign Out
+    And I Verify Successful Sign Out
+
+        #    TO
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
+    And I Input TO Username "<TOUsername>" and Password "<Password>"
+    And I Click on Sign In button
+    And I Verify Successful Login
+    And I Click on All Applications
+    And I Verify display of list of registrations page
+    And I Search for Application Ref Number as a Back Office User
+    And I Click to view Application
+    And I Click on Site Report Tab
+    And I Select Bonafide Planter "<Bonafide>"
+    And I Input Site visit remarks "<Remarks>"
+    And I Upload Site Report "<Upload_test>"
+    And I Verify for Document Upload Success Message for Site Visit
+    And I Click on Save Button
+    And I Verify Site Visit saved success message
+    And I Click on Action Button
+    And I Select Assigned
+    And I Select WPO
     And I Input Remarks "<Remarks>"
     And I Click on Save Actions
     And I Verify for success message for assigning
