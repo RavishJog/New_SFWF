@@ -142,9 +142,16 @@ public class Front_Home_page {
     }
 
     //Object for Edit Button for registration application
-    private static By btn_Edit = By.xpath("//span[contains(@class,'ui-button-icon-left ui-icon ui-c pi pi-pencil')]");
+    private static By btn_Edit = By.xpath("//button[contains(@id,'applicantlists:regListId:0:edit')]");
     public static WebElement Edit(WebDriver driver) {
         element = driver.findElement(btn_Edit);
+        return element;
+    }
+
+    //Object for Edit Button for programmes application
+    private static By btn_Edit_programmes = By.xpath("//button[contains(@id,'applicantlists:progListId:0:edit')]");
+    public static WebElement Edit_programmes(WebDriver driver) {
+        element = driver.findElement(btn_Edit_programmes);
         return element;
     }
 
