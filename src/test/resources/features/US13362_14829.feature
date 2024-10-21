@@ -17,7 +17,18 @@
       And I Verify Programmes link
       And I Click on Programmes
       And I Click on New Programmes
-
+      And I Select Type of farmers "<Farmer_Type>"
+      And I Click on Save and Continue
+      And I clik on Add Agricultural Activities "<Agricultural_Activities>"
+      And I select Type of Operator "<Type_of_Operator>"
+      And I Click on Save Button
+      And I Verify Upload Required Documents Page is displayed
+      And I click on upload button 
+      And I Click on Add Additional Document
+      And I Click on Save and Continue
+      And I Add crop production Type"<Production_Type>"
+      And I Add Bio Organic Input
+      And I click on I agree to the Terms and Conditions
       And I Verify Programme Type Page
       And I click to apply for Bio Farming support scheme
 

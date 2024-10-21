@@ -17,7 +17,6 @@
       And I Verify Programmes link
       And I Click on Programmes
       And I Click on New Programmes
-
       And I Verify Programme Type Page
       And I click to apply for Bio Farming support scheme
 
