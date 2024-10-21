@@ -3571,9 +3571,9 @@ public class Steps extends Utility {
     public void iSearchForProgrammeRefNumberForReSubmit() throws InterruptedException {
         WebDriverWait w = new WebDriverWait(driver, 120);
         WebElement element = w.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//input[@role='textbox'])[5]")));
-        GPAC.Search_programme_reference_number(driver).sendKeys(Application_reference_number);
+        GPAC.Search_programme_reference_number(driver).sendKeys(Programmes_reference_number);
         Thread.sleep(2000);
-        Front_Home_page.Edit(driver).click();
+        Front_Home_page.Edit_programmes(driver).click();
     }
 
     @And("^I Select TO User$")
