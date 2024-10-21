@@ -127,7 +127,7 @@ public class Small_breeder {
     }
 
     //Object for Reason - Select One
-    private static By lbl_Reason_select_one = By.xpath("//label[contains(@id, 'reason_label')]");
+    private static By lbl_Reason_select_one = By.xpath("//label[contains(@id,'livestockdt:0:reason_label')]");
     public static WebElement Reason_select_one(WebDriver driver) {
         element = driver.findElement(lbl_Reason_select_one);
         return element;
@@ -245,6 +245,117 @@ public class Small_breeder {
         return element;
     }
 
+    //Object for No of Cow - Female
+    private static By txt_No_of_cow = By.xpath("//input[contains(@id,'livestockdt:0:no_female')]");
+    public static WebElement No_of_cow(WebDriver driver) {
+        element = driver.findElement(txt_No_of_cow);
+        return element;
+    }
+
+    //Object for Type of Breeder - Select One
+    private static By lbl_Select_one_type_breeder_site_visit = By.xpath("//label[contains(@id,'typeBreeders_label')]");
+    public static WebElement Select_one_type_breeder_site_visit(WebDriver driver) {
+        element = driver.findElement(lbl_Select_one_type_breeder_site_visit);
+        return element;
+    }
+
+//Object for Type of Breeder - Cattle Breeders
+    private static By lbl_Cattle_breeder_site_visit = By.xpath("//li[@data-label='Cattle Breeders']");
+    public static WebElement Cattle_breeder_site_visit(WebDriver driver) {
+        element = driver.findElement(lbl_Cattle_breeder_site_visit);
+        return element;
+    }
+
+    //Object for Type of Breeder - Pig Breeders
+    private static By lbl_Pig_breeder_site_visit = By.xpath("//li[@data-label='Pig Breeders']");
+    public static WebElement Pig_breeder_site_visit(WebDriver driver) {
+        element = driver.findElement(lbl_Pig_breeder_site_visit);
+        return element;
+    }
+
+    //Object for Type of Breeder - Poultry Breeders
+    private static By lbl_Poultry_breeder_site_visit = By.xpath("//li[@data-label='Poultry Breeders']");
+    public static WebElement Poultry_breeder_site_visit(WebDriver driver) {
+        element = driver.findElement(lbl_Poultry_breeder_site_visit);
+        return element;
+    }
+
+    //Object for Type of Breeder - Goat Breeders
+    private static By lbl_Goat_breeder_site_visit = By.xpath("//li[@data-label='Goat Breeders']");
+    public static WebElement Goat_breeder_site_visit(WebDriver driver) {
+        element = driver.findElement(lbl_Goat_breeder_site_visit);
+        return element;
+    }
+
+    //Object for Type of Breeder - Deer Breeders
+    private static By lbl_Deer_breeder_site_visit = By.xpath("//li[@data-label='Deer Breeders']");
+    public static WebElement Deer_breeder_site_visit(WebDriver driver) {
+        element = driver.findElement(lbl_Deer_breeder_site_visit);
+        return element;
+    }
+
+    //Object for Type of Breeder - Rabbit Breeders
+    private static By lbl_Rabbit_breeder_site_visit = By.xpath("//li[@data-label='Rabbit Breeders']");
+    public static WebElement Rabbit_breeder_site_visit(WebDriver driver) {
+        element = driver.findElement(lbl_Rabbit_breeder_site_visit);
+        return element;
+    }
+
+    //Object for Type of Breeder - Sheep Breeders
+    private static By lbl_Sheep_breeder_site_visit = By.xpath("//li[@data-label='Sheep Breeders']");
+    public static WebElement Sheep_breeder_site_visit(WebDriver driver) {
+        element = driver.findElement(lbl_Sheep_breeder_site_visit);
+        return element;
+    }
+
+    //Object for Type of Breeder - Bee Keepers
+    private static By lbl_Bee_Keeper_site_visit = By.xpath("//li[@data-label='Bee Keepers']");
+    public static WebElement Bee_Keeper_site_visit(WebDriver driver) {
+        element = driver.findElement(lbl_Bee_Keeper_site_visit);
+        return element;
+    }
+
+    //Object for Section 1 - Site Visit
+    private static By lbl_Section_one_site_visit = By.xpath("//h6[contains(.,'Section 1')]");
+    public static WebElement Section_one_site_visit(WebDriver driver) {
+        element = driver.findElement(lbl_Section_one_site_visit);
+        return element;
+    }
+
+    //Object for Category - Select One - Site Visit
+    private static By lbl_Select_one_category_site_visit = By.xpath("//label[contains(@id,'cat_breeders_label')]");
+    public static WebElement Select_one_category_site_visit(WebDriver driver) {
+        element = driver.findElement(lbl_Select_one_category_site_visit);
+        return element;
+    }
+
+    //Object for Category - Cow - Site Visit
+    private static By lbl_Cow_category_site_visit = By.xpath("//li[contains(@data-label,'Cow')]");
+    public static WebElement Cow_category_site_visit(WebDriver driver) {
+        element = driver.findElement(lbl_Cow_category_site_visit);
+        return element;
+    }
+
+    //Object for Category - Bull - Site Visit
+    private static By lbl_Bull_category_site_visit = By.xpath("//li[contains(@data-label,'Bull')]");
+    public static WebElement Bull_category_site_visit(WebDriver driver) {
+        element = driver.findElement(lbl_Bull_category_site_visit);
+        return element;
+    }
+
+    //Object for Tag Number of Animal(s)/Microchip No
+    private static By txt_Tag_no_microchip_no_site_visit = By.xpath("//input[contains(@id,'tagNo_input')]");
+    public static WebElement Tag_no_microchip_no_site_visit(WebDriver driver) {
+        element = driver.findElement(txt_Tag_no_microchip_no_site_visit);
+        return element;
+    }
+
+    //Object for No Of Animals
+    private static By txt_No_of_animal_site_visit = By.xpath("//input[contains(@id,'noAnimals')]");
+    public static WebElement No_of_animal_site_visit(WebDriver driver) {
+        element = driver.findElement(txt_No_of_animal_site_visit);
+        return element;
+    }
 
 
 

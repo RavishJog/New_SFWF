@@ -143,6 +143,13 @@ public class Documents_upload {
         return element;
     }
 
+    //Object for upload for additional documents for Small Breeder
+    private static By btn_Additional_document_upload_small_breeder = By.xpath("//input[contains(@id, 'fileUploader9_input')]");
+    public static WebElement Additional_document_upload_small_breeder(WebDriver driver) {
+        element = driver.findElement(btn_Additional_document_upload_small_breeder);
+        return element;
+    }
+
     //Object for upload for additional documents - REGISTRATION FOR FARMERS' COOPERATIVE ASSOCIATION, SOCIETY AND COMPANY
     private static By btn_Additional_document_FCA_upload = By.xpath("//input[contains(@id, 'fileUploader8_input')]");
     public static WebElement Additional_document_FCA_upload(WebDriver driver) {
@@ -199,6 +206,13 @@ public class Documents_upload {
     private static By txt_Photo_upload_success_message = By.xpath("(//span[contains(text (),'has been uploaded.')])[2]");
     public static WebElement Photo_upload_success_message(WebDriver driver) {
         element = driver.findElement(txt_Photo_upload_success_message);
+        return element;
+    }
+
+    //Object for Close Button for Upload Successful Message
+    private static By btn_Close_message = By.xpath("//div[@class='ui-growl-icon-close ui-icon ui-icon-closethick']");
+    public static WebElement Close_message(WebDriver driver) {
+        element = driver.findElement(btn_Close_message);
         return element;
     }
 
