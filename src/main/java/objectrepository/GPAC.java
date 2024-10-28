@@ -24,7 +24,7 @@ public class  GPAC {
     }
 
     //Object for Type of Farmer - Select One
-    private static By lbl_Select_one_farmer_type = By.xpath("//label[contains (@id, 'gpac_type_farmer_label')]");
+    private static By lbl_Select_one_farmer_type = By.xpath("//label[contains (@id, 'type_farmer_label')]");
     public static WebElement Select_one_farmer_type(WebDriver driver) {
         element = driver.findElement(lbl_Select_one_farmer_type);
         return element;
