@@ -239,6 +239,13 @@ public class Back_office_main_page {
         return element;
     }
 
+    //Object for Select User - Select One - GPAC
+    private static By lbl_User_select_one_GPAC = By.xpath("//label[contains(@id,'myActions_label')]");
+    public static WebElement User_select_one_GPAC(WebDriver driver) {
+        element = driver.findElement(lbl_User_select_one_GPAC);
+        return element;
+    }
+
     //Object for Select User - Select WPO
     private static By lbl_User_select_WPO = By.xpath("//li[contains(.,'WPO WPO')]");
     public static WebElement User_select_WPO(WebDriver driver) {
@@ -428,6 +435,72 @@ public class Back_office_main_page {
         element = driver.findElement(lbl_All_programmes_sidebar);
         return element;
     }
+
+    //Object for Site Visit Report - GPAC - Date Visited
+    private static By txt_Date_visited_site_visit = By.xpath("//input[contains(@id,'date_visited_input')]");
+    public static WebElement Date_visited_site_visit(WebDriver driver) {
+        element = driver.findElement(txt_Date_visited_site_visit);
+        return element;
+    }
+
+    //Object for Site Visit Report - GPAC - latitude
+    private static By txt_Latitude_site_visit = By.xpath("//input[contains(@id,'latitude')]");
+    public static WebElement Latitude_site_visit(WebDriver driver) {
+        element = driver.findElement(txt_Latitude_site_visit);
+        return element;
+    }
+
+    //Object for Site Visit Report - GPAC - Longitude
+    private static By txt_Longitude_site_visit = By.xpath("//input[contains(@id,'geoCoordinateLongitude')]");
+    public static WebElement Longitude_site_visit(WebDriver driver) {
+        element = driver.findElement(txt_Longitude_site_visit);
+        return element;
+    }
+
+    //Object for Site Visit Report - GPAC - Work Completed - Select One
+    private static By lbl_Work_completed_select_one = By.xpath("//label[contains(@id,'complete_label')]");
+    public static WebElement Work_completed_select_one(WebDriver driver) {
+        element = driver.findElement(lbl_Work_completed_select_one);
+        return element;
+    }
+
+    //Object for Site Visit Report - GPAC - Work Completed - No
+    private static By lbl_Work_completed_no = By.xpath("//li[@data-label='No']");
+    public static WebElement Work_completed_no(WebDriver driver) {
+        element = driver.findElement(lbl_Work_completed_no);
+        return element;
+    }
+
+    //Object for Site Visit Report - GPAC - Work Completed - Partially
+    private static By lbl_Work_completed_partially = By.xpath("//li[@data-label='Partially']");
+    public static WebElement Work_completed_partially(WebDriver driver) {
+        element = driver.findElement(lbl_Work_completed_partially);
+        return element;
+    }
+
+    //Object for Site Visit Report - GPAC - Work Completed - Yes
+    private static By lbl_Work_completed_yes = By.xpath("//li[@data-label='Yes']");
+    public static WebElement Work_completed_yes(WebDriver driver) {
+        element = driver.findElement(lbl_Work_completed_yes);
+        return element;
+    }
+
+    //Object for Site Visit Report - GPAC - Work Descriptions
+    private static By txt_Work_description = By.xpath("//textarea[contains(@id,'siteDescriptionId')]");
+    public static WebElement Work_description(WebDriver driver) {
+        element = driver.findElement(txt_Work_description);
+        return element;
+    }
+
+    //Object for Site Visit Report - GPAC - Remarks
+    private static By txt_Remarks_site_visit = By.xpath("//textarea[contains(@id,'remarks')]");
+    public static WebElement Remarks_site_visit(WebDriver driver) {
+        element = driver.findElement(txt_Remarks_site_visit);
+        return element;
+    }
+
+
+
 
 
 }
