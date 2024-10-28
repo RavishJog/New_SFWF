@@ -3578,7 +3578,7 @@ public class Steps extends Utility {
 
     @And("^I Select TO User$")
     public void iSelectTOUser() throws InterruptedException {
-        Back_office_main_page.User_select_one(driver).click();
+        Back_office_main_page.User_select_one_GPAC(driver).click();
         Thread.sleep(1500);
         Back_office_main_page.User_select_TO(driver).click();
     }
@@ -3770,5 +3770,13 @@ public class Steps extends Utility {
         Thread.sleep(2000);
         WebDriverWait w = new WebDriverWait(driver, 120);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[contains(.,'Action')]")));
+    }
+
+    @And("^I Input Site Visit Information$")
+    public void iInputSiteVisitInformation() {
+
+
+
+
     }
 }

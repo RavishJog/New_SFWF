@@ -1,28 +1,28 @@
 -------------------------------------------------------------------------------
 Test set: cucumbertest.TestRunner_web
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 207.045 sec <<< FAILURE!
-runCukes(cucumbertest.TestRunner_web)  Time elapsed: 206.662 sec  <<< FAILURE!
-cucumber.runtime.CucumberException: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains (@id, 'View')]"}
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 148.201 sec <<< FAILURE!
+runCukes(cucumbertest.TestRunner_web)  Time elapsed: 147.852 sec  <<< FAILURE!
+cucumber.runtime.CucumberException: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//label[contains(@id, 'userAssignedId_label')]"}
   (Session info: chrome=130.0.6723.59)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'SIL-LTDELLI7-G6', ip: '192.168.8.46', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_371'
+System info: host: 'SIL-LTDELLI7-G6', ip: '192.168.8.93', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_371'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=130.0.6723.58 (3a50e012e4c9b8a410a4e2b12bf577e69ee8f755-refs/branch-heads/6723@{#1353}), userDataDir=C:\Users\SURAJ~1.JOG\AppData\Local\Temp\scoped_dir3468_2114416920}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:51896}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=130.0.6723.59, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: c760aac309e40e9b8f082cef68cd45e8
-*** Element info: {Using=xpath, value=//button[contains (@id, 'View')]}
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=130.0.6723.58 (3a50e012e4c9b8a410a4e2b12bf577e69ee8f755-refs/branch-heads/6723@{#1353}), userDataDir=C:\Users\SURAJ~1.JOG\AppData\Local\Temp\scoped_dir29416_1099006415}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:64602}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=130.0.6723.59, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: 4721c099b0cb3fc7e74cea0376451321
+*** Element info: {Using=xpath, value=//label[contains(@id, 'userAssignedId_label')]}
 	at cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:57)
 	at cucumbertest.TestRunner_web.runCukes(TestRunner_web.java:25)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[contains (@id, 'View')]"}
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//label[contains(@id, 'userAssignedId_label')]"}
   (Session info: chrome=130.0.6723.59)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
-System info: host: 'SIL-LTDELLI7-G6', ip: '192.168.8.46', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_371'
+System info: host: 'SIL-LTDELLI7-G6', ip: '192.168.8.93', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_371'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=130.0.6723.58 (3a50e012e4c9b8a410a4e2b12bf577e69ee8f755-refs/branch-heads/6723@{#1353}), userDataDir=C:\Users\SURAJ~1.JOG\AppData\Local\Temp\scoped_dir3468_2114416920}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:51896}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=130.0.6723.59, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: c760aac309e40e9b8f082cef68cd45e8
-*** Element info: {Using=xpath, value=//button[contains (@id, 'View')]}
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=130.0.6723.58 (3a50e012e4c9b8a410a4e2b12bf577e69ee8f755-refs/branch-heads/6723@{#1353}), userDataDir=C:\Users\SURAJ~1.JOG\AppData\Local\Temp\scoped_dir29416_1099006415}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:64602}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=130.0.6723.59, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: 4721c099b0cb3fc7e74cea0376451321
+*** Element info: {Using=xpath, value=//label[contains(@id, 'userAssignedId_label')]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -37,7 +37,7 @@ Session ID: c760aac309e40e9b8f082cef68cd45e8
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:509)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
-	at objectrepository.Back_office_main_page.View_last_programme(Back_office_main_page.java:154)
-	at stepdefinition.Steps.iClickToViewProgrammes(Steps.java:3769)
-	at ✽.And I Click to view Programmes(features/US13364_14829.feature:94)
+	at objectrepository.Back_office_main_page.User_select_one(Back_office_main_page.java:238)
+	at stepdefinition.Steps.iSelectTOUser(Steps.java:3581)
+	at ✽.And I Select TO User(features/US13364_14829.feature:97)
 
