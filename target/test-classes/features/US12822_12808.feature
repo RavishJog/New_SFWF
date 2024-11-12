@@ -1,6 +1,6 @@
 #User Story 12822 - Payment Process
 
-@Main_feature @US12822_12828
+@Main_feature @US12822_12828 @GOC
 Feature: User Story 12822 - Payment Process for Registration
 
    #Scenario1
