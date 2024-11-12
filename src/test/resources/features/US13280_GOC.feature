@@ -1,6 +1,6 @@
 #User Story 13280 - Back Office Process for Registration
 
-@Main_feature @US13280 @Regression @GOC_Registrations
+@Main_feature @US13280 @Regression @GOC_Registrations @GOC
 Feature: User Story 13280-GOC - Back Office Process for Registration
 
    #Scenario1
