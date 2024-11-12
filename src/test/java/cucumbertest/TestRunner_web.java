@@ -16,7 +16,7 @@ import org.testng.annotations.Test;
                 "pretty",
                 "json:target/cucumber-reports/cucumber.json" // Specify the JSON report path
         }
-        ,tags = "@Application_for_GPAC"
+        ,tags = "@Main"
 )
 
 public class TestRunner_web {
