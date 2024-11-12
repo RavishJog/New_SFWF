@@ -16,7 +16,7 @@ import org.testng.annotations.Test;
                 "pretty",
                 "json:target/cucumber-reports/cucumber.json" // Specify the JSON report path
         }
-        ,tags = "@GOC"
+        ,tags = "@silenv"
 )
 
 public class TestRunner_web {

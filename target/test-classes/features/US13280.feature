@@ -1,6 +1,6 @@
 #User Story 13280 - Back Office Process for Registration
 
-@Main_feature @US13280 @Regression 
+@Main_feature @US13280 @Regression @silenv
 Feature: User Story 13280 - Back Office Process for Registration
 
    #Scenario1
@@ -1083,12 +1083,14 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Search for Application Ref Number for re-submit
     And I Verify display of REGISTRATION FOR SMALL PLANTERS Page
     And I Click on Save and Continue
-    And I Verify Upload Required Documents Page is displayed
+    And I Verify Display of Particulars of Family Beneficiaries Page
     And I Click on Save and Continue
-    And I Verify Terms and Conditions Page
+    And I Verify Display of Particulars of Crop: Sugarcane and Tea Plantation Page
+    And I Click on Save and Continue
+    And I Verify Declaration Page for REGISTRATION FOR SMALL PLANTERS
     And I Click on Submit Application "<Confirmation>"
-    And I Verify Success message for application submitted
-    And I Sign Out as Front Registered User
+    And I Verify Success message for application submitted for Small Planters Registration
+    Then I Sign Out as Front Registered User
 
     #    WPO
     And I am on SFWF Back Office Home Page "<Browser>"
@@ -1324,12 +1326,14 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Search for Application Ref Number for re-submit
     And I Verify display of REGISTRATION FOR SMALL PLANTERS Page
     And I Click on Save and Continue
-    And I Verify Upload Required Documents Page is displayed
+    And I Verify Display of Particulars of Family Beneficiaries Page
     And I Click on Save and Continue
-    And I Verify Terms and Conditions Page
+    And I Verify Display of Particulars of Crop: Sugarcane and Tea Plantation Page
+    And I Click on Save and Continue
+    And I Verify Declaration Page for REGISTRATION FOR SMALL PLANTERS
     And I Click on Submit Application "<Confirmation>"
-    And I Verify Success message for application submitted
-    And I Sign Out as Front Registered User
+    And I Verify Success message for application submitted for Small Planters Registration
+    Then I Sign Out as Front Registered User
 
     #    WPO
     And I am on SFWF Back Office Home Page "<Browser>"
@@ -1551,9 +1555,11 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Search for Application Ref Number for re-submit
     And I Verify display of REGISTRATION FOR TEA GROWERS Page
     And I Click on Save and Continue
-    And I Verify Upload Required Documents Page is displayed
+    And I Verify Display of Particulars of Family Beneficiaries Page
     And I Click on Save and Continue
-    And I Verify Terms and Conditions Page
+    And I Verify Display of Particulars for Registration of Tea Plantation
+    And I Click on Save and Continue
+    And I Verify Declaration Page for REGISTRATION FOR TEA GROWER
     And I Click on Submit Application "<Confirmation>"
     And I Verify Success message for application submitted
     And I Sign Out as Front Registered User
@@ -1765,9 +1771,11 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Search for Application Ref Number for re-submit
     And I Verify display of REGISTRATION FOR TEA GROWERS Page
     And I Click on Save and Continue
-    And I Verify Upload Required Documents Page is displayed
+    And I Verify Display of Particulars of Family Beneficiaries Page
     And I Click on Save and Continue
-    And I Verify Terms and Conditions Page
+    And I Verify Display of Particulars for Registration of Tea Plantation
+    And I Click on Save and Continue
+    And I Verify Declaration Page for REGISTRATION FOR TEA GROWER
     And I Click on Submit Application "<Confirmation>"
     And I Verify Success message for application submitted
     And I Sign Out as Front Registered User
@@ -1859,21 +1867,8 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Save Particulars of Family and Beneficiaries
     And I Click on Save and Continue
     And I Verify Display of Livestock Activity
-    And I Click on Add Livestock Activity
-    And I Verify Display of Particulars for Livestock Activity Table
-    And I Select Species "<Spicies>"
-    And I Input Number of Male and Female "<Male_Female_Number>"
-    And I Input Total Heads "<Total_Heads>"
+    And I Input Number of Cow Female "<Male_Female_Number>"
     And I Select Reason "<Reason>"
-    And I Save Livestock Activity
-    And I Click on Save and Continue
-    And I Verify Display of Particulars for Cattle Page
-    And I Click on Add Particular of Cattle
-    And I Verify Display of Particulars for Cattle Table
-    And I Input Microchip Number "<Microchip_No>"
-    And I Select Cattle Sex "<Cattle_Sex>"
-    And I Select Cattle Age "<Cattle_Age>"
-    And I Save Particulars for Cattle
     And I Click on Save and Continue
     And I Verify Upload Required Documents Page is displayed
     And I Upload Copy of National Identify Card (ID) "<Upload_test>"
@@ -1889,7 +1884,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Click on Add Additional Document
     And I Input Additional Document Name "<Additional_Doc_Name>"
     And I Verify Success message for adding Additional Document Name
-    And I Upload Additional Document "<Upload_test>"
+    And I Upload Additional Document for small breeder "<Upload_test>"
     And I Verify for Document Upload Success Message
     And I Click on Save and Continue
     And I Verify Declaration Page for REGISTRATION FOR SMALL BREEDERS
@@ -1900,7 +1895,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Input Personal Bank Account Number Agro-Processing Enterprise "<Bank_Account_No>"
     And I Click on Submit Application "<Confirmation>"
     And I Verify Success message for application submitted for Small Breeders Registration
-    And I Click on Cancel button not to proceed with another registration
+#    And I Click on Cancel button not to proceed with another registration
     And I Verify Application Status "<App_status>"
     And I Verify Payment Status "<Payment_Status>"
     And I Copy Application Number
@@ -2020,9 +2015,13 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Search for Application Ref Number for re-submit
     And I Verify display of REGISTRATION FOR SMALL BREEDERS page
     And I Click on Save and Continue
+    And I Verify Display of Particulars of Family Beneficiaries Page
+    And I Click on Save and Continue
+    And I Verify Display of Livestock Activity
+    And I Click on Save and Continue
     And I Verify Upload Required Documents Page is displayed
     And I Click on Save and Continue
-    And I Verify Terms and Conditions Page
+    And I Verify Declaration Page for REGISTRATION FOR SMALL BREEDERS
     And I Click on Submit Application "<Confirmation>"
     And I Verify Success message for application submitted
     And I Sign Out as Front Registered User
@@ -2115,21 +2114,8 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Save Particulars of Family and Beneficiaries
     And I Click on Save and Continue
     And I Verify Display of Livestock Activity
-    And I Click on Add Livestock Activity
-    And I Verify Display of Particulars for Livestock Activity Table
-    And I Select Species "<Spicies>"
-    And I Input Number of Male and Female "<Male_Female_Number>"
-    And I Input Total Heads "<Total_Heads>"
+    And I Input Number of Cow Female "<Male_Female_Number>"
     And I Select Reason "<Reason>"
-    And I Save Livestock Activity
-    And I Click on Save and Continue
-    And I Verify Display of Particulars for Cattle Page
-    And I Click on Add Particular of Cattle
-    And I Verify Display of Particulars for Cattle Table
-    And I Input Microchip Number "<Microchip_No>"
-    And I Select Cattle Sex "<Cattle_Sex>"
-    And I Select Cattle Age "<Cattle_Age>"
-    And I Save Particulars for Cattle
     And I Click on Save and Continue
     And I Verify Upload Required Documents Page is displayed
     And I Upload Copy of National Identify Card (ID) "<Upload_test>"
@@ -2145,7 +2131,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Click on Add Additional Document
     And I Input Additional Document Name "<Additional_Doc_Name>"
     And I Verify Success message for adding Additional Document Name
-    And I Upload Additional Document "<Upload_test>"
+    And I Upload Additional Document for small breeder "<Upload_test>"
     And I Verify for Document Upload Success Message
     And I Click on Save and Continue
     And I Verify Declaration Page for REGISTRATION FOR SMALL BREEDERS
@@ -2156,7 +2142,7 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Input Personal Bank Account Number Agro-Processing Enterprise "<Bank_Account_No>"
     And I Click on Submit Application "<Confirmation>"
     And I Verify Success message for application submitted for Small Breeders Registration
-    And I Click on Cancel button not to proceed with another registration
+#    And I Click on Cancel button not to proceed with another registration
     And I Verify Application Status "<App_status>"
     And I Verify Payment Status "<Payment_Status>"
     And I Copy Application Number
@@ -2263,9 +2249,13 @@ Feature: User Story 13280 - Back Office Process for Registration
     And I Search for Application Ref Number for re-submit
     And I Verify display of REGISTRATION FOR SMALL BREEDERS page
     And I Click on Save and Continue
+    And I Verify Display of Particulars of Family Beneficiaries Page
+    And I Click on Save and Continue
+    And I Verify Display of Livestock Activity
+    And I Click on Save and Continue
     And I Verify Upload Required Documents Page is displayed
     And I Click on Save and Continue
-    And I Verify Terms and Conditions Page
+    And I Verify Declaration Page for REGISTRATION FOR SMALL BREEDERS
     And I Click on Submit Application "<Confirmation>"
     And I Verify Success message for application submitted
     And I Sign Out as Front Registered User

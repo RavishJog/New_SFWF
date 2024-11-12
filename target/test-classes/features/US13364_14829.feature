@@ -109,17 +109,16 @@ Feature: User Story 13361 and 14829 -Form - Fertiliser Subsidy Scheme (FSS) and 
     And I Click to view All Programmes
     And I Search for Programmes Ref Number as a Back Office User
     And I Click to view Programmes
-    And I Click on Action Button
     And I Click on Site Report Tab
-    And I Select Bonafide Planter "<Bonafide>"
-    And I Input Site visit remarks "<Remarks>"
-    And I Upload Site Report "<Upload_test>"
-    And I Verify for Document Upload Success Message for Site Visit
+    And I Input Site Visit Information
+
+
     And I Click on Save Button
     And I Verify Site Visit saved success message
     And I Click on Action Button
+
     And I Select Assigned
-    And I Select WPO
+    And I Select PWO Assigned
     And I Input Remarks "<Remarks>"
     And I Click on Save Actions
     And I Verify for success message for assigning

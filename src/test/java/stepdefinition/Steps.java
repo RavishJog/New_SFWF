@@ -503,6 +503,8 @@ public class Steps extends Utility {
 
     @And("^I Verify display of Registration Type Page$")
     public void iVerifyDisplayOfRegistrationTypePage() {
+        WebDriverWait w = new WebDriverWait(driver, 120);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h1[contains(.,'Registration Type')]")));
         try {
             Front_Home_page.Registration_type_page(driver);
         } catch (Exception e) {
