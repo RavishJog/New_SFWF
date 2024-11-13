@@ -44,7 +44,7 @@ public class Back_office_main_page {
     }
 
     //Object for Finance - Manage Cashier - Click
-    private static By lbl_Manage_cashier = By.xpath("//a[contains(.,'Click')]");
+    private static By lbl_Manage_cashier = By.xpath("(//a[contains(.,'Click')])[2]");
     public static WebElement Manage_cashier(WebDriver driver) {
         element = driver.findElement(lbl_Manage_cashier);
         return element;
@@ -360,9 +360,23 @@ public class Back_office_main_page {
     }
 
     //Object for Success message for saved site visit
-    private static By lbl_Site_visit_saved_success_message = By.xpath("(//span[contains(.,'successfully saved!')])");
+    private static By lbl_Site_visit_saved_success_message = By.xpath("//span[contains(.,'Changes successfully saved!')]");
     public static WebElement Site_visit_saved_success_message(WebDriver driver) {
         element = driver.findElement(lbl_Site_visit_saved_success_message);
+        return element;
+    }
+
+    //Object for Success message for saved site visit for Small Breeder
+    private static By lbl_Site_visit_saved_success_message_sb = By.xpath("(//span[contains(.,'Changes successfully saved!')])[5]");
+    public static WebElement Site_visit_saved_success_message_sb(WebDriver driver) {
+        element = driver.findElement(lbl_Site_visit_saved_success_message_sb);
+        return element;
+    }
+
+    //Object for Success message for saved site visit for Small Planter
+    private static By lbl_Site_visit_saved_success_message_sf = By.xpath("(//span[contains(.,'Changes successfully saved!')])[6]");
+    public static WebElement Site_visit_saved_success_message_sf(WebDriver driver) {
+        element = driver.findElement(lbl_Site_visit_saved_success_message_sf);
         return element;
     }
 
