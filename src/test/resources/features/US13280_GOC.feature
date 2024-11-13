@@ -1024,8 +1024,8 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
     And I Verify for Bonafide Document Upload Success Message
     And I Add Information for Crop Details in Section One
     And I Select Drip Irrigation Facility in Section Two
-    And I Click on Save Button
-    And I Verify Site Visit saved success message
+    And I Click on Save Button for Small Planter Site Visit
+    And I Verify Site Visit saved success message for Small Planter
     And I Click on Action Button
     And I Select Assigned (For Small Planters)
     And I Select WPO
@@ -1248,8 +1248,8 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
     And I Verify for Bonafide Document Upload Success Message
     And I Add Information for Crop Details in Section One
     And I Select Drip Irrigation Facility in Section Two
-    And I Click on Save Button
-    And I Verify Site Visit saved success message
+    And I Click on Save Button for Small Planter Site Visit
+    And I Verify Site Visit saved success message for Small Planter
     And I Click on Action Button
     And I Select Assigned (For Small Planters)
     And I Select WPO
@@ -1580,7 +1580,7 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
 
 
 #Scenario8
-  @Approval_by_BO_Payment_online_for_Tea_grower @Smoke_online
+  @Approval_by_BO_Payment_online_for_Tea_grower @Approval_by_BO_Payment_online_for_Tea_grower_GOC @Smoke_online
   Scenario Outline: Payment online for Registration as Tea Grower
     Given I am on SFWF Front Office Home Page GOC "<Browser>"
     When I Input Registered Maupass User's Username "<Username>" and Password "<FPassword>"
@@ -1942,8 +1942,8 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
     And I Upload Site Report "<Upload_test>"
     And I Verify for Document Upload Success Message
     And I Input Section One data "<Breeder_Type>"
-    And I Click on Save Button
-    And I Verify Site Visit saved success message
+    And I Click on Save Button for Small Breeder
+    And I Verify Site Visit saved success message for Small Breeder
     And I Click on Action Button
     And I Select Option Assigned
     And I Select WPO
@@ -2180,8 +2180,8 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
     And I Upload Site Report "<Upload_test>"
     And I Verify for Document Upload Success Message
     And I Input Section One data "<Breeder_Type>"
-    And I Click on Save Button
-    And I Verify Site Visit saved success message
+    And I Click on Save Button for Small Breeder
+    And I Verify Site Visit saved success message for Small Breeder
     And I Click on Action Button
     And I Select Option Assigned
     And I Select WPO

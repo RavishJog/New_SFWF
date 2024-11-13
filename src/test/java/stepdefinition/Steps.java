@@ -2259,7 +2259,9 @@ public class Steps extends Utility {
         Thread.sleep(1000);
         Back_office_main_page.Save_Back_office_users(driver).click();
         WebDriverWait w = new WebDriverWait(driver, 120);
-        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[contains(.,'successfully saved!')])")));
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//span[contains(.,'Changes successfully saved!')]")));
+
+
     }
 
     @And("^I Input Site visit remarks \"([^\"]*)\"$")
@@ -3133,7 +3135,7 @@ public class Steps extends Utility {
         Thread.sleep(1000);
         driver.findElement(By.xpath("//input[contains (@id, 'cropnName_filter')]")).sendKeys("Tea");
         Thread.sleep(1000);
-        driver.findElement(By.xpath("//li[contains (@id, 'cropnName_52')]")).click();
+        driver.findElement(By.xpath("//li[contains (@id, 'cropnName_3')]")).click();
         Thread.sleep(1000);
         driver.findElement(By.xpath("//label[contains (@id, 'accreageType_label')]")).click();
         Thread.sleep(1000);
@@ -3654,7 +3656,7 @@ public class Steps extends Utility {
             Thread.sleep(1000);
             Small_breeder.Cow_category_site_visit(driver).click();
             Thread.sleep(1000);
-            Small_breeder.Tag_no_microchip_no_site_visit(driver).sendKeys("123");
+            Small_breeder.Tag_no_microchip_no_site_visit(driver).sendKeys("ABC");
             Small_breeder.Tag_no_microchip_no_site_visit(driver).sendKeys(Keys.ENTER);
             Thread.sleep(1000);
             Small_breeder.No_of_animal_site_visit(driver).sendKeys("1");
@@ -3778,6 +3780,49 @@ public class Steps extends Utility {
     public void iInputSiteVisitInformation() {
 
 
+
+
+    }
+
+    @And("^I Click on Save Button for Small Planter Site Visit$")
+    public void iClickOnSaveButtonForSmallPlanterSiteVisit() throws InterruptedException {
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);", Back_office_main_page.Save_Back_office_users(driver));
+        Thread.sleep(1000);
+        Back_office_main_page.Save_Back_office_users(driver).click();
+        WebDriverWait w = new WebDriverWait(driver, 120);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[contains(.,'Changes successfully saved!')])[6]")));
+
+
+    }
+
+    @And("^I Verify Site Visit saved success message for Small Planter$")
+    public void iVerifySiteVisitSavedSuccessMessageForSmallPlanter() {
+        try {
+            Back_office_main_page.Site_visit_saved_success_message_sf(driver);
+        } catch (Exception e) {
+            System.out.println("Site Visit saved success message did not appear");
+            Assert.fail("Site Visit saved success message did not appear");
+        }
+    }
+
+    @And("^I Verify Site Visit saved success message for Small Breeder$")
+    public void iVerifySiteVisitSavedSuccessMessageForSmallBreeder() {
+            try {
+                Back_office_main_page.Site_visit_saved_success_message_sb(driver);
+            } catch (Exception e) {
+                System.out.println("Site Visit saved success message did not appear");
+                Assert.fail("Site Visit saved success message did not appear");
+            }
+
+    }
+
+    @And("^I Click on Save Button for Small Breeder$")
+    public void iClickOnSaveButtonForSmallBreeder() throws InterruptedException {
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);", Back_office_main_page.Save_Back_office_users(driver));
+        Thread.sleep(1000);
+        Back_office_main_page.Save_Back_office_users(driver).click();
+        WebDriverWait w = new WebDriverWait(driver, 120);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[contains(.,'Changes successfully saved!')])[5]")));
 
 
     }
