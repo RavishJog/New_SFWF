@@ -3,28 +3,16 @@
     "comments": [
       {
         "line": 1,
-        "value": "#User Story Sign In"
-      },
-      {
-        "line": 2,
-        "value": "# As an Back Office User"
-      },
-      {
-        "line": 3,
-        "value": "# I want to Sign In"
-      },
-      {
-        "line": 4,
-        "value": "# So that I can access the SFWF Backoffice Portal"
+        "value": "#User Story Back Office Tests"
       }
     ],
-    "line": 8,
+    "line": 4,
     "elements": [
       {
         "before": [
           {
             "result": {
-              "duration": 125900,
+              "duration": 159100,
               "status": "passed"
             },
             "match": {
@@ -33,7 +21,7 @@
           },
           {
             "result": {
-              "duration": 38000,
+              "duration": 41800,
               "status": "passed"
             },
             "match": {
@@ -41,14 +29,14 @@
             }
           }
         ],
-        "line": 25,
-        "name": "Login into SFWF Backoffice Portal with correct credentials",
+        "line": 315,
+        "name": "Approval for Payment at counter for Registration as Agro-Processing Enterprise-Application form",
         "description": "",
-        "id": "login-into-sfwf-backoffice-portal;login-into-sfwf-backoffice-portal-with-correct-credentials;;2",
+        "id": "back-office-tests;approval-for-payment-at-counter-for-registration-as-agro-processing-enterprise-application-form;;2",
         "after": [
           {
             "result": {
-              "duration": 2149433500,
+              "duration": 1105455100,
               "status": "passed"
             },
             "match": {
@@ -57,7 +45,7 @@
           },
           {
             "result": {
-              "duration": 60900,
+              "duration": 59600,
               "status": "passed"
             },
             "match": {
@@ -70,441 +58,121 @@
         "steps": [
           {
             "result": {
-              "duration": 7809085300,
+              "duration": 6578741300,
               "status": "passed"
             },
-            "line": 14,
-            "name": "I am on SFWF Back Office Home Page GOC \"Chrome\"",
+            "line": 253,
+            "name": "I am on SFWF Front Office Home Page GOC \"Chrome\"",
             "match": {
               "arguments": [
                 {
                   "val": "Chrome",
-                  "offset": 40
+                  "offset": 41
                 }
               ],
-              "location": "Steps.iAmOnSFWFBackOfficeHomePageGOC(String)"
+              "location": "Steps.iAmOnSFWFFrontOfficeHomePageGOC(String)"
             },
             "matchedColumns": [
               0
             ],
-            "keyword": "And "
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 163760400,
+              "duration": 8353460300,
               "status": "passed"
             },
-            "line": 15,
-            "name": "I Input WO-WA Username \"Suraj_Admin1\" and Password \"Admin@123\"",
+            "line": 254,
+            "name": "I Input Registered Maupass User\u0027s Username \"Suraj_Jo\" and Password \"Admin@123\"",
             "match": {
               "arguments": [
                 {
-                  "val": "Suraj_Admin1",
-                  "offset": 24
+                  "val": "Suraj_Jo",
+                  "offset": 44
                 },
                 {
                   "val": "Admin@123",
-                  "offset": 52
+                  "offset": 68
                 }
               ],
-              "location": "Steps.iInputWOWAUsernameAndPassword(String,String)"
+              "location": "Steps.iInputRegisteredMaupassUserSUsernameAndPassword(String,String)"
             },
             "matchedColumns": [
               1,
               2
             ],
-            "keyword": "And "
+            "keyword": "When "
           },
           {
             "result": {
-              "duration": 3225448600,
+              "duration": 54599700,
               "status": "passed"
             },
-            "line": 16,
-            "name": "I Click on Sign In button",
+            "line": 255,
+            "name": "I Click on Sign In button in Maupass",
             "match": {
-              "location": "Steps.iClickOnSignInButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 77345200,
-              "status": "passed"
-            },
-            "line": 17,
-            "name": "I Verify Successful Login",
-            "match": {
-              "location": "Steps.IVerifySuccessfulLogin()"
+              "location": "Steps.iClickOnSignInButtonInMaupass()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 4391363300,
+              "duration": 1524391100,
               "status": "passed"
             },
-            "line": 18,
-            "name": "I Sign Out",
+            "line": 256,
+            "name": "I Verify Applicant\u0027s Successful Login",
             "match": {
-              "location": "Steps.iSignOut()"
+              "location": "Steps.iVerifyApplicantSSuccessfulLogin()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 36006600,
+              "duration": 447544800,
               "status": "passed"
             },
-            "line": 19,
-            "name": "I Verify Successful Sign Out",
+            "line": 257,
+            "name": "I Click on Register as Farmer",
             "match": {
-              "location": "Steps.iVerifySuccessfulSignOut()"
+              "location": "Steps.iClickOnRegisterAsFarmer()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 3267077800,
+              "duration": 12044000,
               "status": "passed"
             },
-            "line": 20,
-            "name": "I click on forget password",
+            "line": 258,
+            "name": "I Verify that User is directed to My Application Page",
             "match": {
-              "location": "Steps.iClickOnForgetPassword()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 23841100,
-              "status": "passed"
-            },
-            "line": 21,
-            "name": "I Verify Forget Password Page",
-            "match": {
-              "location": "Steps.iVerifyForgetPasswordPage()"
+              "location": "Steps.iVerifyThatUserIsDirectedToMyApplicationPage()"
             },
             "keyword": "And "
           }
         ],
         "tags": [
           {
-            "line": 7,
-            "name": "@Main_feature"
+            "line": 3,
+            "name": "@Back_Office_tests"
           },
           {
-            "line": 7,
-            "name": "@Smoke_Back_office_login"
-          },
-          {
-            "line": 11,
-            "name": "@Sign_in_correct_credentials"
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 20900,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Steps.before(Scenario)"
-            }
-          },
-          {
-            "result": {
-              "duration": 11400,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Steps.setUpDriver()"
-            }
-          }
-        ],
-        "line": 40,
-        "name": "Login into SFWF Backoffice Portal with incorrect credentials",
-        "description": "",
-        "id": "login-into-sfwf-backoffice-portal;login-into-sfwf-backoffice-portal-with-incorrect-credentials;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 1014731700,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Steps.setup()"
-            }
-          },
-          {
-            "result": {
-              "duration": 11300,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Steps.tearDown(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 5231238900,
-              "status": "passed"
-            },
-            "line": 33,
-            "name": "I am on SFWF Back Office Home Page GOC \"Chrome\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Chrome",
-                  "offset": 40
-                }
-              ],
-              "location": "Steps.iAmOnSFWFBackOfficeHomePageGOC(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 314339700,
-              "status": "passed"
-            },
-            "line": 34,
-            "name": "I Input WO-WA Username \"Suraj_Admin1\" and Password \"Admin@1\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Suraj_Admin1",
-                  "offset": 24
-                },
-                {
-                  "val": "Admin@1",
-                  "offset": 52
-                }
-              ],
-              "location": "Steps.iInputWOWAUsernameAndPassword(String,String)"
-            },
-            "matchedColumns": [
-              1,
-              2
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 361692800,
-              "status": "passed"
-            },
-            "line": 35,
-            "name": "I Click on Sign In button",
-            "match": {
-              "location": "Steps.iClickOnSignInButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 603259000,
-              "status": "passed"
-            },
-            "line": 36,
-            "name": "I Verify Bad Credential Message \"Bad Credential\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Bad Credential",
-                  "offset": 33
-                }
-              ],
-              "location": "Steps.iVerifyBadCredentialMessage(String)"
-            },
-            "matchedColumns": [
-              3
-            ],
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "line": 7,
-            "name": "@Main_feature"
-          },
-          {
-            "line": 7,
-            "name": "@Smoke_Back_office_login"
-          },
-          {
-            "line": 30,
-            "name": "@Sign_in_incorrect_credentials"
-          }
-        ]
-      },
-      {
-        "before": [
-          {
-            "result": {
-              "duration": 8500,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Steps.before(Scenario)"
-            }
-          },
-          {
-            "result": {
-              "duration": 7700,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Steps.setUpDriver()"
-            }
-          }
-        ],
-        "line": 41,
-        "name": "Login into SFWF Backoffice Portal with incorrect credentials",
-        "description": "",
-        "id": "login-into-sfwf-backoffice-portal;login-into-sfwf-backoffice-portal-with-incorrect-credentials;;3",
-        "after": [
-          {
-            "result": {
-              "duration": 1455824800,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Steps.setup()"
-            }
-          },
-          {
-            "result": {
-              "duration": 26500,
-              "status": "passed"
-            },
-            "match": {
-              "location": "Steps.tearDown(Scenario)"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 2945056700,
-              "status": "passed"
-            },
-            "line": 33,
-            "name": "I am on SFWF Back Office Home Page GOC \"Chrome\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Chrome",
-                  "offset": 40
-                }
-              ],
-              "location": "Steps.iAmOnSFWFBackOfficeHomePageGOC(String)"
-            },
-            "matchedColumns": [
-              0
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 315374400,
-              "status": "passed"
-            },
-            "line": 34,
-            "name": "I Input WO-WA Username \"Suraj_Admi\" and Password \"Admin@123\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Suraj_Admi",
-                  "offset": 24
-                },
-                {
-                  "val": "Admin@123",
-                  "offset": 50
-                }
-              ],
-              "location": "Steps.iInputWOWAUsernameAndPassword(String,String)"
-            },
-            "matchedColumns": [
-              1,
-              2
-            ],
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 382674400,
-              "status": "passed"
-            },
-            "line": 35,
-            "name": "I Click on Sign In button",
-            "match": {
-              "location": "Steps.iClickOnSignInButton()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 616030200,
-              "status": "passed"
-            },
-            "line": 36,
-            "name": "I Verify Bad Credential Message \"Bad Credential\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Bad Credential",
-                  "offset": 33
-                }
-              ],
-              "location": "Steps.iVerifyBadCredentialMessage(String)"
-            },
-            "matchedColumns": [
-              3
-            ],
-            "keyword": "And "
-          }
-        ],
-        "tags": [
-          {
-            "line": 7,
-            "name": "@Main_feature"
-          },
-          {
-            "line": 7,
-            "name": "@Smoke_Back_office_login"
-          },
-          {
-            "line": 30,
-            "name": "@Sign_in_incorrect_credentials"
+            "line": 250,
+            "name": "@Jenkins_Local_Test"
           }
         ]
       }
     ],
-    "name": "Login into SFWF Backoffice Portal",
+    "name": "Back Office Tests",
     "description": "",
-    "id": "login-into-sfwf-backoffice-portal",
+    "id": "back-office-tests",
     "keyword": "Feature",
-    "uri": "features/Sign_in_backoffice.feature",
+    "uri": "features/Back_office_tests.feature",
     "tags": [
       {
-        "line": 7,
-        "name": "@Main_feature"
-      },
-      {
-        "line": 7,
-        "name": "@Smoke_Back_office_login"
+        "line": 3,
+        "name": "@Back_Office_tests"
       }
     ]
   }
