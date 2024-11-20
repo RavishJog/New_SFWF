@@ -53,7 +53,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Nov 20, 2024 03:52:01 PM</span>
+                    <span class='label suite-start-time blue darken-3'>Nov 20, 2024 04:03:05 PM</span>
 				</a>
 			</li>
 			<li>
@@ -91,10 +91,8 @@
 					<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@Main_feature</a></li>
-					<li><a href='#'>@Smoke_Back_office_login</a></li>
-					<li><a href='#'>@Sign_in_correct_credentials</a></li>
-					<li><a href='#'>@Sign_in_incorrect_credentials</a></li>
+					<li><a href='#'>@Back_Office_tests</a></li>
+					<li><a href='#'>@Jenkins_Local_Test</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -157,7 +155,7 @@
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>3</span> scenario(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> scenario(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -172,7 +170,7 @@
 					<canvas id='grandchild-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>16</span> step(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>6</span> step(s) passed</span>
 				</div>
 				<div class='block text-small'>
 					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -191,129 +189,51 @@
 				
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Login into SFWF Backoffice Portal</span>
-						<span class='test-time'>Nov 20, 2024 03:52:01 PM</span>
+						<span class='test-name'>Back Office Tests</span>
+						<span class='test-time'>Nov 20, 2024 04:03:05 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='scenariooutline node' test-id='2' status='pass'>
-	<span class='duration right label'>0h 0m 19s+65ms</span>
+	<span class='duration right label'>0h 0m 17s+45ms</span>
 	<div class='desc'>
 		<b>ScenarioOutline</b>
-		<span class="desc-text">Login into SFWF Backoffice Portal with correct credentials</span>
+		<span class="desc-text">Approval for Payment at counter for Registration as Agro-Processing Enterprise-Application form</span>
 	</div>
 	<ul class='steps'>
 		<li test-id='3' class='node scenario pass' status='pass'>
 			<div class='category-list'>
-				<span class='category label white-text'>@Main_feature</span>
-				<span class='category label white-text'>@Smoke_Back_office_login</span>
-				<span class='category label white-text'>@Sign_in_correct_credentials</span>
+				<span class='category label white-text'>@Back_Office_tests</span>
+				<span class='category label white-text'>@Jenkins_Local_Test</span>
 			</div>
 			
 			<b>Scenario</b>
 			
-			<span class="bdd-step-name">Login into SFWF Backoffice Portal with correct credentials</span>
+			<span class="bdd-step-name">Approval for Payment at counter for Registration as Agro-Processing Enterprise-Application form</span>
 			
 				<ul class='steps'>
-					<li test-id='4' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I am on SFWF Back Office Home Page GOC "Chrome"</span>
+					<li test-id='4' class='node given pass' status='pass'><b>Given</b>
+						<span class="bdd-step-name">Given I am on SFWF Front Office Home Page GOC "Chrome"</span>
 							<div class='pre'>passed</div>
 					</li>
-					<li test-id='5' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Input WO-WA Username "Suraj_Admin1" and Password "Admin@123"</span>
+					<li test-id='5' class='node when pass' status='pass'><b>When</b>
+						<span class="bdd-step-name">When I Input Registered Maupass User's Username "Suraj_Jo" and Password "Admin@123"</span>
 							<div class='pre'>passed</div>
 					</li>
 					<li test-id='6' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Click on Sign In button</span>
+						<span class="bdd-step-name">And I Click on Sign In button in Maupass</span>
 							<div class='pre'>passed</div>
 					</li>
 					<li test-id='7' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Verify Successful Login</span>
+						<span class="bdd-step-name">And I Verify Applicant's Successful Login</span>
 							<div class='pre'>passed</div>
 					</li>
 					<li test-id='8' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Sign Out</span>
+						<span class="bdd-step-name">And I Click on Register as Farmer</span>
 							<div class='pre'>passed</div>
 					</li>
 					<li test-id='9' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Verify Successful Sign Out</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='10' class='node then pass' status='pass'><b>Then</b>
-						<span class="bdd-step-name">Then I click on forget password</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='11' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Verify Forget Password Page</span>
-							<div class='pre'>passed</div>
-					</li>
-				</ul>
-		</li>
-	</ul>
-</div>
-<div class='scenariooutline node' test-id='12' status='pass'>
-	<span class='duration right label'>0h 0m 11s+804ms</span>
-	<div class='desc'>
-		<b>ScenarioOutline</b>
-		<span class="desc-text">Login into SFWF Backoffice Portal with incorrect credentials</span>
-	</div>
-	<ul class='steps'>
-		<li test-id='13' class='node scenario pass' status='pass'>
-			<div class='category-list'>
-				<span class='category label white-text'>@Main_feature</span>
-				<span class='category label white-text'>@Smoke_Back_office_login</span>
-				<span class='category label white-text'>@Sign_in_incorrect_credentials</span>
-			</div>
-			
-			<b>Scenario</b>
-			
-			<span class="bdd-step-name">Login into SFWF Backoffice Portal with incorrect credentials</span>
-			
-				<ul class='steps'>
-					<li test-id='14' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I am on SFWF Back Office Home Page GOC "Chrome"</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='15' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Input WO-WA Username "Suraj_Admin1" and Password "Admin@1"</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='16' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Click on Sign In button</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='17' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Verify Bad Credential Message "Bad Credential"</span>
-							<div class='pre'>passed</div>
-					</li>
-				</ul>
-		</li>
-		<li test-id='18' class='node scenario pass' status='pass'>
-			<div class='category-list'>
-				<span class='category label white-text'>@Main_feature</span>
-				<span class='category label white-text'>@Smoke_Back_office_login</span>
-				<span class='category label white-text'>@Sign_in_incorrect_credentials</span>
-			</div>
-			
-			<b>Scenario</b>
-			
-			<span class="bdd-step-name">Login into SFWF Backoffice Portal with incorrect credentials</span>
-			
-				<ul class='steps'>
-					<li test-id='19' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I am on SFWF Back Office Home Page GOC "Chrome"</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='20' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Input WO-WA Username "Suraj_Admi" and Password "Admin@123"</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='21' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Click on Sign In button</span>
-							<div class='pre'>passed</div>
-					</li>
-					<li test-id='22' class='node and pass' status='pass'><b>And</b>
-						<span class="bdd-step-name">And I Verify Bad Credential Message "Bad Credential"</span>
+						<span class="bdd-step-name">And I Verify that User is directed to My Application Page</span>
 							<div class='pre'>passed</div>
 					</li>
 				</ul>
@@ -374,139 +294,7 @@
 				
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@Main_feature</span>
-						<span class='category-status right'>
-							<span class='label pass'>4</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 4</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Nov 20, 2024 03:52:01 PM</td>
-										<td class='linked' test-id='1'>Login into SFWF Backoffice Portal</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Nov 20, 2024 03:52:01 PM</td>
-										<td class='linked' test-id='3'>Login into SFWF Backoffice Portal.Login into SFWF Backoffice Portal with correct credentials.Login into SFWF Backoffice Portal with correct credentials</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Nov 20, 2024 03:52:22 PM</td>
-										<td class='linked' test-id='13'>Login into SFWF Backoffice Portal.Login into SFWF Backoffice Portal with incorrect credentials.Login into SFWF Backoffice Portal with incorrect credentials</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Nov 20, 2024 03:52:30 PM</td>
-										<td class='linked' test-id='18'>Login into SFWF Backoffice Portal.Login into SFWF Backoffice Portal with incorrect credentials.Login into SFWF Backoffice Portal with incorrect credentials</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@Smoke_Back_office_login</span>
-						<span class='category-status right'>
-							<span class='label pass'>4</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 4</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Nov 20, 2024 03:52:01 PM</td>
-										<td class='linked' test-id='1'>Login into SFWF Backoffice Portal</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Nov 20, 2024 03:52:01 PM</td>
-										<td class='linked' test-id='3'>Login into SFWF Backoffice Portal.Login into SFWF Backoffice Portal with correct credentials.Login into SFWF Backoffice Portal with correct credentials</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Nov 20, 2024 03:52:22 PM</td>
-										<td class='linked' test-id='13'>Login into SFWF Backoffice Portal.Login into SFWF Backoffice Portal with incorrect credentials.Login into SFWF Backoffice Portal with incorrect credentials</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Nov 20, 2024 03:52:30 PM</td>
-										<td class='linked' test-id='18'>Login into SFWF Backoffice Portal.Login into SFWF Backoffice Portal with incorrect credentials.Login into SFWF Backoffice Portal with incorrect credentials</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@Sign_in_correct_credentials</span>
-						<span class='category-status right'>
-							<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-					
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Nov 20, 2024 03:52:01 PM</td>
-										<td class='linked' test-id='3'>Login into SFWF Backoffice Portal.Login into SFWF Backoffice Portal with correct credentials.Login into SFWF Backoffice Portal with correct credentials</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@Sign_in_incorrect_credentials</span>
+						<span class='category-name'>@Back_Office_tests</span>
 						<span class='category-status right'>
 							<span class='label pass'>2</span>
 						</span>
@@ -529,13 +317,47 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Nov 20, 2024 03:52:22 PM</td>
-										<td class='linked' test-id='13'>Login into SFWF Backoffice Portal.Login into SFWF Backoffice Portal with incorrect credentials.Login into SFWF Backoffice Portal with incorrect credentials</td>
+										<td>Nov 20, 2024 04:03:05 PM</td>
+										<td class='linked' test-id='1'>Back Office Tests</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Nov 20, 2024 03:52:30 PM</td>
-										<td class='linked' test-id='18'>Login into SFWF Backoffice Portal.Login into SFWF Backoffice Portal with incorrect credentials.Login into SFWF Backoffice Portal with incorrect credentials</td>
+										<td>Nov 20, 2024 04:03:05 PM</td>
+										<td class='linked' test-id='3'>Back Office Tests.Approval for Payment at counter for Registration as Agro-Processing Enterprise-Application form.Approval for Payment at counter for Registration as Agro-Processing Enterprise-Application form</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@Jenkins_Local_Test</span>
+						<span class='category-status right'>
+							<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+					
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 20, 2024 04:03:05 PM</td>
+										<td class='linked' test-id='3'>Back Office Tests.Approval for Payment at counter for Registration as Agro-Processing Enterprise-Application form.Approval for Payment at counter for Registration as Agro-Processing Enterprise-Application form</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -570,31 +392,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>3</div>
+					<div class='panel-lead'>1</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>16</div>
+					<div class='panel-lead'>6</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Nov 20, 2024 03:52:01 PM</div>
+					<div class='panel-lead'>Nov 20, 2024 04:03:05 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Nov 20, 2024 03:52:35 PM</div>
+			 		<div class='panel-lead'>Nov 20, 2024 04:03:23 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>34,589ms</div>
+					<div class='panel-lead'>18,255ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -626,35 +448,17 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@Main_feature</td>
-							<td>4</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@Smoke_Back_office_login</td>
-							<td>4</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@Sign_in_correct_credentials</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@Sign_in_incorrect_credentials</td>
+							<td>@Back_Office_tests</td>
 							<td>2</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@Jenkins_Local_Test</td>
+							<td>1</td>
 							<td>0</td>
 							<td>0</td>
 							<td>
@@ -674,8 +478,6 @@
 		
 		<div class='card-panel'>
 				Sample test runner output message
-				Sample test runner output message
-				Sample test runner output message
 		</div>
 	</div>
 </div>
@@ -693,7 +495,7 @@
 				skipParent: 0,
 				exceptionsParent: 0,
 				
-				passChild: 3,
+				passChild: 1,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
@@ -702,7 +504,7 @@
 				infoChild: 0,
 				exceptionsChild: 0,
 				
-				passGrandChild: 16,
+				passGrandChild: 6,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
