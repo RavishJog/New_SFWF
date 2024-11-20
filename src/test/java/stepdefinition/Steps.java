@@ -160,7 +160,7 @@ public class Steps extends Utility {
             System.out.println("Sign in to SFWF Label did not appear");
             Assert.fail("Sign in to SFWF Label did not appear");
         }
-        tearDown();
+
 
     }
 
