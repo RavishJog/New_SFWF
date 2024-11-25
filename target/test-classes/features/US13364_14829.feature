@@ -126,6 +126,23 @@ Feature: User Story 13361 and 14829 -Form - Fertiliser Subsidy Scheme (FSS) and 
     And I Sign Out
     And I Verify Successful Sign Out
 
+    #PWO
+    And I am on SFWF Back Office Home Page GOC "<Browser>"
+    And I Input TO Username "<PwoUsername>" and Password "<Password>"
+    And I Click on Sign In button
+    And I Verify Successful Login
+    And I Click on All Applications
+    And I Verify display of list of registrations page
+    And I Search for Application Ref Number as a Back Office User
+    And I Click to view Application
+    And I Click on Action Button
+    And I Select Assigned for Programmes
+    And I Select TO User
+    And I Input Remarks "<Remarks>"
+    And I Click on Save Actions
+    And I Verify for success message for assigning
+    And I Sign Out
+    And I Verify Successful Sign Out
 
     Examples:
       |Browser|Username |FPassword      |Password |PwoUsername|WpoUsername|WOUsername |TOUsername|Farmer_Type  |Date_of_Accident|Time_of_Accident|Place_of_Accident|Cause_of_Accident|Kind_of_Work |Particulars_Statement|Medical_Cost|Accident_Related|Additional_Medical_Charges_option|Additional_Medical_Charges_amount|Additional_Doc_Name|Upload_test                        |Confirmation|Remarks        |

@@ -619,8 +619,94 @@ formatter.step({
   "name": "I Verify Successful Sign Out",
   "keyword": "And "
 });
-formatter.examples({
+formatter.step({
+  "comments": [
+    {
+      "line": 129,
+      "value": "#PWO"
+    }
+  ],
   "line": 130,
+  "name": "I am on SFWF Back Office Home Page GOC \"\u003cBrowser\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 131,
+  "name": "I Input TO Username \"\u003cPwoUsername\u003e\" and Password \"\u003cPassword\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 132,
+  "name": "I Click on Sign In button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 133,
+  "name": "I Verify Successful Login",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 134,
+  "name": "I Click on All Applications",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 135,
+  "name": "I Verify display of list of registrations page",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 136,
+  "name": "I Search for Application Ref Number as a Back Office User",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 137,
+  "name": "I Click to view Application",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 138,
+  "name": "I Click on Action Button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 139,
+  "name": "I Select Assigned for Programmes",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 140,
+  "name": "I Select TO User",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 141,
+  "name": "I Input Remarks \"\u003cRemarks\u003e\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 142,
+  "name": "I Click on Save Actions",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 143,
+  "name": "I Verify for success message for assigning",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 144,
+  "name": "I Sign Out",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 145,
+  "name": "I Verify Successful Sign Out",
+  "keyword": "And "
+});
+formatter.examples({
+  "line": 147,
   "name": "",
   "description": "",
   "id": "user-story-13361-and-14829--form---fertiliser-subsidy-scheme-(fss)-and-workflow;application-for-group-personal-accident-cover-(gpac)-–-claim-and-workflow;",
@@ -651,7 +737,7 @@ formatter.examples({
         "Confirmation",
         "Remarks"
       ],
-      "line": 131,
+      "line": 148,
       "id": "user-story-13361-and-14829--form---fertiliser-subsidy-scheme-(fss)-and-workflow;application-for-group-personal-accident-cover-(gpac)-–-claim-and-workflow;;1"
     },
     {
@@ -680,22 +766,22 @@ formatter.examples({
         "Yes",
         "This is a Test"
       ],
-      "line": 132,
+      "line": 149,
       "id": "user-story-13361-and-14829--form---fertiliser-subsidy-scheme-(fss)-and-workflow;application-for-group-personal-accident-cover-(gpac)-–-claim-and-workflow;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 114900,
+  "duration": 83500,
   "status": "passed"
 });
 formatter.before({
-  "duration": 26600,
+  "duration": 25500,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 132,
+  "line": 149,
   "name": "Application for Group Personal Accident Cover (GPAC) – Claim and Workflow",
   "description": "",
   "id": "user-story-13361-and-14829--form---fertiliser-subsidy-scheme-(fss)-and-workflow;application-for-group-personal-accident-cover-(gpac)-–-claim-and-workflow;;2",
@@ -1374,6 +1460,102 @@ formatter.step({
   "name": "I Verify Successful Sign Out",
   "keyword": "And "
 });
+formatter.step({
+  "comments": [
+    {
+      "line": 129,
+      "value": "#PWO"
+    }
+  ],
+  "line": 130,
+  "name": "I am on SFWF Back Office Home Page GOC \"Chrome\"",
+  "matchedColumns": [
+    0
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 131,
+  "name": "I Input TO Username \"PWO\" and Password \"Admin@123\"",
+  "matchedColumns": [
+    3,
+    4
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 132,
+  "name": "I Click on Sign In button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 133,
+  "name": "I Verify Successful Login",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 134,
+  "name": "I Click on All Applications",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 135,
+  "name": "I Verify display of list of registrations page",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 136,
+  "name": "I Search for Application Ref Number as a Back Office User",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 137,
+  "name": "I Click to view Application",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 138,
+  "name": "I Click on Action Button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 139,
+  "name": "I Select Assigned for Programmes",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 140,
+  "name": "I Select TO User",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 141,
+  "name": "I Input Remarks \"This is a Test\"",
+  "matchedColumns": [
+    22
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 142,
+  "name": "I Click on Save Actions",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 143,
+  "name": "I Verify for success message for assigning",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 144,
+  "name": "I Sign Out",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 145,
+  "name": "I Verify Successful Sign Out",
+  "keyword": "And "
+});
 formatter.match({
   "arguments": [
     {
@@ -1384,7 +1566,7 @@ formatter.match({
   "location": "Steps.iAmOnSFWFFrontOfficeHomePageGOC(String)"
 });
 formatter.result({
-  "duration": 6263760400,
+  "duration": 6434827300,
   "status": "passed"
 });
 formatter.match({
@@ -1401,84 +1583,84 @@ formatter.match({
   "location": "Steps.iInputRegisteredMaupassUserSUsernameAndPassword(String,String)"
 });
 formatter.result({
-  "duration": 8903117200,
+  "duration": 8773063900,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnSignInButtonInMaupass()"
 });
 formatter.result({
-  "duration": 66152500,
+  "duration": 100288700,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyApplicantSSuccessfulLogin()"
 });
 formatter.result({
-  "duration": 1882089700,
+  "duration": 2650075400,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnRegisterAsFarmer()"
 });
 formatter.result({
-  "duration": 359815300,
+  "duration": 318128000,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyThatUserIsDirectedToMyApplicationPage()"
 });
 formatter.result({
-  "duration": 131956500,
+  "duration": 234752000,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyDisplayOfFarmersCardLink()"
 });
 formatter.result({
-  "duration": 16707200,
+  "duration": 24161300,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyProgrammesLink()"
 });
 formatter.result({
-  "duration": 12491000,
+  "duration": 27990300,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnProgrammes()"
 });
 formatter.result({
-  "duration": 1585538400,
+  "duration": 2101421700,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnNewProgrammes()"
 });
 formatter.result({
-  "duration": 2964986400,
+  "duration": 11374439100,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyProgrammeTypePage()"
 });
 formatter.result({
-  "duration": 30254500,
+  "duration": 49571800,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickToApplyForGroupPersonalAccidentCoverGPAC()"
 });
 formatter.result({
-  "duration": 804594500,
+  "duration": 1285234100,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyDisplayOfINDIANOCEANGENERALASSURANCEIOGASMALLFARMERSWELFAREFUNDSFWF()"
 });
 formatter.result({
-  "duration": 42155200,
+  "duration": 57629300,
   "status": "passed"
 });
 formatter.match({
@@ -1491,7 +1673,7 @@ formatter.match({
   "location": "Steps.iInputTypeOfFarmer(String)"
 });
 formatter.result({
-  "duration": 1605131400,
+  "duration": 2196101000,
   "status": "passed"
 });
 formatter.match({
@@ -1524,21 +1706,21 @@ formatter.match({
   "location": "Steps.iInputAccidentParticulars(String,String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 572626400,
+  "duration": 969901200,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnSaveAndContinue()"
 });
 formatter.result({
-  "duration": 9171238000,
+  "duration": 9211130400,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyGeneralInformationTab()"
 });
 formatter.result({
-  "duration": 76202300,
+  "duration": 75144500,
   "status": "passed"
 });
 formatter.match({
@@ -1551,7 +1733,7 @@ formatter.match({
   "location": "Steps.iInputMedicalCost(String)"
 });
 formatter.result({
-  "duration": 69268800,
+  "duration": 106008100,
   "status": "passed"
 });
 formatter.match({
@@ -1564,7 +1746,7 @@ formatter.match({
   "location": "Steps.iSelectForHasTheMedicalTreatmentRelatedToTheAccidentBeenCompleted(String)"
 });
 formatter.result({
-  "duration": 589088700,
+  "duration": 664616400,
   "status": "passed"
 });
 formatter.match({
@@ -1577,7 +1759,7 @@ formatter.match({
   "location": "Steps.iSelectForIfYesAreThereAnyAdditionalMedicalCharges(String)"
 });
 formatter.result({
-  "duration": 585539700,
+  "duration": 624815400,
   "status": "passed"
 });
 formatter.match({
@@ -1590,28 +1772,28 @@ formatter.match({
   "location": "Steps.iInputForDetailsOfAdditionalMedicalCharges(String)"
 });
 formatter.result({
-  "duration": 63824600,
+  "duration": 108933600,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnSaveAndContinue()"
 });
 formatter.result({
-  "duration": 9180170100,
+  "duration": 9215617200,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifyUploadRequiredDocumentsPageIsDisplayed()"
 });
 formatter.result({
-  "duration": 99938300,
+  "duration": 102322500,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iClickOnAddAdditionalDocument()"
 });
 formatter.result({
-  "duration": 3138704100,
+  "duration": 3130622800,
   "status": "passed"
 });
 formatter.match({
@@ -1624,14 +1806,14 @@ formatter.match({
   "location": "Steps.iInputAdditionalDocumentName(String)"
 });
 formatter.result({
-  "duration": 1608200700,
+  "duration": 1677456200,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.iVerifySuccessMessageForAddingAdditionalDocumentName()"
 });
 formatter.result({
-  "duration": 54034000,
+  "duration": 40731500,
   "status": "passed"
 });
 formatter.match({
@@ -1644,36 +1826,33 @@ formatter.match({
   "location": "Steps.iUploadDocuments(String)"
 });
 formatter.result({
-  "duration": 4061038500,
-  "status": "passed"
+  "duration": 120314008200,
+  "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: (//span[@class\u003d\u0027ui-button-icon-left ui-icon ui-c pi pi-download\u0027])[1] (tried for 120 second(s) with 500 MILLISECONDS interval)\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)\r\n\tat stepdefinition.Steps.iUploadDocuments(Steps.java:3508)\r\n\tat ✽.And I Upload Documents \"src\\test\\resources\\Upload_Test1.pdf\"(features/US13364_14829.feature:37)\r\nCaused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d130.0.6723.70)\nBuild info: version: \u00273.4.0\u0027, revision: \u0027unknown\u0027, time: \u0027unknown\u0027\nSystem info: host: \u0027SIL-LT5-CHOORAN\u0027, ip: \u0027192.168.8.123\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_371\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d130.0.6723.69 (3ec172b971b9478c515a58f591112c5c23fa4965-refs/branch-heads/6723@{#1452}), userDataDir\u003dC:\\Users\\peerthee\\AppData\\Local\\Temp\\scoped_dir81152_1285406006}, timeouts\u003d{implicit\u003d0.0, pageLoad\u003d300000.0, script\u003d30000.0}, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003ddismiss and notify, strictFileInteractability\u003dfalse, platform\u003dANY, proxy\u003dProxy(), webauthn:extension:minPinLength\u003dtrue, goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:61323}, webauthn:extension:credBlob\u003dtrue, webauthn:extension:prf\u003dtrue, acceptInsecureCerts\u003dfalse, browserVersion\u003d130.0.6723.70, fedcm:accounts\u003dtrue, browserName\u003dchrome, javascriptEnabled\u003dtrue, platformName\u003dwindows, setWindowRect\u003dtrue, webauthn:extension:largeBlob\u003dtrue, webauthn:virtualAuthenticators\u003dtrue}]\nSession ID: b5b049285753768295e36ccd0ee5d493\n*** Element info: {Using\u003dxpath, value\u003d(//span[@class\u003d\u0027ui-button-icon-left ui-icon ui-c pi pi-download\u0027])[1]}\r\n\tat sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:437)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:513)\r\n\tat org.openqa.selenium.By$ByXPath.findElements(By.java:356)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:398)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:183)\r\n\tat org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:180)\r\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)\r\n\tat stepdefinition.Steps.iUploadDocuments(Steps.java:3508)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:40)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:16)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:34)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\r\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:300)\r\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\r\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\r\n\tat cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)\r\n\tat cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)\r\n\tat cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:50)\r\n\tat cucumbertest.TestRunner_web.runCukes(TestRunner_web.java:25)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)\r\n\tat org.testng.internal.Invoker.invokeMethod(Invoker.java:643)\r\n\tat org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)\r\n\tat org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)\r\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)\r\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)\r\n\tat org.testng.TestRunner.privateRun(TestRunner.java:782)\r\n\tat org.testng.TestRunner.run(TestRunner.java:632)\r\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:366)\r\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)\r\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)\r\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:268)\r\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)\r\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)\r\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)\r\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1169)\r\n\tat org.testng.TestNG.run(TestNG.java:1064)\r\n\tat org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)\r\n\tat org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:110)\r\n\tat org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)\r\n\tat org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)\r\n\tat org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "Steps.iVerifyForDocumentUploadSuccessMessage()"
 });
 formatter.result({
-  "duration": 5019664400,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "Steps.iClickOnSaveAndContinue()"
 });
 formatter.result({
-  "duration": 9196282300,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "Steps.iVerifyTermsAndConditionsPage()"
 });
 formatter.result({
-  "duration": 64890800,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "Steps.iClickOnIAgreeToTheTermsAndConditions()"
 });
 formatter.result({
-  "duration": 1588486000,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -1685,29 +1864,25 @@ formatter.match({
   "location": "Steps.iClickOnSubmitApplication(String)"
 });
 formatter.result({
-  "duration": 4550930400,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "Steps.iVerifySuccessMessageForApplicationOfProgrammesSubmitted()"
 });
 formatter.result({
-  "duration": 10089846900,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "Steps.iCopyProgrammesRefNumber()"
 });
 formatter.result({
-  "duration": 89726500,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "Steps.iSignOutAsFrontRegisteredUser()"
 });
 formatter.result({
-  "duration": 7916026600,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -1719,8 +1894,7 @@ formatter.match({
   "location": "Steps.iAmOnSFWFBackOfficeHomePageGOC(String)"
 });
 formatter.result({
-  "duration": 3745894900,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -1736,57 +1910,49 @@ formatter.match({
   "location": "Steps.iInputWPOUsernameAndPassword(String,String)"
 });
 formatter.result({
-  "duration": 150129700,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "Steps.iClickOnSignInButton()"
 });
 formatter.result({
-  "duration": 647956700,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "Steps.IVerifySuccessfulLogin()"
 });
 formatter.result({
-  "duration": 48838600,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "Steps.iClickToViewAllProgrammes()"
 });
 formatter.result({
-  "duration": 1886933100,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "Steps.iSearchForProgrammesRefNumberAsABackOfficeUser()"
 });
 formatter.result({
-  "duration": 6575664100,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "Steps.iClickToViewProgrammes()"
 });
 formatter.result({
-  "duration": 2141104200,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "Steps.iClickOnActionButton()"
 });
 formatter.result({
-  "duration": 1175273000,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "Steps.iSelectUnderQueryForProgrammes()"
 });
 formatter.result({
-  "duration": 2691016300,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -1798,50 +1964,43 @@ formatter.match({
   "location": "Steps.iInputExternalRemarks(String)"
 });
 formatter.result({
-  "duration": 72106700,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "Steps.iClickOnUnderQueryNotificationForProgrammes()"
 });
 formatter.result({
-  "duration": 1138199200,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "Steps.iVerifySuccessMessageForUnderQueryNotificationForProgrammes()"
 });
 formatter.result({
-  "duration": 16534200,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "Steps.iClickOnSaveActionsForProgrammes()"
 });
 formatter.result({
-  "duration": 44920800,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "Steps.iVerifyForSuccessMessageForWorkflowSaved()"
 });
 formatter.result({
-  "duration": 1109080100,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "Steps.iSignOut()"
 });
 formatter.result({
-  "duration": 4336785700,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "Steps.iVerifySuccessfulSignOut()"
 });
 formatter.result({
-  "duration": 919151800,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -1853,8 +2012,7 @@ formatter.match({
   "location": "Steps.iAmOnSFWFFrontOfficeHomePageGOC(String)"
 });
 formatter.result({
-  "duration": 2670420300,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -1870,65 +2028,55 @@ formatter.match({
   "location": "Steps.iInputRegisteredMaupassUserSUsernameAndPassword(String,String)"
 });
 formatter.result({
-  "duration": 8465882200,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "Steps.iClickOnSignInButtonInMaupass()"
 });
 formatter.result({
-  "duration": 49193600,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "Steps.iVerifyApplicantSSuccessfulLogin()"
 });
 formatter.result({
-  "duration": 2132061100,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "Steps.iClickOnRegisterAsFarmer()"
 });
 formatter.result({
-  "duration": 467287100,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "Steps.iVerifyThatUserIsDirectedToMyApplicationPage()"
 });
 formatter.result({
-  "duration": 14268400,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "Steps.iVerifyDisplayOfFarmersCardLink()"
 });
 formatter.result({
-  "duration": 13933000,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "Steps.iVerifyProgrammesLink()"
 });
 formatter.result({
-  "duration": 21086400,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "Steps.iClickOnProgrammes()"
 });
 formatter.result({
-  "duration": 1431919900,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "Steps.iSearchForProgrammeRefNumberForReSubmit()"
 });
 formatter.result({
-  "duration": 2160519400,
-  "error_message": "org.openqa.selenium.ElementNotInteractableException: element not interactable\n  (Session info: chrome\u003d130.0.6723.59)\nBuild info: version: \u00273.4.0\u0027, revision: \u0027unknown\u0027, time: \u0027unknown\u0027\nSystem info: host: \u0027SIL-LTDELLI7-G6\u0027, ip: \u0027192.168.8.46\u0027, os.name: \u0027Windows 11\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_371\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d130.0.6723.58 (3a50e012e4c9b8a410a4e2b12bf577e69ee8f755-refs/branch-heads/6723@{#1353}), userDataDir\u003dC:\\Users\\SURAJ~1.JOG\\AppData\\Local\\Temp\\scoped_dir23344_1088678815}, timeouts\u003d{implicit\u003d0.0, pageLoad\u003d300000.0, script\u003d30000.0}, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003ddismiss and notify, strictFileInteractability\u003dfalse, platform\u003dANY, proxy\u003dProxy(), webauthn:extension:minPinLength\u003dtrue, goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:57862}, webauthn:extension:credBlob\u003dtrue, webauthn:extension:prf\u003dtrue, acceptInsecureCerts\u003dfalse, browserVersion\u003d130.0.6723.59, fedcm:accounts\u003dtrue, browserName\u003dchrome, javascriptEnabled\u003dtrue, platformName\u003dwindows, setWindowRect\u003dtrue, webauthn:extension:largeBlob\u003dtrue, webauthn:virtualAuthenticators\u003dtrue}]\nSession ID: ff55e4cc914a71d6253f5b55a5cea92c\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:272)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:82)\r\n\tat stepdefinition.Steps.iSearchForProgrammeRefNumberForReSubmit(Steps.java:3576)\r\n\tat ✽.And I Search for Programme Ref Number for re-submit(features/US13364_14829.feature:75)\r\n",
-  "status": "failed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "Steps.iVerifyDisplayOfINDIANOCEANGENERALASSURANCEIOGASMALLFARMERSWELFAREFUNDSFWF()"
@@ -2286,12 +2434,130 @@ formatter.match({
 formatter.result({
   "status": "skipped"
 });
+formatter.match({
+  "arguments": [
+    {
+      "val": "Chrome",
+      "offset": 40
+    }
+  ],
+  "location": "Steps.iAmOnSFWFBackOfficeHomePageGOC(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "PWO",
+      "offset": 21
+    },
+    {
+      "val": "Admin@123",
+      "offset": 40
+    }
+  ],
+  "location": "Steps.iInputTOUsernameAndPassword(String,String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Steps.iClickOnSignInButton()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Steps.IVerifySuccessfulLogin()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Steps.iClickOnAllApplications()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Steps.iVerifyDisplayOfListOfRegistrationsPage()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Steps.iSearchForApplicationRefNumberAsABackOfficeUser()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Steps.iClickToViewApplication()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Steps.iClickOnActionButton()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Steps.iSelectAssignedForProgrammes()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Steps.iSelectTOUser()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "This is a Test",
+      "offset": 17
+    }
+  ],
+  "location": "Steps.iInputRemarks(String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Steps.iClickOnSaveActions()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Steps.iVerifyForSuccessMessageForAssigning()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Steps.iSignOut()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.match({
+  "location": "Steps.iVerifySuccessfulSignOut()"
+});
+formatter.result({
+  "status": "skipped"
+});
 formatter.after({
-  "duration": 968198500,
+  "duration": 2188799300,
   "status": "passed"
 });
 formatter.after({
-  "duration": 232200,
+  "duration": 331900,
   "status": "passed"
 });
 });

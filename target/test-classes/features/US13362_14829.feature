@@ -17,6 +17,10 @@
       And I Verify Programmes link
       And I Click on Programmes
       And I Click on New Programmes
+      And I click to apply for Bio Farming support scheme
+      And I Verify Display of Bio Farming Support Scheme
+      And I Select Type of Farmer "<SFWF_Type_Farmer>"
+      And I Input Type of Farmer "<Farmer_Type>"
 
       And I Verify Programme Type Page
       And I click to apply for Bio Farming support scheme
