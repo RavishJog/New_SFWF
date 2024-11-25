@@ -28,6 +28,13 @@ public class Small_breeder {
         return element;
     }
 
+    //Object for FPS Page
+    private static By lbl_Livestock_activity_page = By.xpath("//h6[contains(.,'Livestock Activity')]");
+    public static WebElement Livestock_activity_page(WebDriver driver) {
+        element = driver.findElement(lbl_Livestock_activity_page);
+        return element;
+    }
+
     //Object for Add Livestock Activity button
     private static By btn_Add_livestock_activity = By.xpath("//span[contains(.,'Add Livestock Activity')]");
     public static WebElement Add_livestock_activity(WebDriver driver) {
@@ -127,21 +134,21 @@ public class Small_breeder {
     }
 
     //Object for Reason - Select One
-    private static By lbl_Reason_select_one = By.xpath("//label[contains(@id,'livestockdt:0:reason_label')]");
+    private static By lbl_Reason_select_one = By.xpath("(//label[contains(@id,'label')])[2]");
     public static WebElement Reason_select_one(WebDriver driver) {
         element = driver.findElement(lbl_Reason_select_one);
         return element;
     }
 
     //Object for Reason - Milk
-    private static By lbl_Reason_milk = By.xpath("//li[contains(@id,'reason_1')]");
+    private static By lbl_Reason_milk = By.xpath("//li[contains(@id,'j_idt70:livestockdt:0:reason1_1')]");
     public static WebElement Reason_milk(WebDriver driver) {
         element = driver.findElement(lbl_Reason_milk);
         return element;
     }
 
     //Object for Reason - Meat
-    private static By lbl_Reason_meat= By.xpath("//li[contains(@id,'reason_2')]");
+    private static By lbl_Reason_meat= By.xpath("//li[contains(@id,'j_idt70:livestockdt:0:reason1_2')]");
     public static WebElement Reason_meat(WebDriver driver) {
         element = driver.findElement(lbl_Reason_meat);
         return element;
