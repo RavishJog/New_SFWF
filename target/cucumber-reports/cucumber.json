@@ -12,7 +12,7 @@
         "before": [
           {
             "result": {
-              "duration": 159100,
+              "duration": 168000,
               "status": "passed"
             },
             "match": {
@@ -21,7 +21,7 @@
           },
           {
             "result": {
-              "duration": 41800,
+              "duration": 35500,
               "status": "passed"
             },
             "match": {
@@ -29,14 +29,14 @@
             }
           }
         ],
-        "line": 315,
+        "line": 262,
         "name": "Approval for Payment at counter for Registration as Agro-Processing Enterprise-Application form",
         "description": "",
         "id": "back-office-tests;approval-for-payment-at-counter-for-registration-as-agro-processing-enterprise-application-form;;2",
         "after": [
           {
             "result": {
-              "duration": 1105455100,
+              "duration": 1115629800,
               "status": "passed"
             },
             "match": {
@@ -45,7 +45,7 @@
           },
           {
             "result": {
-              "duration": 59600,
+              "duration": 76300,
               "status": "passed"
             },
             "match": {
@@ -58,7 +58,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6578741300,
+              "duration": 8220189200,
               "status": "passed"
             },
             "line": 253,
@@ -79,7 +79,7 @@
           },
           {
             "result": {
-              "duration": 8353460300,
+              "duration": 7785755000,
               "status": "passed"
             },
             "line": 254,
@@ -105,7 +105,7 @@
           },
           {
             "result": {
-              "duration": 54599700,
+              "duration": 68399500,
               "status": "passed"
             },
             "line": 255,
@@ -117,7 +117,7 @@
           },
           {
             "result": {
-              "duration": 1524391100,
+              "duration": 3640291200,
               "status": "passed"
             },
             "line": 256,
@@ -129,7 +129,7 @@
           },
           {
             "result": {
-              "duration": 447544800,
+              "duration": 349118500,
               "status": "passed"
             },
             "line": 257,
@@ -141,7 +141,7 @@
           },
           {
             "result": {
-              "duration": 12044000,
+              "duration": 166389900,
               "status": "passed"
             },
             "line": 258,
@@ -153,6 +153,10 @@
           }
         ],
         "tags": [
+          {
+            "line": 250,
+            "name": "@Smoke_Back_office_login"
+          },
           {
             "line": 3,
             "name": "@Back_Office_tests"
