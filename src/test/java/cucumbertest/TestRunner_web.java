@@ -16,7 +16,7 @@ import org.testng.annotations.Test;
                 "pretty",
                 "json:target/cucumber-reports/cucumber.json" // Specify the JSON report path
         }
-        ,tags = "@Scheme"
+        ,tags = "@Jenkins_Local_Test"
 )
 
 public class TestRunner_web {

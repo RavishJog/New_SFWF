@@ -1,6 +1,6 @@
 #User Story 13362 - Bio Farming Support Scheme
 
-@Main_feature @US13362
+@Main_feature @US13362 @GOC
   Feature: User story 13362-GOC - Register as Bio Farming support scheme
 
     #Scenario1
