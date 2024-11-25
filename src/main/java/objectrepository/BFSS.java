@@ -17,9 +17,8 @@ public class BFSS {
 
 
     //Object for Agricultural Activities
-    private static By btn_Agricultural_Activities = By.xpath("//span[contains(.,'Add Agricultural Activities')]')]");
-
-    public static WebElement Agricultural_Activities(WebDriver driver) {
+    private static By btn_Agricultural_Activities = By.xpath("//span[contains(.,'Add Agricultural Activities')]");
+    public static WebElement Add_Agricultural_Activities(WebDriver driver) {
         element = driver.findElement(btn_Agricultural_Activities);
         return element;
     }
@@ -28,13 +27,6 @@ public class BFSS {
     private static By lbl_Select_one_Operator_Type = By.xpath("//label[contains(@id,'operators_label')]");
     public static WebElement Select_one_Operator_Type(WebDriver driver) {
         element = driver.findElement(lbl_Select_one_Operator_Type);
-        return element;
-    }
-
-
-    private static By lbl_Option_one_Operator = By.xpath("//label[contains(.,'Type of Operator:')]");
-    public static WebElement Option_one_Operator(WebDriver driver) {
-        element = driver.findElement(lbl_Option_one_Operator);
         return element;
     }
 
@@ -65,6 +57,13 @@ public class BFSS {
         return element;
     }
 
+    //Object for Protected Culture Sheltered Farming Hydroponics - Select One
+    private static By lbl_Select_Intentiontoindulgeinbiofarming = By.xpath("//li[contains(.,'Intention to indulge in bio farming (Open Field)')]");
+    public static WebElement Intentiontoindulgeinbiofarming(WebDriver driver) {
+        element = driver.findElement(lbl_Select_Intentiontoindulgeinbiofarming);
+        return element;
+    }
+
     //Object for Document for selected certificate
     private static By Btn_Document_for_selected_certificate = By.xpath("(//span[contains(.,'ui-button')])[8]X");
     public static WebElement Document_for_selected_certificate(WebDriver driver) {
@@ -92,14 +91,14 @@ public class BFSS {
         element = driver.findElement(lbl_Select_I);
         return element;
     }
-    //Object for II - Select One
+    //Object for crop cycle II - Select One
     private static By lbl_Select_II = By.xpath("(//li[contains(.,'II')])[1]");
     public static WebElement II (WebDriver driver) {
         element = driver.findElement(lbl_Select_II);
         return element;
     }
 
-    //Object for III - Select One
+    //Object for crop cycle III - Select One
     private static By lbl_Select_III = By.xpath("//li[contains(.,'III')]");
     public static WebElement III (WebDriver driver) {
         element = driver.findElement(lbl_Select_III);
@@ -113,6 +112,40 @@ public class BFSS {
         element = driver.findElement(lbl_select_one_crop_cycle);
         return element;
     }
+
+    //Object for Type of Farmer - Select One
+    private static By lbl_Select_one_farmer_type = By.xpath("//label[contains(.,'Select One')]");
+    public static WebElement Select_one_farmer_type(WebDriver driver) {
+        element = driver.findElement(lbl_Select_one_farmer_type);
+        return element;
+    }
+
+    //Object for Type of farmer - Small Planter
+    private static By lbl_Small_planter = By.xpath("//li[contains(.,'Small Planters')]");
+    public static WebElement Small_planter (WebDriver driver) {
+        element = driver.findElement(lbl_Small_planter);
+        return element;
+    }
+
+
+//Object for small planter type
+    private static By lbl_Small_planters_type = By.xpath("//li[contains(.,'Small Planters')]");
+    public static WebElement Small_planters_type(WebDriver driver) {
+        element = driver.findElement(lbl_Small_planters_type);
+        return element;
+    }
+
+    //Object for Type of farmer  - Option one
+    private static By lbl_option_one_type_of_farmer = By.xpath("//li[contains(@id,'j_idt70:bfss_type_farmer_1')]");
+    public static WebElement option_one_type_of_farmer(WebDriver driver) {
+        element = driver.findElement(lbl_option_one_type_of_farmer);
+        return element;
+    }
+
+
+
+
+
 
 
 

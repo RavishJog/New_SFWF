@@ -22,6 +22,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
+import javax.swing.plaf.basic.BasicFormattedTextFieldUI;
 import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
@@ -3391,8 +3392,8 @@ public class Steps extends Utility {
             try {
                 GPAC.Small_planters_type(driver).click();
             } catch (Exception e) {
-                System.out.println("Small Plater Type is not working");
-                Assert.fail("Small Plater Type is not working");
+                System.out.println("Small Planter Type is not working");
+                Assert.fail("Small Planter Type is not working");
             }
         } else if (Farmer_Type.equals("Small Breeder")) {
             try {
@@ -3768,13 +3769,15 @@ public class Steps extends Utility {
     }
 
     @And("^I click on Add Agricultural Activities$")
-    public void iClickOnAddAgriculturalActivities() {
+    public void iClickOnAddAgriculturalActivities() throws InterruptedException {
+        Thread.sleep(1500);
         try {
-            BFSS.Agricultural_Activities(driver);
+            BFSS.Add_Agricultural_Activities(driver);
         } catch (Exception e) {
             Assert.fail("Agricultural Activities is not clickable");
         }
-        BFSS.Agricultural_Activities(driver).click();
+        Thread.sleep(1500);
+        BFSS.Add_Agricultural_Activities(driver);
     }
 
 
@@ -3784,35 +3787,6 @@ public class Steps extends Utility {
         BFSS.Contract_lease_Agreement(driver).sendKeys(filePath);
         WebDriverWait w = new WebDriverWait(driver, 120);
         WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//span[contains(.,'ui-button')])[6]")));
-
-    }
-
-    @And("^I select SFWF Type of Operator \"([^\"]*)\"$")
-    public void iSelectSFWFTypeOfOperator(String Operator_Type) throws Throwable {
-        BFSS.Select_one_Operator_Type(driver).click();
-        Thread.sleep(1500);
-        if (Operator_Type.equals("Bio Farming (Open Field)")) {
-            try {
-                BFSS.Bio_Farming(driver).click();
-            } catch (Exception e) {
-                System.out.println("Bio Farming (Open Field) is not working");
-                Assert.fail("Bio Farming (Open Field) is not working");
-            }
-        } else if (Operator_Type.equals("Maurigap")) {
-            try {
-                BFSS.Maurigap(driver).click();
-            } catch (Exception e) {
-                System.out.println("Maurigap is not working");
-                Assert.fail("Maurigap is not working");
-            }
-        } else if (Operator_Type.equals("Protected Culture Sheltered Farming Hydroponics")) {
-            try {
-                BFSS.ProtectedCultureShelteredFarmingHydroponics(driver).click();
-            } catch (Exception e) {
-                System.out.println("Protected Culture Sheltered Farming Hydroponics is not working");
-                Assert.fail("Protected Culture Sheltered Farming Hydroponics is not working");
-            }
-        }
 
     }
 
@@ -3833,7 +3807,6 @@ public class Steps extends Utility {
         }
         BFSS.crop_production_plan(driver).click();
     }
-
 
     @And("^I Verify crop production plan form input table$")
     public void iVerifyCropProductionPlanFormInputTable() {
@@ -3876,7 +3849,126 @@ public class Steps extends Utility {
             }
         }
     }
-}
+
+    @And("^I Verify Display of BIO FARMING SUPPORT SCHEME$")
+    public void iVerifyDisplayOfBIOFARMINGSUPPORTSCHEME() {
+        try {
+            sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        WebDriverWait w = new WebDriverWait(driver, 120);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h5[contains(.,'BIO FARMING SUPPORT SCHEME')]")));
+        try {
+            BFSS.Select_one_farmer_type(driver);
+        } catch (Exception e) {
+            System.out.println("BIO FARMING SUPPORT SCHEME did not appear");
+            Assert.fail("BIO FARMING SUPPORT SCHEME did not appear");
+        }
+    }
+
+    @And("^I Select Type of Farmer \"([^\"]*)\"$")
+    public void iSelectTypeOfFarmer(String farmer_type) throws Throwable {
+        BFSS.Select_one_farmer_type(driver).click();
+        Thread.sleep(1500);
+        if (farmer_type.equals("small planter")) {
+            try {
+                BFSS.Small_planter(driver).click();
+            } catch (Exception e) {
+                System.out.println("small planter is not working");
+                Assert.fail("small planter is not working");
+            }
+        }
+    }
+
+
+    @And("^I Input Type of Farmer BFSS \"([^\"]*)\"$")
+    public void iInputTypeOfFarmerBFSS(String Farmer_Type) throws Throwable {
+        BFSS.Small_planter(driver).click();
+        Thread.sleep(1500);
+        if (Farmer_Type.equals("Small Planter")) {
+            try {
+                BFSS.option_one_type_of_farmer(driver).click();
+                WebDriverWait w = new WebDriverWait(driver, 120);
+            } catch (Exception e) {
+                System.out.println("Small Planter Type is not valid");
+                Assert.fail("Small Planter Type is no valid");
+            }
+        }
+    }
+
+    @And("^I Verify Display of Type of Agricultural Activities page$")
+    public void iVerifyDisplayOfTypeOfAgriculturalActivitiesPage() {
+        try {
+            sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        WebDriverWait w = new WebDriverWait(driver, 120);
+        WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h6[contains(.,'Type of Agricultural Activities')]")));
+        try {
+            BFSS.Add_Agricultural_Activities(driver).click();
+        } catch (Exception e) {
+            System.out.println("Type of Agricultural Activities page did not appear");
+            Assert.fail("Type of Agricultural Activities page did not appear");
+        }
+    }
+
+    @And("^I select Type of Operator \"([^\"]*)\"$")
+    public void iSelectTypeOfOperator(String Operator_Type) throws Throwable {
+        BFSS.Select_one_Operator_Type(driver).click();
+        Thread.sleep(1500);
+        if (Operator_Type.equals("Bio Farming (Open Field)")) {
+            try {
+                BFSS.Bio_Farming(driver).click();
+            } catch (Exception e) {
+                System.out.println("Bio Farming (Open Field) is not working");
+                Assert.fail("Bio Farming (Open Field) is not working");
+            }
+        } else if (Operator_Type.equals("Maurigap")) {
+            try {
+                BFSS.Maurigap(driver).click();
+            } catch (Exception e) {
+                System.out.println("Maurigap is not working");
+                Assert.fail("Maurigap is not working");
+            }
+        } else if (Operator_Type.equals("Protected Culture Sheltered Farming Hydroponics")) {
+            try {
+                BFSS.ProtectedCultureShelteredFarmingHydroponics(driver).click();
+            } catch (Exception e) {
+                System.out.println("Protected Culture Sheltered Farming Hydroponics is not working");
+                Assert.fail("Protected Culture Sheltered Farming Hydroponics is not working");
+            }
+        } else if (Operator_Type.equals("Intention to Indulge in bio farming (open field) is not working")) {
+            try {
+                BFSS.Intentiontoindulgeinbiofarming(driver).click();
+            } catch (Exception e) {
+                System.out.println("Intention to Indulge in bio farming (open field) is not working");
+                Assert.fail("Intention to Indulge in bio farming (open field) is not working");
+
+            }
+        }
+    }
+
+    @And("^I verify upload Documents is displayed$")
+    public void iVerifyUploadDocumentsIsDisplayed() throws InterruptedException {
+            WebDriverWait w = new WebDriverWait(driver, 120);
+            WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h6[contains(text(),'Upload Required Documents')]")));
+            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);", Farmers_cooperatives_association_society_company.Upload_required_documents(driver));
+
+            try {
+                Farmers_cooperatives_association_society_company.Upload_required_documents(driver);
+            } catch (Exception e) {
+                System.out.println("Upload Required Documents did not appear");
+                Assert.fail("Upload Required Documents did not appear");
+            }
+
+        }
+    }
+
+
+
+
 
 
 
