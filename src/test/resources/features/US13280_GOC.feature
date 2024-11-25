@@ -1839,6 +1839,7 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
     And I Input Number of Cow Female "<Male_Female_Number>"
     And I Select Reason "<Reason>"
     And I Click on Save and Continue
+    And I verify FPS page is displayed
     And I Verify Upload Required Documents Page is displayed
     And I Upload Copy of National Identify Card (ID) "<Upload_test>"
     And I Upload Existing SFWF Reg No (if any) "<Upload_test>"

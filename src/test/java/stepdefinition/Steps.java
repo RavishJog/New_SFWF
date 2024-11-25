@@ -4216,6 +4216,38 @@ public class Steps extends Utility {
     @And("^I Click on Add Additional Document For FPS$")
     public void iClickOnAddAdditionalDocumentForFPS() {
     }
+
+
+    @And("^I Click on Save Button for Small Planter Site Visit$")
+    public void iClickOnSaveButtonForSmallPlanterSiteVisit() {
+    }
+
+    @And("^I Verify Site Visit saved success message for Small Planter$")
+    public void iVerifySiteVisitSavedSuccessMessageForSmallPlanter() {
+    }
+
+    @And("^I verify FPS page is displayed$")
+    public void iVerifyFPSPageIsDisplayed() {
+        public void iVerifyDisplayOfLivestockActivity() {
+
+            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);",  Small_breeder.Livestock_activity_page(driver));
+            WebDriverWait w = new WebDriverWait(driver, 120);
+            WebElement element = w.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//h6[contains(.,'Livestock Activity')]")));
+            try {
+                Small_breeder.Livestock_activity_page(driver);
+            } catch (Exception e) {
+                System.out.println("Livestock Activity Page did not appear");
+                Assert.fail("Livestock Activity Page did not appear");
+            }
+    }
+
+    @And("^I Click on Save Button for Small Breeder$")
+    public void iClickOnSaveButtonForSmallBreeder() {
+    }
+
+    @And("^I Verify Site Visit saved success message for Small Breeder$")
+    public void iVerifySiteVisitSavedSuccessMessageForSmallBreeder() {
+    }
 }
 
 
