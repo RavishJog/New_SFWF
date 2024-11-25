@@ -18,6 +18,7 @@ Feature: User Story 13361 and 14829 -Form - Fertiliser Subsidy Scheme (FSS) and 
     And I Verify Programmes link
     And I Click on Programmes
     And I Click on New Programmes
+    And I Select Type of farmers
 
     And I Verify Programme Type Page
     Then I Sign Out as Front Registered User
