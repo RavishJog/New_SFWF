@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-cucumbertest.TestRunner_web">
-              <span class="suite-name border-failed">cucumbertest.TestRunner_web</span>
+              <span class="suite-name border-passed">cucumbertest.TestRunner_web</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-cucumbertest.TestRunner_web" class="hide-methods failed suite-cucumbertest.TestRunner_web"> (hide)</a> <!-- hide-methods failed suite-cucumbertest.TestRunner_web -->
-                      <a href="#" panel-name="suite-cucumbertest.TestRunner_web" class="show-methods failed suite-cucumbertest.TestRunner_web"> (show)</a> <!-- show-methods failed suite-cucumbertest.TestRunner_web -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-cucumbertest.TestRunner_web" class="hide-methods passed suite-cucumbertest.TestRunner_web"> (hide)</a> <!-- hide-methods passed suite-cucumbertest.TestRunner_web -->
+                      <a href="#" panel-name="suite-cucumbertest.TestRunner_web" class="show-methods passed suite-cucumbertest.TestRunner_web"> (show)</a> <!-- show-methods passed suite-cucumbertest.TestRunner_web -->
                     </span>
-                    <div class="method-list-content failed suite-cucumbertest.TestRunner_web">
+                    <div class="method-list-content passed suite-cucumbertest.TestRunner_web">
                       <span>
-                        <img width="3%" src="failed.png"/>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-cucumbertest.TestRunner_web" title="cucumbertest.TestRunner_web" hash-for-method="runCukes">runCukes</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-cucumbertest.TestRunner_web -->
+                    </div> <!-- method-list-content passed suite-cucumbertest.TestRunner_web -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,9 +117,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-cucumbertest.TestRunner_web" class="panel cucumbertest.TestRunner_web">
-          <div class="suite-cucumbertest.TestRunner_web-class-failed">
+          <div class="suite-cucumbertest.TestRunner_web-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">cucumbertest.TestRunner_web</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -128,60 +128,12 @@
                   <a name="runCukes">
                   </a> <!-- runCukes -->
                   <span class="method-name">runCukes</span>
-                  <div class="stack-trace">cucumber.runtime.CucumberException: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: (//span[@class=&apos;ui-button-icon-left ui-icon ui-c pi pi-download&apos;])[1] (tried for 120 second(s) with 500 MILLISECONDS interval)
-	at cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:57)
-	at cucumbertest.TestRunner_web.runCukes(TestRunner_web.java:25)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: (//span[@class=&apos;ui-button-icon-left ui-icon ui-c pi pi-download&apos;])[1] (tried for 120 second(s) with 500 MILLISECONDS interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
-	at stepdefinition.Steps.iUploadDocuments(Steps.java:3508)
-	at ✽.And I Upload Documents &quot;src\test\resources\Upload_Test1.pdf&quot;(features/US13364_14829.feature:37)
-Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=130.0.6723.70)
-Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
-System info: host: &apos;SIL-LT5-CHOORAN&apos;, ip: &apos;192.168.8.123&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_371&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=130.0.6723.69 (3ec172b971b9478c515a58f591112c5c23fa4965-refs/branch-heads/6723@{#1452}), userDataDir=C:\Users\peerthee\AppData\Local\Temp\scoped_dir81152_1285406006}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:61323}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=130.0.6723.70, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
-Session ID: b5b049285753768295e36ccd0ee5d493
-*** Element info: {Using=xpath, value=(//span[@class=&apos;ui-button-icon-left ui-icon ui-c pi pi-download&apos;])[1]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:150)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:115)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:45)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:437)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementsByXPath(RemoteWebDriver.java:513)
-	at org.openqa.selenium.By$ByXPath.findElements(By.java:356)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElements(RemoteWebDriver.java:398)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:183)
-	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:180)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
-	at stepdefinition.Steps.iUploadDocuments(Steps.java:3508)
-	at cucumber.runtime.Utils$1.call(Utils.java:40)
-	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
-	at cucumber.runtime.Utils.invoke(Utils.java:34)
-	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
-	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
-	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
-	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
-	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
-	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
-	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
-	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
-	at cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:50)
-	at cucumbertest.TestRunner_web.runCukes(TestRunner_web.java:25)
-... Removed 73 stack frames
-</div> <!-- stack-trace -->
                   <em>
 (Example of using TestNGCucumberRunner to invoke Cucumber)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-cucumbertest.TestRunner_web-class-failed -->
+          </div> <!-- suite-cucumbertest.TestRunner_web-class-passed -->
         </div> <!-- panel cucumbertest.TestRunner_web -->
         <div panel-name="test-xml-cucumbertest.TestRunner_web" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -245,12 +197,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runCukes')
 data.setCell(0, 2, 'cucumbertest.TestRunner_web')
-data.setCell(0, 3, 185684);
+data.setCell(0, 3, 22202);
 window.suiteTableData['cucumbertest.TestRunner_web']= { tableData: data, tableDiv: 'times-div-cucumbertest.TestRunner_web'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <span class="suite-total-time">Total running time: 22 seconds</span>
               <div id="times-div-cucumbertest.TestRunner_web">
               </div> <!-- times-div-cucumbertest.TestRunner_web -->
             </div> <!-- times-div -->
@@ -278,8 +230,6 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">cucumbertest.TestRunner_web</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">runCukes</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->

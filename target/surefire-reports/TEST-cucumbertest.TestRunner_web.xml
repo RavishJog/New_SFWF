@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="1" failures="1" name="cucumbertest.TestRunner_web" time="186.968" errors="0" skipped="0">
+<testsuite tests="1" failures="0" name="cucumbertest.TestRunner_web" time="22.204" errors="0" skipped="0">
+  <properties>
+    <property name="idea.version" value="2024.1"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-1.8\jre\bin"/>
+    <property name="java.vm.version" value="25.371-b11"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Raksha\Desktop\SFWF\Automation\New_SFWF"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\suraj.joggessur\Desktop\Projects\Automation Testing\Small-Farmers-Welfare-Fund"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\Raksha\Desktop\SFWF\Automation\New_SFWF"/>
+    <property name="user.dir" value="C:\Users\suraj.joggessur\Desktop\Projects\Automation Testing\Small-Farmers-Welfare-Fund"/>
+    <property name="java.runtime.version" value="1.8.0_371-b11"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk-1.8\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\Raksha\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.1\plugins\maven\lib\maven-event-listener.jar"/>
+    <property name="classworlds.conf" value="C:\Program Files\apache-maven-3.8.1-bin\apache-maven-3.8.1\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-1.8\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.1\bin;C:\Program Files\Java\jdk-1.8\bin;C:\Program Files\apache-maven-3.8.1-bin\apache-maven-3.8.1\bin;C:\Program Files\Java\jre-1.8\bin;C:\Program Files\Git\cmd;C:\Users\Raksha\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.1\bin;;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-1.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1.2\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\PowerShell\7\;C:\Program Files\apache-maven-3.8.5\bin;C:\Program Files\Git\bin;C:\Program Files\Java\jdk-17\bin;C:\Program Files\Java\jre-1.8\bin;C:\Users\suraj.joggessur\Desktop\JMeter\apache-jmeter-5.6.2\bin;C:\Program Files\Jenkins;C:\Users\suraj.joggessur\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.1.2\bin;;;."/>
+    <property name="jansi.passthrough" value="true"/>
+    <property name="maven.conf" value="C:\Program Files\apache-maven-3.8.1-bin\apache-maven-3.8.1/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\Raksha"/>
+    <property name="tags" value="&quot;@Scheme&quot;"/>
+    <property name="user.timezone" value="Indian/Mauritius"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="Raksha"/>
+    <property name="java.class.path" value="C:\Program Files\apache-maven-3.8.1-bin\apache-maven-3.8.1\boot\plexus-classworlds-2.6.0.jar;C:\Program Files\apache-maven-3.8.1-bin\apache-maven-3.8.1\boot\plexus-classworlds.license;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.1\lib\idea_rt.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-1.8\jre"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2024.1 clean test -D tags=&quot;@Scheme&quot;"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_371"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk-1.8\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk-1.8\jre\lib\resources.jar;C:\Program Files\Java\jdk-1.8\jre\lib\rt.jar;C:\Program Files\Java\jdk-1.8\jre\lib\jsse.jar;C:\Program Files\Java\jdk-1.8\jre\lib\jce.jar;C:\Program Files\Java\jdk-1.8\jre\lib\charsets.jar;C:\Program Files\Java\jdk-1.8\jre\lib\jfr.jar;C:\Program Files\Java\jdk-1.8\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.maintenance.version" value="4"/>
+    <property name="maven.home" value="C:\Program Files\apache-maven-3.8.1-bin\apache-maven-3.8.1"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="cucumbertest.TestRunner_web" name="runCukes" time="186.968">
+    <failure message="org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: (//span[contains(.,&apos;successfully saved!&apos;)]) (tried for 120 second(s) with 500 MILLISECONDS interval)" type="cucumber.runtime.CucumberException">cucumber.runtime.CucumberException: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: (//span[contains(.,&apos;successfully saved!&apos;)]) (tried for 120 second(s) with 500 MILLISECONDS interval)
+	at cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:57)
+	at cucumbertest.TestRunner_web.runCukes(TestRunner_web.java:25)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: (//span[contains(.,&apos;successfully saved!&apos;)]) (tried for 120 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+	at stepdefinition.Steps.iClickOnSaveButton(Steps.java:2258)
+	at ✽.And I Click on Save Button(features/US13362_14829.feature:28)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: (//span[contains(.,&apos;successfully saved!&apos;)])
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;SIL-LT5-RAKSHAL&apos;, ip: &apos;192.168.8.154&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_371&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:883)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:183)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:180)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at stepdefinition.Steps.iClickOnSaveButton(Steps.java:2258)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:50)
+	at cucumbertest.TestRunner_web.runCukes(TestRunner_web.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:110)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</failure>
+    <system-out>Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@2cfb4a64
+#User Story 13362 - Bio Farming Support Scheme
+@Main_feature @US13362
+Feature: User story 13362-GOC - Register as Bio Farming support scheme
+
+  #Scenario1
+  @Registration_as_Bio_Farming_Support_scheme @Scheme
+  Scenario Outline: Application to Register as Bio Farming Support Scheme                   &amp;#27;[90m# features/US13362_14829.feature:8&amp;#27;[0m
+    &amp;#27;[36mGiven &amp;#27;[0m&amp;#27;[36mI am on SFWF Front Office Home Page GOC &quot;&lt;Browser&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36mI Input Registered Maupass User&apos;s Username &quot;&lt;Username&gt;&quot; and Password &quot;&lt;FPassword&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Sign In button in Maupass&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Applicant&apos;s Successful Login&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Register as Farmer&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify that User is directed to My Application Page&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify display of Farmers Card link&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Programmes link&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Programmes&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on New Programmes&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI click to apply for Bio Farming support scheme&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Display of BIO FARMING SUPPORT SCHEME&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select Type of Farmer &quot;&lt;Farmer_Type&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input Type of Farmer BFSS &quot;&lt;small_planter&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Save and Continue&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Display of Type of Agricultural Activities page&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI click on Add Agricultural Activities&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI select Type of Operator &quot;&lt;Operator_Type&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Save Button&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI upload Contract/lease Agreement &quot;&lt;Upload_Test&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI upload Document for selected certificate &quot;&lt;Upload_Test&gt;&quot;&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Add Additional Document&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Save and Continue&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click to Add crop production Plan&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify crop production plan form input table&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select crop cycle&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input Date From&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input Date To&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input Filed Location&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input Total Numbers of Arpents Under Cultivation&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input crops to be planted&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Input Intended Crop land&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Add Bio Organic Input&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI click on I agree to the Terms and Conditions&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Programme Type Page&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI click to apply for Bio Farming support scheme&amp;#27;[0m
+    &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mI Sign Out as Front Registered User&amp;#27;[0m
+
+    Examples:
+Unable to take screenshot
+java.lang.NullPointerException
+
+  @Main_feature @Scheme @US13362 @Registration_as_Bio_Farming_Support_scheme
+  Scenario Outline: Application to Register as Bio Farming Support Scheme                      &amp;#27;[90m# features/US13362_14829.feature:52&amp;#27;[0m
+    &amp;#27;[32mGiven &amp;#27;[0m&amp;#27;[32mI am on SFWF Front Office Home Page GOC &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mChrome&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                     &amp;#27;[90m# Steps.iAmOnSFWFFrontOfficeHomePageGOC(String)&amp;#27;[0m
+    &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32mI Input Registered Maupass User&apos;s Username &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mybhunjun5&amp;#27;[0m&amp;#27;[32m&quot; and Password &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mMauritius1!1710&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m &amp;#27;[90m# Steps.iInputRegisteredMaupassUserSUsernameAndPassword(String,String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Sign In button in Maupass&amp;#27;[0m                                                   &amp;#27;[90m# Steps.iClickOnSignInButtonInMaupass()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Applicant&apos;s Successful Login&amp;#27;[0m                                                  &amp;#27;[90m# Steps.iVerifyApplicantSSuccessfulLogin()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Register as Farmer&amp;#27;[0m                                                          &amp;#27;[90m# Steps.iClickOnRegisterAsFarmer()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify that User is directed to My Application Page&amp;#27;[0m                                  &amp;#27;[90m# Steps.iVerifyThatUserIsDirectedToMyApplicationPage()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify display of Farmers Card link&amp;#27;[0m                                                  &amp;#27;[90m# Steps.iVerifyDisplayOfFarmersCardLink()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Programmes link&amp;#27;[0m                                                               &amp;#27;[90m# Steps.iVerifyProgrammesLink()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Programmes&amp;#27;[0m                                                                  &amp;#27;[90m# Steps.iClickOnProgrammes()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on New Programmes&amp;#27;[0m                                                              &amp;#27;[90m# Steps.iClickOnNewProgrammes()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI click to apply for Bio Farming support scheme&amp;#27;[0m                                        &amp;#27;[90m# Steps.iClickToApplyForBioFarmingSupportScheme()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Display of BIO FARMING SUPPORT SCHEME&amp;#27;[0m                                         &amp;#27;[90m# Steps.iVerifyDisplayOfBIOFARMINGSUPPORTSCHEME()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Select Type of Farmer &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mSmall Planter&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                                &amp;#27;[90m# Steps.iSelectTypeOfFarmer(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Input Type of Farmer BFSS &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1msmall planter&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                            &amp;#27;[90m# Steps.iInputTypeOfFarmerBFSS(String)&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Click on Save and Continue&amp;#27;[0m                                                           &amp;#27;[90m# Steps.iClickOnSaveAndContinue()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI Verify Display of Type of Agricultural Activities page&amp;#27;[0m                               &amp;#27;[90m# Steps.iVerifyDisplayOfTypeOfAgriculturalActivitiesPage()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI click on Add Agricultural Activities&amp;#27;[0m                                                 &amp;#27;[90m# Steps.iClickOnAddAgriculturalActivities()&amp;#27;[0m
+    &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32mI select Type of Operator &quot;&amp;#27;[0m&amp;#27;[32m&amp;#27;[1mBio Farming (Open Field)&amp;#27;[0m&amp;#27;[32m&quot;&amp;#27;[0m                                   &amp;#27;[90m# Steps.iSelectTypeOfOperator(String)&amp;#27;[0m
+    &amp;#27;[31mAnd &amp;#27;[0m&amp;#27;[31mI Click on Save Button&amp;#27;[0m                                                                 &amp;#27;[90m# Steps.iClickOnSaveButton()&amp;#27;[0m
+      &amp;#27;[31morg.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: (//span[contains(.,&apos;successfully saved!&apos;)]) (tried for 120 second(s) with 500 MILLISECONDS interval)
+      	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+      	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+      	at stepdefinition.Steps.iClickOnSaveButton(Steps.java:2258)
+      	at ?.And I Click on Save Button(features/US13362_14829.feature:28)
+      Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: (//span[contains(.,&apos;successfully saved!&apos;)])
+      For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+      Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+      System info: host: &apos;SIL-LT5-RAKSHAL&apos;, ip: &apos;192.168.8.154&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_371&apos;
+      Driver info: driver.version: unknown
+      	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:883)
+      	at java.util.Optional.orElseThrow(Optional.java:290)
+      	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+      	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+      	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:183)
+      	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:180)
+      	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+      	at stepdefinition.Steps.iClickOnSaveButton(Steps.java:2258)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+      	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+      	at java.lang.reflect.Method.invoke(Method.java:498)
+      	at cucumber.runtime.Utils$1.call(Utils.java:40)
+      	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+      	at cucumber.runtime.Utils.invoke(Utils.java:34)
+      	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+      	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+      	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+      	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+      	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+      	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+      	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+      	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+      	at cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:50)
+      	at cucumbertest.TestRunner_web.runCukes(TestRunner_web.java:25)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+      	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+      	at java.lang.reflect.Method.invoke(Method.java:498)
+      	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+      	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+      	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+      	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+      	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+      	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+      	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+      	at org.testng.TestRunner.run(TestRunner.java:632)
+      	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+      	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+      	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+      	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+      	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+      	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+      	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+      	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+      	at org.testng.TestNG.run(TestNG.java:1064)
+      	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+      	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:110)
+      	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+      	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+      	at java.lang.reflect.Method.invoke(Method.java:498)
+      	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+      	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+      	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+      	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+      	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+      &amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI upload Contract/lease Agreement &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&lt;Upload_Test&gt;&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                                      &amp;#27;[90m# Steps.iUploadContractLeaseAgreement(String)&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI upload Document for selected certificate &quot;&amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&lt;Upload_Test&gt;&amp;#27;[0m&amp;#27;[36m&quot;&amp;#27;[0m                             &amp;#27;[90m# Steps.iUploadDocumentForSelectedCertificate(String)&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Add Additional Document&amp;#27;[0m                                                     &amp;#27;[90m# Steps.iClickOnAddAdditionalDocument()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click on Save and Continue&amp;#27;[0m                                                           &amp;#27;[90m# Steps.iClickOnSaveAndContinue()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Click to Add crop production Plan&amp;#27;[0m                                                    &amp;#27;[90m# Steps.iClickToAddCropProductionPlan()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify crop production plan form input table&amp;#27;[0m                                         &amp;#27;[90m# Steps.iVerifyCropProductionPlanFormInputTable()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Select crop cycle&amp;#27;[0m                                                                    &amp;#27;[90m# Steps.iSelectCropCycle(String)&amp;#27;[0m
+    &amp;#27;[33mAnd &amp;#27;[0m&amp;#27;[33mI Input Date From&amp;#27;[0m
+    &amp;#27;[33mAnd &amp;#27;[0m&amp;#27;[33mI Input Date To&amp;#27;[0m
+    &amp;#27;[33mAnd &amp;#27;[0m&amp;#27;[33mI Input Filed Location&amp;#27;[0m
+    &amp;#27;[33mAnd &amp;#27;[0m&amp;#27;[33mI Input Total Numbers of Arpents Under Cultivation&amp;#27;[0m
+    &amp;#27;[33mAnd &amp;#27;[0m&amp;#27;[33mI Input crops to be planted&amp;#27;[0m
+    &amp;#27;[33mAnd &amp;#27;[0m&amp;#27;[33mI Input Intended Crop land&amp;#27;[0m
+    &amp;#27;[33mAnd &amp;#27;[0m&amp;#27;[33mI Add Bio Organic Input&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI click on I agree to the Terms and Conditions&amp;#27;[0m                                         &amp;#27;[90m# Steps.iClickOnIAgreeToTheTermsAndConditions()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI Verify Programme Type Page&amp;#27;[0m                                                           &amp;#27;[90m# Steps.iVerifyProgrammeTypePage()&amp;#27;[0m
+    &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mI click to apply for Bio Farming support scheme&amp;#27;[0m                                        &amp;#27;[90m# Steps.iClickToApplyForBioFarmingSupportScheme()&amp;#27;[0m
+    &amp;#27;[36mThen &amp;#27;[0m&amp;#27;[36mI Sign Out as Front Registered User&amp;#27;[0m                                                   &amp;#27;[90m# Steps.iSignOutAsFrontRegisteredUser()&amp;#27;[0m
+
+&amp;#27;[31mFailed scenarios:&amp;#27;[0m
+&amp;#27;[31mfeatures/US13362_14829.feature:52 &amp;#27;[0m# Scenario Outline: Application to Register as Bio Farming Support Scheme
+
+1 Scenarios (&amp;#27;[31m1 failed&amp;#27;[0m)
+37 Steps (&amp;#27;[31m1 failed&amp;#27;[0m, &amp;#27;[36m11 skipped&amp;#27;[0m, &amp;#27;[33m7 undefined&amp;#27;[0m, &amp;#27;[32m18 passed&amp;#27;[0m)
+3m5.525s
+
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: (//span[contains(.,&apos;successfully saved!&apos;)]) (tried for 120 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:232)
+	at stepdefinition.Steps.iClickOnSaveButton(Steps.java:2258)
+	at ?.And I Click on Save Button(features/US13362_14829.feature:28)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: (//span[contains(.,&apos;successfully saved!&apos;)])
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;
+System info: host: &apos;SIL-LT5-RAKSHAL&apos;, ip: &apos;192.168.8.154&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_371&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:883)
+	at java.util.Optional.orElseThrow(Optional.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:882)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:183)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:180)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:209)
+	at stepdefinition.Steps.iClickOnSaveButton(Steps.java:2258)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)
+	at cucumber.runtime.Runtime.runStep(Runtime.java:300)
+	at cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)
+	at cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)
+	at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+	at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+	at cucumber.api.testng.TestNGCucumberRunner.runCukes(TestNGCucumberRunner.java:50)
+	at cucumbertest.TestRunner_web.runCukes(TestRunner_web.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:110)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+
+
+You can implement missing steps with the snippets below:
+
+@When(&quot;^I Input Date From$&quot;)
+public void i_Input_Date_From() throws Throwable {
+    // Write code here that turns the phrase above into concrete actions
+    throw new PendingException();
+}
+
+@When(&quot;^I Input Date To$&quot;)
+public void i_Input_Date_To() throws Throwable {
+    // Write code here that turns the phrase above into concrete actions
+    throw new PendingException();
+}
+
+@When(&quot;^I Input Filed Location$&quot;)
+public void i_Input_Filed_Location() throws Throwable {
+    // Write code here that turns the phrase above into concrete actions
+    throw new PendingException();
+}
+
+@When(&quot;^I Input Total Numbers of Arpents Under Cultivation$&quot;)
+public void i_Input_Total_Numbers_of_Arpents_Under_Cultivation() throws Throwable {
+    // Write code here that turns the phrase above into concrete actions
+    throw new PendingException();
+}
+
+@When(&quot;^I Input crops to be planted$&quot;)
+public void i_Input_crops_to_be_planted() throws Throwable {
+    // Write code here that turns the phrase above into concrete actions
+    throw new PendingException();
+}
+
+@When(&quot;^I Input Intended Crop land$&quot;)
+public void i_Input_Intended_Crop_land() throws Throwable {
+    // Write code here that turns the phrase above into concrete actions
+    throw new PendingException();
+}
+
+@When(&quot;^I Add Bio Organic Input$&quot;)
+public void i_Add_Bio_Organic_Input() throws Throwable {
+    // Write code here that turns the phrase above into concrete actions
+    throw new PendingException();
+}
+
+</system-out>
+    <system-err>SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+Starting ChromeDriver 130.0.6723.91 (53ac076783696778ecc8f360ea31765c29c240ad-refs/branch-heads/6723@{#1517}) on port 52961
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 52961.
+Nov 05, 2024 9:46:09 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+log4j:WARN No appenders could be found for logger (freemarker.cache).
+log4j:WARN Please initialize the log4j system properly.
+</system-err>
+  </testcase>
+  <testcase classname="cucumbertest.TestRunner_web" name="runCukes" time="22.204"/>
+</testsuite>
