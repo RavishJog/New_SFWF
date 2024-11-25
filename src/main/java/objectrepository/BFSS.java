@@ -142,6 +142,13 @@ public class BFSS {
         return element;
     }
 
+    //Object for Bio Farming Support Scheme
+    private static By lbl_BFSS_Form = By.xpath("//h5[contains(.,'BIO FARMING SUPPORT SCHEME')]");
+    public static WebElement BFSS_Form(WebDriver driver) {
+        element = driver.findElement(lbl_BFSS_Form);
+        return element;
+    }
+
 
 
 
