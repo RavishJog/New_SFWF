@@ -219,9 +219,16 @@ public class Back_office_main_page {
     }
 
     //Object for Action - Under Query
-    private static By lbl_Action_Under_Query = By.xpath("//li[contains(@data-label,'Under Query')]");
-    public static WebElement Action_Under_Query(WebDriver driver) {
-        element = driver.findElement(lbl_Action_Under_Query);
+//    private static By lbl_Action_Under_Query = By.xpath("//li[contains(@data-label,'Under Query')]");
+//    public static WebElement Action_Under_Query(WebDriver driver) {
+//        element = driver.findElement(lbl_Action_Under_Query);
+//        return element;
+//    }
+
+    //Object for Action - In progress
+    private static By lbl_Action_in_progress = By.xpath("//li[contains(.,'In Progress')]");
+    public static WebElement Action_in_progress(WebDriver driver) {
+        element = driver.findElement(lbl_Action_in_progress);
         return element;
     }
 
@@ -381,9 +388,16 @@ public class Back_office_main_page {
     }
 
     //Object for Under Query Notification button
-    private static By btn_Under_query_notif_send = By.xpath("//span[@class='ui-button-text ui-c'][contains(.,'Under Query Notification')]");
-    public static WebElement Under_query_notif_send(WebDriver driver) {
-        element = driver.findElement(btn_Under_query_notif_send);
+//    private static By btn_Under_query_notif_send = By.xpath("//span[@class='ui-button-text ui-c'][contains(.,'Under Query Notification')]");
+//    public static WebElement Under_query_notif_send(WebDriver driver) {
+//        element = driver.findElement(btn_Under_query_notif_send);
+//        return element;
+//    }
+
+    //Object for In progress Notification button
+    private static By btn_In_Progress_notif_send = By.xpath("//span[@class='ui-button-text ui-c'][contains(.,'In Progress Notification')]");
+    public static WebElement In_Progress_notif_send(WebDriver driver) {
+        element = driver.findElement(btn_In_Progress_notif_send);
         return element;
     }
 

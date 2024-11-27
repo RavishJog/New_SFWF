@@ -29,9 +29,9 @@ public class Small_breeder {
     }
 
     //Object for FPS Page
-    private static By lbl_Livestock_activity_page = By.xpath("//h6[contains(.,'Livestock Activity')]");
-    public static WebElement Livestock_activity_page(WebDriver driver) {
-        element = driver.findElement(lbl_Livestock_activity_page);
+    private static By lbl_FPS_page = By.xpath("//li[contains(.,'FPS')]");
+    public static WebElement FPS_page(WebDriver driver) {
+        element = driver.findElement(lbl_FPS_page);
         return element;
     }
 
@@ -57,9 +57,23 @@ public class Small_breeder {
     }
 
     //Object for Species - Select One
-    private static By lbl_Species_select_one = By.xpath("//label[contains(@id,'species_label')]");
+    private static By lbl_Species_select_one = By.xpath("//label[contains(@id,'j_idt70:species_fps_label')]");
     public static WebElement Species_select_one(WebDriver driver) {
         element = driver.findElement(lbl_Species_select_one);
+        return element;
+    }
+
+    //Object for Species - Bull
+    private static By lbl_Species_bull = By.xpath("(//li[contains(@id,'1')])[1]");
+    public static WebElement Species_bull(WebDriver driver) {
+        element = driver.findElement(lbl_Species_bull);
+        return element;
+    }
+
+    //Object for Species - Cow
+    private static By lbl_Species_cow = By.xpath("//li[contains(.,'Cow')]");
+    public static WebElement Species_cow(WebDriver driver) {
+        element = driver.findElement(lbl_Species_cow);
         return element;
     }
 

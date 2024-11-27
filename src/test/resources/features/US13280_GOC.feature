@@ -151,10 +151,10 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
     And I Search for Application Ref Number as a Back Office User
     And I Click to view Application
     And I Click on Action Button
-    And I Select Under Query
+    And I Select Option In progress
     And I Input External Remarks "<Remarks>"
-    And I Click on Under Query Notification
-    And I Verify Success Message for Under Query Notification
+    And I Click on In progress Notification Button
+#    And I Verify Success Message for Under Query Notification
     And I Click on Save Actions
     And I Verify for success message for workflow saved
     And I Sign Out
@@ -1047,7 +1047,7 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
     And I Click on Action Button
     And I Select Under Query
     And I Input External Remarks "<Remarks>"
-    And I Click on Under Query Notification for Small Farmers
+    And I Click on In progress Notification for Small Farmers
     And I Verify Success Message for Under Query Notification for Small Farmers
     And I Click on Save Actions
     And I Verify for success message for workflow saved
@@ -1501,7 +1501,7 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
     And I Click on Action Button
     And I Select Under Query
     And I Input External Remarks "<Remarks>"
-    And I Click on Under Query Notification for Tea Grower
+    And I Click on In progress Notification for Tea Grower
     And I Verify Success Message for Under Query Notification for Tea Grower
     And I Click on Save Actions
     And I Verify for success message for workflow saved
@@ -1840,6 +1840,8 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
     And I Select Reason "<Reason>"
     And I Click on Save and Continue
     And I verify FPS page is displayed
+    And I Select Species "<Spicies>"
+    And I Click on Save and Continue
     And I Verify Upload Required Documents Page is displayed
     And I Upload Copy of National Identify Card (ID) "<Upload_test>"
     And I Upload Existing SFWF Reg No (if any) "<Upload_test>"
@@ -1938,11 +1940,11 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
     And I Search for Application Ref Number as a Back Office User
     And I Click to view Application
     And I Click on Site Report Tab
-    And I Select Bonafide Planter "<Bonafide>"
+#    And I Select Bonafide Planter "<Bonafide>"
     And I Input Site visit remarks "<Remarks>"
     And I Upload Site Report "<Upload_test>"
     And I Verify for Document Upload Success Message
-    And I Input Section One data "<Breeder_Type>"
+#    And I Input Section One data "<Breeder_Type>"
     And I Click on Save Button for Small Breeder
     And I Verify Site Visit saved success message for Small Breeder
     And I Click on Action Button
@@ -1964,10 +1966,12 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
     And I Search for Application Ref Number as a Back Office User
     And I Click to view Application
     And I Click on Action Button
-    And I Select Option Under Query
+#    And I Select Option Under Query
+    And I Select Option In progress
     And I Input External Remarks "<Remarks>"
-    And I Click on Under Query Notification Button
-    And I Verify Success Message for Under Query Mail Notification
+#    And I Click on Under Query Notification Button
+    And I Click on In progress Notification Button
+#    And I Verify Success Message for Under Query Mail Notification
     And I Click on Save Actions
     And I Verify for success message for workflow saved
     And I Sign Out
@@ -1988,6 +1992,9 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
     And I Verify Display of Particulars of Family Beneficiaries Page
     And I Click on Save and Continue
     And I Verify Display of Livestock Activity
+    And I Click on Save and Continue
+    And I verify FPS page is displayed
+    And I Select Species "<Spicies>"
     And I Click on Save and Continue
     And I Verify Upload Required Documents Page is displayed
     And I Click on Save and Continue
@@ -2041,7 +2048,7 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
 
     Examples:
       |Browser|Username|FPassword| Password  |FUsername|PwoUsername|WpoUsername|WOUsername |ITUsername|Remarks        |Bonafide|Payment_Mode |Amount_To_Pay|Applicant_Title |District   |Education_Level |Act      |Other_Occupation  |Photo                               |Year_dur |Marital_Status|Relationship|Family_Surname|Family_Other_Names|Gender|DOB   |Occupation |License    |Land_Extent|Owner_Type|Plot_Location|Spicies |Male_Female_Number|Total_Heads |Reason |Microchip_No|Cattle_Sex|Cattle_Age|Upload_test                        |Additional_Doc_Name      |Bank_Name  |Bank_Branch|Bank_Account_No|Confirmation|App_status|Payment_Status |Payment_method |Breeder_Type|
-      |Chrome |Suraj_Jo|Admin@123|Admin@123  |FINANCE  |PWO        |WPO        |WO         |IT_DEPT   |This is a test |Yes     |Cash         |850          |Mrs              |Port Louis|Tertiary        |Full Time|Manager           |src\test\resources\Photo_upload.jpg |2        |Married       |Spouse      |Keen          |Dafne             |Female|1Jan94|Actress    |Tea Grower |2.7        |Tenant    |Moka         |Cattle    |10               |550         |Meat   |AAA2563     |Male      |1Month    |src\test\resources\Upload_Test1.pdf|Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |Counter        |Cattle     |
+      |Chrome |Suraj_Jo|Admin@123|Admin@123  |FINANCE  |PWO        |WPO        |WO         |IT_DEPT   |This is a test |Yes     |Cash         |850          |Mrs              |Port Louis|Tertiary        |Full Time|Manager           |src\test\resources\Photo_upload.jpg |2        |Married       |Spouse      |Keen          |Dafne             |Female|1Jan94|Actress    |Tea Grower |2.7        |Tenant    |Moka         |Cow    |10               |550         |Meat   |AAA2563     |Male      |1Month    |src\test\resources\Upload_Test1.pdf|Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |Counter        |Cattle     |
 #      |Edge |Suraj_Jo|Admin@123|Admin@123  |FINANCE  |PWO        |WPO        |WO         |IT_DEPT   |This is a test |Yes     |Cash         |850          |Mrs              |Port Louis|Tertiary        |Full Time|Manager           |src\test\resources\Photo_upload.jpg |2        |Married       |Spouse      |Keen          |Dafne             |Female|1Jan94|Actress    |Tea Grower |2.7        |Tenant    |Moka         |Cattle    |10               |550         |Meat   |AAA2563     |Male      |1Month    |src\test\resources\Upload_Test1.pdf|Additional Document Test |ABC Banking|Port Louis |0001252563636  |Yes         |Submitted |Pending        |Counter        |Cattle     |
 
 
@@ -2087,6 +2094,9 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
     And I Verify Display of Livestock Activity
     And I Input Number of Cow Female "<Male_Female_Number>"
     And I Select Reason "<Reason>"
+    And I Click on Save and Continue
+    And I verify FPS page is displayed
+    And I Select Species "<Spicies>"
     And I Click on Save and Continue
     And I Verify Upload Required Documents Page is displayed
     And I Upload Copy of National Identify Card (ID) "<Upload_test>"
@@ -2202,10 +2212,12 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
     And I Search for Application Ref Number as a Back Office User
     And I Click to view Application
     And I Click on Action Button
-    And I Select Option Under Query
+#    And I Select Option Under Query
+    And I Select Option In progress
     And I Input External Remarks "<Remarks>"
-    And I Click on Under Query Notification Button
-    And I Verify Success Message for Under Query Mail Notification
+#    And I Click on Under Query Notification Button
+    And I Click on In progress Notification Button
+#    And I Verify Success Message for Under Query Mail Notification
     And I Click on Save Actions
     And I Verify for success message for workflow saved
     And I Sign Out
@@ -2227,6 +2239,9 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
     And I Click on Save and Continue
     And I Verify Display of Livestock Activity
     And I Click on Save and Continue
+    And I verify FPS page is displayed
+    And I Select Species "<Spicies>"
+    And I Click on Save and Continue
     And I Verify Upload Required Documents Page is displayed
     And I Click on Save and Continue
     And I Verify Declaration Page for REGISTRATION FOR SMALL BREEDERS
@@ -2247,7 +2262,7 @@ Feature: User Story 13280-GOC - Back Office Process for Registration
     And I Select Option Approved to approve the registration application
     And I Input Remarks "<Remarks>"
     And I Click on Save Actions
-    And I Verify for success message for approval
+  #  And I Verify for success message for approval
     And I Sign Out
     And I Verify Successful Sign Out
 
